@@ -6,8 +6,7 @@ HTML-pagina's, bedoeld om als static site op Netlify te draaien onder voltwijk.n
 
 ## Structuur
 
-- `index.html` / `home.html` — homepage (identieke kopie; Netlify serveert `index.html`
-  als root, `home.html` staat er ook zodat interne links naar "home" blijven werken).
+- `index.html` — homepage (`/home` wordt via `netlify.toml` doorgestuurd naar `/`).
 - `product-*.html` — losse productpagina's (airco, batterij, boiler, laadpaal,
   meterkast, warmtepomp, zonnepanelen).
 - `artikel-*.html` — kennisbank-/bloginhoud (12 artikelen).
@@ -15,6 +14,8 @@ HTML-pagina's, bedoeld om als static site op Netlify te draaien onder voltwijk.n
   `garantie.html`, `over-ons.html`, `contact.html`, `bereken-je-prijs.html`,
   `inzichten.html`, `veelgestelde-vragen.html`, `algemene-voorwaarden.html`,
   `privacybeleid.html`, `cookiebeleid.html`.
+- `images/` — alle foto's, logo's en keurmerken (voorheen als base64 in elke pagina
+  ingebakken).
 - `videos/` — klantreview-video's (mp4, al gecomprimeerd naar 1080p/h264, 2–6MB per
   stuk) + poster-JPG's. Gebruikt op de homepage, de airco-productpagina en de
   batterij-productpagina.
@@ -24,7 +25,7 @@ HTML-pagina's, bedoeld om als static site op Netlify te draaien onder voltwijk.n
 Dit is **geen build-systeem** — het zijn losse, op zichzelf staande HTML-bestanden.
 Elke pagina bevat zijn eigen kopie van:
 - de volledige navigatie/footer/WhatsApp-widget markup,
-- het complete `PRODUCTS`-datablok (alle 7 producten, inclusief base64-afbeeldingen),
+- het complete `PRODUCTS`-datablok (alle 7 producten, afbeeldingen via `/images/`),
 - alle gedeelde CSS en JS-helpers (reveal-animaties, calculator, lead-formulieren, etc.)
 
 Dat betekent: **een wijziging aan bijvoorbeeld het telefoonnummer, de navigatie, of
@@ -35,25 +36,19 @@ opgelost kan worden.
 
 ## Bekende openstaande issues
 
-1. **5 kapotte afbeeldingen in de "Hoe het werkt"-sectie**, in `hoe-het-werkt.html`
-   én gedupliceerd in `home.html`/`index.html`. Ze verwijzen naar
-   `/_blob/<hash>`-paden — dat was een Claude-artifact-intern asset-formaat dat nooit
-   met echte bestanden is gevuld, dus de `<img>`-tags zijn kapot. De 5 stappen zijn:
+1. **5 ontbrekende foto's in de "Hoe het werkt"-sectie**, in `hoe-het-werkt.html` én
+   `index.html`. Tot er foto's zijn staat er `src:''` in `HW_STEPS` en toont de pagina
+   een icoon. Zet de foto in `images/` en vul het pad in bij `src`. De 5 stappen zijn:
    1. Besparingscheck
    2. Adviesgesprek
    3. Aanbod & planning
    4. Installatie
    5. Klaar voor de toekomst
 
-   Zoek naar `_blob/` in deze bestanden om de exacte `<img data-img="...">`
-   / `media:{type:'img', src:'...'}`-plekken te vinden. Er zijn nog geen echte foto's
-   voor deze stappen aangeleverd — de klant levert die zelf aan.
+   Er zijn nog geen echte foto's voor deze stappen aangeleverd — de klant levert die
+   zelf aan.
 
-2. **Overige productfoto's**: de meeste productfoto's (in `PRODUCTS.<slug>.image`)
-   zijn al echte, werkende base64-afbeeldingen. Alleen de 5 "hoe het werkt"-stappen
-   hierboven zijn nog kapot.
-
-3. **Geen refactor naar gedeelde componenten** — zie hierboven. Aanrader: eerst een
+2. **Geen refactor naar gedeelde componenten** — zie hierboven. Aanrader: eerst een
    simpele build-stap (bv. met een template-engine of gewoon een Node-script dat
    header/footer/PRODUCTS-data injecteert) voordat er nog veel meer content bij komt.
 

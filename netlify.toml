@@ -1,2 +1,25 @@
 [build]
   publish = "."
+
+# Oude link naar de homepage
+[[redirects]]
+  from = "/home"
+  to = "/"
+  status = 301
+
+# www -> zonder www
+[[redirects]]
+  from = "https://www.voltwijk.nl/*"
+  to = "https://voltwijk.nl/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/videos/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
