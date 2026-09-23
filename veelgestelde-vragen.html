@@ -67,6 +67,14 @@
   .logo-icon{flex-shrink:0;transition:width .3s cubic-bezier(.2,.7,.2,1), height .3s cubic-bezier(.2,.7,.2,1);}
   #siteNav{position:sticky;top:0;z-index:50;margin-bottom:-76px;color:#fff;background:transparent;border-bottom:1px solid transparent;transition:background .4s ease, border-color .4s ease, backdrop-filter .4s ease, color .4s ease, box-shadow .4s ease, transform .4s cubic-bezier(.2,.7,.2,1);}
   #siteNav .nav-links{color:inherit;}
+  .choice-card{padding-right:38px !important;}
+  @media (max-width:480px){ .choice-name{font-size:13.5px !important;} }
+  @media (max-width:600px){
+    h1[style*="font-size:4"], h1[style*="font-size:5"]{font-size:34px !important;}
+    h2[style*="font-size:3"], h2[style*="font-size:4"], h2[style*="font-size:5"]{font-size:28px !important;line-height:1.15;}
+  }
+  @media (max-width:820px){ .nav-inner > .nav-links:first-child{display:none !important;} .nav-inner > .nav-links:last-child{display:flex !important;} .nav-inner > .nav-links:last-child > *:not(.nav-burger){display:none !important;} .nav-burger{display:flex !important;} }
+  #siteNav:has(.mobile-nav-panel.is-open){background:#fff;color:var(--ink);}
   #siteNav.on-light:not(.is-stuck){color:var(--ink);}
   #siteNav.is-stuck{background:rgba(255,255,255,.86);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);border-bottom-color:var(--border);color:var(--ink);box-shadow:0 18px 34px -26px rgba(16,32,31,.5);}
   #siteNav.is-hidden{transform:translateY(-100%);}
@@ -275,41 +283,86 @@
   </div>
 
 
+  <style>
+    .fq-layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:56px;align-items:start;}
+    .fq-nav{position:sticky;top:96px;display:flex;flex-direction:column;gap:4px;}
+    .fq-nav-a{padding:9px 12px;border-radius:10px;font-size:14px;font-weight:700;color:var(--ink-soft);text-decoration:none;transition:background .2s ease,color .2s ease;}
+    .fq-nav-a:hover{background:var(--surface-tint);color:var(--primary-dark);}
+    .fq-group{scroll-margin-top:96px;padding-bottom:40px;}
+    .fq-help{margin-top:18px;padding:18px;border-radius:16px;background:var(--surface-tint);font-size:13.5px;color:var(--ink-soft);line-height:1.5;}
+    @media (max-width:860px){ .fq-layout{grid-template-columns:1fr;gap:24px;} .fq-nav{position:static;flex-direction:row;flex-wrap:wrap;} .fq-nav-a{background:#fff;border:1px solid var(--border);padding:8px 12px;font-size:13px;} .fq-help{display:none;} }
+  </style>
   <div class="blk-light" style="padding-top:40px;">
     <div class="wrap reveal" style="padding-top:48px;padding-bottom:0;text-align:center;">
-      <div class="pill" style="margin:0 auto;">Nog vragen?</div>
+      <div class="pill" style="margin:0 auto;">Hulp &amp; antwoorden</div>
       <h1 class="vw-heading" style="font-size:44px;margin-top:16px;">Veelgestelde vragen</h1>
+      <p style="font-size:15px;color:var(--ink-soft);margin-top:10px;max-width:520px;margin-left:auto;margin-right:auto;">Alles over prijzen, planning, installatie en onze producten. Staat je vraag er niet bij? Ons team helpt je graag.</p>
     </div>
-    <div class="wrap row reveal" style="padding-top:88px;padding-bottom:88px;align-items:flex-start;">
-    <div style="flex:1 1 280px;">
-      <div class="pill">Nog vragen?</div>
-      <h2 style="font-size:38px;margin-top:16px;">Veelgestelde vragen over Voltwijk</h2>
-      <p style="font-size:14px;color:var(--ink-soft);margin-top:12px;line-height:1.6;max-width:340px;">Staat je vraag er niet bij? Ons team beantwoordt 'm meestal binnen een paar uur.</p>
-      <a href="/contact" style="margin-top:18px;display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:13.5px;color:var(--primary);text-decoration:none;">Stel je vraag<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    </div>
-    <div class="faq" style="margin-top:0;flex:1 1 420px;">
-      <details>
-        <summary>Hoe werkt die vaste prijs precies?</summary>
-        <p>Je vult je postcode, woningtype en een paar foto's in en ziet meteen een vaste prijs, inclusief installatie. Alleen bij een afwijkende situatie ter plekke (bijvoorbeeld een verouderde meterkast) kan de prijs bijgesteld worden — en dat bespreken we altijd vooraf, nooit achteraf op de rekening.</p>
-      </details>
-      <details>
-        <summary>Werken jullie ook in mijn regio?</summary>
-        <p>We zijn actief in heel Nederland met eigen installatieteams. Bij de check op de productpagina zie je meteen of we op jouw adres kunnen plannen en wanneer het eerstvolgende beschikbare moment is.</p>
-      </details>
-      <details>
-        <summary>Kan ik gespreid betalen?</summary>
-        <p>Ja. Op elk product kun je kiezen voor betalen ineens of gespreid over meerdere maanden, zonder verborgen kosten. Bij het opvragen van je vaste prijs zie je direct wat dat per maand betekent.</p>
-      </details>
-      <details>
-        <summary>Wat als de installatie tegenvalt?</summary>
-        <p>Je krijgt standaard 2 jaar garantie op de installatie zelf, los van de productgarantie. Is er iets niet naar wens, dan lossen we dat op — zonder gedoe of extra kosten.</p>
-      </details>
-      <details>
-        <summary>Moet ik meteen beslissen tijdens een adviesgesprek?</summary>
-        <p>Nee. Het adviesgesprek is vrijblijvend en bedoeld om je vragen te beantwoorden. Je ontvangt daarna gewoon je vaste prijs online, zonder druk om direct te tekenen.</p>
-      </details>
+    <div class="wrap" style="padding-top:64px;padding-bottom:40px;">
+      <div class="fq-layout">
+        <nav class="fq-nav" aria-label="Onderwerpen">
+          <a href="#algemeen" class="fq-nav-a">Algemeen</a><a href="#planning" class="fq-nav-a">Planning & installatie</a><a href="#contact" class="fq-nav-a">Contact & service</a><a href="#batterij" class="fq-nav-a">Thuisbatterij</a><a href="#zonnepanelen" class="fq-nav-a">Zonnepanelen</a><a href="#warmtepomp" class="fq-nav-a">Warmtepomp</a><a href="#airco" class="fq-nav-a">Airconditioning</a><a href="#boiler" class="fq-nav-a">Elektrische boiler</a><a href="#laadpaal" class="fq-nav-a">Laadpaal</a><a href="#meterkast" class="fq-nav-a">Meterkast</a>
+          <div class="fq-help">Geen antwoord gevonden?<br><a href="/contact" style="color:var(--primary);font-weight:700;text-decoration:none;">Stel je vraag →</a></div>
+        </nav>
+        <div class="reveal">
+          <div id="algemeen" class="fq-group">
+            <h2 style="font-size:24px;">Algemeen</h2>
+            <div class="faq" style="margin-top:14px;"><details><summary>Hoe werkt die vaste prijs precies?</summary><p>Je vult je postcode, woningtype en een paar foto's in en ziet meteen een vaste prijs, inclusief installatie. Alleen bij een afwijkende situatie ter plekke (bijvoorbeeld een verouderde meterkast) kan de prijs bijgesteld worden — en dat bespreken we altijd vooraf, nooit achteraf op de rekening.</p></details><details><summary>Werken jullie ook in mijn regio?</summary><p>We zijn actief in heel Nederland met eigen installatieteams. Bij de check op de productpagina zie je meteen of we op jouw adres kunnen plannen en wanneer het eerstvolgende beschikbare moment is.</p></details><details><summary>Kan ik gespreid betalen?</summary><p>Ja. Op elk product kun je kiezen voor betalen ineens of gespreid over meerdere maanden, zonder verborgen kosten. Bij het opvragen van je vaste prijs zie je direct wat dat per maand betekent.</p></details><details><summary>Wat als de installatie tegenvalt?</summary><p>Je krijgt standaard 2 jaar garantie op de installatie zelf, los van de productgarantie. Is er iets niet naar wens, dan lossen we dat op — zonder gedoe of extra kosten.</p></details><details><summary>Moet ik meteen beslissen tijdens een adviesgesprek?</summary><p>Nee. Het adviesgesprek is vrijblijvend en bedoeld om je vragen te beantwoorden. Je ontvangt daarna gewoon je vaste prijs online, zonder druk om direct te tekenen.</p></details></div>
+          </div>
+          <div id="planning" class="fq-group">
+            <h2 style="font-size:24px;">Planning & installatie</h2>
+            <div class="faq" style="margin-top:14px;"><details><summary>Hoeveel tijd zit er tussen aanvraag en installatie?</summary><p>Dat verschilt per product en per regio, maar de meeste klanten hebben binnen 2 tot 3 weken na de offerte een geplande installatiedatum. Bij de prijscheck zie je een indicatie voor jouw adres.</p></details><details><summary>Moet ik zelf iets regelen voor de installatie?</summary><p>Nee. Vergunningen, netbeheerder en eventuele subsidieaanvraag (zoals ISDE bij een warmtepomp) regelen wij. Jij hoeft alleen op de afgesproken dag aanwezig te zijn.</p></details><details><summary>Wat gebeurt er als er iets misgaat tijdens de installatie?</summary><p>Onze eigen monteurs lossen dat ter plekke op. Mocht dat niet lukken, dan plannen we kosteloos een vervolgafspraak — je betaalt pas als alles naar wens werkt.</p></details></div>
+          </div>
+          <div id="contact" class="fq-group">
+            <h2 style="font-size:24px;">Contact & service</h2>
+            <div class="faq" style="margin-top:14px;"><details><summary>Hoe snel krijg ik antwoord?</summary><p>Via WhatsApp meestal binnen enkele minuten, via het formulier op werkdagen binnen een paar uur en altijd binnen één werkdag. Berichten uit het weekend beantwoorden we maandagochtend als eerste.</p></details><details><summary>Zit ik ergens aan vast als ik contact opneem?</summary><p>Nee. Advies en een prijsindicatie zijn altijd vrijblijvend. Je beslist pas als je de vaste prijs hebt en alles klopt.</p></details><details><summary>Kan ik ook langskomen?</summary><p>We werken zonder showroom, zodat we de prijzen scherp houden. Een adviesgesprek bij jou thuis of via video plannen we graag op afspraak.</p></details><details><summary>Ik heb al een installatie van Voltwijk — waar kan ik terecht?</summary><p>Kies bij het formulier voor "Bestaande installatie" of app ons. Service en garantie lopen via hetzelfde eigen team.</p></details></div>
+          </div>
+          <div id="batterij" class="fq-group">
+            <h2 style="font-size:24px;">Thuisbatterij</h2>
+            <div class="faq" style="margin-top:14px;"><details><summary>Werkt de batterij ook zonder zonnepanelen?</summary><p>Ja. De batterij kan ook stroom opslaan op momenten dat die goedkoop is, en die later gebruiken — al is de besparing het grootst in combinatie met zonnepanelen.</p></details><details><summary>Wat gebeurt er bij een stroomstoring?</summary><p>Standaard schakelt het systeem niet automatisch over als noodstroom; dat kan als optie worden toegevoegd.</p></details></div>
+          </div>
+          <div id="zonnepanelen" class="fq-group">
+            <h2 style="font-size:24px;">Zonnepanelen</h2>
+            <div class="faq" style="margin-top:14px;"><details><summary>Hoeveel panelen heb ik nodig?</summary><p>Dat hangt af van je jaarverbruik en dakoppervlak — na het invullen van je postcode reken we dit voor je uit.</p></details><details><summary>Is subsidie nog van toepassing?</summary><p>Voor zonnepanelen geldt geen ISDE-subsidie meer, maar wel het verlaagde btw-tarief van 0%.</p></details></div>
+          </div>
+          <div id="warmtepomp" class="fq-group">
+            <h2 style="font-size:24px;">Warmtepomp</h2>
+            <div class="faq" style="margin-top:14px;"><details><summary>Moet mijn cv-ketel weg?</summary><p>In de meeste gevallen wel, tenzij je kiest voor een hybride opstelling — dat bespreken we tijdens de opname.</p></details><details><summary>Is mijn huis geschikt?</summary><p>Vrijwel elke woning met goede isolatie en (bij voorkeur) vloer- of lagetemperatuurverwarming is geschikt. We checken dit vooraf op basis van je verbruiksdata.</p></details></div>
+          </div>
+          <div id="airco" class="fq-group">
+            <h2 style="font-size:24px;">Airconditioning</h2>
+            <div class="faq" style="margin-top:14px;"><details><summary>Kan de airco ook verwarmen?</summary><p>Ja, als efficiënte aanvulling op je bestaande verwarming in het voor- en najaar — niet als volledige vervanging van je cv-ketel.</p></details><details><summary>Heb ik een vergunning nodig voor de buitenunit?</summary><p>In de meeste gevallen niet. We checken dit vooraf samen met je aan de hand van je woning.</p></details></div>
+          </div>
+          <div id="boiler" class="fq-group">
+            <h2 style="font-size:24px;">Elektrische boiler</h2>
+            <div class="faq" style="margin-top:14px;"><details><summary>Past dit ook bij een klein huishouden?</summary><p>Ja, we adviseren ook kleinere inhoudsmaten voor 1–2 personen — dat bepalen we samen op basis van je verbruik.</p></details><details><summary>Kan dit naast een warmtepomp?</summary><p>Meestal regelt de warmtepomp dan het warme water; een losse boiler is vooral zinvol zonder warmtepomp.</p></details></div>
+          </div>
+          <div id="laadpaal" class="fq-group">
+            <h2 style="font-size:24px;">Laadpaal</h2>
+            <div class="faq" style="margin-top:14px;"><details><summary>Kan de laadpaal buiten hangen?</summary><p>Ja, de laadpaal is standaard geschikt voor buitengebruik.</p></details><details><summary>Is een meterkastaanpassing nodig?</summary><p>Soms wel — we checken dit vooraf, en regelen het in dezelfde afspraak als dat nodig is.</p></details></div>
+          </div>
+          <div id="meterkast" class="fq-group">
+            <h2 style="font-size:24px;">Meterkast</h2>
+            <div class="faq" style="margin-top:14px;"><details><summary>Heb ik dit sowieso nodig?</summary><p>Niet altijd — bij de meeste producten checken we dit vooraf op basis van foto's van je huidige meterkast.</p></details><details><summary>Hoe lang duurt de aanpassing?</summary><p>In de meeste gevallen een halve tot hele dag, afhankelijk van de omvang.</p></details></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+  <div style="background:var(--bg);padding:88px 0 104px;">
+    <div class="wrap reveal">
+      <div style="position:relative;overflow:hidden;background:linear-gradient(135deg,#E4F0EF 0%,#FFFFFF 70%);border:1px solid var(--border);border-radius:28px;padding:clamp(28px,5vw,52px);display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;box-shadow:0 30px 60px -42px rgba(16,32,31,.45);">
+        <div class="blob" style="width:260px;height:260px;background:var(--mint);opacity:.28;top:-130px;right:-60px;"></div>
+        <div style="position:relative;max-width:520px;">
+          <h2 style="font-size:clamp(24px,3.4vw,32px);">Staat je vraag er niet bij?</h2>
+          <p style="font-size:15px;color:var(--ink-soft);margin-top:10px;line-height:1.55;">App, bel of mail ons eigen team — we reageren op werkdagen meestal binnen een paar uur.</p>
+        </div>
+        <div style="position:relative;display:flex;gap:12px;flex-wrap:wrap;">
+          <a href="/contact" class="btn-primary" style="text-decoration:none;">Neem contact op →</a>
+          <a href="/bereken-je-prijs" class="btn-secondary" style="text-decoration:none;">Bereken je prijs</a>
+        </div>
+      </div>
+    </div>
   </div>
 
 

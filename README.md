@@ -40,6 +40,23 @@ opgelost kan worden.
    simpele build-stap (bv. met een template-engine of gewoon een Node-script dat
    header/footer/PRODUCTS-data injecteert) voordat er nog veel meer content bij komt.
 
+## Formulieren (Netlify Forms)
+
+Alle formulieren versturen via Netlify Forms (`vwLeadSubmit` in elke pagina). De
+formulierdefinities staan verborgen onderaan `index.html`:
+
+| Formulier     | Waar                                   | Velden |
+|---------------|----------------------------------------|--------|
+| `contact`     | /contact, homepage                     | onderwerp, naam, email, telefoon, bericht |
+| `terugbellen` | /contact (#terugbellen)                | naam, telefoon, moment |
+| `offerte`     | prijscalculator (elke productpagina, /bereken-je-prijs, homepage) | naam, email, telefoon, postcode, huistype, producten, prijsindicatie |
+| `nieuwsbrief` | footer                                 | email |
+| `gids`        | homepage (#gids)                       | email |
+
+Eenmalig in Netlify: **Forms → Enable form detection**, daarna opnieuw deployen, en
+onder **Forms → Form notifications** een e-mailmelding instellen. Nieuwe velden moeten
+ook in de verborgen definitie in `index.html` staan, anders negeert Netlify ze.
+
 ## Site-brede gegevens
 
 - **Telefoonnummer**: 085 333 56 87 (`tel:+31853335687`), al correct verwerkt in
