@@ -45,7 +45,7 @@ opgelost kan worden.
 - **Telefoonnummer**: 085 333 56 87 (`tel:+31853335687`), al correct verwerkt in
   header, footer en de floating call/WhatsApp-knop.
 - **WhatsApp**: `https://wa.me/31853335687`
-- **Adres**: Voltwijk B.V., Schoenmakerij 18a, 4762 AS Zevenbergen.
+- **Adres**: Voltwijk B.V., Schoenmakerij 15a, 4762 AS Zevenbergen.
 - **Domein**: voltwijk.nl, geregistreerd bij Vimexx, DNS al omgezet naar Netlify
   (A-record `@` → `75.2.60.5`, CNAME `www` → `apex-loadbalancer.netlify.com`).
   Mail-gerelateerde DNS-records (smtp/mail/pop/ftp + SPF/DKIM/DMARC) zijn ongemoeid

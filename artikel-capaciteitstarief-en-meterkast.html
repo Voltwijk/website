@@ -36,7 +36,7 @@
   .grid-3{display:flex;gap:20px;flex-wrap:wrap;}
   .grid-3 > *{flex:1 1 260px;}
   .row{display:flex;align-items:center;gap:56px;flex-wrap:wrap;}
-  .row > *{flex:1 1 320px;}
+  .row > *{flex:1 1 320px;min-width:0;}
 
   /* BAND TREATMENTS — weheat-style alternating, cornered bands die als kaart over de vorige band heen liggen */
   .blk-asphalt{background:linear-gradient(180deg, var(--primary-deep), var(--dark));border-radius:40px 40px 0 0;color:#fff;}
@@ -67,6 +67,7 @@
   .logo-icon{flex-shrink:0;transition:width .3s cubic-bezier(.2,.7,.2,1), height .3s cubic-bezier(.2,.7,.2,1);}
   #siteNav{position:sticky;top:0;z-index:50;margin-bottom:-76px;color:#fff;background:transparent;border-bottom:1px solid transparent;transition:background .4s ease, border-color .4s ease, backdrop-filter .4s ease, color .4s ease, box-shadow .4s ease, transform .4s cubic-bezier(.2,.7,.2,1);}
   #siteNav .nav-links{color:inherit;}
+  #siteNav.on-light:not(.is-stuck){color:var(--ink);}
   #siteNav.is-stuck{background:rgba(255,255,255,.86);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);border-bottom-color:var(--border);color:var(--ink);box-shadow:0 18px 34px -26px rgba(16,32,31,.5);}
   #siteNav.is-hidden{transform:translateY(-100%);}
   .nav-inner{height:76px;transition:height .3s cubic-bezier(.2,.7,.2,1);}
@@ -166,7 +167,7 @@
   }
 
   /* PRODUCT PAGES */
-  .p-hero{background:var(--dark);padding:56px 0 64px;}
+  .p-hero{background:var(--dark);padding:124px 0 80px;}
   .p-hero-media{border-radius:24px;overflow:hidden;aspect-ratio:4/3;background:var(--dark-surface);}
   .p-hero-media img{width:100%;height:100%;object-fit:cover;display:block;}
   .p-bullets{list-style:none;padding:0;margin:20px 0 0;display:flex;flex-direction:column;gap:10px;}
@@ -305,13 +306,13 @@
     <div class="card" style="margin-top:32px;padding:26px 28px;text-align:center;background:var(--primary-wash,var(--primary));">
       <h3 class="vw-heading" style="font-size:19px;color:#fff;margin:0 0 8px;">Twijfel je of je meterkast klaar is voor de toekomst?</h3>
       <p style="font-size:13.5px;color:rgba(255,255,255,.9);margin:0 0 16px;">We checken je situatie en adviseren zonder verplichtingen.</p>
-      <a href="/product-meterkast" class="btn" style="background:#fff;color:var(--primary);display:inline-block;padding:12px 26px;border-radius:100px;font-weight:800;text-decoration:none;font-size:14px;">Vraag advies aan</a>
+      <a href="/contact#terugbellen" class="btn" style="background:#fff;color:var(--primary);display:inline-block;padding:12px 26px;border-radius:100px;font-weight:800;text-decoration:none;font-size:14px;">Vraag advies aan</a>
     </div>
   </div>
 </div>
 
 
-<div style="background:var(--dark);padding:44px 0 28px;position:relative;overflow:hidden;">
+<div class="site-footer" style="background:var(--dark);padding:44px 0 28px;position:relative;overflow:hidden;">
     <div class="blob" style="width:260px;height:260px;background:var(--primary);opacity:.25;top:-120px;left:50%;transform:translateX(-50%);"></div>
     <div class="wrap" style="position:relative;">
       <div style="display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-bottom:32px;border-bottom:1px solid #223634;">
@@ -336,7 +337,7 @@
             <svg width="24" height="24" viewBox="0 0 44 44"><rect x="2" y="2" width="40" height="40" rx="12" fill="var(--primary)"/><circle cx="17" cy="26" r="6.2" fill="#fff"/><circle cx="27" cy="26" r="6.2" fill="#fff"/><circle cx="17" cy="26" r="2" fill="var(--dark)"/><circle cx="27" cy="26" r="2" fill="var(--dark)"/><path d="M18 35 Q22 39 26 35" stroke="var(--accent)" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg>
             <div class="vw-heading" style="font-size:15px;color:#fff;">Voltwijk</div>
           </a>
-          <div style="font-size:12px;color:var(--dark-text-muted);margin-top:12px;line-height:1.6;">Voltwijk B.V. · Schoenmakerij 18a, 4762 AS Zevenbergen<br>voltwijk.nl</div>
+          <div style="font-size:12px;color:var(--dark-text-muted);margin-top:12px;line-height:1.6;">Voltwijk B.V. · Schoenmakerij 15a, 4762 AS Zevenbergen<br>voltwijk.nl</div>
         </div>
         <div style="font-size:13px;color:#C9D6D3;display:flex;flex-direction:column;gap:10px;">
           <div style="color:var(--mint);font-weight:700;font-size:12px;">PRODUCTEN</div>
@@ -397,12 +398,23 @@
   </div>
   <style>@keyframes waPulse{0%{transform:scale(1);opacity:.5;}100%{transform:scale(1.55);opacity:0;}}
   @media (prefers-reduced-motion: reduce){ #waPing{animation:none;} }
-  @media (max-width:480px){ #waWidget{right:14px;bottom:14px;} #waBubble{max-width:190px;font-size:12.5px;} }</style>
+  @media (max-width:480px){ #waWidget{right:14px;bottom:14px;} #waBubble{max-width:190px;font-size:12.5px;} }
+  #waWidget{pointer-events:none;} #waWidget a, #waWidget button{pointer-events:auto;}
+  @media (max-width:700px){ .site-footer{padding-bottom:104px !important;} }</style>
   <script>
-    setTimeout(function(){
-      var b = document.getElementById('waBubble');
-      if(b){ b.style.opacity='1'; b.style.pointerEvents='auto'; b.style.transform='translateY(0) scale(1)'; }
-    }, 2600);
+    (function(){
+      var b = document.getElementById('waBubble'), closed = false;
+      if(!b) return;
+      function hide(){ b.style.opacity='0'; b.style.pointerEvents='none'; b.style.transform='translateY(10px) scale(.96)'; }
+      function nearBottom(){ return window.innerHeight + window.scrollY > document.documentElement.scrollHeight - 700; }
+      b.querySelector('button').addEventListener('click', function(){ closed = true; });
+      setTimeout(function(){
+        if(closed || nearBottom()) return;
+        b.style.opacity='1'; b.style.pointerEvents='auto'; b.style.transform='translateY(0) scale(1)';
+        setTimeout(hide, 12000);
+      }, 2600);
+      window.addEventListener('scroll', function(){ if(nearBottom()) hide(); }, {passive:true});
+    })();
   </script>
 </div>
 
@@ -667,7 +679,7 @@ function renderProduct(slug){
     var rp = PRODUCTS[rs];
     if(!rp) return '';
     var rMedia = rp.image
-      ? '<img src="'+rp.image+'" alt="'+escapeAttr(rp.name)+'" style="width:100%;height:100%;object-fit:contain;padding:14px;transform:scale('+rp.imgScale+');">'
+      ? '<img src="/images/thumb-'+rs+'.jpg" alt="'+escapeAttr(rp.name)+'" style="width:100%;height:100%;object-fit:cover;">'
       : '<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:var(--primary);">'+STEKKIE_ICON.replace(/width="72" height="72"/,'width="46" height="46"')+'</div>';
     return '<a href="'+VW_URLS.p[rs]+'" class="card tilt-card" style="text-decoration:none;color:inherit;padding:18px;display:flex;align-items:center;gap:16px;">' +
       '<div style="width:64px;height:64px;border-radius:14px;background:var(--bg);flex-shrink:0;overflow:hidden;">'+rMedia+'</div>' +
@@ -696,7 +708,7 @@ function renderProduct(slug){
       '</div>' +
     '</div>' +
 
-    '<div class="blk-asphalt"><div class="wrap reveal" style="padding-top:88px;padding-bottom:88px;">' +
+    '<div style="background:var(--surface);"><div class="wrap reveal" style="padding-top:88px;padding-bottom:88px;">' +
       '<div class="row">' +
         '<div>' +
           '<h2 style="font-size:24px;">Specificaties</h2>' +
@@ -716,7 +728,7 @@ function renderProduct(slug){
 
     '<div class="blk-light"><div class="wrap reveal" style="padding-top:88px;padding-bottom:88px;">' +
       '<h2 style="font-size:28px;text-align:center;">Hoe het werkt</h2>' +
-      '<div class="grid-3" style="margin-top:32px;">'+stepsHtml+'</div>' +
+      '<div class="grid-4" style="margin-top:32px;">'+stepsHtml+'</div>' +
     '</div></div>' +
 
     '<div class="blk-mesh"><div class="wrap reveal" style="padding-top:88px;padding-bottom:88px;">' +
@@ -727,20 +739,7 @@ function renderProduct(slug){
     '<div class="blk-light"><div class="wrap reveal" style="padding-top:88px;padding-bottom:88px;max-width:760px;">' +
       '<h2 style="font-size:28px;">Veelgestelde vragen</h2>' +
       '<div class="faq" style="margin-top:20px;">'+faqHtml+'</div>' +
-    '</div></div>' +
-
-    '<div class="reveal" style="background:var(--dark);border-radius:40px 40px 0 0;padding:88px 0;position:relative;overflow:hidden;">' +
-      '<div class="blob" style="width:280px;height:280px;background:'+p.accent+';opacity:.25;bottom:-130px;left:8%;"></div>' +
-      '<div class="wrap row" style="justify-content:space-between;position:relative;">' +
-        '<div>' +
-          '<h2 style="font-size:30px;color:#fff;">Klaar voor je '+p.name.toLowerCase()+'?</h2>' +
-          '<p style="font-size:14px;color:var(--dark-text-muted);margin-top:8px;">Vul je postcode in en zie binnen een minuut je vaste prijs.</p>' +
-        '</div>' +
-        '<div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap;">' +
-          '<a href="#calculator" class="btn-primary" style="background:'+p.accent+';color:var(--dark);text-decoration:none;">'+p.cta+' →</a>' +
-        '</div>' +
-      '</div>' +
-    '</div>';
+    '</div></div>' ;
 
   initReveal(root);
 }
@@ -965,8 +964,37 @@ window.calcSetPostcode = calcSetPostcode;
     var threshold = announce ? announce.offsetHeight : 40;
     var lastY = window.scrollY;
     var ticking = false;
+    /* Kijkt wat er onder de (transparante) navigatie ligt: lichte achtergrond = donkere tekst. */
+    function lumOf(c){ var m=c.match(/[\d.]+/g); if(!m) return null; if(m.length>3 && +m[3]<0.5) return null; return 0.299*m[0]+0.587*m[1]+0.114*m[2]; }
+    function pointIsLight(x, y){
+      var els = document.elementsFromPoint(x, y);
+      for(var i=0;i<els.length;i++){
+        var el = els[i];
+        if(nav.contains(el)) continue;
+        var tag = el.tagName;
+        if(tag==='VIDEO' || tag==='IMG' || tag==='CANVAS') return false;
+        var cs = getComputedStyle(el);
+        if(cs.backgroundImage && cs.backgroundImage !== 'none'){
+          if(cs.backgroundImage.indexOf('url(') > -1) return false;
+          var g = cs.backgroundImage.match(/rgba?\([^)]*\)/);
+          if(g){ var gl = lumOf(g[0]); if(gl !== null) return gl > 150; }
+        }
+        var l = lumOf(cs.backgroundColor);
+        if(l !== null) return l > 150;
+      }
+      return true;
+    }
+    function updateTone(){
+      var r = nav.getBoundingClientRect(), y = r.top + r.height/2, w = window.innerWidth;
+      var light = pointIsLight(w*0.15, y) && pointIsLight(w*0.5, y+18);
+      nav.classList.toggle('on-light', light);
+    }
+    window.addEventListener('load', updateTone);
+    window.addEventListener('resize', updateTone);
+    setTimeout(updateTone, 300);
     function onScroll(){
       var y = window.scrollY;
+      if(y <= threshold){ updateTone(); }
       if(y > threshold){
         nav.classList.add('is-stuck');
         if(y > lastY + 4){ nav.classList.add('is-hidden'); }
@@ -989,11 +1017,38 @@ window.calcSetPostcode = calcSetPostcode;
 })();
 </script>
 <script>
+/* Verstuurt elk formulier via Netlify Forms. Veldnamen worden afgeleid van het type veld als ze ontbreken. */
+var VW_FORM_NAMES = {leadContact:'contact', leadCalc:'offerte', leadNewsletter:'nieuwsbrief', leadGids:'gids'};
 function vwLeadSubmit(form, blockId){
+  var block = document.getElementById(blockId);
+  var btn = form.querySelector('button[type="submit"]');
+  var data = new URLSearchParams();
+  data.append('form-name', form.getAttribute('data-form') || VW_FORM_NAMES[blockId] || 'contact');
+  form.querySelectorAll('input,textarea,select').forEach(function(el){
+    if(el.type === 'submit' || el.type === 'button') return;
+    if((el.type === 'radio' || el.type === 'checkbox') && !el.checked) return;
+    var n = el.name || ({email:'email', tel:'telefoon'})[el.type] || (el.tagName === 'TEXTAREA' ? 'bericht' : 'naam');
+    data.append(n, el.value);
+  });
+  data.append('pagina', location.pathname);
   try{
-    var block = document.getElementById(blockId);
-    if(block){ block.setAttribute('data-sent','1'); }
+    if(blockId === 'leadCalc' && typeof calcState !== 'undefined'){
+      data.append('postcode', calcState.postcode || '');
+      data.append('huistype', calcState.huistype || '');
+      data.append('producten', (calcState.producten || []).join(', '));
+      var tot = document.querySelector('.calc-total'); if(tot) data.append('prijsindicatie', (tot.innerText || tot.textContent).replace(/\s+/g,' ').trim());
+    }
   }catch(e){}
+  var label = btn ? btn.innerHTML : '';
+  if(btn){ btn.disabled = true; btn.style.opacity = '.7'; btn.innerHTML = 'Versturen…'; }
+  fetch('/', {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:data.toString()})
+    .then(function(r){ if(!r.ok) throw new Error(r.status); if(block){ block.setAttribute('data-sent','1'); } })
+    .catch(function(){
+      if(btn){ btn.disabled = false; btn.style.opacity = ''; btn.innerHTML = label; }
+      var err = form.querySelector('.form-error');
+      if(!err){ err = document.createElement('div'); err.className = 'form-error'; err.style.cssText = 'font-size:13px;margin-top:10px;color:#C6402E;'; form.appendChild(err); }
+      err.innerHTML = 'Versturen lukte niet. Bel ons op <a href="tel:+31853335687" style="color:inherit;font-weight:700;">085 333 56 87</a> of app via <a href="https://wa.me/31853335687" style="color:inherit;font-weight:700;">WhatsApp</a>.';
+    });
   return false;
 }
 
