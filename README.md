@@ -36,19 +36,7 @@ opgelost kan worden.
 
 ## Bekende openstaande issues
 
-1. **5 ontbrekende foto's in de "Hoe het werkt"-sectie**, in `hoe-het-werkt.html` én
-   `index.html`. Tot er foto's zijn staat er `src:''` in `HW_STEPS` en toont de pagina
-   een icoon. Zet de foto in `images/` en vul het pad in bij `src`. De 5 stappen zijn:
-   1. Besparingscheck
-   2. Adviesgesprek
-   3. Aanbod & planning
-   4. Installatie
-   5. Klaar voor de toekomst
-
-   Er zijn nog geen echte foto's voor deze stappen aangeleverd — de klant levert die
-   zelf aan.
-
-2. **Geen refactor naar gedeelde componenten** — zie hierboven. Aanrader: eerst een
+1. **Geen refactor naar gedeelde componenten** — zie hierboven. Aanrader: eerst een
    simpele build-stap (bv. met een template-engine of gewoon een Node-script dat
    header/footer/PRODUCTS-data injecteert) voordat er nog veel meer content bij komt.
 
