@@ -505,7 +505,7 @@ var PRODUCTS = {
     headline:'Koel in de zomer, warm in de tussenseizoenen.',
     bullets:['Energielabel A+++ — laag verbruik, ook bij intensief gebruik','Ook inzetbaar als efficiënte bijverwarming','Binnen 1 dag geïnstalleerd'],
     cta:'Bereken mijn prijs', price:'vanaf € 1.899',
-    image:'/images/product-airco.jpg', imgScale:1,
+    image:'/images/product-airco.jpg', imgScale:1, heroImage:'/images/airco-installatie.jpg',
     description:'Onze split-unit airco koelt in de zomer en verwarmt efficiënt in het voor- en najaar. Stil, energiezuinig, en in de meeste woningen binnen één dag geplaatst door ons eigen installatieteam.',
     specs:[['Type','Split-unit'],['Koelvermogen','3,5 kW'],['Verwarmingsvermogen','4,0 kW'],['Energielabel','A+++'],['Geluidsniveau binnenunit','19 dB(A)'],['Garantie','5 jaar']],
     faq:[['Kan de airco ook verwarmen?','Ja, als efficiënte aanvulling op je bestaande verwarming in het voor- en najaar — niet als volledige vervanging van je cv-ketel.'],['Heb ik een vergunning nodig voor de buitenunit?','In de meeste gevallen niet. We checken dit vooraf samen met je aan de hand van je woning.']],
@@ -639,7 +639,7 @@ function renderProduct(slug){
   }
 
   var media = p.heroImage
-    ? '<img src="'+p.heroImage+'" alt="'+escapeAttr(p.name)+' installatie door Voltwijk">'
+    ? '<img src="'+p.heroImage+'" alt="'+escapeAttr(p.name)+' in huis">'
     : p.image
     ? '<img src="'+p.image+'" alt="'+escapeAttr(p.name)+'" style="transform:scale('+p.imgScale+')">'
     : '<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">'+STEKKIE_ICON+'</div>';
