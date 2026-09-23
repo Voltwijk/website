@@ -1,0 +1,15 @@
+[build]
+  publish = "."
+
+# Oude link naar de homepage
+[[redirects]]
+  from = "/home"
+  to = "/"
+  status = 301
+
+# www -> zonder www
+[[redirects]]
+  from = "https://www.voltwijk.nl/*"
+  to = "https://voltwijk.nl/:splat"
+  status = 301
+  force = true
