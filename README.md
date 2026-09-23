@@ -72,3 +72,17 @@ ook in de verborgen definitie in `index.html` staan, anders negeert Netlify ze.
 
 Dit is een pure static site: geen build-commando nodig. In Netlify simpelweg de
 publish directory op de root van deze map zetten (of `.`), zonder build command.
+
+## Logo & huisstijl
+
+Het logo is het woordmerk **VOLTWIJK** (Manrope Bold, omgezet naar vectoren) waarin de W bestaat uit twee V's — volt en wijk — met een koraalrood punt waar ze samenkomen. Losse bestanden staan in `brand/`:
+
+| Bestand | Gebruik |
+|---|---|
+| `brand/voltwijk-logo.svg` | Woordmerk op lichte achtergrond |
+| `brand/voltwijk-logo-wit.svg` | Woordmerk op donkere achtergrond |
+| `brand/voltwijk-logo-zwart.svg` | Eénkleurig (stempel, gravure, borduren) |
+| `brand/voltwijk-icoon.svg` / `-512.png` | Beeldmerk (de W) in vlak — profielfoto's, app-icoon |
+| `brand/voltwijk-w.svg` | Beeldmerk zonder vlak |
+
+Kleuren: inkt `#10201F`, teal `#0F6E6B`, mint `#6FD6C8`, koraal `#FF6B5B`. Favicons: `favicon.svg`, `favicon-32.png`, `favicon.ico`, `apple-touch-icon.png`.
