@@ -2,6 +2,10 @@
 <html lang="nl">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#10201F">
 <title>Warmtepomp — Voltwijk</title>
 <meta name="description" content="Warmtepomp met COP 4,7 en ISDE-subsidie verrekend in je vaste prijs. Eigen monteurs, geen verrassingen.">
 <link rel="canonical" href="https://voltwijk.nl/product-warmtepomp">
@@ -64,6 +68,12 @@
   .mobile-nav-panel a{padding:14px 5vw;font-size:14px;font-weight:700;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--border);}
   .mobile-nav-panel.is-open{display:flex;}
   @media (max-width:820px){ .nav-burger{display:flex;} }
+  .vw-logo{height:20px;width:auto;display:block;overflow:visible;transition:height .3s cubic-bezier(.2,.7,.2,1);}
+  #siteNav{--logo-v2:var(--mint);}
+  #siteNav.is-stuck, #siteNav.on-light, #siteNav:has(.mobile-nav-panel.is-open){--logo-v2:var(--primary);}
+  #siteNav.is-stuck .vw-logo{height:17px;}
+  .vw-logo-ft{height:18px;width:auto;display:block;}
+  @media (max-width:820px){ .vw-logo{height:17px;} }
   .logo-icon{flex-shrink:0;transition:width .3s cubic-bezier(.2,.7,.2,1), height .3s cubic-bezier(.2,.7,.2,1);}
   #siteNav{position:sticky;top:0;z-index:50;margin-bottom:-76px;color:#fff;background:transparent;border-bottom:1px solid transparent;transition:background .4s ease, border-color .4s ease, backdrop-filter .4s ease, color .4s ease, box-shadow .4s ease, transform .4s cubic-bezier(.2,.7,.2,1);}
   #siteNav .nav-links{color:inherit;}
@@ -258,9 +268,8 @@
       <div class="nav-links">
         <a href="/producten" style="color:inherit;text-decoration:none;">PRODUCTEN</a><a href="/hoe-het-werkt" style="color:inherit;text-decoration:none;">HOE HET WERKT</a><a href="/garantie" style="color:inherit;text-decoration:none;">GARANTIE</a>
       </div>
-      <a href="/" class="vw-heading" style="display:inline-flex;align-items:center;gap:9px;font-size:22px;letter-spacing:.08em;white-space:nowrap;color:inherit;text-decoration:none;">
-        <svg width="28" height="28" viewBox="0 0 44 44" class="logo-icon"><rect x="2" y="2" width="40" height="40" rx="12" fill="var(--primary)"/><circle cx="17" cy="26" r="6.2" fill="#fff"/><circle cx="27" cy="26" r="6.2" fill="#fff"/><circle cx="17" cy="26" r="2" fill="var(--dark)"/><circle cx="27" cy="26" r="2" fill="var(--dark)"/><path d="M18 35 Q22 39 26 35" stroke="var(--accent)" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg>
-        VOLTWIJK
+      <a href="/" class="vw-heading" aria-label="Voltwijk, naar de homepage" style="display:inline-flex;align-items:center;white-space:nowrap;color:inherit;text-decoration:none;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="10 -1616 10357 1646" class="vw-logo" role="img" aria-label="Voltwijk"><g transform="scale(1 -1)"><path transform="translate(0 0)" fill="currentColor" d="M464 0 10 1440H258L638 234L1023 1440H1271L817 0Z"/><path transform="translate(1341 0)" fill="currentColor" d="M749 -30Q533 -30 379 64Q225 159 142 328Q60 497 60 720Q60 943 142 1112Q225 1281 379 1376Q533 1470 749 1470Q965 1470 1119 1376Q1274 1281 1356 1112Q1439 943 1439 720Q1439 497 1356 328Q1274 159 1119 64Q965 -30 749 -30ZM749 197Q894 196 991 261Q1087 326 1135 444Q1184 562 1184 720Q1184 878 1135 994Q1087 1111 991 1176Q894 1241 749 1243Q604 1244 508 1179Q412 1114 364 996Q315 878 315 720Q315 562 363 446Q411 329 508 264Q604 199 749 197Z"/><path transform="translate(2940 0)" fill="currentColor" d="M160 0V1440H401V226H1037V0Z"/><path transform="translate(3957 0)" fill="currentColor" d="M486 0V1214H20V1440H1193V1214H727V0Z"/><clipPath id="vwnL"><rect x="-17" y="-100" width="992" height="1640"/></clipPath><clipPath id="vwnR"><rect x="976" y="-100" width="992" height="1640"/></clipPath><g transform="translate(5260 0)"><path clip-path="url(#vwnL)" fill="currentColor" d="M444 0 23 1440H276L563 400L849 1438L1102 1440L1389 400L1675 1440H1928L1508 0H1270L975 1024L682 0Z"/><path clip-path="url(#vwnR)" style="fill:var(--logo-v2)" d="M444 0 23 1440H276L563 400L849 1438L1102 1440L1389 400L1675 1440H1928L1508 0H1270L975 1024L682 0Z"/><circle cx="976" cy="1440" r="176" fill="#FF6B5B"/></g><path transform="translate(7311 0)" fill="currentColor" d="M160 0V1440H401V0Z"/><path transform="translate(7972 0)" fill="currentColor" d="M428 -30Q263 -30 154 56Q44 142 0 288L238 345Q249 284 302 240Q355 196 419 196Q461 196 508 218Q555 241 578 291Q592 323 595 368Q597 412 597 471V1440H841V471Q841 404 840 354Q840 303 830 259Q821 214 793 167Q734 65 639 17Q544 -30 428 -30Z"/><path transform="translate(9073 0)" fill="currentColor" d="M140 0V1440H381V772L956 1440H1252L633 734L1294 0H988L381 672V0Z"/></g></svg>
       </a>
       <div class="nav-links" style="justify-content:flex-end;">
         <a href="/reviews" style="color:inherit;text-decoration:none;">REVIEWS</a><a href="/over-ons" style="color:inherit;text-decoration:none;">OVER ONS</a><a href="/contact" style="color:inherit;text-decoration:none;">CONTACT</a>
@@ -320,8 +329,7 @@
       <div style="display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;padding-top:32px;">
         <div style="max-width:240px;">
           <a href="/" style="display:flex;align-items:center;gap:8px;text-decoration:none;">
-            <svg width="24" height="24" viewBox="0 0 44 44"><rect x="2" y="2" width="40" height="40" rx="12" fill="var(--primary)"/><circle cx="17" cy="26" r="6.2" fill="#fff"/><circle cx="27" cy="26" r="6.2" fill="#fff"/><circle cx="17" cy="26" r="2" fill="var(--dark)"/><circle cx="27" cy="26" r="2" fill="var(--dark)"/><path d="M18 35 Q22 39 26 35" stroke="var(--accent)" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg>
-            <div class="vw-heading" style="font-size:15px;color:#fff;">Voltwijk</div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="10 -1616 10357 1646" class="vw-logo-ft" role="img" aria-label="Voltwijk"><g transform="scale(1 -1)"><path transform="translate(0 0)" fill="#FFFFFF" d="M464 0 10 1440H258L638 234L1023 1440H1271L817 0Z"/><path transform="translate(1341 0)" fill="#FFFFFF" d="M749 -30Q533 -30 379 64Q225 159 142 328Q60 497 60 720Q60 943 142 1112Q225 1281 379 1376Q533 1470 749 1470Q965 1470 1119 1376Q1274 1281 1356 1112Q1439 943 1439 720Q1439 497 1356 328Q1274 159 1119 64Q965 -30 749 -30ZM749 197Q894 196 991 261Q1087 326 1135 444Q1184 562 1184 720Q1184 878 1135 994Q1087 1111 991 1176Q894 1241 749 1243Q604 1244 508 1179Q412 1114 364 996Q315 878 315 720Q315 562 363 446Q411 329 508 264Q604 199 749 197Z"/><path transform="translate(2940 0)" fill="#FFFFFF" d="M160 0V1440H401V226H1037V0Z"/><path transform="translate(3957 0)" fill="#FFFFFF" d="M486 0V1214H20V1440H1193V1214H727V0Z"/><clipPath id="vwfL"><rect x="-17" y="-100" width="992" height="1640"/></clipPath><clipPath id="vwfR"><rect x="976" y="-100" width="992" height="1640"/></clipPath><g transform="translate(5260 0)"><path clip-path="url(#vwfL)" fill="#FFFFFF" d="M444 0 23 1440H276L563 400L849 1438L1102 1440L1389 400L1675 1440H1928L1508 0H1270L975 1024L682 0Z"/><path clip-path="url(#vwfR)" fill="#6FD6C8" d="M444 0 23 1440H276L563 400L849 1438L1102 1440L1389 400L1675 1440H1928L1508 0H1270L975 1024L682 0Z"/><circle cx="976" cy="1440" r="176" fill="#FF6B5B"/></g><path transform="translate(7311 0)" fill="#FFFFFF" d="M160 0V1440H401V0Z"/><path transform="translate(7972 0)" fill="#FFFFFF" d="M428 -30Q263 -30 154 56Q44 142 0 288L238 345Q249 284 302 240Q355 196 419 196Q461 196 508 218Q555 241 578 291Q592 323 595 368Q597 412 597 471V1440H841V471Q841 404 840 354Q840 303 830 259Q821 214 793 167Q734 65 639 17Q544 -30 428 -30Z"/><path transform="translate(9073 0)" fill="#FFFFFF" d="M140 0V1440H381V772L956 1440H1252L633 734L1294 0H988L381 672V0Z"/></g></svg>
           </a>
           <div style="font-size:12px;color:var(--dark-text-muted);margin-top:12px;line-height:1.6;">Voltwijk B.V. · Schoenmakerij 15a, 4762 AS Zevenbergen<br>voltwijk.nl</div>
         </div>
