@@ -508,41 +508,110 @@
     <div class="wrap" style="margin-top:32px;padding-top:20px;border-top:1px solid #223634;font-size:11px;color:var(--dark-text-faint);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;"><span>© 2026 Voltwijk B.V. — Simpel geregeld. Eerlijk geprijsd.</span><span style="display:flex;gap:16px;flex-wrap:wrap;"><a href="/privacybeleid" style="color:inherit;text-decoration:none;">Privacybeleid</a><a href="/algemene-voorwaarden" style="color:inherit;text-decoration:none;">Algemene voorwaarden</a><a href="/cookiebeleid" style="color:inherit;text-decoration:none;">Cookiebeleid</a><a href="/veelgestelde-vragen" style="color:inherit;text-decoration:none;">Veelgestelde vragen</a></span></div>
   </div>
 
-<!-- FLOATING CONTACT — WhatsApp launcher met welkomstbubbel -->
+<!-- FLOATING CONTACT — WhatsApp launcher met chatkaart + cookiemelding -->
   <div id="waWidget" style="position:fixed;right:20px;bottom:20px;z-index:80;display:flex;flex-direction:column;align-items:flex-end;gap:12px;">
-    <div id="waBubble" style="max-width:250px;background:#fff;border-radius:16px 16px 4px 16px;padding:14px 16px;box-shadow:0 18px 34px -14px rgba(16,32,31,.35);font-size:13px;color:var(--ink);line-height:1.45;position:relative;transform:translateY(10px) scale(.96);opacity:0;transition:all .35s cubic-bezier(.2,.7,.2,1);pointer-events:none;">
-      <button onclick="document.getElementById('waBubble').style.opacity='0';document.getElementById('waBubble').style.pointerEvents='none';document.getElementById('waBubble').style.transform='translateY(10px) scale(.96)';" aria-label="Sluiten" style="position:absolute;top:6px;right:6px;width:20px;height:20px;border:none;background:transparent;color:var(--ink-faint);cursor:pointer;font-size:15px;line-height:1;padding:0;">&times;</button>
-      <strong style="display:block;margin-bottom:3px;">Vraag over je vaste prijs?</strong>
-      App ons direct — meestal binnen enkele minuten antwoord, geen wachtrij.
+    <div id="waBubble" role="dialog" aria-label="Chat met Voltwijk via WhatsApp" aria-hidden="true">
+      <button type="button" class="wa-x" aria-label="Sluiten">&times;</button>
+      <div class="wa-head"><svg viewBox="0 0 100 100" width="36" height="36" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#0F6E6B"/><clipPath id="waavL"><rect x="-17" y="-100" width="992" height="1640"/></clipPath><clipPath id="waavR"><rect x="976" y="-100" width="992" height="1640"/></clipPath><g transform="translate(16.19 71.90) scale(0.03465 -0.03465)"><path clip-path="url(#waavL)" fill="#fff" d="M444 0 23 1440H276L563 400L849 1438L1102 1440L1389 400L1675 1440H1928L1508 0H1270L975 1024L682 0Z"/><path clip-path="url(#waavR)" fill="#6FD6C8" d="M444 0 23 1440H276L563 400L849 1438L1102 1440L1389 400L1675 1440H1928L1508 0H1270L975 1024L682 0Z"/><circle cx="976" cy="1440" r="176" fill="#FF6B5B"/></g></svg><div><strong>Voltwijk</strong><span class="wa-status"><i id="waDot"></i><span id="waStatus">Installateurs uit eigen team</span></span></div></div>
+      <div class="wa-msg"><span id="waText">Twijfel je wat bij jouw huis past? Stuur een foto van je dak of meterkast, dan zeggen we eerlijk wat wel en niet loont.</span><em>nu</em></div>
+      <a id="waCta" class="wa-cta" href="https://wa.me/31853335687?text=Hoi%20Voltwijk%2C%20ik%20heb%20een%20vraag" target="_blank" rel="noopener"><svg width="17" height="17" viewBox="0 0 24 24" fill="#fff"><path d="M12.01 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.08-1.33A9.94 9.94 0 0 0 12.01 22C17.53 22 22 17.52 22 12S17.53 2 12.01 2Zm5.79 14.14c-.24.68-1.4 1.32-1.93 1.38-.5.06-1.02.28-3.4-.71-2.86-1.19-4.7-4.06-4.84-4.25-.14-.19-1.16-1.55-1.16-2.95 0-1.4.73-2.08 1-2.36.26-.28.57-.35.76-.35.19 0 .38 0 .55.01.18.01.42-.07.65.5.24.58.81 2 .88 2.15.07.14.12.31.02.5-.1.19-.15.31-.3.48-.14.17-.31.38-.44.51-.15.15-.3.3-.13.6.17.29.75 1.24 1.61 2 1.11.99 2.04 1.3 2.34 1.44.29.15.47.13.64-.08.17-.2.71-.83.9-1.11.19-.29.38-.24.63-.15.26.1 1.65.78 1.93.92.29.15.48.22.55.34.07.13.07.71-.16 1.38Z"/></svg>Stuur een appje</a>
     </div>
     <div style="display:flex;flex-direction:column;align-items:flex-end;gap:10px;">
       <a href="tel:+31853335687" aria-label="Bel Voltwijk" style="width:46px;height:46px;border-radius:999px;background:#fff;color:var(--primary);display:flex;align-items:center;justify-content:center;box-shadow:0 14px 26px -10px rgba(16,32,31,.4);flex-shrink:0;">
         <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
       </a>
-      <a href="https://wa.me/31853335687?text=Hoi%20Voltwijk%2C%20ik%20heb%20een%20vraag" target="_blank" rel="noopener" aria-label="WhatsApp Voltwijk" style="width:58px;height:58px;border-radius:999px;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 16px 30px -10px rgba(16,32,31,.45);position:relative;flex-shrink:0;">
+      <a id="waLaunch" href="https://wa.me/31853335687?text=Hoi%20Voltwijk%2C%20ik%20heb%20een%20vraag" target="_blank" rel="noopener" aria-label="WhatsApp Voltwijk" style="width:58px;height:58px;border-radius:999px;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 16px 30px -10px rgba(16,32,31,.45);position:relative;flex-shrink:0;">
         <span id="waPing" style="position:absolute;inset:0;border-radius:999px;background:#25D366;opacity:.55;animation:waPulse 2.2s ease-out infinite;"></span>
         <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff" style="position:relative;"><path d="M12.01 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.08-1.33A9.94 9.94 0 0 0 12.01 22C17.53 22 22 17.52 22 12S17.53 2 12.01 2Zm5.79 14.14c-.24.68-1.4 1.32-1.93 1.38-.5.06-1.02.28-3.4-.71-2.86-1.19-4.7-4.06-4.84-4.25-.14-.19-1.16-1.55-1.16-2.95 0-1.4.73-2.08 1-2.36.26-.28.57-.35.76-.35.19 0 .38 0 .55.01.18.01.42-.07.65.5.24.58.81 2 .88 2.15.07.14.12.31.02.5-.1.19-.15.31-.3.48-.14.17-.31.38-.44.51-.15.15-.3.3-.13.6.17.29.75 1.24 1.61 2 1.11.99 2.04 1.3 2.34 1.44.29.15.47.13.64-.08.17-.2.71-.83.9-1.11.19-.29.38-.24.63-.15.26.1 1.65.78 1.93.92.29.15.48.22.55.34.07.13.07.71-.16 1.38Z"/></svg>
       </a>
     </div>
   </div>
+  <div id="vwCookie" role="dialog" aria-live="polite" aria-label="Cookies" hidden>
+    <div class="ck-title">Even over cookies</div>
+    <p>We gebruiken functionele cookies zodat de site werkt. Met jouw toestemming meten we ook anoniem wat bezoekers nuttig vinden, zodat we de site beter maken. Geen advertentietracking. <a href="/cookiebeleid">Cookiebeleid</a></p>
+    <div class="ck-btns"><button type="button" class="ck-yes" data-ck="1">Akkoord</button><button type="button" class="ck-no" data-ck="0">Alleen noodzakelijk</button></div>
+  </div>
   <style>@keyframes waPulse{0%{transform:scale(1);opacity:.5;}100%{transform:scale(1.55);opacity:0;}}
-  @media (prefers-reduced-motion: reduce){ #waPing{animation:none;} }
-  @media (max-width:480px){ #waWidget{right:14px;bottom:14px;} #waBubble{max-width:190px;font-size:12.5px;} }
+  @media (prefers-reduced-motion: reduce){ #waPing{animation:none;} #waBubble,#vwCookie{transition:none!important;} }
   #waWidget{pointer-events:none;} #waWidget a, #waWidget button{pointer-events:auto;}
+  #waBubble{width:292px;background:#fff;border-radius:18px 18px 6px 18px;padding:14px;box-shadow:0 24px 48px -18px rgba(16,32,31,.45),0 0 0 1px rgba(16,32,31,.06);color:var(--ink);position:relative;transform:translateY(12px) scale(.96);transform-origin:bottom right;opacity:0;transition:opacity .35s ease,transform .35s cubic-bezier(.2,.7,.2,1);pointer-events:none !important;}
+  #waBubble.is-open{opacity:1;transform:none;pointer-events:auto !important;}
+  #waBubble .wa-x{position:absolute;top:8px;right:8px;width:26px;height:26px;border:none;border-radius:999px;background:transparent;color:var(--ink-faint);cursor:pointer;font-size:18px;line-height:1;}
+  #waBubble .wa-x:hover{background:var(--bg);}
+  .wa-head{display:flex;align-items:center;gap:10px;padding-right:22px;}
+  .wa-head svg{border-radius:10px;flex-shrink:0;}
+  .wa-head strong{display:block;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:14.5px;line-height:1.2;}
+  .wa-status{display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--ink-faint);}
+  #waDot{width:7px;height:7px;border-radius:50%;background:#9AA7A4;display:inline-block;}
+  #waDot.on{background:#25D366;box-shadow:0 0 0 3px rgba(37,211,102,.18);}
+  .wa-msg{margin-top:12px;background:#EAF6EF;border-radius:4px 14px 14px 14px;padding:10px 12px 8px;font-size:13px;line-height:1.5;color:var(--ink);}
+  .wa-msg em{display:block;text-align:right;font-style:normal;font-size:10.5px;color:var(--ink-faint);margin-top:2px;}
+  .wa-cta{margin-top:12px;display:flex;align-items:center;justify-content:center;gap:8px;background:#25D366;color:#fff !important;text-decoration:none;font-weight:700;font-size:14px;border-radius:999px;padding:11px 14px;transition:background .2s;}
+  .wa-cta:hover{background:#1EBE5A;}
+  #vwCookie{position:fixed;left:20px;bottom:20px;z-index:90;width:min(430px,calc(100vw - 40px));background:var(--dark);color:#fff;border-radius:18px;padding:18px 18px 16px;box-shadow:0 26px 60px -20px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.06);transform:translateY(16px);opacity:0;transition:opacity .35s ease,transform .35s cubic-bezier(.2,.7,.2,1);}
+  #vwCookie.is-open{opacity:1;transform:none;}
+  #vwCookie .ck-title{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:700;font-size:16px;}
+  #vwCookie p{margin:6px 0 14px;font-size:13px;line-height:1.55;color:#C9D6D3;}
+  #vwCookie p a{color:var(--mint);}
+  .ck-btns{display:flex;gap:8px;flex-wrap:wrap;}
+  .ck-btns button{flex:1 1 150px;white-space:nowrap;border-radius:999px;padding:11px 14px;font:700 13.5px 'Nunito Sans',system-ui,sans-serif;cursor:pointer;}
+  .ck-yes{background:var(--mint);color:var(--dark);border:none;}
+  .ck-yes:hover{background:#8FE3D8;}
+  .ck-no{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.28);}
+  .ck-no:hover{border-color:#fff;}
+  .ck-btns button:focus-visible,.wa-cta:focus-visible,#waBubble .wa-x:focus-visible{outline:2px solid var(--mint);outline-offset:2px;}
+  @media (max-width:600px){ #vwCookie{left:12px;right:12px;bottom:12px;width:auto;} body.vw-ck-open #waWidget{display:none !important;} }
+  @media (max-width:480px){ #waWidget{right:14px;bottom:14px;} #waBubble{width:min(292px,calc(100vw - 28px));} }
   @media (max-width:700px){ .site-footer{padding-bottom:104px !important;} }</style>
   <script>
     (function(){
-      var b = document.getElementById('waBubble'), closed = false;
-      if(!b) return;
-      function hide(){ b.style.opacity='0'; b.style.pointerEvents='none'; b.style.transform='translateY(10px) scale(.96)'; }
-      function nearBottom(){ return window.innerHeight + window.scrollY > document.documentElement.scrollHeight - 700; }
-      b.querySelector('button').addEventListener('click', function(){ closed = true; });
-      setTimeout(function(){
-        if(closed || nearBottom()) return;
-        b.style.opacity='1'; b.style.pointerEvents='auto'; b.style.transform='translateY(0) scale(1)';
-        setTimeout(hide, 12000);
-      }, 2600);
-      window.addEventListener('scroll', function(){ if(nearBottom()) hide(); }, {passive:true});
+      var TOPIC = { 'product-batterij':'een thuisbatterij', 'product-zonnepanelen':'zonnepanelen', 'product-warmtepomp':'een warmtepomp', 'product-airco':'airco', 'product-boiler':'een elektrische boiler', 'product-laadpaal':'een laadpaal', 'product-meterkast':'je meterkast' };
+      var slug = location.pathname.replace(/^\/|\.html$/g,'');
+      var topic = TOPIC[slug];
+      var b = document.getElementById('waBubble'), ck = document.getElementById('vwCookie');
+      var waBase = 'https://wa.me/31853335687?text=';
+      function store(k,v){ try{ if(v===undefined) return localStorage.getItem(k); localStorage.setItem(k,v); }catch(e){ return null; } }
+      function sstore(k,v){ try{ if(v===undefined) return sessionStorage.getItem(k); sessionStorage.setItem(k,v); }catch(e){ return null; } }
+      if(b){
+        var msg = 'Hoi Voltwijk, ik heb een vraag' + (topic ? ' over ' + topic : '');
+        var link = waBase + encodeURIComponent(msg);
+        document.getElementById('waCta').href = link; document.getElementById('waLaunch').href = link;
+        if(topic) document.getElementById('waText').textContent = 'Vraag over ' + topic + '? App ons gerust. Je krijgt antwoord van iemand die het zelf installeert, geen verkooppraatje.';
+        try{
+          var p = new Intl.DateTimeFormat('nl-NL',{timeZone:'Europe/Amsterdam',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+          var o = {}; p.forEach(function(x){ o[x.type]=x.value; });
+          var mins = parseInt(o.hour,10)*60 + parseInt(o.minute,10), wd = ['za','zo'].indexOf(o.weekday.replace('.','')) === -1;
+          var open = wd && mins >= 540 && mins < 1050;
+          document.getElementById('waDot').className = open ? 'on' : '';
+          document.getElementById('waStatus').textContent = open ? 'Nu bereikbaar · meestal binnen minuten' : 'We reageren de volgende werkdag vanaf 9:00';
+        }catch(e){}
+        var closed = false, shown = false;
+        function show(){ if(shown || closed || sstore('vwWaSeen') || nearBottom() || (ck && !ck.hidden)) return; shown = true; sstore('vwWaSeen','1'); b.classList.add('is-open'); b.setAttribute('aria-hidden','false'); setTimeout(hide, 16000); }
+        function hide(){ b.classList.remove('is-open'); b.setAttribute('aria-hidden','true'); }
+        function nearBottom(){ return window.innerHeight + window.scrollY > document.documentElement.scrollHeight - 700; }
+        b.querySelector('.wa-x').addEventListener('click', function(){ closed = true; hide(); });
+        var tmr = setTimeout(show, 9000);
+        window.addEventListener('scroll', function(){
+          if(nearBottom()) { hide(); return; }
+          if(!shown && window.scrollY > document.documentElement.scrollHeight * 0.35) show();
+        }, {passive:true});
+        window.addEventListener('vw:consent', function(){ clearTimeout(tmr); tmr = setTimeout(show, 6000); });
+      }
+      if(ck){
+        var saved = store('vwConsent');
+        window.vwConsent = saved ? JSON.parse(saved) : null;
+        if(!saved){
+          setTimeout(function(){ ck.hidden = false; document.body.classList.add('vw-ck-open'); requestAnimationFrame(function(){ ck.classList.add('is-open'); }); }, 900);
+        }
+        ck.addEventListener('click', function(e){
+          var t = e.target.closest('[data-ck]'); if(!t) return;
+          var c = { v:1, analytics: t.getAttribute('data-ck') === '1', ts: new Date().toISOString() };
+          store('vwConsent', JSON.stringify(c)); window.vwConsent = c;
+          ck.classList.remove('is-open'); document.body.classList.remove('vw-ck-open');
+          setTimeout(function(){ ck.hidden = true; }, 350);
+          try{ window.dispatchEvent(new CustomEvent('vw:consent',{detail:c})); }catch(err){}
+        });
+      }
     })();
   </script>
 </div>
