@@ -319,16 +319,64 @@
       <style>@media (max-width:760px){ #reviewsGrid{grid-template-columns:1fr!important;grid-template-rows:none!important;} #reviewsGrid .card[style*="grid-row"]{grid-row:auto!important;} }</style>
     </div>
   </div>
-  <div class="blk-asphalt">
-    <div class="wrap reveal" style="padding-top:64px;padding-bottom:64px;">
-      <h2 style="font-size:26px;color:#fff;text-align:center;">Meer klantquotes</h2>
-      <div class="grid-3" style="margin-top:28px;">
-        <div class="card" style="padding:22px;background:var(--dark-surface);border:none;"><div style="color:var(--accent);font-size:14px;letter-spacing:2px;">★★★★★</div><p style="font-size:14px;color:#C9D6D3;margin-top:10px;line-height:1.5;">"Eerlijk over wat wel en niet zinvol was voor ons dak — geen opdringerige verkoop."</p><div style="font-size:12px;color:var(--dark-text-muted);margin-top:12px;">— Sanne, Groningen</div></div>
-        <div class="card" style="padding:22px;background:var(--dark-surface);border:none;"><div style="color:var(--accent);font-size:14px;letter-spacing:2px;">★★★★★</div><p style="font-size:14px;color:#C9D6D3;margin-top:10px;line-height:1.5;">"De monteurs waren stipt op tijd en ruimden alles netjes op."</p><div style="font-size:12px;color:var(--dark-text-muted);margin-top:12px;">— Willem, Rotterdam</div></div>
-        <div class="card" style="padding:22px;background:var(--dark-surface);border:none;"><div style="color:var(--accent);font-size:14px;letter-spacing:2px;">★★★★★</div><p style="font-size:14px;color:#C9D6D3;margin-top:10px;line-height:1.5;">"Een klein probleem na installatie werd binnen een dag opgelost, zonder extra kosten."</p><div style="font-size:12px;color:var(--dark-text-muted);margin-top:12px;">— Priya, Amersfoort</div></div>
+  <style>
+    .gr-sec{background:linear-gradient(180deg,var(--surface) 0%,#F3F7F6 100%);border-top:1px solid var(--border);position:relative;overflow:hidden;}
+    .gr-head{display:flex;justify-content:space-between;align-items:flex-end;gap:28px;flex-wrap:wrap;}
+    .gr-badge{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--border);border-radius:999px;padding:8px 16px 8px 10px;box-shadow:0 14px 30px -24px rgba(16,32,31,.5);font-size:13.5px;font-weight:700;color:var(--ink);}
+    .gr-stars{display:inline-flex;gap:2px;color:#FBBC04;font-size:15px;letter-spacing:1px;}
+    .gr-frame{margin-top:36px;background:#fff;border:1px solid var(--border);border-radius:28px;padding:clamp(18px,3vw,34px);box-shadow:0 40px 80px -60px rgba(16,32,31,.55);position:relative;min-height:260px;}
+    .gr-skel{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;}
+    .gr-skel div{height:190px;border-radius:18px;background:linear-gradient(90deg,#F1F5F4 0%,#E7EFEE 50%,#F1F5F4 100%);background-size:200% 100%;animation:grShimmer 1.4s linear infinite;}
+    @keyframes grShimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+    .gr-frame.is-loaded .gr-skel{display:none;}
+    .gr-fallback{display:none;text-align:center;padding:40px 10px;color:var(--ink-soft);font-size:15px;}
+    .gr-frame.is-failed .gr-skel{display:none;} .gr-frame.is-failed .gr-fallback{display:block;}
+    .gr-frame.is-loaded .gr-fallback{display:none !important;}
+    .gr-foot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:22px;font-size:12.5px;color:var(--ink-faint);}
+    /* Trustindex in Voltwijk-stijl */
+    .gr-frame .ti-widget, .gr-frame .ti-widget *{font-family:'Nunito Sans',system-ui,sans-serif !important;}
+    .gr-frame .ti-widget .ti-name, .gr-frame .ti-widget .ti-rating-text strong{font-family:'Bricolage Grotesque',system-ui,sans-serif !important;color:var(--ink) !important;}
+    .gr-frame .ti-widget .ti-review-item > .ti-inner{border-radius:18px !important;border:1px solid var(--border) !important;background:#FBFCFC !important;box-shadow:none !important;}
+    .gr-frame .ti-widget .ti-review-content, .gr-frame .ti-widget .ti-review-text-container{color:var(--ink-soft) !important;line-height:1.6 !important;}
+    .gr-frame .ti-widget .ti-read-more span, .gr-frame .ti-widget a{color:var(--primary) !important;}
+    @media (max-width:800px){ .gr-skel{grid-template-columns:1fr;} .gr-skel div:nth-child(n+2){display:none;} }
+  </style>
+  <div class="gr-sec">
+    <div class="blob" style="width:340px;height:340px;background:var(--mint);opacity:.14;top:-170px;left:-90px;"></div>
+    <div class="wrap reveal" style="padding-top:88px;padding-bottom:96px;position:relative;">
+      <div class="gr-head">
+        <div style="max-width:560px;">
+          <span class="gr-badge">
+            <svg width="22" height="22" viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.1H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 13 4 4 13 4 24s9 20 20 20 20-9 20-20c0-1.3-.1-2.7-.4-3.9z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.1H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.7-.4-3.9z"/></svg>
+            Google reviews <span class="gr-stars" aria-hidden="true">★★★★★</span>
+          </span>
+          <h2 style="font-size:clamp(28px,3.6vw,40px);margin-top:18px;">Wat klanten over ons zeggen op Google</h2>
+          <p style="font-size:15px;color:var(--ink-soft);margin-top:10px;line-height:1.6;">Echte reviews van echte klanten, automatisch overgenomen van ons Google-bedrijfsprofiel. Wat hier staat, staat ook op Google.</p>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Voltwijk+Zevenbergen" target="_blank" rel="noopener" class="btn-secondary" style="text-decoration:none;">Alle reviews op Google →</a>
+      </div>
+
+      <div class="gr-frame" id="grFrame">
+        <div class="gr-skel" aria-hidden="true"><div></div><div></div><div></div></div>
+        <div class="gr-fallback">De reviews konden niet geladen worden. <a href="https://www.google.com/maps/search/?api=1&amp;query=Voltwijk+Zevenbergen" target="_blank" rel="noopener" style="color:var(--primary);font-weight:700;">Bekijk ze direct op Google →</a></div>
+        <script defer async src='https://cdn.trustindex.io/loader.js?2c27991823f31136476602c270b'></script>
+      </div>
+
+      <div class="gr-foot">
+        <span>We tonen reviews met 4 en 5 sterren van Google. Alle reviews, ook de andere, lees je op ons Google-profiel.</span>
+        <span>Reviews worden automatisch bijgewerkt.</span>
       </div>
     </div>
   </div>
+  <script>
+    (function(){
+      var f = document.getElementById('grFrame'); if(!f) return;
+      var obs = new MutationObserver(function(){ if(f.querySelector('.ti-widget')){ f.classList.add('is-loaded'); obs.disconnect(); } });
+      obs.observe(f, {childList:true, subtree:true});
+      setTimeout(function(){ if(!f.classList.contains('is-loaded')) f.classList.add('is-failed'); }, 9000);
+    })();
+  </script>
+
   <div style="background:var(--bg);padding:88px 0 104px;">
     <div class="wrap reveal">
       <div style="position:relative;overflow:hidden;background:linear-gradient(135deg,#E4F0EF 0%,#FFFFFF 70%);border:1px solid var(--border);border-radius:28px;padding:clamp(28px,5vw,52px);display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;box-shadow:0 30px 60px -42px rgba(16,32,31,.45);">
