@@ -519,7 +519,7 @@ var PRODUCTS = {
     headline:'Koel in de zomer, warm in de tussenseizoenen.',
     bullets:['Energielabel A+++ — laag verbruik, ook bij intensief gebruik','Ook inzetbaar als efficiënte bijverwarming','Binnen 1 dag geïnstalleerd'],
     cta:'Bereken mijn prijs', price:'vanaf € 1.899',
-    image:'/images/product-airco.jpg', imgScale:1,
+    image:'/images/product-airco.jpg', imgScale:1, heroImage:'/images/airco-installatie.jpg',
     description:'Onze split-unit airco koelt in de zomer en verwarmt efficiënt in het voor- en najaar. Stil, energiezuinig, en in de meeste woningen binnen één dag geplaatst door ons eigen installatieteam.',
     specs:[['Type','Split-unit'],['Koelvermogen','3,5 kW'],['Verwarmingsvermogen','4,0 kW'],['Energielabel','A+++'],['Geluidsniveau binnenunit','19 dB(A)'],['Garantie','5 jaar']],
     faq:[['Kan de airco ook verwarmen?','Ja, als efficiënte aanvulling op je bestaande verwarming in het voor- en najaar — niet als volledige vervanging van je cv-ketel.'],['Heb ik een vergunning nodig voor de buitenunit?','In de meeste gevallen niet. We checken dit vooraf samen met je aan de hand van je woning.']],
@@ -533,7 +533,7 @@ var PRODUCTS = {
     headline:'Warm water zonder gasaansluiting.',
     bullets:['Ideaal in combinatie met zonnepanelen — warm water overdag opslaan','Compact model, past in de meeste meterkasten','Energielabel A+'],
     cta:'Bereken mijn prijs', price:'vanaf € 1.199',
-    image:'/images/product-boiler.jpg', imgScale:1,
+    image:'/images/product-boiler.jpg', imgScale:1, heroImage:'/images/boiler-installatie.jpg',
     description:'Een elektrische boiler verwarmt je water zonder gasaansluiting, en is een logische stap als je al bezig bent met verduurzamen. Met zonnepanelen erbij warm je overdag op — het goedkoopste moment.',
     specs:[['Inhoud','200 liter'],['COP','3,1'],['Energielabel','A+'],['Aansluiting','230V'],['Opwarmtijd','ca. 4 uur'],['Garantie','5 jaar']],
     faq:[['Past dit ook bij een klein huishouden?','Ja, we adviseren ook kleinere inhoudsmaten voor 1–2 personen — dat bepalen we samen op basis van je verbruik.'],['Kan dit naast een warmtepomp?','Meestal regelt de warmtepomp dan het warme water; een losse boiler is vooral zinvol zonder warmtepomp.']]
@@ -652,7 +652,9 @@ function renderProduct(slug){
     return;
   }
 
-  var media = p.image
+  var media = p.heroImage
+    ? '<img src="'+p.heroImage+'" alt="'+escapeAttr(p.name)+' in huis">'
+    : p.image
     ? '<img src="'+p.image+'" alt="'+escapeAttr(p.name)+'" style="transform:scale('+p.imgScale+')">'
     : '<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">'+STEKKIE_ICON+'</div>';
 
