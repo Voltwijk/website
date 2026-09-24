@@ -5,6 +5,7 @@ category: Laadpaal
 product: laadpaal
 lead: Een laadpaal vraagt urenlang veel stroom. Als tegelijk de warmtepomp draait en er op inductie wordt gekookt, kan je hoofdzekering het begeven. Load balancing voorkomt dat.
 summary: Load balancing past het laadvermogen van je laadpaal aan zodat je hoofdzekering niet overbelast raakt || Statisch load balancing werkt met een vaste grens, dynamisch meet het werkelijke verbruik in huis || Dynamisch load balancing kan een duurdere, zwaardere aansluiting vaak overbodig maken || Het vervangt geen veiligheidsvoorzieningen: de laadpaal heeft een eigen groep en de juiste aardlekbeveiliging volgens NEN 1010 nodig
+image: laadpaal-gevel
 ---
 Een laadpaal is voor de meeste huizen de grootste verbruiker die er ooit bij komt. Hij vraagt niet kort veel stroom zoals een waterkoker, maar urenlang achter elkaar. Tel daar een warmtepomp, een inductiekookplaat of een boiler bij op, en je aansluiting komt snel aan zijn grens.
 
