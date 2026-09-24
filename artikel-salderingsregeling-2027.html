@@ -581,17 +581,7 @@ var VW_URLS = {
 <script>
 var STEKKIE_ICON = '<svg width="72" height="72" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#0F6E6B"/><clipPath id="vs1L"><rect x="-17" y="-100" width="992" height="1640"/></clipPath><clipPath id="vs1R"><rect x="976" y="-100" width="992" height="1640"/></clipPath><g transform="translate(16.19 71.90) scale(0.03465 -0.03465)"><path clip-path="url(#vs1L)" fill="#fff" d="M444 0 23 1440H276L563 400L849 1438L1102 1440L1389 400L1675 1440H1928L1508 0H1270L975 1024L682 0Z"/><path clip-path="url(#vs1R)" fill="#6FD6C8" d="M444 0 23 1440H276L563 400L849 1438L1102 1440L1389 400L1675 1440H1928L1508 0H1270L975 1024L682 0Z"/><circle cx="976" cy="1440" r="176" fill="#FF6B5B"/></g></svg>';
 
-var GENERIC_REVIEWS = [
-  {q:'"De prijs die op de site stond was precies wat ik betaalde."', n:'Marieke, Utrecht'},
-  {q:'"Binnen tien minuten besteld, binnen drie weken geïnstalleerd."', n:'Jeroen, Almere'},
-  {q:'"Geen verkoper aan de deur, gewoon een duidelijke offerte online."', n:'Hassan, Eindhoven'}
-];
 
-var REVIEW_TEMPLATES = [
-  {n:'Marieke, Utrecht', t:function(p){ return '"De prijs die op de site stond voor de '+p.name.toLowerCase()+' was precies wat ik uiteindelijk betaalde."'; }},
-  {n:'Jeroen, Almere', t:function(p){ return '"Binnen tien minuten besteld, binnen drie weken had ik de '+p.name.toLowerCase()+' werkend."'; }},
-  {n:'Hassan, Eindhoven', t:function(p){ return '"Ze rekenden eerlijk voor of een '+p.name.toLowerCase()+' bij ons wel zou lonen."'; }}
-];
 
 var RELATED = {
   batterij:['zonnepanelen','meterkast'],
@@ -819,9 +809,14 @@ function renderProduct(slug){
           '</div>' +
         '</div>';
       }).join('')
-    : REVIEW_TEMPLATES.map(function(r){
-        return '<div class="card" style="padding:22px;"><div style="color:var(--accent);font-size:14px;letter-spacing:2px;">★★★★★</div><p style="font-size:14px;color:#33413F;margin-top:10px;line-height:1.5;">'+r.t(p)+'</p><div style="font-size:12px;color:var(--ink-faint);margin-top:12px;">— '+r.n+'</div></div>';
-      }).join('');
+    : '<div class="card" style="grid-column:1/-1;padding:22px 24px;">' +
+        '<div style="display:flex;align-items:center;gap:12px 20px;flex-wrap:wrap;justify-content:space-between;">' +
+          '<div><div style="font-family:\'Bricolage Grotesque\',system-ui,sans-serif;font-weight:700;font-size:19px;color:var(--ink);"><span style="color:var(--accent);letter-spacing:2px;">★★★★★</span> 4,7 / 5 op Google</div>' +
+          '<div style="font-size:13px;color:var(--ink-faint);margin-top:4px;">Echte Google-reviews van onze klanten · meer dan 12.500 installaties</div></div>' +
+          '<a href="https://www.google.com/maps/search/?api=1&query=Voltwijk+Zevenbergen" target="_blank" rel="noopener" style="font-weight:800;color:var(--primary);text-decoration:none;font-size:14px;">Alle reviews op Google →</a>' +
+        '</div>' +
+        '<div class="ti-slot" style="margin-top:16px;"></div>' +
+      '</div>';
 
   var faqHtml = p.faq.map(function(f){
     return '<details><summary>'+f[0]+'</summary><p>'+f[1]+'</p></details>';
@@ -901,6 +896,8 @@ function renderProduct(slug){
       '<div class="faq" style="margin-top:20px;">'+faqHtml+'</div>' +
     '</div></div>' ;
 
+  var tiSlot = root.querySelector('.ti-slot');
+  if(tiSlot){ var tiS = document.createElement('script'); tiS.defer = true; tiS.async = true; tiS.src = 'https://cdn.trustindex.io/loader.js?2c27991823f31136476602c270b'; tiSlot.appendChild(tiS); }
   initReveal(root);
 }
 
