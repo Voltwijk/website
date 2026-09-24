@@ -5,6 +5,7 @@ category: Meterkast
 product: meterkast
 lead: Je groepenkast zorgt ervoor dat stroom veilig door je huis gaat. Wie begrijpt hoe groepen en aardlekschakelaars werken, snapt ook waarom een warmtepomp of laadpaal soms een aanpassing vraagt.
 summary: Een groep is een aparte stroomkring met een eigen beveiliging tegen overbelasting en kortsluiting || Een aardlekschakelaar beschermt tegen lekstroom en schakelt bij een lek binnen een fractie van een seconde uit || Type A is de gangbare standaard; type B (of type A met 6 mA DC-detectie in de laadpaal) is nodig bij laadpalen || Grote verbruikers horen op een eigen groep, en alles moet volgens NEN 1010
+image: groepenkast-detail
 ---
 In bijna elke meterkast hangt een rij schakelaars en knoppen die de meeste mensen alleen aanraken als de stroom is uitgevallen. Dat is je **groepenkast**. Hij verdeelt de stroom over je huis en beschermt je tegen brand en elektrische schokken.
 
