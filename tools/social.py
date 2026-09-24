@@ -39,9 +39,11 @@ BLOCK = f'''<!-- social:start -->
 </div></div>
 <!-- social:end -->
 '''
+ANCHOR = {'index.html': '  <div class="blk-mesh">\n  <!-- GARANTIE & ZEKERHEID', 'over-ons.html': '<div class="site-footer"'}
 for f in ['index.html', 'over-ons.html']:
     s = open(f, encoding='utf-8').read()
-    s = re.sub(r'<!-- social:start -->.*?<!-- social:end -->\n', '', s, flags=re.S)
-    s = s.replace('<div class="site-footer"', BLOCK + '\n<div class="site-footer"', 1)
+    s = re.sub(r'<!-- social:start -->.*?<!-- social:end -->\n\n?', '', s, flags=re.S)
+    assert ANCHOR[f] in s, f
+    s = s.replace(ANCHOR[f], BLOCK + '\n' + ANCHOR[f], 1)
     open(f, 'w', encoding='utf-8').write(s)
 print('ok')
