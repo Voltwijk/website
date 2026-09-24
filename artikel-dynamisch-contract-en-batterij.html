@@ -23,6 +23,17 @@
 <!-- seo:end -->
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
+/* vw-brandmark:start */
+:root{--vwm-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%20-200%201950%201660%22%3E%3Cg%20transform%3D%22translate%280%201440%29%20scale%281%20-1%29%22%3E%3Cpath%20d%3D%22M444%200%2023%201440H276L563%20400L849%201438L1102%201440L1389%20400L1675%201440H1928L1508%200H1270L975%201024L682%200Z%22%2F%3E%3Ccircle%20cx%3D%22976%22%20cy%3D%221440%22%20r%3D%22176%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");}
+.pill::before{content:"";width:13px;height:11px;flex-shrink:0;--vwm-dot:1.3px;background:radial-gradient(circle var(--vwm-dot,1.2px) at 50.05% 12%, #FF6B5B 98%, transparent 100%),currentColor;-webkit-mask:var(--vwm-mask) center/contain no-repeat;mask:var(--vwm-mask) center/contain no-repeat;opacity:.9;}
+.site-footer::after{content:"";position:absolute;right:-60px;bottom:-70px;width:420px;height:358px;pointer-events:none;z-index:0;background:rgba(255,255,255,.035);-webkit-mask:var(--vwm-mask) center/contain no-repeat;mask:var(--vwm-mask) center/contain no-repeat;}
+.site-footer > *{position:relative;z-index:1;}
+.vw-endmark{display:flex;align-items:center;gap:14px;margin:8px auto 36px;max-width:220px;color:var(--primary);}
+.vw-endmark::before,.vw-endmark::after{content:"";flex:1;height:1px;background:var(--border);}
+.vw-endmark span{width:22px;height:19px;flex-shrink:0;--vwm-dot:2.2px;background:radial-gradient(circle var(--vwm-dot,1.2px) at 50.05% 12%, #FF6B5B 98%, transparent 100%),currentColor;-webkit-mask:var(--vwm-mask) center/contain no-repeat;mask:var(--vwm-mask) center/contain no-repeat;}
+@media (max-width:700px){.site-footer::after{width:260px;height:222px;right:-40px;bottom:60px;}}
+/* vw-brandmark:end */
+
 .nav-cta-link{position:relative;} .nav-cta-link::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;border-radius:2px;background:var(--mint);opacity:.9;} #siteNav.is-stuck .nav-cta-link::after,#siteNav.on-light .nav-cta-link::after{background:var(--primary);}
 
 h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
@@ -356,6 +367,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
 
 
 
+
 <!-- rel:start --><style>
 .art-body{font-size:16px;color:var(--ink-soft);line-height:1.75;overflow-wrap:break-word;}
 .art-body p{margin:0 0 18px;}
@@ -390,7 +402,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
 .rel-list a:hover{border-color:var(--primary);transform:translateY(-2px);}
 .rel-list a span{display:block;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px;}
 @media (max-width:560px){ .rel-prod{flex-wrap:wrap;} .rel-prod .go{margin-left:0;} .art-body{font-size:15.5px;} }
-</style><div class="blk-light"><div class="wrap rel-wrap" style="max-width:760px;"><a class="rel-prod" href="/product-batterij"><img loading="lazy" decoding="async" src="/images/thumb-batterij.webp" alt="Thuisbatterij"><div><div class="k">Direct regelen</div><div class="n">Thuisbatterij · vanaf € 3.499</div><div class="p">Vaste prijs, inclusief installatie door ons eigen team.</div></div><span class="go">Bekijk thuisbatterij →</span></a>
+</style><div class="blk-light"><div class="wrap rel-wrap" style="max-width:760px;"><div class="vw-endmark" aria-hidden="true"><span></span></div><a class="rel-prod" href="/product-batterij"><img loading="lazy" decoding="async" src="/images/thumb-batterij.webp" alt="Thuisbatterij"><div><div class="k">Direct regelen</div><div class="n">Thuisbatterij · vanaf € 3.499</div><div class="p">Vaste prijs, inclusief installatie door ons eigen team.</div></div><span class="go">Bekijk thuisbatterij →</span></a>
 <h2 class="vw-heading" style="font-size:22px;margin-top:40px;">Meer over thuisbatterij</h2><div class="rel-list"><a href="/artikel-thuisbatterij-na-salderen"><span>Thuisbatterij</span>Thuisbatterij: nu salderen verdwijnt, wordt dit dé investering</a><a href="/artikel-btw-thuisbatterij-terugvragen"><span>Thuisbatterij</span>Krijg je de btw terug op een thuisbatterij? Het eerlijke antwoord</a><a href="/artikel-ems-energiemanagementsysteem-thuisbatterij"><span>Thuisbatterij</span>EMS voor je thuisbatterij: wat een energiemanagementsysteem doet</a><a href="/artikel-thuisbatterij-hoe-groot"><span>Thuisbatterij</span>Hoe groot moet een thuisbatterij zijn? Zo bepaal je de capaciteit</a><a href="/artikel-wat-doet-een-thuisbatterij"><span>Thuisbatterij</span>Wat doet een thuisbatterij? Zo werkt het, eerlijk uitgelegd</a><a href="/artikel-salderingsregeling-2027"><span>Zonnepanelen</span>Salderingsregeling stopt per 2027: wat verandert er echt voor jou?</a></div>
 <p style="margin-top:18px;font-size:14px;"><a href="/inzichten#batterij" style="color:var(--primary);font-weight:800;text-decoration:none;">Alle artikelen over thuisbatterij →</a></p></div></div><!-- rel:end -->
 
