@@ -2,13 +2,26 @@
 <html lang="nl">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preload" as="image" href="/videos/hero-2-poster.webp" fetchpriority="high">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#10201F">
-<title>Voltwijk</title>
-<meta name="description" content="Voltwijk — thuisbatterijen, zonnepanelen, warmtepompen en meer, tegen een vaste, eerlijke prijs en geïnstalleerd door eigen monteurs.">
+<title>Zonnepanelen, thuisbatterij &amp; warmtepomp | Voltwijk</title>
+<meta name="description" content="Zonnepanelen, thuisbatterij, warmtepomp, airco of laadpaal met een vaste prijs vooraf, geïnstalleerd door ons eigen team. Bereken direct je prijs.">
 <link rel="canonical" href="https://voltwijk.nl/">
+<!-- seo:start -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Voltwijk">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:title" content="Zonnepanelen, thuisbatterij &amp; warmtepomp | Voltwijk">
+<meta property="og:description" content="Zonnepanelen, thuisbatterij, warmtepomp, airco of laadpaal met een vaste prijs vooraf, geïnstalleerd door ons eigen team. Bereken direct je prijs.">
+<meta property="og:url" content="https://voltwijk.nl/">
+<meta property="og:image" content="https://voltwijk.nl/images/og-voltwijk.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Electrician","@id":"https://voltwijk.nl/#bedrijf","name":"Voltwijk","legalName":"Voltwijk B.V.","url":"https://voltwijk.nl/","logo":"https://voltwijk.nl/brand/voltwijk-icoon-512.png","image":"https://voltwijk.nl/images/og-voltwijk.jpg","telephone":"+31853335687","email":"info@voltwijk.nl","priceRange":"€€","address":{"@type":"PostalAddress","streetAddress":"Schoenmakerij 15a","postalCode":"4762 AS","addressLocality":"Zevenbergen","addressCountry":"NL"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"17:30"}],"sameAs":["https://instagram.com/voltwijk","https://www.tiktok.com/@voltwijk"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://voltwijk.nl/#website","name":"Voltwijk","url":"https://voltwijk.nl/","inLanguage":"nl-NL","publisher":{"@id":"https://voltwijk.nl/#bedrijf"}}</script>
+<!-- seo:end -->
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
 
@@ -16,7 +29,7 @@
     --bg:#F5F7F5; --surface:#FFFFFF; --surface-tint:#E4F0EF; --ink:#10201F; --ink-soft:#233532;
     --ink-faint:#54615F; --border:#E6ECEA; --primary:#0F6E6B; --primary-dark:#0B4F4D; --primary-deep:#08403D;
     --accent:#FF6B5B; --accent-deep:#C6402E; --dark:#10201F; --dark-surface:#1B2F2D; --dark-surface-2:#2A3547; --dark-text-muted:#9FB0AD;
-    --dark-text-faint:#6E8985; --mint:#6FD6C8; --pill-bg:#D6EAE8;
+    --dark-text-faint:#7A948F; --mint:#6FD6C8; --pill-bg:#D6EAE8;
     --accent-tint:#FFE3DE; --mint-tint:#E4F0EF;
     --warm-1:#FCF9F4; --warm-2:#F0E1CC; --warm-3:#E0C39D; --warm-text:#6B4F38;
   }
@@ -47,7 +60,7 @@
   .blk-asphalt .vw-heading, .blk-asphalt h2{color:#fff;}
   .blk-asphalt p{color:var(--dark-text-muted);}
   .blk-asphalt .pill{background:var(--dark-surface);color:var(--mint);}
-  .blk-mesh{background:linear-gradient(150deg, var(--warm-1) 0%, var(--warm-2) 55%, var(--warm-3) 100%);background-size:170% 170%;animation:meshDrift 30s ease-in-out infinite alternate;border-radius:40px 40px 0 0;color:var(--dark);}
+  .blk-mesh{background:linear-gradient(150deg, var(--warm-1) 0%, var(--warm-2) 55%, var(--warm-3) 100%);background-size:100% 100%;border-radius:40px 40px 0 0;color:var(--dark);}
   @keyframes meshDrift{0%{background-position:0% 30%;}100%{background-position:100% 70%;}}
   @media (prefers-reduced-motion: reduce){ .blk-mesh{animation:none;} }
   .blk-mesh .vw-heading, .blk-mesh h2, .blk-mesh h3{color:var(--dark);}
@@ -103,7 +116,7 @@
   .tilt-card:hover{transform:translateY(-6px) rotate(-.6deg);box-shadow:0 22px 40px -20px rgba(16,32,31,.25);}
   .stat-card{border-radius:18px;padding:18px 20px;display:flex;flex-direction:column;gap:4px;min-width:150px;}
   .marquee{overflow:hidden;white-space:nowrap;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--surface);}
-  .marquee-track{display:inline-flex;gap:40px;padding:14px 0;animation:marquee 26s linear infinite;}
+  .marquee-track{display:inline-flex;gap:40px;padding:14px 0;animation:marquee 26s linear infinite;will-change:transform;}
   .marquee-track span{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:14px;color:var(--ink-faint);display:inline-flex;align-items:center;gap:10px;white-space:nowrap;}
   @keyframes marquee{ from{transform:translateX(0);} to{transform:translateX(-50%);} }
   @media (prefers-reduced-motion: reduce){ .marquee-track{animation:none;} }
@@ -111,7 +124,7 @@
 
   /* MOTION PASS — extra levendigheid: hero zoom, gestaffelde product-/review-entrees,
      icoon-tekenanimatie, en een zachte pulse op de belangrijkste CTA-knop */
-  .hero-video{animation:heroZoom 24s ease-in-out infinite alternate;transform-origin:center;}
+  .hero-video{animation:heroZoom 24s ease-in-out infinite alternate;transform-origin:center;will-change:transform;}
   @keyframes heroZoom{ from{transform:scale(1);} to{transform:scale(1.07);} }
   @media (prefers-reduced-motion: reduce){ .hero-video{animation:none;} }
 
@@ -136,7 +149,7 @@
   @keyframes iconDraw{ to{stroke-dashoffset:0;} }
 
   @keyframes ctaPulse{ 0%{box-shadow:0 0 0 0 rgba(15,110,107,.35);} 70%{box-shadow:0 0 0 14px rgba(15,110,107,0);} 100%{box-shadow:0 0 0 0 rgba(15,110,107,0);} }
-  #ctaGrid .btn-primary{animation:ctaPulse 2.6s ease-out infinite;}
+  #ctaGrid .btn-primary{animation:ctaPulse 2.6s ease-out 3;}
   @media (prefers-reduced-motion: reduce){
     .reveal.is-visible .pgrid .pcard, .reveal.is-visible #reviewsGrid .card, .reveal.is-visible .icon-draw path, #ctaGrid .btn-primary{ animation:none; }
     .icon-draw path{ stroke-dashoffset:0; }
@@ -299,8 +312,8 @@
 
 <!-- HERO — video -->
   <div style="position:relative;width:100%;height:100vh;height:100svh;min-height:520px;overflow:hidden;background:var(--dark);">
-    <video autoplay muted loop playsinline class="hero-video" poster="videos/hero-2-poster.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
-      <source src="videos/hero-3.mp4" type="video/mp4">
+    <video autoplay muted loop playsinline class="hero-video" poster="/videos/hero-2-poster.webp" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+      <source src="/videos/hero-3-mobile.mp4" type="video/mp4" media="(max-width: 800px)"><source src="/videos/hero-3.mp4" type="video/mp4">
     </video>
     <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(16,32,31,0.55) 0%, rgba(16,32,31,0.18) 16%, rgba(16,32,31,0) 30%), linear-gradient(0deg, rgba(16,32,31,0.78) 0%, rgba(16,32,31,0.25) 45%, rgba(16,32,31,0) 65%);"></div>
 
@@ -341,7 +354,7 @@
 
     <div class="pgrid">
       <a href="/product-batterij" class="pcard" style="--row-accent:var(--primary);">
-        <span class="pcard-thumb"><img src="/images/thumb-batterij.jpg" alt="Thuisbatterij" loading="lazy"></span>
+        <span class="pcard-thumb"><img src="/images/thumb-batterij.webp" alt="Thuisbatterij" loading="lazy"></span>
         <span class="pcard-name">Thuisbatterij</span>
         <span class="pcard-spec">5 kWh · 10 jaar garantie</span>
         <span class="pcard-foot">
@@ -350,7 +363,7 @@
         </span>
       </a>
       <a href="/product-zonnepanelen" class="pcard" style="--row-accent:var(--primary);">
-        <span class="pcard-thumb"><img src="/images/thumb-zonnepanelen.jpg" alt="Zonnepanelen" loading="lazy"></span>
+        <span class="pcard-thumb"><img src="/images/thumb-zonnepanelen.webp" alt="Zonnepanelen" loading="lazy"></span>
         <span class="pcard-name">Zonnepanelen</span>
         <span class="pcard-spec">440 Wp · full-black</span>
         <span class="pcard-foot">
@@ -359,7 +372,7 @@
         </span>
       </a>
       <a href="/product-warmtepomp" class="pcard" style="--row-accent:var(--primary);">
-        <span class="pcard-thumb"><img src="/images/thumb-warmtepomp.jpg" alt="Warmtepomp" loading="lazy"></span>
+        <span class="pcard-thumb"><img src="/images/thumb-warmtepomp.webp" alt="Warmtepomp" loading="lazy"></span>
         <span class="pcard-name">Warmtepomp</span>
         <span class="pcard-spec">COP 4,7 · lucht/water</span>
         <span class="pcard-foot">
@@ -368,7 +381,7 @@
         </span>
       </a>
       <a href="/product-airco" class="pcard" style="--row-accent:var(--primary);">
-        <span class="pcard-thumb"><img src="/images/thumb-airco.jpg" alt="Airconditioning" loading="lazy"></span>
+        <span class="pcard-thumb"><img src="/images/thumb-airco.webp" alt="Airconditioning" loading="lazy"></span>
         <span class="pcard-name">Airconditioning</span>
         <span class="pcard-spec">Energielabel A+++</span>
         <span class="pcard-foot">
@@ -377,7 +390,7 @@
         </span>
       </a>
       <a href="/product-boiler" class="pcard" style="--row-accent:var(--primary);">
-        <span class="pcard-thumb"><img src="/images/thumb-boiler.jpg" alt="Elektrische boiler" loading="lazy"></span>
+        <span class="pcard-thumb"><img src="/images/thumb-boiler.webp" alt="Elektrische boiler" loading="lazy"></span>
         <span class="pcard-name">Elektrische boiler</span>
         <span class="pcard-spec">200 liter · label A+</span>
         <span class="pcard-foot">
@@ -386,7 +399,7 @@
         </span>
       </a>
       <a href="/product-laadpaal" class="pcard" style="--row-accent:var(--primary);">
-        <span class="pcard-thumb"><img src="/images/thumb-laadpaal.jpg" alt="Laadpaal" loading="lazy"></span>
+        <span class="pcard-thumb"><img src="/images/thumb-laadpaal.webp" alt="Laadpaal" loading="lazy"></span>
         <span class="pcard-name">Laadpaal</span>
         <span class="pcard-spec">11 kW · slim laden</span>
         <span class="pcard-foot">
@@ -395,7 +408,7 @@
         </span>
       </a>
       <a href="/product-meterkast" class="pcard" style="--row-accent:var(--primary);">
-        <span class="pcard-thumb"><img src="/images/thumb-meterkast.jpg" alt="Meterkast" loading="lazy"></span>
+        <span class="pcard-thumb"><img src="/images/thumb-meterkast.webp" alt="Meterkast" loading="lazy"></span>
         <span class="pcard-name">Meterkast</span>
         <span class="pcard-spec">Vaak binnen 1 dag</span>
         <span class="pcard-foot">
@@ -414,7 +427,7 @@
     <div class="wrap reveal" style="padding-top:88px;padding-bottom:88px;">
       <div class="row" style="align-items:stretch;">
         <div style="border-radius:24px;overflow:hidden;aspect-ratio:4/3;">
-          <img src="/images/batterij-zolder.jpg" alt="Thuisbatterij van Voltwijk, geïnstalleerd op zolder" style="width:100%;height:100%;object-fit:cover;display:block;">
+          <img loading="lazy" decoding="async" src="/images/batterij-zolder.webp" alt="Thuisbatterij van Voltwijk, geïnstalleerd op zolder" style="width:100%;height:100%;object-fit:cover;display:block;">
         </div>
         <div style="display:flex;flex-direction:column;">
           <div class="pill" style="background:#fff;">Thuisbatterij uitgelicht</div>
@@ -461,7 +474,7 @@
           <a href="/product-airco" style="margin-top:18px;display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:13.5px;color:var(--primary);text-decoration:none;">Meer over de airconditioning<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
         <div style="border-radius:24px;overflow:hidden;aspect-ratio:4/3;">
-          <img src="/images/airco-sfeer.jpg" alt="Design-airco aan de muur in een warme woonkamer" style="width:100%;height:100%;object-fit:cover;object-position:center 35%;display:block;">
+          <img loading="lazy" decoding="async" src="/images/airco-sfeer.webp" alt="Design-airco aan de muur in een warme woonkamer" style="width:100%;height:100%;object-fit:cover;object-position:center 35%;display:block;">
         </div>
       </div>
     </div>
@@ -515,7 +528,7 @@
   <!-- HOE HET WERKT — foto + tekst in één rij, weheat-stijl -->
   <div id="hoe-het-werkt" class="wrap row reveal" style="padding-top:64px;padding-bottom:64px;align-items:center;position:relative;scroll-margin-top:96px;">
     <div style="border-radius:24px;overflow:hidden;position:relative;aspect-ratio:4/3;">
-      <img id="hwImg" src="" alt="" style="width:100%;height:100%;object-fit:cover;display:block;">
+      <img loading="lazy" decoding="async" id="hwImg" src="" alt="" style="width:100%;height:100%;object-fit:cover;display:block;">
       <div id="hwIcon" style="display:none;position:absolute;inset:0;align-items:center;justify-content:center;background:var(--surface);">
         <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2h6l1 4H8z"/><path d="M5 6h14l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z"/><path d="M9 11l2 2 4-4"/></svg>
       </div>
@@ -559,7 +572,7 @@
     <div class="spec-scroll">
       <a class="spec-sticky" id="specLink" href="/product-batterij" style="display:block;text-decoration:none;color:inherit;">
         <div class="spec-image-box">
-          <img id="specImg" src="/images/thumb-batterij.jpg" alt="" style="transform:scale(1)">
+          <img loading="lazy" decoding="async" id="specImg" src="/images/thumb-batterij.webp" alt="" style="transform:scale(1)">
         </div>
         <div style="margin-top:18px;display:flex;align-items:baseline;justify-content:space-between;gap:12px;">
           <div id="specTitle" class="vw-heading" style="font-size:19px;">Thuisbatterij</div>
@@ -631,7 +644,7 @@
   <!-- OVER ONS / INSTALLATEURS -->
   <div id="over-ons" class="wrap row reveal" style="padding-top:88px;padding-bottom:88px;position:relative;scroll-margin-top:96px;">
     <div style="border-radius:24px;overflow:hidden;aspect-ratio:4/3;">
-      <img src="/images/monteur-en-klant.jpg" alt="Monteur en klant van Voltwijk lachen samen buiten na de installatie" style="width:100%;height:100%;object-fit:cover;display:block;">
+      <img loading="lazy" decoding="async" src="/images/monteur-en-klant.webp" alt="Monteur en klant van Voltwijk lachen samen buiten na de installatie" style="width:100%;height:100%;object-fit:cover;display:block;">
     </div>
     <div>
       <div class="pill">Over Voltwijk</div>
@@ -692,7 +705,7 @@
     <p style="text-align:center;font-size:16px;margin-top:12px;max-width:460px;margin-left:auto;margin-right:auto;">Geen gekochte reviews — gewoon onze klanten, in hun eigen woorden.</p>
     <div id="reviewsGrid" style="margin-top:44px;display:grid;grid-template-columns:1.35fr 1fr;grid-template-rows:1fr 1fr;gap:20px;">
       <div class="card tilt-card" style="grid-row:1 / 3;padding:0;background:#FBEAEA;border:none;overflow:hidden;">
-        <video controls preload="none" poster="videos/review-6-poster.jpg" style="width:100%;aspect-ratio:4/3;display:block;background:var(--dark);object-fit:cover;">
+        <video controls preload="none" poster="videos/review-6-poster.webp" style="width:100%;aspect-ratio:4/3;display:block;background:var(--dark);object-fit:cover;">
           <source src="videos/review-6.mp4" type="video/mp4">
         </video>
         <div style="padding:22px 26px 26px;">
@@ -701,7 +714,7 @@
         </div>
       </div>
       <div class="card tilt-card" style="padding:0;background:#FBEAEA;border:none;overflow:hidden;display:flex;">
-        <video controls preload="none" poster="videos/review-1-poster.jpg" style="width:42%;flex-shrink:0;object-fit:cover;display:block;background:var(--dark);">
+        <video controls preload="none" poster="videos/review-1-poster.webp" style="width:42%;flex-shrink:0;object-fit:cover;display:block;background:var(--dark);">
           <source src="videos/review-1.mp4" type="video/mp4">
         </video>
         <div style="padding:16px 18px;display:flex;flex-direction:column;justify-content:center;">
@@ -710,7 +723,7 @@
         </div>
       </div>
       <div class="card tilt-card" style="padding:0;background:#FBEAEA;border:none;overflow:hidden;display:flex;">
-        <video controls preload="none" poster="videos/review-2-poster.jpg" style="width:42%;flex-shrink:0;object-fit:cover;display:block;background:var(--dark);">
+        <video controls preload="none" poster="videos/review-2-poster.webp" style="width:42%;flex-shrink:0;object-fit:cover;display:block;background:var(--dark);">
           <source src="videos/review-2.mp4" type="video/mp4">
         </video>
         <div style="padding:16px 18px;display:flex;flex-direction:column;justify-content:center;">
@@ -729,7 +742,7 @@
   <!-- GARANTIE & ZEKERHEID — vervangt Buurtprijs -->
   <div id="garantie" class="wrap row reveal" style="padding-top:88px;padding-bottom:88px;scroll-margin-top:96px;">
     <div class="tilt-card" style="border-radius:24px;overflow:hidden;aspect-ratio:4/3;">
-      <img src="/images/monteur-aan-het-werk.jpg" alt="Voltwijk-monteur aan het werk op zolder" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;">
+      <img loading="lazy" decoding="async" src="/images/monteur-aan-het-werk.webp" alt="Voltwijk-monteur aan het werk op zolder" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;">
     </div>
     <div>
       <div class="pill">Garantie &amp; zekerheid</div>
@@ -840,7 +853,7 @@
     <div class="grid-3" style="margin-top:32px;">
       <a href="/artikel-warmtepomp-sturing" class="card tilt-card" style="padding:0;overflow:hidden;display:block;text-decoration:none;color:inherit;">
         <div style="aspect-ratio:4/3;overflow:hidden;">
-          <img src="/images/warmtepomp-app.jpg" alt="Man bedient zijn warmtepomp op afstand via zijn telefoon" style="width:100%;height:100%;object-fit:cover;display:block;">
+          <img loading="lazy" decoding="async" src="/images/warmtepomp-app.webp" alt="Man bedient zijn warmtepomp op afstand via zijn telefoon" style="width:100%;height:100%;object-fit:cover;display:block;">
         </div>
         <div style="padding:20px 22px 24px;">
           <div style="font-size:11px;font-weight:700;letter-spacing:.05em;color:var(--primary);text-transform:uppercase;">Warmtepomp</div>
@@ -851,7 +864,7 @@
       </a>
       <a href="/artikel-zonnepanelen-prijs" class="card tilt-card" style="padding:0;overflow:hidden;display:block;text-decoration:none;color:inherit;">
         <div style="aspect-ratio:4/3;overflow:hidden;">
-          <img src="/images/zonnepanelen-dak.jpg" alt="Monteur plaatst zonnepanelen op een dak" style="width:100%;height:100%;object-fit:cover;display:block;">
+          <img loading="lazy" decoding="async" src="/images/zonnepanelen-dak.webp" alt="Monteur plaatst zonnepanelen op een dak" style="width:100%;height:100%;object-fit:cover;display:block;">
         </div>
         <div style="padding:20px 22px 24px;">
           <div style="font-size:11px;font-weight:700;letter-spacing:.05em;color:var(--primary);text-transform:uppercase;">Zonnepanelen</div>
@@ -862,7 +875,7 @@
       </a>
       <a href="/artikel-vergelijking" class="card tilt-card" style="padding:0;overflow:hidden;display:block;text-decoration:none;color:inherit;">
         <div style="aspect-ratio:4/3;overflow:hidden;">
-          <img src="/images/warmtepomp-tuinmuur.jpg" alt="Warmtepomp-buitenunit tegen een tuinmuur" style="width:100%;height:100%;object-fit:cover;display:block;">
+          <img loading="lazy" decoding="async" src="/images/warmtepomp-tuinmuur.webp" alt="Warmtepomp-buitenunit tegen een tuinmuur" style="width:100%;height:100%;object-fit:cover;display:block;">
         </div>
         <div style="padding:20px 22px 24px;">
           <div style="font-size:11px;font-weight:700;letter-spacing:.05em;color:var(--primary);text-transform:uppercase;">Vergelijking</div>
@@ -924,9 +937,9 @@
       </div>
       <div style="display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;margin-top:28px;padding-top:24px;border-top:1px solid #223634;">
         <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
-          <img src="/images/keurmerk-vca.png" alt="VCA gecertificeerd" style="height:32px;width:auto;display:block;">
-          <img src="/images/keurmerk-nen1010.png" alt="NEN 1010" style="height:44px;width:auto;display:block;">
-          <img src="/images/keurmerk-erkend-leerbedrijf.png" alt="Erkend leerbedrijf" style="height:44px;width:auto;display:block;">
+          <img loading="lazy" decoding="async" src="/images/keurmerk-vca.png" alt="VCA gecertificeerd" style="height:32px;width:auto;display:block;">
+          <img loading="lazy" decoding="async" src="/images/keurmerk-nen1010.png" alt="NEN 1010" style="height:44px;width:auto;display:block;">
+          <img loading="lazy" decoding="async" src="/images/keurmerk-erkend-leerbedrijf.png" alt="Erkend leerbedrijf" style="height:44px;width:auto;display:block;">
         </div>
         <div style="display:flex;align-items:center;gap:10px;">
           <a href="https://instagram.com/voltwijk" target="_blank" rel="noopener" aria-label="Instagram" style="width:34px;height:34px;border-radius:50%;border:1px solid #223634;display:flex;align-items:center;justify-content:center;color:#C9D6D3;transition:border-color .2s,color .2s;" onmouseover="this.style.borderColor='var(--mint)';this.style.color='var(--mint)';" onmouseout="this.style.borderColor='#223634';this.style.color='#C9D6D3';">
@@ -1111,7 +1124,7 @@ var PRODUCTS = {
     headline:'Sla je eigen stroom op — en gebruik hem wanneer jij dat wilt.',
     bullets:['Vanaf 2027 wordt terugleveren minder waard — een batterij vangt dat op','Slim laden en ontladen op basis van de actuele stroomprijs','10 jaar garantie, geïnstalleerd door ons eigen team'],
     cta:'Bereken mijn besparing', price:'vanaf € 3.499',
-    image:'/images/product-batterij.jpg', imgScale:1, heroImage:'/images/batterij-installatie.jpg',
+    image:'/images/product-batterij.webp', imgScale:1, heroImage:'/images/batterij-installatie.webp',
     description:'Een thuisbatterij slaat overdag opgewekte zonne-energie op, zodat je \'s avonds je eigen stroom gebruikt in plaats van duurdere stroom van het net te kopen. Onze batterij schakelt automatisch mee met de actuele stroomprijs, en is klaar voor de nieuwe salderingsregels vanaf 2027.',
     specs:[['Capaciteit','5 kWh'],['Vermogen','3,6 kW'],['Garantie','10 jaar'],['Levensduur','6.000 cycli'],['Afmetingen','60 x 120 x 20 cm'],['App-koppeling','Ja']],
     faq:[['Werkt de batterij ook zonder zonnepanelen?','Ja. De batterij kan ook stroom opslaan op momenten dat die goedkoop is, en die later gebruiken — al is de besparing het grootst in combinatie met zonnepanelen.'],['Wat gebeurt er bij een stroomstoring?','Standaard schakelt het systeem niet automatisch over als noodstroom; dat kan als optie worden toegevoegd.']]
@@ -1121,7 +1134,7 @@ var PRODUCTS = {
     headline:'Wek je eigen stroom op — met panelen die opvallen door hoe onopvallend ze zijn.',
     bullets:['Full-black panelen, netjes verwerkt in het dak','Rendement tot 22,8% per paneel','25 jaar productgarantie'],
     cta:'Bereken mijn besparing', price:'vanaf € 3.999 (12 panelen)',
-    image:'/images/product-zonnepanelen.jpg', imgScale:1, heroImage:'/images/zonnepanelen-installatie.jpg',
+    image:'/images/product-zonnepanelen.webp', imgScale:1, heroImage:'/images/zonnepanelen-installatie.webp',
     description:'Onze zonnepanelen worden op maat ontworpen voor jouw dak, met een full-black afwerking die rustig oogt vanaf de straat. Elk paneel wordt gemonteerd door ons eigen team, inclusief aanmelding bij je netbeheerder.',
     specs:[['Vermogen per paneel','440 Wp'],['Rendement','22,8%'],['Type','Full-black mono'],['Garantie paneel','25 jaar'],['Garantie omvormer','10 jaar'],['Levertijd','3–6 weken']],
     faq:[['Hoeveel panelen heb ik nodig?','Dat hangt af van je jaarverbruik en dakoppervlak — na het invullen van je postcode reken we dit voor je uit.'],['Is subsidie nog van toepassing?','Voor zonnepanelen geldt geen ISDE-subsidie meer, maar wel het verlaagde btw-tarief van 0%.']]
@@ -1131,7 +1144,7 @@ var PRODUCTS = {
     headline:'Van het gas af, zonder in te leveren op comfort.',
     bullets:['Werkt tot -10°C buitentemperatuur op volle capaciteit','COP tot 4,7 — 1 kWh stroom wordt bijna 5 kWh warmte','Subsidie (ISDE) direct verrekend in de prijs'],
     cta:'Bereken mijn besparing', price:'vanaf € 6.750',
-    image:'/images/product-warmtepomp.jpg', imgScale:1, heroImage:'/images/warmtepomp-installatie.jpg',
+    image:'/images/product-warmtepomp.webp', imgScale:1, heroImage:'/images/warmtepomp-installatie.webp',
     description:'Onze lucht/water-warmtepomp vervangt de cv-ketel en haalt warmte uit de buitenlucht, ook op koude dagen. Inclusief indicatieve ISDE-subsidie, aangevraagd door ons team, en geplaatst binnen een paar weken.',
     specs:[['Type','Lucht/water monoblock'],['Vermogen (A7/W35)','6 kW'],['COP (A7/W35)','4,7'],['Geluidsniveau','34 dB(A)'],['Subsidie ISDE','tot € 2.550'],['Garantie','7 jaar']],
     faq:[['Moet mijn cv-ketel weg?','In de meeste gevallen wel, tenzij je kiest voor een hybride opstelling — dat bespreken we tijdens de opname.'],['Is mijn huis geschikt?','Vrijwel elke woning met goede isolatie en (bij voorkeur) vloer- of lagetemperatuurverwarming is geschikt. We checken dit vooraf op basis van je verbruiksdata.']]
@@ -1141,13 +1154,13 @@ var PRODUCTS = {
     headline:'Koel in de zomer, warm in de tussenseizoenen.',
     bullets:['Energielabel A+++ — laag verbruik, ook bij intensief gebruik','Ook inzetbaar als efficiënte bijverwarming','Binnen 1 dag geïnstalleerd'],
     cta:'Bereken mijn prijs', price:'vanaf € 1.899',
-    image:'/images/product-airco.jpg', imgScale:1, heroImage:'/images/airco-installatie.jpg',
+    image:'/images/product-airco.webp', imgScale:1, heroImage:'/images/airco-installatie.webp',
     description:'Onze split-unit airco koelt in de zomer en verwarmt efficiënt in het voor- en najaar. Stil, energiezuinig, en in de meeste woningen binnen één dag geplaatst door ons eigen installatieteam.',
     specs:[['Type','Split-unit'],['Koelvermogen','3,5 kW'],['Verwarmingsvermogen','4,0 kW'],['Energielabel','A+++'],['Geluidsniveau binnenunit','19 dB(A)'],['Garantie','5 jaar']],
     faq:[['Kan de airco ook verwarmen?','Ja, als efficiënte aanvulling op je bestaande verwarming in het voor- en najaar — niet als volledige vervanging van je cv-ketel.'],['Heb ik een vergunning nodig voor de buitenunit?','In de meeste gevallen niet. We checken dit vooraf samen met je aan de hand van je woning.']],
     videos:[
-      {poster:'videos/review-2-poster.jpg', src:'videos/review-2.mp4', caption:'Videoreactie van een Voltwijk-klant'},
-      {poster:'videos/review-3-poster.jpg', src:'videos/review-3.mp4', caption:'Videoreactie van een Voltwijk-klant'}
+      {poster:'videos/review-2-poster.webp', src:'videos/review-2.mp4', caption:'Videoreactie van een Voltwijk-klant'},
+      {poster:'videos/review-3-poster.webp', src:'videos/review-3.mp4', caption:'Videoreactie van een Voltwijk-klant'}
     ]
   },
   boiler: {
@@ -1155,7 +1168,7 @@ var PRODUCTS = {
     headline:'Warm water zonder gasaansluiting.',
     bullets:['Ideaal in combinatie met zonnepanelen — warm water overdag opslaan','Compact model, past in de meeste meterkasten','Energielabel A+'],
     cta:'Bereken mijn prijs', price:'vanaf € 1.199',
-    image:'/images/product-boiler.jpg', imgScale:1, heroImage:'/images/boiler-installatie.jpg',
+    image:'/images/product-boiler.webp', imgScale:1, heroImage:'/images/boiler-installatie.webp',
     description:'Een elektrische boiler verwarmt je water zonder gasaansluiting, en is een logische stap als je al bezig bent met verduurzamen. Met zonnepanelen erbij warm je overdag op — het goedkoopste moment.',
     specs:[['Inhoud','200 liter'],['COP','3,1'],['Energielabel','A+'],['Aansluiting','230V'],['Opwarmtijd','ca. 4 uur'],['Garantie','5 jaar']],
     faq:[['Past dit ook bij een klein huishouden?','Ja, we adviseren ook kleinere inhoudsmaten voor 1–2 personen — dat bepalen we samen op basis van je verbruik.'],['Kan dit naast een warmtepomp?','Meestal regelt de warmtepomp dan het warme water; een losse boiler is vooral zinvol zonder warmtepomp.']]
@@ -1165,7 +1178,7 @@ var PRODUCTS = {
     headline:'Elke ochtend vertrekken met een volle accu.',
     bullets:['11 kW laadvermogen — een volle accu in enkele uren','Slim laden op de goedkoopste uren van de dag','Werkt met vrijwel elk elektrisch merk'],
     cta:'Bereken mijn prijs', price:'vanaf € 1.299',
-    image:'/images/product-laadpaal.jpg', imgScale:1, heroImage:'/images/laadpaal-installatie.jpg',
+    image:'/images/product-laadpaal.webp', imgScale:1, heroImage:'/images/laadpaal-installatie.webp',
     description:'Onze laadpaal wordt tegen de gevel of op een paal bij de oprit gemonteerd, en laadt slim op de momenten dat stroom het goedkoopst is. Inclusief app om je laadsessies te volgen.',
     specs:[['Laadvermogen','11 kW'],['Connector','Type 2'],['Connectiviteit','4G / wifi'],['Garantie','5 jaar'],['Afmetingen','30 x 20 x 10 cm'],['Kabellengte','5 of 7,5 meter']],
     faq:[['Kan de laadpaal buiten hangen?','Ja, de laadpaal is standaard geschikt voor buitengebruik.'],['Is een meterkastaanpassing nodig?','Soms wel — we checken dit vooraf, en regelen het in dezelfde afspraak als dat nodig is.']]
@@ -1175,7 +1188,7 @@ var PRODUCTS = {
     headline:'De basis op orde, voordat de rest erbij komt.',
     bullets:['Nodig voor een laadpaal, warmtepomp of batterij? Wij checken het vooraf','Groepenkast uitgebreid of vervangen door erkende monteurs','Vaak binnen dezelfde dag geregeld'],
     cta:'Bereken mijn prijs', price:'vanaf € 649',
-    image:'/images/product-meterkast.jpg', imgScale:1,
+    image:'/images/product-meterkast.webp', imgScale:1,
     description:'Veel thuisbatterijen, laadpalen en warmtepompen vragen om een uitgebreide of vervangen groepenkast. Onze monteurs beoordelen je meterkast vooraf en regelen de aanpassing, zodat de rest van de installatie zonder vertraging verloopt.',
     specs:[['Extra groepen','tot 4'],['Aardlekschakelaar type B','optioneel'],['Keuring','NEN 1010 inbegrepen'],['Uitvoering','meestal binnen 1 dag']],
     faq:[['Heb ik dit sowieso nodig?','Niet altijd — bij de meeste producten checken we dit vooraf op basis van foto\'s van je huidige meterkast.'],['Hoe lang duurt de aanpassing?','In de meeste gevallen een halve tot hele dag, afhankelijk van de omvang.']]
@@ -1275,9 +1288,9 @@ function renderProduct(slug){
   }
 
   var media = p.heroImage
-    ? '<img src="'+p.heroImage+'" alt="'+escapeAttr(p.name)+' in huis">'
+    ? '<img fetchpriority="high" src="'+p.heroImage+'" alt="'+escapeAttr(p.name)+' in huis">'
     : p.image
-    ? '<img src="'+p.image+'" alt="'+escapeAttr(p.name)+'" style="transform:scale('+p.imgScale+')">'
+    ? '<img fetchpriority="high" src="'+p.image+'" alt="'+escapeAttr(p.name)+'" style="transform:scale('+p.imgScale+')">'
     : '<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">'+STEKKIE_ICON+'</div>';
 
   var specsHtml = p.specs.map(function(s){
@@ -1312,7 +1325,7 @@ function renderProduct(slug){
     var rp = PRODUCTS[rs];
     if(!rp) return '';
     var rMedia = rp.image
-      ? '<img src="/images/thumb-'+rs+'.jpg" alt="'+escapeAttr(rp.name)+'" style="width:100%;height:100%;object-fit:cover;">'
+      ? '<img loading="lazy" decoding="async" src="/images/thumb-'+rs+'.webp" alt="'+escapeAttr(rp.name)+'" style="width:100%;height:100%;object-fit:cover;">'
       : '<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:var(--primary);">'+STEKKIE_ICON.replace(/width="72" height="72"/,'width="46" height="46"')+'</div>';
     return '<a href="'+VW_URLS.p[rs]+'" class="card tilt-card" style="text-decoration:none;color:inherit;padding:18px;display:flex;align-items:center;gap:16px;">' +
       '<div style="width:64px;height:64px;border-radius:14px;background:var(--bg);flex-shrink:0;overflow:hidden;">'+rMedia+'</div>' +
@@ -1691,11 +1704,11 @@ function vwLeadSubmit(form, blockId){
   try{
 
 var HW_STEPS = [
-  {num:'1', title:'Besparingscheck', desc:'Vul je postcode en woningtype in en zie binnen een minuut een eerste inschatting van je vaste prijs en besparing — nog voordat je ergens voor kiest.', cta:{label:'Check je besparing', href: VW_URLS.bereken}, media:{type:'img', src:'/images/hoe-het-werkt-1.jpg', alt:'Grootouders en kleindochter op de bank met hun telefoon, stap 1: besparingscheck', pos:'center 40%'}},
-  {num:'2', title:'Adviesgesprek', desc:'Nog vragen? Plan een gratis gesprek van 15 minuten met ons eigen team. Geen verkoper met een target — gewoon eerlijk advies over wat wel en niet zinvol is voor jouw huis.', cta:{label:'Plan adviesgesprek', href: VW_URLS.overOns}, media:{type:'img', src:'/images/hoe-het-werkt-2.jpg', alt:'Grootouders overleggen achter de laptop terwijl hun kleindochter op de bank ligt, stap 2: adviesgesprek', pos:'center 8%'}},
-  {num:'3', title:'Aanbod & planning', desc:'Je ontvangt een heldere offerte met een vaste prijs — geen verrassingen achteraf. Past het? Dan kies je zelf een installatiedatum die jou uitkomt.', cta:null, media:{type:'img', src:'/images/hoe-het-werkt-3-v2.jpg', alt:'Warmtepompen, binnenunits en boilervaten naast elkaar, stap 3: aanbod en planning', pos:'center'}},
-  {num:'4', title:'Installatie', desc:'Onze eigen monteurs — nooit een wisselende onderaannemer — plaatsen alles vakkundig. In de meeste woningen ben je binnen één dag klaar.', cta:null, media:{type:'img', src:'/images/hoe-het-werkt-4.jpg', alt:'Geïnstalleerde warmtepomp-buitenunit tegen een bakstenen gevel, stap 4: installatie', pos:'center 60%'}},
-  {num:'5', title:'Klaar voor de toekomst', desc:'Je bespaart direct op je energierekening, je huis is toekomstbestendig en de waarde stijgt mee — met 2 jaar garantie op de installatie.', cta:null, media:{type:'img', src:'/images/hoe-het-werkt-5.jpg', alt:'Kinderen spelen op de bank terwijl oma achter de laptop werkt, stap 5: klaar voor de toekomst', pos:'center 45%'}}
+  {num:'1', title:'Besparingscheck', desc:'Vul je postcode en woningtype in en zie binnen een minuut een eerste inschatting van je vaste prijs en besparing — nog voordat je ergens voor kiest.', cta:{label:'Check je besparing', href: VW_URLS.bereken}, media:{type:'img', src:'/images/hoe-het-werkt-1.webp', alt:'Grootouders en kleindochter op de bank met hun telefoon, stap 1: besparingscheck', pos:'center 40%'}},
+  {num:'2', title:'Adviesgesprek', desc:'Nog vragen? Plan een gratis gesprek van 15 minuten met ons eigen team. Geen verkoper met een target — gewoon eerlijk advies over wat wel en niet zinvol is voor jouw huis.', cta:{label:'Plan adviesgesprek', href: VW_URLS.overOns}, media:{type:'img', src:'/images/hoe-het-werkt-2.webp', alt:'Grootouders overleggen achter de laptop terwijl hun kleindochter op de bank ligt, stap 2: adviesgesprek', pos:'center 8%'}},
+  {num:'3', title:'Aanbod & planning', desc:'Je ontvangt een heldere offerte met een vaste prijs — geen verrassingen achteraf. Past het? Dan kies je zelf een installatiedatum die jou uitkomt.', cta:null, media:{type:'img', src:'/images/hoe-het-werkt-3-v2.webp', alt:'Warmtepompen, binnenunits en boilervaten naast elkaar, stap 3: aanbod en planning', pos:'center'}},
+  {num:'4', title:'Installatie', desc:'Onze eigen monteurs — nooit een wisselende onderaannemer — plaatsen alles vakkundig. In de meeste woningen ben je binnen één dag klaar.', cta:null, media:{type:'img', src:'/images/hoe-het-werkt-4.webp', alt:'Geïnstalleerde warmtepomp-buitenunit tegen een bakstenen gevel, stap 4: installatie', pos:'center 60%'}},
+  {num:'5', title:'Klaar voor de toekomst', desc:'Je bespaart direct op je energierekening, je huis is toekomstbestendig en de waarde stijgt mee — met 2 jaar garantie op de installatie.', cta:null, media:{type:'img', src:'/images/hoe-het-werkt-5.webp', alt:'Kinderen spelen op de bank terwijl oma achter de laptop werkt, stap 5: klaar voor de toekomst', pos:'center 45%'}}
 ];
 var hwIndex = 0;
 
@@ -1769,7 +1782,7 @@ hwRender();
       el.classList.add('is-active');
       var slug = el.getAttribute('data-slug');
       var p = PRODUCTS[slug];
-      if(p && p.image){ specImg.src = '/images/thumb-' + slug + '.jpg'; }
+      if(p && p.image){ specImg.src = '/images/thumb-' + slug + '.webp'; }
       var specLink = document.getElementById('specLink'); if(specLink){ specLink.href = '/product-' + slug; }
       if(specTitle) specTitle.textContent = el.getAttribute('data-title');
       if(specPrice) specPrice.textContent = el.getAttribute('data-price');
