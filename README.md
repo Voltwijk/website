@@ -86,3 +86,9 @@ Het logo is het woordmerk **VOLTWIJK** (Manrope Bold, omgezet naar vectoren) waa
 | `brand/voltwijk-w.svg` | Beeldmerk zonder vlak |
 
 Kleuren: inkt `#10201F`, teal `#0F6E6B`, mint `#6FD6C8`, koraal `#FF6B5B`. Favicons: `favicon.svg`, `favicon-32.png`, `favicon.ico`, `apple-touch-icon.png`.
+
+## SEO & snelheid (tools/)
+
+- `python3 tools/seo.py`: zet titels, meta descriptions, Open Graph en structured data (JSON-LD) op alle pagina's en maakt `sitemap.xml` opnieuw. Draai na nieuwe pagina's of prijswijzigingen (prijzen staan bovenin het script).
+- `node tools/prerender-products.js` (lokale server op poort 8765): zet de productinhoud als statische HTML in `product-*.html`, voor Google en om verspringen te voorkomen. Draai na wijzigingen aan `PRODUCTS` of de productlayout.
+- Afbeeldingen worden als `.webp` geladen; de `.jpg`-versies blijven voor deelafbeeldingen (Open Graph).
