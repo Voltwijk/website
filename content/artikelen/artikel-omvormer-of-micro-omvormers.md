@@ -2,6 +2,7 @@ title: Omvormer of micro-omvormers? String, optimizers en micro's vergeleken
 seo_title: Omvormer of micro-omvormers: wat kies je? | Voltwijk
 description: String-omvormer, optimizers of micro-omvormers? Vergelijk voor- en nadelen bij schaduw, monitoring, levensduur en garantie, en lees wanneer hybride slim is.
 category: Zonnepanelen
+image: omvormers-afwerking
 product: zonnepanelen
 lead: De omvormer is het hart van je zonnepanelensysteem. Welke variant het beste past, hangt vooral af van schaduw op je dak, de vorm van je dak en of je later een batterij wilt.
 summary: Een string-omvormer is eenvoudig en voordelig, maar gevoelig voor schaduw op één paneel || Optimizers en micro-omvormers regelen per paneel en beperken het effect van schaduw || Micro-omvormers en optimizers geven inzicht per paneel; een string-omvormer meestal alleen per reeks || Wil je later een thuisbatterij? Overweeg dan nu al een hybride omvormer

@@ -140,7 +140,7 @@ ARTCSS = '''<style>
 def build_page(a, shell, catalog):
     prod = a['product']; pname, price, purl, pthumb = PRODUCTS[prod]
     same = [c for c in catalog if c['product'] == prod]
-    img = HERO[prod][same.index(next(c for c in same if c['slug'] == a['slug'])) % len(HERO[prod])]
+    img = a.get('image') or HERO[prod][same.index(next(c for c in same if c['slug'] == a['slug'])) % len(HERO[prod])]
     body, toc = md(a['body'])
     words = len(re.sub(r'<[^>]+>', ' ', body).split()) + sum(len((q + ' ' + x).split()) for q, x in a['faq'])
     mins = max(3, math.ceil(words / 200))
@@ -228,7 +228,7 @@ def main():
     for a in new:  # beeld per nieuw artikel (moet na catalogus-opbouw)
         same = [c for c in catalog if c['product'] == a['product']]
         idx = same.index(next(c for c in same if c['slug'] == a['slug']))
-        next(c for c in catalog if c['slug'] == a['slug'])['img'] = '/images/' + HERO[a['product']][idx % len(HERO[a['product']])] + '.webp'
+        next(c for c in catalog if c['slug'] == a['slug'])['img'] = '/images/' + (a.get('image') or HERO[a['product']][idx % len(HERO[a['product']])]) + '.webp'
     # nieuwe pagina's schrijven
     for a in new:
         open(a['slug'] + '.html', 'w', encoding='utf-8').write(build_page(a, shell, catalog))
