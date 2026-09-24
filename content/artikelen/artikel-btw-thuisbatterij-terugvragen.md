@@ -5,6 +5,7 @@ category: Thuisbatterij
 product: batterij
 lead: Op zonnepanelen betaal je geen btw, dus op een thuisbatterij toch ook niet? Helaas wel. Hier lees je waarom, voor wie er een uitzondering is en wat het betekent voor je terugverdientijd.
 summary: Als particulier betaal je 21% btw op een thuisbatterij en die kun je niet terugvragen || Het nultarief (0% btw) geldt sinds 2023 alleen voor zonnepanelen, niet voor batterijen, ook niet als je ze samen koopt || Alleen btw-ondernemers die de batterij (deels) zakelijk gebruiken, kunnen de btw mogelijk aftrekken || Reken in je terugverdientijd dus met het bedrag inclusief btw en check de actuele regels bij de Belastingdienst
+image: sfeer-rekenen
 ---
 Het korte antwoord: **nee**. Als particulier betaal je 21% btw over een thuisbatterij, en die btw kun je niet terugvragen. Er is ook geen verlaagd tarief of nultarief voor thuisbatterijen. Dat geldt per 2026, en ook als je de batterij tegelijk met zonnepanelen koopt.
 
