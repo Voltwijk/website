@@ -22,6 +22,8 @@
 <!-- seo:end -->
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
+.nav-cta-link{position:relative;} .nav-cta-link::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;border-radius:2px;background:var(--mint);opacity:.9;} #siteNav.is-stuck .nav-cta-link::after,#siteNav.on-light .nav-cta-link::after{background:var(--primary);}
+
 h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
 
 .guide-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin-top:28px;} .guide-card{display:flex;flex-direction:column;padding:22px 22px 20px;border-radius:18px;background:#fff;border:1px solid var(--border);text-decoration:none;color:var(--ink);transition:transform .2s,box-shadow .2s,border-color .2s;} .guide-card:hover{transform:translateY(-3px);border-color:var(--primary);box-shadow:0 22px 40px -28px rgba(16,32,31,.5);} .guide-card h3{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:17px;line-height:1.3;margin:0;} .guide-card p{font-size:14px;color:var(--ink-soft);line-height:1.6;margin:10px 0 14px;flex:1;} .guide-card span{font-size:13.5px;font-weight:800;color:var(--primary);} .guide-card:focus-visible{outline:2px solid var(--primary);outline-offset:3px;}
@@ -90,7 +92,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
   .vw-logo-ft{height:18px;width:auto;display:block;}
   @media (max-width:820px){ .vw-logo{height:17px;} }
   .logo-icon{flex-shrink:0;transition:width .3s cubic-bezier(.2,.7,.2,1), height .3s cubic-bezier(.2,.7,.2,1);}
-  #siteNav{position:sticky;top:0;z-index:50;margin-bottom:-76px;color:#fff;background:transparent;border-bottom:1px solid transparent;transition:background .4s ease, border-color .4s ease, backdrop-filter .4s ease, color .4s ease, box-shadow .4s ease, transform .4s cubic-bezier(.2,.7,.2,1);}
+  #siteNav{position:sticky;top:0;z-index:50;margin-bottom:-77px;color:#fff;background:transparent;border-bottom:1px solid transparent;transition:background .4s ease, border-color .4s ease, backdrop-filter .4s ease, color .4s ease, box-shadow .4s ease, transform .4s cubic-bezier(.2,.7,.2,1);}
   #siteNav .nav-links{color:inherit;}
   .choice-card{padding-right:38px !important;}
   @media (max-width:480px){ .choice-name{font-size:13.5px !important;} }
@@ -281,7 +283,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
 
     <div class="wrap nav-inner" style="display:flex;align-items:center;justify-content:space-between;gap:20px;">
       <div class="nav-links">
-        <a href="/producten" style="color:inherit;text-decoration:none;">PRODUCTEN</a><a href="/hoe-het-werkt" style="color:inherit;text-decoration:none;">HOE HET WERKT</a><a href="/garantie" style="color:inherit;text-decoration:none;">GARANTIE</a>
+        <a href="/producten" style="color:inherit;text-decoration:none;">PRODUCTEN</a><a href="/bereken-je-prijs" class="nav-cta-link" style="color:inherit;text-decoration:none;">BEREKEN JE PRIJS</a><a href="/inzichten" style="color:inherit;text-decoration:none;">KENNISBANK</a>
       </div>
       <a href="/" class="vw-heading" aria-label="Voltwijk, naar de homepage" style="display:inline-flex;align-items:center;white-space:nowrap;color:inherit;text-decoration:none;">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="10 -1616 10357 1646" class="vw-logo" role="img" aria-label="Voltwijk"><g transform="scale(1 -1)"><path transform="translate(0 0)" fill="currentColor" d="M464 0 10 1440H258L638 234L1023 1440H1271L817 0Z"/><path transform="translate(1341 0)" fill="currentColor" d="M749 -30Q533 -30 379 64Q225 159 142 328Q60 497 60 720Q60 943 142 1112Q225 1281 379 1376Q533 1470 749 1470Q965 1470 1119 1376Q1274 1281 1356 1112Q1439 943 1439 720Q1439 497 1356 328Q1274 159 1119 64Q965 -30 749 -30ZM749 197Q894 196 991 261Q1087 326 1135 444Q1184 562 1184 720Q1184 878 1135 994Q1087 1111 991 1176Q894 1241 749 1243Q604 1244 508 1179Q412 1114 364 996Q315 878 315 720Q315 562 363 446Q411 329 508 264Q604 199 749 197Z"/><path transform="translate(2940 0)" fill="currentColor" d="M160 0V1440H401V226H1037V0Z"/><path transform="translate(3957 0)" fill="currentColor" d="M486 0V1214H20V1440H1193V1214H727V0Z"/><clipPath id="vwnL"><rect x="-17" y="-100" width="992" height="1640"/></clipPath><clipPath id="vwnR"><rect x="976" y="-100" width="992" height="1640"/></clipPath><g transform="translate(5260 0)"><path clip-path="url(#vwnL)" fill="currentColor" d="M444 0 23 1440H276L563 400L849 1438L1102 1440L1389 400L1675 1440H1928L1508 0H1270L975 1024L682 0Z"/><path clip-path="url(#vwnR)" style="fill:var(--logo-v2)" d="M444 0 23 1440H276L563 400L849 1438L1102 1440L1389 400L1675 1440H1928L1508 0H1270L975 1024L682 0Z"/><circle cx="976" cy="1440" r="176" fill="#FF6B5B"/></g><path transform="translate(7311 0)" fill="currentColor" d="M160 0V1440H401V0Z"/><path transform="translate(7972 0)" fill="currentColor" d="M428 -30Q263 -30 154 56Q44 142 0 288L238 345Q249 284 302 240Q355 196 419 196Q461 196 508 218Q555 241 578 291Q592 323 595 368Q597 412 597 471V1440H841V471Q841 404 840 354Q840 303 830 259Q821 214 793 167Q734 65 639 17Q544 -30 428 -30Z"/><path transform="translate(9073 0)" fill="currentColor" d="M140 0V1440H381V772L956 1440H1252L633 734L1294 0H988L381 672V0Z"/></g></svg>
@@ -296,10 +298,10 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
     </div>
     <div id="mobileNavPanel" class="mobile-nav-panel">
       <a href="/producten">PRODUCTEN</a>
-      <a href="/hoe-het-werkt">HOE HET WERKT</a>
-      <a href="/garantie">GARANTIE</a>
+      <a href="/bereken-je-prijs">BEREKEN JE PRIJS</a>
+      <a href="/inzichten">KENNISBANK</a>
       <a href="/reviews">REVIEWS</a>
-      <a href="/inzichten">INZICHTEN</a>
+      <a href="/hoe-het-werkt">HOE HET WERKT</a>
       <a href="/over-ons">OVER ONS</a>
       <a href="/contact">CONTACT</a>
       <a href="tel:+31853335687">Bel: 085 333 56 87</a>
@@ -411,6 +413,39 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
     </div>
   </div>
 
+
+<!-- social:start -->
+<div class="soc-sec soc-quiet"><div class="wrap reveal soc-wrap">
+  <style>
+  .soc-sec{background:var(--surface-tint);} .soc-wrap{padding-top:80px;padding-bottom:80px;}
+  .soc-sec.soc-quiet{background:transparent;border-top:1px solid var(--border);} .soc-quiet .soc-wrap{padding-top:48px;padding-bottom:56px;}
+  .soc-quiet h2{font-size:24px !important;margin-top:10px !important;} .soc-quiet .soc-head p{font-size:14px !important;}
+  .soc-quiet .soc-grid{grid-template-columns:repeat(3,160px);gap:12px;} .soc-quiet .soc-card figcaption{padding:10px 12px 12px;}
+  .soc-quiet .soc-card figcaption b{font-size:13.5px;} .soc-quiet .soc-card figcaption span{display:none;} .soc-quiet .soc-btn{padding:9px 15px;font-size:13px;}
+  .soc-lay{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:48px;align-items:center;}
+  .soc-head{display:flex;flex-direction:column;gap:22px;}
+  @media (max-width:1100px){ .soc-lay{grid-template-columns:1fr;gap:28px;} .soc-grid{justify-content:start;} }
+  .soc-btns{display:flex;gap:10px;flex-wrap:wrap;}
+  .soc-btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;background:var(--dark);color:#fff;text-decoration:none;font-weight:800;font-size:14px;transition:transform .2s;}
+  .soc-btn.alt{background:#fff;color:var(--ink);border:1px solid var(--border);}
+  .soc-btn:hover{transform:translateY(-1px);} .soc-btn:focus-visible{outline:2px solid var(--primary);outline-offset:3px;}
+  .soc-grid{display:grid;grid-template-columns:repeat(3,210px);justify-content:end;gap:16px;margin-top:0;align-items:start;}
+  .soc-card{margin:0;background:#fff;border-radius:20px;border:1px solid var(--border);overflow:hidden;min-width:0;}
+  .soc-card video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;background:var(--dark);}
+  .soc-card figcaption{padding:14px 16px 16px;display:flex;flex-direction:column;gap:4px;}
+  .soc-card figcaption b{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:15.5px;color:var(--ink);}
+  .soc-card figcaption span{font-size:13px;color:var(--ink-soft);line-height:1.5;}
+  @media (max-width:860px){ .soc-grid{grid-template-columns:repeat(3,58%);overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;} .soc-card{scroll-snap-align:start;} }
+  </style>
+  <div class="soc-lay"><div class="soc-head">
+    <div><div class="pill">Social media</div><h2 style="font-size:clamp(28px,4vw,38px);margin-top:16px;">Volg Voltwijk op social media</h2>
+    <p style="font-size:15px;color:var(--ink-soft);margin-top:8px;max-width:520px;line-height:1.6;">Klanten aan het woord, straatquizzen en een kijkje achter de schermen bij onze monteurs. Volg ons voor tips en nieuwe projecten.</p></div>
+    <div class="soc-btns"><a class="soc-btn" href="https://www.instagram.com/voltwijk" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>@voltwijk op Instagram</a><a class="soc-btn alt" href="https://www.tiktok.com/@voltwijk" target="_blank" rel="noopener"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 5.8A4.3 4.3 0 0 1 15.5 3h-3.1v12.4a2.6 2.6 0 1 1-2.6-2.6c.3 0 .5 0 .8.1V9.7a5.8 5.8 0 1 0 4.9 5.7V9.1a7.4 7.4 0 0 0 4.3 1.4V7.4a4.3 4.3 0 0 1-3.2-1.6z"/></svg>@voltwijk op TikTok</a></div>
+  </div>
+  <div class="soc-grid"><figure class="soc-card"><video controls playsinline preload="none" poster="/videos/social-3-poster.webp" aria-label="Klant over zijn zonnepanelen"><source src="/videos/social-3.mp4" type="video/mp4"></video><figcaption><b>Klant over zijn zonnepanelen</b><span>Hoe bevalt het, zelf je stroom opwekken?</span></figcaption></figure><figure class="soc-card"><video controls playsinline preload="none" poster="/videos/social-1-poster.webp" aria-label="Straatquiz: weet jij wat dit is?"><source src="/videos/social-1.mp4" type="video/mp4"></video><figcaption><b>Straatquiz: weet jij wat dit is?</b><span>Voor 10 euro: herkennen voorbijgangers dit onderdeel van een zonne-installatie?</span></figcaption></figure><figure class="soc-card"><video controls playsinline preload="none" poster="/videos/social-2-poster.webp" aria-label="Straatquiz: dakhaak"><source src="/videos/social-2.mp4" type="video/mp4"></video><figcaption><b>Straatquiz: dakhaak</b><span>Herken jij een dakhaak voor zonnepanelen?</span></figcaption></figure></div></div>
+  <script>(function(){var vs=document.querySelectorAll('.soc-card video');vs.forEach(function(v){v.addEventListener('play',function(){vs.forEach(function(o){if(o!==v)o.pause();});});});})();</script>
+</div></div>
+<!-- social:end -->
 
 <div class="site-footer" style="background:var(--dark);padding:44px 0 28px;position:relative;overflow:hidden;">
     <div class="blob" style="width:260px;height:260px;background:var(--primary);opacity:.25;top:-120px;left:50%;transform:translateX(-50%);"></div>
