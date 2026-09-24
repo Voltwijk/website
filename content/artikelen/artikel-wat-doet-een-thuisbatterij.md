@@ -5,6 +5,7 @@ category: Thuisbatterij
 product: batterij
 lead: Een thuisbatterij bewaart stroom voor later. Klinkt simpel, maar of hij voor jou iets oplevert, hangt af van hoe je hem gebruikt, hoe groot hij is en wat je energiecontract doet.
 summary: Een thuisbatterij slaat stroom op als je over hebt of als stroom goedkoop is, en levert die terug als je hem nodig hebt || Capaciteit (kWh) is hoeveel hij opslaat, vermogen (kW) is hoe snel hij laadt en ontlaadt || Een thuisbatterij is niet automatisch noodstroom bij een stroomstoring; dat is een aparte functie || Hij loont vooral na het einde van salderen, met terugleverkosten of met een dynamisch contract en slimme sturing
+image: thuisbatterij-bijkeuken
 ---
 Een thuisbatterij is in de kern een grote accu in je huis. Hij laadt op als er stroom 'over' is of als stroom goedkoop is, en geeft die stroom weer af op het moment dat je hem zelf nodig hebt. In dit artikel leggen we uit hoe dat in de praktijk werkt, welke begrippen ertoe doen en wanneer een batterij wél en níet loont.
 
