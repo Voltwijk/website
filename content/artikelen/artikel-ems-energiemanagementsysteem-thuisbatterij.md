@@ -5,6 +5,7 @@ category: Thuisbatterij
 product: batterij
 lead: Een thuisbatterij is maar zo slim als de software die hem aanstuurt. Dat is het energiemanagementsysteem, of EMS. Hier lees je wat het doet, waarop het beslist en waarom het vaak meer uitmaakt dan een paar extra kWh.
 summary: Een EMS beslist per moment of je batterij laadt, ontlaadt of wacht, op basis van zonneverwachting, je verbruik, uurprijzen en de grenzen van je aansluiting || De belangrijkste strategieën zijn eigen verbruik, prijsarbitrage, piekbeperking en teruglevering vermijden || Een goed EMS stuurt ook je warmtepomp, laadpaal of boiler mee en haalt zo meer uit dezelfde batterij || Vraag je installateur naar de sturing, de data, de updates en wat er gebeurt als internet wegvalt
+image: sfeer-wandelen
 ---
 Een thuisbatterij zonder slimme sturing is als een auto zonder chauffeur. De hardware is er, maar niemand beslist waar hij heen gaat. Die chauffeur is het **energiemanagementsysteem**, kortweg **EMS**. Het is de software (soms met een los kastje in de meterkast) die bepaalt wanneer je batterij laadt, ontlaadt of wacht.
 

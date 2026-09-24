@@ -249,7 +249,7 @@ def main():
     grid = f'''<!-- ins:start --><div class="wrap reveal" style="padding-top:32px;padding-bottom:88px;">
       <style>.ins-chips{{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:28px;}}
       .ins-chip{{border:1px solid var(--border);background:#fff;color:var(--ink);border-radius:999px;padding:9px 16px;font:700 13.5px 'Nunito Sans',system-ui,sans-serif;cursor:pointer;}}
-      .ins-chip.is-on{{background:var(--dark);border-color:var(--dark);color:#fff;}} .ins-chip:focus-visible{{outline:2px solid var(--primary);outline-offset:2px;}}</style>
+      .ins-chip.is-on{{background:var(--dark);border-color:var(--dark);color:#fff;}} #insGrid{{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;}} #insGrid > *{{flex:none;}} @media (max-width:900px){{#insGrid{{grid-template-columns:repeat(2,minmax(0,1fr));}}}} @media (max-width:560px){{#insGrid{{grid-template-columns:1fr;}}}} .ins-chip:focus-visible{{outline:2px solid var(--primary);outline-offset:2px;}}</style>
       <div class="ins-chips" role="toolbar" aria-label="Filter op onderwerp">{chips}</div>
       <div class="grid-3" id="insGrid">
 {cards}

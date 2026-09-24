@@ -5,6 +5,7 @@ category: Laadpaal
 product: laadpaal
 lead: Een 3-fase laadpaal laadt tot 11 kW, een 1-fase laadpaal tot ongeveer 3,7 kW. Maar of je auto daar iets aan heeft, hangt af van de auto zelf en van je aansluiting.
 summary: 1-fase 16 A geeft ongeveer 3,7 kW, 3-fase 16 A ongeveer 11 kW || De boordlader van je auto bepaalt het maximum: een auto die 1-fase laadt, laadt ook aan een 3-fase paal niet sneller || Voor wie 's nachts thuis laadt en een gemiddelde afstand rijdt, is 1-fase vaak genoeg || 3-fase loont bij veel kilometers, weinig laadtijd of een auto met een 11 kW-boordlader
+image: laden-garage
 ---
 Wie een laadpaal laat plaatsen, krijgt vroeg of laat de vraag: 1-fase of 3-fase? Het klinkt technisch, maar het komt neer op één ding: hoeveel vermogen er naar je auto kan. En dus hoe snel je laadt.
 
