@@ -5,6 +5,7 @@ category: Meterkast
 product: meterkast
 lead: Een warmtepomp, laadpaal of inductiekookplaat kan je aansluiting zwaarder belasten. Soms is 3-fase de oplossing, maar lang niet altijd. Zo weet je wat je nodig hebt en hoe je het regelt.
 summary: Een standaard aansluiting is vaak 1x35 A of 3x25 A; 3-fase geeft veel meer ruimte voor grote verbruikers || Je vraagt de verzwaring aan bij je netbeheerder, met eenmalige kosten en soms een hoger vast netbeheertarief || Houd rekening met een doorlooptijd, zeker in gebieden met netcongestie || Soms volstaat load balancing of een slimme verdeling van groepen en is 3-fase niet nodig
+image: stopcontacten
 ---
 Steeds meer huishoudens gaan elektrisch: koken op inductie, verwarmen met een warmtepomp, een elektrische auto laden. Al die apparaten vragen veel vermogen, soms tegelijk. Dan komt de vraag op: is mijn aansluiting nog zwaar genoeg, of heb ik een **3-fase aansluiting** nodig?
 
