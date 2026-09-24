@@ -102,7 +102,7 @@ def parse(path):
     return meta
 
 ARTCSS = '''<style>
-.art-body{font-size:16px;color:var(--ink-soft);line-height:1.75;}
+.art-body{font-size:16px;color:var(--ink-soft);line-height:1.75;overflow-wrap:break-word;}
 .art-body p{margin:0 0 18px;}
 .art-body h2{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:24px;line-height:1.3;color:var(--ink);margin:44px 0 14px;scroll-margin-top:96px;}
 .art-body h3{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:18px;color:var(--ink);margin:28px 0 10px;}
@@ -257,7 +257,7 @@ def main():
       <script>(function(){{var chips=[].slice.call(document.querySelectorAll('.ins-chip')),cards=[].slice.call(document.querySelectorAll('.ins-card'));
       function f(k){{chips.forEach(function(c){{c.classList.toggle('is-on',c.getAttribute('data-f')===k);}});cards.forEach(function(c){{c.style.display=(k==='alle'||c.getAttribute('data-cat')===k)?'':'none';}});}}
       chips.forEach(function(c){{c.addEventListener('click',function(){{var k=c.getAttribute('data-f');f(k);try{{history.replaceState(null,'',k==='alle'?location.pathname:'#'+k);}}catch(e){{}}}});}});
-      var h=location.hash.slice(1);if(h&&document.querySelector('.ins-chip[data-f="'+h+'"]'))f(h);}})();</script>
+      function fromHash(){{var h=location.hash.slice(1);if(h&&document.querySelector('.ins-chip[data-f="'+h+'"]'))f(h);else if(!h)f('alle');}}fromHash();window.addEventListener('hashchange',fromHash);}})();</script>
     </div><!-- ins:end -->'''
     if '<!-- ins:start -->' in s:
         s = re.sub(r'<!-- ins:start -->.*?<!-- ins:end -->', lambda m: grid, s, flags=re.S)
