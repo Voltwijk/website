@@ -5,6 +5,7 @@ category: Warmtepomp
 product: warmtepomp
 lead: Of een warmtepomp goed werkt, hangt minder af van het apparaat dan van je huis. Met een paar simpele checks, waaronder een test die je deze winter zelf kunt doen, weet je waar je staat.
 summary: Isolatie en aanvoertemperatuur bepalen of een warmtepomp goed en zuinig werkt || Test het zelf: zet je cv-ketel in de winter op 55 °C en kijk of je huis warm blijft || Denk ook aan ruimte voor de buitenunit en een boilervat, je meterkast en geluid || Niet geschikt voor volledig elektrisch? Dan is hybride vaak een goede tussenstap
+image: sfeer-bank
 ---
 Een warmtepomp is een prima manier om van het gas af te gaan, maar hij werkt niet in elk huis even goed. Het goede nieuws: je kunt zelf al veel inschatten voordat er een installateur langskomt. In dit artikel lopen we alle punten langs en sluiten we af met een checklist.
 

@@ -5,6 +5,7 @@ category: Warmtepomp
 product: warmtepomp
 lead: Een hybride warmtepomp werkt samen met je cv-ketel, een volledig elektrische vervangt hem helemaal. Welke de beste keuze is, hangt vooral af van je isolatie en je radiatoren, niet van wat de buren doen.
 summary: Hybride = warmtepomp plus cv-ketel; volledig elektrisch = geen gas meer nodig voor verwarming || Volledig elektrisch vraagt om goede isolatie en een lage aanvoertemperatuur || Hybride is een betaalbare tussenstap die ook in minder goed geïsoleerde huizen veel gas bespaart || De ISDE-subsidie geldt in 2026 voor beide typen
+image: sfeer-hangmat
 ---
 Wie van het gas af wil, komt al snel bij de vraag: kies ik een hybride warmtepomp of meteen een volledig elektrische? Beide besparen gas, maar ze werken anders en stellen andere eisen aan je huis. In dit artikel leggen we uit hoe ze werken, wat ze kosten en besparen, en voor wie welke keuze logisch is.
 
