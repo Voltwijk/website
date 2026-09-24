@@ -195,7 +195,7 @@ def related_block(slug, prod, catalog):
         card = f'''<a class="rel-prod" href="{purl}"><img loading="lazy" decoding="async" src="{pthumb}" alt="{esc(pname)}"><div><div class="k">Direct regelen</div><div class="n">{esc(pname)} · {esc(price)}</div><div class="p">Vaste prijs, inclusief installatie door ons eigen team.</div></div><span class="go">Bekijk {esc(pname.lower())} →</span></a>'''
     items = ''.join(f'<a href="/{c["slug"]}"><span>{esc(CATLABEL[c["product"]])}</span>{esc(c["title"])}</a>' for c in pool)
     lab = 'Lees ook' if prod == 'algemeen' else 'Meer over ' + CATLABEL[prod].lower()
-    return f'''<!-- rel:start --><div class="blk-light"><div class="wrap rel-wrap" style="max-width:760px;">{card}
+    return f'''<!-- rel:start --><div class="blk-light"><div class="wrap rel-wrap" style="max-width:760px;"><div class="vw-endmark" aria-hidden="true"><span></span></div>{card}
 <h2 class="vw-heading" style="font-size:22px;margin-top:40px;">{esc(lab)}</h2><div class="rel-list">{items}</div>
 <p style="margin-top:18px;font-size:14px;"><a href="/inzichten{'#' + prod if prod != 'algemeen' else ''}" style="color:var(--primary);font-weight:800;text-decoration:none;">Alle artikelen{'' if prod == 'algemeen' else ' over ' + esc(CATLABEL[prod].lower())} →</a></p></div></div><!-- rel:end -->
 '''
