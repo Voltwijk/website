@@ -25,7 +25,7 @@ const BASE = process.env.BASE || 'http://127.0.0.1:8765';
     await p.waitForSelector('#view-product > *');
     let html = await p.$eval('#view-product', el => el.innerHTML);
     await p.close();
-    html = html.replace(/\s+is-visible/g, '').replace(/ class=""/g, '');
+    html = html.replace(/\s+is-visible/g, '').replace(/ class=""/g, '').replace(/<script[\s\S]*?<\/script>/g, '');
     src = src.replace('<div id="view-product"></div>', '<div id="view-product"><!--prerender-->' + html + '<!--/prerender--></div>');
     fs.writeFileSync(file, src);
     console.log('prerendered', f, html.length, 'bytes');
