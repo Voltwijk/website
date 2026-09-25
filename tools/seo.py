@@ -26,6 +26,21 @@ T = {  # titel, description
  'bereken-je-prijs': ('Bereken direct je vaste prijs | Voltwijk',
            'Vul je postcode en woningtype in en zie binnen een minuut je vaste prijs voor zonnepanelen, thuisbatterij, warmtepomp en meer, inclusief installatie.'),
 }
+T.update({  # kortere titels (Google toont ~60 tekens)
+ 'artikel-airco-als-bijverwarming': ('Airco als bijverwarming: bespaar je op gas? | Voltwijk', None),
+ 'artikel-capaciteitstarief-en-meterkast': ('Capaciteitstarief en je meterkast | Voltwijk', None),
+ 'artikel-dynamisch-contract-en-batterij': ('Dynamisch contract en thuisbatterij | Voltwijk', None),
+ 'artikel-elektrische-boiler-vs-gas': ('Elektrische boiler of gasboiler in 2026? | Voltwijk', None),
+ 'artikel-laadpaal-slim-laden': ('Laadpaal thuis: zo laad je slim en goedkoop | Voltwijk', None),
+ 'artikel-meterkast-onderschatte-stap': ('Meterkast: de vergeten stap bij batterij en laadpaal | Voltwijk',
+   'Voordat een thuisbatterij of laadpaal geplaatst kan worden, moet je meterkast het aankunnen. Waarom deze stap zo vaak vergeten wordt.'),
+ 'artikel-salderingsregeling-2027': ('Salderingsregeling stopt in 2027: wat verandert er? | Voltwijk', None),
+ 'artikel-thuisbatterij-na-salderen': ('Thuisbatterij na het salderen: loont het? | Voltwijk', None),
+ 'artikel-waarom-je-monteur-ertoe-doet': ('Waarom je monteur ertoe doet: garantie en keurmerken | Voltwijk', None),
+ 'artikel-zonnepanelen-zonder-salderen-batterij-of-teruglevering': ('Zonnepanelen zonder salderen: batterij of terugleveren? | Voltwijk',
+   'Nu salderen verdwijnt: haal je meer uit je zonnepanelen met een thuisbatterij, met terugleveren, of met allebei? Zo maak je de keuze.'),
+ 'cookiebeleid': ('Cookiebeleid | Voltwijk', 'Welke cookies Voltwijk gebruikt, waarvoor, en hoe je ze zelf beheert of uitzet. Geen advertentietracking.'),
+})
 PRODUCT = {  # slug: (naam, prijs, afbeelding)
  'product-zonnepanelen': ('Zonnepanelen (12 panelen)', 3999, 'zonnepanelen-installatie'),
  'product-batterij': ('Thuisbatterij', 3499, 'batterij-installatie'),
@@ -58,7 +73,7 @@ for f in sorted(glob.glob('*.html')):
     if slug in T:
         t, d = T[slug]
         s = re.sub(r'<title>.*?</title>', '<title>' + html.escape(t, quote=False) + '</title>', s, count=1, flags=re.S)
-        s = re.sub(r'<meta name="description" content="[^"]*">', '<meta name="description" content="' + html.escape(d) + '">', s, count=1)
+        if d: s = re.sub(r'<meta name="description" content="[^"]*">', '<meta name="description" content="' + html.escape(d) + '">', s, count=1)
     title = text(re.search(r'<title>(.*?)</title>', s, re.S).group(1))
     dm = re.search(r'<meta name="description" content="([^"]*)"', s); desc = html.unescape(dm.group(1)) if dm else ''
     if slug in PRODUCT: img = '/images/' + PRODUCT[slug][2] + '.jpg'
