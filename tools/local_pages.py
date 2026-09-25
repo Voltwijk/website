@@ -365,8 +365,9 @@ def main():
     shell = open(SHELL, encoding='utf-8').read()
     for c in CITIES:
         n = c['name']
-        title = f'Zonnepanelen & warmtepomp in {n} | Voltwijk'
-        desc = f'Zonnepanelen, thuisbatterij, warmtepomp of laadpaal in {n}? Vaste prijs vooraf, eigen monteurs, 12.500+ installaties en 4,7/5 op Google. Wij regelen {NB[c["nb"]]} en vergunning.'
+        title = f'Thuisbatterij, zonnepanelen & warmtepomp {n} | Voltwijk'
+        desc = f'Thuisbatterij, zonnepanelen of warmtepomp in {n}? Vaste prijs vooraf, eigen monteurs, 12.500+ installaties, 4,7/5 op Google.'
+        assert len(desc) <= 160, desc
         open(f'installateur-{c["slug"]}.html', 'w', encoding='utf-8').write(page(shell, city_main(c), f'installateur-{c["slug"]}', title, desc))
     open('werkgebied.html', 'w', encoding='utf-8').write(page(shell, overview_main(), 'werkgebied',
         'Werkgebied: installateur in heel Nederland | Voltwijk',
