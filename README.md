@@ -101,3 +101,5 @@ gebruik alleen controleerbare feiten per plaats. Draai daarna `python3 tools/seo
 ## Indexeren
 - Google: sitemap indienen en "Indexering aanvragen" in Search Console (kan alleen de eigenaar).
 - Bing en andere zoekmachines: na een live deploy `python3 tools/indexnow.py` draaien (IndexNow).
+- Search Console-gegevens: `python3 tools/gsc.py submit|sitemaps|report|inspect-all` met de sleutel van het
+  service-account in `GSC_SERVICE_ACCOUNT_JSON` (zie de uitleg bovenin het script).
