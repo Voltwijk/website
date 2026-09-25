@@ -95,9 +95,17 @@ for f in sorted(glob.glob('*.html')):
           "author": {"@type": "Organization", "name": "Voltwijk", "url": SITE + "/"}, "publisher": {"@id": BIZ_ID}})
         crumbs.append({"@type": "ListItem", "position": 2, "name": "Inzichten", "item": SITE + "/inzichten"})
         crumbs.append({"@type": "ListItem", "position": 3, "name": head[:80], "item": url})
+    elif slug.startswith('installateur-'):
+        h1 = re.search(r'<h1[^>]*>(.*?)</h1>', s, re.S)
+        city = text(h1.group(1)).split(' in ', 1)[-1] if h1 else slug[13:]
+        data.append({"@context": "https://schema.org", "@type": "Service", "name": text(h1.group(1)) if h1 else title,
+          "serviceType": "Installatie van zonnepanelen, thuisbatterijen, warmtepompen en laadpalen", "description": desc,
+          "provider": {"@id": BIZ_ID}, "areaServed": {"@type": "City", "name": city}, "url": url})
+        crumbs.append({"@type": "ListItem", "position": 2, "name": "Werkgebied", "item": SITE + "/werkgebied"})
+        crumbs.append({"@type": "ListItem", "position": 3, "name": city, "item": url})
     elif slug != 'index':
         crumbs.append({"@type": "ListItem", "position": 2, "name": title.replace(' — Voltwijk', '').replace(' | Voltwijk', ''), "item": url})
-    if slug == 'veelgestelde-vragen':
+    if slug == 'veelgestelde-vragen' or slug.startswith('installateur-'):
         qa = re.findall(r'<details[^>]*>\s*<summary[^>]*>(.*?)</summary>(.*?)</details>', s, re.S)
         qa = [(text(q), text(a)) for q, a in qa if "'+" not in q]
         if qa:
@@ -109,7 +117,7 @@ for f in sorted(glob.glob('*.html')):
     s, k = re.subn(r'(<link rel="canonical"[^>]*>)', lambda m: m.group(1) + block, s, count=1)
     assert k == 1, f
     open(f, 'w', encoding='utf-8').write(s)
-    pri = '1.0' if slug == 'index' else ('0.9' if slug in PRODUCT or slug in ('producten','bereken-je-prijs') else ('0.3' if slug in ('privacybeleid','cookiebeleid','algemene-voorwaarden') else '0.7'))
+    pri = '1.0' if slug == 'index' else ('0.9' if slug in PRODUCT or slug in ('producten','bereken-je-prijs') else ('0.8' if slug.startswith('installateur-') or slug == 'werkgebied' else ('0.3' if slug in ('privacybeleid','cookiebeleid','algemene-voorwaarden') else '0.7')))
     urls.append((url, pri))
 with open('sitemap.xml', 'w', encoding='utf-8') as fh:
     fh.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
