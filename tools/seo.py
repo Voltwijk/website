@@ -133,7 +133,7 @@ for f in sorted(glob.glob('*.html')):
     assert k == 1, f
     open(f, 'w', encoding='utf-8').write(s)
     pri = '1.0' if slug == 'index' else ('0.9' if slug in PRODUCT or slug in ('producten','bereken-je-prijs') else ('0.8' if slug.startswith('installateur-') or slug == 'werkgebied' else ('0.3' if slug in ('privacybeleid','cookiebeleid','algemene-voorwaarden') else '0.7')))
-    urls.append((url, pri))
+    if 'name="robots" content="noindex"' not in s: urls.append((url, pri))
 with open('sitemap.xml', 'w', encoding='utf-8') as fh:
     fh.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
     for u, p in urls: fh.write('  <url><loc>%s</loc><lastmod>%s</lastmod><priority>%s</priority></url>\n' % (u, TODAY, p))
