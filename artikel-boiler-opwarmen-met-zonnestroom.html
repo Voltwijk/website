@@ -265,7 +265,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
   .calc-dot.done{background:var(--primary);}
   .calc-dot.active{background:var(--primary);box-shadow:0 0 0 3px var(--surface-tint);}
   .choice-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:20px;}
-  @media (min-width:520px){ .choice-grid.cols-4{grid-template-columns:repeat(4,minmax(0,1fr));} }
+  @media (min-width:520px){ .choice-grid.cols-4{grid-template-columns:repeat(4,minmax(0,1fr));} } .choice-grid.cols-5 > :last-child{grid-column:span 2;} @media (min-width:520px){ .choice-grid.cols-5{grid-template-columns:repeat(3,minmax(0,1fr));} .choice-grid.cols-5 > :last-child{grid-column:auto;} } @media (max-width:519px){ .choice-grid.cols-5 .choice-card{padding-left:14px !important;padding-right:30px !important;} .choice-grid.cols-5 .choice-name{font-size:13px !important;} .choice-grid.cols-5 .choice-check{top:10px;right:9px;width:18px;height:18px;} }
   .choice-card{position:relative;border:2px solid var(--border);border-radius:16px;padding:16px 16px 14px;cursor:pointer;background:#fff;color:inherit;text-align:left;font-family:inherit;transition:border-color .2s ease, transform .2s ease, background .2s ease;}
   .choice-card:hover{transform:translateY(-2px);}
   .choice-card.selected{border-color:var(--primary);background:var(--surface-tint);}
@@ -961,6 +961,7 @@ function renderProduct(slug){
 var CALC_HOUSE = [
   {id:'tussenwoning', label:'Tussenwoning', mult:1.0},
   {id:'hoekwoning', label:'Hoekwoning', mult:1.05},
+  {id:'twee-onder-een-kap', label:'2‑onder‑1‑kap', mult:1.12},
   {id:'vrijstaand', label:'Vrijstaand huis', mult:1.25},
   {id:'appartement', label:'Appartement', mult:0.85}
 ];
@@ -1060,7 +1061,7 @@ function calcStep1Html(){
   return '<div class="calc-dots"><div class="calc-dot active"></div><div class="calc-dot"></div><div class="calc-dot"></div></div>' +
     '<div style="font-size:11px;font-weight:700;letter-spacing:.06em;color:var(--ink-faint);text-transform:uppercase;">Stap 1 van 3</div>' +
     '<h3 style="font-size:22px;margin-top:8px;">Wat voor woning heb je?</h3>' +
-    '<div class="choice-grid cols-4">'+housesHtml+'</div>' +
+    '<div class="choice-grid cols-5">'+housesHtml+'</div>' +
     '<div style="margin-top:22px;">' +
       '<label style="font-size:12.5px;font-weight:700;color:var(--ink-soft);">Postcode <span style="font-weight:400;color:var(--ink-faint);">(optioneel, voor een preciezere prijs)</span></label><br>' +
       '<input class="lead-input" style="margin-top:8px;max-width:220px;" type="text" placeholder="1234 AB" value="'+escapeAttr(calcState.postcode)+'" oninput="calcSetPostcode(this.value)">' +
