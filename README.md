@@ -103,3 +103,8 @@ gebruik alleen controleerbare feiten per plaats. Draai daarna `python3 tools/seo
 - Bing en andere zoekmachines: na een live deploy `python3 tools/indexnow.py` draaien (IndexNow).
 - Search Console-gegevens: `python3 tools/gsc.py submit|sitemaps|report|inspect-all` met de sleutel van het
   service-account in `GSC_SERVICE_ACCOUNT_JSON` (zie de uitleg bovenin het script).
+
+## Acties
+- `python3 tools/energiescan.py [aan|vol|uit]` beheert de Gratis Energiescanweek Moerdijk: `/energiescan` (Netlify-formulier
+  `energiescan`), `/energiescan-bedankt` (noindex) en de banner op de homepage. Daarna `python3 tools/seo.py`.
+  Flyer, persbericht en Google-afbeelding staan in `brand/energiescan/`.
