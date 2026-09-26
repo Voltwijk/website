@@ -323,8 +323,8 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
   <div class="blk-light" style="padding-top:40px;">
     <div class="wrap reveal" style="padding-top:56px;padding-bottom:88px;max-width:720px;">
       <h1 class="vw-heading" style="font-size:36px;">Cookiebeleid</h1>
-      <p style="font-size:13px;color:var(--ink-faint);margin-top:10px;">Laatst bijgewerkt: 22 september 2026</p>
-      <h2 style="font-size:20px;margin-top:36px;">1. Wat zijn cookies</h2><p style="font-size:14px;color:var(--ink-soft);margin-top:10px;line-height:1.65;">Cookies zijn kleine bestandjes die deze website opslaat in je browser, bijvoorbeeld om je voorkeuren te onthouden of het gebruik van de site te meten.</p><h2 style="font-size:20px;margin-top:36px;">2. Welke cookies we gebruiken</h2><p style="font-size:14px;color:var(--ink-soft);margin-top:10px;line-height:1.65;">Functionele cookies die nodig zijn om de website goed te laten werken, en — alleen met jouw toestemming — analytische cookies om te zien hoe de site wordt gebruikt, zodat we hem kunnen verbeteren.</p><h2 style="font-size:20px;margin-top:36px;">3. Cookies uitschakelen</h2><p style="font-size:14px;color:var(--ink-soft);margin-top:10px;line-height:1.65;">Je kunt cookies altijd weigeren of verwijderen via de instellingen van je browser. Sommige onderdelen van de website werken dan mogelijk minder goed.</p><h2 style="font-size:20px;margin-top:36px;">4. Contact</h2><p style="font-size:14px;color:var(--ink-soft);margin-top:10px;line-height:1.65;">Vragen over ons cookiebeleid? Mail naar info@voltwijk.nl.</p>
+      <p style="font-size:13px;color:var(--ink-faint);margin-top:10px;">Laatst bijgewerkt: 26 september 2026</p>
+      <h2 style="font-size:20px;margin-top:36px;">1. Wat zijn cookies</h2><p style="font-size:14px;color:var(--ink-soft);margin-top:10px;line-height:1.65;">Cookies zijn kleine bestandjes die deze website opslaat in je browser, bijvoorbeeld om je voorkeuren te onthouden of het gebruik van de site te meten.</p><h2 style="font-size:20px;margin-top:36px;">2. Welke cookies we gebruiken</h2><p style="font-size:14px;color:var(--ink-soft);margin-top:10px;line-height:1.65;">Functionele cookies die nodig zijn om de website goed te laten werken, en — alleen met jouw toestemming — analytische cookies om te zien hoe de site wordt gebruikt, zodat we hem kunnen verbeteren.</p><p style="font-size:14px;color:var(--ink-soft);margin-top:10px;line-height:1.65;"><strong>Functioneel (altijd):</strong> we onthouden je cookiekeuze en of je de chatmelding al hebt gezien. Dit wordt alleen in je eigen browser opgeslagen.</p><p style="font-size:14px;color:var(--ink-soft);margin-top:10px;line-height:1.65;"><strong>Analytisch (alleen na &quot;Akkoord&quot;):</strong> Google Analytics 4 (cookies <em>_ga</em> en <em>_ga_*</em>, bewaartermijn maximaal 2 jaar). Hiermee zien we hoeveel bezoekers de site heeft, welke pagina&#39;s worden bekeken en of iemand een aanvraag doet of op WhatsApp of bellen klikt. Google-signalen en advertentiepersonalisatie staan uit; we gebruiken deze gegevens niet voor advertenties. Kies je &quot;Alleen noodzakelijk&quot;, dan wordt Google Analytics niet geladen.</p><p style="font-size:14px;color:var(--ink-soft);margin-top:10px;line-height:1.65;">Je keuze wijzigen? Verwijder de cookies en sitegegevens van voltwijk.nl in je browser; bij je volgende bezoek vragen we opnieuw om toestemming.</p><h2 style="font-size:20px;margin-top:36px;">3. Cookies uitschakelen</h2><p style="font-size:14px;color:var(--ink-soft);margin-top:10px;line-height:1.65;">Je kunt cookies altijd weigeren of verwijderen via de instellingen van je browser. Sommige onderdelen van de website werken dan mogelijk minder goed.</p><h2 style="font-size:20px;margin-top:36px;">4. Contact</h2><p style="font-size:14px;color:var(--ink-soft);margin-top:10px;line-height:1.65;">Vragen over ons cookiebeleid? Mail naar info@voltwijk.nl.</p>
     </div>
   </div>
 
@@ -1177,3 +1177,32 @@ initReveal(document);
   }catch(e){}
 })();
 </script>
+<!-- vw-analytics:start -->
+<script>
+(function(){
+  var ID = 'G-6QJJ46JVWW', loaded = false;
+  function ok(){ var c = window.vwConsent; if(!c){ try{ c = JSON.parse(localStorage.getItem('vwConsent')); }catch(e){} } return !!(c && c.analytics); }
+  function load(){
+    if(loaded || !ok()) return; loaded = true;
+    window.dataLayer = window.dataLayer || []; window.gtag = function(){ dataLayer.push(arguments); };
+    gtag('js', new Date());
+    gtag('config', ID, { allow_google_signals: false, allow_ad_personalization_signals: false });
+    var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID; document.head.appendChild(s);
+  }
+  function ev(name, params){ if(loaded && window.gtag) gtag('event', name, params || {}); }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href]'); if(!a) return;
+    var h = a.getAttribute('href');
+    if(h.indexOf('wa.me') > -1) ev('whatsapp_klik', { pagina: location.pathname });
+    else if(h.indexOf('tel:') === 0) ev('bel_klik', { pagina: location.pathname });
+  }, true);
+  document.addEventListener('submit', function(e){
+    var f = e.target; var soort = f.closest && f.closest('#leadNewsletter') ? 'nieuwsbrief' : 'aanvraag';
+    ev(soort === 'nieuwsbrief' ? 'nieuwsbrief_aanmelding' : 'generate_lead', { pagina: location.pathname, soort: soort });
+  }, true);
+  window.vwTrack = ev;
+  window.addEventListener('vw:consent', load);
+  load();
+})();
+</script>
+<!-- vw-analytics:end -->
