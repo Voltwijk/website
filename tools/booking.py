@@ -1,84 +1,28 @@
-<!DOCTYPE html>
-<html lang="nl">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<meta name="theme-color" content="#10201F">
-<title>Pagina niet gevonden — Voltwijk</title>
-<meta name="robots" content="noindex">
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-<style>
-/* vw-brandmark:start */
-:root{--vwm-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%20-200%201950%201660%22%3E%3Cg%20transform%3D%22translate%280%201440%29%20scale%281%20-1%29%22%3E%3Cpath%20d%3D%22M444%200%2023%201440H276L563%20400L849%201438L1102%201440L1389%20400L1675%201440H1928L1508%200H1270L975%201024L682%200Z%22%2F%3E%3Ccircle%20cx%3D%22976%22%20cy%3D%221440%22%20r%3D%22176%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");}
-.pill::before{content:"";width:13px;height:11px;flex-shrink:0;--vwm-dot:1.3px;background:radial-gradient(circle var(--vwm-dot,1.2px) at 50.05% 12%, #FF6B5B 98%, transparent 100%),currentColor;-webkit-mask:var(--vwm-mask) center/contain no-repeat;mask:var(--vwm-mask) center/contain no-repeat;opacity:.9;}
-.site-footer::after{content:"";position:absolute;right:-60px;bottom:-70px;width:420px;height:358px;pointer-events:none;z-index:0;background:rgba(255,255,255,.035);-webkit-mask:var(--vwm-mask) center/contain no-repeat;mask:var(--vwm-mask) center/contain no-repeat;}
-.site-footer > *{position:relative;z-index:1;}
-.vw-endmark{display:flex;align-items:center;gap:14px;margin:8px auto 36px;max-width:220px;color:var(--primary);}
-.vw-endmark::before,.vw-endmark::after{content:"";flex:1;height:1px;background:var(--border);}
-.vw-endmark span{width:22px;height:19px;flex-shrink:0;--vwm-dot:2.2px;background:radial-gradient(circle var(--vwm-dot,1.2px) at 50.05% 12%, #FF6B5B 98%, transparent 100%),currentColor;-webkit-mask:var(--vwm-mask) center/contain no-repeat;mask:var(--vwm-mask) center/contain no-repeat;}
-@media (max-width:700px){.site-footer::after{width:260px;height:222px;right:-40px;bottom:60px;}}
-/* vw-brandmark:end */
+# Online afspraken plannen via Cal.com (cal.com/voltwijk) op de hele site.
+# - Elke link of knop met data-book="huis|video|bel" (of leeg = eerst kiezen) opent een venster met de Cal.com-agenda.
+# - Na een verstuurd offerte- of contactformulier verschijnt direct "Plan meteen je afspraak", met naam en e-mail al ingevuld.
+# - Contactpagina krijgt een blok met de drie afspraaksoorten (#afspraak).
+# - Een geboekte afspraak wordt in Google Analytics gemeten als 'afspraak_gepland' (alleen met toestemming).
+# De Cal.com-scripts laden pas als iemand echt een afspraak wil plannen.
+# Gebruik:  python3 tools/booking.py        (uit = python3 tools/booking.py uit)
+import glob, os, re, sys
+os.chdir(os.path.join(os.path.dirname(__file__), '..'))
+OFF = len(sys.argv) > 1 and sys.argv[1] == 'uit'
 
-h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
+TYPES = [  # sleutel, Cal.com-link, titel, duur/omschrijving
+    ('huis', 'voltwijk/gratis-adviesgesprek-aan-huis', 'Adviesgesprek aan huis', '60 min · een adviseur komt bij je langs en kijkt naar je woning, meterkast en dak'),
+    ('video', 'voltwijk/videogesprek-met-een-adviseur', 'Videogesprek', '30 min · laat via je camera je meterkast of dak zien, zonder dat er iemand langskomt'),
+    ('bel', 'voltwijk/bellen', 'Belafspraak', '15 min · we bellen je op het moment dat jou uitkomt'),
+]
+ICONS = {
+    'huis': '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg>',
+    'video': '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2.5"/><path d="m16 10.5 6-3.5v10l-6-3.5"/></svg>',
+    'bel': '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>',
+}
+JS_TYPES = ','.join("%s:{link:'%s',t:'%s',d:'%s'}" % (k, l, t, d) for k, l, t, d in TYPES)
+JS_ICONS = ','.join("%s:'%s'" % (k, v) for k, v in ICONS.items())
 
-  .vw-logo{height:20px;width:auto;display:block;overflow:visible;transition:height .3s cubic-bezier(.2,.7,.2,1);}
-  #siteNav{--logo-v2:var(--mint);}
-  #siteNav.is-stuck, #siteNav.on-light, #siteNav:has(.mobile-nav-panel.is-open){--logo-v2:var(--primary);}
-  #siteNav.is-stuck .vw-logo{height:17px;}
-  .vw-logo-ft{height:18px;width:auto;display:block;}
-  @media (max-width:820px){ .vw-logo{height:17px;} }
-
-  :root{--bg:#F5F7F5;--ink:#10201F;--ink-soft:#233532;--primary:#0F6E6B;--primary-dark:#0B4F4D;--accent:#FF6B5B;--dark:#10201F;}
-  *{box-sizing:border-box;}
-  body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--bg);color:var(--ink);font-family:'Nunito Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased;padding:24px;text-align:center;}
-  h1{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:700;letter-spacing:-0.02em;font-size:clamp(32px,6vw,48px);margin:20px 0 12px;}
-  p{margin:0 auto;max-width:440px;color:var(--ink-soft);line-height:1.6;}
-  .actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:28px;}
-  a.btn{font-weight:700;font-size:14px;padding:13px 22px;border-radius:999px;text-decoration:none;}
-  .btn-primary{background:var(--primary);color:#fff;}
-  .btn-secondary{border:2px solid var(--primary);color:var(--primary);}
-</style>
-<main>
-  <svg width="140" height="140" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#0F6E6B"/><clipPath id="vs0L"><rect x="-17" y="-100" width="992" height="1640"/></clipPath><clipPath id="vs0R"><rect x="976" y="-100" width="992" height="1640"/></clipPath><g transform="translate(16.19 71.90) scale(0.03465 -0.03465)"><path clip-path="url(#vs0L)" fill="#fff" d="M444 0 23 1440H276L563 400L849 1438L1102 1440L1389 400L1675 1440H1928L1508 0H1270L975 1024L682 0Z"/><path clip-path="url(#vs0R)" fill="#6FD6C8" d="M444 0 23 1440H276L563 400L849 1438L1102 1440L1389 400L1675 1440H1928L1508 0H1270L975 1024L682 0Z"/><circle cx="976" cy="1440" r="176" fill="#FF6B5B"/></g></svg>
-  <h1>Deze pagina bestaat niet (meer)</h1>
-  <p>Misschien is de link verouderd of zit er een typfout in. Geen zorgen, we helpen je graag verder.</p>
-  <div class="actions">
-    <a class="btn btn-primary" href="/">Naar de homepage</a>
-    <a class="btn btn-secondary" href="/producten">Bekijk producten</a>
-  </div>
-</main>
-<!-- vw-analytics:start -->
-<script>
-(function(){
-  var ID = 'G-6QJJ46JVWW', loaded = false;
-  function ok(){ var c = window.vwConsent; if(!c){ try{ c = JSON.parse(localStorage.getItem('vwConsent')); }catch(e){} } return !!(c && c.analytics); }
-  function load(){
-    if(loaded || !ok()) return; loaded = true;
-    window.dataLayer = window.dataLayer || []; window.gtag = function(){ dataLayer.push(arguments); };
-    gtag('js', new Date());
-    gtag('config', ID, { allow_google_signals: false, allow_ad_personalization_signals: false });
-    var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID; document.head.appendChild(s);
-  }
-  function ev(name, params){ if(loaded && window.gtag) gtag('event', name, params || {}); }
-  document.addEventListener('click', function(e){
-    var a = e.target.closest && e.target.closest('a[href]'); if(!a) return;
-    var h = a.getAttribute('href');
-    if(h.indexOf('wa.me') > -1) ev('whatsapp_klik', { pagina: location.pathname });
-    else if(h.indexOf('tel:') === 0) ev('bel_klik', { pagina: location.pathname });
-  }, true);
-  document.addEventListener('submit', function(e){
-    var f = e.target; var soort = f.closest && f.closest('#leadNewsletter') ? 'nieuwsbrief' : 'aanvraag';
-    ev(soort === 'nieuwsbrief' ? 'nieuwsbrief_aanmelding' : 'generate_lead', { pagina: location.pathname, soort: soort });
-  }, true);
-  window.vwTrack = ev;
-  window.addEventListener('vw:consent', load);
-  load();
-})();
-</script>
-<!-- vw-analytics:end -->
-<!-- vw-cal:start -->
+BLOCK = '''<!-- vw-cal:start -->
 <style>
 .vwb-ov{position:fixed;inset:0;z-index:9999;background:rgba(8,32,31,.62);display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;transition:opacity .2s;}
 .vwb-ov.open{opacity:1;}
@@ -128,7 +72,7 @@ body.vwb-lock{overflow:hidden;}
 </style>
 <script>
 (function(){
-  var T = {huis:{link:'voltwijk/gratis-adviesgesprek-aan-huis',t:'Adviesgesprek aan huis',d:'60 min · een adviseur komt bij je langs en kijkt naar je woning, meterkast en dak'},video:{link:'voltwijk/videogesprek-met-een-adviseur',t:'Videogesprek',d:'30 min · laat via je camera je meterkast of dak zien, zonder dat er iemand langskomt'},bel:{link:'voltwijk/bellen',t:'Belafspraak',d:'15 min · we bellen je op het moment dat jou uitkomt'}}, IC = {huis:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg>',video:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2.5"/><path d="m16 10.5 6-3.5v10l-6-3.5"/></svg>',bel:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>'}, lead = {}, ov, n = 0, booked = false;
+  var T = {__TYPES__}, IC = {__ICONS__}, lead = {}, ov, n = 0, booked = false;
   function esc(s){ return String(s||'').replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
   function track(name, p){ try{ if(window.vwTrack) vwTrack(name, p); }catch(e){} }
   // Onthoud naam/e-mail/telefoon uit een verstuurd formulier, zodat de agenda die al invult.
@@ -181,7 +125,7 @@ body.vwb-lock{overflow:hidden;}
     var cfg = {theme: 'light', layout: 'month_view'};
     if(lead.naam) cfg.name = lead.naam;
     if(lead.email) cfg.email = lead.email;
-    if(lead.telefoon && k === 'bel') cfg.attendeePhoneNumber = lead.telefoon.replace(/^0(?=\d)/, '+31').replace(/[\s-]/g, '');
+    if(lead.telefoon && k === 'bel') cfg.attendeePhoneNumber = lead.telefoon.replace(/^0(?=\\d)/, '+31').replace(/[\\s-]/g, '');
     loadCal();
     Cal('init', ns, {origin: 'https://cal.com'});
     Cal.ns[ns]('inline', {elementOrSelector: '#' + id, calLink: t.link, layout: 'month_view', config: cfg});
@@ -215,4 +159,45 @@ body.vwb-lock{overflow:hidden;}
   }).observe(document.documentElement, {subtree: true, attributes: true, attributeFilter: ['data-sent']});
 })();
 </script>
-<!-- vw-cal:end -->
+<!-- vw-cal:end -->'''.replace('__TYPES__', JS_TYPES).replace('__ICONS__', JS_ICONS)
+
+# Blok op de contactpagina, direct onder de contactkanalen
+SECTION = '''<!-- vw-cal-sectie:start -->
+      <div class="ct-book reveal" id="afspraak" style="scroll-margin-top:96px;">
+        <div>
+          <div class="pill">Nieuw · online plannen</div>
+          <h2 style="font-size:clamp(24px,3vw,30px);margin-top:14px;">Plan zelf direct een gratis afspraak</h2>
+          <p style="font-size:14.5px;color:var(--ink-soft);margin-top:8px;line-height:1.55;max-width:560px;">Kies wat jou het beste uitkomt en zie meteen wanneer we tijd hebben. Je krijgt direct een bevestiging per mail.</p>
+        </div>
+        <div class="ct-book-grid">
+%s
+        </div>
+      </div>
+      <style>
+        .ct-book{margin-top:28px;padding:30px;border-radius:24px;background:#fff;border:1px solid var(--border);}
+        .ct-book-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:22px;}
+        .ct-bk{display:flex;flex-direction:column;gap:8px;padding:20px;border-radius:18px;border:2px solid var(--border);text-decoration:none;color:var(--ink);transition:border-color .15s,transform .15s,box-shadow .15s;}
+        .ct-bk:hover,.ct-bk:focus-visible{border-color:var(--primary);transform:translateY(-2px);box-shadow:0 18px 34px -24px rgba(15,110,107,.7);outline:none;}
+        .ct-bk .ct-bk-ic{width:44px;height:44px;border-radius:14px;background:var(--surface-tint);color:var(--primary);display:flex;align-items:center;justify-content:center;}
+        .ct-bk b{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:17px;}
+        .ct-bk span{font-size:13.5px;color:var(--ink-faint);line-height:1.5;}
+        .ct-bk em{font-style:normal;font-weight:800;font-size:13.5px;color:var(--primary);margin-top:auto;padding-top:4px;}
+        @media (max-width:760px){ .ct-book{padding:22px 18px;} .ct-book-grid{grid-template-columns:1fr;gap:10px;} }
+      </style>
+<!-- vw-cal-sectie:end -->''' % '\n'.join(
+    '          <a class="ct-bk" href="https://cal.com/%s" data-book="%s"><span class="ct-bk-ic">%s</span><b>%s</b><span>%s</span><em>Kies een moment →</em></a>' % (l, k, ICONS[k], t, d)
+    for k, l, t, d in TYPES)
+
+n = 0
+for f in sorted(glob.glob('*.html')):
+    s = open(f, encoding='utf-8').read()
+    s2 = re.sub(r'\n?<!-- vw-cal:start -->.*?<!-- vw-cal:end -->', '', s, flags=re.S)
+    s2 = re.sub(r'\n?<!-- vw-cal-sectie:start -->.*?<!-- vw-cal-sectie:end -->', '', s2, flags=re.S)
+    if not OFF:
+        s2 = s2.rstrip('\n') + '\n' + BLOCK + '\n'
+    if not OFF and f == 'contact.html':
+        anchor = '      </div>\n    </div>\n\n    <div class="wrap" style="padding-top:88px;padding-bottom:88px;">'
+        assert anchor in s2, 'ankerpunt contactpagina niet gevonden'
+        s2 = s2.replace(anchor, '      </div>\n' + SECTION + anchor[len('      </div>'):], 1)
+    if s2 != s: open(f, 'w', encoding='utf-8').write(s2); n += 1
+print(('Afspraken plannen verwijderd' if OFF else "Afspraken plannen (Cal.com) op") + ' ' + str(n) + " pagina's")
