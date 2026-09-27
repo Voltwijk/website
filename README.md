@@ -111,3 +111,7 @@ gebruik alleen controleerbare feiten per plaats. Draai daarna `python3 tools/seo
 
 ## Afspraken plannen (Cal.com)
 `python3 tools/booking.py` zet de Cal.com-afspraakplanner (cal.com/voltwijk) op alle pagina's: knoppen met `data-book="huis|video|bel"` openen een venster met de agenda, na een offerte- of contactaanvraag verschijnt "Plan direct je gratis adviesgesprek" (naam en e-mail al ingevuld), en de contactpagina krijgt het blok `#afspraak`. Een geboekte afspraak telt in Google Analytics als `afspraak_gepland`. Links wijzigen? Pas `TYPES` bovenin het script aan en draai het opnieuw. Uitzetten: `python3 tools/booking.py uit`.
+
+## Online bestellen (calculator)
+`python3 tools/order.py` zet in stap 3 van de prijscalculator (homepage, /bereken-je-prijs en productpagina's) de knop "Bestel direct". De klant vult gegevens in, kiest een installatiedatum (ma–vr, vanaf 6 dagen) en doet een technische check (foto's of videocheck). De bestelling komt binnen via Netlify Forms als formulier `bestelling` (met foto's) en telt in Google Analytics als `bestelling_aangevraagd`. De klant betaalt nu niets; na de orderbevestiging volgt de aanbetaling (`AANBETALING`, nu € 350) via een betaallink, het restant na installatie.
+Zet `CAL = True` zodra het Cal.com-afspraaktype `cal.com/voltwijk/installatie` bestaat: klanten kiezen dan een echte dag uit de agenda (max. 3 per dag, instellen in Cal.com) en de bestelling wordt na het boeken verstuurd.
