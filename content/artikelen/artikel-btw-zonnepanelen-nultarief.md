@@ -46,7 +46,7 @@ Hier gaat het in de praktijk het vaakst mis. De belangrijkste uitzondering:
 
 Een **thuisbatterij** valt **niet** onder het nultarief. Daarover betaal je 21% btw, ook als je de batterij in één keer samen met je zonnepanelen koopt en laat installeren. Een batterij slaat stroom op, maar wekt die niet zelf op, en valt daarom buiten de regeling.
 
-Die btw kun je als particulier niet terugvragen. Alleen wie btw-ondernemer is en de batterij (deels) gebruikt voor belaste bedrijfsactiviteiten, kan die btw eventueel aftrekken. Laat dat in zo'n geval altijd checken door de Belastingdienst of een adviseur. Meer hierover lees je in [btw thuisbatterij terugvragen](/artikel-btw-thuisbatterij-terugvragen).
+Die btw kun je vaak terugvragen als je met de batterij stroom verkoopt, bijvoorbeeld met een dynamisch contract; de Belastingdienst ziet je dan als ondernemer voor de btw, met bijbehorende verplichtingen. Laat dat in zo'n geval altijd checken door de Belastingdienst of een adviseur. Meer hierover lees je in [btw thuisbatterij terugvragen](/artikel-btw-thuisbatterij-terugvragen).
 
 ### Andere werkzaamheden
 
@@ -102,6 +102,6 @@ A: Nee. Sinds 1 januari 2023 geldt het nultarief, dus je betaalt geen btw en hoe
 Q: Geldt het nultarief ook voor panelen op mijn garage of schuur?
 A: Het nultarief geldt voor zonnepanelen op of bij een woning. Panelen op een bijgebouw dat bij je woning hoort, vallen daar in de meeste gevallen onder. Check bij twijfel de actuele regels van de Belastingdienst.
 Q: Betaal ik btw op een thuisbatterij als ik die samen met zonnepanelen koop?
-A: Ja. Een thuisbatterij valt niet onder het nultarief. Je betaalt 21% btw, ook als je hem samen met de panelen koopt, en als particulier kun je die btw niet terugvragen.
+A: Ja. Een thuisbatterij valt niet onder het nultarief. Je betaalt 21% btw, ook als je hem samen met de panelen koopt. Verkoop je met de batterij stroom, dan kun je die btw vaak terugvragen.
 Q: Kan het nultarief weer verdwijnen?
 A: Btw-regels kunnen veranderen. In 2026 geldt het nultarief nog. Check voor je aankoop de actuele informatie op de website van de Belastingdienst.
