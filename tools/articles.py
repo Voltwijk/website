@@ -184,15 +184,31 @@ def build_page(a, shell, catalog):
     s = re.sub(r'\n?<!-- rel:start -->.*?<!-- rel:end -->', '', s, flags=re.S)
     return s
 
+CTACSS = """<style>.art-cta{display:flex;gap:22px;align-items:center;padding:26px;border-radius:22px;background:linear-gradient(150deg,#fff 50%,var(--surface-tint));border:2px solid var(--primary);box-shadow:0 26px 50px -36px rgba(15,110,107,.8);}
+.art-cta img{width:120px;height:120px;border-radius:16px;object-fit:cover;flex-shrink:0;background:var(--bg);}
+.art-cta .k{font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--primary);}
+.art-cta h2{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:23px;line-height:1.2;margin:6px 0 0;}
+.art-cta p{font-size:14.5px;color:var(--ink-soft);line-height:1.55;margin:8px 0 0;}
+.art-cta .row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin-top:16px;}
+.art-cta .row span{font-size:13px;color:var(--ink-soft);} .art-cta .row b{color:var(--primary);}
+@media (max-width:600px){.art-cta{flex-direction:column;align-items:flex-start;padding:22px 18px;}.art-cta img{width:100%;height:150px;}.art-cta .btn-primary{width:100%;justify-content:center;}}</style>"""
+
+def cta_card(pname, price, href, thumb):
+    title = f'{esc(pname)} laten installeren?' if pname else 'Klaar om het te regelen?'
+    img = f'<img loading="lazy" decoding="async" src="{thumb}" alt="{esc(pname)}">' if thumb else ''
+    return (CTACSS + f'''<div class="art-cta">{img}<div><div class="k">Vaste prijs · eigen monteurs{' · ' + esc(price) if price else ''}</div>
+<h2>{title}</h2><p>Bereken in 1 minuut je vaste prijs, inclusief installatie, en kies direct je installatiedatum. Je betaalt nu niets.</p>
+<div class="row"><a class="btn-primary" href="{href}" style="text-decoration:none;">Bereken je prijs &amp; plan direct →</a><span>📅 Installatie al vanaf <b data-vw-first></b></span></div></div></div>''')
+
 def related_block(slug, prod, catalog):
     if prod == 'algemeen':
-        pool = [c for c in catalog if c['slug'] != slug][:6]; card = ''
+        pool = [c for c in catalog if c['slug'] != slug][:6]; card = cta_card(None, None, '/bereken-je-prijs', None)
     else:
         pname, price, purl, pthumb = PRODUCTS[prod]
         prim = [c for c in catalog if c['product'] == prod and c['slug'] != slug]
         sec = [c for c in catalog if prod in c.get('also', []) and c['slug'] != slug and c not in prim]
         pool = (prim + sec)[:6]
-        card = f'''<a class="rel-prod" href="{purl}"><img loading="lazy" decoding="async" src="{pthumb}" alt="{esc(pname)}"><div><div class="k">Direct regelen</div><div class="n">{esc(pname)} · {esc(price)}</div><div class="p">Vaste prijs, inclusief installatie door ons eigen team.</div></div><span class="go">Bekijk {esc(pname.lower())} →</span></a>'''
+        card = cta_card(pname, price, purl + '#calculator', pthumb)
     items = ''.join(f'<a href="/{c["slug"]}"><span>{esc(CATLABEL[c["product"]])}</span>{esc(c["title"])}</a>' for c in pool)
     lab = 'Lees ook' if prod == 'algemeen' else 'Meer over ' + CATLABEL[prod].lower()
     return f'''<!-- rel:start --><div class="blk-light"><div class="wrap rel-wrap" style="max-width:760px;"><div class="vw-endmark" aria-hidden="true"><span></span></div>{card}
