@@ -252,7 +252,7 @@ WA = 'https://wa.me/31853335687?text='
 def cta(title, sub):
     return f'''<div class="wrap reveal lp-sec" style="max-width:1000px;padding-bottom:80px;"><div class="lp-cta">
       <div><div class="vw-heading" style="font-size:clamp(22px,2.6vw,28px);color:#fff;">{esc(title)}</div><p>{esc(sub)}</p></div>
-      <div style="display:flex;gap:10px;flex-wrap:wrap;"><a href="/bereken-je-prijs" class="btn-primary" style="background:var(--mint);color:var(--dark);text-decoration:none;">Bereken je prijs →</a><a href="/contact" class="btn-secondary" style="border-color:#fff;color:#fff;text-decoration:none;">Neem contact op</a></div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;"><a href="/bereken-je-prijs" class="btn-primary" style="background:var(--mint);color:var(--dark);text-decoration:none;">Bereken je prijs &amp; plan direct →</a><a href="/contact" class="btn-secondary" style="border-color:#fff;color:#fff;text-decoration:none;">Neem contact op</a></div>
     </div></div>'''
 
 def city_faq(c):
@@ -282,7 +282,7 @@ def city_main(c):
         <div class="pill">Werkgebied · {esc(c['region'])}</div>
         <h1 class="vw-heading" style="font-size:clamp(30px,4.6vw,44px);margin-top:14px;line-height:1.15;">Zonnepanelen, thuisbatterij en warmtepomp in {esc(n)}</h1>
         <p style="font-size:17px;color:var(--ink-soft);margin-top:16px;line-height:1.65;">{esc(c['intro'])}</p>
-        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:24px;"><a href="/bereken-je-prijs" class="btn-primary" style="text-decoration:none;">Bereken je prijs →</a><a href="{wa}" target="_blank" rel="noopener" class="btn-secondary" style="text-decoration:none;">Stuur een appje</a></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:24px;"><a href="/bereken-je-prijs" class="btn-primary" style="text-decoration:none;">Bereken je prijs &amp; plan direct →</a><a href="{wa}" target="_blank" rel="noopener" class="btn-secondary" style="text-decoration:none;">Stuur een appje</a></div>
       </div>
       <div class="img"><img fetchpriority="high" src="/images/{c['img']}.webp" alt="Installatie door een Voltwijk-monteur" width="800" height="600"></div>
     </div>
