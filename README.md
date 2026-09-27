@@ -108,3 +108,6 @@ gebruik alleen controleerbare feiten per plaats. Draai daarna `python3 tools/seo
 - `python3 tools/energiescan.py [aan|vol|uit]` beheert de Gratis Energiescanweek Moerdijk: `/energiescan` (Netlify-formulier
   `energiescan`), `/energiescan-bedankt` (noindex) en de banner op de homepage. Daarna `python3 tools/seo.py`.
   Flyer, persbericht en Google-afbeelding staan in `brand/energiescan/`.
+
+## Afspraken plannen (Cal.com)
+`python3 tools/booking.py` zet de Cal.com-afspraakplanner (cal.com/voltwijk) op alle pagina's: knoppen met `data-book="huis|video|bel"` openen een venster met de agenda, na een offerte- of contactaanvraag verschijnt "Plan direct je gratis adviesgesprek" (naam en e-mail al ingevuld), en de contactpagina krijgt het blok `#afspraak`. Een geboekte afspraak telt in Google Analytics als `afspraak_gepland`. Links wijzigen? Pas `TYPES` bovenin het script aan en draai het opnieuw. Uitzetten: `python3 tools/booking.py uit`.
