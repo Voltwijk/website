@@ -14,12 +14,15 @@ TYPES = [  # sleutel, Cal.com-link, titel, duur/omschrijving
     ('video', 'voltwijk/videogesprek-met-een-adviseur', 'Videogesprek', '30 min · laat via je camera je meterkast of dak zien, zonder dat er iemand langskomt'),
     ('bel', 'voltwijk/bellen', 'Belafspraak', '15 min · we bellen je op het moment dat jou uitkomt'),
 ]
+# Extra afspraaksoorten die alleen via een eigen knop (data-book="...") worden geopend, niet in de keuzelijst
+EXTRA = [('scan', 'voltwijk/energiescan', 'Gratis energiescan', '')]
 ICONS = {
     'huis': '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg>',
     'video': '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2.5"/><path d="m16 10.5 6-3.5v10l-6-3.5"/></svg>',
     'bel': '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>',
 }
 JS_TYPES = ','.join("%s:{link:'%s',t:'%s',d:'%s'}" % (k, l, t, d) for k, l, t, d in TYPES)
+JS_EXTRA = ','.join("%s:{link:'%s',t:'%s',d:'%s'}" % (k, l, t, d) for k, l, t, d in EXTRA)
 JS_ICONS = ','.join("%s:'%s'" % (k, v) for k, v in ICONS.items())
 
 BLOCK = '''<!-- vw-cal:start -->
@@ -74,7 +77,7 @@ body.vwb-lock{overflow:hidden;}
 </style>
 <script>
 (function(){
-  var T = {__TYPES__}, IC = {__ICONS__}, lead = {}, ov, n = 0, booked = false;
+  var T = {__TYPES__}, X = {__EXTRA__}, IC = {__ICONS__}, lead = {}, ov, n = 0, booked = false;
   function esc(s){ return String(s||'').replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
   function track(name, p){ try{ if(window.vwTrack) vwTrack(name, p); }catch(e){} }
   // Onthoud naam/e-mail/telefoon uit een verstuurd formulier, zodat de agenda die al invult.
@@ -114,8 +117,8 @@ body.vwb-lock{overflow:hidden;}
     b.querySelectorAll('[data-vwb]').forEach(function(x){ x.addEventListener('click', function(){ open(x.getAttribute('data-vwb'), true); }); });
   }
   function open(k, fromChoice){
-    if(!T[k]){ choose(); track('afspraak_start', {pagina: location.pathname}); return; }
-    var t = T[k], id = 'vwbCal' + (++n), ns = 'vw' + n;
+    if(!T[k] && !X[k]){ choose(); track('afspraak_start', {pagina: location.pathname}); return; }
+    var t = T[k] || X[k], id = 'vwbCal' + (++n), ns = 'vw' + n;
     var b = shell(t.t + ' plannen');
     b.innerHTML = '<div class="vwb-cal" id="'+id+'"><div class="vwb-load">Agenda laden…</div></div>';
     var foot = document.createElement('div'); foot.className = 'vwb-foot';
@@ -174,7 +177,7 @@ body.vwb-lock{overflow:hidden;}
   addPre();
 })();
 </script>
-<!-- vw-cal:end -->'''.replace('__TYPES__', JS_TYPES).replace('__ICONS__', JS_ICONS)
+<!-- vw-cal:end -->'''.replace('__TYPES__', JS_TYPES).replace('__EXTRA__', JS_EXTRA).replace('__ICONS__', JS_ICONS)
 
 # Blok op de contactpagina, direct onder de contactkanalen
 SECTION = '''<!-- vw-cal-sectie:start -->
