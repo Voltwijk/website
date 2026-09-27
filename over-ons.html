@@ -1301,6 +1301,7 @@ initReveal(document); initCountUp(document);
 .vwb-after b{display:block;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:16px;}
 .vwb-after small{display:block;font-size:13px;color:#54615F;margin-top:4px;font-weight:400;}
 .vwb-btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;}
+.vwb-pre{margin-top:18px;}
 .vwb-btns button{display:inline-flex;align-items:center;gap:7px;border:2px solid #0F6E6B;background:#fff;color:#0F6E6B;border-radius:999px;padding:9px 14px;font:800 13.5px 'Nunito Sans',system-ui,sans-serif;cursor:pointer;}
 .vwb-btns button:first-child{background:#0F6E6B;color:#fff;}
 .vwb-btns svg{width:17px;height:17px;}
@@ -1316,6 +1317,7 @@ body.vwb-lock{overflow:hidden;}
   .vwb-opt em{display:none;}
   .vwb-head{padding:14px 16px;}
   .vwb-choose{padding:20px 16px;}
+  .vwb-btns button{flex:1 1 100%;justify-content:center;}
 }
 </style>
 <script>
@@ -1402,9 +1404,22 @@ body.vwb-lock{overflow:hidden;}
       Object.keys(T).map(function(k){ return '<button type="button" data-book="'+k+'">'+IC[k]+T[k].t+'</button>'; }).join('') + '</div>';
     s.style.flexWrap = 'wrap'; s.appendChild(d);
   }
+  // In stap 3 van de prijscalculator: direct (ook zonder formulier) een afspraak kunnen plannen.
+  function addPre(){
+    var b = document.getElementById('leadCalc');
+    if(!b || b.getAttribute('data-sent') === '1' || b.querySelector('.vwb-pre')) return;
+    var d = document.createElement('div'); d.className = 'vwb-after vwb-pre';
+    d.innerHTML = '<b>Liever eerst even praten?</b><small>Plan direct een gratis adviesgesprek. Kies zelf dag en tijd, zonder verplichtingen.</small><div class="vwb-btns">' +
+      Object.keys(T).map(function(k){ return '<button type="button" data-book="'+k+'">'+IC[k]+T[k].t+'</button>'; }).join('') + '</div>';
+    b.appendChild(d);
+  }
   new MutationObserver(function(ms){
-    ms.forEach(function(m){ if(m.target.getAttribute && m.target.getAttribute('data-sent') === '1') addAfter(m.target); });
-  }).observe(document.documentElement, {subtree: true, attributes: true, attributeFilter: ['data-sent']});
+    ms.forEach(function(m){
+      if(m.type === 'attributes'){ if(m.target.getAttribute('data-sent') === '1'){ var pre = m.target.querySelector('.vwb-pre'); if(pre) pre.remove(); addAfter(m.target); } }
+      else addPre();
+    });
+  }).observe(document.documentElement, {subtree: true, childList: true, attributes: true, attributeFilter: ['data-sent']});
+  addPre();
 })();
 </script>
 <!-- vw-cal:end -->
