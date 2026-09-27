@@ -9,6 +9,8 @@ ROOT = os.path.join(os.path.dirname(__file__), '..'); os.chdir(ROOT)
 MODE = (sys.argv[1] if len(sys.argv) > 1 else 'aan').lower()
 SHELL = 'artikel-isde-subsidie-2026.html'
 MAX = 60
+# Zet op True zodra het Cal.com-afspraaktype cal.com/voltwijk/energiescan bestaat: bezoekers kiezen dan zelf direct hun moment.
+CAL = False
 DATES = '26 t/m 31 oktober'
 DAYS = ['Maandag 26 oktober', 'Dinsdag 27 oktober', 'Woensdag 28 oktober', 'Donderdag 29 oktober', 'Vrijdag 30 oktober', 'Zaterdag 31 oktober']
 KERNEN = ['Zevenbergen', 'Klundert', 'Fijnaart', 'Willemstad', 'Moerdijk', 'Zevenbergschen Hoek', 'Standdaarbuiten',
@@ -72,9 +74,21 @@ CSS = '''<style>
 .es-days em{display:block;font-style:normal;font-size:30px;font-weight:800;color:var(--mint);margin:4px 0 2px;font-family:'Bricolage Grotesque',system-ui,sans-serif;}
 .es-days span{font-size:12px;color:var(--dark-text-muted);}
 .es-band .es-steps p{color:#C9D6D3;} .es-band .es-steps b{color:#fff;} .es-band .step-num{background:var(--mint);color:var(--dark);}
+.es-main{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:40px;align-items:start;}
+.es-main .es-get{grid-template-columns:1fr 1fr;gap:12px;}
+.es-main .es-get > div{padding:16px 18px;}
+.es-main .es-get .ic{width:36px;height:36px;margin-bottom:10px;}
+.es-main .es-get h3{font-size:15.5px;margin-bottom:4px;}
+.es-main .es-get p{font-size:13.5px;line-height:1.55;}
+.es-flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:14px;}
+.es-flow div{display:flex;align-items:center;gap:10px;background:var(--mint-tint);border-radius:14px;padding:12px 14px;font-size:13.5px;font-weight:700;color:var(--ink);}
+.es-flow b{width:26px;height:26px;border-radius:999px;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0;}
+.es-cal{margin-top:18px !important;}
+.es-or{display:flex;align-items:center;gap:12px;margin:18px 0 2px;font-size:12.5px;font-weight:700;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.06em;}
+.es-or:before,.es-or:after{content:"";flex:1;height:1px;background:var(--border);}
 .es-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;}
 .es-chips span{padding:7px 13px;border-radius:999px;background:#fff;border:1px solid var(--border);font-size:13px;font-weight:700;color:var(--ink);}
-@media (max-width:900px){.es-top{min-height:0;display:block;}.es-top picture,.es-top img.bg{position:relative;height:auto;aspect-ratio:3/2;}
+@media (max-width:900px){.es-main{grid-template-columns:1fr;gap:28px;}.es-main .es-get{grid-template-columns:1fr;}.es-flow{grid-template-columns:1fr;}.es-top{min-height:0;display:block;}.es-top picture,.es-top img.bg{position:relative;height:auto;aspect-ratio:3/2;}
 .es-top:after{display:none;}.es-top .in{padding:28px 22px 30px;max-width:none;}.es-trust{grid-template-columns:repeat(2,minmax(0,1fr));}.es-days{grid-template-columns:repeat(3,minmax(0,1fr));}.es-band{padding:28px 20px;}}
 </style>'''
 
@@ -85,7 +99,7 @@ FAQ = [
  ('Hoe lang duurt het bezoek?', 'Reken op ongeveer 45 minuten. We kijken naar je meterkast, je dak en je energieverbruik en beantwoorden je vragen.'),
  ('Wat heb ik na afloop?', 'Binnen een paar werkdagen ontvang je per mail een kort persoonlijk adviesrapport: wat bij jouw huis past, wat het ongeveer kost en wat het oplevert. En wat je beter (nog) niet kunt doen.'),
  ('Ik woon niet in de gemeente Moerdijk. Kan ik ook meedoen?', 'Deze week is alleen voor inwoners van de gemeente Moerdijk. Woon je ergens anders, dan kun je altijd je prijs berekenen of ons een appje sturen voor advies.'),
- ('Kan het ook \'s avonds of op zaterdag?', 'Ja. We komen overdag, in de avond en op zaterdag. Geef bij je aanmelding je voorkeur op, dan bellen we je om een tijd af te spreken.'),
+ ('Kan het ook \'s avonds of op zaterdag?', 'Ja. We komen overdag, in de avond en op zaterdag. Als we je bellen, spreken we een moment af dat jou uitkomt.'),
 ]
 
 def form_html():
@@ -93,26 +107,21 @@ def form_html():
         return (f'<div class="es-full"><strong>Alle {MAX} plekken zijn vergeven.</strong> Bedankt voor de enorme belangstelling! '
                 'Wil je toch advies? Stuur ons een appje of <a href="/bereken-je-prijs" style="color:var(--primary);font-weight:700;">bereken je prijs</a>.</div>')
     kern = ''.join(f'<option>{esc(k)}</option>' for k in KERNEN)
-    days = '<option>Maakt niet uit</option>' + ''.join(f'<option>{esc(d)}</option>' for d in DAYS)
-    topics = ''.join(f'<label><input type="checkbox" name="interesse_{k.lower().replace(" ", "_")}" value="ja"> {esc(k)}</label>'
-                     for k in ['Zonnepanelen', 'Thuisbatterij', 'Warmtepomp', 'Airco', 'Boiler', 'Laadpaal', 'Meterkast', 'Weet ik nog niet'])
+    cal = ('<button type="button" class="btn-primary es-cal" data-book="scan">Kies direct je moment →</button>'
+           '<div class="es-or"><span>of laat je terugbellen</span></div>') if CAL else ''
     return f'''<form class="es-form" name="energiescan" method="POST" action="/energiescan-bedankt" data-netlify="true" netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="energiescan">
       <p style="display:none;"><label>Niet invullen: <input name="bot-field"></label></p>
-      <div class="vw-heading" style="font-size:22px;">Meld je aan</div>
-      <p style="font-size:14px;color:var(--ink-soft);margin-top:6px;">Vol = vol: we komen bij maximaal {MAX} huishoudens.</p>
+      <div class="vw-heading" style="font-size:24px;">Meld je aan in 30 seconden</div>
+      <p style="font-size:14px;color:var(--ink-soft);margin-top:6px;">{'Kies zelf dag en tijd, of laat je gegevens achter en wij bellen je.' if CAL else 'Alleen je naam, nummer en postcode. Wij bellen je om een moment af te spreken dat jou uitkomt.'}</p>
+      {cal}
       <div class="row2"><div><label for="es-naam">Naam</label><input id="es-naam" type="text" name="naam" autocomplete="name" required></div>
       <div><label for="es-tel">Telefoonnummer</label><input id="es-tel" type="tel" name="telefoon" autocomplete="tel" required></div></div>
-      <label for="es-mail">E-mailadres <span>(voor je adviesrapport)</span></label><input id="es-mail" type="email" name="email" autocomplete="email" required>
-      <div class="row2"><div><label for="es-straat">Straat en huisnummer</label><input id="es-straat" type="text" name="adres" autocomplete="street-address" required></div>
-      <div><label for="es-pc">Postcode</label><input id="es-pc" type="text" name="postcode" autocomplete="postal-code" required pattern="\\s*[0-9]{{4}}\\s*[A-Za-z]{{2}}\\s*" title="Bijvoorbeeld 4761 AB"></div></div>
-      <label for="es-kern">Woonplaats</label><select id="es-kern" name="woonplaats" required><option value="">Kies je woonplaats</option>{kern}</select>
-      <div class="row2"><div><label for="es-dag">Voorkeursdag</label><select id="es-dag" name="voorkeursdag">{days}</select></div>
-      <div><label for="es-dd">Dagdeel</label><select id="es-dd" name="dagdeel"><option>Maakt niet uit</option><option>Ochtend</option><option>Middag</option><option>Avond</option></select></div></div>
-      <label>Waar heb je vragen over? <span>(optioneel)</span></label><div class="es-checks">{topics}</div>
-      <label for="es-vraag">Je vraag of situatie <span>(optioneel)</span></label><textarea id="es-vraag" name="vraag" placeholder="Bijvoorbeeld: we hebben 10 panelen uit 2016 en twijfelen over een thuisbatterij."></textarea>
-      <label class="es-ok"><input type="checkbox" name="akkoord" value="ja" required> Ik ga ermee akkoord dat Voltwijk mijn gegevens gebruikt om het bezoek in te plannen en mij het adviesrapport te sturen. Zie het <a href="/privacybeleid" style="color:var(--primary);">privacybeleid</a>.</label>
-      <button type="submit" class="btn-primary">Plan mijn gratis energiescan →</button>
+      <div class="row2"><div><label for="es-pc">Postcode</label><input id="es-pc" type="text" name="postcode" autocomplete="postal-code" required pattern="\\s*[0-9]{{4}}\\s*[A-Za-z]{{2}}\\s*" title="Bijvoorbeeld 4761 AB"></div>
+      <div><label for="es-kern">Woonplaats</label><select id="es-kern" name="woonplaats" required><option value="">Kies…</option>{kern}</select></div></div>
+      <label class="es-ok"><input type="checkbox" name="akkoord" value="ja" required> Voltwijk mag mijn gegevens gebruiken om het bezoek in te plannen. Zie het <a href="/privacybeleid" style="color:var(--primary);">privacybeleid</a>.</label>
+      <button type="submit" class="btn-primary">{'Bel mij voor een afspraak' if CAL else 'Plan mijn gratis energiescan'} →</button>
+      <p style="font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;">Vol = vol: maximaal {MAX} huishoudens.</p>
     </form>'''
 
 def main_html():
@@ -122,7 +131,6 @@ def main_html():
         ('Salderen stopt in 2027', 'Wat betekent het einde van de salderingsregeling voor jouw huishouden, en is een thuisbatterij dan slim?'),
         ('Persoonlijk adviesrapport', 'Na het bezoek krijg je per mail een kort rapport: wat past bij jouw huis, wat het kost en wat het oplevert.')])
     faq = ''.join(f'<details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>' for q, a in FAQ)
-    days = ''.join(f'<div><b>{d.split()[0][:2]}</b><em>{d.split()[1]}</em><span>okt</span></div>' for d in DAYS)
     chips = ''.join(f'<span>{esc(k)}</span>' for k in KERNEN)
     return f"""<div class="blk-light" style="padding-top:40px;">
   {CSS}
@@ -134,7 +142,7 @@ def main_html():
         <h1 class="vw-heading" style="font-size:clamp(32px,4.8vw,52px);margin-top:14px;line-height:1.05;hyphens:manual;-webkit-hyphens:manual;">Gratis Energie&shy;scan&shy;week Moerdijk</h1>
         <p class="l">Twijfel je over zonnepanelen, een thuisbatterij of een warmtepomp? Of wat het einde van het salderen in 2027 voor jou betekent? We komen gratis bij je langs voor eerlijk advies. Zonder verkooppraatje en zonder verplichtingen.</p>
         <div class="es-date">📅 <span>Ma 26 t/m za 31 oktober · <b>ook 's avonds en op zaterdag</b></span></div>
-        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:22px;"><a href="#aanmelden" class="btn-primary" style="text-decoration:none;background:var(--mint);color:var(--dark);">{'Bekijk de status' if MODE == 'vol' else 'Meld je gratis aan'} →</a></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:22px;"><a href="#aanmelden" {'data-book="scan" ' if CAL and MODE != 'vol' else ''}class="btn-primary" style="text-decoration:none;background:var(--mint);color:var(--dark);">{'Bekijk de status' if MODE == 'vol' else ('Kies direct je moment' if CAL else 'Meld je gratis aan')} →</a></div>
         <p class="small">Maximaal {MAX} huishoudens · vol = vol</p>
       </div>
     </div>
@@ -145,31 +153,31 @@ def main_html():
       <div><b>12.500+</b><span>installaties uitgevoerd</span></div>
     </div>
   </div>
-  <div class="wrap reveal es-sec" style="max-width:1120px;">
-    <div class="pill">Wat je krijgt</div>
-    <h2 class="vw-heading es-h2" style="margin-top:12px;">Eerlijk advies over jouw huis, niet over ons assortiment</h2>
-    <div class="es-get">{get}</div>
-  </div>
-  <div class="wrap reveal es-sec" style="max-width:1120px;">
-    <div class="es-band">
-      <div class="pill" style="background:rgba(255,255,255,.1);color:var(--mint);">De week</div>
-      <h2 class="vw-heading es-h2" style="margin-top:12px;">Zes dagen, ochtend tot avond</h2>
-      <div class="es-days">{days}</div>
-      <div class="es-steps" style="margin-top:34px;">
-        <div><div class="step-num">1</div><p><b>Meld je aan</b>Vul het formulier in. Het kost een minuut.</p></div>
-        <div><div class="step-num">2</div><p><b>Wij bellen je</b>We spreken een tijd af die jou uitkomt: overdag, 's avonds of op zaterdag.</p></div>
-        <div><div class="step-num">3</div><p><b>Bezoek en rapport</b>Een adviseur uit ons eigen team komt ±45 minuten langs. Daarna krijg je je adviesrapport per mail.</p></div>
+  <div class="wrap reveal es-sec" id="aanmelden" style="max-width:1120px;scroll-margin-top:90px;">
+    <div class="es-main">
+      <div>{form_html()}</div>
+      <div>
+        <div class="pill">Wat je krijgt</div>
+        <h2 class="vw-heading es-h2" style="margin-top:12px;">Eerlijk advies over jouw huis, niet over ons assortiment</h2>
+        <div class="es-get">{get}</div>
+        <div class="es-flow">
+          <div><b>1</b><span>{'Kies je moment' if CAL else 'Meld je aan'}</span></div>
+          <div><b>2</b><span>Bezoek van ±45 min</span></div>
+          <div><b>3</b><span>Adviesrapport per mail</span></div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="wrap reveal es-sec" id="aanmelden" style="max-width:1120px;scroll-margin-top:90px;">
+  <div class="wrap reveal es-sec" style="max-width:1120px;">
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;align-items:start;">
-      <div>{form_html()}</div>
       <div>
         <h2 class="vw-heading es-h2">Veelgestelde vragen</h2>
         <div class="faq" style="margin-top:18px;">{faq}</div>
-        <h2 class="vw-heading es-h2" style="font-size:20px;margin-top:32px;">Voor heel de gemeente Moerdijk</h2>
+      </div>
+      <div>
+        <h2 class="vw-heading es-h2" style="font-size:20px;">Voor heel de gemeente Moerdijk</h2>
         <div class="es-chips">{chips}</div>
+        <a href="#aanmelden" class="btn-primary" style="text-decoration:none;margin-top:24px;">{'Bekijk de status' if MODE == 'vol' else 'Meld je gratis aan'} →</a>
       </div>
     </div>
   </div>
