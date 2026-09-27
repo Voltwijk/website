@@ -1,6 +1,6 @@
 title: Hybride omvormer: wat is het en wanneer kies je ervoor?
 seo_title: Hybride omvormer: uitleg, voor- en nadelen | Voltwijk
-description: Wat is een hybride omvormer? Lees het verschil met een gewone omvormer, wanneer je er een kiest bij nieuwe zonnepanelen en een batterij, en de voor- en nadelen.
+description: Wat is een hybride omvormer? Lees het verschil met een gewone omvormer, wanneer je er een kiest bij nieuwe zonnepanelen en de voor- en nadelen.
 category: Zonnepanelen
 product: zonnepanelen
 lead: Een hybride omvormer zet de stroom van je zonnepanelen om én stuurt een thuisbatterij aan. Hij is vooral interessant als je nieuwe zonnepanelen neemt en nu of later een batterij wilt.
@@ -72,6 +72,18 @@ Een gewone omvormer met een losse AC-batterij is vaak handiger als:
 - je (nog) geen batterij wilt en ook niet verwacht die te nemen.
 
 > Twijfel je of je ooit een batterij neemt? Een batterij verdient zich het best terug als hij goed bij je verbruik past. Lees eerst [hoe groot moet een thuisbatterij zijn](/artikel-thuisbatterij-hoe-groot) voordat je extra betaalt voor een hybride omvormer.
+
+## Waar let je op bij het kiezen van een hybride omvormer?
+
+Kies je voor een hybride omvormer, let dan op deze punten:
+
+- **Vermogen:** past het vermogen bij het aantal zonnepanelen dat je hebt of wilt nemen?
+- **1-fase of 3-fase:** een hybride omvormer moet passen bij je aansluiting. Op een 3-fase aansluiting kan een 3-fase omvormer de belasting over de fasen verdelen. Lees ook [thuisbatterij bij een 1-fase aansluiting](/artikel-thuisbatterij-1-fase-aansluiting).
+- **Ondersteunde batterijen:** welke batterijen werken ermee, en hoeveel capaciteit kan er maximaal op?
+- **Aantal ingangen (MPPT's):** heb je panelen op verschillende dakkanten, dan wil je meerdere ingangen.
+- **Noodstroom:** zit het erin, is het een optie, of kan het helemaal niet?
+- **Sturing en app:** kun je de omvormer koppelen aan je slimme meter, een dynamisch contract of een energiemanagementsysteem?
+- **Plek:** een hybride omvormer hoort op een droge, goed geventileerde plek. Vaak is dat dezelfde plek als de batterij.
 
 ## Hybride omvormer na het einde van salderen
 

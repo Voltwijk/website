@@ -1,6 +1,6 @@
 title: Zonnepanelen op een plat dak: opstelling, ballast en regels
 seo_title: Zonnepanelen op een plat dak: zo werkt het | Voltwijk
-description: Zonnepanelen op een plat dak? Lees welke opstelling past, hoe ballast en bevestiging werken, wat je dak moet kunnen dragen en wanneer het vergunningvrij is.
+description: Zonnepanelen op een plat dak? Lees welke opstelling past, hoe ballast werkt, wat je dak moet kunnen dragen en wanneer het vergunningvrij is.
 category: Zonnepanelen
 product: zonnepanelen
 lead: Zonnepanelen op een plat dak kunnen prima, meestal in een oost-west- of zuidopstelling op een frame met ballast. Let vooral op de draagkracht van je dak, de afstand tot de dakrand en, bij een appartement, toestemming van de VvE.
@@ -93,6 +93,15 @@ Hoe dat werkt, staat in de **splitsingsakte** en het splitsingsreglement. Vaak b
 - Kiezen jullie één installatie voor de hele VvE, of panelen per eigenaar?
 
 Leg afspraken schriftelijk vast. Dat voorkomt discussie later.
+
+## Zonnepanelen op een plat dak van een aanbouw of garage
+
+Ook het platte dak van een aanbouw, uitbouw of garage kan geschikt zijn. Het is vaak goed bereikbaar en ligt in de zon. Let wel op een paar dingen:
+
+- **Draagkracht:** deze daken zijn vaak lichter gebouwd dan het hoofddak. Laat de constructie extra goed controleren.
+- **Schaduw:** het hoofdgebouw of een schutting kan in de ochtend of middag schaduw geven. Dat kost opbrengst.
+- **Zicht vanaf de straat of buren:** houd rekening met de regels over afstand tot de dakrand, en met je buren.
+- **Kabelroute:** de afstand naar de meterkast is soms kort, maar de kabel moet wel netjes en veilig worden weggewerkt.
 
 ## Aandachtspunten bij de installatie
 

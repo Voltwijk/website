@@ -86,6 +86,19 @@ Twijfel je over je huis? Lees [is mijn huis geschikt voor een warmtepomp](/artik
 
 Het slechtste moment om te kiezen is midden in de winter, met een kapotte ketel en een koud huis. Dan grijp je snel naar wat het eerst beschikbaar is. Is je ketel ouder dan zo'n 12 jaar, dan is het slim om nu al rustig je opties te bekijken.
 
+Signalen dat je ketel het einde nadert:
+
+- Hij valt vaker uit of moet regelmatig worden bijgevuld.
+- Je monteur vindt bij onderhoud steeds vaker iets.
+- Onderdelen zijn lastig verkrijgbaar.
+- Het duurt langer voordat er warm water uit de kraan komt.
+
+Heb je die signalen, dan heb je nog tijd om de temperatuurtest te doen, offertes te vergelijken en eventueel eerst te isoleren. Een warmtepomp laten plaatsen kost meer voorbereiding dan een ketel omwisselen, dus begin op tijd.
+
+## Hoe zit het met warm water?
+
+Een punt dat vaak vergeten wordt: een cv-ketel maakt meestal ook je warme tapwater. Bij een volledige warmtepomp gebeurt dat via een boilervat. Bij een hybride blijft de ketel dat vaak doen. Wil je bij een hybride ook voor warm water minder gas gebruiken, dan kan een elektrische boiler of warmtepompboiler een aanvulling zijn. Lees daarover [elektrische boiler of gas](/artikel-elektrische-boiler-vs-gas).
+
 ## Hoe Voltwijk helpt
 
 Voltwijk installeert lucht/water-warmtepompen met een COP van 4,7, vanaf € 6.750, en verrekent de ISDE-subsidie direct. Onze eigen monteurs helpen je eerlijk afwegen of een warmtepomp nu al past, of dat een andere stap logischer is. Kijk op de pagina over de [warmtepomp](/product-warmtepomp) of [bereken je prijs](/bereken-je-prijs).

@@ -63,7 +63,7 @@ Mag het bij jou, dan moet je auto wel dicht bij je voordeur kunnen staan. Dat lu
 
 ### Wat heb je thuis nodig voor laden via een kabelgoot?
 
-Mag het in je gemeente, dan heb je aan de gevel een laadpunt nodig met een eigen groep in de meterkast. Een gewoon stopcontact is niet bedoeld om urenlang een auto te laden. Een laadpaal met een vaste of losse kabel is veiliger en sneller. Kijk ook of je meterkast de extra belasting aankan. Hoe dat zit, lees je in [de meterkast: de onderschatte stap](/artikel-meterkast-onderschatte-stap).
+Mag het in je gemeente, dan heb je aan de gevel een laadpunt nodig met een eigen groep in de meterkast. Een gewoon stopcontact is niet bedoeld om urenlang een auto te laden. Een laadpaal met een vaste of losse kabel is veiliger en sneller. Kijk ook of je meterkast de extra belasting aankan. Vaak is een extra groep nodig, soms een aanpassing van de [meterkast](/product-meterkast).
 
 ## Laden op je werk
 

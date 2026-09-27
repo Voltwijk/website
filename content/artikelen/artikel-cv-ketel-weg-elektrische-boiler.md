@@ -1,6 +1,6 @@
-title: Van het gas af: warm water met een elektrische boiler in plaats van cv-ketel
+title: Van het gas af: elektrische boiler in plaats van cv-ketel
 seo_title: Warm water zonder gas: elektrische boiler | Voltwijk
-description: Van het gas af en warm water uit een elektrische boiler in plaats van je cv-ketel? Lees hoe het werkt, welke inhoud je nodig hebt en wat je meterkast moet kunnen.
+description: Van het gas af met een elektrische boiler in plaats van cv-ketel? Lees hoe gasloos warm water werkt, welke inhoud past en wat je meterkast moet kunnen.
 category: Boiler
 product: boiler
 lead: Ja, je kunt je warm water gasloos maken met een elektrische boiler in plaats van je cv-ketel. Dat werkt het best als je ook de verwarming anders regelt, bijvoorbeeld met een warmtepomp of airco, en als de boiler groot genoeg is en een eigen groep heeft.
@@ -33,7 +33,7 @@ Wie helemaal van het gas af wil, kiest meestal één van deze combinaties:
 | Hybride warmtepomp + cv-ketel | Elektrische boiler | Eerste stap, gas nog voor koude dagen |
 | Split-airco's met verwarmfunctie | Elektrische boiler | Kleinere woningen, appartementen, goed geïsoleerd |
 
-Het verschil tussen hybride en volledig lees je in [hybride of volledige warmtepomp](/artikel-hybride-of-volledige-warmtepomp). Over verwarmen met een airco lees je meer in [airco als bijverwarming](/artikel-airco-als-bijverwarming).
+Welke combinatie past, hangt vooral af van hoe goed je huis geïsoleerd is. Een volledige warmtepomp werkt het best in een goed geïsoleerd huis met vloerverwarming of grote radiatoren. Is je huis minder goed geïsoleerd, dan is een hybride warmtepomp vaak een logische tussenstap. Een split-airco met verwarmfunctie is vooral handig in kleinere ruimtes of als aanvulling.
 
 > Let op: met een hybride warmtepomp blijft de cv-ketel aan het gas voor de koudste dagen. Dan heb je nog een gasaansluiting nodig. Warm water via een elektrische boiler scheelt dan wel gasverbruik.
 
@@ -44,7 +44,9 @@ Er zijn twee soorten elektrische boilers:
 - **Gewone elektrische boiler:** warmt water op met een verwarmingselement. Eenvoudig, betaalbaar en compact.
 - **Warmtepompboiler:** haalt warmte uit de lucht en is daardoor zuiniger per liter warm water. Hij is wel duurder in aanschaf en groter.
 
-Welke past, hangt af van je verbruik, de ruimte en of je zonnepanelen hebt. De afweging lees je in [warmtepompboiler of elektrische boiler](/artikel-warmtepompboiler-of-elektrische-boiler). Wil je de kosten van gas en stroom voor warm water vergelijken, lees dan [elektrische boiler vs gas](/artikel-elektrische-boiler-vs-gas).
+Welke past, hangt af van je verbruik, de ruimte en of je zonnepanelen hebt. Heb je veel zonnepanelen en weinig ruimte, dan is een gewone elektrische boiler vaak prima. Gebruik je veel warm water en heb je een plek met genoeg lucht, zoals een ruime zolder of berging, dan kan een warmtepompboiler zich beter terugverdienen.
+
+Wat je per jaar aan warm water kwijt bent, hangt af van je verbruik en je energieprijs. Stroom is per kWh meestal duurder dan de energie uit gas, maar een elektrische boiler verliest weinig en je kunt hem opwarmen met je eigen zonnestroom. Reken het voor je eigen situatie na, of laat het doorrekenen.
 
 ## Welke boilerinhoud heb je nodig zonder cv-ketel?
 
@@ -71,15 +73,25 @@ Ga je helemaal van het gas af, dan komen er vaak meer grote verbruikers bij:
 - een inductiekookplaat in plaats van gas;
 - misschien een laadpaal.
 
-Samen vragen die veel van je aansluiting. Laat daarom vooraf kijken of je meterkast genoeg groepen en aardlekschakelaars heeft, en of je hoofdaansluiting het aankan. Soms is een 3-fase aansluiting slim. Lees meer in [groepen bijplaatsen in de meterkast](/artikel-groepen-bijplaatsen-meterkast) en [inductie aansluiten](/artikel-inductie-aansluiten-meterkast).
+Samen vragen die veel van je aansluiting. Laat daarom vooraf kijken of je meterkast genoeg groepen en aardlekschakelaars heeft, en of je hoofdaansluiting het aankan. Soms is een 3-fase aansluiting slim. Wordt het krap, dan zijn er oplossingen. Denk aan het slim plannen van de boiler op momenten dat je weinig andere apparaten gebruikt, of aan een zwaardere aansluiting bij je netbeheerder.
 
 ## Warm water maken met je eigen zonnestroom
 
 Heb je zonnepanelen? Dan is een elektrische boiler extra interessant. Een boiler is eigenlijk een batterij voor warmte. Je kunt hem opwarmen op het moment dat je panelen veel stroom opwekken. Het warme water blijft in een goed geïsoleerd vat urenlang op temperatuur.
 
-Dat kan met een eenvoudige tijdschakelaar, of slimmer met een energiemanagementsysteem dat de boiler aanzet als je stroom overhoudt. Zeker nu de salderingsregeling stopt, wordt het belangrijker om je eigen zonnestroom zelf te gebruiken. Lees daarover [boiler opwarmen met zonnestroom](/artikel-boiler-opwarmen-met-zonnestroom) en [de salderingsregeling in 2027](/artikel-salderingsregeling-2027).
+Dat kan met een eenvoudige tijdschakelaar, of slimmer met een energiemanagementsysteem dat de boiler aanzet als je stroom overhoudt. Na het einde van de salderingsregeling op 1 januari 2027 levert stroom die je teruglevert minder op. Dan is het extra aantrekkelijk om je overschot in warm water op te slaan. Hoe je dat regelt, lees je in [boiler opwarmen met zonnestroom](/artikel-boiler-opwarmen-met-zonnestroom).
 
 > Tip: zet de boiler niet te laag. Een boiler moet regelmatig heet genoeg worden om legionella te voorkomen. Een installateur stelt dit goed in.
+
+### Waar let je op bij het dagelijks gebruik?
+
+Met een boiler verandert er iets aan hoe je warm water gebruikt. Een combiketel stopt nooit, een boiler wel als de voorraad op is. In de praktijk merk je dat vooral als meerdere mensen kort na elkaar lang douchen.
+
+Een paar tips:
+
+- Laat de boiler vooral opwarmen **na het douchen** of op momenten met veel zonnestroom, zodat er weer een volle voorraad klaarstaat.
+- Een **zuinige douchekop** zorgt dat je langer doet met dezelfde voorraad.
+- Staat de boiler ver van de keuken of badkamer, dan duurt het even voordat het water warm uit de kraan komt. Kies daarom een plek die niet te ver van de tappunten ligt.
 
 ## Stappenplan: van cv-ketel naar elektrische boiler
 

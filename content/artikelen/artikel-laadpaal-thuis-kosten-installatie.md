@@ -69,9 +69,25 @@ Een laadpaal is een grote verbruiker. Kook je op inductie, draait de warmtepomp 
 
 **Slim laden** gaat over wanneer je laadt: in goedkope uren met een dynamisch contract, of op zonne-overschot als je zonnepanelen hebt. Dat verlaagt niet de aanschafprijs, maar wel je laadkosten per kilometer. Zie [slim laden met je laadpaal](/artikel-laadpaal-slim-laden) en [elektrische auto laden met zonnepanelen](/artikel-elektrische-auto-laden-met-zonnepanelen).
 
+## Wat kost laden daarna?
+
+De aanschaf is één kant van het verhaal. Daarna betaal je voor de stroom die je laadt. Thuis laden is meestal goedkoper dan laden bij een openbare laadpaal of een snellader, maar hoeveel precies hangt af van je energiecontract.
+
+Een paar dingen die je laadkosten beïnvloeden:
+
+- **Je stroomtarief.** Met een vast contract betaal je elk uur hetzelfde, met een dynamisch contract wisselt de prijs per uur.
+- **Wanneer je laadt.** Laden in goedkope uren of op eigen zonnestroom scheelt geld.
+- **Je verbruik.** Hoeveel kWh per 100 km je auto gebruikt, verschilt per model en per seizoen.
+
+Rijd je een auto van de zaak en krijg je de laadkosten vergoed? Dan is vaak een MID-gecertificeerde meter nodig om de geladen kWh aantoonbaar te maken. Lees meer in [laadkosten vergoed door je werkgever](/artikel-laadkosten-werkgever-vergoeding-mid-meter).
+
+## Hoe lang duurt de installatie?
+
+Een standaard installatie aan de gevel, met de meterkast dichtbij, is meestal binnen een dag klaar. Moet er gegraven worden of wordt de meterkast aangepast, dan kan het langer duren. Gaat je aansluiting van 1-fase naar 3-fase, dan hangt de planning ook af van de netbeheerder. Door drukte op het net kan dat in sommige regio's langer duren.
+
 ## Geen eigen oprit?
 
-Parkeer je op straat, dan is een eigen laadpaal niet altijd mogelijk. Een laadkabel over de stoep is in veel gemeenten niet zomaar toegestaan. Sommige gemeenten staan het toe met een speciale **kabelgoot** in de stoep, onder voorwaarden. De regels verschillen sterk per gemeente, dus vraag het altijd na.
+Parkeer je op straat, dan is een eigen laadpaal niet altijd mogelijk. Een laadkabel over de stoep is in veel gemeenten niet zomaar toegestaan. Sommige gemeenten staan het toe met een speciale **kabelgoot** in de stoep, onder voorwaarden. De regels verschillen sterk per gemeente, dus vraag het altijd na. Meer hierover in [laadpaal zonder eigen oprit](/artikel-laadpaal-zonder-eigen-oprit).
 
 Kan het niet op eigen terrein? Dan kun je bij veel gemeenten een **openbare laadpaal** in de buurt aanvragen. Meestal kijkt de gemeente of je zelf geen mogelijkheid hebt om op eigen terrein te laden en of er al laadpalen in de buurt zijn.
 

@@ -72,6 +72,14 @@ Kies je voor een hybride warmtepomp, dan maakt de cv-ketel vaak nog het warme ta
 
 Een boiler is in feite een eenvoudige **warmtebatterij**. Meer hierover in [boiler opwarmen met zonnestroom](/artikel-boiler-opwarmen-met-zonnestroom).
 
+## Hybride warmtepomp en zonnepanelen
+
+Met een hybride warmtepomp is het extra stroomverbruik kleiner, omdat de cv-ketel op koude dagen bijspringt. Je hebt dan meestal ook minder extra panelen nodig.
+
+Een voordeel: een hybride draait vooral in het voor- en najaar, als het buiten niet te koud is. Juist dan wekken je panelen nog redelijk op. Op zonnige dagen in maart, april, september en oktober kan een deel van de warmte dus met eigen zonnestroom worden gemaakt. In de winter neemt de ketel een groter deel over.
+
+Wil je later toch naar volledig elektrisch? Houd dan bij het plannen van je panelen rekening met dat hogere verbruik, bijvoorbeeld door ruimte op het dak of een omvormer met wat reserve.
+
 ## Wat eerst: warmtepomp of zonnepanelen?
 
 Er is geen vaste volgorde, maar deze aanpak werkt voor veel mensen:

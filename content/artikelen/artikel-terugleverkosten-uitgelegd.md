@@ -1,6 +1,6 @@
 title: Terugleverkosten uitgelegd: wat zijn ze en hoe beperk je ze?
-seo_title: Terugleverkosten: wat zijn het en hoe beperk je ze | Voltwijk
-description: Wat zijn terugleverkosten, waarom rekenen energieleveranciers ze en hoe verschillen ze? Lees hoe je terugleverkosten beperkt en wat er in 2027 verandert.
+seo_title: Terugleverkosten uitgelegd en beperken | Voltwijk
+description: Wat zijn terugleverkosten, waarom rekenen leveranciers ze en hoe verschillen ze? Lees hoe je terugleverkosten beperkt en wat er in 2027 verandert.
 category: Zonnepanelen
 product: zonnepanelen
 lead: Terugleverkosten zijn kosten die je energieleverancier rekent voor de zonnestroom die je teruglevert aan het net. Je beperkt ze vooral door meer stroom zelf te gebruiken, op het moment dat je hem opwekt.
@@ -54,6 +54,19 @@ Op **1 januari 2027 stopt de salderingsregeling**. Dat verandert veel:
 - **Naar verwachting lagere terugleverkosten.** Omdat leveranciers niet meer het verschil van salderen hoeven op te vangen, verwachten veel partijen dat terugleverkosten dalen. Hoe dat per leverancier uitpakt, is nog niet voor iedereen duidelijk.
 
 Het belangrijkste effect: een kWh die je zelf gebruikt, wordt veel meer waard dan een kWh die je teruglevert. Lees meer in ons artikel over de [salderingsregeling in 2027](/artikel-salderingsregeling-2027).
+
+## Hoeveel terugleverkosten betaal jij?
+
+Wat je aan terugleverkosten betaalt, zie je op je jaarafrekening of in de app van je leverancier. Zoek naar termen als "terugleverkosten", "kosten teruglevering" of "vaste kosten teruglevering".
+
+Wil je zelf een schatting maken, dan heb je twee dingen nodig:
+
+1. **Hoeveel je per jaar teruglevert.** Dat staat op je jaarafrekening, apart van je verbruik.
+2. **Het tarief van je leverancier.** Dat staat op de tariefkaart van je contract.
+
+Een rekenvoorbeeld met aangenomen getallen: lever je 2.500 kWh per jaar terug en rekent je leverancier 10 cent per kWh, dan betaal je ongeveer € 250 per jaar aan terugleverkosten. Bij een staffel per maand werkt het anders: dan kijk je in welke staffel je valt.
+
+Let op: veel mensen leveren meer terug dan ze denken. Een groot deel van de zonnestroom komt rond het middaguur, als er weinig verbruikt wordt.
 
 ## Hoe beperk je terugleverkosten?
 

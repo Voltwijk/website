@@ -99,6 +99,18 @@ Kijk in de app van je energieleverancier hoeveel je op een zonnige dag terugleve
 
 Een batterij heeft een geschikte plek nodig: droog, niet te warm of te koud en goed bereikbaar. Meer daarover in [waar plaats je een thuisbatterij](/artikel-thuisbatterij-plaatsen-waar).
 
+## Hoe verloopt de installatie bij bestaande zonnepanelen?
+
+Bij een AC-gekoppelde batterij blijft je zonnepaneleninstallatie zoals hij is. De installatie verloopt meestal ongeveer zo:
+
+1. **Opname:** een monteur bekijkt je meterkast, je omvormer en de plek voor de batterij.
+2. **Plaatsen:** de batterij wordt aan de muur gehangen of op de vloer gezet.
+3. **Aansluiten:** de batterij krijgt een eigen groep in de meterkast. Zo nodig wordt er een energiemeter bijgeplaatst.
+4. **Instellen:** de batterij wordt gekoppeld aan je slimme meter en aan de app, en de sturing wordt ingesteld.
+5. **Uitleg:** je krijgt uitleg over de app en wat de batterij doet.
+
+Bij een DC-gekoppelde batterij komt daar het vervangen van de omvormer bij. De bekabeling van je panelen wordt dan op de nieuwe hybride omvormer aangesloten. Dat is meer werk, maar je hebt daarna wel één nieuw apparaat voor alles.
+
 ## Wat levert een batterij bij bestaande panelen op?
 
 Na het einde van het salderen wordt het belangrijker om je zonnestroom zelf te gebruiken. Stroom die je teruglevert, levert minder op dan stroom die je niet hoeft in te kopen. Veel leveranciers rekenen bovendien terugleverkosten.

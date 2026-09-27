@@ -97,6 +97,21 @@ Let ook op je contract. Met een dynamisch contract kan zelfverbruik extra aantre
 
 Voor zonnepanelen op of bij een woning geldt sinds 2023 een **btw-tarief van 0%** op levering en installatie. Dat scheelt direct in de aanschafprijs en maakt de terugverdientijd korter. Meer daarover in [0% btw op zonnepanelen](/artikel-btw-zonnepanelen-nultarief).
 
+## Zo reken je jouw eigen situatie door
+
+Wil je weten of zonnepanelen na 2027 bij jou rendabel zijn? Verzamel dan deze gegevens en vul ze in de rekenlogica van hierboven in:
+
+1. **Je jaarverbruik** aan stroom. Dat staat op je jaarafrekening.
+2. **Je verbruik overdag.** Via de app van je energieleverancier of een energiemonitor op de slimme meter zie je hoeveel stroom je tussen ongeveer 10 en 16 uur gebruikt.
+3. **Je stroomprijs** inclusief energiebelasting en btw.
+4. **De terugleververgoeding en terugleverkosten** van je leverancier vanaf 2027. Vraag die na of kijk op de website van je leverancier.
+5. **De verwachte opbrengst** van je dak, op basis van richting, hellingshoek en schaduw.
+6. **Je plannen voor de komende jaren**, zoals een warmtepomp, elektrische auto of boiler. Die verhogen je zelfverbruik.
+
+Reken daarna met twee of drie scenario's: een voorzichtig, een gemiddeld en een gunstig scenario. Dan zie je niet één getal, maar een bandbreedte. Dat is eerlijker, want energieprijzen en vergoedingen kunnen de komende jaren veranderen.
+
+> Kies liever iets te weinig dan te veel panelen. Extra panelen die vooral terugleveren, verdienen zich na 2027 het langzaamst terug.
+
 ## Hoe Voltwijk helpt
 
 Twijfel je of panelen bij jou uitkunnen? Onze eigen monteurs kijken naar je dak, je verbruik en je plannen, en rekenen met je mee met realistische aannames. Voltwijk plaatst full-black panelen van 440 Wp, vanaf € 3.999 voor 12 panelen. Kijk op de pagina over [zonnepanelen](/product-zonnepanelen) of [bereken je prijs](/bereken-je-prijs) voor een eerste indicatie.

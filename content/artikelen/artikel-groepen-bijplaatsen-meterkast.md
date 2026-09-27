@@ -1,6 +1,6 @@
 title: Groep bijplaatsen in de meterkast: wanneer nodig en wat kost het?
 seo_title: Groep bijplaatsen meterkast: kosten | Voltwijk
-description: Een groep bijplaatsen in de meterkast: wanneer is het nodig, hoeveel groepen passen er achter een aardlekschakelaar en wat kost het ongeveer? Lees het hier.
+description: Groep bijplaatsen in de meterkast: wanneer is het nodig, hoeveel groepen mogen achter een aardlekschakelaar en wat kost het ongeveer?
 category: Meterkast
 product: meterkast
 lead: Een extra groep in de meterkast heb je nodig voor grote verbruikers zoals een inductiekookplaat, laadpaal, warmtepomp of boiler. Is er ruimte in je groepenkast, dan kost een groep bijplaatsen indicatief ongeveer € 100 tot € 300. Moet de kast worden aangepast, dan is het meer.
@@ -32,6 +32,8 @@ Volgens de installatienorm NEN 1010 horen vaste apparaten met een groot vermogen
 | Wasmachine en droger | Liefst elk een eigen groep |
 | Thuisbatterij | Eigen groep |
 
+Waarom een eigen groep? Een apparaat als een laadpaal of boiler vraagt uren achter elkaar veel stroom. Deel je die groep met andere apparaten, dan slaat de automaat af of worden kabels en contactdozen te warm. Met een eigen groep weet je zeker dat de kabel en de beveiliging passen bij dat ene apparaat.
+
 Ook als je geen nieuw apparaat krijgt, kan een extra groep slim zijn. Bijvoorbeeld als een groep vaak afslaat omdat er te veel apparaten op zitten, of als je een schuur of tuinhuis stroom wilt geven.
 
 ## Hoeveel groepen mag er achter een aardlekschakelaar?
@@ -45,6 +47,10 @@ In de praktijk betekent dat:
 - Een laadpaal vraagt een specifiek type aardlekbeveiliging, afhankelijk van de laadpaal zelf.
 
 > Er zit dus geen vast maximum op het totaal aantal groepen in je kast. Wel moet de kast groot genoeg zijn, moet de verdeling kloppen en moet je hoofdaansluiting het aankunnen.
+
+### Verdeling over fasen
+
+Heb je een 3-fase aansluiting, dan speelt nog iets. De groepen moeten goed over de drie fasen verdeeld zijn. Zitten alle grote verbruikers op dezelfde fase, dan raakt die fase sneller vol, terwijl de andere twee weinig doen. Bij het bijplaatsen van een groep kijkt een installateur daarom ook naar de fase waarop de nieuwe groep komt.
 
 ## Meer groepen is niet meer stroom
 
@@ -79,6 +85,12 @@ Wat maakt het duurder?
 
 Twijfel je of je kast nog meekan? Lees [wanneer je meterkast vervangen](/artikel-meterkast-vervangen-signalen).
 
+### Hoe zie je of er ruimte is in je groepenkast?
+
+Open het klepje van je groepenkast en kijk naar de rail met schakelaars. Zie je lege plekken, vaak afgedekt met een plastic strip? Dan is er misschien ruimte. Maar let op: een lege plek zegt nog niet alles. Er moet ook een aardlekschakelaar zijn met ruimte, of er moet plek zijn voor een aardlekautomaat. En de kast moet goed genoeg zijn om uit te breiden. Een installateur ziet dat snel.
+
+Maak gerust een foto van je meterkast en je groepenkast. Daarmee kan een installateur vaak al een eerste inschatting maken.
+
 ## Groep bijplaatsen: zelf doen of laten doen?
 
 Werken in de meterkast is gevaarlijk. Ook met de hoofdschakelaar uit staan de kabels vóór de hoofdschakelaar nog onder spanning. Een fout kan brand of een elektrische schok geven. Bovendien kan je verzekeraar lastig doen als er iets misgaat met een installatie die niet volgens NEN 1010 is aangelegd.
@@ -90,9 +102,15 @@ Laat een groep daarom plaatsen door een erkende installateur. Die:
 - test de installatie na afloop;
 - past het groepenschema aan, zodat je later weet welke groep waarvoor is.
 
-## Slim: alles in één keer regelen
+### Slim: alles in één keer regelen
 
 Ga je de komende jaren meer elektrisch doen? Denk dan vooruit. Plaats je nu een laadpaal en over een jaar een warmtepomp en inductie, dan kan het goedkoper zijn om de meterkast in één keer goed in te richten. Dat scheelt voorrijden, werk en gedoe.
+
+Denk bijvoorbeeld aan:
+
+- Laat alvast een groep of kabel voorbereiden voor een laadpaal, ook als de auto er pas later komt.
+- Kies een groepenkast met ruimte voor uitbreiding.
+- Laat kijken of een 3-fase aansluiting op termijn slim is.
 
 Een goede vraag aan je installateur is: "Wat heb ik over een paar jaar nodig, en kan de kast dat dan aan?"
 

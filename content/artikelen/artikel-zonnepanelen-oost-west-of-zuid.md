@@ -1,6 +1,6 @@
 title: Zonnepanelen oost-west of zuid: wat levert het meeste op?
 seo_title: Zonnepanelen oost-west of zuid? | Voltwijk
-description: Zonnepanelen op oost-west of zuid? Lees het indicatieve opbrengstverschil, hoe de stroom over de dag verdeeld is en waarom oost-west na salderen vaak slim is.
+description: Zonnepanelen op oost-west of zuid? Lees het indicatieve opbrengstverschil, de spreiding over de dag en waarom oost-west na salderen vaak slim is.
 category: Zonnepanelen
 product: zonnepanelen
 lead: Per paneel levert een zuiddak het meest op, oost-west ongeveer 10 tot 20 procent minder. Maar oost-west spreidt de opbrengst over de dag, en daardoor gebruik je na het einde van salderen vaak meer stroom zelf.
@@ -70,6 +70,21 @@ Zuid blijft een sterke keuze als:
 - je overdag vaak thuis bent en rond het middaguur veel verbruikt;
 - je een thuisbatterij hebt of neemt die de middagpiek opvangt;
 - je vooral kijkt naar zoveel mogelijk kWh per paneel.
+
+## Rekenvoorbeeld: zuid tegenover oost-west
+
+Een vereenvoudigd **rekenvoorbeeld** met aangenomen getallen. Het laat zien hoe je redeneert, niet wat jij precies bespaart.
+
+Stel: 12 panelen van 440 Wp, samen 5.280 Wp.
+
+- **Zuid:** aanname 0,9 kWh per Wp, dus ongeveer 4.750 kWh per jaar. Aanname: je gebruikt daarvan 30% direct zelf. Dat is ongeveer 1.425 kWh zelfverbruik en 3.325 kWh teruglevering.
+- **Oost-west:** aanname 0,8 kWh per Wp, dus ongeveer 4.225 kWh per jaar. Aanname: door de spreiding gebruik je 38% direct zelf. Dat is ongeveer 1.605 kWh zelfverbruik en 2.620 kWh teruglevering.
+
+In dit voorbeeld wekt oost-west ruim 500 kWh minder op, maar gebruik je er zo'n 180 kWh meer van zelf. En je levert ongeveer 700 kWh minder terug, dus je betaalt ook minder terugleverkosten.
+
+Welke optie financieel wint, hangt af van je tarief, je terugleververgoeding en je terugleverkosten. Het verschil is in elk geval een stuk kleiner dan de opbrengst alleen doet denken.
+
+Wil je dit voor je eigen huis inschatten? Kijk dan in de app van je energieleverancier naar je verbruik per uur op een paar gewone dagen. Ben je vooral 's ochtends en vanaf de late middag actief, dan past oost-west goed bij je. Draait er overdag veel, bijvoorbeeld omdat je thuiswerkt, dan haal je ook uit een zuiddak veel direct verbruik.
 
 ## Oost-west en een thuisbatterij
 

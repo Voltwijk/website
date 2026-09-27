@@ -1,6 +1,6 @@
 title: Thuisbatterij subsidie 2026: is er geld voor jouw thuisbatterij?
 seo_title: Thuisbatterij subsidie 2026: wat kan wel? | Voltwijk
-description: Is er in 2026 subsidie voor een thuisbatterij? Lees wat landelijk wel en niet bestaat, welke leningen er zijn, hoe het zit met btw en wat wel geld oplevert.
+description: Is er in 2026 subsidie voor een thuisbatterij? Lees wat landelijk wel en niet bestaat, welke leningen er zijn, hoe het zit met btw en wat wel oplevert.
 category: Thuisbatterij
 product: batterij
 lead: Een landelijke subsidie voor een thuisbatterij is er in 2026 niet. Wel zijn er soms lokale regelingen, goedkope leningen via het Warmtefonds of je gemeente, en in bepaalde gevallen kun je de btw terugvragen.
@@ -82,6 +82,19 @@ Veel energieleveranciers rekenen kosten voor stroom die je teruglevert. Hoe mind
 Met een dynamisch contract kan een batterij laden als stroom goedkoop is en ontladen als hij duur is. Daarvoor is goede sturing nodig. Lees meer in [dynamisch contract en thuisbatterij](/artikel-dynamisch-contract-en-batterij).
 
 Hoeveel dit per jaar oplevert, verschilt sterk per huishouden. Het hangt af van je verbruik, het aantal zonnepanelen, je contract en hoe goed de batterij wordt aangestuurd. Wees daarom voorzichtig met rekenvoorbeelden die één vast bedrag noemen.
+
+## Pas op met "subsidie" in advertenties
+
+Omdat veel mensen op subsidie zoeken, zie je het woord vaak terug in advertenties. Soms gaat het om een echte lokale regeling. Vaak gaat het om iets anders: een korting van de verkoper, de btw-teruggave of een lening.
+
+Dat hoeft niet verkeerd te zijn, maar het is goed om te weten wat je krijgt. Stel bij een aanbod altijd deze vragen:
+
+- Wie betaalt de "subsidie": de overheid, je gemeente of de verkoper zelf?
+- Moet ik iets terugbetalen?
+- Aan welke voorwaarden moet ik voldoen, en wat gebeurt er als ik daar later niet meer aan voldoe?
+- Is de prijs zonder die korting nog steeds redelijk?
+
+Een eerlijke offerte laat de prijs van de batterij, de installatie en eventuele extra's apart zien. Dan kun je zelf vergelijken.
 
 ## Wachten op subsidie of nu kopen?
 

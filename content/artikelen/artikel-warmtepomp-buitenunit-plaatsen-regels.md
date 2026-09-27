@@ -83,6 +83,17 @@ De regels zijn één ding. Een plek die ook praktisch goed werkt, is minstens zo
 
 > Tip: praat vooraf even met je buren. Vertel waar de unit komt en dat hij aan de geluidsnorm voldoet. Dat voorkomt veel onbegrip achteraf.
 
+## Wat als de buren toch klagen?
+
+Voldoet je buitenunit aan de norm, dan sta je juridisch sterk. Toch kan geluid storend zijn, bijvoorbeeld een laag gebrom of het geluid tijdens het ontdooien. Probeer het eerst samen op te lossen. Vaak helpt het al om:
+
+- de stille nachtstand in te stellen of het maximale vermogen 's nachts te beperken;
+- de unit op trillingsdempers te zetten;
+- een geluidsscherm te plaatsen dat de luchtstroom niet blokkeert;
+- de unit te laten controleren op onderhoud, zoals een vuile ventilator of losse onderdelen.
+
+Komen jullie er niet uit, dan kan de gemeente beoordelen of de installatie aan de regels voldoet. Een goede geluidsberekening vooraf is dan waardevol.
+
 ## Hoe weet je of je huis sowieso geschikt is?
 
 De plek van de buitenunit is maar één onderdeel. Minstens zo belangrijk zijn je isolatie, je afgiftesysteem en de aansluiting in de meterkast. Lees daarover [is mijn huis geschikt voor een warmtepomp](/artikel-is-mijn-huis-geschikt-voor-een-warmtepomp).

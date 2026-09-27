@@ -81,6 +81,18 @@ Zo gebruik je die gegevens:
 
 Een ruwe vuistregel in Nederland: een goed op het zuiden gericht dak levert ongeveer 0,85 tot 0,9 kWh per wattpiek per jaar op. Bij oost-west of met schaduw ligt dat lager. Lever je structureel veel minder dan je verwachting, dan is het tijd om verder te kijken.
 
+## Wat kun je zelf nog meer controleren?
+
+Onderhoud aan zonnepanelen is vooral een kwestie van af en toe goed kijken. Een korte jaarlijkse check vanaf de grond of vanuit een dakraam is vaak genoeg:
+
+- **Schaduw.** Zijn er bomen of struiken gegroeid die nu over je panelen vallen? Een paar takken snoeien kan meer opleveren dan schoonmaken.
+- **Beschadigingen.** Zie je barsten in het glas, losse panelen of verkleuring? Laat dat nakijken en ga er zelf niet aan zitten.
+- **Nesten van vogels.** Duiven nestelen graag onder panelen. Dat geeft vuil en kan kabels beschadigen. Er bestaan speciale randafwerkingen tegen, die een installateur kan aanbrengen.
+- **Kabels en bevestiging.** Hangen er kabels los of schuurt er iets langs de dakpannen? Dan is het tijd voor een vakman.
+- **Na een storm.** Kijk na zware wind even of alles nog vastzit.
+
+Noteer ook elk jaar je totale opbrengst. Zo bouw je zelf een geschiedenis op en zie je sneller of er iets verandert.
+
 ## Vergeet de omvormer niet
 
 De omvormer is het onderdeel dat het eerst aandacht nodig heeft. Hij zet de gelijkstroom van je panelen om naar wisselstroom voor je huis. Panelen gaan vaak 25 jaar of langer mee, een omvormer meestal zo'n 10 tot 15 jaar.

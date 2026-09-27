@@ -101,6 +101,18 @@ Let bij het kiezen van een nieuwe omvormer verder op:
 - **Een goede app** met inzicht in je opbrengst.
 - **De plek:** koel, droog en goed geventileerd.
 
+## Zo verloopt het vervangen van een omvormer
+
+Het vervangen zelf is voor een installateur meestal een overzichtelijke klus. Grofweg gaat het zo:
+
+1. **Controle vooraf.** De installateur kijkt naar je panelen, de bekabeling en de foutmeldingen, zodat zeker is dat de omvormer echt de oorzaak is.
+2. **Keuze van de nieuwe omvormer.** Die moet passen bij het aantal en type panelen, je aansluiting en je plannen.
+3. **Veilig afkoppelen.** De oude omvormer wordt aan de wisselstroomkant en de gelijkstroomkant veilig losgekoppeld.
+4. **Plaatsen en aansluiten.** De nieuwe omvormer komt op dezelfde of een betere plek en wordt aangesloten op de panelen en de meterkast.
+5. **App instellen.** De omvormer wordt verbonden met wifi, zodat je de opbrengst weer kunt volgen.
+
+Controleer na afloop op een zonnige dag of de opbrengst weer klopt met wat je gewend was. Is het een hybride omvormer of verandert het vermogen, geef de wijziging dan ook door via energieleveren.nl.
+
 ## Hoe Voltwijk helpt
 
 Denk je bij het vervangen van je omvormer ook na over een thuisbatterij of extra panelen? Onze eigen monteurs kijken met je mee naar wat bij je installatie en je verbruik past. De thuisbatterij van Voltwijk heeft 5 kWh en 3,6 kW, met 10 jaar garantie, vanaf € 3.499 inclusief installatie. Kijk op de pagina over de [thuisbatterij](/product-batterij) of over [zonnepanelen](/product-zonnepanelen).

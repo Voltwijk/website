@@ -1,6 +1,6 @@
 title: Warmtepomp in een oud huis: kan dat in een jaren 30-woning?
 seo_title: Warmtepomp in een oud huis of jaren 30-woning | Voltwijk
-description: Een warmtepomp in een oud huis of jaren 30-woning? Lees wat isolatie, radiatoren en aanvoertemperatuur betekenen en waarom hybride vaak een goede eerste stap is.
+description: Een warmtepomp in een oud huis of jaren 30-woning? Lees wat isolatie, radiatoren en aanvoertemperatuur betekenen en wanneer hybride slim is.
 category: Warmtepomp
 product: warmtepomp
 lead: Ja, een warmtepomp kan in een ouder huis, maar niet altijd meteen volledig. Het hangt af van je isolatie en van de temperatuur waarop je radiatoren je huis warm krijgen. Vaak is een hybride warmtepomp een slimme eerste stap.
@@ -72,6 +72,20 @@ Is je huis nog niet goed genoeg geïsoleerd voor een volledige warmtepomp? Dan i
 Zo bespaar je al een flink deel van je gasverbruik, zonder dat je eerst alles hoeft te verbouwen. Ondertussen kun je stap voor stap isoleren. Is het huis later goed genoeg, dan kun je overstappen op een volledige warmtepomp.
 
 Meer over de keuze lees je in [hybride of volledige warmtepomp](/artikel-hybride-of-volledige-warmtepomp) en in [de terugverdientijd van een hybride warmtepomp](/artikel-hybride-warmtepomp-terugverdientijd).
+
+## Veelgemaakte fouten bij een warmtepomp in een oud huis
+
+Een warmtepomp in een ouder huis kan heel goed werken, maar er gaat ook weleens iets mis. Meestal door een van deze fouten:
+
+- **Een te kleine warmtepomp kiezen.** Wordt het vermogen te krap berekend, dan springt op koude dagen vaak een elektrisch element bij. Dat kost veel stroom.
+- **Een te grote warmtepomp kiezen.** Dan slaat hij vaak aan en uit. Dat is slecht voor het rendement en de levensduur. Een goede warmteverliesberekening voorkomt beide problemen.
+- **Blijven stoken zoals met een ketel.** Met een warmtepomp werkt een constante temperatuur het best. 's Nachts de thermostaat flink lager zetten en 's ochtends snel opwarmen past daar slecht bij.
+- **De aanvoertemperatuur te hoog laten staan.** Dan werkt het wel, maar betaal je meer dan nodig. Laat de stooklijn na de installatie goed afstellen.
+- **Ventilatie vergeten.** Na isoleren wordt het huis kierdichter. Zonder goede ventilatie krijg je vocht en een benauwd binnenklimaat.
+
+## Warm water in een ouder huis
+
+Kies je voor een volledige warmtepomp, dan maakt die ook het warme tapwater, meestal in een apart boilervat. Daar heb je plek voor nodig, bijvoorbeeld op zolder, in de bijkeuken of in een berging. In een jaren 30-woning met een kleine keuken is dat soms puzzelen. Neem de ruimte daarom vroeg mee in je plannen.
 
 ## Wat kun je het beste eerst doen?
 

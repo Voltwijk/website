@@ -54,6 +54,8 @@ Kijk in de splitsingsakte en het huishoudelijk reglement wat er staat over aanpa
 - hoe de leidingen door de muur gaan;
 - een foto of schets van hoe het eruit komt te zien.
 
+Het helpt als je vooraf een offerte en de technische gegevens van de installateur hebt. Dan kan de VvE snel beslissen. Houd er rekening mee dat een VvE soms maar een paar keer per jaar vergadert. Begin dus op tijd, bijvoorbeeld in het voorjaar als je in de zomer wilt koelen.
+
 Soms heeft de VvE al vaste afspraken, zoals één plek voor alle buitenunits of een vaste kleur. Dat maakt het makkelijker voor iedereen. Huur je? Dan heb je toestemming van je verhuurder nodig.
 
 ## Geluid en de buren
@@ -82,6 +84,12 @@ Wat betekent dat voor jou?
 - Een **mobiele airco** heeft een gesloten circuit en geen buitenunit. Daarvoor heb je geen installateur nodig. Het verschil lees je in [mobiele airco of split-airco](/artikel-mobiele-airco-of-split-airco).
 
 Onderhoud en lekcontrole zijn ook belangrijk. Hoe dat werkt en wanneer het verplicht is, lees je in [airco onderhoud en F-gassen](/artikel-airco-onderhoud-en-f-gassen).
+
+### Waar komt de binnenunit en hoe lopen de leidingen?
+
+Naast de buitenunit is ook de route van de leidingen belangrijk. Tussen binnen- en buitenunit lopen koudemiddelleidingen, een stroomkabel en een afvoer voor condenswater. Die gaan door een gat in de muur, meestal met een diameter van een paar centimeter.
+
+Aan de buitenkant worden de leidingen vaak weggewerkt in een nette leidinggoot. Dat ziet er beter uit en is ook prettig als je VvE of gemeente naar het uiterlijk kijkt. Hoe korter de afstand tussen binnen- en buitenunit, hoe makkelijker de installatie. Een binnenunit aan een buitenmuur is daarom vaak handig.
 
 ## Stappenplan: zo plaats je een airco volgens de regels
 

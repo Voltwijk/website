@@ -90,6 +90,11 @@
   "title": "Airco onderhoud en F-gassen: wat moet je weten?"
  },
  {
+  "slug": "artikel-airco-plaatsen-regels-vergunning",
+  "product": "airco",
+  "title": "Airco plaatsen: heb je een vergunning nodig? De regels op een rij"
+ },
+ {
   "slug": "artikel-boiler-opwarmen-met-zonnestroom",
   "product": "boiler",
   "title": "Boiler opwarmen met zonnestroom: je boiler als warmtebatterij"
@@ -97,7 +102,7 @@
  {
   "slug": "artikel-btw-thuisbatterij-terugvragen",
   "product": "batterij",
-  "title": "Krijg je de btw terug op een thuisbatterij? Het eerlijke antwoord"
+  "title": "Btw op een thuisbatterij terugvragen: wanneer kan het wel?"
  },
  {
   "slug": "artikel-btw-zonnepanelen-nultarief",
@@ -110,9 +115,29 @@
   "title": "COP en SCOP uitgelegd: hoe zuinig is een warmtepomp echt?"
  },
  {
+  "slug": "artikel-cv-ketel-vervangen-of-warmtepomp",
+  "product": "warmtepomp",
+  "title": "Cv-ketel vervangen of een warmtepomp? Zo maak je de juiste keuze"
+ },
+ {
+  "slug": "artikel-cv-ketel-weg-elektrische-boiler",
+  "product": "boiler",
+  "title": "Van het gas af: elektrische boiler in plaats van cv-ketel"
+ },
+ {
+  "slug": "artikel-elektrische-auto-laden-met-zonnepanelen",
+  "product": "laadpaal",
+  "title": "Elektrische auto laden met zonnepanelen: zo werkt zonneladen"
+ },
+ {
   "slug": "artikel-ems-energiemanagementsysteem-thuisbatterij",
   "product": "batterij",
   "title": "EMS voor je thuisbatterij: wat een energiemanagementsysteem doet"
+ },
+ {
+  "slug": "artikel-groepen-bijplaatsen-meterkast",
+  "product": "meterkast",
+  "title": "Groep bijplaatsen in de meterkast: wanneer nodig en wat kost het?"
  },
  {
   "slug": "artikel-groepenkast-aardlekschakelaars-uitgelegd",
@@ -130,6 +155,21 @@
   "title": "Hybride of volledig elektrische warmtepomp: welke past bij jou?"
  },
  {
+  "slug": "artikel-hybride-omvormer-uitleg",
+  "product": "zonnepanelen",
+  "title": "Hybride omvormer: wat is het en wanneer kies je ervoor?"
+ },
+ {
+  "slug": "artikel-hybride-warmtepomp-terugverdientijd",
+  "product": "warmtepomp",
+  "title": "Hybride warmtepomp terugverdientijd: zo reken je het zelf uit"
+ },
+ {
+  "slug": "artikel-inductie-aansluiten-meterkast",
+  "product": "meterkast",
+  "title": "Inductie aansluiten: welke aansluiting en groepen heb je nodig?"
+ },
+ {
   "slug": "artikel-is-mijn-huis-geschikt-voor-een-warmtepomp",
   "product": "warmtepomp",
   "title": "Is mijn huis geschikt voor een warmtepomp? Test het zelf"
@@ -138,6 +178,16 @@
   "slug": "artikel-laadkosten-werkgever-vergoeding-mid-meter",
   "product": "laadpaal",
   "title": "Laadkosten vergoed door je werkgever: zo werkt het met een MID-meter"
+ },
+ {
+  "slug": "artikel-laadpaal-thuis-kosten-installatie",
+  "product": "laadpaal",
+  "title": "Laadpaal thuis kosten: wat betaal je voor paal en installatie?"
+ },
+ {
+  "slug": "artikel-laadpaal-zonder-eigen-oprit",
+  "product": "laadpaal",
+  "title": "Laadpaal zonder oprit: welke opties heb je als je op straat parkeert?"
  },
  {
   "slug": "artikel-load-balancing-laadpaal",
@@ -150,14 +200,89 @@
   "title": "Meterkast vervangen? Deze 7 signalen moet je serieus nemen"
  },
  {
+  "slug": "artikel-mobiele-airco-of-split-airco",
+  "product": "airco",
+  "title": "Mobiele airco of split-airco: wat is het verschil en wat past bij jou?"
+ },
+ {
+  "slug": "artikel-omvormer-kapot-vervangen",
+  "product": "zonnepanelen",
+  "title": "Omvormer kapot? Signalen, repareren of vervangen en de kosten"
+ },
+ {
   "slug": "artikel-omvormer-of-micro-omvormers",
   "product": "zonnepanelen",
   "title": "Omvormer of micro-omvormers? String, optimizers en micro's vergeleken"
  },
  {
+  "slug": "artikel-terugleverkosten-uitgelegd",
+  "product": "zonnepanelen",
+  "title": "Terugleverkosten uitgelegd: wat zijn ze en hoe beperk je ze?"
+ },
+ {
+  "slug": "artikel-thuisbatterij-1-fase-aansluiting",
+  "product": "batterij",
+  "title": "Thuisbatterij op een 1-fase aansluiting: kan dat en waar let je op?"
+ },
+ {
+  "slug": "artikel-thuisbatterij-bij-bestaande-zonnepanelen",
+  "product": "batterij",
+  "title": "Thuisbatterij bij bestaande zonnepanelen: AC of DC, en wat check je?"
+ },
+ {
   "slug": "artikel-thuisbatterij-hoe-groot",
   "product": "batterij",
   "title": "Hoe groot moet een thuisbatterij zijn? Zo bepaal je de capaciteit"
+ },
+ {
+  "slug": "artikel-thuisbatterij-levensduur",
+  "product": "batterij",
+  "title": "Levensduur thuisbatterij: hoe lang gaat een thuisbatterij mee?"
+ },
+ {
+  "slug": "artikel-thuisbatterij-noodstroom",
+  "product": "batterij",
+  "title": "Thuisbatterij als noodstroom: werkt hij bij een stroomstoring?"
+ },
+ {
+  "slug": "artikel-thuisbatterij-plaatsen-waar",
+  "product": "batterij",
+  "title": "Waar plaats je een thuisbatterij? Garage, bijkeuken of zolder"
+ },
+ {
+  "slug": "artikel-thuisbatterij-subsidie-2026",
+  "product": "batterij",
+  "title": "Thuisbatterij subsidie 2026: is er geld voor jouw thuisbatterij?"
+ },
+ {
+  "slug": "artikel-thuisbatterij-terugverdientijd",
+  "product": "batterij",
+  "title": "Thuisbatterij terugverdientijd: zo reken je het zelf uit"
+ },
+ {
+  "slug": "artikel-thuisbatterij-zonder-zonnepanelen",
+  "product": "batterij",
+  "title": "Thuisbatterij zonder zonnepanelen: kan het en wanneer loont het?"
+ },
+ {
+  "slug": "artikel-warmtepomp-buitenunit-plaatsen-regels",
+  "product": "warmtepomp",
+  "title": "Warmtepomp buitenunit plaatsen: regels voor vergunning, geluid en plek"
+ },
+ {
+  "slug": "artikel-warmtepomp-en-zonnepanelen-combineren",
+  "product": "warmtepomp",
+  "title": "Warmtepomp en zonnepanelen combineren: hoe haal je er het meeste uit?"
+ },
+ {
+  "slug": "artikel-warmtepomp-kosten-2026",
+  "product": "warmtepomp",
+  "title": "Wat kost een warmtepomp in 2026? Prijs, subsidie en terugverdienen"
+ },
+ {
+  "slug": "artikel-warmtepomp-oudere-woning",
+  "product": "warmtepomp",
+  "title": "Warmtepomp in een oud huis: kan dat in een jaren 30-woning?"
  },
  {
   "slug": "artikel-warmtepompboiler-of-elektrische-boiler",
@@ -183,5 +308,30 @@
   "slug": "artikel-welke-boilerinhoud-heb-ik-nodig",
   "product": "boiler",
   "title": "Welke boilerinhoud heb ik nodig? Zo kies je het juiste aantal liters"
+ },
+ {
+  "slug": "artikel-zonnepanelen-oost-west-of-zuid",
+  "product": "zonnepanelen",
+  "title": "Zonnepanelen oost-west of zuid: wat levert het meeste op?"
+ },
+ {
+  "slug": "artikel-zonnepanelen-plat-dak",
+  "product": "zonnepanelen",
+  "title": "Zonnepanelen op een plat dak: opstelling, ballast en regels"
+ },
+ {
+  "slug": "artikel-zonnepanelen-rendabel-na-2027",
+  "product": "zonnepanelen",
+  "title": "Zijn zonnepanelen nog rendabel na 2027? Zo reken je het eerlijk uit"
+ },
+ {
+  "slug": "artikel-zonnepanelen-schoonmaken-onderhoud",
+  "product": "zonnepanelen",
+  "title": "Zonnepanelen schoonmaken: is het nodig en hoe doe je het veilig?"
+ },
+ {
+  "slug": "artikel-zonnepanelen-uitbreiden",
+  "product": "zonnepanelen",
+  "title": "Zonnepanelen uitbreiden: waar moet je op letten?"
  }
 ]

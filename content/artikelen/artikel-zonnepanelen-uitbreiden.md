@@ -1,6 +1,6 @@
 title: Zonnepanelen uitbreiden: waar moet je op letten?
 seo_title: Zonnepanelen uitbreiden: zo pak je het aan | Voltwijk
-description: Zonnepanelen uitbreiden? Lees hoe je checkt of je omvormer het aankan, wanneer een extra omvormer nodig is, wat er in de meterkast verandert en hoe je aanmeldt.
+description: Zonnepanelen uitbreiden? Zo check je of je omvormer het aankan, wanneer een extra omvormer nodig is, wat de meterkast vraagt en hoe je aanmeldt.
 category: Zonnepanelen
 product: zonnepanelen
 lead: Een bestaande installatie uitbreiden kan vaak prima, maar de omvormer is meestal de beperkende factor. Kijk eerst of die de extra panelen aankan, of dat je een tweede omvormer of micro-omvormers nodig hebt.
@@ -63,6 +63,20 @@ Op de meeste schuine daken mag je zonnepanelen **vergunningvrij** plaatsen, zola
 Een extra omvormer krijgt meestal een **eigen groep** in de meterkast, met de juiste beveiliging. Is je meterkast vol of verouderd, dan moet er eerst iets aangepast worden.
 
 Let ook op je aansluiting. Met veel panelen op een 1-fase aansluiting kun je vaker tegen spanningsproblemen aanlopen, waardoor de omvormer op zonnige dagen uitschakelt. Wat er in de meterkast allemaal speelt, lees je in [de meterkast: de onderschatte stap](/artikel-meterkast-onderschatte-stap).
+
+## Veelgemaakte fouten bij zonnepanelen uitbreiden
+
+Een uitbreiding gaat meestal goed, maar deze valkuilen komen we geregeld tegen:
+
+- **Nieuwe panelen in een oude string.** Panelen met andere elektrische waarden in één string remmen elkaar af. Je verliest dan opbrengst van de hele string.
+- **De omvormer te zwaar belasten.** Een omvormer die structureel te veel panelen krijgt, gaat op zonnige dagen afkappen en kan sneller slijten.
+- **Alleen naar het dak kijken.** Vergeten wordt dat de meterkast een extra groep nodig heeft, of dat de bestaande groep te licht is.
+- **Uitbreiden voor teruglevering.** Na 2027 loont het vooral om panelen te leggen voor stroom die je zelf gebruikt.
+- **Geen rekening houden met een batterij.** Wil je binnen een paar jaar een thuisbatterij, kies dan nu al een oplossing waar die later goed bij past.
+
+### Uitbreiden en een batterij combineren
+
+Denk je na over een thuisbatterij, dan is het slim om dat in één keer mee te nemen. Een hybride omvormer kan je nieuwe panelen én een batterij bedienen. Zo voorkom je dat je binnen korte tijd twee keer aan je installatie laat werken. Of een batterij bij jou past, lees je in [wat doet een thuisbatterij](/artikel-wat-doet-een-thuisbatterij).
 
 ## Btw en aanmelden
 

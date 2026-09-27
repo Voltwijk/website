@@ -62,7 +62,9 @@ Een mobiele airco kan dat meestal niet, of alleen met een elektrisch verwarmings
 
 Meer hierover lees je in [airco als bijverwarming](/artikel-airco-als-bijverwarming).
 
-## Wanneer kies je een mobiele airco?
+## Mobiele airco of split airco: wanneer kies je wat?
+
+### Wanneer kies je een mobiele airco?
 
 Een mobiele airco is een prima keuze als:
 
@@ -72,9 +74,17 @@ Een mobiele airco is een prima keuze als:
 - je hem in **verschillende kamers** wilt gebruiken;
 - je budget nu vooral laag moet zijn.
 
-Tip: zet de slang zo kort en recht mogelijk, gebruik een raamafdichting en sluit deuren en gordijnen overdag. Dan haal je er meer uit.
+Haal je een mobiele airco in huis, dan kun je er met een paar trucs meer uit halen:
 
-## Wanneer kies je een split-airco?
+- Houd de afvoerslang zo **kort en recht** mogelijk.
+- Gebruik een **raamafdichting** rond de slang, zodat er minder warme lucht terugkomt.
+- Sluit overdag **gordijnen of screens** aan de zonkant.
+- Zet hem aan **voordat** de kamer heel warm is. Een kamer koel houden is makkelijker dan hem afkoelen.
+- Koel alleen de kamer die je gebruikt en houd de deur dicht.
+
+Let ook op het vermogen. Een te kleine mobiele airco in een grote, warme kamer draait de hele dag op vol vermogen en koelt toch te weinig.
+
+### Wanneer kies je een split-airco?
 
 Een split-airco past beter als:
 
@@ -84,9 +94,13 @@ Een split-airco past beter als:
 - je een zolder of slaapkamer hebt die in de zomer heel warm wordt;
 - je **zonnepanelen** hebt. Een airco koelt vooral als de zon schijnt, en dan wek je zelf stroom op.
 
-Welk vermogen je nodig hebt, hangt af van de ruimte, de isolatie en de zon op de ramen. Lees daarvoor [welk vermogen airco heb je nodig](/artikel-welk-vermogen-airco).
+Welk vermogen je nodig hebt, hangt af van de ruimte, de isolatie en de zon op de ramen. Een kleine slaapkamer vraagt minder dan een zolder onder een dak dat de hele dag in de zon ligt. Een installateur rekent dat voor je uit.
 
 > Let op: een split-airco mag alleen in bedrijf worden gesteld door een installateur met een F-gassencertificaat. Zelf aansluiten mag niet. Een mobiele airco heeft een gesloten circuit en mag je wel zelf neerzetten.
+
+### Wat met een split-airco in een huurhuis of appartement?
+
+Een split-airco heeft een buitenunit nodig. In een huurhuis heb je daarvoor toestemming van je verhuurder nodig. In een appartement vaak van de VvE. Aan de voorgevel of bij een monument kan een vergunning nodig zijn. Dat kost wat tijd, maar het is vaak goed te regelen. Is een buitenunit echt niet mogelijk, dan is een mobiele airco een logisch alternatief.
 
 ## Mobiele airco of split-airco: ons eerlijke advies
 
