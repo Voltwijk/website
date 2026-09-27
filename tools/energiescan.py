@@ -49,8 +49,8 @@ CSS = '''<style>
 @media (max-width:900px){.es-hero{grid-template-columns:1fr;gap:28px;}.es-hero .img{aspect-ratio:16/10;}.es-steps{grid-template-columns:1fr;}}
 @media (max-width:640px){.es-get{grid-template-columns:1fr;}.es-form{padding:22px 18px;}.es-form .row2{grid-template-columns:1fr;gap:0;}}
 .es-top{position:relative;border-radius:28px;overflow:hidden;min-height:560px;display:flex;align-items:flex-end;background:#10201F;}
-.es-top picture,.es-top img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 50%;}
-.es-top:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,20,19,.88) 0%,rgba(10,20,19,.62) 34%,rgba(10,20,19,0) 62%),linear-gradient(0deg,rgba(10,20,19,.55) 0%,rgba(10,20,19,0) 40%);}
+.es-top picture,.es-top img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:100% 50%;}
+.es-top:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,26,25,.78) 0%,rgba(10,26,25,.5) 38%,rgba(10,26,25,0) 60%),linear-gradient(0deg,rgba(10,26,25,.45) 0%,rgba(10,26,25,0) 45%);}
 .es-top .in{position:relative;z-index:1;padding:48px;max-width:540px;color:#fff;}
 .es-top .pill{background:rgba(255,255,255,.14);color:#fff;}
 .es-top h1{color:#fff;}
@@ -128,7 +128,7 @@ def main_html():
   {CSS}
   <div class="wrap reveal" style="max-width:1120px;padding-top:40px;">
     <div class="es-top">
-      <picture><source media="(max-width:900px)" srcset="/images/energiescan-warmtepomp-m.webp"><img class="bg" fetchpriority="high" src="/images/energiescan-warmtepomp.webp" alt="Bewoner naast de warmtepomp aan de gevel van zijn huis" width="1500" height="1000"></picture>
+      <picture><source media="(max-width:900px)" srcset="/images/energiescan-hero-m.webp"><img class="bg" fetchpriority="high" src="/images/energiescan-hero.webp" alt="Woning met zonnepanelen, omvormer en thuisbatterij" width="2400" height="1080"></picture>
       <div class="in">
         <div class="pill">Gemeente Moerdijk · {esc(DATES)}</div>
         <h1 class="vw-heading" style="font-size:clamp(32px,4.8vw,52px);margin-top:14px;line-height:1.05;hyphens:manual;-webkit-hyphens:manual;">Gratis Energie&shy;scan&shy;week Moerdijk</h1>
