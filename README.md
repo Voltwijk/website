@@ -122,3 +122,7 @@ Zet `CAL = True` zodra het Cal.com-afspraaktype `cal.com/voltwijk/installatie` b
 
 ## Dagelijkse blog
 Elke ochtend schrijft een automatische Claude-sessie één artikel volgens `content/REDACTIE.md`, met onderwerpen uit `content/redactieplan.md` of actueel nieuws. Artikelen ondersteunen nu `date:`, `updated:` en `sources:` (bronnenlijst + datePublished in de structured data). Bouwen en controleren: `bash tools/publish.sh`.
+
+## Zoekmachines en weekcheck
+- `.github/workflows/indexnow.yml`: na elke wijziging op main wacht hij tot Netlify live is, meldt de gewijzigde pagina's aan bij IndexNow (Bing e.a.) en dient de sitemap opnieuw in bij Google (`tools/indexnow.py <base> <head>`, `tools/gsc.py submit`).
+- `.github/workflows/weekcheck.yml`: elke maandagochtend een mail met kapotte links, indexering in Google, zoekprestaties week-op-week en PageSpeed (`tools/weekly_check.py --preview` om lokaal te bekijken).
