@@ -415,6 +415,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
 <p>Voltwijk installeert lucht/water-warmtepompen met een COP van 4,7, vanaf € 6.750, en verrekent de ISDE-subsidie direct. Onze eigen monteurs helpen je eerlijk afwegen of een warmtepomp nu al past, of dat een andere stap logischer is. Kijk op de pagina over de <a href="/product-warmtepomp">warmtepomp</a> of <a href="/bereken-je-prijs">bereken je prijs</a>.</p>
     </article>
     <div class="art-faq"><h2 id="veelgestelde-vragen">Veelgestelde vragen</h2><div class="faq" style="margin-top:14px;"><details><summary>Is een warmtepomp verplicht als ik mijn cv-ketel vervang?</summary><p>Nee. De geplande norm voor een hybride warmtepomp vanaf 2026 is in 2024 geschrapt. Je mag bij vervanging nog gewoon een nieuwe cv-ketel laten plaatsen.</p></details><details><summary>Wat is goedkoper: een nieuwe cv-ketel of een warmtepomp?</summary><p>Een cv-ketel is goedkoper in aanschaf, een warmtepomp is meestal goedkoper in gebruik. Wat over 15 jaar voordeliger is, hangt af van je huis, je energieprijzen en de subsidie.</p></details><details><summary>Kan ik een hybride warmtepomp op mijn bestaande cv-ketel aansluiten?</summary><p>Vaak wel, als de ketel nog een aantal jaren goed meegaat en geschikt is voor de koppeling. Een monteur kan dat beoordelen.</p></details><details><summary>Krijg ik subsidie voor een warmtepomp in 2026?</summary><p>Ja, via de ISDE-regeling, voor zowel hybride als volledige lucht/water-warmtepompen die op de meldcodelijst van RVO staan. Je vraagt de subsidie aan binnen 24 maanden na installatie.</p></details></div></div>
+    
   </div>
 </div>
 
@@ -1433,35 +1434,6 @@ body.vwb-lock{overflow:hidden;}
 })();
 </script>
 <!-- vw-cal:end -->
-<!-- vw-analytics:start -->
-<script>
-(function(){
-  var ID = 'G-6QJJ46JVWW', loaded = false;
-  function ok(){ var c = window.vwConsent; if(!c){ try{ c = JSON.parse(localStorage.getItem('vwConsent')); }catch(e){} } return !!(c && c.analytics); }
-  function load(){
-    if(loaded || !ok()) return; loaded = true;
-    window.dataLayer = window.dataLayer || []; window.gtag = function(){ dataLayer.push(arguments); };
-    gtag('js', new Date());
-    gtag('config', ID, { allow_google_signals: false, allow_ad_personalization_signals: false });
-    var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID; document.head.appendChild(s);
-  }
-  function ev(name, params){ if(loaded && window.gtag) gtag('event', name, params || {}); }
-  document.addEventListener('click', function(e){
-    var a = e.target.closest && e.target.closest('a[href]'); if(!a) return;
-    var h = a.getAttribute('href');
-    if(h.indexOf('wa.me') > -1) ev('whatsapp_klik', { pagina: location.pathname });
-    else if(h.indexOf('tel:') === 0) ev('bel_klik', { pagina: location.pathname });
-  }, true);
-  document.addEventListener('submit', function(e){
-    var f = e.target; var soort = f.closest && f.closest('#leadNewsletter') ? 'nieuwsbrief' : 'aanvraag';
-    ev(soort === 'nieuwsbrief' ? 'nieuwsbrief_aanmelding' : 'generate_lead', { pagina: location.pathname, soort: soort });
-  }, true);
-  window.vwTrack = ev;
-  window.addEventListener('vw:consent', load);
-  load();
-})();
-</script>
-<!-- vw-analytics:end -->
 <!-- vw-plan:start -->
 <style>
 .vwp{position:fixed;z-index:70;display:flex;align-items:center;gap:14px;font-family:'Nunito Sans',system-ui,sans-serif;transition:transform .3s ease,opacity .3s ease;transform:translateY(140%);opacity:0;pointer-events:none;}
@@ -1503,3 +1475,32 @@ body.vwb-lock{overflow:hidden;}
 })();
 </script>
 <!-- vw-plan:end -->
+<!-- vw-analytics:start -->
+<script>
+(function(){
+  var ID = 'G-6QJJ46JVWW', loaded = false;
+  function ok(){ var c = window.vwConsent; if(!c){ try{ c = JSON.parse(localStorage.getItem('vwConsent')); }catch(e){} } return !!(c && c.analytics); }
+  function load(){
+    if(loaded || !ok()) return; loaded = true;
+    window.dataLayer = window.dataLayer || []; window.gtag = function(){ dataLayer.push(arguments); };
+    gtag('js', new Date());
+    gtag('config', ID, { allow_google_signals: false, allow_ad_personalization_signals: false });
+    var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID; document.head.appendChild(s);
+  }
+  function ev(name, params){ if(loaded && window.gtag) gtag('event', name, params || {}); }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href]'); if(!a) return;
+    var h = a.getAttribute('href');
+    if(h.indexOf('wa.me') > -1) ev('whatsapp_klik', { pagina: location.pathname });
+    else if(h.indexOf('tel:') === 0) ev('bel_klik', { pagina: location.pathname });
+  }, true);
+  document.addEventListener('submit', function(e){
+    var f = e.target; var soort = f.closest && f.closest('#leadNewsletter') ? 'nieuwsbrief' : 'aanvraag';
+    ev(soort === 'nieuwsbrief' ? 'nieuwsbrief_aanmelding' : 'generate_lead', { pagina: location.pathname, soort: soort });
+  }, true);
+  window.vwTrack = ev;
+  window.addEventListener('vw:consent', load);
+  load();
+})();
+</script>
+<!-- vw-analytics:end -->

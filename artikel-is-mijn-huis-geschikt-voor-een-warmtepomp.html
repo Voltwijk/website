@@ -412,6 +412,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
 <p>Een monteur van Voltwijk bekijkt je isolatie, radiatoren, ruimte en meterkast en vertelt eerlijk of en welke warmtepomp past, met een vaste prijs vooraf. Meer informatie vind je op onze pagina over de <a href="/product-warmtepomp">warmtepomp</a>.</p>
     </article>
     <div class="art-faq"><h2 id="veelgestelde-vragen">Veelgestelde vragen</h2><div class="faq" style="margin-top:14px;"><details><summary>Kan een warmtepomp in een oud huis?</summary><p>Vaak wel, maar in een ouder, matig geïsoleerd huis is een hybride warmtepomp meestal verstandiger dan volledig elektrisch. Na extra isolatie kun je later alsnog overstappen.</p></details><details><summary>Heb ik vloerverwarming nodig voor een warmtepomp?</summary><p>Nee. Vloerverwarming is ideaal, maar ruime radiatoren werken ook. Soms is het genoeg om in een paar koude ruimtes een grotere radiator of een lage-temperatuurradiator te plaatsen.</p></details><details><summary>Wanneer doe ik de 55 °C-test het beste?</summary><p>Op een koude winterdag, bij voorkeur rond het vriespunt. Laat de ketel een paar dagen op 55 °C staan en kijk of alle ruimtes die je gebruikt comfortabel warm worden.</p></details><details><summary>Heb ik een 3-fase aansluiting nodig voor een warmtepomp?</summary><p>Niet altijd. Een hybride warmtepomp werkt meestal op 1-fase. Bij volledig elektrisch, zeker samen met inductie of een laadpaal, kan 3-fase nodig zijn. Je installateur rekent dat voor je uit.</p></details></div></div>
+    
   </div>
 </div>
 
@@ -1430,35 +1431,6 @@ body.vwb-lock{overflow:hidden;}
 })();
 </script>
 <!-- vw-cal:end -->
-<!-- vw-analytics:start -->
-<script>
-(function(){
-  var ID = 'G-6QJJ46JVWW', loaded = false;
-  function ok(){ var c = window.vwConsent; if(!c){ try{ c = JSON.parse(localStorage.getItem('vwConsent')); }catch(e){} } return !!(c && c.analytics); }
-  function load(){
-    if(loaded || !ok()) return; loaded = true;
-    window.dataLayer = window.dataLayer || []; window.gtag = function(){ dataLayer.push(arguments); };
-    gtag('js', new Date());
-    gtag('config', ID, { allow_google_signals: false, allow_ad_personalization_signals: false });
-    var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID; document.head.appendChild(s);
-  }
-  function ev(name, params){ if(loaded && window.gtag) gtag('event', name, params || {}); }
-  document.addEventListener('click', function(e){
-    var a = e.target.closest && e.target.closest('a[href]'); if(!a) return;
-    var h = a.getAttribute('href');
-    if(h.indexOf('wa.me') > -1) ev('whatsapp_klik', { pagina: location.pathname });
-    else if(h.indexOf('tel:') === 0) ev('bel_klik', { pagina: location.pathname });
-  }, true);
-  document.addEventListener('submit', function(e){
-    var f = e.target; var soort = f.closest && f.closest('#leadNewsletter') ? 'nieuwsbrief' : 'aanvraag';
-    ev(soort === 'nieuwsbrief' ? 'nieuwsbrief_aanmelding' : 'generate_lead', { pagina: location.pathname, soort: soort });
-  }, true);
-  window.vwTrack = ev;
-  window.addEventListener('vw:consent', load);
-  load();
-})();
-</script>
-<!-- vw-analytics:end -->
 <!-- vw-plan:start -->
 <style>
 .vwp{position:fixed;z-index:70;display:flex;align-items:center;gap:14px;font-family:'Nunito Sans',system-ui,sans-serif;transition:transform .3s ease,opacity .3s ease;transform:translateY(140%);opacity:0;pointer-events:none;}
@@ -1500,3 +1472,32 @@ body.vwb-lock{overflow:hidden;}
 })();
 </script>
 <!-- vw-plan:end -->
+<!-- vw-analytics:start -->
+<script>
+(function(){
+  var ID = 'G-6QJJ46JVWW', loaded = false;
+  function ok(){ var c = window.vwConsent; if(!c){ try{ c = JSON.parse(localStorage.getItem('vwConsent')); }catch(e){} } return !!(c && c.analytics); }
+  function load(){
+    if(loaded || !ok()) return; loaded = true;
+    window.dataLayer = window.dataLayer || []; window.gtag = function(){ dataLayer.push(arguments); };
+    gtag('js', new Date());
+    gtag('config', ID, { allow_google_signals: false, allow_ad_personalization_signals: false });
+    var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID; document.head.appendChild(s);
+  }
+  function ev(name, params){ if(loaded && window.gtag) gtag('event', name, params || {}); }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href]'); if(!a) return;
+    var h = a.getAttribute('href');
+    if(h.indexOf('wa.me') > -1) ev('whatsapp_klik', { pagina: location.pathname });
+    else if(h.indexOf('tel:') === 0) ev('bel_klik', { pagina: location.pathname });
+  }, true);
+  document.addEventListener('submit', function(e){
+    var f = e.target; var soort = f.closest && f.closest('#leadNewsletter') ? 'nieuwsbrief' : 'aanvraag';
+    ev(soort === 'nieuwsbrief' ? 'nieuwsbrief_aanmelding' : 'generate_lead', { pagina: location.pathname, soort: soort });
+  }, true);
+  window.vwTrack = ev;
+  window.addEventListener('vw:consent', load);
+  load();
+})();
+</script>
+<!-- vw-analytics:end -->

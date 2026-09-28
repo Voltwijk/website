@@ -419,6 +419,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
 <p>Voltwijk past meterkasten aan volgens NEN 1010, vanaf € 649. Onze eigen monteurs kijken of je huidige kast twee extra groepen aankan, leggen de kookgroep aan en denken mee over andere grote verbruikers die je misschien later krijgt. Bekijk de <a href="/product-meterkast">meterkast</a> of <a href="/bereken-je-prijs">bereken je prijs</a>.</p>
     </article>
     <div class="art-faq"><h2 id="veelgestelde-vragen">Veelgestelde vragen</h2><div class="faq" style="margin-top:14px;"><details><summary>Kan ik een inductiekookplaat aansluiten op een 1-fase aansluiting?</summary><p>Ja. De meeste kookplaten kun je als 2-fase aansluiten op twee groepen van 16 A via een perilex-aansluiting. Dat kan ook op een 1-fase aansluiting zoals 1x35 A.</p></details><details><summary>Hoeveel groepen heb ik nodig voor inductie?</summary><p>Meestal twee groepen van 16 A. Heb je een 3-fase aansluiting, dan kan de kookplaat ook op een 3-fase kookgroep. Een kleine 1-fase kookplaat kan op één groep.</p></details><details><summary>Wat is een perilex-aansluiting?</summary><p>Een zware, ronde contactdoos met vijf polen voor elektrisch koken. Daarmee sluit je een kookplaat aan op twee (of drie) groepen tegelijk.</p></details><details><summary>Moet mijn meterkast worden aangepast voor inductie?</summary><p>Niet altijd. Is er ruimte voor twee extra groepen en is je kast goed, dan is bijplaatsen genoeg. Is de kast vol of verouderd, dan moet hij eerst worden aangepast.</p></details></div></div>
+    
   </div>
 </div>
 
@@ -1437,35 +1438,6 @@ body.vwb-lock{overflow:hidden;}
 })();
 </script>
 <!-- vw-cal:end -->
-<!-- vw-analytics:start -->
-<script>
-(function(){
-  var ID = 'G-6QJJ46JVWW', loaded = false;
-  function ok(){ var c = window.vwConsent; if(!c){ try{ c = JSON.parse(localStorage.getItem('vwConsent')); }catch(e){} } return !!(c && c.analytics); }
-  function load(){
-    if(loaded || !ok()) return; loaded = true;
-    window.dataLayer = window.dataLayer || []; window.gtag = function(){ dataLayer.push(arguments); };
-    gtag('js', new Date());
-    gtag('config', ID, { allow_google_signals: false, allow_ad_personalization_signals: false });
-    var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID; document.head.appendChild(s);
-  }
-  function ev(name, params){ if(loaded && window.gtag) gtag('event', name, params || {}); }
-  document.addEventListener('click', function(e){
-    var a = e.target.closest && e.target.closest('a[href]'); if(!a) return;
-    var h = a.getAttribute('href');
-    if(h.indexOf('wa.me') > -1) ev('whatsapp_klik', { pagina: location.pathname });
-    else if(h.indexOf('tel:') === 0) ev('bel_klik', { pagina: location.pathname });
-  }, true);
-  document.addEventListener('submit', function(e){
-    var f = e.target; var soort = f.closest && f.closest('#leadNewsletter') ? 'nieuwsbrief' : 'aanvraag';
-    ev(soort === 'nieuwsbrief' ? 'nieuwsbrief_aanmelding' : 'generate_lead', { pagina: location.pathname, soort: soort });
-  }, true);
-  window.vwTrack = ev;
-  window.addEventListener('vw:consent', load);
-  load();
-})();
-</script>
-<!-- vw-analytics:end -->
 <!-- vw-plan:start -->
 <style>
 .vwp{position:fixed;z-index:70;display:flex;align-items:center;gap:14px;font-family:'Nunito Sans',system-ui,sans-serif;transition:transform .3s ease,opacity .3s ease;transform:translateY(140%);opacity:0;pointer-events:none;}
@@ -1507,3 +1479,32 @@ body.vwb-lock{overflow:hidden;}
 })();
 </script>
 <!-- vw-plan:end -->
+<!-- vw-analytics:start -->
+<script>
+(function(){
+  var ID = 'G-6QJJ46JVWW', loaded = false;
+  function ok(){ var c = window.vwConsent; if(!c){ try{ c = JSON.parse(localStorage.getItem('vwConsent')); }catch(e){} } return !!(c && c.analytics); }
+  function load(){
+    if(loaded || !ok()) return; loaded = true;
+    window.dataLayer = window.dataLayer || []; window.gtag = function(){ dataLayer.push(arguments); };
+    gtag('js', new Date());
+    gtag('config', ID, { allow_google_signals: false, allow_ad_personalization_signals: false });
+    var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID; document.head.appendChild(s);
+  }
+  function ev(name, params){ if(loaded && window.gtag) gtag('event', name, params || {}); }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href]'); if(!a) return;
+    var h = a.getAttribute('href');
+    if(h.indexOf('wa.me') > -1) ev('whatsapp_klik', { pagina: location.pathname });
+    else if(h.indexOf('tel:') === 0) ev('bel_klik', { pagina: location.pathname });
+  }, true);
+  document.addEventListener('submit', function(e){
+    var f = e.target; var soort = f.closest && f.closest('#leadNewsletter') ? 'nieuwsbrief' : 'aanvraag';
+    ev(soort === 'nieuwsbrief' ? 'nieuwsbrief_aanmelding' : 'generate_lead', { pagina: location.pathname, soort: soort });
+  }, true);
+  window.vwTrack = ev;
+  window.addEventListener('vw:consent', load);
+  load();
+})();
+</script>
+<!-- vw-analytics:end -->

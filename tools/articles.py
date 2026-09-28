@@ -47,6 +47,7 @@ def inline(t):
     t = esc(t).replace('&#x27;', "'")
     t = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', t)
     t = re.sub(r'\[([^\]]+)\]\((/[^)\s]*)\)', r'<a href="\2">\1</a>', t)
+    t = re.sub(r'\[([^\]]+)\]\((https://[^)\s]+)\)', r'<a href="\2" target="_blank" rel="noopener">\1</a>', t)
     return t
 
 def slugify(t):
@@ -137,6 +138,10 @@ ARTCSS = '''<style>
 @media (max-width:560px){ .rel-prod{flex-wrap:wrap;} .rel-prod .go{margin-left:0;} .art-body{font-size:15.5px;} }
 </style>'''
 
+MAAND = ['januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'augustus', 'september', 'oktober', 'november', 'december']
+def nl_date(d):
+    y, m, dd = (int(x) for x in d.split('-')); return f'{dd} {MAAND[m - 1]} {y}'
+
 def build_page(a, shell, catalog):
     prod = a['product']; pname, price, purl, pthumb = PRODUCTS[prod]
     same = [c for c in catalog if c['product'] == prod]
@@ -150,6 +155,11 @@ def build_page(a, shell, catalog):
     if a['faq']:
         faq = '<div class="art-faq"><h2 id="veelgestelde-vragen">Veelgestelde vragen</h2><div class="faq" style="margin-top:14px;">' + ''.join(
             f'<details><summary>{inline(q)}</summary><p>{inline(x)}</p></details>' for q, x in a['faq']) + '</div></div>'
+    srcs = ''
+    if a.get('sources'):
+        items = [x.strip().split('|', 1) for x in a['sources'].split('||') if '|' in x]
+        srcs = ('<div class="art-src" style="margin-top:36px;padding-top:18px;border-top:1px solid var(--border);"><div style="font-size:13px;font-weight:800;color:var(--ink);">Bronnen</div><ul style="margin:8px 0 0;padding-left:18px;font-size:13px;line-height:1.7;color:var(--ink-soft);">'
+                + ''.join(f'<li><a href="{esc(u.strip())}" target="_blank" rel="noopener" style="color:var(--primary);">{esc(n.strip())}</a></li>' for n, u in items) + '</ul></div>')
     main = f'''<div class="blk-light" style="padding-top:40px;">
   {ARTCSS}
   <div class="wrap reveal" style="max-width:760px;padding-top:48px;padding-bottom:0;">
@@ -160,7 +170,7 @@ def build_page(a, shell, catalog):
     <div class="pill" style="margin-top:18px;">{esc(a.get('category', CATLABEL[prod]))}</div>
     <h1 class="vw-heading" style="font-size:clamp(28px,4.4vw,40px);margin-top:14px;line-height:1.2;">{inline(a['title'])}</h1>
     <p style="font-size:17px;color:var(--ink-soft);margin-top:14px;line-height:1.6;max-width:640px;">{inline(a.get('lead', ''))}</p>
-    <div style="margin-top:16px;font-size:12.5px;color:var(--ink-soft);">Inzichten · {esc(CATLABEL[prod])} · {mins} min leestijd</div>
+    <div style="margin-top:16px;font-size:12.5px;color:var(--ink-soft);">Inzichten · {esc(CATLABEL[prod])} · {mins} min leestijd{' · ' + ('Bijgewerkt ' + nl_date(a['updated']) if a.get('updated') else 'Gepubliceerd ' + nl_date(a['date'])) if a.get('date') else ''}</div>
   </div>
   <div class="wrap reveal" style="max-width:760px;padding-top:28px;">
     <div style="border-radius:20px;overflow:hidden;aspect-ratio:16/9;background:var(--bg);"><img fetchpriority="high" src="/images/{img}.webp" alt="{esc(a['title'])}" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
@@ -172,6 +182,7 @@ def build_page(a, shell, catalog):
 {body}
     </article>
     {faq}
+    {srcs}
   </div>
 </div>
 '''
@@ -180,6 +191,10 @@ def build_page(a, shell, catalog):
     s = re.sub(r'<title>.*?</title>', '<title>' + esc(a.get('seo_title') or a['title'] + ' | Voltwijk') + '</title>', s, count=1)
     s = re.sub(r'<meta name="description" content="[^"]*">', '<meta name="description" content="' + esc(a['description']) + '">', s, count=1)
     s = re.sub(r'<link rel="canonical" href="[^"]*">', f'<link rel="canonical" href="https://voltwijk.nl/{a["slug"]}">', s, count=1)
+    s = re.sub(r'\n?<meta property="article:(published|modified)_time"[^>]*>', '', s)
+    if a.get('date'):
+        tags = f'<meta property="article:published_time" content="{a["date"]}">' + (f'\n<meta property="article:modified_time" content="{a["updated"]}">' if a.get('updated') else '')
+        s = s.replace('<link rel="canonical"', tags + '\n<link rel="canonical"', 1)
     s = re.sub(r'\n?<!-- seo:start -->.*?<!-- seo:end -->', '', s, flags=re.S)
     s = re.sub(r'\n?<!-- rel:start -->.*?<!-- rel:end -->', '', s, flags=re.S)
     return s
@@ -240,7 +255,7 @@ def main():
         catalog.append({'slug': slug, 'product': prod, 'title': t, 'excerpt': html.unescape(re.sub(r'<[^>]+>', '', lead.group(1))).strip() if lead else '',
                         'img': im.group(1) if im else '/images/og-voltwijk.jpg', 'also': ALSO.get(slug, []), 'new': False})
     for a in new:
-        catalog.append({'slug': a['slug'], 'product': a['product'], 'title': a['title'], 'excerpt': a['description'], 'also': ALSO.get(a['slug'], []), 'new': True})
+        catalog.append({'slug': a['slug'], 'product': a['product'], 'title': a['title'], 'excerpt': a['description'], 'also': ALSO.get(a['slug'], []), 'new': True, 'date': a.get('date', '')})
     for a in new:  # beeld per nieuw artikel (moet na catalogus-opbouw)
         same = [c for c in catalog if c['product'] == a['product']]
         idx = same.index(next(c for c in same if c['slug'] == a['slug']))
@@ -261,7 +276,7 @@ def main():
     order = ['batterij','zonnepanelen','warmtepomp','airco','boiler','laadpaal','meterkast','algemeen']
     chips = '<button type="button" class="ins-chip is-on" data-f="alle">Alle</button>' + ''.join(
         f'<button type="button" class="ins-chip" data-f="{k}">{CATLABEL[k]}</button>' for k in order if any(c['product'] == k for c in catalog))
-    cards = '\n'.join(card_html(c) for c in sorted(catalog, key=lambda c: (not c['new'], order.index(c['product']))))
+    cards = '\n'.join(card_html(c) for c in sorted(catalog, key=lambda c: (-int((c.get('date') or '0').replace('-', '')), not c['new'], order.index(c['product']))))
     grid = f'''<!-- ins:start --><div class="wrap reveal" style="padding-top:32px;padding-bottom:88px;">
       <style>.ins-chips{{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:28px;}}
       .ins-chip{{border:1px solid var(--border);background:#fff;color:var(--ink);border-radius:999px;padding:9px 16px;font:700 13.5px 'Nunito Sans',system-ui,sans-serif;cursor:pointer;}}
@@ -284,4 +299,5 @@ def main():
     json.dump([{k: c[k] for k in ('slug','product','title')} for c in catalog], open('content/catalogus.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     print(len(new), 'nieuwe artikelen,', len(catalog), 'totaal')
 
-main()
+if __name__ == "__main__":
+    main()

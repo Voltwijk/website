@@ -419,6 +419,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
 <p>Voltwijk plaatst zonnepanelen van 440 Wp full-black, vanaf € 3.999 voor 12 panelen, met eigen monteurs en zonder onderaannemers. We kijken vooraf eerlijk naar je dak, de opstelling en je meterkast. Bekijk de <a href="/product-zonnepanelen">zonnepanelen-pagina</a> of <a href="/bereken-je-prijs">bereken je prijs</a>.</p>
     </article>
     <div class="art-faq"><h2 id="veelgestelde-vragen">Veelgestelde vragen</h2><div class="faq" style="margin-top:14px;"><details><summary>Heb ik een vergunning nodig voor zonnepanelen op een plat dak?</summary><p>Meestal niet. Het is vaak vergunningvrij als de panelen minstens zo ver van de dakrand staan als ze hoog zijn. Bij een monument of in een beschermd stads- of dorpsgezicht gelden andere regels.</p></details><details><summary>Hoeveel ballast is nodig voor zonnepanelen op een plat dak?</summary><p>Indicatief vaak ongeveer 20 tot 30 kg per m², aan de randen soms meer. De exacte hoeveelheid hangt af van gebouwhoogte, windbelasting en opstelling en wordt per dak berekend.</p></details><details><summary>Is oost-west of zuid beter op een plat dak?</summary><p>Zuid levert per paneel meer op, oost-west laat meer panelen toe en spreidt de opbrengst over de dag. Op een plat dak kiezen veel mensen daarom voor oost-west.</p></details><details><summary>Mag ik zonnepanelen op het dak van mijn appartement leggen?</summary><p>Alleen met toestemming van de VvE, omdat het dak meestal gemeenschappelijk eigendom is. De splitsingsakte bepaalt hoe dat besluit genomen wordt.</p></details></div></div>
+    
   </div>
 </div>
 
@@ -1437,35 +1438,6 @@ body.vwb-lock{overflow:hidden;}
 })();
 </script>
 <!-- vw-cal:end -->
-<!-- vw-analytics:start -->
-<script>
-(function(){
-  var ID = 'G-6QJJ46JVWW', loaded = false;
-  function ok(){ var c = window.vwConsent; if(!c){ try{ c = JSON.parse(localStorage.getItem('vwConsent')); }catch(e){} } return !!(c && c.analytics); }
-  function load(){
-    if(loaded || !ok()) return; loaded = true;
-    window.dataLayer = window.dataLayer || []; window.gtag = function(){ dataLayer.push(arguments); };
-    gtag('js', new Date());
-    gtag('config', ID, { allow_google_signals: false, allow_ad_personalization_signals: false });
-    var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID; document.head.appendChild(s);
-  }
-  function ev(name, params){ if(loaded && window.gtag) gtag('event', name, params || {}); }
-  document.addEventListener('click', function(e){
-    var a = e.target.closest && e.target.closest('a[href]'); if(!a) return;
-    var h = a.getAttribute('href');
-    if(h.indexOf('wa.me') > -1) ev('whatsapp_klik', { pagina: location.pathname });
-    else if(h.indexOf('tel:') === 0) ev('bel_klik', { pagina: location.pathname });
-  }, true);
-  document.addEventListener('submit', function(e){
-    var f = e.target; var soort = f.closest && f.closest('#leadNewsletter') ? 'nieuwsbrief' : 'aanvraag';
-    ev(soort === 'nieuwsbrief' ? 'nieuwsbrief_aanmelding' : 'generate_lead', { pagina: location.pathname, soort: soort });
-  }, true);
-  window.vwTrack = ev;
-  window.addEventListener('vw:consent', load);
-  load();
-})();
-</script>
-<!-- vw-analytics:end -->
 <!-- vw-plan:start -->
 <style>
 .vwp{position:fixed;z-index:70;display:flex;align-items:center;gap:14px;font-family:'Nunito Sans',system-ui,sans-serif;transition:transform .3s ease,opacity .3s ease;transform:translateY(140%);opacity:0;pointer-events:none;}
@@ -1507,3 +1479,32 @@ body.vwb-lock{overflow:hidden;}
 })();
 </script>
 <!-- vw-plan:end -->
+<!-- vw-analytics:start -->
+<script>
+(function(){
+  var ID = 'G-6QJJ46JVWW', loaded = false;
+  function ok(){ var c = window.vwConsent; if(!c){ try{ c = JSON.parse(localStorage.getItem('vwConsent')); }catch(e){} } return !!(c && c.analytics); }
+  function load(){
+    if(loaded || !ok()) return; loaded = true;
+    window.dataLayer = window.dataLayer || []; window.gtag = function(){ dataLayer.push(arguments); };
+    gtag('js', new Date());
+    gtag('config', ID, { allow_google_signals: false, allow_ad_personalization_signals: false });
+    var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID; document.head.appendChild(s);
+  }
+  function ev(name, params){ if(loaded && window.gtag) gtag('event', name, params || {}); }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href]'); if(!a) return;
+    var h = a.getAttribute('href');
+    if(h.indexOf('wa.me') > -1) ev('whatsapp_klik', { pagina: location.pathname });
+    else if(h.indexOf('tel:') === 0) ev('bel_klik', { pagina: location.pathname });
+  }, true);
+  document.addEventListener('submit', function(e){
+    var f = e.target; var soort = f.closest && f.closest('#leadNewsletter') ? 'nieuwsbrief' : 'aanvraag';
+    ev(soort === 'nieuwsbrief' ? 'nieuwsbrief_aanmelding' : 'generate_lead', { pagina: location.pathname, soort: soort });
+  }, true);
+  window.vwTrack = ev;
+  window.addEventListener('vw:consent', load);
+  load();
+})();
+</script>
+<!-- vw-analytics:end -->

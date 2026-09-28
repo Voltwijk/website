@@ -409,6 +409,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
 <p>Voltwijk kijkt samen met je naar je isolatie, radiatoren en meterkast en adviseert eerlijk of hybride of volledig elektrisch het beste past, tegen een vaste prijs vooraf. Bekijk onze <a href="/product-warmtepomp">warmtepomp</a> of <a href="/bereken-je-prijs">bereken je prijs</a>.</p>
     </article>
     <div class="art-faq"><h2 id="veelgestelde-vragen">Veelgestelde vragen</h2><div class="faq" style="margin-top:14px;"><details><summary>Kan ik later van een hybride naar een volledig elektrische warmtepomp overstappen?</summary><p>Vaak wel, maar niet altijd met dezelfde warmtepomp. Een hybride warmtepomp is meestal kleiner uitgevoerd omdat de ketel bijspringt. Wil je later volledig elektrisch, dan heb je doorgaans een krachtiger unit en een boilervat nodig. Isoleer in de tussentijd, dan is de overstap later eenvoudiger.</p></details><details><summary>Krijg ik ISDE-subsidie voor een hybride warmtepomp?</summary><p>Ja. In 2026 geldt de ISDE-subsidie van RVO voor zowel hybride als volledig elektrische warmtepompen. Het bedrag hangt af van het type en het vermogen. Je vraagt het aan na de installatie, binnen 24 maanden. Check de actuele voorwaarden bij RVO.</p></details><details><summary>Blijf ik bij een hybride warmtepomp gas betalen?</summary><p>Ja. De cv-ketel blijft aangesloten voor de koudste dagen en in de meeste gevallen ook voor warm tapwater. Je gasverbruik daalt flink, maar je houdt een gasaansluiting en dus ook vaste kosten voor gas.</p></details><details><summary>Is een volledig elektrische warmtepomp altijd goedkoper op de lange termijn?</summary><p>Niet altijd. Het hangt af van je isolatie, de aanvoertemperatuur, de efficiëntie van de warmtepomp en de verhouding tussen gas- en stroomprijs. In een goed geïsoleerd huis met lage aanvoertemperatuur is de kans groot dat het loont; in een slecht geïsoleerd huis vaak niet.</p></details></div></div>
+    
   </div>
 </div>
 
@@ -1427,35 +1428,6 @@ body.vwb-lock{overflow:hidden;}
 })();
 </script>
 <!-- vw-cal:end -->
-<!-- vw-analytics:start -->
-<script>
-(function(){
-  var ID = 'G-6QJJ46JVWW', loaded = false;
-  function ok(){ var c = window.vwConsent; if(!c){ try{ c = JSON.parse(localStorage.getItem('vwConsent')); }catch(e){} } return !!(c && c.analytics); }
-  function load(){
-    if(loaded || !ok()) return; loaded = true;
-    window.dataLayer = window.dataLayer || []; window.gtag = function(){ dataLayer.push(arguments); };
-    gtag('js', new Date());
-    gtag('config', ID, { allow_google_signals: false, allow_ad_personalization_signals: false });
-    var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID; document.head.appendChild(s);
-  }
-  function ev(name, params){ if(loaded && window.gtag) gtag('event', name, params || {}); }
-  document.addEventListener('click', function(e){
-    var a = e.target.closest && e.target.closest('a[href]'); if(!a) return;
-    var h = a.getAttribute('href');
-    if(h.indexOf('wa.me') > -1) ev('whatsapp_klik', { pagina: location.pathname });
-    else if(h.indexOf('tel:') === 0) ev('bel_klik', { pagina: location.pathname });
-  }, true);
-  document.addEventListener('submit', function(e){
-    var f = e.target; var soort = f.closest && f.closest('#leadNewsletter') ? 'nieuwsbrief' : 'aanvraag';
-    ev(soort === 'nieuwsbrief' ? 'nieuwsbrief_aanmelding' : 'generate_lead', { pagina: location.pathname, soort: soort });
-  }, true);
-  window.vwTrack = ev;
-  window.addEventListener('vw:consent', load);
-  load();
-})();
-</script>
-<!-- vw-analytics:end -->
 <!-- vw-plan:start -->
 <style>
 .vwp{position:fixed;z-index:70;display:flex;align-items:center;gap:14px;font-family:'Nunito Sans',system-ui,sans-serif;transition:transform .3s ease,opacity .3s ease;transform:translateY(140%);opacity:0;pointer-events:none;}
@@ -1497,3 +1469,32 @@ body.vwb-lock{overflow:hidden;}
 })();
 </script>
 <!-- vw-plan:end -->
+<!-- vw-analytics:start -->
+<script>
+(function(){
+  var ID = 'G-6QJJ46JVWW', loaded = false;
+  function ok(){ var c = window.vwConsent; if(!c){ try{ c = JSON.parse(localStorage.getItem('vwConsent')); }catch(e){} } return !!(c && c.analytics); }
+  function load(){
+    if(loaded || !ok()) return; loaded = true;
+    window.dataLayer = window.dataLayer || []; window.gtag = function(){ dataLayer.push(arguments); };
+    gtag('js', new Date());
+    gtag('config', ID, { allow_google_signals: false, allow_ad_personalization_signals: false });
+    var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID; document.head.appendChild(s);
+  }
+  function ev(name, params){ if(loaded && window.gtag) gtag('event', name, params || {}); }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href]'); if(!a) return;
+    var h = a.getAttribute('href');
+    if(h.indexOf('wa.me') > -1) ev('whatsapp_klik', { pagina: location.pathname });
+    else if(h.indexOf('tel:') === 0) ev('bel_klik', { pagina: location.pathname });
+  }, true);
+  document.addEventListener('submit', function(e){
+    var f = e.target; var soort = f.closest && f.closest('#leadNewsletter') ? 'nieuwsbrief' : 'aanvraag';
+    ev(soort === 'nieuwsbrief' ? 'nieuwsbrief_aanmelding' : 'generate_lead', { pagina: location.pathname, soort: soort });
+  }, true);
+  window.vwTrack = ev;
+  window.addEventListener('vw:consent', load);
+  load();
+})();
+</script>
+<!-- vw-analytics:end -->
