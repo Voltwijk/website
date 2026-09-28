@@ -9,7 +9,7 @@ Dit is de vaste werkwijze voor de dagelijkse blog. Volg hem stap voor stap. Doel
    - van de afgelopen 7 dagen is,
    - direct gevolgen heeft voor huishoudens met zonnepanelen, thuisbatterij, warmtepomp, airco, boiler, laadpaal of meterkast,
    - nog niet in een bestaand artikel staat (`ls content/artikelen`, en zoek met grep op het kernwoord).
-3. Is `GA_SERVICE_ACCOUNT_JSON` beschikbaar, draai dan `python3 tools/gsc.py report 28` en kijk of er zoekwoorden zijn met veel vertoningen maar positie > 8. Een artikel dat precies die vraag beantwoordt krijgt voorrang.
+3. Lees `content/zoekdata.md` (elke nacht bijgewerkt uit Google Search Console). Staat onder "Kansen" een zoekwoord met duidelijk meer vertoningen dan de rest (en nog geen artikel dat precies die vraag beantwoordt), dan krijgt dat voorrang. Zolang de aantallen erg klein zijn (onder ~20 vertoningen), volg je gewoon het redactieplan.
 4. **Nooit** een onderwerp kiezen dat al een artikel heeft. Wel mag je een bestaand artikel bijwerken als het verouderd is (zie stap 6).
 
 Voorkeur (wat het snelst in Google scoort voor een jonge site):

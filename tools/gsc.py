@@ -8,6 +8,7 @@
 #   python3 tools/gsc.py report [dagen]         top zoekwoorden en pagina's (standaard 28 dagen)
 #   python3 tools/gsc.py inspect <url> [...]    indexstatus van losse pagina's
 #   python3 tools/gsc.py inspect-all            indexstatus van alle URL's uit sitemap.xml
+#   python3 tools/gsc.py zoekdata [dagen]       schrijft content/zoekdata.md (zoekwoorden, pagina's, kansen) voor de redactie
 import os, sys, json, time, base64, re, datetime, urllib.request, urllib.parse
 import subprocess, tempfile
 os.chdir(os.path.join(os.path.dirname(__file__), '..'))
@@ -15,9 +16,9 @@ SITEMAP = 'https://voltwijk.nl/sitemap.xml'
 API = 'https://www.googleapis.com/webmasters/v3'
 
 def key():
-    raw = os.environ.get('GSC_SERVICE_ACCOUNT_JSON', '').strip()
+    raw = (os.environ.get('GSC_SERVICE_ACCOUNT_JSON') or os.environ.get('GA_SERVICE_ACCOUNT_JSON') or '').strip()
     if not raw: sys.exit('GSC_SERVICE_ACCOUNT_JSON ontbreekt')
-    if not raw.startswith('{'): raw = base64.b64decode(raw).decode()
+    if not raw.startswith('{'): raw = open(raw).read() if os.path.exists(raw) else base64.b64decode(raw).decode()
     return json.loads(raw)
 
 def token(k):
@@ -84,6 +85,26 @@ def main():
                      {'inspectionUrl': u, 'siteUrl': prop, 'languageCode': 'nl'})
             ix = r.get('inspectionResult', {}).get('indexStatusResult', {})
             print(f"{u:70} {ix.get('verdict','?'):8} {ix.get('coverageState','')}")
+    elif cmd == 'zoekdata':
+        days = int(sys.argv[2]) if len(sys.argv) > 2 else 28
+        end = datetime.date.today() - datetime.timedelta(days=2); start = end - datetime.timedelta(days=days)
+        q = lambda dims, n: call(tok, 'POST', f'{API}/sites/{P}/searchAnalytics/query',
+                                 {'startDate': str(start), 'endDate': str(end), 'dimensions': dims, 'rowLimit': n}).get('rows', [])
+        queries, pages, qp = q(['query'], 250), q(['page'], 100), q(['query', 'page'], 250)
+        out = [f'# Zoekdata voltwijk.nl ({start} t/m {end})', '', 'Automatisch gemaakt door tools/gsc.py. Gebruik dit bij het kiezen van onderwerpen (zie REDACTIE.md).', '',
+               '## Kansen: zoekwoorden met vertoningen op positie 5-30', 'Een artikel dat precies deze vraag beantwoordt, of een bestaande pagina die beter aansluit, kan hier snel stijgen.', '',
+               '| zoekwoord | vertoningen | klikken | positie | pagina |', '|---|---|---|---|---|']
+        best = {}
+        for r in qp:
+            k = r['keys'][0]
+            if k not in best or r['impressions'] > best[k]['impressions']: best[k] = r
+        kans = sorted([r for r in queries if 5 <= r['position'] <= 30], key=lambda r: -r['impressions'])[:40]
+        out += [f"| {r['keys'][0]} | {r['impressions']:.0f} | {r['clicks']:.0f} | {r['position']:.1f} | {best.get(r['keys'][0], {}).get('keys', ['', ''])[1].replace('https://voltwijk.nl', '')} |" for r in kans] or ['| (nog geen gegevens) | | | | |']
+        out += ['', '## Top zoekwoorden', '', '| zoekwoord | vertoningen | klikken | positie |', '|---|---|---|---|']
+        out += [f"| {r['keys'][0]} | {r['impressions']:.0f} | {r['clicks']:.0f} | {r['position']:.1f} |" for r in sorted(queries, key=lambda r: -r['impressions'])[:40]]
+        out += ['', "## Pagina's", '', '| pagina | vertoningen | klikken | positie |', '|---|---|---|---|']
+        out += [f"| {r['keys'][0].replace('https://voltwijk.nl', '')} | {r['impressions']:.0f} | {r['clicks']:.0f} | {r['position']:.1f} |" for r in sorted(pages, key=lambda r: -r['impressions'])[:60]]
+        open('content/zoekdata.md', 'w', encoding='utf-8').write('\n'.join(out) + '\n'); print('content/zoekdata.md geschreven')
     else:
         sys.exit('Onbekend commando: ' + cmd)
 

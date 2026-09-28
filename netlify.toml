@@ -1,5 +1,7 @@
 [build]
   publish = "."
+  # Geen nieuwe deploy als alleen de zoekdata voor de redactie is bijgewerkt
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':(exclude)content/zoekdata.md'"
 
 # Oude link naar de homepage
 [[redirects]]

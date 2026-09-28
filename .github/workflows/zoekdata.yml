@@ -1,0 +1,27 @@
+# Zet elke nacht de Search Console-cijfers in content/zoekdata.md, zodat de dagelijkse blog
+# onderwerpen kan kiezen op basis van echte zoekdata (zonder zelf een sleutel nodig te hebben).
+name: Zoekdata
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  zoekdata:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Zoekdata ophalen
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GA_SERVICE_ACCOUNT_JSON }}
+        run: python3 tools/gsc.py zoekdata 28
+      - name: Opslaan
+        run: |
+          if git diff --quiet -- content/zoekdata.md; then echo "Geen wijzigingen"; exit 0; fi
+          git config user.name "voltwijk-bot"
+          git config user.email "voltwijk-bot@users.noreply.github.com"
+          git add content/zoekdata.md
+          git commit -m "Update search console data"
+          git push
