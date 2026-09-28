@@ -34,8 +34,9 @@ def links_check():
     targets = {}
     for u, s, body in res:
         if s != 200: broken.append((u, s, 'pagina uit sitemap'))
+        body = re.sub(r'<script\b.*?</script>', '', body, flags=re.S)
         for h in re.findall(r'href="([^"#]+)', body):
-            if h.startswith(('mailto:', 'tel:', 'javascript:', 'data:')) or 'wa.me' in h: continue
+            if h.startswith(('mailto:', 'tel:', 'javascript:', 'data:')) or 'wa.me' in h or re.search(r"[+'\s]", h): continue
             full = urllib.parse.urljoin(u, h)
             if full.startswith(SITE): targets.setdefault(full.split('?')[0], u)
             elif '/artikel-' in u and full.startswith('http'): ext.setdefault(full, u)
@@ -76,7 +77,7 @@ def gsc():
         try:
             r = g.call(tok, 'POST', 'https://searchconsole.googleapis.com/v1/urlInspection/index:inspect', {'inspectionUrl': u, 'siteUrl': prop, 'languageCode': 'nl'})
             ix = r.get('inspectionResult', {}).get('indexStatusResult', {})
-            return u, ix.get('verdict', '?'), ix.get('coverageState', '')
+            return u.replace('https://voltwijk.nl', '').replace(SITE, '') or '/', ix.get('verdict', '?'), ix.get('coverageState', '')
         except SystemExit as e:
             return u, 'FOUT', str(e)[:80]
     with ThreadPoolExecutor(4) as ex:
@@ -115,9 +116,12 @@ def build():
                      + rows([(b[0].replace(SITE, '') or '/', b[1] or 'geen antwoord', b[2]) for b in broken]) + (('<div style="margin-top:10px;font-size:13px;font-weight:700;">Bronlinks die niet meer bestaan</div>' + rows([(b[0], b[1], b[2]) for b in ext_bad])) if ext_bad else '')))
     if broken: todo.append(f'{len(broken)} kapotte link(s) repareren')
     if g:
-        notidx = [(u.replace(SITE, '') or '/', st) for u, v, st in g['insp'] if v != 'PASS']
+        notidx = [(u, st) for u, v, st in g['insp'] if v != 'PASS']
         idx = len(g['insp']) - len(notidx)
-        parts.append(sec('Opgenomen in Google', ok(not notidx, f'{idx} van {len(g["insp"])} pagina\'s geïndexeerd') + '<div style="height:8px;"></div>' + rows(notidx[:25]),
+        states = {}
+        for _, st in notidx: states[st or 'Onbekend'] = states.get(st or 'Onbekend', 0) + 1
+        parts.append(sec('Opgenomen in Google', ok(idx >= len(g['insp']) * 0.9, f'{idx} van {len(g["insp"])} pagina\'s geïndexeerd') + '<div style="height:8px;"></div>'
+                         + rows(sorted(states.items(), key=lambda x: -x[1])) + (f'<div style="margin-top:10px;font-size:13px;font-weight:700;">Voorbeelden nog niet opgenomen</div>' + rows([(u, '') for u, _ in notidx[:8]]) if notidx else ''),
                          'Nieuwe pagina\'s hebben vaak 1–3 weken nodig. Blijft een pagina lang hangen, dan kijken we ernaar.'))
         c, p = g['cur'], g['prev']
         kpi = lambda label, a, b, fmt=n, inv=False: (f'<td width="33%" style="padding:6px;"><div style="background:#fff;border:1px solid {C["line"]};border-radius:14px;padding:12px;">'
@@ -129,7 +133,6 @@ def build():
                          + '<div style="margin-top:12px;font-size:13px;font-weight:700;">Gedaald</div>' + rows([(q, f'{pos(a)} → {pos(b)}') for q, a, b, i in g['down']])
                          + '<div style="margin-top:12px;font-size:13px;font-weight:700;">Nieuw gevonden op</div>' + rows([(q, f'positie {pos(p_)}') for q, p_, i in g['new']]),
                          g['period'] + ' vergeleken met de week ervoor · lagere positie = beter'))
-        if notidx and len(notidx) > len(g['insp']) / 2: todo.append('meer dan de helft van de pagina\'s is nog niet geïndexeerd')
     parts.append(sec('Snelheid op mobiel', rows([(p or '/', f'score {s}' if s is not None else 'niet gemeten', f'laden {l}', f'verschuiving {c}') for p, s, l, c in sp]),
                      'Google PageSpeed. 90+ is uitstekend, 50–89 kan beter, onder 50 is slecht.'))
     if any(s is not None and s < 50 for _, s, _, _ in sp): todo.append('snelheid op mobiel is laag')
