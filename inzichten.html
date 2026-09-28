@@ -332,6 +332,15 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
       .ins-chip.is-on{background:var(--dark);border-color:var(--dark);color:#fff;} #insGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;} #insGrid > *{flex:none;} @media (max-width:900px){#insGrid{grid-template-columns:repeat(2,minmax(0,1fr));}} @media (max-width:560px){#insGrid{grid-template-columns:1fr;}} .ins-chip:focus-visible{outline:2px solid var(--primary);outline-offset:2px;}</style>
       <div class="ins-chips" role="toolbar" aria-label="Filter op onderwerp"><button type="button" class="ins-chip is-on" data-f="alle">Alle</button><button type="button" class="ins-chip" data-f="batterij">Thuisbatterij</button><button type="button" class="ins-chip" data-f="zonnepanelen">Zonnepanelen</button><button type="button" class="ins-chip" data-f="warmtepomp">Warmtepomp</button><button type="button" class="ins-chip" data-f="airco">Airco</button><button type="button" class="ins-chip" data-f="boiler">Boiler</button><button type="button" class="ins-chip" data-f="laadpaal">Laadpaal</button><button type="button" class="ins-chip" data-f="meterkast">Meterkast</button><button type="button" class="ins-chip" data-f="algemeen">Algemeen</button></div>
       <div class="grid-3" id="insGrid">
+<a href="/artikel-vergoeding-netbeheerder-thuisbatterij" class="card tilt-card ins-card" data-cat="batterij" style="padding:0;overflow:hidden;text-decoration:none;color:inherit;">
+          <div style="aspect-ratio:4/3;overflow:hidden;background:var(--bg);"><img loading="lazy" decoding="async" src="/images/batterij-zolder.webp" alt="Vergoeding van de netbeheerder voor je thuisbatterij: zo werkt het vanaf november 2026" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div style="padding:20px 22px 24px;">
+            <div style="font-size:11px;font-weight:700;letter-spacing:.05em;color:var(--primary);text-transform:uppercase;">Thuisbatterij</div>
+            <h3 class="vw-heading" style="font-size:16.5px;margin-top:8px;line-height:1.35;">Vergoeding van de netbeheerder voor je thuisbatterij: zo werkt het vanaf november 2026</h3>
+            <p style="font-size:13px;color:var(--ink-soft);margin-top:10px;line-height:1.55;">Netbeheerders betalen vanaf november 2026 voor slim aangestuurde thuisbatterijen, laadpalen en warmtepompen. Wat houdt het in en doe jij mee?</p>
+            <span style="margin-top:14px;display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:13px;color:var(--primary);">Lees meer →</span>
+          </div>
+        </a>
 <a href="/artikel-btw-thuisbatterij-terugvragen" class="card tilt-card ins-card" data-cat="batterij" style="padding:0;overflow:hidden;text-decoration:none;color:inherit;">
           <div style="aspect-ratio:4/3;overflow:hidden;background:var(--bg);"><img loading="lazy" decoding="async" src="/images/sfeer-rekenen.webp" alt="Btw op een thuisbatterij terugvragen: wanneer kan het wel?" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
           <div style="padding:20px 22px 24px;">
@@ -1945,35 +1954,6 @@ body.vwb-lock{overflow:hidden;}
 })();
 </script>
 <!-- vw-cal:end -->
-<!-- vw-analytics:start -->
-<script>
-(function(){
-  var ID = 'G-6QJJ46JVWW', loaded = false;
-  function ok(){ var c = window.vwConsent; if(!c){ try{ c = JSON.parse(localStorage.getItem('vwConsent')); }catch(e){} } return !!(c && c.analytics); }
-  function load(){
-    if(loaded || !ok()) return; loaded = true;
-    window.dataLayer = window.dataLayer || []; window.gtag = function(){ dataLayer.push(arguments); };
-    gtag('js', new Date());
-    gtag('config', ID, { allow_google_signals: false, allow_ad_personalization_signals: false });
-    var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID; document.head.appendChild(s);
-  }
-  function ev(name, params){ if(loaded && window.gtag) gtag('event', name, params || {}); }
-  document.addEventListener('click', function(e){
-    var a = e.target.closest && e.target.closest('a[href]'); if(!a) return;
-    var h = a.getAttribute('href');
-    if(h.indexOf('wa.me') > -1) ev('whatsapp_klik', { pagina: location.pathname });
-    else if(h.indexOf('tel:') === 0) ev('bel_klik', { pagina: location.pathname });
-  }, true);
-  document.addEventListener('submit', function(e){
-    var f = e.target; var soort = f.closest && f.closest('#leadNewsletter') ? 'nieuwsbrief' : 'aanvraag';
-    ev(soort === 'nieuwsbrief' ? 'nieuwsbrief_aanmelding' : 'generate_lead', { pagina: location.pathname, soort: soort });
-  }, true);
-  window.vwTrack = ev;
-  window.addEventListener('vw:consent', load);
-  load();
-})();
-</script>
-<!-- vw-analytics:end -->
 <!-- vw-plan:start -->
 <style>
 .vwp{position:fixed;z-index:70;display:flex;align-items:center;gap:14px;font-family:'Nunito Sans',system-ui,sans-serif;transition:transform .3s ease,opacity .3s ease;transform:translateY(140%);opacity:0;pointer-events:none;}
@@ -2015,3 +1995,32 @@ body.vwb-lock{overflow:hidden;}
 })();
 </script>
 <!-- vw-plan:end -->
+<!-- vw-analytics:start -->
+<script>
+(function(){
+  var ID = 'G-6QJJ46JVWW', loaded = false;
+  function ok(){ var c = window.vwConsent; if(!c){ try{ c = JSON.parse(localStorage.getItem('vwConsent')); }catch(e){} } return !!(c && c.analytics); }
+  function load(){
+    if(loaded || !ok()) return; loaded = true;
+    window.dataLayer = window.dataLayer || []; window.gtag = function(){ dataLayer.push(arguments); };
+    gtag('js', new Date());
+    gtag('config', ID, { allow_google_signals: false, allow_ad_personalization_signals: false });
+    var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID; document.head.appendChild(s);
+  }
+  function ev(name, params){ if(loaded && window.gtag) gtag('event', name, params || {}); }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href]'); if(!a) return;
+    var h = a.getAttribute('href');
+    if(h.indexOf('wa.me') > -1) ev('whatsapp_klik', { pagina: location.pathname });
+    else if(h.indexOf('tel:') === 0) ev('bel_klik', { pagina: location.pathname });
+  }, true);
+  document.addEventListener('submit', function(e){
+    var f = e.target; var soort = f.closest && f.closest('#leadNewsletter') ? 'nieuwsbrief' : 'aanvraag';
+    ev(soort === 'nieuwsbrief' ? 'nieuwsbrief_aanmelding' : 'generate_lead', { pagina: location.pathname, soort: soort });
+  }, true);
+  window.vwTrack = ev;
+  window.addEventListener('vw:consent', load);
+  load();
+})();
+</script>
+<!-- vw-analytics:end -->

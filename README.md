@@ -119,3 +119,6 @@ Zet `CAL = True` zodra het Cal.com-afspraaktype `cal.com/voltwijk/installatie` b
 
 ## Dagoverzicht per e-mail
 `.github/workflows/dagoverzicht.yml` draait elke avond en stuurt om 23:00 (NL-tijd) via `tools/daily_report.py` een overzicht van de afgelopen 24 uur (23:00–23:00) naar info@voltwijk.nl: bezoekers, acties (bestellingen, afspraken, aanvragen), bezoeken per uur, bronnen, pagina's en, met `NETLIFY_TOKEN`, alle formulierinzendingen. Nodig in GitHub → Settings → Secrets and variables → Actions: `GA_SERVICE_ACCOUNT_JSON`, `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS` (optioneel `NETLIFY_TOKEN`). Voorbeeld bekijken zonder te versturen: `python3 tools/daily_report.py --preview`. Losse cijfers: `python3 tools/ga.py report 556067391 7`.
+
+## Dagelijkse blog
+Elke ochtend schrijft een automatische Claude-sessie één artikel volgens `content/REDACTIE.md`, met onderwerpen uit `content/redactieplan.md` of actueel nieuws. Artikelen ondersteunen nu `date:`, `updated:` en `sources:` (bronnenlijst + datePublished in de structured data). Bouwen en controleren: `bash tools/publish.sh`.

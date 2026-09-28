@@ -108,6 +108,10 @@ for f in sorted(glob.glob('*.html')):
         data.append({"@context": "https://schema.org", "@type": "Article", "headline": head[:110], "description": desc,
           "image": SITE + img, "inLanguage": "nl-NL", "mainEntityOfPage": url,
           "author": {"@type": "Organization", "name": "Voltwijk", "url": SITE + "/"}, "publisher": {"@id": BIZ_ID}})
+        pub = re.search(r'<meta property="article:published_time" content="([^"]+)"', s)
+        if pub:
+            mod = re.search(r'<meta property="article:modified_time" content="([^"]+)"', s)
+            data[-1]["datePublished"] = pub.group(1); data[-1]["dateModified"] = mod.group(1) if mod else pub.group(1)
         crumbs.append({"@type": "ListItem", "position": 2, "name": "Inzichten", "item": SITE + "/inzichten"})
         crumbs.append({"@type": "ListItem", "position": 3, "name": head[:80], "item": url})
     elif slug.startswith('installateur-'):
