@@ -112,7 +112,7 @@ def build():
             '<tr>' + ''.join(f'<td style="padding:7px 0;border-bottom:1px solid {C["line"]};font-size:13px;color:{C["ink"]};{"text-align:right;font-weight:700;white-space:nowrap;padding-left:10px;" if j else "word-break:break-all;"}">{esc(v)}</td>' for j, v in enumerate(it)) + '</tr>' for it in items) + '</table>'
     ok = lambda good, txt: f'<span style="display:inline-block;padding:3px 10px;border-radius:999px;font-size:12px;font-weight:800;background:{C["tint"] if good else "#FDE8E4"};color:{C["primary"] if good else C["down"]};">{txt}</span>'
     parts, todo = [], []
-    parts.append(sec('Kapotte links', ok(not broken, 'Alles in orde' if not broken else f'{len(broken)} probleem/problemen') + f'<div style="font-size:12.5px;color:{C["soft"]};margin:6px 0 8px;">{npages} pagina\'s en {nlinks} interne links gecontroleerd, plus {next_} bronlinks in artikelen.</div>'
+    parts.append(sec('Kapotte links', ok(not broken, 'Alles in orde' if not broken else f'{len(broken)} probleem/problemen') + f'<div style="font-size:12.5px;color:{C["soft"]};margin:6px 0 8px;">{npages} pagina\'s met al hun interne links gecontroleerd, plus {next_} bronlinks in artikelen.</div>'
                      + rows([(b[0].replace(SITE, '') or '/', b[1] or 'geen antwoord', b[2]) for b in broken]) + (('<div style="margin-top:10px;font-size:13px;font-weight:700;">Bronlinks die niet meer bestaan</div>' + rows([(b[0], b[1], b[2]) for b in ext_bad])) if ext_bad else '')))
     if broken: todo.append(f'{len(broken)} kapotte link(s) repareren')
     if g:
