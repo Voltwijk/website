@@ -5,9 +5,9 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 
 ## Klaar
 - [klaar 2026-09-28, artikel-vergoeding-netbeheerder-thuisbatterij] Vergoeding netbeheerder voor thuisbatterij, laadpaal en warmtepomp | vergoeding netbeheerder thuisbatterij | batterij | nieuw vanaf nov 2026, weinig goede uitleg
+- [klaar 2026-09-28, artikel-checklist-salderen-2027] Checklist: dit regel je vóór 1 januari 2027 als je zonnepanelen hebt | checklist salderen 2027 | zonnepanelen | piekt in Q4, sterke koopintentie
 
 ## Open (op volgorde)
-- [open] Checklist: dit regel je vóór 1 januari 2027 als je zonnepanelen hebt | checklist salderen 2027 | zonnepanelen | piekt in Q4, sterke koopintentie
 - [open] Energiebelasting en netbeheerkosten 2027: wat betekent Prinsjesdag voor jouw rekening | energiebelasting 2027 | batterij | actueel na Prinsjesdag, veel gezocht
 - [open] Terugleververgoeding na 2027: hoe werkt het en waar let je op | terugleververgoeding 2027 | zonnepanelen | groeiend zoekvolume richting 2027
 - [open] Netcongestie in West-Brabant: wat betekent het voor jouw huis | netcongestie West-Brabant | batterij | lokaal, weinig concurrentie
@@ -27,3 +27,5 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Hybride warmtepomp combineren met een thuisbatterij | warmtepomp en thuisbatterij | warmtepomp | kruisverkoop
 - [open] ISDE-subsidie 2027: wat verandert er | isde 2027 | warmtepomp | zodra RVO bedragen 2027 publiceert
 - [open] Stroomstoring in je wijk: wat gebeurt er met je zonnepanelen en batterij | stroomstoring zonnepanelen | zonnepanelen | nieuwsgevoelig, vult noodstroom-artikel aan
+- [open] Jaarafrekening na het einde van salderen: zo controleer je de splitsing 2026/2027 | jaarafrekening salderen 2027 | zonnepanelen | piekt jan–mrt 2027, praktische vraag
+- [open] Vast energiecontract en einde salderen: mag je leverancier de voorwaarden wijzigen? | vast contract salderen 2027 | zonnepanelen | ACM-regels, veel onzekerheid bij consumenten
