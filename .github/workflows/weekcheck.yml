@@ -1,0 +1,25 @@
+# Elke maandagochtend een websitecheck naar info@voltwijk.nl: kapotte links, indexering in Google,
+# zoekprestaties (week op week) en snelheid op mobiel. Handmatig: Actions > Weekcheck > Run workflow.
+name: Weekcheck
+on:
+  schedule:
+    - cron: '7 5 * * 1'
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check maken en versturen
+        env:
+          GA_SERVICE_ACCOUNT_JSON: ${{ secrets.GA_SERVICE_ACCOUNT_JSON }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          MAIL_TO: info@voltwijk.nl
+        run: python3 tools/weekly_check.py

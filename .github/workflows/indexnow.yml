@@ -1,0 +1,39 @@
+# Na elke wijziging aan de site: wachten tot Netlify live is en de gewijzigde pagina's aanmelden bij
+# IndexNow (Bing e.a.) en de sitemap opnieuw indienen bij Google Search Console.
+name: Zoekmachines seinen
+on:
+  push:
+    branches: [main]
+    paths: ['**.html', 'sitemap.xml']
+  workflow_dispatch:
+jobs:
+  seinen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Wachten tot de nieuwe versie live staat
+        run: |
+          SHA_FILE=$(git diff --name-only ${{ github.event.before || 'HEAD~1' }} ${{ github.sha }} -- '*.html' | grep -v / | head -1)
+          [ -z "$SHA_FILE" ] && { echo "Geen html gewijzigd"; exit 0; }
+          PATH_=${SHA_FILE%.html}; [ "$PATH_" = "index" ] && PATH_=""
+          # vergelijk een stukje van de nieuwe pagina met de live versie (max 10 minuten)
+          NEEDLE=$(grep -o '<title>[^<]*</title>' "$SHA_FILE" | head -1)
+          for i in $(seq 1 40); do
+            if curl -s "https://voltwijk.nl/$PATH_" | grep -qF "$NEEDLE"; then echo "Live"; break; fi
+            sleep 15
+          done
+          sleep 30
+      - name: IndexNow
+        run: |
+          if [ "${{ github.event_name }}" = "push" ] && [ -n "${{ github.event.before }}" ] && [ "${{ github.event.before }}" != "0000000000000000000000000000000000000000" ]; then
+            python3 tools/indexnow.py ${{ github.event.before }} ${{ github.sha }}
+          else
+            python3 tools/indexnow.py
+          fi
+      - name: Sitemap opnieuw indienen bij Google
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GA_SERVICE_ACCOUNT_JSON }}
+        run: python3 tools/gsc.py submit || true

@@ -108,4 +108,5 @@ def main():
     else:
         sys.exit('Onbekend commando: ' + cmd)
 
-main()
+if __name__ == "__main__":
+    main()
