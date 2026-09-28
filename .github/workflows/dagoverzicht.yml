@@ -1,0 +1,39 @@
+# Stuurt elke avond om 23:00 (Nederlandse tijd) het websiteoverzicht naar info@voltwijk.nl.
+# GitHub rekent in UTC: we draaien om 21:00 én 22:00 UTC en het script verstuurt alleen als het in Nederland ~23:00 is
+# (zo klopt het in zomer- én wintertijd). Handmatig testen: tabblad Actions > Dagoverzicht > Run workflow.
+name: Dagoverzicht
+on:
+  schedule:
+    - cron: '0 21 * * *'
+    - cron: '0 22 * * *'
+  workflow_dispatch:
+    inputs:
+      altijd:
+        description: 'Nu versturen (ook als het geen 23:00 is)'
+        type: boolean
+        default: true
+jobs:
+  rapport:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Rapport maken en versturen
+        env:
+          GA_SERVICE_ACCOUNT_JSON: ${{ secrets.GA_SERVICE_ACCOUNT_JSON }}
+          GA_PROPERTY_ID: '556067391'
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          MAIL_TO: info@voltwijk.nl
+          NETLIFY_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.altijd }}" = "true" ]; then
+            python3 tools/daily_report.py
+          else
+            python3 tools/daily_report.py --only-at-23
+          fi
