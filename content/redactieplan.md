@@ -10,12 +10,12 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar 2026-09-30, artikel-terugleververgoeding-2027] Terugleververgoeding na 2027: hoe werkt het en waar let je op | terugleververgoeding 2027 | zonnepanelen | groeiend zoekvolume richting 2027
 
 ## Open (op volgorde)
-- [open] Netcongestie in West-Brabant: wat betekent het voor jouw huis | netcongestie West-Brabant | batterij | lokaal, weinig concurrentie
+- [klaar (2026-10-01, artikel-netcongestie-west-brabant)] Netcongestie in West-Brabant: wat betekent het voor jouw huis | netcongestie West-Brabant | batterij | lokaal, weinig concurrentie
 - [open] Warmtepomp bij vorst: werkt hij nog en wat kost het | warmtepomp vorst | warmtepomp | seizoensvraag oktober–februari
 - [open] Airco als verwarming in de winter: wat kost het per maand | airco verwarmen kosten | airco | seizoensvraag, koopintentie
-- [open] Thuisbatterij kopen: 10 dingen om op te letten | thuisbatterij kopen waar op letten | batterij | koopintentie, gidsformaat
-- [open] Thuisbatterij en brandveiligheid: hoe veilig is een batterij in huis | thuisbatterij brandgevaar | batterij | veel gestelde zorgvraag
-- [open] Thuisbatterij prijs per kWh: zo vergelijk je eerlijk | thuisbatterij prijs per kwh | batterij | vergelijkingsintentie
+- [klaar (2026-10-01, artikel-thuisbatterij-kopen-waar-op-letten)] Thuisbatterij kopen: 10 dingen om op te letten | thuisbatterij kopen waar op letten | batterij | koopintentie, gidsformaat
+- [klaar (2026-10-01, artikel-thuisbatterij-brandveiligheid)] Thuisbatterij en brandveiligheid: hoe veilig is een batterij in huis | thuisbatterij brandgevaar | batterij | veel gestelde zorgvraag
+- [klaar (2026-10-01, artikel-thuisbatterij-prijs)] Thuisbatterij prijs per kWh: zo vergelijk je eerlijk | thuisbatterij prijs per kwh | batterij | vergelijkingsintentie
 - [open] Warmtepomp stroomverbruik per jaar: reken het zelf uit | warmtepomp stroomverbruik | warmtepomp | veel gezocht, rekenvoorbeelden
 - [open] Warmtepomp en geluid: regels en tips voor buren | warmtepomp geluid buren | warmtepomp | vult aan op buitenunit-artikel
 - [open] Slimme meter en P1-poort: zo haal je meer uit je zonnepanelen | p1 poort slimme meter | zonnepanelen | praktisch, veel gezocht
@@ -33,3 +33,6 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Aansluiting verkleinen of vergroten (1x25A, 3x25A, 3x35A): wat kost het per jaar | aansluiting verzwaren kosten | meterkast | koopintentie, sluit aan op stijgende nettarieven
 - [open] Negatieve stroomprijzen en zonnepanelen: omvormer afschakelen, hoe werkt dat? | negatieve stroomprijs zonnepanelen | zonnepanelen | groeit met dynamische contracten na 2027
 - [open] Zonnepanelen installeren in Etten-Leur: kosten, netbeheer en planning | zonnepanelen installeren etten-leur | zonnepanelen | staat bovenaan in zoekdata (lokaal)
+- [klaar (2026-10-01, artikel-thuisbatterij-west-brabant)] Thuisbatterij kopen in West-Brabant | thuisbatterij breda / west-brabant | batterij | regionale pillar
+- [klaar (2026-10-01, artikel-omvormer-valt-uit-netspanning-te-hoog)] Omvormer valt uit door te hoge netspanning | omvormer valt uit | zonnepanelen | praktische vraag
+- [klaar (2026-10-01, artikel-subsidie-duurzaamheidslening-west-brabant)] Subsidie en duurzaamheidslening per gemeente in West-Brabant | subsidie zonnepanelen moerdijk | batterij | lokaal

@@ -215,6 +215,11 @@
   "title": "Mobiele airco of split-airco: wat is het verschil en wat past bij jou?"
  },
  {
+  "slug": "artikel-netcongestie-west-brabant",
+  "product": "batterij",
+  "title": "Netcongestie in West-Brabant: wat betekent het voor jouw zonnepanelen en thuisbatterij?"
+ },
+ {
   "slug": "artikel-omvormer-kapot-vervangen",
   "product": "zonnepanelen",
   "title": "Omvormer kapot? Signalen, repareren of vervangen en de kosten"
@@ -223,6 +228,16 @@
   "slug": "artikel-omvormer-of-micro-omvormers",
   "product": "zonnepanelen",
   "title": "Omvormer of micro-omvormers? String, optimizers en micro's vergeleken"
+ },
+ {
+  "slug": "artikel-omvormer-valt-uit-netspanning-te-hoog",
+  "product": "zonnepanelen",
+  "title": "Omvormer valt uit op zonnige dagen: is de netspanning te hoog?"
+ },
+ {
+  "slug": "artikel-subsidie-duurzaamheidslening-west-brabant",
+  "product": "batterij",
+  "title": "Subsidie en duurzaamheidslening in West-Brabant 2026: wat kan er per gemeente?"
  },
  {
   "slug": "artikel-terugleverkosten-uitgelegd",
@@ -245,9 +260,19 @@
   "title": "Thuisbatterij bij bestaande zonnepanelen: AC of DC, en wat check je?"
  },
  {
+  "slug": "artikel-thuisbatterij-brandveiligheid",
+  "product": "batterij",
+  "title": "Is een thuisbatterij veilig? Brandrisico en zo beperk je het"
+ },
+ {
   "slug": "artikel-thuisbatterij-hoe-groot",
   "product": "batterij",
   "title": "Hoe groot moet een thuisbatterij zijn? Zo bepaal je de capaciteit"
+ },
+ {
+  "slug": "artikel-thuisbatterij-kopen-waar-op-letten",
+  "product": "batterij",
+  "title": "Thuisbatterij kopen: 10 dingen om op te letten"
  },
  {
   "slug": "artikel-thuisbatterij-levensduur",
@@ -265,6 +290,11 @@
   "title": "Waar plaats je een thuisbatterij? Garage, bijkeuken of zolder"
  },
  {
+  "slug": "artikel-thuisbatterij-prijs",
+  "product": "batterij",
+  "title": "Wat kost een thuisbatterij in 2026? Prijzen inclusief installatie en prijs per kWh"
+ },
+ {
   "slug": "artikel-thuisbatterij-subsidie-2026",
   "product": "batterij",
   "title": "Thuisbatterij subsidie 2026: is er geld voor jouw thuisbatterij?"
@@ -273,6 +303,11 @@
   "slug": "artikel-thuisbatterij-terugverdientijd",
   "product": "batterij",
   "title": "Thuisbatterij terugverdientijd: zo reken je het zelf uit"
+ },
+ {
+  "slug": "artikel-thuisbatterij-west-brabant",
+  "product": "batterij",
+  "title": "Thuisbatterij kopen in West-Brabant: prijzen, netbeheerder en installatie"
  },
  {
   "slug": "artikel-thuisbatterij-zonder-zonnepanelen",

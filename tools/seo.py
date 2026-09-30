@@ -5,12 +5,12 @@ SITE = 'https://voltwijk.nl'
 TODAY = datetime.date.today().isoformat()
 BIZ_ID = SITE + '/#bedrijf'
 T = {  # titel, description
- 'index': ('Zonnepanelen, thuisbatterij & warmtepomp | Voltwijk',
-           'Zonnepanelen, thuisbatterij, warmtepomp, airco of laadpaal met een vaste prijs vooraf, geïnstalleerd door ons eigen team. Bereken direct je prijs.'),
+ 'index': ('Thuisbatterij & zonnepanelen in West-Brabant | Voltwijk',
+           'Thuisbatterij van 10 of 16 kWh vanaf € 4.200 inclusief installatie, door eigen monteurs uit Zevenbergen. Ook zonnepanelen, airco en warmtepompen.'),
  'product-zonnepanelen': ('Zonnepanelen laten plaatsen – vanaf € 3.999 | Voltwijk',
            'Full-black zonnepanelen vanaf € 3.999 voor 12 panelen, inclusief installatie door eigen monteurs. Vaste prijs vooraf, 25 jaar productgarantie.'),
  'product-batterij': ('Thuisbatterij 10 of 16 kWh – vanaf € 4.200 | Voltwijk',
-           'Thuisbatterij van 10 of 16 kWh met hybride omvormer, vanaf € 4.200 inclusief installatie. Bereken in een minuut welke batterij past bij jouw verbruik.'),
+           'Thuisbatterij van 10 of 16 kWh met hybride omvormer, vanaf € 4.200 inclusief installatie. Zie in 4 vragen welke batterij bij jouw verbruik past.'),
  'product-warmtepomp': ('Warmtepomp laten installeren – vanaf € 6.750 | Voltwijk',
            'Lucht/water-warmtepomp vanaf € 6.750 inclusief installatie. ISDE-subsidie direct verrekend, geplaatst door ons eigen team. Bereken je prijs.'),
  'product-airco': ('Airco laten installeren – vanaf € 1.899 | Voltwijk',
