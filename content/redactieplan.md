@@ -7,9 +7,9 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar 2026-09-28, artikel-vergoeding-netbeheerder-thuisbatterij] Vergoeding netbeheerder voor thuisbatterij, laadpaal en warmtepomp | vergoeding netbeheerder thuisbatterij | batterij | nieuw vanaf nov 2026, weinig goede uitleg
 - [klaar 2026-09-28, artikel-checklist-salderen-2027] Checklist: dit regel je vóór 1 januari 2027 als je zonnepanelen hebt | checklist salderen 2027 | zonnepanelen | piekt in Q4, sterke koopintentie
 - [klaar 2026-09-29, artikel-energiebelasting-netbeheerkosten-2027] Energiebelasting en netbeheerkosten 2027: wat betekent Prinsjesdag voor jouw rekening | energiebelasting 2027 | batterij | actueel na Prinsjesdag, veel gezocht
+- [klaar 2026-09-30, artikel-terugleververgoeding-2027] Terugleververgoeding na 2027: hoe werkt het en waar let je op | terugleververgoeding 2027 | zonnepanelen | groeiend zoekvolume richting 2027
 
 ## Open (op volgorde)
-- [open] Terugleververgoeding na 2027: hoe werkt het en waar let je op | terugleververgoeding 2027 | zonnepanelen | groeiend zoekvolume richting 2027
 - [open] Netcongestie in West-Brabant: wat betekent het voor jouw huis | netcongestie West-Brabant | batterij | lokaal, weinig concurrentie
 - [open] Warmtepomp bij vorst: werkt hij nog en wat kost het | warmtepomp vorst | warmtepomp | seizoensvraag oktober–februari
 - [open] Airco als verwarming in de winter: wat kost het per maand | airco verwarmen kosten | airco | seizoensvraag, koopintentie
@@ -31,3 +31,5 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Vast energiecontract en einde salderen: mag je leverancier de voorwaarden wijzigen? | vast contract salderen 2027 | zonnepanelen | ACM-regels, veel onzekerheid bij consumenten
 - [open] Definitieve nettarieven 2027 Enexis: wat betaal je per aansluiting | nettarieven 2027 enexis | meterkast | zodra ACM in december de tarieven vaststelt
 - [open] Aansluiting verkleinen of vergroten (1x25A, 3x25A, 3x35A): wat kost het per jaar | aansluiting verzwaren kosten | meterkast | koopintentie, sluit aan op stijgende nettarieven
+- [open] Negatieve stroomprijzen en zonnepanelen: omvormer afschakelen, hoe werkt dat? | negatieve stroomprijs zonnepanelen | zonnepanelen | groeit met dynamische contracten na 2027
+- [open] Zonnepanelen installeren in Etten-Leur: kosten, netbeheer en planning | zonnepanelen installeren etten-leur | zonnepanelen | staat bovenaan in zoekdata (lokaal)
