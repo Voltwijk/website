@@ -363,6 +363,10 @@ PLAN = r'''<!-- vw-plan:start -->
 </script>
 <!-- vw-plan:end -->'''.replace('__MIN__', str(DAGEN_VOORUIT))
 
+# Pagina's met de batterijkeuzehulp (tools/battery.py) maar zonder calculator, zoals /thuisbatterij-actie, versturen ook
+# naar 'bestelling'. Daar komt alleen het verborgen formulier, zodat Netlify het formulier op die pagina herkent.
+FORM_ONLY = '<!-- vw-order:start -->\n' + re.search(r'<form name="bestelling".*?</form>\n', BLOCK, re.S).group(0) + '<!-- vw-order:end -->'
+
 n = 0
 for f in sorted(glob.glob('*.html')):
     s = open(f, encoding='utf-8').read()
@@ -372,5 +376,7 @@ for f in sorted(glob.glob('*.html')):
         s2 = s2.rstrip('\n') + '\n' + PLAN + '\n'
     if not OFF and 'id="calcCard"' in s2:
         s2 = s2.rstrip('\n') + '\n' + BLOCK + '\n'
+    elif not OFF and 'vw-batterijkeuze' in s2:  # batterijkeuzehulp zonder calculator: alleen het verborgen formulier
+        s2 = s2.rstrip('\n') + '\n' + FORM_ONLY + '\n'
     if s2 != s: open(f, 'w', encoding='utf-8').write(s2); n += 1
 print(('Online bestellen verwijderd van' if OFF else 'Online bestellen op'), n, "pagina's")

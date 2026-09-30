@@ -7,7 +7,8 @@ Wat het doet, in alle *.html:
 - zet de pakketten en de gekozen batterij klaar voor de calculator (window.VW_BAT);
 - de calculator rekent de batterij met de echte pakketprijs (zonder woningtoeslag) en toont het pakket bij naam;
 - PRODUCTS.batterij (hero, specificaties, prijs) komt overeen met de pakketten.
-Op product-batterij.html komt daarnaast de keuzehulp "Welke thuisbatterij past bij jou?".
+Op product-batterij.html en thuisbatterij-actie.html komt daarnaast de keuzehulp "Welke thuisbatterij past bij jou?"
+(op de plek van <!--vw-batterijkeuze-plek--> als die in de pagina staat, anders onderaan).
 Prijzen wijzigen? Pas alleen PAKKETTEN hieronder aan en draai het script (en tools/prerender-products.js).
 """
 import glob, json, os, re, sys
@@ -66,7 +67,9 @@ def patch_products(s):
     body = re.sub(r"specs:\[\[.*?\]\],\n", lambda _: 'specs:' + js_list(PRODUCT_FIELDS['specs']) + ',\n', body, count=1, flags=re.S)
     return s[:m.start(2)] + body + s[m.end(2):]
 
-# ---------- de keuzehulp (alleen op product-batterij.html) ----------
+# ---------- de keuzehulp (op de pagina's in KEUZEHULP_PAGINAS) ----------
+KEUZEHULP_PAGINAS = ('product-batterij.html', 'thuisbatterij-actie.html')
+PLEK = '<!--vw-batterijkeuze-plek-->'
 # Eén kaart, één vraag per scherm; daarna het advies, dan de aanvraag (eigen scherm), dan de bevestiging.
 SECTION = '''<!--vw-batterijkeuze-->
 <style>
@@ -330,16 +333,18 @@ def main():
     for f in sorted(glob.glob('*.html')):
         s = open(f, encoding='utf-8').read(); o = s
         s = re.sub(r'<script id="vw-bat-cfg">.*?</script>\n?', '', s, flags=re.S)
-        if 'var PRODUCTS = {' in s or 'CALC_BASE' in s:
+        if 'var PRODUCTS = {' in s or 'CALC_BASE' in s or f in KEUZEHULP_PAGINAS:
             s = s.replace('<meta charset="utf-8">\n', '<meta charset="utf-8">\n' + CFG + '\n', 1)
         s = s.replace(OLD_PRICE, NEW_PRICE)
         s = re.sub(r'batterij:\d+(, zonnepanelen:)', lambda m: f'batterij:{VANAF}{m.group(1)}', s)
         s = patch_products(s)
         s = s.replace('€ 3.499', eur(VANAF)).replace('€&nbsp;3.499', eur(VANAF).replace(' ', '&nbsp;'))
         if f == 'product-batterij.html':
-            s = re.sub(r'\n?<!--vw-batterijkeuze-->.*?<!--/vw-batterijkeuze-->', '', s, flags=re.S)
             s = re.sub(r'("price":")\d+(")', lambda m: m.group(1) + str(VANAF) + m.group(2), s)
-            s = s.rstrip('\n') + '\n' + SECTION + '\n'
+        if f in KEUZEHULP_PAGINAS:
+            s = re.sub(r'\n?<!--vw-batterijkeuze-->.*?<!--/vw-batterijkeuze-->', '', s, flags=re.S)
+            if PLEK in s: s = s.replace(PLEK, PLEK + '\n' + SECTION, 1)
+            else: s = s.rstrip('\n') + '\n' + SECTION + '\n'
         if s != o:
             open(f, 'w', encoding='utf-8').write(s); changed += 1
     print(f'battery.py: {changed} pagina\'s bijgewerkt; pakketten: ' + ', '.join(f"{p['kwh']} kWh/{p['kw']} kW {p['fase']} {eur(p['prijs'])}" for p in PAKKETTEN))
