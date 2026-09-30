@@ -245,6 +245,11 @@ def card_html(c):
 def main():
     shell = open(SHELL, encoding='utf-8').read()
     new = [parse(p) for p in sorted(glob.glob('content/artikelen/*.md'))]
+    # artikelen met een datum in de toekomst zijn concepten: nog niet publiceren
+    today = __import__('datetime').datetime.now(__import__('zoneinfo').ZoneInfo('Europe/Amsterdam')).date().isoformat()  # Nederlandse datum
+    later = [a['slug'] for a in new if a.get('date', '') > today]
+    if later: print('Nog niet gepubliceerd (datum in de toekomst):', ', '.join(later))
+    new = [a for a in new if a['slug'] not in later]
     catalog = []
     # bestaande artikelen: titel + beeld + samenvatting uit hun eigen pagina
     for slug, prod in EXISTING.items():
@@ -266,7 +271,7 @@ def main():
     # "Meer over ..."-blok op alle artikelen
     for c in catalog:
         f = c['slug'] + '.html'; s = open(f, encoding='utf-8').read()
-        s = re.sub(r'\n?<!-- rel:start -->.*?<!-- rel:end -->\n?', '\n', s, flags=re.S)
+        s = re.sub(r'\s*<!-- rel:start -->.*?<!-- rel:end -->\s*', '\n', s, flags=re.S)
         s = s.replace('<div class="site-footer"', related_block(c['slug'], c['product'], catalog) + '\n<div class="site-footer"', 1)
         if 'class="rel-prod"' in s and '.rel-prod{' not in s:
             s = s.replace('<!-- rel:start -->', '<!-- rel:start -->' + ARTCSS, 1)

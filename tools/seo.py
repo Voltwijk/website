@@ -1,10 +1,11 @@
 # Zet titels, meta descriptions, Open Graph en structured data (JSON-LD) op alle pagina's
 # en genereert sitemap.xml. Veilig om opnieuw te draaien.
 import glob, re, json, html, datetime, os, sys
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); sys.dont_write_bytecode = True
-from battery import PAKKETTEN  # de drie batterijpakketten (voor de offers op de West-Brabant-pagina's)
+os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
+sys.path.insert(0, 'tools'); sys.dont_write_bytecode = True
+from battery import PAKKETTEN  # thuisbatterij-pakketten: één bron voor prijzen
 SITE = 'https://voltwijk.nl'
-TODAY = datetime.date.today().isoformat()
+TODAY = datetime.datetime.now(__import__('zoneinfo').ZoneInfo('Europe/Amsterdam')).date().isoformat()  # Nederlandse datum
 BIZ_ID = SITE + '/#bedrijf'
 T = {  # titel, description
  'index': ('Thuisbatterij & zonnepanelen in West-Brabant | Voltwijk',
@@ -53,7 +54,7 @@ PRODUCT = {  # slug: (naam, prijs, afbeelding)
  'product-meterkast': ('Meterkastaanpassing', 649, 'product-meterkast'),
 }
 BIZ = {
- "@context": "https://schema.org", "@type": "Electrician", "@id": BIZ_ID,
+ "@context": "https://schema.org", "@type": ["HomeAndConstructionBusiness", "Electrician"], "@id": BIZ_ID,
  "name": "Voltwijk", "legalName": "Voltwijk B.V.", "url": SITE + "/",
  "logo": SITE + "/brand/voltwijk-icoon-512.png", "image": SITE + "/images/og-voltwijk.jpg",
  "telephone": "+31853335687", "email": "info@voltwijk.nl", "priceRange": "€€",
@@ -61,14 +62,37 @@ BIZ = {
              "addressLocality": "Zevenbergen", "addressCountry": "NL"},
  "openingHoursSpecification": [{"@type": "OpeningHoursSpecification",
    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "17:30"}],
+ "areaServed": {"@type": "AdministrativeArea", "name": "West-Brabant"},
  "sameAs": ["https://instagram.com/voltwijk", "https://www.tiktok.com/@voltwijk"]
 }
+SELLER = {"@type": "HomeAndConstructionBusiness", "@id": BIZ_ID, "name": "Voltwijk", "url": SITE + "/"}
+def future_draft(slug):  # artikel met een datum in de toekomst = concept, niet publiceren (zie articles.py)
+    p = 'content/artikelen/' + slug + '.md'
+    if not os.path.exists(p): return False
+    m = re.search(r'^date:\s*(\S+)', open(p, encoding='utf-8').read(), re.M)
+    return bool(m) and m.group(1) > TODAY
+
+SIZES = '(max-width: 900px) 100vw, 760px'  # hoofdbeeld: schermbreed op mobiel, hooguit ~760px op desktop
+def variants(src):
+    """Kleinere webp-variant (1080 px breed) van een groot hoofdbeeld voor srcset; maakt hem aan als hij ontbreekt."""
+    p = src.lstrip('/')
+    if not p.endswith('.webp') or not os.path.exists(p): return []
+    try: from PIL import Image
+    except ImportError: return []
+    im = Image.open(p); W, H = im.size; out = []
+    for w in (1080,):
+        if W < w + 160: continue
+        vp = p[:-5] + '-%d.webp' % w
+        if not os.path.exists(vp):
+            im.convert('RGB').resize((w, round(H * w / W)), Image.LANCZOS).save(vp, 'WEBP', quality=80, method=6)
+        out.append(('/' + vp, w))
+    return out + [(src, W)] if out else []
 def ld(obj): return '<script type="application/ld+json">' + json.dumps(obj, ensure_ascii=False, separators=(',',':')) + '</script>'
 def text(s): return html.unescape(re.sub(r'<[^>]+>', ' ', s)).strip()
 urls = []
 for f in sorted(glob.glob('*.html')):
     slug = f[:-5]
-    if slug == '404': continue
+    if slug == '404' or future_draft(slug): continue
     s = open(f, encoding='utf-8').read()
     s = re.sub(r'\n?<!-- seo:start -->.*?<!-- seo:end -->', '', s, flags=re.S)
     url = SITE + ('/' if slug == 'index' else '/' + slug)
@@ -98,10 +122,18 @@ for f in sorted(glob.glob('*.html')):
         data.append(BIZ)
     if slug in PRODUCT:
         name, price, im = PRODUCT[slug]
+        offer = {"@type": "Offer", "price": str(price), "priceCurrency": "EUR", "availability": "https://schema.org/InStock",
+                 "url": url, "seller": SELLER}
+        if slug == 'product-batterij':  # drie pakketten, prijzen uit tools/battery.py
+            prijzen = [p['prijs'] for p in PAKKETTEN]
+            offer = {"@type": "AggregateOffer", "priceCurrency": "EUR", "lowPrice": str(min(prijzen)), "highPrice": str(max(prijzen)),
+                     "offerCount": len(PAKKETTEN), "availability": "https://schema.org/InStock", "url": url, "seller": SELLER,
+                     "offers": [{"@type": "Offer", "name": 'Thuisbatterij ' + p['naam'] + ' (' + p['fase'] + ')',
+                                 "description": "Vaste prijs inclusief installatie en btw", "price": str(p['prijs']), "priceCurrency": "EUR",
+                                 "priceSpecification": {"@type": "UnitPriceSpecification", "price": str(p['prijs']), "priceCurrency": "EUR", "valueAddedTaxIncluded": True},
+                                 "availability": "https://schema.org/InStock", "url": url, "seller": SELLER} for p in PAKKETTEN]}
         data.append({"@context": "https://schema.org", "@type": "Product", "name": name, "description": desc,
-          "image": SITE + '/images/' + im + '.jpg', "brand": {"@type": "Brand", "name": "Voltwijk"},
-          "offers": {"@type": "Offer", "price": str(price), "priceCurrency": "EUR", "availability": "https://schema.org/InStock",
-                     "url": url, "seller": {"@id": BIZ_ID}}})
+          "image": SITE + '/images/' + im + '.jpg', "brand": {"@type": "Brand", "name": "Voltwijk"}, "offers": offer})
         crumbs.append({"@type": "ListItem", "position": 2, "name": "Producten", "item": SITE + "/producten"})
         crumbs.append({"@type": "ListItem", "position": 3, "name": name, "item": url})
     elif slug.startswith('artikel-'):
@@ -109,7 +141,7 @@ for f in sorted(glob.glob('*.html')):
         head = text(h1.group(1)) if h1 else title.replace(' — Voltwijk', '')
         data.append({"@context": "https://schema.org", "@type": "Article", "headline": head[:110], "description": desc,
           "image": SITE + img, "inLanguage": "nl-NL", "mainEntityOfPage": url,
-          "author": {"@type": "Organization", "name": "Voltwijk", "url": SITE + "/"}, "publisher": {"@id": BIZ_ID}})
+          "author": {"@type": "Organization", "name": "Voltwijk", "url": SITE + "/"}, "publisher": SELLER})
         pub = re.search(r'<meta property="article:published_time" content="([^"]+)"', s)
         if pub:
             mod = re.search(r'<meta property="article:modified_time" content="([^"]+)"', s)
@@ -121,7 +153,7 @@ for f in sorted(glob.glob('*.html')):
         city = text(h1.group(1)).split(' in ', 1)[-1] if h1 else slug[13:]
         svc = {"@context": "https://schema.org", "@type": "Service", "name": text(h1.group(1)) if h1 else title,
           "serviceType": "Installatie van zonnepanelen, thuisbatterijen, warmtepompen en laadpalen", "description": desc,
-          "provider": {"@id": BIZ_ID}, "areaServed": {"@type": "City", "name": city}, "url": url}
+          "provider": SELLER, "areaServed": {"@type": "City", "name": city}, "url": url}
         area = re.search(r'<h1[^>]*\bdata-area="([^"]*)"[^>]*\bdata-gemeente="([^"]*)"', s)
         if area:  # West-Brabant-pagina's (tools/local_pages.py): thuisbatterij voorop, plaats(en) binnen de gemeente
             gem = {"@type": "AdministrativeArea", "name": "Gemeente " + html.unescape(area.group(2)),
@@ -130,20 +162,32 @@ for f in sorted(glob.glob('*.html')):
             svc["serviceType"] = "Installatie van thuisbatterijen, zonnepanelen en airco's"
             svc["areaServed"] = places[0] if len(places) == 1 else places
             svc["offers"] = [{"@type": "Offer", "name": p["label"], "price": str(p["prijs"]), "priceCurrency": "EUR",
-                              "url": SITE + "/product-batterij", "seller": {"@id": BIZ_ID}} for p in PAKKETTEN]
+                              "url": SITE + "/product-batterij", "seller": SELLER} for p in PAKKETTEN]
         data.append(svc)
         crumbs.append({"@type": "ListItem", "position": 2, "name": "Werkgebied", "item": SITE + "/werkgebied"})
         crumbs.append({"@type": "ListItem", "position": 3, "name": city, "item": url})
     elif slug != 'index':
         crumbs.append({"@type": "ListItem", "position": 2, "name": title.replace(' — Voltwijk', '').replace(' | Voltwijk', ''), "item": url})
-    if slug == 'veelgestelde-vragen' or slug.startswith('installateur-'):
-        qa = re.findall(r'<details[^>]*>\s*<summary[^>]*>(.*?)</summary>(.*?)</details>', s, re.S)
-        qa = [(text(q), text(a)) for q, a in qa if "'+" not in q]
+    if 'name="robots" content="noindex"' not in s:  # zichtbare FAQ's (uitklapvragen) als FAQPage
+        qa = re.findall(r'<details[^>]*>\s*<summary[^>]*>(.*?)</summary>(.*?)</details>', re.sub(r'<script\b.*?</script>', '', s, flags=re.S), re.S)
+        qa = [(text(q), text(a)) for q, a in qa if "'+" not in q and text(q) and text(a)]
         if qa:
             data.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
               {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in qa]})
     if len(crumbs) > 1:
         data.append({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": crumbs})
+    # het hoofdbeeld (LCP) al laden terwijl de lange HTML nog binnenkomt
+    lcp = re.search(r'<img\b[^>]*\bfetchpriority="high"[^>]*\bsrc="(/images/[^"\']+)"[^>]*>', re.sub(r'<script\b.*?</script>', '', s, flags=re.S))
+    if lcp and 'rel="preload" as="image"' not in s:
+        # productpagina's niet: daar tekent JavaScript het hoofdbeeld opnieuw (zonder srcset), dan zou het twee keer laden
+        srcset = '' if slug in PRODUCT else ', '.join('%s %dw' % v for v in variants(lcp.group(1)))
+        tag = lcp.group(0); new = re.sub(r'^<img srcset="[^"]*" sizes="[^"]*" ', '<img ', tag)
+        if srcset: new = new.replace('<img ', '<img srcset="%s" sizes="%s" ' % (srcset, SIZES), 1)
+        if new != tag and tag in s: s = s.replace(tag, new, 1)
+        if srcset:
+            tags.append('<link rel="preload" as="image" href="%s" imagesrcset="%s" imagesizes="%s" fetchpriority="high">' % (lcp.group(1), srcset, SIZES))
+        else:
+            tags.append('<link rel="preload" as="image" href="%s" fetchpriority="high">' % lcp.group(1))
     block = '\n<!-- seo:start -->\n' + '\n'.join(tags) + '\n' + '\n'.join(ld(x) for x in data) + '\n<!-- seo:end -->'
     s, k = re.subn(r'(<link rel="canonical"[^>]*>)', lambda m: m.group(1) + block, s, count=1)
     assert k == 1, f

@@ -16,9 +16,19 @@
   status = 404
   force = true
 
-# www -> zonder www
+# www en http -> https://voltwijk.nl in één stap
 [[redirects]]
   from = "https://www.voltwijk.nl/*"
+  to = "https://voltwijk.nl/:splat"
+  status = 301
+  force = true
+[[redirects]]
+  from = "http://www.voltwijk.nl/*"
+  to = "https://voltwijk.nl/:splat"
+  status = 301
+  force = true
+[[redirects]]
+  from = "http://voltwijk.nl/*"
   to = "https://voltwijk.nl/:splat"
   status = 301
   force = true

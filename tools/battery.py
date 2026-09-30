@@ -339,8 +339,6 @@ def main():
         s = re.sub(r'batterij:\d+(, zonnepanelen:)', lambda m: f'batterij:{VANAF}{m.group(1)}', s)
         s = patch_products(s)
         s = s.replace('€ 3.499', eur(VANAF)).replace('€&nbsp;3.499', eur(VANAF).replace(' ', '&nbsp;'))
-        if f == 'product-batterij.html':
-            s = re.sub(r'("price":")\d+(")', lambda m: m.group(1) + str(VANAF) + m.group(2), s)
         if f in KEUZEHULP_PAGINAS:
             s = re.sub(r'\n?<!--vw-batterijkeuze-->.*?<!--/vw-batterijkeuze-->', '', s, flags=re.S)
             if PLEK in s: s = s.replace(PLEK, PLEK + '\n' + SECTION, 1)
