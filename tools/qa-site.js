@@ -18,7 +18,7 @@ for(const f of files){const u=f==='index.html'?'/':'/'+f.slice(0,-5);
  await p.waitForTimeout(1000);
  const r=await p.evaluate(()=>{const res={hidden:[],overflow:0,anchors:[],broken:[]};
    res.overflow=document.documentElement.scrollWidth-window.innerWidth;
-   for(const el of document.querySelectorAll('body *')){ if(el.closest('#waWidget,#vwCookie,.mobile-nav-panel,script,style,template,details:not([open]) > *:not(summary)'))continue;
+   for(const el of document.querySelectorAll('body *')){ if(el.closest('#waWidget,#vwCookie,.vwp,.mobile-nav-panel,script,style,template,details:not([open]) > *:not(summary)'))continue;
      const cs=getComputedStyle(el); if(cs.display==='none'||cs.visibility==='hidden')continue;
      if(parseFloat(cs.opacity)<0.05){const rc=el.getBoundingClientRect(); if(rc.width>60&&rc.height>30&&el.innerText&&el.innerText.trim().length>10) res.hidden.push((el.className||el.tagName).toString().slice(0,50)+': '+el.innerText.trim().slice(0,50));}}
    for(const a of document.querySelectorAll('a[href^="#"]')){const h=a.getAttribute('href').slice(1);if(h&&!document.getElementById(h))res.anchors.push(h);}

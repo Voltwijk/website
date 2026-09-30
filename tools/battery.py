@@ -338,7 +338,6 @@ def main():
         s = s.replace('€ 3.499', eur(VANAF)).replace('€&nbsp;3.499', eur(VANAF).replace(' ', '&nbsp;'))
         if f == 'product-batterij.html':
             s = re.sub(r'\n?<!--vw-batterijkeuze-->.*?<!--/vw-batterijkeuze-->', '', s, flags=re.S)
-            s = re.sub(r'("price":")\d+(")', lambda m: m.group(1) + str(VANAF) + m.group(2), s)
             s = s.rstrip('\n') + '\n' + SECTION + '\n'
         if s != o:
             open(f, 'w', encoding='utf-8').write(s); changed += 1
