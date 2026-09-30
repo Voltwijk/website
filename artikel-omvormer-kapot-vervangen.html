@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="nl">
 <meta charset="utf-8">
+<script id="vw-bat-cfg">window.VW_BAT_PKGS=[{"id": "bat10", "kwh": 10, "kw": 5, "fase": "1-fase", "prijs": 4200, "naam": "10 kWh + 5 kW hybride omvormer", "label": "Thuisbatterij 10 kWh + 5 kW omvormer (1-fase)"}, {"id": "bat16-1", "kwh": 16, "kw": 6, "fase": "1-fase", "prijs": 4600, "naam": "16 kWh + 6 kW hybride omvormer", "label": "Thuisbatterij 16 kWh + 6 kW omvormer (1-fase)"}, {"id": "bat16-3", "kwh": 16, "kw": 8, "fase": "3-fase", "prijs": 5700, "naam": "16 kWh + 8 kW hybride omvormer", "label": "Thuisbatterij 16 kWh + 8 kW omvormer (3-fase)"}];(function(){var k=null;try{k=localStorage.getItem("vw_bat")}catch(e){}var d="bat16-1";var f=function(id){return window.VW_BAT_PKGS.filter(function(p){return p.id===id})[0]};window.VW_BAT=f(k)||f(d);window.vwSetBat=function(id){var p=f(id);if(!p)return;window.VW_BAT=p;try{localStorage.setItem("vw_bat",id)}catch(e){}};})();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
@@ -414,7 +415,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
 <ol><li><strong>Controle vooraf.</strong> De installateur kijkt naar je panelen, de bekabeling en de foutmeldingen, zodat zeker is dat de omvormer echt de oorzaak is.</li><li><strong>Keuze van de nieuwe omvormer.</strong> Die moet passen bij het aantal en type panelen, je aansluiting en je plannen.</li><li><strong>Veilig afkoppelen.</strong> De oude omvormer wordt aan de wisselstroomkant en de gelijkstroomkant veilig losgekoppeld.</li><li><strong>Plaatsen en aansluiten.</strong> De nieuwe omvormer komt op dezelfde of een betere plek en wordt aangesloten op de panelen en de meterkast.</li><li><strong>App instellen.</strong> De omvormer wordt verbonden met wifi, zodat je de opbrengst weer kunt volgen.</li></ol>
 <p>Controleer na afloop op een zonnige dag of de opbrengst weer klopt met wat je gewend was. Is het een hybride omvormer of verandert het vermogen, geef de wijziging dan ook door via energieleveren.nl.</p>
 <h2 id="hoe-voltwijk-helpt">Hoe Voltwijk helpt</h2>
-<p>Denk je bij het vervangen van je omvormer ook na over een thuisbatterij of extra panelen? Onze eigen monteurs kijken met je mee naar wat bij je installatie en je verbruik past. De thuisbatterij van Voltwijk heeft 5 kWh en 3,6 kW, met 10 jaar garantie, vanaf € 3.499 inclusief installatie. Kijk op de pagina over de <a href="/product-batterij">thuisbatterij</a> of over <a href="/product-zonnepanelen">zonnepanelen</a>.</p>
+<p>Denk je bij het vervangen van je omvormer ook na over een thuisbatterij of extra panelen? Onze eigen monteurs kijken met je mee naar wat bij je installatie en je verbruik past. De thuisbatterij van Voltwijk is er in 10 en 16 kWh, met een hybride omvormer die je oude omvormer vaak meteen vervangt, vanaf € 4.200 inclusief installatie. Kijk op de pagina over de <a href="/product-batterij">thuisbatterij</a> of over <a href="/product-zonnepanelen">zonnepanelen</a>.</p>
     </article>
     <div class="art-faq"><h2 id="veelgestelde-vragen">Veelgestelde vragen</h2><div class="faq" style="margin-top:14px;"><details><summary>Hoe weet ik of mijn omvormer kapot is?</summary><p>Kijk of de app of het display geen opbrengst meer geeft, of het lampje rood of oranje is en of er een foutcode staat. Controleer eerst de groep in de meterkast en de wifi, want die zijn vaak de oorzaak.</p></details><details><summary>Wat kost een nieuwe omvormer?</summary><p>Een gewone stringomvormer kost indicatief ongeveer € 800 tot € 2.000 inclusief installatie. Een hybride omvormer ligt vaak tussen ongeveer € 1.800 en € 3.500. Het exacte bedrag hangt af van type, vermogen en situatie.</p></details><details><summary>Hoe lang gaat een omvormer mee?</summary><p>Meestal ongeveer 10 tot 15 jaar. Warmte, belasting en het type omvormer spelen daarbij een rol.</p></details><details><summary>Betaal ik btw over een nieuwe omvormer?</summary><p>Ja. Het 0%-tarief geldt voor de levering en installatie van zonnepanelen, maar niet voor het los vervangen van een kapotte omvormer. Daarover betaal je 21% btw.</p></details></div></div>
     
@@ -668,12 +669,12 @@ var STEPS = [
 var PRODUCTS = {
   batterij: {
     name:'Thuisbatterij', eyebrow:'Thuisbatterij', accent:'var(--mint)',
-    headline:'Sla je eigen stroom op — en gebruik hem wanneer jij dat wilt.',
-    bullets:['Vanaf 2027 wordt terugleveren minder waard — een batterij vangt dat op','Slim laden en ontladen op basis van de actuele stroomprijs','10 jaar garantie, geïnstalleerd door ons eigen team'],
-    cta:'Prijs berekenen &amp; inplannen', price:'vanaf € 3.499',
+    headline:'Een thuisbatterij van 10 of 16 kWh, inclusief installatie — vanaf € 4.200.',
+    bullets:['10 of 16 kWh opslag met hybride omvormer, voor 1-fase én 3-fase aansluitingen','Vaste prijs inclusief installatie: je weet vooraf precies wat je betaalt','Geïnstalleerd door ons eigen team, klaar voor het einde van salderen in 2027'],
+    cta:'Bereken welke batterij past', price:'vanaf € 4.200',
     image:'/images/product-batterij.webp', imgScale:1, heroImage:'/images/batterij-installatie.webp',
     description:'Een thuisbatterij slaat overdag opgewekte zonne-energie op, zodat je \'s avonds je eigen stroom gebruikt in plaats van duurdere stroom van het net te kopen. Onze batterij schakelt automatisch mee met de actuele stroomprijs, en is klaar voor de nieuwe salderingsregels vanaf 2027.',
-    specs:[['Capaciteit','5 kWh'],['Vermogen','3,6 kW'],['Garantie','10 jaar'],['Levensduur','6.000 cycli'],['Afmetingen','60 x 120 x 20 cm'],['App-koppeling','Ja']],
+    specs:[['Capaciteit','10 of 16 kWh'],['Omvormer','5, 6 of 8 kW hybride'],['Aansluiting','1-fase of 3-fase'],['Prijs','€ 4.200 – € 5.700 incl. installatie'],['Garantie','10 jaar'],['App-koppeling','Ja']],
     faq:[['Werkt de batterij ook zonder zonnepanelen?','Ja. De batterij kan ook stroom opslaan op momenten dat die goedkoop is, en die later gebruiken — al is de besparing het grootst in combinatie met zonnepanelen.'],['Wat gebeurt er bij een stroomstoring?','Standaard schakelt het systeem niet automatisch over als noodstroom; dat kan als optie worden toegevoegd.']],
     guideName:"de thuisbatterij",
     guide:[["Wat doet een thuisbatterij?", "Hij slaat de stroom op die je zonnepanelen overdag over hebben, en geeft die ’s avonds en ’s nachts weer af aan je huis. Zo gebruik je meer van je eigen stroom en koop je minder in.", "artikel-wat-doet-een-thuisbatterij"], ["Wat doet het EMS?", "Het energiemanagementsysteem is het brein van de batterij. Het kijkt naar de zonverwachting, je verbruik en (met een dynamisch contract) de uurprijzen, en beslist wanneer de batterij laadt, ontlaadt of wacht.", "artikel-ems-energiemanagementsysteem-thuisbatterij"], ["Krijg je de btw terug?", "Vaak wel. Je betaalt eerst 21% btw (het nultarief geldt alleen voor zonnepanelen), maar verkoop je met de batterij stroom, bijvoorbeeld met een dynamisch contract, dan kun je die volgens de Belastingdienst vaak terugvragen.", "artikel-btw-thuisbatterij-terugvragen"], ["Hoe groot moet je batterij zijn?", "Vuistregel: ongeveer zo groot als wat je ’s avonds en ’s nachts verbruikt, en niet groter dan het overschot dat je overdag echt hebt. Groter is niet automatisch beter.", "artikel-thuisbatterij-hoe-groot"], ["Loont een batterij als salderen stopt?", "Vanaf 2027 is stroom die je teruglevert minder waard. Met een batterij gebruik je die stroom zelf, en juist dan wordt opslaan interessanter.", "artikel-thuisbatterij-na-salderen"], ["Batterij en een dynamisch contract", "Met uurprijzen kan de batterij laden als stroom goedkoop is en ontladen als hij duur is. Dat levert ook op dagen zonder zon iets op.", "artikel-dynamisch-contract-en-batterij"]]
@@ -975,7 +976,7 @@ var CALC_HOUSE = [
   {id:'appartement', label:'Appartement', mult:0.85}
 ];
 var CALC_ORDER = ['batterij','zonnepanelen','warmtepomp','airco','boiler','laadpaal','meterkast'];
-var CALC_BASE = {batterij:3499, zonnepanelen:3999, warmtepomp:6750, airco:1899, boiler:1199, laadpaal:1299, meterkast:649};
+var CALC_BASE = {batterij:4200, zonnepanelen:3999, warmtepomp:6750, airco:1899, boiler:1199, laadpaal:1299, meterkast:649};
 var calcState = { step:1, postcode:'', huistype:null, producten:[] };
 var calcLastAmt = 0;
 
@@ -1005,8 +1006,9 @@ function calcMult(){
 function calcCompute(){
   var mult = calcMult();
   var items = calcState.producten.map(function(id){
-    var price = Math.round((CALC_BASE[id]*mult)/10)*10;
-    return {id:id, label:PRODUCTS[id].name, price:price};
+    var bat = (id==='batterij' && window.VW_BAT) ? window.VW_BAT : null;
+    var price = bat ? bat.prijs : Math.round((CALC_BASE[id]*mult)/10)*10;
+    return {id:id, label:(bat ? bat.label : PRODUCTS[id].name), price:price};
   });
   var subtotal = 0;
   items.forEach(function(it){ subtotal += it.price; });

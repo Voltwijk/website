@@ -23,6 +23,7 @@ const BASE = process.env.BASE || 'http://127.0.0.1:8765';
     await p.route(/fonts\.(googleapis|gstatic)|trustindex/, r => r.abort());
     await p.goto(BASE + '/' + f.replace(/\.html$/, ''), { waitUntil: 'load' });
     await p.waitForSelector('#view-product > *');
+    await p.evaluate(() => { const k = document.querySelector('#view-product #batterijkeuze'); if (k) k.remove(); });
     let html = await p.$eval('#view-product', el => el.innerHTML);
     await p.close();
     html = html.replace(/(data-vw-first[^>]*>)[^<]*</g, '$1<').replace(/\s+is-visible/g, '').replace(/ class=""/g, '').replace(/<script[\s\S]*?<\/script>/g, '');

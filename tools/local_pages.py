@@ -14,7 +14,7 @@ def inline(t):
 
 PRODUCTS = [
  ('Zonnepanelen', 'vanaf € 3.999', '/product-zonnepanelen', 'thumb-zonnepanelen'),
- ('Thuisbatterij', 'vanaf € 3.499', '/product-batterij', 'thumb-batterij'),
+ ('Thuisbatterij', 'vanaf € 4.200', '/product-batterij', 'thumb-batterij'),
  ('Warmtepomp', 'vanaf € 6.750', '/product-warmtepomp', 'thumb-warmtepomp'),
  ('Airconditioning', 'vanaf € 1.899', '/product-airco', 'thumb-airco'),
  ('Elektrische boiler', 'vanaf € 1.199', '/product-boiler', 'thumb-boiler'),
@@ -121,7 +121,7 @@ CITIES = [
          ('Woningen uit de jaren \'80 en \'90', 'Wijken als de Reeshof zijn grotendeels gebouwd vanaf de jaren \'80. Die woningen zijn vaak redelijk geïsoleerd en daardoor geschikt voor een hybride warmtepomp, of met extra maatregelen voor een volledige.'),
          ('Thuisbatterij met dynamisch contract', 'Met een dynamisch energiecontract laad je je batterij op als stroom goedkoop is en gebruik je hem als stroom duur is. We leggen eerlijk uit wanneer dat loont.'),
          ('Laadpaal thuis', 'Een slimme 11 kW laadpaal laadt de meeste elektrische auto\'s in een nacht vol. Met slim laden gebruik je de goedkoopste uren.')],
-  faq=('Hoeveel kost een thuisbatterij in Tilburg?', 'Een thuisbatterij kost bij ons vanaf € 3.499 inclusief installatie. Met de prijscalculator zie je binnen een minuut wat het voor jouw woning kost.'),
+  faq=('Hoeveel kost een thuisbatterij in Tilburg?', 'Een thuisbatterij kost bij ons vanaf € 4.200 inclusief installatie. Met de prijscalculator zie je binnen een minuut wat het voor jouw woning kost.'),
   near=['Berkel-Enschot', 'Udenhout', 'Goirle', 'Oisterwijk', 'Hilvarenbeek', 'Reeshof'],
   buren=['breda', 'oosterhout', 's-hertogenbosch', 'eindhoven'],
   arts=['artikel-dynamisch-contract-en-batterij', 'artikel-hybride-of-volledige-warmtepomp', 'artikel-laadpaal-slim-laden']),
@@ -258,7 +258,7 @@ def cta(title, sub):
 def city_faq(c):
     n, nb = c['name'], c['nb']
     qa = [c['faq'],
-          (f'Wat kost de installatie in {n}?', f'Je betaalt in {n} een vaste prijs die je vooraf kent: zonnepanelen vanaf € 3.999, een thuisbatterij vanaf € 3.499 en een warmtepomp vanaf € 6.750, inclusief installatie. Met de prijscalculator zie je binnen een minuut de prijs voor jouw woning.'),
+          (f'Wat kost de installatie in {n}?', f'Je betaalt in {n} een vaste prijs die je vooraf kent: zonnepanelen vanaf € 3.999, een thuisbatterij vanaf € 4.200 en een warmtepomp vanaf € 6.750, inclusief installatie. Met de prijscalculator zie je binnen een minuut de prijs voor jouw woning.'),
           (f'Wie regelt de netbeheerder en de vergunning in {n}?', f'Dat doen wij. In {n} is {NB[nb]} de netbeheerder (het precieze adres is bepalend). Wij regelen de aanmelding, een eventuele verzwaring van je aansluiting, een vergunning als die nodig is en bij een warmtepomp de ISDE-subsidie.'),
           (f'Werken jullie in {n} met onderaannemers?', 'Nee. Alle installaties doen we met onze eigen monteurs. Daardoor weten we zeker dat het werk goed is en heb je één aanspreekpunt, ook na de installatie.'),
           ('Hoe snel kan de installatie plaatsvinden?', 'De meeste klanten hebben binnen 2 tot 3 weken na de offerte een geplande installatiedatum. Bij de prijscheck zie je een indicatie voor jouw adres.')]

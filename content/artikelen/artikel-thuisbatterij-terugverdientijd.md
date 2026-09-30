@@ -40,7 +40,7 @@ Hieronder een **rekenvoorbeeld met aangenomen getallen**. Het laat de redenering
 
 **Aannames:**
 
-- Batterij van 5 kWh, prijs € 3.499 inclusief installatie.
+- Batterij van 5 kWh, voorbeeldprijs € 3.500 inclusief installatie.
 - Gezin met zonnepanelen en genoeg zomeroverschot om de batterij vaak vol te krijgen.
 - Rendement van laden en ontladen ongeveer 90%, dus zo'n 4,5 kWh bruikbaar per volle cyclus.
 - Situatie vanaf 2027, zonder salderen.
@@ -99,7 +99,7 @@ Een terugverdientijd van 12 jaar heeft alleen zin als de batterij het zo lang vo
 
 ## Hoe Voltwijk kan helpen
 
-De thuisbatterij van Voltwijk heeft 5 kWh capaciteit, 3,6 kW vermogen, 6.000 cycli, 10 jaar garantie en een app-koppeling. Hij kost vanaf € 3.499 inclusief installatie. Onze monteurs rekenen graag met jouw eigen verbruik, zodat je weet waar je aan toe bent. Bekijk de [thuisbatterij](/product-batterij) of [bereken je prijs](/bereken-je-prijs).
+De thuisbatterij van Voltwijk is er in 10 en 16 kWh, met een hybride omvormer van 5, 6 of 8 kW, vanaf € 4.200 inclusief installatie. Met de keuzehulp op de productpagina zie je welke bij je verbruik past. Onze monteurs rekenen graag met jouw eigen verbruik, zodat je weet waar je aan toe bent. Bekijk de [thuisbatterij](/product-batterij) of [bereken je prijs](/bereken-je-prijs).
 
 faq:
 Q: Wat is de terugverdientijd van een thuisbatterij?
