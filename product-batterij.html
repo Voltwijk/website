@@ -1750,6 +1750,18 @@ body.vwo-busy #waBubble{display:none !important;}
 .bk-cta{display:flex;flex-direction:column;gap:10px;margin-top:20px;}
 .bk-cta .btn-primary{background:var(--mint,#6FD6C8);color:var(--dark,#10201F);text-align:center;text-decoration:none;border:0;cursor:pointer;font-size:15px;}
 .bk-cta .bk-sec{background:none;border:1.5px solid rgba(255,255,255,.35);color:#fff;border-radius:999px;padding:12px 18px;font-weight:800;font-size:14px;cursor:pointer;text-decoration:none;text-align:center;}
+.bk-form{margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.14);display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.bk-form[hidden]{display:none;}
+.bk-form b.t{grid-column:1/-1;font-size:15px;color:#fff;}
+.bk-form label{display:flex;flex-direction:column;gap:4px;font-size:12px;font-weight:700;color:rgba(255,255,255,.7);min-width:0;}
+.bk-form label.full{grid-column:1/-1;}
+.bk-form input{width:100%;box-sizing:border-box;border:1.5px solid rgba(255,255,255,.25);background:rgba(255,255,255,.06);color:#fff;border-radius:12px;padding:11px 12px;font:inherit;font-size:15px;}
+.bk-form input:focus{outline:none;border-color:var(--mint,#6FD6C8);}
+.bk-form .btn-primary{grid-column:1/-1;background:var(--mint,#6FD6C8);color:var(--dark,#10201F);border:0;cursor:pointer;font-size:15px;margin-top:4px;}
+.bk-form p{grid-column:1/-1;font-size:12.5px;line-height:1.5;color:rgba(255,255,255,.65);margin:0;}
+.bk-err{grid-column:1/-1;background:#FDECEC;color:#8A1F1F;border-radius:10px;padding:10px 12px;font-size:13px;}
+.bk-ok{margin-top:18px;padding:16px;border-radius:14px;background:rgba(111,214,200,.14);outline:1.5px solid var(--mint,#6FD6C8);font-size:14px;line-height:1.55;color:rgba(255,255,255,.9);}
+.bk-ok b{display:block;color:#fff;font-size:17px;margin-bottom:4px;}
 .bk-alts{margin-top:22px;padding-top:16px;border-top:1px solid rgba(255,255,255,.14);}
 .bk-alts > div:first-child{font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:8px;}
 .bk-alt{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:9px 10px;border-radius:12px;font-size:13.5px;color:rgba(255,255,255,.85);cursor:pointer;}
@@ -1758,7 +1770,7 @@ body.vwo-busy #waBubble{display:none !important;}
 .bk-alt:hover{background:rgba(255,255,255,.06);}
 .bk-alt.is-on{background:rgba(111,214,200,.16);outline:1.5px solid var(--mint,#6FD6C8);}
 .bk-note{font-size:12.5px;color:var(--ink-faint,#6B7A76);margin-top:16px;line-height:1.55;max-width:760px;}
-@media (max-width:900px){.bk-grid{grid-template-columns:minmax(0,1fr);}.bk-q,.bk-res{padding:20px;}.bk-range{flex:1 1 180px;min-width:0;}.bk-res{position:static;}.bk-row,.bk-chips,.bk-hint{margin-left:0;}.bk .wrap{padding-top:56px;padding-bottom:56px;}}
+@media (max-width:900px){.bk-form{grid-template-columns:1fr;}.bk-grid{grid-template-columns:minmax(0,1fr);}.bk-q,.bk-res{padding:20px;}.bk-range{flex:1 1 180px;min-width:0;}.bk-res{position:static;}.bk-row,.bk-chips,.bk-hint{margin-left:0;}.bk .wrap{padding-top:56px;padding-bottom:56px;}}
 </style>
 <section class="bk" id="batterijkeuze" aria-labelledby="bk-title">
  <div class="wrap">
@@ -1795,7 +1807,18 @@ body.vwo-busy #waBubble{display:none !important;}
     <div class="bk-price"><b id="bkPrijs">€ 4.600</b><span>vaste prijs, inclusief installatie en btw</span></div>
     <ul class="bk-why" id="bkWhy"></ul>
     <p class="bk-inc"><b style="color:#fff;">Inbegrepen:</b> batterij en hybride omvormer, montage en bekabeling, aansluiten op een eigen groep in de meterkast, instellen van de app en uitleg bij oplevering.</p>
-    <div class="bk-cta"><button type="button" class="btn-primary" id="bkKies">Kies deze batterij &amp; plan je installatie →</button><a href="#" class="bk-sec" data-book="huis">Liever eerst een gratis adviesgesprek</a></div>
+    <div class="bk-cta"><button type="button" class="btn-primary" id="bkKies">Vraag deze batterij aan →</button><a href="#" class="bk-sec" data-book="huis">Liever eerst een gratis adviesgesprek</a></div>
+    <form class="bk-form" id="bkAanvraag" hidden novalidate>
+     <b class="t" id="bkFormTitel">Je aanvraag</b>
+     <label class="full">Naam<input name="naam" autocomplete="name" required></label>
+     <label>Telefoon<input name="telefoon" type="tel" autocomplete="tel" inputmode="tel" required></label>
+     <label>E-mail<input name="email" type="email" autocomplete="email" required></label>
+     <label>Postcode<input name="postcode" autocomplete="postal-code" required></label>
+     <label>Huisnummer<input name="huisnummer" autocomplete="address-line2" required></label>
+     <input name="bot-field" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;">
+     <button type="submit" class="btn-primary">Verstuur aanvraag →</button>
+     <p>Je betaalt nu niets. We bellen je om je meterkast te checken (een paar foto's is genoeg) en plannen samen de installatiedatum. Pas na onze bevestiging volgt de aanbetaling van € 350, die van de totaalprijs afgaat.</p>
+    </form>
     <div class="bk-alts"><div>Alle batterijen</div><div class="bk-alt" data-pkg="bat10"><div><b>10 kWh</b> + 5 kW hybride omvormer<small>1-fase aansluiting</small></div><span>€ 4.200</span></div><div class="bk-alt" data-pkg="bat16-1"><div><b>16 kWh</b> + 6 kW hybride omvormer<small>1-fase aansluiting</small></div><span>€ 4.600</span></div><div class="bk-alt" data-pkg="bat16-3"><div><b>16 kWh</b> + 8 kW hybride omvormer<small>3-fase aansluiting</small></div><span>€ 5.700</span></div></div>
    </aside>
   </div>
@@ -1837,6 +1860,7 @@ body.vwo-busy #waBubble{display:none !important;}
     $('bkNaam').textContent = 'Thuisbatterij ' + p.kwh + ' kWh';
     $('bkSub').textContent = 'met ' + p.kw + ' kW hybride omvormer · ' + p.fase;
     $('bkPrijs').textContent = '€ ' + fmt(p.prijs);
+    $('bkFormTitel').textContent = 'Aanvraag: ' + p.kwh + ' kWh + ' + p.kw + ' kW (' + p.fase + ') · € ' + fmt(p.prijs);
     $('bkWhy').innerHTML = (st.keuze && st.keuze !== a.id ? ['Je koos zelf deze batterij. Op basis van je antwoorden adviseren we de ' + pkg(a.id).kwh + ' kWh met ' + pkg(a.id).kw + ' kW omvormer.'] : a.why).map(function(t){ return '<li>' + t + '</li>'; }).join('');
     sec.querySelector('.lbl').textContent = (st.keuze && st.keuze !== a.id) ? 'Jouw keuze' : 'Ons advies voor jou';
     sec.querySelectorAll('.bk-alt').forEach(function(el){ el.classList.toggle('is-on', el.getAttribute('data-pkg') === id); });
@@ -1860,14 +1884,48 @@ body.vwo-busy #waBubble{display:none !important;}
   });
   $('bkPanelen').addEventListener('input', function(){ var v = parseInt(this.value, 10); st.panelen = isNaN(v) ? 0 : Math.max(0, Math.min(60, v)); st.keuze = null; render(); });
   $('bkVerbruik').addEventListener('input', function(){ st.verbruik = +this.value; change(); });
+  // de oude rekentool is hier niet meer nodig: alles loopt via de keuzehulp
+  var calc = $('calculator');
+  if(calc){ var box = calc.closest('.blk-light'); (box && box.children.length === 1 ? box : calc).style.display = 'none'; }
+  document.querySelectorAll('a[href="#calculator"]').forEach(function(a){ a.setAttribute('href', '#batterijkeuze'); });
+  var form = $('bkAanvraag');
   $('bkKies').addEventListener('click', function(){
     var id = render(); if(window.vwSetBat) window.vwSetBat(id);
     if(window.gtag) gtag('event', 'batterij_gekozen', { pakket:id, waarde:pkg(id).prijs });
-    if(typeof calcState !== 'undefined' && typeof renderCalc === 'function' && document.getElementById('calcCard')){
-      if(calcState.producten.indexOf('batterij') < 0) calcState.producten.push('batterij');
-      calcState.step = 3; renderCalc();
-      var c = document.getElementById('calculator') || document.getElementById('calcCard'); if(c) c.scrollIntoView({behavior:'smooth', block:'start'});
-    } else { location.href = '/bereken-je-prijs?product=batterij'; }
+    form.hidden = false; this.style.display = 'none';
+    form.scrollIntoView({behavior:'smooth', block:'center'}); setTimeout(function(){ form.elements.naam.focus({preventScroll:true}); }, 350);
+  });
+  form.addEventListener('input', function(){ var o = form.querySelector('.bk-err'); if(o) o.remove(); });
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var old = form.querySelector('.bk-err'); if(old) old.remove();
+    var v = function(n){ return (form.elements[n].value || '').trim(); };
+    var fout = !v('naam') ? 'Vul je naam in.' : !/^[+0-9 ()-]{10,}$/.test(v('telefoon')) ? 'Vul een geldig telefoonnummer in.' : !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v('email')) ? 'Vul een geldig e-mailadres in.' : !/^\d{4}\s?[a-zA-Z]{2}$/.test(v('postcode')) ? 'Vul je postcode in, bijvoorbeeld 4762 AS.' : !v('huisnummer') ? 'Vul je huisnummer in.' : '';
+    if(fout){ var er = document.createElement('div'); er.className = 'bk-err'; er.textContent = fout; form.querySelector('button[type=submit]').insertAdjacentElement('beforebegin', er); return; }
+    var id = st.keuze || advies().id, p = pkg(id), d = new Date();
+    var nr = 'VW-' + String(d.getFullYear()).slice(2) + ('0' + (d.getMonth() + 1)).slice(-2) + ('0' + d.getDate()).slice(-2) + '-' + Math.random().toString(36).slice(2, 6).toUpperCase();
+    var label = 'Thuisbatterij ' + p.kwh + ' kWh + ' + p.kw + ' kW omvormer (' + p.fase + ')';
+    var ex = ['ev','wp','dyn'].filter(function(k){ return st.extra[k]; }).map(function(k){ return {ev:'elektrische auto', wp:'warmtepomp', dyn:'dynamisch contract'}[k]; });
+    var fd = new FormData();
+    var velden = { 'form-name':'bestelling', 'bot-field':v('bot-field'), ordernummer:nr, naam:v('naam'), email:v('email'), telefoon:v('telefoon'),
+      adres:'huisnummer ' + v('huisnummer'), postcode:v('postcode').toUpperCase(), plaats:'', huistype:'', producten:label,
+      prijsregels:label + ' € ' + fmt(p.prijs), totaalprijs:'€ ' + fmt(p.prijs), aanbetaling:'€ 350', installatiedatum:'in overleg', technische_check:'Telefonisch',
+      opmerking:'Batterijkeuzehulp: ' + st.panelen + ' panelen, ' + fmt(st.verbruik) + ' kWh/jaar, aansluiting ' + (st.fase === '?' ? 'onbekend' : st.fase + '-fase') + (ex.length ? ', ' + ex.join(', ') : '') + (st.keuze && st.keuze !== advies().id ? ' (zelf gekozen, advies was ' + advies().id + ')' : ''),
+      akkoord:'aanvraag', pagina:location.pathname };
+    Object.keys(velden).forEach(function(k){ fd.append(k, velden[k]); });
+    var btn = form.querySelector('button[type=submit]'), txt = btn.innerHTML; btn.disabled = true; btn.innerHTML = 'Versturen…';
+    fetch('/', {method:'POST', body:fd}).then(function(r){
+      if(!r.ok) throw new Error(r.status);
+      try{ if(window.vwTrack) vwTrack('bestelling_aangevraagd', {value:p.prijs, currency:'EUR', producten:'batterij', pagina:location.pathname}); else if(window.gtag) gtag('event', 'bestelling_aangevraagd', {value:p.prijs, currency:'EUR'}); }catch(x){}
+      var ok = document.createElement('div'); ok.className = 'bk-ok';
+      ok.innerHTML = '<b>Aanvraag ontvangen</b>Bedankt, ' + v('naam').split(' ')[0].replace(/[<>&"]/g, '') + '. We bellen je op ' + v('telefoon').replace(/[<>&"]/g, '') + ' om je meterkast te checken en een installatiedatum te plannen. Je aanvraagnummer is ' + nr + '.';
+      form.replaceWith(ok); sec.querySelector('.bk-cta .bk-sec').style.display = 'none';
+    }).catch(function(){
+      btn.disabled = false; btn.innerHTML = txt;
+      var er = document.createElement('div'); er.className = 'bk-err';
+      er.innerHTML = 'Versturen lukte niet. Bel ons op <a href="tel:+31853335687" style="color:inherit;font-weight:700;">085 333 56 87</a> of app via <a href="https://wa.me/31853335687" style="color:inherit;font-weight:700;">WhatsApp</a>.';
+      btn.insertAdjacentElement('beforebegin', er);
+    });
   });
   render();
 })();
