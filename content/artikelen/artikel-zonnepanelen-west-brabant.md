@@ -1,6 +1,6 @@
 title: Zonnepanelen laten plaatsen in West-Brabant: kosten, regels en planning
 seo_title: Zonnepanelen West-Brabant: kosten en regels | Voltwijk
-description: Zonnepanelen laten plaatsen in West-Brabant, Breda of Etten-Leur? Lees wat het kost, wat er in 2027 verandert, wanneer je een vergunning nodig hebt en hoe het gaat.
+description: Zonnepanelen laten plaatsen in West-Brabant, Breda of Etten-Leur? Lees wat het kost, wat er in 2027 verandert, wanneer een vergunning nodig is en hoe het gaat.
 category: Zonnepanelen
 product: zonnepanelen
 date: 2026-10-01

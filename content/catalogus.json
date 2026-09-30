@@ -95,6 +95,16 @@
   "title": "Airco plaatsen: heb je een vergunning nodig? De regels op een rij"
  },
  {
+  "slug": "artikel-airco-verwarmen-winter-kosten",
+  "product": "airco",
+  "title": "Airco als verwarming in de winter: wat kost het per maand?"
+ },
+ {
+  "slug": "artikel-airco-west-brabant",
+  "product": "airco",
+  "title": "Airco laten plaatsen in West-Brabant: prijs, regels en tips"
+ },
+ {
   "slug": "artikel-boiler-opwarmen-met-zonnestroom",
   "product": "boiler",
   "title": "Boiler opwarmen met zonnestroom: je boiler als warmtebatterij"
@@ -215,6 +225,11 @@
   "title": "Mobiele airco of split-airco: wat is het verschil en wat past bij jou?"
  },
  {
+  "slug": "artikel-negatieve-stroomprijs-zonnepanelen",
+  "product": "zonnepanelen",
+  "title": "Negatieve stroomprijzen en zonnepanelen: wat betekent het en wat kun je doen?"
+ },
+ {
   "slug": "artikel-netcongestie-west-brabant",
   "product": "batterij",
   "title": "Netcongestie in West-Brabant: wat betekent het voor jouw zonnepanelen en thuisbatterij?"
@@ -233,6 +248,16 @@
   "slug": "artikel-omvormer-valt-uit-netspanning-te-hoog",
   "product": "zonnepanelen",
   "title": "Omvormer valt uit op zonnige dagen: is de netspanning te hoog?"
+ },
+ {
+  "slug": "artikel-p1-poort-slimme-meter",
+  "product": "zonnepanelen",
+  "title": "Slimme meter en P1-poort: zo haal je meer uit je zonnepanelen en thuisbatterij"
+ },
+ {
+  "slug": "artikel-stroomstoring-zonnepanelen-thuisbatterij",
+  "product": "zonnepanelen",
+  "title": "Stroomstoring in je wijk: wat gebeurt er met je zonnepanelen en thuisbatterij?"
  },
  {
   "slug": "artikel-subsidie-duurzaamheidslening-west-brabant",
@@ -263,6 +288,11 @@
   "slug": "artikel-thuisbatterij-brandveiligheid",
   "product": "batterij",
   "title": "Is een thuisbatterij veilig? Brandrisico en zo beperk je het"
+ },
+ {
+  "slug": "artikel-thuisbatterij-garage-schuur-winter",
+  "product": "batterij",
+  "title": "Thuisbatterij in de garage of schuur: kan dat in de winter?"
  },
  {
   "slug": "artikel-thuisbatterij-hoe-groot",
@@ -323,6 +353,11 @@
   "slug": "artikel-warmtepomp-buitenunit-plaatsen-regels",
   "product": "warmtepomp",
   "title": "Warmtepomp buitenunit plaatsen: regels voor vergunning, geluid en plek"
+ },
+ {
+  "slug": "artikel-warmtepomp-en-thuisbatterij",
+  "product": "batterij",
+  "title": "Hybride of volledige warmtepomp combineren met een thuisbatterij: slim of niet?"
  },
  {
   "slug": "artikel-warmtepomp-en-zonnepanelen-combineren",
@@ -388,5 +423,10 @@
   "slug": "artikel-zonnepanelen-uitbreiden",
   "product": "zonnepanelen",
   "title": "Zonnepanelen uitbreiden: waar moet je op letten?"
+ },
+ {
+  "slug": "artikel-zonnepanelen-west-brabant",
+  "product": "zonnepanelen",
+  "title": "Zonnepanelen laten plaatsen in West-Brabant: kosten, regels en planning"
  }
 ]
