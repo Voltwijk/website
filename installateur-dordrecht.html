@@ -358,8 +358,28 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
 .lp-grid a{display:block;padding:18px 20px;border-radius:16px;background:#fff;border:1px solid var(--border);text-decoration:none;color:var(--ink);transition:border-color .2s,transform .2s;}
 .lp-grid a:hover{border-color:var(--primary);transform:translateY(-2px);}
 .lp-grid b{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:18px;display:block;} .lp-grid span{font-size:13px;color:var(--ink-soft);}
+.lp-sub{font-size:14px;font-weight:700;color:var(--primary);margin-top:10px;}
+.lp-bat{background:#fff;border:1px solid var(--border);border-radius:22px;padding:26px 28px;}
+.lp-bat>p{font-size:15px;color:var(--ink-soft);margin-top:8px;line-height:1.6;max-width:680px;}
+.lp-pk{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:20px;}
+.lp-pk div{border:1px solid var(--border);border-radius:16px;padding:16px 18px;background:var(--bg);}
+.lp-pk b{display:block;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:22px;color:var(--ink);}
+.lp-pk span{display:block;font-size:13.5px;color:var(--ink-soft);margin-top:2px;line-height:1.45;}
+.lp-pk strong{display:block;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:24px;color:var(--ink);margin-top:12px;}
+.lp-pk small{font-size:12.5px;color:var(--ink-faint);}
+.lp-bat-foot{display:flex;gap:10px 18px;align-items:center;flex-wrap:wrap;margin-top:20px;font-size:14px;}
+.lp-bat-foot a.lp-more{color:var(--primary);font-weight:700;text-decoration:none;}
+.lp-extra{max-width:760px;}
+.lp-extra p{font-size:15.5px;line-height:1.7;color:var(--ink-soft);margin-top:12px;}
+.lp-extra ol{margin:14px 0 0;padding-left:22px;font-size:15.5px;line-height:1.7;color:var(--ink-soft);}
+.lp-extra li{margin-top:6px;} .lp-extra a{color:var(--primary);font-weight:700;} .lp-extra strong{color:var(--ink);}
+.lp-local p a{color:var(--primary);font-weight:700;}
+.lp-gm{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:12px;margin-top:18px;}
+.lp-gm>div{background:#fff;border:1px solid var(--border);border-radius:18px;padding:18px 20px;}
+.lp-gm h3{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:17px;margin:0;color:var(--ink);}
+.lp-gm .lp-chips{margin-top:10px;} .lp-gm p{font-size:13.5px;color:var(--ink-soft);margin-top:10px;line-height:1.55;}
 @media (max-width:900px){.lp-hero{grid-template-columns:1fr;gap:28px;}.lp-stats{grid-template-columns:repeat(2,minmax(0,1fr));}.lp-steps{grid-template-columns:1fr;}}
-@media (max-width:640px){.lp-local{grid-template-columns:1fr;}.lp-cta{padding:26px 22px;}}
+@media (max-width:640px){.lp-local{grid-template-columns:1fr;}.lp-cta{padding:26px 22px;}.lp-pk{grid-template-columns:1fr;}.lp-bat{padding:22px 18px;}}
 </style>
   <div class="wrap reveal" style="max-width:1000px;padding-top:48px;">
     <nav aria-label="Kruimelpad" style="font-size:13px;font-weight:700;color:var(--ink-faint);display:flex;gap:8px;flex-wrap:wrap;align-items:center;"><a href="/werkgebied" style="color:var(--primary);text-decoration:none;">Werkgebied</a><span aria-hidden="true">/</span><span>Dordrecht</span></nav>
@@ -379,6 +399,13 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
       <div class="lp-stat"><b>Vaste prijs</b><span>vooraf, geen verrassingen</span></div>
     </div>
   </div>
+  <div class="wrap reveal lp-sec" style="max-width:1000px;"><div class="lp-bat">
+    <h2 class="vw-heading lp-h2">Thuisbatterij in Dordrecht: drie vaste pakketten</h2>
+    <p>Een batterij van 10 of 16 kWh met hybride omvormer, geplaatst door onze eigen monteurs. Welke past, hangt af van je verbruik, je zonnepanelen en je aansluiting (1-fase of 3-fase). Op de installatie krijg je 2 jaar garantie.</p>
+    <div class="lp-pk"><div><b>10 kWh</b><span>5 kW hybride omvormer · 1-fase</span><strong>€ 4.200</strong><small>inclusief installatie</small></div><div><b>16 kWh</b><span>6 kW hybride omvormer · 1-fase</span><strong>€ 4.600</strong><small>inclusief installatie</small></div><div><b>16 kWh</b><span>8 kW hybride omvormer · 3-fase</span><strong>€ 5.700</strong><small>inclusief installatie</small></div></div>
+    <div class="lp-bat-foot"><a href="/product-batterij#batterijkeuze" class="btn-primary" style="text-decoration:none;">Welke batterij past bij mij? →</a><a class="lp-more" href="/product-batterij">Meer over de thuisbatterij</a></div>
+  </div></div>
+  
   <div class="wrap reveal lp-sec" style="max-width:1000px;">
     <h2 class="vw-heading lp-h2">Wat we in Dordrecht installeren</h2>
     <p style="font-size:15.5px;color:var(--ink-soft);margin-top:10px;line-height:1.6;max-width:680px;">Vaste prijzen vooraf, inclusief installatie door ons eigen team.</p>
@@ -468,10 +495,10 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
           <div style="color:var(--mint);font-weight:700;font-size:12px;">WERKGEBIED</div>
           <a href="/installateur-zevenbergen" style="color:inherit;text-decoration:none;">Zevenbergen</a>
           <a href="/installateur-breda" style="color:inherit;text-decoration:none;">Breda</a>
-          <a href="/installateur-dordrecht" style="color:inherit;text-decoration:none;">Dordrecht</a>
-          <a href="/installateur-rotterdam" style="color:inherit;text-decoration:none;">Rotterdam</a>
-          <a href="/installateur-tilburg" style="color:inherit;text-decoration:none;">Tilburg</a>
-          <a href="/installateur-eindhoven" style="color:inherit;text-decoration:none;">Eindhoven</a>
+          <a href="/installateur-etten-leur" style="color:inherit;text-decoration:none;">Etten-Leur</a>
+          <a href="/installateur-roosendaal" style="color:inherit;text-decoration:none;">Roosendaal</a>
+          <a href="/installateur-oosterhout" style="color:inherit;text-decoration:none;">Oosterhout</a>
+          <a href="/installateur-bergen-op-zoom" style="color:inherit;text-decoration:none;">Bergen op Zoom</a>
           <a href="/werkgebied" style="color:inherit;text-decoration:none;">Alle plaatsen →</a>
         </div><!-- wg:end -->
       </div>

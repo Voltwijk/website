@@ -9,6 +9,13 @@
   to = "/"
   status = 301
 
+# Interne marketingdocumenten niet publiek tonen
+[[redirects]]
+  from = "/marketing/*"
+  to = "/404"
+  status = 404
+  force = true
+
 # www -> zonder www
 [[redirects]]
   from = "https://www.voltwijk.nl/*"
@@ -29,3 +36,9 @@
   for = "/brand/*"
   [headers.values]
     Cache-Control = "public, max-age=604800"
+
+# Merkboek en merkkit: wel bereikbaar, niet in Google
+[[headers]]
+  for = "/merk/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"

@@ -3,8 +3,10 @@
 # Daarna altijd: python3 tools/seo.py  (titels/OG/JSON-LD/sitemap)
 # Let op: alleen controleerbare feiten per plaats. Netbeheerder hangt af van het exacte adres,
 # dat staat ook zo op de pagina's.
-import re, html, os, urllib.parse
+import re, html, os, sys, urllib.parse
 ROOT = os.path.join(os.path.dirname(__file__), '..'); os.chdir(ROOT)
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); sys.dont_write_bytecode = True
+from battery import PAKKETTEN, VANAF, eur  # de drie batterijpakketten (één bron: tools/battery.py)
 SHELL = 'artikel-isde-subsidie-2026.html'
 esc = lambda s: html.escape(s, quote=True)
 def inline(t):
@@ -191,10 +193,176 @@ ART.update({'artikel-thuisbatterij-hoe-groot': 'Hoe groot moet je thuisbatterij 
             'artikel-airco-als-bijverwarming': 'Airco als bijverwarming',
             'artikel-boiler-opwarmen-met-zonnestroom': 'Je boiler opwarmen met zonnestroom',
             'artikel-load-balancing-laadpaal': 'Load balancing bij je laadpaal'})
+ART.update({'artikel-thuisbatterij-plaatsen-waar': 'Waar plaats je een thuisbatterij?',
+            'artikel-thuisbatterij-zonder-zonnepanelen': 'Thuisbatterij zonder zonnepanelen',
+            'artikel-thuisbatterij-bij-bestaande-zonnepanelen': 'Thuisbatterij bij bestaande zonnepanelen',
+            'artikel-thuisbatterij-1-fase-aansluiting': 'Thuisbatterij op een 1-fase aansluiting',
+            'artikel-thuisbatterij-terugverdientijd': 'Terugverdientijd van een thuisbatterij',
+            'artikel-airco-plaatsen-regels-vergunning': 'Airco plaatsen: heb je een vergunning nodig?',
+            'artikel-checklist-salderen-2027': 'Checklist salderen 2027',
+            'artikel-zonnepanelen-oost-west-of-zuid': 'Zonnepanelen oost-west of zuid?',
+            'artikel-groepen-bijplaatsen-meterkast': 'Groepen bijplaatsen in je meterkast',
+            'artikel-terugleverkosten-uitgelegd': 'Terugleverkosten uitgelegd',
+            'artikel-zonnepanelen-rendabel-na-2027': 'Zijn zonnepanelen nog rendabel na 2027?',
+            'artikel-warmtepomp-en-zonnepanelen-combineren': 'Warmtepomp en zonnepanelen combineren',
+            'artikel-meterkast-onderschatte-stap': 'Meterkast: de vergeten stap bij batterij en laadpaal'})
+
+# Kernen in West-Brabant rond Zevenbergen. Feiten nagezocht in september 2026 (o.a. erfgoedregister en
+# beleidsregel zonnepanelen van de gemeente Moerdijk, rijksmonumentenregister, sites van de gemeenten).
+# Bewust weggelaten: afstanden, rijtijden, inwonertallen en alles wat niet goed te controleren was.
+CITIES += [
+ dict(slug='klundert', name='Klundert', region='West-Brabant', nb='Enexis', img='thuisbatterij-bijkeuken', gemeente='Moerdijk',
+  intro='Klundert is een oud vestingstadje in de gemeente Moerdijk, dezelfde gemeente als ons kantoor in Zevenbergen. Binnen de oude vestingwerken staan historische panden, daaromheen liggen nieuwere woonwijken. Voor allebei installeren we thuisbatterijen, zonnepanelen en airco\'s, met ons eigen team en een vaste prijs vooraf.',
+  local=[('Beschermd stadsgezicht', 'De oude kern van Klundert is sinds 1970 een rijksbeschermd stadsgezicht. De vestingwerken en het oude stadhuis zijn rijksmonument. Zonnepanelen die vanaf de straat te zien zijn, of een buitenunit aan de gevel, hebben daar vaak een vergunning nodig. We zoeken vooraf uit wat voor jouw adres geldt.'),
+         ('Een batterij zie je niet van buiten', 'Een thuisbatterij staat binnen, bijvoorbeeld in de garage, de bijkeuken of op zolder. Aan de buitenkant van je huis verandert niets. Woon je in een rijksmonument, dan checken we ook of er voor werk binnen een vergunning nodig is.'),
+         ('Netbeheerder Enexis', 'In Klundert is Enexis in de regel de netbeheerder; je exacte adres is bepalend. Wij melden je batterij en zonnepanelen aan en regelen een zwaardere aansluiting als dat nodig is.'),
+         ('Buiten de vesting', 'In de woonwijken rond de oude kern gelden meestal de gewone regels, en mogen zonnepanelen vaak zonder vergunning. Samen met een thuisbatterij gebruik je meer van je eigen stroom als het salderen op 1 januari 2027 stopt.')],
+  faq=('Mag ik in de vesting van Klundert een thuisbatterij laten plaatsen?', 'Meestal wel. Een thuisbatterij staat binnen en is van buiten niet te zien. Alleen bij een rijksmonument kan ook voor werk binnen een vergunning nodig zijn. Dat zoeken we vooraf voor je uit.'),
+  near=['Zevenbergen', 'Noordhoek', 'Moerdijk', 'Fijnaart', 'Oudemolen', 'Willemstad'],
+  buren=['zevenbergen', 'willemstad', 'fijnaart', 'moerdijk', 'etten-leur'],
+  arts=['artikel-thuisbatterij-plaatsen-waar', 'artikel-thuisbatterij-na-salderen', 'artikel-airco-plaatsen-regels-vergunning']),
+ dict(slug='willemstad', name='Willemstad', region='West-Brabant', nb='Enexis', img='batterij-zolder', gemeente='Moerdijk',
+  intro='Willemstad is een vestingstad aan het Hollandsch Diep en hoort, net als ons kantoor in Zevenbergen, bij de gemeente Moerdijk. In de vesting gelden strengere regels dan in veel andere wijken. We zoeken ze per adres voor je uit en installeren thuisbatterijen, zonnepanelen en airco\'s met ons eigen team.',
+  local=[('Beschermd stadsgezicht sinds 1970', 'De vesting Willemstad is sinds 1970 een rijksbeschermd stadsgezicht en telt tientallen rijksmonumenten. Alles wat je aan de buitenkant van je huis verandert, vraagt daar extra zorg.'),
+         ('Regels voor zonnepanelen', 'De gemeente Moerdijk heeft een aparte beleidsregel voor zonnepanelen op monumenten en in het beschermd stadsgezicht Willemstad. De vesting is daarin verdeeld in zones. In de zone met de hoogste waarde mogen panelen alleen op het achterste dakvlak. We kijken in welke zone je woont en regelen de vergunning als die nodig is.'),
+         ('Thuisbatterij: van buiten onzichtbaar', 'Een thuisbatterij staat binnen, bijvoorbeeld in de bijkeuken, de garage of op zolder. Aan het straatbeeld verandert niets. Bij een rijksmonument checken we wel of ook voor werk binnen een vergunning nodig is.'),
+         ('Netbeheerder Enexis', 'In Willemstad is Enexis in de regel de netbeheerder; je exacte adres is bepalend. De aanmelding van je batterij of panelen en een eventuele verzwaring regelen wij.')],
+  faq=('Heb ik in Willemstad een vergunning nodig voor zonnepanelen?', 'In de vesting en bij een monument vaak wel. De gemeente Moerdijk heeft daarvoor een beleidsregel met zones: in het deel met de hoogste waarde mogen panelen alleen op het achterste dakvlak. Ook net buiten de vesting kan die regel gelden. Wij checken het voor jouw adres en regelen de aanvraag.'),
+  near=['Helwijk', 'Heijningen', 'Fijnaart', 'Klundert'],
+  buren=['zevenbergen', 'klundert', 'fijnaart', 'steenbergen'],
+  arts=['artikel-thuisbatterij-zonder-zonnepanelen', 'artikel-thuisbatterij-plaatsen-waar', 'artikel-airco-plaatsen-regels-vergunning']),
+ dict(slug='fijnaart', name='Fijnaart', region='West-Brabant', nb='Enexis', img='monteur-dak', gemeente='Moerdijk',
+  intro='Fijnaart is een polderdorp in de gemeente Moerdijk, net als ons kantoor in Zevenbergen. Het dorp ontstond in 1548 midden in de polder, met de kerk in het centrum. Hier installeren we thuisbatterijen, zonnepanelen en airco\'s met ons eigen team en een vaste prijs vooraf.',
+  local=[('Dorp in de polder', 'De oude kern van Fijnaart is aangelegd rond de kerk, met een gracht eromheen en de Voorstraat richting de dijk. Daaromheen liggen woonwijken uit latere jaren. Welk dak en welke meterkast je hebt, bepaalt wat er past. Dat bekijken we per huis.'),
+         ('Open land, veel wind', 'In het open polderland vangt een dak veel wind. De bevestiging van zonnepanelen moet daarop berekend zijn. Daar letten onze monteurs bij de montage op.'),
+         ('Netbeheerder Enexis', 'In Fijnaart is Enexis in de regel de netbeheerder; je exacte adres is bepalend. Wij melden je installatie aan en regelen een zwaardere aansluiting als dat nodig is.'),
+         ('Al zonnepanelen?', 'Dan is een thuisbatterij de logische volgende stap nu het salderen op 1 januari 2027 stopt. Waar je op let bij een bestaande installatie, lees je in [ons artikel over een batterij bij bestaande panelen](/artikel-thuisbatterij-bij-bestaande-zonnepanelen).')],
+  faq=('Komen jullie ook in Heijningen en Oudemolen?', 'Ja. Heijningen en Oudemolen horen net als Fijnaart bij de gemeente Moerdijk. We installeren daar met dezelfde vaste prijzen en ons eigen team.'),
+  near=['Heijningen', 'Oudemolen', 'Klundert', 'Willemstad', 'Standdaarbuiten'],
+  buren=['zevenbergen', 'klundert', 'willemstad', 'oudenbosch', 'steenbergen'],
+  arts=['artikel-thuisbatterij-bij-bestaande-zonnepanelen', 'artikel-checklist-salderen-2027', 'artikel-zonnepanelen-oost-west-of-zuid']),
+ dict(slug='moerdijk', name='Moerdijk', region='West-Brabant', nb='Enexis', img='monteur-aan-het-werk', gemeente='Moerdijk',
+  intro='Het dorp Moerdijk ligt aan het Hollandsch Diep, bij de Moerdijkbruggen en naast het haven- en industriegebied. Het is een van de kernen van de gemeente Moerdijk, waar ook ons kantoor in Zevenbergen staat. We installeren hier thuisbatterijen, zonnepanelen en airco\'s met ons eigen team en een vaste prijs vooraf.',
+  local=[('Woningen uit de wederopbouw', 'Het dorp werd in 1944 zwaar beschadigd en daarna grotendeels herbouwd. Veel huizen stammen daardoor uit de jaren \'50. De meterkast is in woningen van die leeftijd vaak niet gemaakt voor een batterij, zonnepanelen en een laadpaal tegelijk. We kijken vooraf of er een groep bij moet.'),
+         ('Netbeheerder Enexis', 'In Moerdijk is Enexis in de regel de netbeheerder; je exacte adres is bepalend. Wij regelen de aanmelding en, als dat nodig is, een zwaardere aansluiting.'),
+         ('Batterij en een dynamisch contract', 'Met een dynamisch energiecontract laad je je batterij op als stroom goedkoop is en gebruik je hem als stroom duur is. We rekenen eerlijk voor je uit of dat bij jouw verbruik iets oplevert.'),
+         ('De hele gemeente Moerdijk', 'We komen in alle kernen van de gemeente: van Zevenbergen, [Klundert](/installateur-klundert) en [Willemstad](/installateur-willemstad) tot [Fijnaart](/installateur-fijnaart), Zevenbergschen Hoek en Langeweg.')],
+  faq=('Gaat deze pagina over het dorp of de gemeente Moerdijk?', 'Vooral over het dorp Moerdijk, maar we installeren in de hele gemeente. Voor Zevenbergen, Klundert, Willemstad en Fijnaart hebben we een eigen pagina.'),
+  near=['Zevenbergschen Hoek', 'Langeweg', 'Zevenbergen', 'Klundert', 'Noordhoek', 'Lage Zwaluwe'],
+  buren=['zevenbergen', 'klundert', 'made', 'breda'],
+  arts=['artikel-meterkast-vervangen-signalen', 'artikel-groepen-bijplaatsen-meterkast', 'artikel-dynamisch-contract-en-batterij']),
+ dict(slug='oudenbosch', name='Oudenbosch', region='West-Brabant', nb='Enexis', img='batterij-installatie', gemeente='Halderberge',
+  intro='Oudenbosch is de hoofdplaats van de gemeente Halderberge, bekend om de basiliek en de gebouwen van het vroegere instituut Saint-Louis. Rond dat historische centrum liggen woonwijken van allerlei leeftijden. We installeren hier thuisbatterijen, zonnepanelen en airco\'s met ons eigen team en een vaste prijs vooraf.',
+  local=[('Monumenten in het centrum', 'De basiliek en meerdere gebouwen van Saint-Louis zijn rijksmonument. Woon je in een monument, dan kan voor zonnepanelen of een buitenunit een vergunning nodig zijn. We zoeken het per adres uit.'),
+         ('Netbeheerder Enexis', 'In Halderberge is Enexis in de regel de netbeheerder; je exacte adres is bepalend. Wij melden je installatie aan en regelen een zwaardere aansluiting als dat nodig is.'),
+         ('1-fase of 3-fase?', 'Heb je een 1-fase aansluiting, dan past de batterij van 10 of 16 kWh met een 5 of 6 kW omvormer. Bij 3-fase wordt het de 16 kWh met 8 kW omvormer. Welke aansluiting je hebt, checken we vooraf in je meterkast.'),
+         ('Airco erbij', 'Een split-airco koelt in de zomer en verwarmt zuinig in het voor- en najaar. Met zonnepanelen en een thuisbatterij draait hij voor een deel op je eigen stroom.')],
+  faq=('Komen jullie ook in Hoeven, Oud Gastel en Bosschenhoofd?', 'Ja. We installeren in heel Halderberge: Oudenbosch, Hoeven, Oud Gastel, Bosschenhoofd en Stampersgat. Met dezelfde vaste prijzen en ons eigen team.'),
+  near=['Bosschenhoofd', 'Hoeven', 'Oud Gastel', 'Stampersgat', 'Standdaarbuiten'],
+  buren=['roosendaal', 'etten-leur', 'zevenbergen', 'fijnaart', 'steenbergen'],
+  arts=['artikel-thuisbatterij-1-fase-aansluiting', 'artikel-airco-als-bijverwarming', 'artikel-thuisbatterij-hoe-groot']),
+ dict(slug='steenbergen', name='Steenbergen', region='West-Brabant', nb='Enexis', img='zonnepanelen-installatie', gemeente='Steenbergen',
+  intro='Steenbergen is een oude vestingstad, met de Gummaruskerk als herkenningspunt en een jachthaven in het centrum. De gemeente heeft zes kernen, van Dinteloord tot Nieuw-Vossemeer. We installeren er thuisbatterijen, zonnepanelen en airco\'s met ons eigen team en een vaste prijs vooraf.',
+  local=[('Historisch centrum', 'In het centrum staan oudere panden, en de Gummaruskerk is rijksmonument. Bij een monument of in een beschermd gebied kan voor zonnepanelen of een buitenunit een vergunning nodig zijn. We zoeken vooraf uit wat voor jouw adres geldt.'),
+         ('Netbeheerder Enexis', 'In de gemeente Steenbergen is Enexis in de regel de netbeheerder; je exacte adres is bepalend. De aanmelding en een eventuele verzwaring regelen wij.'),
+         ('Minder terugleveren', 'Veel energieleveranciers rekenen terugleverkosten. Met een thuisbatterij sla je je overschot op en lever je minder terug. Hoe dat zit, lees je in [ons artikel over terugleverkosten](/artikel-terugleverkosten-uitgelegd).'),
+         ('Ook in de dorpen', 'In Dinteloord, Kruisland, Nieuw-Vossemeer, Welberg en De Heen installeren we met dezelfde vaste prijzen. Of je nu in een rijtjeshuis woont of vrijstaand: de prijs weet je vooraf.')],
+  faq=('Installeren jullie ook in Dinteloord en Nieuw-Vossemeer?', 'Ja. We komen in alle zes kernen van de gemeente Steenbergen: Steenbergen, Dinteloord, Kruisland, Nieuw-Vossemeer, Welberg en De Heen. Met ons eigen team en een vaste prijs vooraf.'),
+  near=['Welberg', 'Dinteloord', 'Kruisland', 'Nieuw-Vossemeer', 'De Heen', 'Halsteren'],
+  buren=['bergen-op-zoom', 'roosendaal', 'oudenbosch', 'willemstad'],
+  arts=['artikel-terugleverkosten-uitgelegd', 'artikel-thuisbatterij-terugverdientijd', 'artikel-zonnepanelen-rendabel-na-2027']),
+ dict(slug='made', name='Made', region='West-Brabant', nb='Enexis', img='thuisbatterij-bijkeuken', gemeente='Drimmelen',
+  intro='Made is de hoofdplaats van de gemeente Drimmelen: het gemeentehuis staat hier. De gemeente ligt tegen de Biesbosch aan en bestaat uit zes dorpen. In Made en de dorpen eromheen installeren we thuisbatterijen, zonnepanelen en airco\'s met ons eigen team.',
+  local=[('Zes dorpen, één gemeente', 'De gemeente Drimmelen bestaat uit Made, Drimmelen, Terheijden, Wagenberg, Lage Zwaluwe en Hooge Zwaluwe. In al die dorpen installeren we met dezelfde vaste prijzen.'),
+         ('Netbeheerder Enexis', 'In Drimmelen is Enexis in de regel de netbeheerder; je exacte adres is bepalend. Wij melden je batterij en zonnepanelen aan en regelen een verzwaring als dat nodig is.'),
+         ('Een goede plek voor de batterij', 'Een thuisbatterij kan in de garage, de bijkeuken of op zolder. Belangrijk is een droge plek die niet te warm of te koud wordt, met een korte route naar de meterkast. We kiezen de plek samen met je.'),
+         ('Warmtepomp of airco erbij?', 'Een warmtepomp of airco gebruikt ook \'s avonds stroom. Met een batterij van 16 kWh vang je meer van dat verbruik op met je eigen zonnestroom.')],
+  faq=('Komen jullie ook in Terheijden, Wagenberg en de Zwaluwes?', 'Ja. We installeren in de hele gemeente Drimmelen: Made, Drimmelen, Terheijden, Wagenberg, Lage Zwaluwe en Hooge Zwaluwe. Met dezelfde vaste prijzen en ons eigen team.'),
+  near=['Drimmelen', 'Terheijden', 'Wagenberg', 'Lage Zwaluwe', 'Hooge Zwaluwe', 'Helkant'],
+  buren=['oosterhout', 'breda', 'geertruidenberg', 'moerdijk', 'zevenbergen'],
+  arts=['artikel-thuisbatterij-plaatsen-waar', 'artikel-thuisbatterij-hoe-groot', 'artikel-warmtepomp-en-zonnepanelen-combineren']),
+ dict(slug='zundert', name='Zundert', region='West-Brabant', nb='Enexis', img='monteur-en-klant', gemeente='Zundert',
+  intro='Zundert is de geboorteplaats van Vincent van Gogh en het hart van een grote boomteeltregio. De gemeente bestaat uit Zundert, Rijsbergen, Wernhout, Klein-Zundert en Achtmaal. We installeren er thuisbatterijen, zonnepanelen en airco\'s met ons eigen team en een vaste prijs vooraf.',
+  local=[('Dorp en buitengebied', 'Naast de dorpskernen heeft de gemeente veel buitengebied, met kwekerijen en boerderijen. Heb je een schuur of bijgebouw, dan kan de batterij daar soms ook staan, als de plek droog is en de kabel naar de meterkast goed te leggen is.'),
+         ('Netbeheerder Enexis', 'In Zundert is Enexis in de regel de netbeheerder; je exacte adres is bepalend. Wij regelen de aanmelding en, als dat nodig is, een zwaardere aansluiting.'),
+         ('Batterij zonder zonnepanelen?', 'Ook zonder eigen panelen kan een thuisbatterij iets opleveren, bijvoorbeeld met een dynamisch contract. Of dat voor jou loont, rekenen we eerlijk voor je door.'),
+         ('Na 2027 geen salderen meer', 'Op 1 januari 2027 stopt de salderingsregeling. Stroom die je teruglevert, levert dan minder op. Met een thuisbatterij gebruik je meer van je eigen zonnestroom zelf.')],
+  faq=('Installeren jullie ook in Rijsbergen en Wernhout?', 'Ja. We komen in de hele gemeente Zundert: Zundert, Rijsbergen, Wernhout, Klein-Zundert en Achtmaal. Met dezelfde vaste prijzen en ons eigen team.'),
+  near=['Rijsbergen', 'Wernhout', 'Klein-Zundert', 'Achtmaal', 'Sprundel'],
+  buren=['breda', 'etten-leur', 'rucphen', 'roosendaal'],
+  arts=['artikel-thuisbatterij-zonder-zonnepanelen', 'artikel-thuisbatterij-plaatsen-waar', 'artikel-salderingsregeling-2027']),
+ dict(slug='rucphen', name='Rucphen', region='West-Brabant', nb='Enexis', img='batterij-zolder', gemeente='Rucphen',
+  intro='De gemeente Rucphen bestaat uit vijf kernen: Rucphen, Sint Willebrord, Sprundel, Schijf en Zegge. Sint Willebrord is daarvan de grootste. In alle vijf installeren we thuisbatterijen, zonnepanelen en airco\'s met ons eigen team en een vaste prijs vooraf.',
+  local=[('Welke batterij past?', 'Dat hangt af van je verbruik, het aantal zonnepanelen en je aansluiting. Met weinig verbruik is 10 kWh vaak genoeg. Heb je een elektrische auto, een warmtepomp of een dynamisch contract, dan past 16 kWh meestal beter.'),
+         ('Netbeheerder Enexis', 'In de gemeente Rucphen is Enexis in de regel de netbeheerder; je exacte adres is bepalend. De aanmelding en een eventuele verzwaring regelen wij.'),
+         ('Wat levert het op?', 'Hoe snel een thuisbatterij zich terugverdient, hangt af van je verbruik en je energiecontract. We rekenen het eerlijk voor je door. Zelf rekenen kan ook, met [ons artikel over de terugverdientijd](/artikel-thuisbatterij-terugverdientijd).'),
+         ('Vijf dorpen, één prijs', 'Of je nu in Rucphen, Sint Willebrord, Sprundel, Schijf of Zegge woont: je krijgt dezelfde vaste prijs en hetzelfde eigen team.')],
+  faq=('Komen jullie ook in Sint Willebrord en Sprundel?', 'Ja. We installeren in alle vijf kernen van de gemeente Rucphen: Rucphen, Sint Willebrord, Sprundel, Schijf en Zegge. Met dezelfde vaste prijzen en ons eigen team.'),
+  near=['Sint Willebrord', 'Sprundel', 'Schijf', 'Zegge', 'Hoeven'],
+  buren=['etten-leur', 'roosendaal', 'zundert', 'oudenbosch'],
+  arts=['artikel-thuisbatterij-hoe-groot', 'artikel-thuisbatterij-terugverdientijd', 'artikel-dynamisch-contract-en-batterij']),
+ dict(slug='geertruidenberg', name='Geertruidenberg', label='Geertruidenberg en Raamsdonksveer', area=['Geertruidenberg', 'Raamsdonksveer', 'Raamsdonk'],
+  region='West-Brabant', nb='Enexis', img='monteur-dak', gemeente='Geertruidenberg',
+  intro='De gemeente Geertruidenberg bestaat uit drie kernen: de oude vestingstad Geertruidenberg, Raamsdonksveer en Raamsdonk. Raamsdonksveer is de grootste, met de meeste woonwijken en winkels. In alle drie installeren we thuisbatterijen, zonnepanelen en airco\'s met ons eigen team.',
+  local=[('Beschermd stadsgezicht', 'De historische kern van Geertruidenberg, met de vestingwerken, de Markt en de straten eromheen, is sinds 1970 een rijksbeschermd stadsgezicht. Zonnepanelen of een buitenunit die vanaf de straat te zien zijn, hebben daar vaak een vergunning nodig. Een thuisbatterij staat binnen en zie je van buiten niet.'),
+         ('Raamsdonksveer en Raamsdonk', 'In de woonwijken van Raamsdonksveer en Raamsdonk gelden meestal de gewone regels, en mogen zonnepanelen vaak zonder vergunning. We checken het voor jouw adres.'),
+         ('Netbeheerder Enexis', 'In de gemeente Geertruidenberg is Enexis in de regel de netbeheerder; je exacte adres is bepalend. Wij melden je installatie aan en regelen een zwaardere aansluiting als dat nodig is.'),
+         ('Meterkast eerst', 'Wil je een batterij én bijvoorbeeld een laadpaal of warmtepomp? Dan kijken we eerst of je meterkast genoeg groepen heeft. Moet er iets bij, dan hoor je dat vooraf.')],
+  faq=('Installeren jullie ook in Raamsdonksveer en Raamsdonk?', 'Ja. We installeren in de hele gemeente Geertruidenberg: in de vesting, in Raamsdonksveer en in Raamsdonk. Met dezelfde vaste prijzen en ons eigen team.'),
+  near=['Raamsdonksveer', 'Raamsdonk', 'Made', 'Oosterhout', 'Dongen'],
+  buren=['oosterhout', 'made', 'breda'],
+  arts=['artikel-airco-plaatsen-regels-vergunning', 'artikel-thuisbatterij-plaatsen-waar', 'artikel-meterkast-onderschatte-stap']),
+]
+
+# West-Brabant: thuisbatterij voorop (H1, titel, description, volgorde). De overige plaatsen houden hun tekst.
+WB_EXTRA = {
+ 'zevenbergen': dict(gemeente='Moerdijk', buren=['klundert', 'willemstad', 'fijnaart', 'moerdijk', 'breda', 'etten-leur', 'roosendaal', 'oosterhout']),
+ 'breda': dict(gemeente='Breda', buren=['zevenbergen', 'etten-leur', 'oosterhout', 'made', 'zundert', 'roosendaal']),
+ 'etten-leur': dict(gemeente='Etten-Leur', buren=['zevenbergen', 'breda', 'roosendaal', 'rucphen', 'zundert', 'oudenbosch'],
+   h1='Thuisbatterij en zonnepanelen in Etten-Leur',
+   title='Thuisbatterij & zonnepanelen installeren in Etten-Leur',
+   desc='Thuisbatterij of zonnepanelen laten installeren in Etten-Leur? Batterij 10 kWh € 4.200, 16 kWh € 4.600 of 16 kWh 3-fase € 5.700, incl. installatie.'),
+ 'roosendaal': dict(gemeente='Roosendaal', buren=['bergen-op-zoom', 'etten-leur', 'oudenbosch', 'rucphen', 'steenbergen', 'zevenbergen']),
+ 'bergen-op-zoom': dict(gemeente='Bergen op Zoom', buren=['roosendaal', 'steenbergen', 'etten-leur', 'zevenbergen']),
+ 'oosterhout': dict(gemeente='Oosterhout', buren=['breda', 'geertruidenberg', 'made', 'zevenbergen', 'tilburg']),
+}
+for c in CITIES:
+    if c['slug'] in WB_EXTRA: c.update(WB_EXTRA[c['slug']])
+    c['wb'] = 'gemeente' in c
+    if c['slug'] == 'zevenbergen':  # Willemstad heeft nu een eigen pagina
+        c['local'] = [(h, t + ' Meer op onze [pagina over Willemstad](/installateur-willemstad).' if h == 'Vestingstadje Willemstad' else t) for h, t in c['local']]
+
+# Etten-Leur: een sectie die precies de zoekvraag beantwoordt (kop, inleiding, stappen, slot)
+EXTRA = {
+ 'etten-leur': ('Zonnepanelen of een thuisbatterij laten installeren in Etten-Leur: zo gaat het',
+   'Kort gezegd: je kiest wat je wilt, wij checken je dak en meterkast, en onze eigen monteurs installeren alles voor een vaste prijs. Een thuisbatterij kost vanaf ' + eur(VANAF) + ', zonnepanelen vanaf € 3.999 voor 12 panelen, allebei inclusief installatie.',
+   ['**Kies wat je wilt.** Alleen zonnepanelen, alleen een thuisbatterij of allebei. Met de [prijscalculator](/bereken-je-prijs) of de [batterijkeuzehulp](/product-batterij#batterijkeuze) zie je direct je prijs.',
+    '**We checken je dak en meterkast.** Ligging, schaduw en ruimte op het dak, en of je aansluiting 1-fase of 3-fase is. Moet er iets bij, dan hoor je dat vooraf.',
+    '**Onze eigen monteurs installeren.** Geen onderaannemers. Wij melden je installatie aan bij de netbeheerder; in Etten-Leur is dat in de regel Enexis.',
+    '**Uitleg bij de oplevering.** Je krijgt uitleg over de app en 2 jaar garantie op de installatie.'],
+   'Heb je al zonnepanelen? Dan is een thuisbatterij de logische volgende stap nu het salderen op 1 januari 2027 stopt. Lees ook [waar je op let bij een batterij naast bestaande panelen](/artikel-thuisbatterij-bij-bestaande-zonnepanelen).'),
+}
+WB_ORDER = ['Thuisbatterij', 'Zonnepanelen', 'Airconditioning', 'Warmtepomp', 'Elektrische boiler', 'Laadpaal', 'Meterkastaanpassing']
 BY = {c['slug']: c for c in CITIES}
-GROUPS = [('West-Brabant en Drechtsteden', ['zevenbergen', 'breda', 'etten-leur', 'roosendaal', 'bergen-op-zoom', 'oosterhout', 'dordrecht']),
+# /werkgebied: West-Brabant per gemeente (pagina's + overige kernen van die gemeente), daarna de rest
+WB_GEMEENTEN = [
+ ('Moerdijk', ['zevenbergen', 'klundert', 'willemstad', 'fijnaart', 'moerdijk'], ['Zevenbergschen Hoek', 'Standdaarbuiten', 'Heijningen', 'Langeweg', 'Noordhoek', 'Helwijk']),
+ ('Breda', ['breda'], ['Prinsenbeek', 'Teteringen', 'Bavel', 'Ulvenhout']),
+ ('Etten-Leur', ['etten-leur'], []),
+ ('Roosendaal', ['roosendaal'], ['Nispen', 'Wouw', 'Heerle', 'Wouwse Plantage']),
+ ('Halderberge', ['oudenbosch'], ['Hoeven', 'Oud Gastel', 'Bosschenhoofd', 'Stampersgat']),
+ ('Steenbergen', ['steenbergen'], ['Dinteloord', 'Kruisland', 'Nieuw-Vossemeer', 'Welberg', 'De Heen']),
+ ('Bergen op Zoom', ['bergen-op-zoom'], ['Halsteren', 'Lepelstraat']),
+ ('Rucphen', ['rucphen'], ['Sint Willebrord', 'Sprundel', 'Schijf', 'Zegge']),
+ ('Zundert', ['zundert'], ['Rijsbergen', 'Wernhout', 'Klein-Zundert', 'Achtmaal']),
+ ('Drimmelen', ['made'], ['Terheijden', 'Wagenberg', 'Drimmelen', 'Lage Zwaluwe', 'Hooge Zwaluwe']),
+ ('Geertruidenberg', ['geertruidenberg'], ['Raamsdonk']),
+ ('Oosterhout', ['oosterhout'], ['Dorst', 'Den Hout', 'Oosteind']),
+]
+GROUPS = [('Drechtsteden', ['dordrecht']),
           ('Rest van Brabant', ['tilburg', 's-hertogenbosch', 'eindhoven']),
           ('Randstad', ['rotterdam', 'den-haag', 'utrecht', 'amsterdam'])]
+def label(c): return c.get('label', c['name'])
 
 CSS = '''<style>
 .lp-hero{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:48px;align-items:center;}
@@ -230,8 +398,28 @@ CSS = '''<style>
 .lp-grid a{display:block;padding:18px 20px;border-radius:16px;background:#fff;border:1px solid var(--border);text-decoration:none;color:var(--ink);transition:border-color .2s,transform .2s;}
 .lp-grid a:hover{border-color:var(--primary);transform:translateY(-2px);}
 .lp-grid b{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:18px;display:block;} .lp-grid span{font-size:13px;color:var(--ink-soft);}
+.lp-sub{font-size:14px;font-weight:700;color:var(--primary);margin-top:10px;}
+.lp-bat{background:#fff;border:1px solid var(--border);border-radius:22px;padding:26px 28px;}
+.lp-bat>p{font-size:15px;color:var(--ink-soft);margin-top:8px;line-height:1.6;max-width:680px;}
+.lp-pk{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:20px;}
+.lp-pk div{border:1px solid var(--border);border-radius:16px;padding:16px 18px;background:var(--bg);}
+.lp-pk b{display:block;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:22px;color:var(--ink);}
+.lp-pk span{display:block;font-size:13.5px;color:var(--ink-soft);margin-top:2px;line-height:1.45;}
+.lp-pk strong{display:block;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:24px;color:var(--ink);margin-top:12px;}
+.lp-pk small{font-size:12.5px;color:var(--ink-faint);}
+.lp-bat-foot{display:flex;gap:10px 18px;align-items:center;flex-wrap:wrap;margin-top:20px;font-size:14px;}
+.lp-bat-foot a.lp-more{color:var(--primary);font-weight:700;text-decoration:none;}
+.lp-extra{max-width:760px;}
+.lp-extra p{font-size:15.5px;line-height:1.7;color:var(--ink-soft);margin-top:12px;}
+.lp-extra ol{margin:14px 0 0;padding-left:22px;font-size:15.5px;line-height:1.7;color:var(--ink-soft);}
+.lp-extra li{margin-top:6px;} .lp-extra a{color:var(--primary);font-weight:700;} .lp-extra strong{color:var(--ink);}
+.lp-local p a{color:var(--primary);font-weight:700;}
+.lp-gm{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:12px;margin-top:18px;}
+.lp-gm>div{background:#fff;border:1px solid var(--border);border-radius:18px;padding:18px 20px;}
+.lp-gm h3{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:17px;margin:0;color:var(--ink);}
+.lp-gm .lp-chips{margin-top:10px;} .lp-gm p{font-size:13.5px;color:var(--ink-soft);margin-top:10px;line-height:1.55;}
 @media (max-width:900px){.lp-hero{grid-template-columns:1fr;gap:28px;}.lp-stats{grid-template-columns:repeat(2,minmax(0,1fr));}.lp-steps{grid-template-columns:1fr;}}
-@media (max-width:640px){.lp-local{grid-template-columns:1fr;}.lp-cta{padding:26px 22px;}}
+@media (max-width:640px){.lp-local{grid-template-columns:1fr;}.lp-cta{padding:26px 22px;}.lp-pk{grid-template-columns:1fr;}.lp-bat{padding:22px 18px;}}
 </style>'''
 
 def crumbs(items):
@@ -256,31 +444,89 @@ def cta(title, sub):
     </div></div>'''
 
 def city_faq(c):
-    n, nb = c['name'], c['nb']
-    qa = [c['faq'],
-          (f'Wat kost de installatie in {n}?', f'Je betaalt in {n} een vaste prijs die je vooraf kent: zonnepanelen vanaf € 3.999, een thuisbatterij vanaf € 4.200 en een warmtepomp vanaf € 6.750, inclusief installatie. Met de prijscalculator zie je binnen een minuut de prijs voor jouw woning.'),
-          (f'Wie regelt de netbeheerder en de vergunning in {n}?', f'Dat doen wij. In {n} is {NB[nb]} de netbeheerder (het precieze adres is bepalend). Wij regelen de aanmelding, een eventuele verzwaring van je aansluiting, een vergunning als die nodig is en bij een warmtepomp de ISDE-subsidie.'),
+    n, nb = label(c), c['nb']
+    p = {x['id']: x for x in PAKKETTEN}
+    kost = ((f'Wat kost een thuisbatterij in {n}?', f'Een thuisbatterij kost bij ons {eur(p["bat10"]["prijs"])} (10 kWh), {eur(p["bat16-1"]["prijs"])} (16 kWh, 1-fase) of {eur(p["bat16-3"]["prijs"])} (16 kWh, 3-fase), inclusief installatie. Zonnepanelen kosten vanaf € 3.999 en een airco vanaf € 1.899. Met de batterijkeuzehulp zie je in vier vragen welke batterij bij je past.')
+            if c['wb'] else
+            (f'Wat kost de installatie in {n}?', f'Je betaalt in {n} een vaste prijs die je vooraf kent: zonnepanelen vanaf € 3.999, een thuisbatterij vanaf € 4.200 en een warmtepomp vanaf € 6.750, inclusief installatie. Met de prijscalculator zie je binnen een minuut de prijs voor jouw woning.'))
+    nbq = ((f'Wie regelt de netbeheerder en de vergunning in {n}?', f'Dat doen wij. In {n} is {NB[nb]} in de regel de netbeheerder (je exacte adres is bepalend). Wij regelen de aanmelding, een eventuele verzwaring van je aansluiting, een vergunning als die nodig is en bij een warmtepomp de ISDE-subsidie.')
+           if c['wb'] else
+           (f'Wie regelt de netbeheerder en de vergunning in {n}?', f'Dat doen wij. In {n} is {NB[nb]} de netbeheerder (het precieze adres is bepalend). Wij regelen de aanmelding, een eventuele verzwaring van je aansluiting, een vergunning als die nodig is en bij een warmtepomp de ISDE-subsidie.'))
+    qa = [c['faq'], kost, nbq,
           (f'Werken jullie in {n} met onderaannemers?', 'Nee. Alle installaties doen we met onze eigen monteurs. Daardoor weten we zeker dat het werk goed is en heb je één aanspreekpunt, ook na de installatie.'),
           ('Hoe snel kan de installatie plaatsvinden?', 'De meeste klanten hebben binnen 2 tot 3 weken na de offerte een geplande installatiedatum. Bij de prijscheck zie je een indicatie voor jouw adres.')]
     return qa
 
-def city_main(c):
+def battery_block(n=None):
+    """Compact blok met de drie batterijpakketten (op alle plaatspagina's en /werkgebied)."""
+    cards = ''.join(f'<div><b>{p["kwh"]} kWh</b><span>{p["kw"]} kW hybride omvormer · {esc(p["fase"])}</span>'
+                    f'<strong>{esc(eur(p["prijs"]))}</strong><small>inclusief installatie</small></div>' for p in PAKKETTEN)
+    kop = f'Thuisbatterij in {esc(n)}: drie vaste pakketten' if n else 'Thuisbatterij: drie vaste pakketten'
+    return f'''<div class="wrap reveal lp-sec" style="max-width:1000px;"><div class="lp-bat">
+    <h2 class="vw-heading lp-h2">{kop}</h2>
+    <p>Een batterij van 10 of 16 kWh met hybride omvormer, geplaatst door onze eigen monteurs. Welke past, hangt af van je verbruik, je zonnepanelen en je aansluiting (1-fase of 3-fase). Op de installatie krijg je 2 jaar garantie.</p>
+    <div class="lp-pk">{cards}</div>
+    <div class="lp-bat-foot"><a href="/product-batterij#batterijkeuze" class="btn-primary" style="text-decoration:none;">Welke batterij past bij mij? →</a><a class="lp-more" href="/product-batterij">Meer over de thuisbatterij</a></div>
+  </div></div>'''
+
+def extra_block(c):
+    if c['slug'] not in EXTRA: return ''
+    kop, intro, stappen, slot = EXTRA[c['slug']]
+    li = ''.join(f'<li>{inline(s)}</li>' for s in stappen)
+    return f'''<div class="wrap reveal lp-sec" style="max-width:1000px;"><div class="lp-extra">
+    <h2 class="vw-heading lp-h2">{esc(kop)}</h2>
+    <p>{inline(intro)}</p>
+    <ol>{li}</ol>
+    <p>{inline(slot)}</p>
+  </div></div>'''
+
+def h1_of(c):
+    if not c['wb']: return f'Zonnepanelen, thuisbatterij en warmtepomp in {c["name"]}'
+    return c.get('h1', f'Thuisbatterij in {label(c)}')
+
+def title_of(c):
     n = c['name']
+    if not c['wb']: return f'Thuisbatterij, zonnepanelen & warmtepomp {n} | Voltwijk'
+    if 'title' in c: return c['title']
+    v = eur(VANAF)
+    for t in (f'Thuisbatterij {n} – vanaf {v} incl. installatie | Voltwijk',
+              f'Thuisbatterij {n}: vanaf {v} geïnstalleerd | Voltwijk',
+              f'Thuisbatterij {n} – vanaf {v} incl. installatie',
+              f'Thuisbatterij {n} – vanaf {v} | Voltwijk'):
+        if len(t) <= 60: return t
+    raise ValueError(n)
+
+def desc_of(c):
+    n = c['name']
+    if not c['wb']: return f'Thuisbatterij, zonnepanelen of warmtepomp in {n}? Vaste prijs vooraf, eigen monteurs, 12.500+ installaties, 4,7/5 op Google.'
+    if 'desc' in c: return c['desc']
+    p = {x['id']: x for x in PAKKETTEN}
+    d = (f'Thuisbatterij in {label(c)}: 10 kWh {eur(p["bat10"]["prijs"])}, 16 kWh {eur(p["bat16-1"]["prijs"])} of 16 kWh 3-fase '
+         f'{eur(p["bat16-3"]["prijs"])}, incl. installatie door eigen monteurs. Ook zonnepanelen en airco.')
+    if len(d) > 160: d = d.replace(' door eigen monteurs', '')
+    return d
+
+def city_main(c):
+    n, lab, wb = c['name'], label(c), c['wb']
     local = ''.join(f'<div><h3>{esc(h)}</h3><p>{inline(t)}</p></div>' for h, t in c['local'])
-    prods = ''.join(f'<a href="{u}"><img loading="lazy" decoding="async" src="/images/{im}.webp" alt="{esc(p)}"><div><b>{esc(p)}</b><span>{esc(pr)}</span></div></a>' for p, pr, u, im in PRODUCTS)
+    plist = sorted(PRODUCTS, key=lambda x: WB_ORDER.index(x[0])) if wb else PRODUCTS
+    prods = ''.join(f'<a href="{u}"><img loading="lazy" decoding="async" src="/images/{im}.webp" alt="{esc(p)}"><div><b>{esc(p)}</b><span>{esc(pr)}</span></div></a>' for p, pr, u, im in plist)
     arts = ''.join(f'<a href="/{a}">{esc(ART[a])} →</a>' for a in c['arts'] if os.path.exists(a + '.html'))
     faq = ''.join(f'<details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>' for q, a in city_faq(c))
     buren = ''.join(f'<a href="/installateur-{b}">{esc(BY[b]["name"])}</a>' for b in c['buren'])
     near = ', '.join(c['near'][:-1]) + ' en ' + c['near'][-1]
     wa = WA + urllib.parse.quote(f'Hoi Voltwijk, ik woon in {n} en heb een vraag')
+    h1attr = (' data-area="' + esc('|'.join(c.get('area', [n]))) + '" data-gemeente="' + esc(c['gemeente']) + '"') if wb else ''
+    sub = f'\n        <p class="lp-sub">Vaste prijs vanaf {esc(eur(VANAF))} inclusief installatie · ook zonnepanelen en airco</p>' if wb else ''
+    prod_kop = f'Ook zonnepanelen en airco in {esc(lab)}' if wb else f'Wat we in {esc(n)} installeren'
     return f'''<div class="blk-light" style="padding-top:40px;">
   {CSS}
   <div class="wrap reveal" style="max-width:1000px;padding-top:48px;">
-    {crumbs([('Werkgebied', '/werkgebied'), (n, None)])}
+    {crumbs([('Werkgebied', '/werkgebied'), (lab, None)])}
     <div class="lp-hero" style="margin-top:18px;">
       <div>
         <div class="pill">Werkgebied · {esc(c['region'])}</div>
-        <h1 class="vw-heading" style="font-size:clamp(30px,4.6vw,44px);margin-top:14px;line-height:1.15;">Zonnepanelen, thuisbatterij en warmtepomp in {esc(n)}</h1>
+        <h1 class="vw-heading"{h1attr} style="font-size:clamp(30px,4.6vw,44px);margin-top:14px;line-height:1.15;">{esc(h1_of(c))}</h1>{sub}
         <p style="font-size:17px;color:var(--ink-soft);margin-top:16px;line-height:1.65;">{esc(c['intro'])}</p>
         <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:24px;"><a href="/bereken-je-prijs" class="btn-primary" style="text-decoration:none;">Bereken je prijs &amp; plan direct →</a><a href="{wa}" target="_blank" rel="noopener" class="btn-secondary" style="text-decoration:none;">Stuur een appje</a></div>
       </div>
@@ -288,13 +534,15 @@ def city_main(c):
     </div>
     {STATS}
   </div>
+  {battery_block(lab)}
+  {extra_block(c)}
   <div class="wrap reveal lp-sec" style="max-width:1000px;">
-    <h2 class="vw-heading lp-h2">Wat we in {esc(n)} installeren</h2>
+    <h2 class="vw-heading lp-h2">{prod_kop}</h2>
     <p style="font-size:15.5px;color:var(--ink-soft);margin-top:10px;line-height:1.6;max-width:680px;">Vaste prijzen vooraf, inclusief installatie door ons eigen team.</p>
     <div class="lp-prod">{prods}</div>
   </div>
   <div class="wrap reveal lp-sec" style="max-width:1000px;">
-    <h2 class="vw-heading lp-h2">Goed om te weten in {esc(n)}</h2>
+    <h2 class="vw-heading lp-h2">Goed om te weten in {esc(lab)}</h2>
     <div class="lp-local">{local}</div>
   </div>
   <div class="wrap reveal lp-sec" style="max-width:1000px;">
@@ -308,7 +556,7 @@ def city_main(c):
   <div class="wrap reveal lp-sec" style="max-width:1000px;">
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;">
       <div>
-        <h2 class="vw-heading lp-h2">Veelgestelde vragen over {esc(n)}</h2>
+        <h2 class="vw-heading lp-h2">Veelgestelde vragen over {esc(lab)}</h2>
         <div class="faq" style="margin-top:18px;">{faq}</div>
       </div>
       <div>
@@ -325,21 +573,33 @@ def city_main(c):
 '''
 
 def overview_main():
+    gm = ''
+    for g, slugs, ook in WB_GEMEENTEN:
+        chips = ''.join(f'<a href="/installateur-{s}">{esc(label(BY[s]))}</a>' for s in slugs)
+        extra = f'<p>Ook: {esc(", ".join(ook))}.</p>' if ook else ''
+        gm += f'<div><h3>Gemeente {esc(g)}</h3><div class="lp-chips">{chips}</div>{extra}</div>'
     groups = ''
-    for label, slugs in GROUPS:
+    for lab, slugs in GROUPS:
         cards = ''.join(f'<a href="/installateur-{s}"><b>{esc(BY[s]["name"])}</b><span>Netbeheerder: {esc(NB[BY[s]["nb"]])}</span></a>' for s in slugs)
-        groups += f'<h2 class="vw-heading lp-h2" style="font-size:22px;margin-top:40px;">{esc(label)}</h2><div class="lp-grid">{cards}</div>'
+        groups += f'<h2 class="vw-heading lp-h2" style="font-size:22px;margin-top:40px;">{esc(lab)}</h2><div class="lp-grid">{cards}</div>'
     return f'''<div class="blk-light" style="padding-top:40px;">
   {CSS}
   <div class="wrap reveal" style="max-width:1000px;padding-top:48px;">
-    <div class="pill">Werkgebied</div>
-    <h1 class="vw-heading" style="font-size:clamp(30px,4.6vw,44px);margin-top:14px;line-height:1.15;">Actief in heel Nederland, met een eigen team</h1>
-    <p style="font-size:17px;color:var(--ink-soft);margin-top:16px;line-height:1.65;max-width:700px;">Ons kantoor zit in Zevenbergen, in West-Brabant. Van daaruit installeren we in heel Nederland zonnepanelen, thuisbatterijen, warmtepompen, airco's, boilers en laadpalen. Altijd met een vaste prijs vooraf.</p>
+    <div class="pill">Werkgebied · West-Brabant</div>
+    <h1 class="vw-heading" style="font-size:clamp(30px,4.6vw,44px);margin-top:14px;line-height:1.15;">Thuisbatterij en zonnepanelen in West-Brabant</h1>
+    <p style="font-size:17px;color:var(--ink-soft);margin-top:16px;line-height:1.65;max-width:700px;">Ons kantoor zit in Zevenbergen, midden in West-Brabant. Van daaruit installeren we thuisbatterijen, zonnepanelen en airco's in de hele regio, met ons eigen team en een vaste prijs vooraf. Hieronder vind je de plaatsen per gemeente.</p>
     {STATS}
   </div>
+  {battery_block()}
+  <div class="wrap reveal lp-sec" style="max-width:1000px;">
+    <h2 class="vw-heading lp-h2">West-Brabant: onze thuisbasis</h2>
+    <p style="font-size:15.5px;color:var(--ink-soft);margin-top:10px;line-height:1.6;max-width:680px;">Per gemeente de plaatsen met een eigen pagina. In de andere kernen van die gemeenten installeren we ook, met dezelfde vaste prijzen. Netbeheerder is in West-Brabant in de regel Enexis; je exacte adres is bepalend.</p>
+    <div class="lp-gm">{gm}</div>
+  </div>
   <div class="wrap reveal lp-sec" style="max-width:1000px;padding-top:24px;">
+    <h2 class="vw-heading lp-h2" style="margin-top:16px;">Andere plaatsen</h2>
     {groups}
-    <p style="font-size:15px;color:var(--ink-soft);margin-top:32px;line-height:1.6;">Staat jouw plaats er niet tussen? Geen probleem: we komen in heel Nederland. Vul je postcode in bij de <a href="/bereken-je-prijs" style="color:var(--primary);font-weight:700;">prijscalculator</a> en je ziet direct je prijs.</p>
+    <p style="font-size:15px;color:var(--ink-soft);margin-top:32px;line-height:1.6;">Staat jouw plaats er niet tussen? Vul je postcode in bij de <a href="/bereken-je-prijs" style="color:var(--primary);font-weight:700;">prijscalculator</a> of <a href="/contact" style="color:var(--primary);font-weight:700;">neem contact op</a>, dan hoor je snel of we bij jou kunnen komen.</p>
   </div>
   {cta('Zie direct wat het bij jou kost', 'Vul je postcode en woningtype in en zie binnen een minuut je vaste prijs, inclusief installatie.')}
 </div>
@@ -354,7 +614,7 @@ def page(shell, main, slug, title, desc):
     s = re.sub(r'\n?<!-- rel:start -->.*?<!-- rel:end -->', '', s, flags=re.S)
     return s
 
-FOOT_CITIES = ['zevenbergen', 'breda', 'dordrecht', 'rotterdam', 'tilburg', 'eindhoven']
+FOOT_CITIES = ['zevenbergen', 'breda', 'etten-leur', 'roosendaal', 'oosterhout', 'bergen-op-zoom']
 def footer_col():
     links = ''.join(f'\n          <a href="/installateur-{s}" style="color:inherit;text-decoration:none;">{esc(BY[s]["name"])}</a>' for s in FOOT_CITIES)
     return ('<!-- wg:start --><div style="font-size:13px;color:#C9D6D3;display:flex;flex-direction:column;gap:10px;">\n'
@@ -364,14 +624,14 @@ def footer_col():
 def main():
     shell = open(SHELL, encoding='utf-8').read()
     for c in CITIES:
-        n = c['name']
-        title = f'Thuisbatterij, zonnepanelen & warmtepomp {n} | Voltwijk'
-        desc = f'Thuisbatterij, zonnepanelen of warmtepomp in {n}? Vaste prijs vooraf, eigen monteurs, 12.500+ installaties, 4,7/5 op Google.'
+        for b in c['buren']: assert b in BY, (c['slug'], b)
+        title, desc = title_of(c), desc_of(c)
+        assert len(title) <= 60 or not c['wb'], title
         assert len(desc) <= 160, desc
         open(f'installateur-{c["slug"]}.html', 'w', encoding='utf-8').write(page(shell, city_main(c), f'installateur-{c["slug"]}', title, desc))
     open('werkgebied.html', 'w', encoding='utf-8').write(page(shell, overview_main(), 'werkgebied',
-        'Werkgebied: installateur in heel Nederland | Voltwijk',
-        'Voltwijk installeert zonnepanelen, thuisbatterijen, warmtepompen en laadpalen in heel Nederland, vanuit Zevenbergen. Bekijk je plaats en bereken je vaste prijs.'))
+        'Werkgebied: thuisbatterij en zonnepanelen in West-Brabant',
+        'Thuisbatterij, zonnepanelen en airco in heel West-Brabant, vanuit ons kantoor in Zevenbergen. Bekijk je plaats per gemeente en zie je vaste prijs.'))
     # footer-kolom op alle pagina's
     col = footer_col(); n = 0
     for f in sorted(os.listdir('.')):

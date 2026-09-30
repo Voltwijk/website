@@ -1,0 +1,118 @@
+/* A5 staand, 148 x 210 mm netto + 3 mm afloop rondom. Veilige marge 12 mm vanaf de snijlijn. */
+@page{size:154mm 216mm;margin:0;}
+:root{--ink:#10201F;--teal:#0F6E6B;--teal-d:#0B4F4D;--mint:#6FD6C8;--coral:#FF6B5B;--mist:#F5F7F5;--tint:#E4F0EF;--soft:#233532;--faint:#54615F;--line:#D9E3E0;
+  --disp:'Bricolage Grotesque','Nunito Sans',Arial,sans-serif;--body:'Nunito Sans',Arial,sans-serif;}
+*{box-sizing:border-box;}
+html,body{margin:0;background:#cfd8d5;}
+body{font-family:var(--body);color:var(--ink);-webkit-font-smoothing:antialiased;print-color-adjust:exact;-webkit-print-color-adjust:exact;}
+.pg{position:relative;width:154mm;height:216mm;overflow:hidden;background:#fff;margin:0 auto 10mm;page-break-after:always;break-after:page;}
+@media print{html,body{background:none;}.pg{margin:0;}}
+.in{position:absolute;inset:15mm;display:flex;flex-direction:column;}
+.pn{position:absolute;bottom:8mm;font-size:7pt;color:var(--faint);letter-spacing:.08em;}
+.pn.l{left:15mm;}.pn.r{right:15mm;}
+.eyebrow{font-size:7pt;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);display:flex;align-items:center;gap:2mm;}
+.eyebrow::before{content:"";width:1.6mm;height:1.6mm;border-radius:50%;background:var(--coral);}
+h1,h2,h3{font-family:var(--disp);margin:0;letter-spacing:-.015em;text-wrap:balance;}
+h2{font-size:22pt;line-height:1.08;margin-top:4mm;font-weight:700;}
+h3{font-size:11.5pt;line-height:1.2;font-weight:700;}
+p{margin:0;font-size:9.4pt;line-height:1.55;color:var(--soft);}
+.lead{font-size:10.6pt;line-height:1.5;color:var(--soft);margin-top:4mm;}
+.logo svg{display:block;width:100%;height:auto;}
+.photo{background-size:cover;background-position:center;}
+.small{font-size:7.6pt;color:var(--faint);line-height:1.5;}
+
+/* 1 omslag */
+.cover .photo{position:absolute;inset:0;}
+.cover .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,32,31,.55) 0%,rgba(16,32,31,.05) 30%,rgba(16,32,31,.25) 55%,rgba(16,32,31,.92) 100%);}
+.cover .logo{position:absolute;left:15mm;top:15mm;width:44mm;}
+.cover .txt{position:absolute;left:15mm;right:15mm;bottom:24mm;color:#fff;}
+.cover h1{font-size:30pt;line-height:1.02;font-weight:700;color:#fff;}
+.cover .sub{font-size:10.5pt;color:#E4F0EF;margin-top:5mm;line-height:1.5;max-width:100mm;}
+.cover .chips{display:flex;gap:2mm;margin-top:6mm;flex-wrap:wrap;}
+.cover .chips span{border:.3mm solid rgba(255,255,255,.55);border-radius:10mm;padding:1.4mm 3.4mm;font-size:7.6pt;font-weight:700;letter-spacing:.04em;}
+.cover .foot{position:absolute;left:15mm;right:15mm;bottom:11mm;display:flex;justify-content:space-between;color:#9FD9D0;font-size:7.6pt;font-weight:700;letter-spacing:.06em;}
+
+/* 2 over ons */
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:3mm;margin-top:7mm;}
+.fact{background:var(--mist);border-radius:3mm;padding:4mm;}
+.fact b{display:block;font-family:var(--disp);font-size:17pt;line-height:1;color:var(--teal);font-weight:700;}
+.fact span{display:block;font-size:8pt;color:var(--soft);margin-top:1.6mm;line-height:1.4;}
+.p2 .photo{height:52mm;border-radius:3.5mm;margin-top:auto;}
+
+/* 3 waarom */
+.dag{display:grid;grid-template-columns:repeat(3,1fr);gap:3mm;margin-top:7mm;}
+.dag div{border-radius:3mm;padding:4mm;min-height:40mm;}
+.dag i{display:block;font-style:normal;font-size:7pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;}
+.dag b{display:block;font-family:var(--disp);font-size:11pt;margin-top:2.4mm;line-height:1.2;}
+.dag span{display:block;font-size:8pt;line-height:1.45;margin-top:2mm;}
+.d1{background:#FFF4E0;}.d1 i{color:#A0661A;}
+.d2{background:var(--tint);}.d2 i{color:var(--teal);}
+.d3{background:var(--ink);color:#fff;}.d3 i{color:var(--mint);}.d3 span{color:#C9D6D3;}
+.callout{margin-top:6mm;border-left:1mm solid var(--coral);padding:1mm 0 1mm 4mm;}
+.callout b{font-family:var(--disp);font-size:12pt;display:block;}
+.callout p{margin-top:1.5mm;}
+
+/* 4 pakketten */
+.pk{display:grid;gap:3mm;margin-top:6mm;}
+.pkg{display:grid;grid-template-columns:1fr auto;align-items:center;gap:2mm 5mm;border:.35mm solid var(--line);border-radius:3.5mm;padding:4mm 5mm;}
+.pkg.hl{border:.6mm solid var(--teal);background:linear-gradient(135deg,#fff 50%,var(--tint));position:relative;}
+.pkg.hl::after{content:"Onze aanrader";position:absolute;top:-2.6mm;left:5mm;background:var(--teal);color:#fff;font-size:6.4pt;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:.8mm 2.4mm;border-radius:5mm;}
+.pkg h3{font-size:13pt;}
+.pkg small{display:block;font-size:8pt;color:var(--faint);margin-top:1mm;}
+.pkg .pr{font-family:var(--disp);font-size:18pt;font-weight:700;text-align:right;line-height:1;}
+.pkg .pr em{display:block;font-style:normal;font-family:var(--body);font-size:6.8pt;color:var(--faint);font-weight:700;margin-top:1mm;}
+.pkg .fit{grid-column:1/-1;font-size:8.2pt;color:var(--soft);}
+.inc{margin-top:5mm;display:grid;grid-template-columns:1fr 1fr;gap:1.6mm 5mm;}
+.inc div{font-size:8.2pt;color:var(--soft);display:flex;gap:2mm;line-height:1.35;}
+.inc div::before{content:"✓";color:var(--teal);font-weight:800;}
+.qrline{margin-top:auto;display:flex;gap:5mm;align-items:center;background:var(--mist);border-radius:3.5mm;padding:4mm;}
+.qrline img{width:20mm;height:20mm;display:block;background:#fff;padding:1.5mm;border-radius:2mm;}
+.qrline b{font-family:var(--disp);font-size:11pt;display:block;}
+
+/* 5 zon + airco */
+.duo{display:grid;gap:5mm;margin-top:6mm;flex:1;}
+.prod{display:grid;grid-template-columns:44mm 1fr;gap:5mm;}
+.prod .photo{border-radius:3.5mm;min-height:52mm;}
+.prod .price{font-family:var(--disp);font-size:15pt;font-weight:700;color:var(--teal);margin-top:2mm;}
+.prod .price small{font-family:var(--body);font-size:7.4pt;color:var(--faint);font-weight:700;}
+.prod ul{margin:2.5mm 0 0;padding:0;list-style:none;display:grid;gap:1.3mm;}
+.prod li{font-size:8.4pt;color:var(--soft);display:flex;gap:2mm;line-height:1.4;}
+.prod li::before{content:"";width:1.4mm;height:1.4mm;border-radius:50%;background:var(--mint);margin-top:1.4mm;flex-shrink:0;}
+
+/* 6 prijzen */
+table{width:100%;border-collapse:collapse;margin-top:6mm;}
+td,th{text-align:left;padding:3.2mm 0;border-bottom:.3mm solid var(--line);font-size:9pt;vertical-align:top;}
+th{font-size:6.8pt;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);font-weight:800;padding-top:0;}
+td:last-child,th:last-child{text-align:right;white-space:nowrap;}
+td b{font-family:var(--disp);font-size:10.5pt;}
+td span{display:block;font-size:7.8pt;color:var(--faint);margin-top:.6mm;}
+td.p{font-family:var(--disp);font-weight:700;font-size:10.5pt;}
+
+/* 7 stappen */
+.steps{display:grid;gap:0;margin-top:6mm;}
+.st{display:grid;grid-template-columns:9mm 1fr;gap:4mm;padding-bottom:4.2mm;position:relative;}
+.st::before{content:"";position:absolute;left:4.3mm;top:9mm;bottom:0;width:.35mm;background:var(--line);}
+.st:last-child::before{display:none;}
+.st i{width:9mm;height:9mm;border-radius:50%;background:var(--ink);color:#fff;font-style:normal;font-family:var(--disp);font-weight:700;font-size:10pt;display:flex;align-items:center;justify-content:center;}
+.st h3{font-size:10.5pt;margin-top:1.6mm;}
+.st p{font-size:8.4pt;margin-top:1mm;}
+.guar{margin-top:auto;background:var(--ink);color:#fff;border-radius:3.5mm;padding:5mm;display:grid;grid-template-columns:1fr 1fr;gap:3mm 6mm;}
+.guar div{font-size:8.2pt;color:#C9D6D3;line-height:1.4;}
+.guar b{display:block;color:#fff;font-family:var(--disp);font-size:10pt;margin-bottom:.6mm;}
+
+/* 8 jouw advies + achterkant */
+.form{border:.35mm solid var(--line);border-radius:3.5mm;padding:5mm;margin-top:5mm;display:grid;gap:3.6mm;}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:5mm;}
+.fld{font-size:6.8pt;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);}
+.fld .ln{height:7mm;border-bottom:.35mm solid #B9C7C3;}
+.box{display:flex;flex-wrap:wrap;gap:2mm 4mm;margin-top:2mm;}
+.box span{font-size:8.4pt;color:var(--soft);display:flex;align-items:center;gap:1.8mm;letter-spacing:0;text-transform:none;font-weight:600;}
+.box span::before{content:"";width:3.2mm;height:3.2mm;border:.35mm solid #8FA19C;border-radius:.8mm;}
+.lines .ln{height:6.4mm;}
+.back{position:absolute;left:0;right:0;bottom:0;height:62mm;background:var(--ink);color:#fff;}
+.back .bi{position:absolute;inset:9mm 15mm 12mm;display:grid;grid-template-columns:1fr auto;gap:6mm;align-items:end;}
+.back .logo{width:40mm;margin-bottom:5mm;}
+.back .c{font-size:9pt;line-height:1.7;color:#C9D6D3;}
+.back .c b{color:#fff;font-weight:700;}
+.back img{width:22mm;height:22mm;background:#fff;padding:1.6mm;border-radius:2mm;display:block;}
+.back .q{font-size:6.8pt;color:#9FB0AD;text-align:center;margin-top:1.6mm;letter-spacing:.04em;}

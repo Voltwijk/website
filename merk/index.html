@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Voltwijk Merkboek</title>
+<meta name="description" content="Het merkboek van Voltwijk: logo's, kleuren, lettertypes, visitekaartjes, brochure, flyers en e-mailhandtekening, met alle bestanden om te downloaden.">
+<link rel="icon" href="kit/logo/voltwijk-app-icoon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/kit.css">
+<style>
+/* Merkboek: donkere zijbalk met hoofdstukken, lichte inhoud. Tokens = de merkkleuren zelf. */
+:root{
+  --nacht:#10201F; --teal:#0F6E6B; --teal-d:#0B4F4D; --mint:#6FD6C8; --koraal:#FF6B5B; --mist:#F5F7F5;
+  --tint:#E4F0EF; --ink:#10201F; --soft:#233532; --faint:#54615F; --line:#E0E8E6; --card:#FFFFFF;
+  --disp:'Bricolage Grotesque','Nunito Sans',system-ui,sans-serif; --body:'Nunito Sans',system-ui,sans-serif;
+  --mono:ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;
+  --r-s:10px; --r-m:16px; --r-l:24px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}*{transition:none!important;animation:none!important;}}
+body{margin:0;background:var(--mist);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+a{color:var(--teal);}
+h1,h2,h3,h4{font-family:var(--disp);letter-spacing:-.02em;margin:0;text-wrap:balance;line-height:1.1;}
+p{margin:0;}
+button{font:inherit;cursor:pointer;}
+:focus-visible{outline:3px solid var(--koraal);outline-offset:2px;border-radius:6px;}
+svg{display:block;}
+
+/* layout */
+.app{display:grid;grid-template-columns:272px minmax(0,1fr);min-height:100vh;}
+.side{position:sticky;top:0;height:100vh;overflow:auto;background:var(--nacht);color:#C9D6D3;padding:28px 22px 32px;display:flex;flex-direction:column;gap:22px;}
+.side .brand{width:150px;}
+.side small{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7A948F;font-weight:800;margin-top:8px;}
+.nav{display:flex;flex-direction:column;gap:2px;}
+.nav a{display:flex;align-items:center;gap:10px;color:#C9D6D3;text-decoration:none;font-weight:700;font-size:14.5px;padding:9px 12px;border-radius:10px;}
+.nav a i{font-style:normal;font-family:var(--mono);font-size:11px;color:#7A948F;width:18px;}
+.nav a:hover{background:rgba(255,255,255,.06);color:#fff;}
+.nav a.on{background:rgba(111,214,200,.14);color:#fff;}
+.nav a.on i{color:var(--mint);}
+.side .foot{margin-top:auto;font-size:12.5px;line-height:1.55;color:#7A948F;}
+main{min-width:0;padding:0 clamp(16px,4vw,56px) 96px;}
+.sec{padding-top:72px;scroll-margin-top:12px;max-width:1080px;}
+.sec > header{display:grid;gap:10px;margin-bottom:28px;max-width:720px;}
+.eyebrow{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);}
+.eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--koraal);}
+.sec h2{font-size:clamp(30px,4vw,44px);}
+.sec header p{font-size:17px;color:var(--soft);}
+h3{font-size:21px;}
+.lede{font-size:18px;color:var(--soft);max-width:680px;}
+.grid{display:grid;gap:16px;}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr));}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr));}
+.g4{grid-template-columns:repeat(4,minmax(0,1fr));}
+.box{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:22px;min-width:0;}
+.box h3+p,.box h4+p{margin-top:6px;color:var(--soft);font-size:15px;}
+.muted{color:var(--faint);font-size:14px;}
+.sub{margin-top:40px;margin-bottom:16px;display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+.sub h3{font-size:22px;}
+
+/* hero */
+.hero{margin:24px 0 0;border-radius:var(--r-l);background:var(--nacht);color:#fff;padding:clamp(28px,5vw,56px);position:relative;overflow:hidden;display:grid;gap:18px;max-width:1080px;}
+.hero .wm{position:absolute;right:-70px;bottom:-90px;width:420px;color:#fff;opacity:.05;}
+.hero h1{font-size:clamp(38px,6vw,68px);color:#fff;max-width:760px;position:relative;}
+.hero h1 em{font-style:normal;color:var(--mint);}
+.hero p{color:#C9D6D3;font-size:18px;max-width:600px;position:relative;}
+.quick{display:flex;gap:10px;flex-wrap:wrap;position:relative;}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:11px 18px;font-weight:800;font-size:14px;text-decoration:none;border:0;}
+.btn.mint{background:var(--mint);color:var(--nacht);}
+.btn.ghost{border:1.5px solid rgba(255,255,255,.5);color:#fff;background:none;}
+.btn.dark{background:var(--nacht);color:#fff;}
+.btn.line{border:1.5px solid var(--line);color:var(--ink);background:#fff;}
+.btn svg{width:16px;height:16px;}
+
+/* asset met downloads bij hover */
+.asset{position:relative;border-radius:var(--r-m);overflow:hidden;background:var(--card);border:1px solid var(--line);min-width:0;}
+.asset .stage{display:flex;align-items:center;justify-content:center;padding:34px 28px;min-height:190px;}
+.asset .meta{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:12px 16px;border-top:1px solid var(--line);font-size:13.5px;}
+.asset .meta b{font-weight:800;}
+.asset .meta span{color:var(--faint);}
+.dl{position:absolute;inset:0;bottom:auto;height:calc(100% - 46px);display:flex;flex-wrap:wrap;align-content:center;justify-content:center;gap:8px;padding:16px;background:rgba(16,32,31,.78);opacity:0;transition:opacity .18s;backdrop-filter:blur(2px);}
+.asset:hover .dl,.asset:focus-within .dl{opacity:1;}
+.dl a{display:inline-flex;align-items:center;gap:6px;background:#fff;color:var(--nacht);text-decoration:none;font-weight:800;font-size:13px;border-radius:999px;padding:9px 14px;}
+.dl a:hover{background:var(--mint);}
+.dl a svg{width:14px;height:14px;}
+.dl .hint{flex-basis:100%;text-align:center;color:#C9D6D3;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;}
+@media (hover:none){.dl{position:static;height:auto;opacity:1;background:var(--tint);backdrop-filter:none;justify-content:flex-start;padding:10px 12px;}.dl .hint{display:none;}.dl a{border:1px solid var(--line);}}
+.on-dark{background:var(--nacht);}
+.on-teal{background:var(--teal);}
+.on-mist{background:var(--mist);}
+.logo-w{width:min(260px,80%);}
+.mark-w{width:92px;}
+
+/* regels */
+.rule{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start;font-size:15px;color:var(--soft);}
+.rule i{width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-style:normal;font-weight:800;font-size:13px;flex-shrink:0;}
+.rule.ok i{background:var(--tint);color:var(--teal);}
+.rule.no i{background:#FFE3DE;color:#C6402E;}
+.donts .stage{min-height:130px;padding:22px;}
+.donts .asset{cursor:default;}
+.x{position:absolute;top:10px;right:10px;width:26px;height:26px;border-radius:50%;background:#FFE3DE;color:#C6402E;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:14px;}
+
+/* vrije ruimte-schema */
+.clear{position:relative;padding:40px;border:1.5px dashed #9FC9C3;border-radius:var(--r-s);background:repeating-linear-gradient(45deg,#fff,#fff 8px,var(--tint) 8px,var(--tint) 9px);}
+.clear .logo-w{background:#fff;padding:0;}
+.clear .lbl{position:absolute;font-family:var(--mono);font-size:11px;color:var(--teal);font-weight:700;}
+
+/* kleuren */
+.sw{border-radius:var(--r-m);overflow:hidden;border:1px solid var(--line);background:var(--card);min-width:0;}
+.sw .chip{height:128px;padding:16px;display:flex;align-items:flex-end;justify-content:space-between;}
+.sw .chip b{font-family:var(--disp);font-size:20px;}
+.sw .chip small{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;opacity:.8;}
+.sw .codes{display:grid;padding:8px;gap:2px;}
+.code{display:flex;justify-content:space-between;gap:10px;align-items:center;border:0;background:none;padding:7px 8px;border-radius:8px;text-align:left;font-size:13px;color:var(--ink);width:100%;}
+.code span{color:var(--faint);font-weight:800;font-size:11px;letter-spacing:.1em;min-width:40px;}
+.code code{font-family:var(--mono);font-size:12.5px;overflow-wrap:anywhere;}
+.code:hover{background:var(--tint);}
+.code:hover::after{content:"Kopieer";font-size:11px;font-weight:800;color:var(--teal);}
+.code:hover code{display:none;}
+.ratio{display:flex;height:56px;border-radius:var(--r-s);overflow:hidden;border:1px solid var(--line);}
+.ratio div{display:flex;align-items:flex-end;padding:8px 10px;font-size:12px;font-weight:800;}
+.pair{display:flex;align-items:center;justify-content:space-between;gap:10px;border-radius:var(--r-s);padding:14px 16px;font-weight:800;}
+.pair small{font-family:var(--mono);font-size:12px;font-weight:700;}
+
+/* type */
+.spec{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:24px;align-items:end;}
+.spec .big{font-family:var(--disp);font-size:clamp(64px,10vw,128px);line-height:.9;letter-spacing:-.04em;}
+.spec .big.b{font-family:var(--body);letter-spacing:-.02em;font-weight:800;}
+.alpha{font-size:22px;letter-spacing:.02em;color:var(--soft);margin-top:14px;overflow-wrap:anywhere;}
+.scale{display:grid;gap:0;}
+.scale div{display:grid;grid-template-columns:130px minmax(0,1fr);gap:16px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--line);}
+.scale code{font-family:var(--mono);font-size:12px;color:var(--faint);}
+pre.snip{position:relative;margin:0;background:var(--nacht);color:#DDE7E5;border-radius:var(--r-s);padding:16px 18px;font-size:12.5px;line-height:1.6;overflow-x:auto;font-family:var(--mono);}
+.copybtn{position:absolute;top:10px;right:10px;background:var(--mint);color:var(--nacht);border:0;border-radius:999px;padding:5px 12px;font-weight:800;font-size:12px;}
+
+/* elementen */
+.pill{display:inline-flex;align-items:center;gap:8px;background:#D6EAE8;color:var(--teal-d);font-weight:800;font-size:12px;letter-spacing:.1em;text-transform:uppercase;padding:7px 12px;border-radius:999px;}
+.radii{display:flex;gap:14px;flex-wrap:wrap;}
+.radii div{width:96px;height:72px;background:var(--tint);border:1.5px solid var(--teal);display:flex;align-items:flex-end;padding:8px;font-family:var(--mono);font-size:11px;color:var(--teal-d);}
+
+/* foto */
+.photos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;}
+.photos .asset .stage{padding:0;min-height:0;}
+.photos img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;}
+
+/* toon */
+.say{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--r-m);overflow:hidden;background:#fff;}
+.say div{padding:16px 18px;font-size:15px;border-bottom:1px solid var(--line);}
+.say div:nth-child(odd){border-right:1px solid var(--line);}
+.say .h{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;}
+.say .h.no{color:#C6402E;background:#FFF6F4;}
+.say .h.ok{color:var(--teal);background:var(--tint);}
+.tags{display:flex;gap:8px;flex-wrap:wrap;}
+.tags span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:14px;font-weight:700;}
+table.prices{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--r-m);overflow:hidden;border:1px solid var(--line);}
+table.prices td,table.prices th{padding:12px 16px;border-bottom:1px solid var(--line);text-align:left;font-size:15px;}
+table.prices th{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);background:var(--mist);}
+table.prices td:last-child{text-align:right;font-family:var(--disp);font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums;}
+
+/* visitekaartjes */
+.cards{display:grid;gap:20px;}
+.cardrow{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) 260px;gap:16px;align-items:stretch;}
+.cardrow .asset .stage{background:#E3E9E7;padding:26px 18px;min-height:0;}
+.cscale{width:100%;display:flex;justify-content:center;}
+.cscale > div{transform-origin:top left;}
+.cardinfo{display:flex;flex-direction:column;gap:10px;justify-content:center;}
+.cardinfo h4{font-size:24px;}
+.cardinfo p{font-size:14.5px;color:var(--soft);}
+.gen{display:grid;grid-template-columns:320px minmax(0,1fr);gap:20px;align-items:start;}
+.fields{display:grid;gap:10px;}
+.fields label{display:grid;gap:5px;font-size:13px;font-weight:800;color:var(--soft);}
+.fields input,.fields select{width:100%;border:1.5px solid var(--line);border-radius:10px;padding:10px 12px;font:inherit;font-size:15px;background:#fff;color:var(--ink);}
+.fields input:focus,.fields select:focus{outline:none;border-color:var(--teal);}
+.seg{display:flex;gap:6px;flex-wrap:wrap;}
+.seg button{border:1.5px solid var(--line);background:#fff;border-radius:999px;padding:8px 14px;font-weight:800;font-size:13px;color:var(--soft);}
+.seg button[aria-pressed="true"]{background:var(--nacht);border-color:var(--nacht);color:#fff;}
+.preview{background:#E3E9E7;border-radius:var(--r-m);padding:24px;display:grid;gap:18px;justify-items:center;}
+.actions{display:flex;gap:8px;flex-wrap:wrap;}
+.spec-list{display:grid;gap:6px;font-size:14.5px;color:var(--soft);}
+.spec-list div{display:flex;gap:10px;}
+.spec-list b{min-width:130px;color:var(--ink);}
+
+/* brochure */
+.pages{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;}
+.pages .asset .stage{padding:10px;min-height:0;background:#E3E9E7;}
+.pages img{display:block;width:100%;height:auto;border-radius:3px;box-shadow:0 10px 24px -14px rgba(16,32,31,.5);}
+
+/* handtekening */
+.sigwrap{background:#fff;border:1px solid var(--line);border-radius:var(--r-m);padding:24px;overflow-x:auto;}
+.mailhead{font-size:13px;color:var(--faint);border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:18px;}
+.steps{display:grid;gap:10px;counter-reset:s;}
+.steps div{display:grid;grid-template-columns:28px 1fr;gap:10px;font-size:14.5px;color:var(--soft);}
+.steps div::before{counter-increment:s;content:counter(s);width:28px;height:28px;border-radius:50%;background:var(--nacht);color:#fff;font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center;}
+details.howto{background:#fff;border:1px solid var(--line);border-radius:var(--r-s);padding:12px 16px;}
+details.howto summary{font-weight:800;cursor:pointer;}
+details.howto .steps{margin-top:12px;}
+
+/* downloads */
+.files{display:grid;gap:0;background:#fff;border:1px solid var(--line);border-radius:var(--r-m);overflow:hidden;}
+.files a{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:14px;align-items:center;padding:12px 16px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:14.5px;}
+.files a:hover{background:var(--tint);}
+.files a span{color:var(--faint);font-size:12px;font-weight:800;letter-spacing:.08em;}
+.files a em{font-style:normal;font-weight:800;color:var(--teal);font-size:13px;}
+.files a b{font-weight:700;overflow-wrap:anywhere;}
+
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);background:var(--nacht);color:#fff;border-radius:999px;padding:10px 18px;font-weight:800;font-size:14px;opacity:0;transition:.2s;pointer-events:none;z-index:50;}
+.toast.on{opacity:1;transform:translate(-50%,0);}
+
+/* mobiel */
+.topbar{display:none;}
+@media (max-width:980px){
+  .app{grid-template-columns:minmax(0,1fr);}
+  .side{display:none;}
+  .topbar{display:flex;position:sticky;top:0;z-index:20;background:var(--nacht);padding:12px 16px;gap:14px;align-items:center;overflow-x:auto;scrollbar-width:none;}
+  .topbar .brand{width:96px;flex-shrink:0;}
+  .topbar a{color:#C9D6D3;text-decoration:none;font-weight:800;font-size:13px;white-space:nowrap;padding:6px 10px;border-radius:999px;}
+  .topbar a.on{background:rgba(111,214,200,.18);color:#fff;}
+  .sec{scroll-margin-top:60px;}
+  .g4{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .g3{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .cardrow{grid-template-columns:minmax(0,1fr) minmax(0,1fr);}
+  .cardinfo{grid-column:1/-1;order:-1;}
+  .gen{grid-template-columns:minmax(0,1fr);}
+  .pages{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .spec{grid-template-columns:minmax(0,1fr);}
+}
+@media (max-width:620px){
+  .g2,.g3,.g4,.cardrow,.photos{grid-template-columns:minmax(0,1fr);}
+  .say{grid-template-columns:minmax(0,1fr);}
+  .say div:nth-child(odd){border-right:0;}
+  .scale div{grid-template-columns:minmax(0,1fr);gap:4px;}
+  .files a{grid-template-columns:minmax(0,1fr) auto;}
+  .files a span{display:none;}
+}
+</style>
+</head>
+<body>
+<div class="topbar" id="topbar"></div>
+<div class="app">
+<aside class="side">
+  <div><div class="brand" data-logo="wit"></div><small>Merkboek · versie 1.0</small></div>
+  <nav class="nav" id="nav"></nav>
+  <div class="foot">Vragen over het merk of een bestand dat ontbreekt? Mail naar info@voltwijk.nl.<br><br>Alle bestanden zijn van Voltwijk B.V. De lettertypes vallen onder de SIL Open Font License.</div>
+</aside>
+
+<main>
+<div class="hero">
+  <div class="wm" data-logo="w_mono"></div>
+  <div class="eyebrow" style="color:var(--mint)">Voltwijk merkboek</div>
+  <h1>Alles wat Voltwijk <em>herkenbaar</em> maakt, op één plek.</h1>
+  <p>Logo’s, kleuren, lettertypes, visitekaartjes, de brochure, flyers en de e-mailhandtekening. Ga met je muis over een ontwerp om het te downloaden. Klik op een kleurcode om hem te kopiëren.</p>
+  <div class="quick">
+    <a class="btn mint" href="#downloads">Alle downloads</a>
+    <a class="btn ghost" href="#kaartjes">Visitekaartje maken</a>
+    <a class="btn ghost" href="#handtekening">Mailhandtekening</a>
+  </div>
+</div>
+
+<!-- 01 Merk -->
+<section class="sec" id="merk" data-t="Het merk">
+  <header><div class="eyebrow">01 · Het merk</div><h2>Eén vaste prijs. Eigen monteurs.</h2>
+  <p>Voltwijk installeert thuisbatterijen, zonnepanelen en airco’s, vanuit Zevenbergen. Mensen kiezen voor ons omdat ze vooraf weten wat ze betalen en wie er komt. Alles wat we maken moet dat gevoel geven: helder, eerlijk en dichtbij.</p></header>
+  <div class="grid g4">
+    <div class="box"><h4>Eerlijk</h4><p>We noemen vaste prijzen en zeggen het als iets niet loont. Geen kleine lettertjes.</p></div>
+    <div class="box"><h4>Concreet</h4><p>Liever “16 kWh voor € 4.600” dan “de beste oplossing voor jouw huis”.</p></div>
+    <div class="box"><h4>Vakkundig</h4><p>Eigen monteurs, netjes werk en uitleg zonder jargon.</p></div>
+    <div class="box"><h4>Dichtbij</h4><p>Gevestigd in Zevenbergen, actief in West-Brabant. Bereikbaar en persoonlijk.</p></div>
+  </div>
+  <div class="sub"><h3>Waar we mee voorop gaan</h3></div>
+  <div class="grid g3">
+    <div class="box" style="border-color:var(--teal);box-shadow:inset 0 0 0 1px var(--teal)"><div class="eyebrow">Eerst</div><h3 style="margin-top:6px">Thuisbatterij</h3><p>10 of 16 kWh, vanaf € 4.200 inclusief installatie. Dit product staat altijd bovenaan.</p></div>
+    <div class="box"><div class="eyebrow">Daarna</div><h3 style="margin-top:6px">Zonnepanelen</h3><p>Vanaf € 3.999. Altijd in combinatie met de vraag: past er ook een batterij bij?</p></div>
+    <div class="box"><div class="eyebrow">Daarna</div><h3 style="margin-top:6px">Airco</h3><p>Vanaf € 1.899. Koelen in de zomer, zuinig bijverwarmen in voor- en najaar.</p></div>
+  </div>
+</section>
+
+<!-- 02 Logo -->
+<section class="sec" id="logo" data-t="Logo">
+  <header><div class="eyebrow">02 · Logo</div><h2>Het logo</h2>
+  <p>Het woordmerk VOLTWIJK met de tweekleurige W en de koraalrode punt. De punt staat voor het moment dat de stroom aangaat. Gebruik altijd een origineel bestand hieronder; teken het logo nooit na.</p></header>
+  <div class="grid g3" id="logos"></div>
+  <div class="sub"><h3>Vrije ruimte en minimale maat</h3></div>
+  <div class="grid g2">
+    <div class="box"><div class="clear"><div class="logo-w" data-logo="kleur" style="width:100%"></div></div>
+      <p class="muted" style="margin-top:12px">Houd rondom het logo minstens de hoogte van de letter V vrij. In die ruimte staat geen tekst, rand of ander beeld.</p></div>
+    <div class="box" style="display:grid;gap:14px;align-content:start">
+      <div class="rule ok"><i>✓</i><div><b>Minimaal 25 mm breed</b> in print, <b>120 px</b> op een scherm. Kleiner? Gebruik het beeldmerk W.</div></div>
+      <div class="rule ok"><i>✓</i><div>Op licht: logo in kleur. Op Nacht of Teal: wit logo. Op een foto: wit logo op het donkerste deel.</div></div>
+      <div class="rule ok"><i>✓</i><div>Het beeldmerk W alleen gebruiken als het woordmerk al in beeld is geweest, of als icoon (app, social, favicon).</div></div>
+      <div class="rule ok"><i>✓</i><div>Zwart logo alleen voor éénkleurig drukwerk, zoals een stempel of een fax.</div></div>
+    </div>
+  </div>
+  <div class="sub"><h3>Zo niet</h3></div>
+  <div class="grid g4 donts" id="donts"></div>
+</section>
+
+<!-- 03 Kleur -->
+<section class="sec" id="kleur" data-t="Kleuren">
+  <header><div class="eyebrow">03 · Kleuren</div><h2>Kleuren</h2>
+  <p>Vijf hoofdkleuren. Nacht en Mist dragen het ontwerp, Teal is de merkkleur, Mint en Koraal zijn accenten. Klik op een code om hem te kopiëren.</p></header>
+  <div class="grid g3" id="swatches"></div>
+  <div class="sub"><h3>Ondersteunende kleuren</h3><span class="muted">Voor vlakken, lijnen en tekst</span></div>
+  <div class="grid g3" id="swatches2"></div>
+  <div class="sub"><h3>Verhouding</h3><span class="muted">Zoveel van elke kleur, ongeveer</span></div>
+  <div class="ratio">
+    <div style="flex:55;background:var(--mist);color:var(--faint)">Mist / wit 55%</div>
+    <div style="flex:25;background:var(--nacht);color:#fff">Nacht 25%</div>
+    <div style="flex:12;background:var(--teal);color:#fff">Teal 12%</div>
+    <div style="flex:5;background:var(--mint);color:var(--nacht)">5%</div>
+    <div style="flex:3;background:var(--koraal)"></div>
+  </div>
+  <div class="sub"><h3>Leesbare combinaties</h3></div>
+  <div class="grid g3">
+    <div class="pair" style="background:var(--mist);color:var(--nacht)">Nacht op Mist <small>AAA</small></div>
+    <div class="pair" style="background:var(--nacht);color:#fff">Wit op Nacht <small>AAA</small></div>
+    <div class="pair" style="background:var(--teal);color:#fff">Wit op Teal <small>AA</small></div>
+    <div class="pair" style="background:var(--nacht);color:var(--mint)">Mint op Nacht <small>AAA</small></div>
+    <div class="pair" style="background:#fff;color:var(--teal)">Teal op wit <small>AA</small></div>
+    <div class="pair" style="background:var(--koraal);color:var(--nacht)">Nacht op Koraal <small>alleen accent</small></div>
+  </div>
+</section>
+
+<!-- 04 Type -->
+<section class="sec" id="type" data-t="Typografie">
+  <header><div class="eyebrow">04 · Typografie</div><h2>Lettertypes</h2>
+  <p>Bricolage Grotesque voor koppen: eigenwijs en warm. Nunito Sans voor lopende tekst: rustig en goed leesbaar. Beide gratis, ook voor drukwerk.</p></header>
+  <div class="grid">
+    <div class="box"><div class="spec"><div><div class="eyebrow">Koppen</div><div class="big">Aa Bb</div><div class="alpha" style="font-family:var(--disp)">Bricolage Grotesque · 500 600 700 800<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789 € 4.600</div></div>
+      <div class="actions"><a class="btn dark" href="assets/fonts/bricolage-grotesque.woff2" download>Download (woff2)</a><a class="btn line" href="https://fonts.google.com/specimen/Bricolage+Grotesque" target="_blank" rel="noopener">Google Fonts</a></div></div></div>
+    <div class="box"><div class="spec"><div><div class="eyebrow">Tekst</div><div class="big b">Aa Bb</div><div class="alpha">Nunito Sans · 400 600 700 800<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789 € 4.600</div></div>
+      <div class="actions"><a class="btn dark" href="assets/fonts/nunito-sans.woff2" download>Download (woff2)</a><a class="btn line" href="https://fonts.google.com/specimen/Nunito+Sans" target="_blank" rel="noopener">Google Fonts</a></div></div></div>
+  </div>
+  <div class="sub"><h3>Tekstgroottes</h3><span class="muted">Web · druk</span></div>
+  <div class="box scale">
+    <div><code>Kop 1 · 44/30 pt</code><span style="font-family:var(--disp);font-size:40px;font-weight:700;line-height:1.05">Je eigen stroom, ook ’s avonds.</span></div>
+    <div><code>Kop 2 · 28/22 pt</code><span style="font-family:var(--disp);font-size:28px;font-weight:700">Drie pakketten, één vaste prijs.</span></div>
+    <div><code>Kop 3 · 20/12 pt</code><span style="font-family:var(--disp);font-size:20px;font-weight:700">Welke batterij past bij jou?</span></div>
+    <div><code>Label · 12/7 pt</code><span class="eyebrow">Thuisbatterij</span></div>
+    <div><code>Tekst · 16/9,5 pt</code><span>Op 1 januari 2027 stopt de salderingsregeling. Met een thuisbatterij bewaar je je overschot en gebruik je het zelf.</span></div>
+    <div><code>Klein · 13/7,5 pt</code><span class="muted">Prijzen inclusief installatie. Meerwerk hoor je altijd vooraf.</span></div>
+  </div>
+  <div class="sub"><h3>Voor websites</h3></div>
+  <pre class="snip" id="fontsnip"><button class="copybtn" data-copy-from="fontsnip">Kopieer</button>&lt;link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&amp;family=Nunito+Sans:wght@400;600;700;800&amp;display=swap"&gt;
+
+h1, h2, h3 { font-family: 'Bricolage Grotesque', system-ui, sans-serif; letter-spacing: -0.02em; }
+body       { font-family: 'Nunito Sans', system-ui, sans-serif; }</pre>
+</section>
+
+<!-- 05 Elementen -->
+<section class="sec" id="elementen" data-t="Elementen">
+  <header><div class="eyebrow">05 · Elementen</div><h2>Grafische elementen</h2>
+  <p>Een paar vaste bouwstenen maken elk ontwerp herkenbaar, ook zonder groot logo.</p></header>
+  <div class="grid g3">
+    <div class="box"><h4>De koraal punt</h4><p>Klein rondje in Koraal voor labels en als afsluiter. Nooit groter dan een letter.</p><div style="margin-top:16px"><span class="eyebrow">Zo werkt het</span></div></div>
+    <div class="box"><h4>Labels</h4><p>Hoofdletters, extra letterafstand, in een zachte pil.</p><div style="margin-top:16px"><span class="pill">Batterijkeuzehulp</span></div></div>
+    <div class="box"><h4>Afgeronde hoeken</h4><p>Knoppen volledig rond, kaarten 16–24 px, drukwerk 3–4 mm.</p><div class="radii" style="margin-top:16px"><div style="border-radius:10px">10</div><div style="border-radius:16px">16</div><div style="border-radius:24px">24</div></div></div>
+    <div class="box"><h4>Knoppen</h4><p>Eén hoofdactie per blok, in Mint op donker of Nacht op licht.</p><div class="actions" style="margin-top:16px"><span class="btn mint">Welke batterij past? →</span><span class="btn line">Adviesgesprek</span></div></div>
+    <div class="box"><h4>Kleurstrook</h4><p>Teal, Mint en Koraal in verhouding 78/16/6. Onderaan kaartjes en briefpapier.</p><div style="margin-top:16px;height:10px;border-radius:5px;background:linear-gradient(90deg,#0F6E6B 0 78%,#6FD6C8 78% 94%,#FF6B5B 94%)"></div></div>
+    <div class="box" style="background:var(--nacht);color:#fff;border-color:var(--nacht);position:relative;overflow:hidden"><h4 style="color:#fff">Watermerk W</h4><p style="color:#C9D6D3">Het beeldmerk groot en bijna onzichtbaar (5–7%) op donkere vlakken.</p><div data-logo="w_mono" style="position:absolute;right:-30px;bottom:-40px;width:180px;color:#fff;opacity:.07"></div></div>
+  </div>
+</section>
+
+<!-- 06 Foto -->
+<section class="sec" id="foto" data-t="Fotografie">
+  <header><div class="eyebrow">06 · Fotografie</div><h2>Fotografie</h2>
+  <p>Echte huizen, echte mensen, natuurlijk licht. We laten zien hoe het eruitziet als het klaar is, en wie het komt doen.</p></header>
+  <div class="grid g2" style="margin-bottom:20px">
+    <div class="box" style="display:grid;gap:10px"><div class="rule ok"><i>✓</i><div>Warm daglicht, rustige interieurs, installaties die netjes zijn afgewerkt.</div></div><div class="rule ok"><i>✓</i><div>Monteurs aan het werk, in contact met de klant.</div></div><div class="rule ok"><i>✓</i><div>Nederlandse woningen: rijtjeshuis, twee-onder-een-kap, zolder, bijkeuken.</div></div></div>
+    <div class="box" style="display:grid;gap:10px"><div class="rule no"><i>✕</i><div>Stockfoto’s met overdreven lachende mensen of zonnepanelen op palmbomen.</div></div><div class="rule no"><i>✕</i><div>Merken van concurrenten of van producten die we niet leveren in beeld.</div></div><div class="rule no"><i>✕</i><div>Filters, zware kleurcorrectie of tekst over een druk deel van de foto.</div></div></div>
+  </div>
+  <div class="photos" id="photos"></div>
+</section>
+
+<!-- 07 Toon -->
+<section class="sec" id="toon" data-t="Tone of voice">
+  <header><div class="eyebrow">07 · Tone of voice</div><h2>Zo praten we</h2>
+  <p>We schrijven zoals een goede monteur uitlegt: kort, eerlijk en met getallen. Altijd je en jij.</p></header>
+  <div class="say">
+    <div class="h no">Niet zo</div><div class="h ok">Wel zo</div>
+    <div>De ideale energieoplossing voor jouw woning.</div><div>Een thuisbatterij van 16 kWh voor € 4.600, inclusief installatie.</div>
+    <div>Bespaar tot wel honderden euro’s per jaar!</div><div>Hoeveel je bespaart, hangt af van je verbruik. We rekenen het met je door.</div>
+    <div>Neem vrijblijvend contact met ons op voor meer informatie.</div><div>Bel 085 333 56 87 of kies je batterij in vier vragen.</div>
+    <div>Onze gecertificeerde experts ontzorgen u volledig.</div><div>Onze eigen monteurs plaatsen alles en leggen het je uit.</div>
+  </div>
+  <div class="grid g2" style="margin-top:16px">
+    <div class="box"><h4>Wat we over onszelf mogen zeggen</h4><div class="tags" style="margin-top:12px"><span>12.500+ installaties</span><span>4,7 / 5 op Google</span><span>Eigen monteurs</span><span>Vaste prijs vooraf</span><span>2 jaar garantie op de installatie</span><span>Gevestigd in Zevenbergen</span></div>
+      <p class="muted" style="margin-top:12px">Andere cijfers, reviews of beloftes alleen als ze aantoonbaar kloppen. Geen verzonnen klantverhalen.</p></div>
+    <div class="box"><h4>Schrijfregels</h4><div style="display:grid;gap:8px;margin-top:10px">
+      <div class="rule ok"><i>✓</i><div>Korte zinnen. Eén gedachte per zin.</div></div>
+      <div class="rule ok"><i>✓</i><div>Bedragen als € 4.600, met spatie en punt.</div></div>
+      <div class="rule ok"><i>✓</i><div>kWh en kW, 1-fase en 3-fase, zonnepanelen (één woord).</div></div>
+      <div class="rule ok"><i>✓</i><div>Nooit negatief over andere bedrijven.</div></div></div></div>
+  </div>
+  <div class="sub"><h3>Vaste prijzen</h3><span class="muted">Inclusief installatie</span></div>
+  <table class="prices">
+    <tr><th>Product</th><th>Prijs</th></tr>
+    <tr><td>Thuisbatterij 10 kWh + 5 kW hybride omvormer (1-fase)</td><td>€ 4.200</td></tr>
+    <tr><td>Thuisbatterij 16 kWh + 6 kW hybride omvormer (1-fase)</td><td>€ 4.600</td></tr>
+    <tr><td>Thuisbatterij 16 kWh + 8 kW hybride omvormer (3-fase)</td><td>€ 5.700</td></tr>
+    <tr><td>Zonnepanelen</td><td>vanaf € 3.999</td></tr>
+    <tr><td>Airconditioning</td><td>vanaf € 1.899</td></tr>
+    <tr><td>Warmtepomp</td><td>vanaf € 6.750</td></tr>
+    <tr><td>Elektrische boiler</td><td>vanaf € 1.199</td></tr>
+    <tr><td>Laadpaal</td><td>vanaf € 1.299</td></tr>
+    <tr><td>Meterkast</td><td>vanaf € 649</td></tr>
+  </table>
+</section>
+
+<!-- 08 Kaartjes -->
+<section class="sec" id="kaartjes" data-t="Visitekaartjes">
+  <header><div class="eyebrow">08 · Visitekaartjes</div><h2>Visitekaartjes</h2>
+  <p>Drie varianten, allemaal 85 × 55 mm met ronde hoeken van 4 mm. Kies er één voor het hele team, zodat iedereen hetzelfde kaartje uitdeelt. Onderaan maak je in een minuut je eigen kaartje met je naam.</p></header>
+  <div class="cards" id="cardrows"></div>
+
+  <div class="sub"><h3>Maak je eigen kaartje</h3><span class="muted">Vul je gegevens in en download</span></div>
+  <div class="gen">
+    <form class="fields box" id="genform" onsubmit="return false">
+      <label>Variant<div class="seg" id="gvar"><button type="button" data-v="a" aria-pressed="true">Avond</button><button type="button" data-v="b" aria-pressed="false">Teal</button><button type="button" data-v="c" aria-pressed="false">Licht</button></div></label>
+      <label for="g-naam">Naam<input id="g-naam" name="naam" value="Voornaam Achternaam" autocomplete="name"></label>
+      <label for="g-functie">Functie<input id="g-functie" name="functie" value="Energieadviseur"></label>
+      <label for="g-telefoon">Telefoon<input id="g-telefoon" name="telefoon" value="085 333 56 87" inputmode="tel"></label>
+      <label for="g-mobiel">Mobiel (optioneel)<input id="g-mobiel" name="mobiel" value="" inputmode="tel" placeholder="06 12 34 56 78"></label>
+      <label for="g-email">E-mail<input id="g-email" name="email" value="info@voltwijk.nl" inputmode="email"></label>
+    </form>
+    <div class="preview">
+      <div class="cscale" id="gfront"></div>
+      <div class="cscale" id="gback"></div>
+      <div class="actions">
+        <button class="btn dark" id="gpdf" type="button">Download drukklare PDF</button>
+        <button class="btn line" id="gpng" type="button">Download PNG (voor en achter)</button>
+      </div>
+      <p class="muted" style="text-align:center;max-width:460px">De PDF heeft 3 mm afloop rondom, precies zoals een drukkerij het wil. De ronde hoeken bestel je bij de drukker als optie “afgeronde hoeken, 4 mm”.</p>
+    </div>
+  </div>
+  <div class="sub"><h3>Drukspecificaties</h3></div>
+  <div class="box spec-list">
+    <div><b>Formaat</b>85 × 55 mm, met 3 mm afloop (91 × 61 mm)</div>
+    <div><b>Hoeken</b>afgerond, 4 mm</div>
+    <div><b>Papier</b>400 g/m² mat, eventueel met softtouch-laminaat</div>
+    <div><b>Druk</b>dubbelzijdig, full colour (CMYK)</div>
+    <div><b>Veilige zone</b>5 mm vanaf de snijlijn geen tekst</div>
+  </div>
+</section>
+
+<!-- 09 Brochure -->
+<section class="sec" id="brochure" data-t="Brochure">
+  <header><div class="eyebrow">09 · Brochure</div><h2>Brochure voor adviesgesprekken</h2>
+  <p>Acht pagina’s A5 om achter te laten na een adviesgesprek. Met onze pakketten en prijzen, hoe het werkt, en op de laatste pagina een vak “Jouw advies” dat je samen met de klant invult.</p></header>
+  <div class="actions" style="margin-bottom:16px"><a class="btn dark" href="kit/brochure/voltwijk-brochure-a5-drukklaar.pdf" download>Download drukklare PDF (8 pagina’s)</a><a class="btn line" href="brochure.html" target="_blank" rel="noopener">Bekijk in de browser</a></div>
+  <div class="pages" id="bpages"></div>
+  <div class="sub"><h3>Drukspecificaties</h3></div>
+  <div class="box spec-list">
+    <div><b>Formaat</b>A5 staand (148 × 210 mm), 3 mm afloop</div>
+    <div><b>Omvang</b>8 pagina’s, geniet (zadelsteek)</div>
+    <div><b>Papier</b>omslag en binnenwerk 170 g/m² silk, of 250 g/m² voor een stevig gevoel</div>
+    <div><b>Tip</b>laat een extra stapel van alleen pagina 8 (“Jouw advies”) drukken om los mee te geven</div>
+  </div>
+</section>
+
+<!-- 10 Flyers -->
+<section class="sec" id="flyers" data-t="Flyers">
+  <header><div class="eyebrow">10 · Flyers</div><h2>Flyers</h2>
+  <p>De thuisbatterij-flyer voor bussen, beurzen en de balie. De flyer van de Energiescanweek staat er ook bij.</p></header>
+  <div class="pages" id="fpages"></div>
+  <div class="actions" style="margin-top:16px"><a class="btn dark" href="kit/flyer/voltwijk-flyer-thuisbatterij-a5-drukklaar.pdf" download>Flyer thuisbatterij (A5, drukklaar)</a><a class="btn line" href="../brand/energiescan/flyer-a5-dubbelzijdig-met-afloop.pdf" download>Flyer Energiescanweek (A5)</a></div>
+</section>
+
+<!-- 11 Handtekening -->
+<section class="sec" id="handtekening" data-t="Mailhandtekening">
+  <header><div class="eyebrow">11 · E-mailhandtekening</div><h2>E-mailhandtekening</h2>
+  <p>Iedereen gebruikt dezelfde handtekening. Vul je gegevens in, kopieer hem en plak hem in je mailprogramma.</p></header>
+  <div class="gen">
+    <form class="fields box" id="sigform" onsubmit="return false">
+      <label for="s-naam">Naam<input id="s-naam" name="naam" value="Voornaam Achternaam" autocomplete="name"></label>
+      <label for="s-functie">Functie<input id="s-functie" name="functie" value="Energieadviseur"></label>
+      <label for="s-telefoon">Telefoon<input id="s-telefoon" name="telefoon" value="085 333 56 87" inputmode="tel"></label>
+      <label for="s-mobiel">Mobiel (optioneel)<input id="s-mobiel" name="mobiel" value="" inputmode="tel" placeholder="06 12 34 56 78"></label>
+      <label for="s-email">E-mail<input id="s-email" name="email" value="info@voltwijk.nl" inputmode="email"></label>
+    </form>
+    <div style="display:grid;gap:14px;min-width:0">
+      <div class="sigwrap"><div class="mailhead">Met vriendelijke groet,</div><div id="sig"></div></div>
+      <div class="actions">
+        <button class="btn dark" id="sigcopy" type="button">Kopieer handtekening</button>
+        <button class="btn line" id="sightml" type="button">Kopieer HTML-code</button>
+        <a class="btn line" id="sigdl" href="#" download="voltwijk-handtekening.html">Download .html</a>
+      </div>
+      <details class="howto"><summary>Toevoegen in Gmail</summary><div class="steps"><div>Klik hierboven op Kopieer handtekening.</div><div>Open Gmail → tandwiel → Alle instellingen bekijken → Algemeen → Handtekening.</div><div>Maak een nieuwe handtekening en plak (Ctrl/Cmd + V). Scroll naar beneden en klik op Wijzigingen opslaan.</div></div></details>
+      <details class="howto"><summary>Toevoegen in Outlook</summary><div class="steps"><div>Klik hierboven op Kopieer handtekening.</div><div>Outlook → Instellingen → Account → Handtekeningen → Nieuwe handtekening.</div><div>Plak (Ctrl/Cmd + V), geef hem een naam en stel hem in als standaard voor nieuwe berichten en antwoorden.</div></div></details>
+      <details class="howto"><summary>Toevoegen in Apple Mail (Mac en iPhone)</summary><div class="steps"><div>Mac: Mail → Instellingen → Handtekeningen → +, plak de handtekening en zet “Gebruik altijd mijn standaardlettertype” uit.</div><div>iPhone: stuur de handtekening naar jezelf, kopieer hem uit die mail en plak hem bij Instellingen → Mail → Handtekening.</div></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 12 Social -->
+<section class="sec" id="social" data-t="Social en Google">
+  <header><div class="eyebrow">12 · Social en Google</div><h2>Social en Google Bedrijfsprofiel</h2>
+  <p>Profielfoto’s en omslagfoto’s voor Google, Facebook, Instagram en WhatsApp Business.</p></header>
+  <div class="grid g3" id="socials"></div>
+</section>
+
+<!-- 13 Downloads -->
+<section class="sec" id="downloads" data-t="Downloads">
+  <header><div class="eyebrow">13 · Downloads</div><h2>Alle bestanden</h2><p>Alles uit dit merkboek in één lijst.</p></header>
+  <div class="files" id="files"></div>
+</section>
+</main>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/logos.js"></script>
+<script>window.VW_KIT_BASE = '';</script>
+<script src="assets/kit.js"></script>
+<script src="assets/vendor/html2canvas.min.js"></script>
+<script src="assets/vendor/jspdf.umd.min.js"></script>
+<script>
+(function(){
+var $ = function(s, r){ return (r || document).querySelector(s); }, $$ = function(s, r){ return [].slice.call((r || document).querySelectorAll(s)); };
+var DL = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>';
+function toast(t){ var el = $('#toast'); el.textContent = t; el.classList.add('on'); clearTimeout(toast.t); toast.t = setTimeout(function(){ el.classList.remove('on'); }, 1600); }
+function copy(text, label){
+  var done = function(){ toast((label || 'Tekst') + ' gekopieerd'); };
+  if(navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, fallback); else fallback();
+  function fallback(){ var ta = document.createElement('textarea'); ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select(); try{ document.execCommand('copy'); done(); }catch(e){ toast('Kopiëren lukt niet: selecteer de tekst zelf'); } ta.remove(); }
+}
+function links(list){ return '<div class="dl"><span class="hint">Download</span>' + list.map(function(l){ return '<a href="' + l[1] + '" download>' + DL + l[0] + '</a>'; }).join('') + '</div>'; }
+function asset(stageHtml, stageCls, name, info, list){ return '<div class="asset"><div class="stage ' + (stageCls || '') + '">' + stageHtml + '</div>' + links(list) + '<div class="meta"><b>' + name + '</b><span>' + info + '</span></div></div>'; }
+
+// logo's in de pagina
+$$('[data-logo]').forEach(function(el){ el.innerHTML = VWKit.svg(el.getAttribute('data-logo')); });
+
+// navigatie
+var secs = $$('.sec'), nav = $('#nav'), top = $('#topbar');
+top.innerHTML = '<div class="brand">' + VWKit.svg('wit') + '</div>';
+secs.forEach(function(s, i){
+  var n = ('0' + (i + 1)).slice(-2), t = s.getAttribute('data-t');
+  nav.insertAdjacentHTML('beforeend', '<a href="#' + s.id + '"><i>' + n + '</i>' + t + '</a>');
+  top.insertAdjacentHTML('beforeend', '<a href="#' + s.id + '">' + t + '</a>');
+});
+function spy(){
+  var y = window.scrollY + 140, cur = secs[0].id;
+  secs.forEach(function(s){ if(s.offsetTop <= y) cur = s.id; });
+  $$('.nav a, .topbar a').forEach(function(a){ a.classList.toggle('on', a.getAttribute('href') === '#' + cur); });
+}
+window.addEventListener('scroll', spy, {passive:true}); spy();
+
+// 02 logo's
+var K = 'kit/logo/';
+var LOGOS = [
+  ['kleur', 'on-mist', 'Logo in kleur', 'Op lichte achtergronden', 'voltwijk-logo-kleur', 'logo-w', [800, 2400]],
+  ['wit', 'on-dark', 'Logo wit', 'Op Nacht, Teal en foto’s', 'voltwijk-logo-wit', 'logo-w', [800, 2400]],
+  ['zwart', '', 'Logo zwart', 'Alleen éénkleurig drukwerk', 'voltwijk-logo-zwart', 'logo-w', [800, 2400]],
+  ['w', 'on-mist', 'Beeldmerk', 'Klein formaat en iconen', 'voltwijk-beeldmerk', 'mark-w', [512, 1500]],
+  ['w_wit', 'on-teal', 'Beeldmerk wit', 'Op donkere vlakken', 'voltwijk-beeldmerk-wit', 'mark-w', [512, 1500]],
+  ['icoon', 'on-mist', 'App-icoon', 'Profielfoto, favicon, app', 'voltwijk-app-icoon', 'mark-w', [512, 1500]]
+];
+$('#logos').innerHTML = LOGOS.map(function(l){
+  return asset('<div class="' + l[5] + '">' + VWKit.svg(l[0]) + '</div>', l[1], l[2], l[3],
+    [['SVG', K + l[4] + '.svg'], ['PNG ' + l[6][0] + ' px', K + l[4] + '-' + l[6][0] + 'px.png'], ['PNG ' + l[6][1] + ' px', K + l[4] + '-' + l[6][1] + 'px.png']]);
+}).join('');
+var DONTS = [
+  ['Niet uitrekken', '<div class="logo-w" style="transform:scaleX(1.45)">' + VWKit.svg('kleur') + '</div>'],
+  ['Geen andere kleuren', '<div class="logo-w" style="filter:hue-rotate(140deg) saturate(2)">' + VWKit.svg('kleur') + '</div>'],
+  ['Niet draaien', '<div class="logo-w" style="transform:rotate(-12deg)">' + VWKit.svg('kleur') + '</div>'],
+  ['Geen kleurlogo op donker', '<div style="background:var(--nacht);padding:18px;border-radius:10px;width:100%"><div class="logo-w" style="margin:auto">' + VWKit.svg('kleur') + '</div></div>'],
+  ['Geen schaduw of effecten', '<div class="logo-w" style="filter:drop-shadow(4px 6px 3px rgba(0,0,0,.45))">' + VWKit.svg('kleur') + '</div>'],
+  ['Niet op een drukke foto', '<div style="background:url(../images/zonnepanelen-dak.jpg) center/cover;padding:24px;border-radius:10px;width:100%"><div class="logo-w" style="margin:auto">' + VWKit.svg('kleur') + '</div></div>'],
+  ['Geen eigen tekst erbij', '<div style="display:flex;align-items:center;gap:8px;width:100%"><div style="width:60%">' + VWKit.svg('kleur') + '</div><b style="font-family:var(--disp);font-size:15px;color:var(--koraal)">energie!</b></div>'],
+  ['Punt niet los gebruiken', '<div style="width:40px;height:40px;border-radius:50%;background:var(--koraal)"></div>']
+];
+$('#donts').innerHTML = DONTS.map(function(d){ return '<div class="asset"><div class="stage">' + d[1] + '</div><span class="x">✕</span><div class="meta"><b>' + d[0] + '</b></div></div>'; }).join('');
+
+// 03 kleuren
+function hexRgb(h){ h = h.replace('#', ''); return [parseInt(h.substr(0,2),16), parseInt(h.substr(2,2),16), parseInt(h.substr(4,2),16)]; }
+function cmyk(r){ var c = 1 - r[0]/255, m = 1 - r[1]/255, y = 1 - r[2]/255, k = Math.min(c, m, y); if(k >= 1) return [0,0,0,100]; return [c, m, y].map(function(v){ return Math.round((v - k) / (1 - k) * 100); }).concat(Math.round(k * 100)); }
+function hsl(r){ var R = r[0]/255, G = r[1]/255, B = r[2]/255, mx = Math.max(R,G,B), mn = Math.min(R,G,B), h = 0, s = 0, l = (mx + mn) / 2; if(mx !== mn){ var d = mx - mn; s = l > .5 ? d / (2 - mx - mn) : d / (mx + mn); h = mx === R ? (G - B) / d + (G < B ? 6 : 0) : mx === G ? (B - R) / d + 2 : (R - G) / d + 4; h *= 60; } return [Math.round(h), Math.round(s*100), Math.round(l*100)]; }
+function swatch(c){
+  var r = hexRgb(c[1]), k = cmyk(r), h = hsl(r);
+  var codes = [['HEX', c[1].toUpperCase()], ['RGB', r.join(', ')], ['CMYK', k.join(' / ')], ['HSL', h[0] + '° ' + h[1] + '% ' + h[2] + '%'], ['CSS', 'var(--' + c[3] + ')']];
+  return '<div class="sw"><div class="chip" style="background:' + c[1] + ';color:' + c[2] + '"><b>' + c[0] + '</b><small>' + c[4] + '</small></div><div class="codes">' +
+    codes.map(function(x){ return '<button type="button" class="code" data-copy="' + x[1] + '" data-label="' + c[0] + ' ' + x[0] + '"><span>' + x[0] + '</span><code>' + x[1] + '</code></button>'; }).join('') + '</div></div>';
+}
+$('#swatches').innerHTML = [
+  ['Nacht', '#10201F', '#fff', 'vw-nacht', 'Basis · tekst'],
+  ['Teal', '#0F6E6B', '#fff', 'vw-teal', 'Merkkleur'],
+  ['Mint', '#6FD6C8', '#10201F', 'vw-mint', 'Accent op donker'],
+  ['Koraal', '#FF6B5B', '#10201F', 'vw-koraal', 'Punt · spaarzaam'],
+  ['Mist', '#F5F7F5', '#10201F', 'vw-mist', 'Achtergrond'],
+  ['Wit', '#FFFFFF', '#10201F', 'vw-wit', 'Vlakken · kaarten']
+].map(swatch).join('');
+$('#swatches2').innerHTML = [
+  ['Teal diep', '#0B4F4D', '#fff', 'vw-teal-diep', 'Hover · diepte'],
+  ['Mint tint', '#E4F0EF', '#10201F', 'vw-mint-tint', 'Zachte vlakken'],
+  ['Koraal diep', '#C6402E', '#fff', 'vw-koraal-diep', 'Foutmeldingen'],
+  ['Inkt zacht', '#233532', '#fff', 'vw-inkt-zacht', 'Lopende tekst'],
+  ['Grijs', '#54615F', '#fff', 'vw-grijs', 'Bijschriften'],
+  ['Lijn', '#E6ECEA', '#10201F', 'vw-lijn', 'Randen · lijnen']
+].map(swatch).join('');
+document.addEventListener('click', function(e){
+  var b = e.target.closest('[data-copy]'); if(b){ copy(b.getAttribute('data-copy'), b.getAttribute('data-label')); return; }
+  var f = e.target.closest('[data-copy-from]'); if(f){ var el = document.getElementById(f.getAttribute('data-copy-from')); copy(el.textContent.replace(/^Kopieer/, '').trim(), 'Code'); }
+});
+
+// 06 foto's
+var FOTOS = ['batterij-installatie', 'batterij-zolder', 'monteur-en-klant', 'zonnepanelen-dak', 'monteur-aan-het-werk', 'airco-sfeer', 'omvormers-afwerking', 'zonnepanelen-installatie', 'laadpaal-gevel'];
+$('#photos').innerHTML = FOTOS.map(function(f){ return asset('<img src="../images/' + f + '.webp" alt="" loading="lazy">', '', f.replace(/-/g, ' '), 'JPG', [['Download JPG', '../images/' + f + '.jpg']]); }).join('');
+
+// 08 visitekaartjes
+var CS = 0.72; // schaal op scherm
+function scaled(html, s){ return '<div style="transform:scale(' + s + ');width:85mm;height:55mm;margin-bottom:calc(55mm*' + (s - 1) + ');margin-right:calc(85mm*' + (s - 1) + ')">' + html + '</div>'; }
+function fitCards(){ $$('.cscale').forEach(function(c){ var inner = c.firstElementChild; if(!inner) return; var w = c.clientWidth, s = Math.min(1.25, w / 321.26); inner.style.transform = 'scale(' + s + ')'; inner.style.marginBottom = 'calc(55mm*' + (s - 1) + ')'; inner.style.marginRight = 'calc(85mm*' + (s - 1) + ')'; }); }
+var team = { naam: 'Team Voltwijk', functie: 'Advies en installatie' };
+$('#cardrows').innerHTML = ['a', 'b', 'c'].map(function(v){
+  var c = VWKit.cards[v], P = 'kit/visitekaartjes/voltwijk-visitekaartje-' + v;
+  return '<div class="cardrow">' +
+    asset('<div class="cscale">' + scaled(VWKit.card(v, 'front', team, 0), CS) + '</div>', '', 'Voorkant', '85 × 55 mm', [['PNG', P + '-voor.png'], ['Drukklare PDF', P + '-drukklaar.pdf']]) +
+    asset('<div class="cscale">' + scaled(VWKit.card(v, 'back', team, 0), CS) + '</div>', '', 'Achterkant', '85 × 55 mm', [['PNG', P + '-achter.png'], ['Drukklare PDF', P + '-drukklaar.pdf']]) +
+    '<div class="cardinfo"><div class="eyebrow">Variant ' + v.toUpperCase() + '</div><h4>' + c.naam + '</h4><p>' + c.tekst + '</p><div class="actions"><a class="btn line" href="#kaartjes" data-pick="' + v + '">Maak deze met jouw naam</a></div></div></div>';
+}).join('');
+
+var gv = 'a';
+function gdata(){ var f = $('#genform'), d = {}; ['naam','functie','telefoon','mobiel','email'].forEach(function(k){ d[k] = f.elements[k].value; }); return d; }
+function grender(){ var d = gdata(); $('#gfront').innerHTML = scaled(VWKit.card(gv, 'front', d, 0), 1); $('#gback').innerHTML = scaled(VWKit.card(gv, 'back', d, 0), 1); fitCards(); }
+$('#genform').addEventListener('input', grender);
+$('#gvar').addEventListener('click', function(e){ var b = e.target.closest('button'); if(!b) return; gv = b.getAttribute('data-v'); $$('#gvar button').forEach(function(x){ x.setAttribute('aria-pressed', String(x === b)); }); grender(); });
+document.addEventListener('click', function(e){ var p = e.target.closest('[data-pick]'); if(!p) return; var v = p.getAttribute('data-pick'); var b = $('#gvar [data-v="' + v + '"]'); if(b) b.click(); setTimeout(function(){ $('#genform').scrollIntoView({behavior:'smooth', block:'start'}); $('#g-naam').focus({preventScroll:true}); }, 50); e.preventDefault(); });
+grender(); window.addEventListener('resize', fitCards); fitCards();
+
+function slug(t){ return String(t).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'voltwijk'; }
+function snap(side, bleed, scale){
+  var host = document.createElement('div'); host.style.cssText = 'position:fixed;left:-10000px;top:0;';
+  host.innerHTML = VWKit.card(gv, side, gdata(), bleed); document.body.appendChild(host);
+  var el = host.firstElementChild;
+  return html2canvas(el, { scale: scale, backgroundColor: null, useCORS: true, logging: false }).then(function(c){ host.remove(); return c; }, function(e){ host.remove(); throw e; });
+}
+function save(href, name){ var a = document.createElement('a'); a.href = href; a.download = name; document.body.appendChild(a); a.click(); a.remove(); }
+function busy(btn, on, txt){ if(on){ btn.dataset.t = btn.textContent; btn.textContent = txt; btn.disabled = true; } else { btn.textContent = btn.dataset.t; btn.disabled = false; } }
+$('#gpng').addEventListener('click', function(){
+  var btn = this, n = slug(gdata().naam); if(!window.html2canvas){ toast('Even geduld, de download-tool laadt nog'); return; }
+  busy(btn, true, 'Bezig…');
+  snap('front', 0, 4).then(function(c){ save(c.toDataURL('image/png'), 'visitekaartje-' + n + '-voor.png'); return snap('back', 0, 4); })
+    .then(function(c){ save(c.toDataURL('image/png'), 'visitekaartje-' + n + '-achter.png'); toast('Kaartje gedownload'); })
+    .catch(function(){ toast('Downloaden lukte niet, probeer het opnieuw'); }).then(function(){ busy(btn, false); });
+});
+$('#gpdf').addEventListener('click', function(){
+  var btn = this, n = slug(gdata().naam); if(!window.html2canvas || !window.jspdf){ toast('Even geduld, de download-tool laadt nog'); return; }
+  busy(btn, true, 'PDF maken…');
+  var pdf = new window.jspdf.jsPDF({ unit: 'mm', format: [91, 61], orientation: 'landscape' });
+  // 300 dpi: 91 mm = 1075 px; op het scherm is 91 mm 343,9 css-px
+  snap('front', 3, 3.13).then(function(c){ pdf.addImage(c.toDataURL('image/jpeg', .95), 'JPEG', 0, 0, 91, 61); return snap('back', 3, 3.13); })
+    .then(function(c){ pdf.addPage([91, 61], 'landscape'); pdf.addImage(c.toDataURL('image/jpeg', .95), 'JPEG', 0, 0, 91, 61); pdf.save('visitekaartje-' + n + '-drukklaar.pdf'); toast('PDF gedownload'); })
+    .catch(function(){ toast('PDF maken lukte niet, probeer het opnieuw'); }).then(function(){ busy(btn, false); });
+});
+
+// 09/10 brochure en flyer
+function pagesGrid(sel, dir, name, count){
+  $(sel).innerHTML = Array.from({length: count}, function(_, i){
+    var f = 'kit/' + dir + '/' + name + '-pagina-' + (i + 1) + '.jpg';
+    return asset('<img src="' + f + '" alt="Pagina ' + (i + 1) + '" loading="lazy">', '', 'Pagina ' + (i + 1), 'A5', [['JPG', f], ['PDF', 'kit/' + dir + '/' + name + '-drukklaar.pdf']]);
+  }).join('');
+}
+pagesGrid('#bpages', 'brochure', 'voltwijk-brochure-a5', 8);
+pagesGrid('#fpages', 'flyer', 'voltwijk-flyer-thuisbatterij-a5', 2);
+
+// 11 handtekening
+function sdata(){ var f = $('#sigform'), d = {}; ['naam','functie','telefoon','mobiel','email'].forEach(function(k){ d[k] = f.elements[k].value; }); return d; }
+function srender(){ var h = VWKit.signature(sdata()); $('#sig').innerHTML = h; $('#sigdl').href = 'data:text/html;charset=utf-8,' + encodeURIComponent('<!doctype html><meta charset="utf-8"><title>Handtekening</title>' + h); $('#sigdl').download = 'handtekening-' + slug(sdata().naam) + '.html'; }
+$('#sigform').addEventListener('input', srender); srender();
+$('#sigcopy').addEventListener('click', function(){
+  var h = VWKit.signature(sdata());
+  if(window.ClipboardItem && navigator.clipboard && navigator.clipboard.write){
+    navigator.clipboard.write([new ClipboardItem({ 'text/html': new Blob([h], {type: 'text/html'}), 'text/plain': new Blob([$('#sig').innerText], {type: 'text/plain'}) })]).then(function(){ toast('Handtekening gekopieerd, plak hem in je mailprogramma'); }, selectSig);
+  } else selectSig();
+  function selectSig(){ var r = document.createRange(); r.selectNodeContents($('#sig')); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); try{ document.execCommand('copy'); toast('Handtekening gekopieerd'); }catch(e){ toast('Selecteer de handtekening en kopieer met Ctrl/Cmd + C'); } s.removeAllRanges(); }
+});
+$('#sightml').addEventListener('click', function(){ copy(VWKit.signature(sdata()), 'HTML-code'); });
+
+// 12 social
+var B = '../brand/';
+var SOC = [
+  ['voltwijk-google-logo.png', 'Profielfoto', '720 × 720'], ['voltwijk-icoon-512.png', 'App-icoon', '512 × 512'], ['voltwijk-whatsapp-banner.jpg', 'WhatsApp-banner', 'JPG'],
+  ['voltwijk-google-omslag-a.jpg', 'Google omslag A', 'JPG'], ['voltwijk-google-omslag-b.jpg', 'Google omslag B', 'JPG'], ['voltwijk-google-omslag-c.jpg', 'Google omslag C', 'JPG'],
+  ['voltwijk-google-omslag-d.jpg', 'Google omslag D', 'JPG'], ['voltwijk-google-omslag-e.jpg', 'Google omslag E', 'JPG'], ['voltwijk-google-omslag-f-breed.jpg', 'Omslag breed', 'JPG'],
+  ['beeld/thuisbatterij-voltwijk-social.jpg', 'Social thuisbatterij', 'JPG'], ['beeld/thuisbatterij-voltwijk.jpg', 'Thuisbatterij beeld', 'JPG'], ['beeld/energiescan-alle-producten.jpg', 'Energiescan alle producten', 'JPG']
+];
+$('#socials').innerHTML = SOC.map(function(s){ return asset('<img src="' + B + s[0] + '" alt="" loading="lazy" style="display:block;width:100%;aspect-ratio:16/10;object-fit:cover">', '', s[1], s[2], [['Download', B + s[0]]]).replace('class="stage "', 'class="stage" style="padding:0;min-height:0"'); }).join('');
+
+// 13 alle bestanden
+var FILES = [];
+LOGOS.forEach(function(l){ FILES.push([l[2] + ' (SVG)', K + l[4] + '.svg', 'LOGO']); FILES.push([l[2] + ' (PNG ' + l[6][1] + ' px)', K + l[4] + '-' + l[6][1] + 'px.png', 'LOGO']); });
+['a', 'b', 'c'].forEach(function(v){ FILES.push(['Visitekaartje ' + VWKit.cards[v].naam + ' (drukklare PDF)', 'kit/visitekaartjes/voltwijk-visitekaartje-' + v + '-drukklaar.pdf', 'KAARTJE']); });
+FILES.push(['Brochure A5, 8 pagina’s (drukklare PDF)', 'kit/brochure/voltwijk-brochure-a5-drukklaar.pdf', 'BROCHURE']);
+FILES.push(['Flyer thuisbatterij A5 (drukklare PDF)', 'kit/flyer/voltwijk-flyer-thuisbatterij-a5-drukklaar.pdf', 'FLYER']);
+FILES.push(['Flyer Energiescanweek A5 (PDF)', '../brand/energiescan/flyer-a5-dubbelzijdig-met-afloop.pdf', 'FLYER']);
+FILES.push(['Logo voor e-mailhandtekening (PNG)', 'kit/mail/voltwijk-logo-mail.png', 'MAIL']);
+FILES.push(['QR-code keuzehulp (SVG)', 'kit/qr-keuzehulp.svg', 'QR']); FILES.push(['QR-code keuzehulp (PNG)', 'kit/qr-keuzehulp.png', 'QR']);
+FILES.push(['QR-code website (SVG)', 'kit/qr-visitekaartje.svg', 'QR']);
+FILES.push(['Lettertype Bricolage Grotesque (woff2)', 'assets/fonts/bricolage-grotesque.woff2', 'FONT']); FILES.push(['Lettertype Nunito Sans (woff2)', 'assets/fonts/nunito-sans.woff2', 'FONT']);
+$('#files').innerHTML = FILES.map(function(f){ return '<a href="' + f[1] + '" download><b>' + f[0] + '</b><span>' + f[2] + '</span><em>Download</em></a>'; }).join('');
+})();
+</script>
+</body>
+</html>
