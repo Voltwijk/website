@@ -1,6 +1,8 @@
 # Zet titels, meta descriptions, Open Graph en structured data (JSON-LD) op alle pagina's
 # en genereert sitemap.xml. Veilig om opnieuw te draaien.
-import glob, re, json, html, datetime, os
+import glob, re, json, html, datetime, os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); sys.dont_write_bytecode = True
+from battery import PAKKETTEN  # de drie batterijpakketten (voor de offers op de West-Brabant-pagina's)
 SITE = 'https://voltwijk.nl'
 TODAY = datetime.date.today().isoformat()
 BIZ_ID = SITE + '/#bedrijf'
@@ -117,9 +119,19 @@ for f in sorted(glob.glob('*.html')):
     elif slug.startswith('installateur-'):
         h1 = re.search(r'<h1[^>]*>(.*?)</h1>', s, re.S)
         city = text(h1.group(1)).split(' in ', 1)[-1] if h1 else slug[13:]
-        data.append({"@context": "https://schema.org", "@type": "Service", "name": text(h1.group(1)) if h1 else title,
+        svc = {"@context": "https://schema.org", "@type": "Service", "name": text(h1.group(1)) if h1 else title,
           "serviceType": "Installatie van zonnepanelen, thuisbatterijen, warmtepompen en laadpalen", "description": desc,
-          "provider": {"@id": BIZ_ID}, "areaServed": {"@type": "City", "name": city}, "url": url})
+          "provider": {"@id": BIZ_ID}, "areaServed": {"@type": "City", "name": city}, "url": url}
+        area = re.search(r'<h1[^>]*\bdata-area="([^"]*)"[^>]*\bdata-gemeente="([^"]*)"', s)
+        if area:  # West-Brabant-pagina's (tools/local_pages.py): thuisbatterij voorop, plaats(en) binnen de gemeente
+            gem = {"@type": "AdministrativeArea", "name": "Gemeente " + html.unescape(area.group(2)),
+                   "containedInPlace": {"@type": "AdministrativeArea", "name": "Noord-Brabant"}}
+            places = [{"@type": "City", "name": html.unescape(a), "containedInPlace": gem} for a in area.group(1).split('|')]
+            svc["serviceType"] = "Installatie van thuisbatterijen, zonnepanelen en airco's"
+            svc["areaServed"] = places[0] if len(places) == 1 else places
+            svc["offers"] = [{"@type": "Offer", "name": p["label"], "price": str(p["prijs"]), "priceCurrency": "EUR",
+                              "url": SITE + "/product-batterij", "seller": {"@id": BIZ_ID}} for p in PAKKETTEN]
+        data.append(svc)
         crumbs.append({"@type": "ListItem", "position": 2, "name": "Werkgebied", "item": SITE + "/werkgebied"})
         crumbs.append({"@type": "ListItem", "position": 3, "name": city, "item": url})
     elif slug != 'index':
