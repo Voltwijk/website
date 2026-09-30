@@ -20,8 +20,12 @@
 <meta property="og:url" content="https://voltwijk.nl/thuisbatterij-actie">
 <meta property="og:image" content="https://voltwijk.nl/images/og-voltwijk.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="preload" as="image" href="/images/batterij-installatie.webp" imagesrcset="/images/batterij-installatie-1080.webp 1080w, /images/batterij-installatie.webp 1400w" imagesizes="(max-width: 900px) 100vw, 760px" fetchpriority="high">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://voltwijk.nl/"},{"@type":"ListItem","position":2,"name":"Thuisbatterij 16 kWh voor € 4.600 incl. installatie","item":"https://voltwijk.nl/thuisbatterij-actie"}]}</script>
 <!-- seo:end -->
+<script id="vw-early-reveal">(function(){if(!window.MutationObserver)return;var H=window.innerHeight||800,mo=new MutationObserver(function(ms){for(var i=0;i<ms.length;i++)for(var j=0,n=ms[i].addedNodes;j<n.length;j++){var e=n[j];if(e.nodeType===1&&e.classList&&e.classList.contains('reveal')&&e.getBoundingClientRect().top<H)e.classList.add('is-visible');}});mo.observe(document.documentElement,{childList:true,subtree:true});document.addEventListener('DOMContentLoaded',function(){mo.disconnect();});})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
 /* vw-brandmark:start */
@@ -361,7 +365,7 @@ html body.vwp-up #waWidget{bottom:20px !important;}
         <div class="ta-price"><b>€ 4.600</b><span>vaste prijs, inclusief installatie en btw</span></div>
         <div class="ta-cta"><a href="#batterijkeuze" class="btn-primary">Start de keuzehulp →</a><a class="tel" href="tel:+31853335687">of bel 085 333 56 87</a></div>
       </div>
-      <div class="ta-img"><img fetchpriority="high" src="/images/batterij-installatie.webp" alt="Thuisbatterij met hybride omvormer, geplaatst op een zolder" width="1400" height="1050"></div>
+      <div class="ta-img"><img srcset="/images/batterij-installatie-1080.webp 1080w, /images/batterij-installatie.webp 1400w" sizes="(max-width: 900px) 100vw, 760px" fetchpriority="high" src="/images/batterij-installatie.webp" alt="Thuisbatterij met hybride omvormer, geplaatst op een zolder" width="1400" height="1050"></div>
     </div>
     <div class="ta-trust"><div><b>12.500+</b><span>installaties</span></div><div><b>4,7 / 5</b><span>op Google</span></div><div><b>Eigen monteurs</b><span>geen onderaannemers</span></div><div><b>2 jaar</b><span>garantie op de installatie</span></div><div><b>Zevenbergen</b><span>gevestigd in West-Brabant</span></div></div>
   </div>
@@ -675,38 +679,6 @@ html body.vwp-up #waWidget{bottom:20px !important;}
     <p>We gebruiken functionele cookies zodat de site werkt. Met jouw toestemming meten we ook anoniem wat bezoekers nuttig vinden, zodat we de site beter maken. Geen advertentietracking. <a href="/cookiebeleid">Cookiebeleid</a></p>
     <div class="ck-btns"><button type="button" class="ck-yes" data-ck="1">Akkoord</button><button type="button" class="ck-no" data-ck="0">Alleen noodzakelijk</button></div>
   </div>
-  <style>@keyframes waPulse{0%{transform:scale(1);opacity:.5;}100%{transform:scale(1.55);opacity:0;}}
-  @media (prefers-reduced-motion: reduce){ #waPing{animation:none;} #waBubble,#vwCookie{transition:none!important;} }
-  #waWidget{pointer-events:none;} #waWidget a, #waWidget button{pointer-events:auto;}
-  #waBubble{width:292px;background:#fff;border-radius:18px 18px 6px 18px;padding:14px;box-shadow:0 24px 48px -18px rgba(16,32,31,.45),0 0 0 1px rgba(16,32,31,.06);color:var(--ink);position:relative;transform:translateY(12px) scale(.96);transform-origin:bottom right;opacity:0;transition:opacity .35s ease,transform .35s cubic-bezier(.2,.7,.2,1);pointer-events:none !important;}
-  #waBubble.is-open{opacity:1;transform:none;pointer-events:auto !important;}
-  #waBubble .wa-x{position:absolute;top:8px;right:8px;width:26px;height:26px;border:none;border-radius:999px;background:transparent;color:var(--ink-faint);cursor:pointer;font-size:18px;line-height:1;}
-  #waBubble .wa-x:hover{background:var(--bg);}
-  .wa-head{display:flex;align-items:center;gap:10px;padding-right:22px;}
-  .wa-head svg{border-radius:10px;flex-shrink:0;}
-  .wa-head strong{display:block;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:14.5px;line-height:1.2;}
-  .wa-status{display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--ink-faint);}
-  #waDot{width:7px;height:7px;border-radius:50%;background:#9AA7A4;display:inline-block;}
-  #waDot.on{background:#25D366;box-shadow:0 0 0 3px rgba(37,211,102,.18);}
-  .wa-msg{margin-top:12px;background:#EAF6EF;border-radius:4px 14px 14px 14px;padding:10px 12px 8px;font-size:13px;line-height:1.5;color:var(--ink);}
-  .wa-msg em{display:block;text-align:right;font-style:normal;font-size:10.5px;color:var(--ink-faint);margin-top:2px;}
-  .wa-cta{margin-top:12px;display:flex;align-items:center;justify-content:center;gap:8px;background:#25D366;color:#fff !important;text-decoration:none;font-weight:700;font-size:14px;border-radius:999px;padding:11px 14px;transition:background .2s;}
-  .wa-cta:hover{background:#1EBE5A;}
-  #vwCookie{position:fixed;left:20px;bottom:20px;z-index:90;width:min(430px,calc(100vw - 40px));background:var(--dark);color:#fff;border-radius:18px;padding:18px 18px 16px;box-shadow:0 26px 60px -20px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.06);transform:translateY(16px);opacity:0;transition:opacity .35s ease,transform .35s cubic-bezier(.2,.7,.2,1);}
-  #vwCookie.is-open{opacity:1;transform:none;}
-  #vwCookie .ck-title{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:700;font-size:16px;}
-  #vwCookie p{margin:6px 0 14px;font-size:13px;line-height:1.55;color:#C9D6D3;}
-  #vwCookie p a{color:var(--mint);}
-  .ck-btns{display:flex;gap:8px;flex-wrap:wrap;}
-  .ck-btns button{flex:1 1 150px;white-space:nowrap;border-radius:999px;padding:11px 14px;font:700 13.5px 'Nunito Sans',system-ui,sans-serif;cursor:pointer;}
-  .ck-yes{background:var(--mint);color:var(--dark);border:none;}
-  .ck-yes:hover{background:#8FE3D8;}
-  .ck-no{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.28);}
-  .ck-no:hover{border-color:#fff;}
-  .ck-btns button:focus-visible,.wa-cta:focus-visible,#waBubble .wa-x:focus-visible{outline:2px solid var(--mint);outline-offset:2px;}
-  @media (max-width:600px){ #vwCookie{left:12px;right:12px;bottom:12px;width:auto;} body.vw-ck-open #waWidget{display:none !important;} }
-  @media (max-width:480px){ #waWidget{right:14px;bottom:14px;} #waBubble{width:min(292px,calc(100vw - 28px));} }
-  @media (max-width:700px){ .site-footer{padding-bottom:104px !important;} }</style>
   <script>
     (function(){
       var TOPIC = { 'product-batterij':'een thuisbatterij', 'product-zonnepanelen':'zonnepanelen', 'product-warmtepomp':'een warmtepomp', 'product-airco':'airco', 'product-boiler':'een elektrische boiler', 'product-laadpaal':'een laadpaal', 'product-meterkast':'je meterkast' };
@@ -1103,7 +1075,7 @@ function renderProduct(slug){
     '</div></div>' ;
 
   var tiSlot = root.querySelector('.ti-slot');
-  if(tiSlot){ var tiS = document.createElement('script'); tiS.defer = true; tiS.async = true; tiS.src = 'https://cdn.trustindex.io/loader.js?2c27991823f31136476602c270b'; tiSlot.appendChild(tiS); }
+  if(tiSlot){ var tiS = document.createElement('script'); tiS.defer = true; tiS.async = true; tiS.src = 'https://cdn.trustindex.io/loader.js?2c27991823f31136476602c270b'; (function(){ var go = function(){ tiSlot.appendChild(tiS); }; if(!('IntersectionObserver' in window)) return go(); var io = new IntersectionObserver(function(es){ if(es.some(function(e){ return e.isIntersecting; })){ io.disconnect(); go(); } }, {rootMargin:'600px 0px'}); io.observe(tiSlot); })(); }
   initReveal(root);
 }
 
@@ -1603,7 +1575,7 @@ body.vwb-lock{overflow:hidden;}
   try{ if(sessionStorage.getItem('vwpClosed')) return; }catch(e){}
   var calc = document.getElementById('calculator') || document.getElementById('calcCard');
   var bar = document.createElement('div'); bar.className = 'vwp'; bar.setAttribute('role', 'region'); bar.setAttribute('aria-label', 'Installatie plannen');
-  bar.innerHTML = '<span class="t">📅 Installatie al vanaf <b>' + first + '</b></span><a class="go" href="' + (calc ? '#calculator' : '/bereken-je-prijs') + '">Plan nu →</a><button type="button" class="x" aria-label="Sluiten">×</button>';
+  bar.innerHTML = '<span class="t">📅 Installatie al vanaf <b>' + first + '</b></span><a class="go" href="' + (calc ? '#' + calc.id : '/bereken-je-prijs') + '">Plan nu →</a><button type="button" class="x" aria-label="Sluiten">×</button>';
   document.body.appendChild(bar);
   bar.querySelector('.x').addEventListener('click', function(){ bar.remove(); document.body.classList.remove('vwp-up'); try{ sessionStorage.setItem('vwpClosed', '1'); }catch(e){} });
   bar.querySelector('.go').addEventListener('click', function(){ try{ if(window.vwTrack) vwTrack('plan_balk_klik', {pagina: location.pathname}); }catch(e){} });

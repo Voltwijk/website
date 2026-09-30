@@ -346,7 +346,7 @@ PLAN = r'''<!-- vw-plan:start -->
   try{ if(sessionStorage.getItem('vwpClosed')) return; }catch(e){}
   var calc = document.getElementById('calculator') || document.getElementById('calcCard');
   var bar = document.createElement('div'); bar.className = 'vwp'; bar.setAttribute('role', 'region'); bar.setAttribute('aria-label', 'Installatie plannen');
-  bar.innerHTML = '<span class="t">📅 Installatie al vanaf <b>' + first + '</b></span><a class="go" href="' + (calc ? '#calculator' : '/bereken-je-prijs') + '">Plan nu →</a><button type="button" class="x" aria-label="Sluiten">×</button>';
+  bar.innerHTML = '<span class="t">📅 Installatie al vanaf <b>' + first + '</b></span><a class="go" href="' + (calc ? '#' + calc.id : '/bereken-je-prijs') + '">Plan nu →</a><button type="button" class="x" aria-label="Sluiten">×</button>';
   document.body.appendChild(bar);
   bar.querySelector('.x').addEventListener('click', function(){ bar.remove(); document.body.classList.remove('vwp-up'); try{ sessionStorage.setItem('vwpClosed', '1'); }catch(e){} });
   bar.querySelector('.go').addEventListener('click', function(){ try{ if(window.vwTrack) vwTrack('plan_balk_klik', {pagina: location.pathname}); }catch(e){} });
