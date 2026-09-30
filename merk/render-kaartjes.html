@@ -1,0 +1,16 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="robots" content="noindex">
+<title>Render visitekaartjes</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/kit.css">
+<style>body{margin:0;background:#dde3e1;}#out{display:flex;flex-wrap:wrap;gap:8mm;padding:8mm;}@page{margin:0;}</style>
+</head><body><div id="out"></div>
+<script src="assets/logos.js"></script><script src="assets/kit.js"></script>
+<script>
+var q=new URLSearchParams(location.search), v=q.get('v'), side=q.get('side'), b=+(q.get('b')||0);
+var d={}; ['naam','functie','telefoon','mobiel','email'].forEach(function(k){ if(q.has(k)) d[k]=q.get(k); });
+var out=document.getElementById('out');
+if(v&&q.get('print')){ document.head.insertAdjacentHTML('beforeend','<style>@page{size:'+(85+2*b)+'mm '+(55+2*b)+'mm;margin:0}html,body{background:none}#out{display:block;padding:0}.vwc{break-after:page;page-break-after:always}</style>'); out.innerHTML=VWKit.card(v,'front',d,b)+VWKit.card(v,'back',d,b); }
+else if(v&&side){ document.body.style.background='transparent'; out.style.padding='0'; out.innerHTML=VWKit.card(v,side,d,b); }
+else ['a','b','c'].forEach(function(x){ out.innerHTML+=VWKit.card(x,'front',d,0)+VWKit.card(x,'back',d,0); });
+document.fonts.ready.then(function(){ document.body.setAttribute('data-ready','1'); });
+</script></body></html>

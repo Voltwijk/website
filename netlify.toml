@@ -29,3 +29,9 @@
   for = "/brand/*"
   [headers.values]
     Cache-Control = "public, max-age=604800"
+
+# Merkboek en merkkit: wel bereikbaar, niet in Google
+[[headers]]
+  for = "/merk/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"

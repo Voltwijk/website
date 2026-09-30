@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"><meta name="robots" content="noindex">
+<title>Voltwijk flyer thuisbatterij A5</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/print.css">
+<style>
+.fl .price-badge{position:absolute;right:15mm;top:15mm;background:var(--coral);color:#fff;border-radius:50%;width:30mm;height:30mm;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;transform:rotate(-8deg);}
+.fl .price-badge small{font-size:7pt;font-weight:800;letter-spacing:.1em;text-transform:uppercase;}
+.fl .price-badge b{font-family:var(--disp);font-size:15pt;line-height:1.05;}
+.fl-back .in{gap:0;}
+.mini{display:grid;grid-template-columns:repeat(3,1fr);gap:3mm;margin-top:6mm;}
+.mini div{border:.35mm solid var(--line);border-radius:3mm;padding:4mm 3.5mm;text-align:center;}
+.mini div.hl{border:.6mm solid var(--teal);background:var(--tint);}
+.mini b{display:block;font-family:var(--disp);font-size:15pt;}
+.mini small{display:block;font-size:7pt;color:var(--faint);margin-top:1mm;line-height:1.35;}
+.mini em{display:block;font-style:normal;font-family:var(--disp);font-weight:700;font-size:12pt;margin-top:2.5mm;color:var(--teal);}
+.ticks{display:grid;gap:2mm;margin-top:6mm;}
+.ticks div{font-size:9pt;color:var(--soft);display:flex;gap:2.4mm;}
+.ticks div::before{content:"✓";color:var(--teal);font-weight:800;}
+</style></head><body>
+<section class="pg cover fl">
+  <div class="photo" style="background-image:url(../images/batterij-zolder.jpg)"></div><div class="shade"></div>
+  <div class="logo" data-logo="wit"></div>
+  <div class="price-badge"><small>vanaf</small><b>€ 4.200</b><small>incl. installatie</small></div>
+  <div class="txt">
+    <h1>Salderen stopt. Jouw stroom blijft van jou.</h1>
+    <div class="sub">Een thuisbatterij van 10 of 16 kWh bewaart je zonnestroom voor ’s avonds. Vaste prijs, geplaatst door onze eigen monteurs.</div>
+  </div>
+  <div class="foot"><span>VOLTWIJK.NL</span><span>085 333 56 87</span></div>
+</section>
+<section class="pg fl-back"><div class="in" style="bottom:66mm;">
+  <div class="eyebrow">Thuisbatterij</div>
+  <h2>Kies je batterij. Wij doen de rest.</h2>
+  <div class="mini">
+    <div><b>10 kWh</b><small>5 kW omvormer<br>1-fase</small><em>€ 4.200</em></div>
+    <div class="hl"><b>16 kWh</b><small>6 kW omvormer<br>1-fase</small><em>€ 4.600</em></div>
+    <div><b>16 kWh</b><small>8 kW omvormer<br>3-fase</small><em>€ 5.700</em></div>
+  </div>
+  <div class="ticks">
+    <div>Vaste prijs inclusief installatie en eigen groep in de meterkast</div>
+    <div>Geplaatst door ons eigen team, geen onderaannemers</div>
+    <div>App ingesteld en uitgelegd bij de oplevering</div>
+    <div>2 jaar garantie op de installatie</div>
+  </div>
+  <div class="mini" style="margin-top:7mm;">
+    <div style="text-align:left"><small style="font-weight:800;letter-spacing:.12em;color:var(--teal)">STAP 1</small><b style="font-size:10.5pt;margin-top:1mm">Keuzehulp</b><small>Scan de code en zie in vier vragen je advies.</small></div>
+    <div style="text-align:left"><small style="font-weight:800;letter-spacing:.12em;color:var(--teal)">STAP 2</small><b style="font-size:10.5pt;margin-top:1mm">Check</b><small>We bellen je en bekijken je meterkast via een paar foto’s.</small></div>
+    <div style="text-align:left"><small style="font-weight:800;letter-spacing:.12em;color:var(--teal)">STAP 3</small><b style="font-size:10.5pt;margin-top:1mm">Installatie</b><small>Je kiest de datum, onze monteurs doen de rest.</small></div>
+  </div>
+</div>
+<div class="back"><div class="bi">
+  <div><div class="logo" data-logo="wit"></div><div class="c"><b>085 333 56 87</b> · ma t/m vr 9:00–17:30<br>info@voltwijk.nl · voltwijk.nl<br>Schoenmakerij 15a, 4762 AS Zevenbergen</div></div>
+  <div><img src="kit/qr-keuzehulp.svg" alt=""><div class="q">Welke past bij jou?</div></div>
+</div></div></section>
+<script src="assets/logos.js"></script>
+<script>
+document.querySelectorAll('[data-logo]').forEach(function(el, i){ el.innerHTML = (VW_LOGOS[el.getAttribute('data-logo')] || '').replace(/id="(\w+)"/g, 'id="$1f' + i + '"').replace(/url\(#(\w+)\)/g, 'url(#$1f' + i + ')'); });
+Promise.all([document.fonts.ready].concat([].map.call(document.images, function(im){ return im.complete ? 1 : new Promise(function(r){ im.onload = im.onerror = r; }); }))).then(function(){ setTimeout(function(){ document.body.setAttribute('data-ready', '1'); }, 300); });
+</script>
+</body></html>

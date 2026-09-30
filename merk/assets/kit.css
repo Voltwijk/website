@@ -1,0 +1,54 @@
+/* Voltwijk visitekaartjes: 85 x 55 mm netto, --b = afloop (0 op scherm, 3mm voor de drukker) */
+.vwc{--b:0mm;--ink:#10201F;--teal:#0F6E6B;--mint:#6FD6C8;--coral:#FF6B5B;--mist:#F5F7F5;--soft:#54615F;
+  position:relative;overflow:hidden;box-sizing:border-box;width:calc(85mm + 2*var(--b));height:calc(55mm + 2*var(--b));
+  border-radius:4mm;font-family:'Nunito Sans',Arial,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;print-color-adjust:exact;-webkit-print-color-adjust:exact;}
+.vwc.vwc-print{border-radius:0;}
+.vwc *{box-sizing:border-box;}
+.vwc svg{display:block;width:100%;height:auto;}
+.vwc-fill{position:absolute;inset:0;}
+.vwc-safe{position:absolute;inset:calc(var(--b) + 5mm);}
+.vwc-logo{width:34mm;}
+.vwc-tag{font-size:6.4pt;letter-spacing:.06em;line-height:1.5;}
+.vwc-who b{display:block;font-family:'Bricolage Grotesque','Nunito Sans',Arial,sans-serif;font-weight:700;font-size:10.5pt;line-height:1.1;letter-spacing:-.01em;}
+.vwc-who span{display:block;font-size:6.6pt;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-top:1.2mm;color:var(--teal);}
+.vwc-rows{display:grid;gap:.9mm;font-size:6.8pt;line-height:1.25;}
+.vwc-rows div{display:flex;gap:2.2mm;align-items:baseline;white-space:nowrap;}
+.vwc-rows i{font-style:normal;font-weight:800;font-size:5.4pt;letter-spacing:.1em;color:var(--teal);width:2.4mm;}
+.vwc-rows.on-dark{color:#fff;}
+.vwc-rows.on-dark i{color:var(--mint);}
+.vwc-adr{font-size:5.8pt;color:var(--soft);letter-spacing:.01em;}
+.vwc-qr{display:block;width:14mm;height:14mm;}
+
+/* A: Avond */
+.vwc-wm{position:absolute;right:calc(var(--b) - 7mm);bottom:calc(var(--b) - 13mm);width:44mm;color:#fff;opacity:.06;}
+.vwc-a-f{display:flex;flex-direction:column;justify-content:space-between;}
+.vwc-a-f .vwc-logo{width:40mm;margin-top:13mm;}
+.vwc-a-f .vwc-tag{color:var(--mint);text-transform:uppercase;font-weight:800;font-size:5.6pt;letter-spacing:.16em;}
+.vwc-a-b .vwc-mark{position:absolute;right:0;top:0;width:7mm;}
+.vwc-a-b .vwc-who{position:absolute;left:0;top:0;}
+.vwc-a-b .vwc-rows{position:absolute;left:0;top:15.5mm;}
+.vwc-a-b .vwc-adr{position:absolute;left:0;bottom:0;}
+.vwc-a-b .vwc-qr{position:absolute;right:0;bottom:0;}
+
+/* B: Teal */
+.vwc-big{position:absolute;right:calc(var(--b) - 16mm);top:calc(var(--b) - 4mm);width:68mm;color:#6FD6C8;opacity:.2;}
+.vwc-b-f .vwc-logo{position:absolute;left:0;bottom:4.5mm;width:38mm;}
+.vwc-b-f .vwc-tag{position:absolute;left:0;bottom:0;color:#E4F0EF;font-weight:700;font-size:6.2pt;letter-spacing:.04em;}
+.vwc-strip{position:absolute;left:0;right:0;bottom:0;height:calc(var(--b) + 2.2mm);background:linear-gradient(90deg,#0F6E6B 0 78%,#6FD6C8 78% 94%,#FF6B5B 94%);}
+.vwc-b-b .vwc-who{position:absolute;left:0;top:0;}
+.vwc-b-b .vwc-logo-s{position:absolute;right:0;top:.6mm;width:22mm;}
+.vwc-b-b .vwc-rows{position:absolute;left:0;top:16mm;}
+.vwc-b-b .vwc-adr{position:absolute;left:0;bottom:1.6mm;}
+
+/* C: Licht */
+.vwc-c-f{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
+.vwc-c-f .vwc-logo{width:46mm;}
+.vwc-c-f .vwc-line{width:8mm;height:.5mm;border-radius:1mm;background:var(--coral);margin:4.2mm 0 3.2mm;}
+.vwc-c-f .vwc-tag{color:var(--soft);font-weight:700;font-size:6.4pt;letter-spacing:.02em;}
+.vwc-c-b .vwc-who b{color:#fff;}
+.vwc-c-b .vwc-who span{color:var(--mint);}
+.vwc-c-b .vwc-who{position:absolute;left:0;top:0;}
+.vwc-c-b .vwc-rows{position:absolute;left:0;top:15.5mm;}
+.vwc-c-b .vwc-adr{position:absolute;left:0;bottom:0;color:#9FB0AD;}
+.vwc-c-b .vwc-qrtile{position:absolute;right:0;bottom:0;background:#fff;border-radius:2.2mm;padding:1.6mm;}
+.vwc-c-b .vwc-qr{width:12.5mm;height:12.5mm;}
