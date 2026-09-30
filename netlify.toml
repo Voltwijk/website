@@ -9,6 +9,13 @@
   to = "/"
   status = 301
 
+# Interne marketingdocumenten niet publiek tonen
+[[redirects]]
+  from = "/marketing/*"
+  to = "/404"
+  status = 404
+  force = true
+
 # www -> zonder www
 [[redirects]]
   from = "https://www.voltwijk.nl/*"
