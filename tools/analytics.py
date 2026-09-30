@@ -26,7 +26,8 @@ BLOCK = '''<!-- vw-analytics:start -->
     else if(h.indexOf('tel:') === 0) ev('bel_klik', { pagina: location.pathname });
   }, true);
   document.addEventListener('submit', function(e){
-    var f = e.target; var soort = f.closest && f.closest('#leadNewsletter') ? 'nieuwsbrief' : 'aanvraag';
+    var f = e.target; if(f.id === 'bkAanvraag' || (f.checkValidity && !f.checkValidity())) return; // keuzehulp meet zelf; onvolledige formulieren niet tellen
+    var soort = f.closest && f.closest('#leadNewsletter') ? 'nieuwsbrief' : 'aanvraag';
     ev(soort === 'nieuwsbrief' ? 'nieuwsbrief_aanmelding' : 'generate_lead', { pagina: location.pathname, soort: soort });
   }, true);
   window.vwTrack = ev;
