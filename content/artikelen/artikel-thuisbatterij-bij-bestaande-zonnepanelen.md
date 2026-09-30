@@ -119,7 +119,7 @@ Een batterij helpt door het overschot van overdag te bewaren voor de avond. Hoev
 
 ## Hoe Voltwijk helpt
 
-Onze eigen monteurs kijken naar je omvormer, je aansluiting en je meterkast, en vertellen je eerlijk wat nodig is. De thuisbatterij van Voltwijk heeft 5 kWh capaciteit, 3,6 kW vermogen, 10 jaar garantie en een app-koppeling, vanaf € 3.499 inclusief installatie. Bekijk alles op de [thuisbatterij-pagina](/product-batterij).
+Onze eigen monteurs kijken naar je omvormer, je aansluiting en je meterkast, en vertellen je eerlijk wat nodig is. De thuisbatterij van Voltwijk is er in 10 en 16 kWh, met een hybride omvormer van 5, 6 of 8 kW, vanaf € 4.200 inclusief installatie. Bekijk alles op de [thuisbatterij-pagina](/product-batterij).
 
 faq:
 Q: Kan ik een thuisbatterij toevoegen aan mijn bestaande zonnepanelen?

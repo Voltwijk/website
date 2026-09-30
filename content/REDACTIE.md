@@ -24,7 +24,7 @@ Voorkeur (wat het snelst in Google scoort voor een jonge site):
 - **Een feit komt alleen in het artikel als minstens twee onafhankelijke bronnen het bevestigen, of één officiële bron.** Anders laat je het weg of schrijf je het algemeen ("de vergoeding verschilt per leverancier").
 - Veel sites zijn via WebFetch niet bereikbaar; dan gelden de zoekresultaten van meerdere bronnen als bevestiging.
 - Verzin nooit cijfers, reviews, klantverhalen, citaten of statistieken over Voltwijk. Toegestaan over Voltwijk: 12.500+ installaties, 4,7/5 op Google, eigen monteurs, vaste prijs inclusief installatie, 2 jaar garantie op de installatie, gevestigd in Zevenbergen.
-- Prijzen van Voltwijk komen uit de calculator: thuisbatterij vanaf € 3.499, zonnepanelen vanaf € 3.999, warmtepomp vanaf € 6.750, airco vanaf € 1.899, boiler vanaf € 1.199, laadpaal vanaf € 1.299, meterkast vanaf € 649. Noem geen andere Voltwijk-prijzen.
+- Prijzen van Voltwijk komen uit de calculator: thuisbatterij vanaf € 4.200 (10 kWh; 16 kWh 1-fase € 4.600, 16 kWh 3-fase € 5.700), zonnepanelen vanaf € 3.999, warmtepomp vanaf € 6.750, airco vanaf € 1.899, boiler vanaf € 1.199, laadpaal vanaf € 1.299, meterkast vanaf € 649. Noem geen andere Voltwijk-prijzen.
 - Noem de namen "Voltier" en "Zonne-installaties Noord" nooit.
 - Geen negatieve uitspraken over concurrenten. Merken van apparaten neutraal noemen.
 

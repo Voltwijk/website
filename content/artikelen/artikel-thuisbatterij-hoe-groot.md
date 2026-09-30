@@ -97,7 +97,7 @@ Let bij uitbreidbaarheid op een paar dingen:
 
 ## Hoe Voltwijk helpt
 
-De thuisbatterij van Voltwijk heeft 5 kWh capaciteit en 3,6 kW vermogen; onze monteurs kijken met je mee welke maat bij je verbruik past. Bekijk de specificaties op onze [thuisbatterij-pagina](/product-batterij).
+De thuisbatterij van Voltwijk is er in 10 en 16 kWh, met een hybride omvormer van 5, 6 of 8 kW. Met de keuzehulp op de productpagina zie je in een minuut welke maat bij je verbruik past. Bekijk de specificaties op onze [thuisbatterij-pagina](/product-batterij).
 
 faq:
 Q: Hoeveel kWh thuisbatterij heb ik nodig?

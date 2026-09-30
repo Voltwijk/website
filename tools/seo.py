@@ -9,8 +9,8 @@ T = {  # titel, description
            'Zonnepanelen, thuisbatterij, warmtepomp, airco of laadpaal met een vaste prijs vooraf, geïnstalleerd door ons eigen team. Bereken direct je prijs.'),
  'product-zonnepanelen': ('Zonnepanelen laten plaatsen – vanaf € 3.999 | Voltwijk',
            'Full-black zonnepanelen vanaf € 3.999 voor 12 panelen, inclusief installatie door eigen monteurs. Vaste prijs vooraf, 25 jaar productgarantie.'),
- 'product-batterij': ('Thuisbatterij laten installeren – vanaf € 3.499 | Voltwijk',
-           'Thuisbatterij vanaf € 3.499 inclusief installatie. Sla je zonnestroom op voor als salderen stopt in 2027. Vaste prijs, 10 jaar garantie.'),
+ 'product-batterij': ('Thuisbatterij 10 of 16 kWh – vanaf € 4.200 | Voltwijk',
+           'Thuisbatterij van 10 of 16 kWh met hybride omvormer, vanaf € 4.200 inclusief installatie. Bereken in een minuut welke batterij past bij jouw verbruik.'),
  'product-warmtepomp': ('Warmtepomp laten installeren – vanaf € 6.750 | Voltwijk',
            'Lucht/water-warmtepomp vanaf € 6.750 inclusief installatie. ISDE-subsidie direct verrekend, geplaatst door ons eigen team. Bereken je prijs.'),
  'product-airco': ('Airco laten installeren – vanaf € 1.899 | Voltwijk',
@@ -43,7 +43,7 @@ T.update({  # kortere titels (Google toont ~60 tekens)
 })
 PRODUCT = {  # slug: (naam, prijs, afbeelding)
  'product-zonnepanelen': ('Zonnepanelen (12 panelen)', 3999, 'zonnepanelen-installatie'),
- 'product-batterij': ('Thuisbatterij', 3499, 'batterij-installatie'),
+ 'product-batterij': ('Thuisbatterij', 4200, 'batterij-installatie'),
  'product-warmtepomp': ('Warmtepomp', 6750, 'warmtepomp-installatie'),
  'product-airco': ('Airconditioning', 1899, 'airco-installatie'),
  'product-boiler': ('Elektrische boiler', 1199, 'boiler-installatie'),
