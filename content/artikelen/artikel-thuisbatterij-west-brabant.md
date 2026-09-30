@@ -75,9 +75,9 @@ Voltwijk werkt met drie vaste pakketten, inclusief installatie:
 
 | Pakket | Omvormer | Past bij | Prijs incl. installatie |
 |---|---|---|---|
-| 10 kWh | 5 kW hybride | Gemiddeld huishouden met zonnepanelen | € 4.200 |
-| 16 kWh | 6 kW, 1-fase | Hoger avondverbruik, 1-fase aansluiting | € 4.600 |
-| 16 kWh | 8 kW, 3-fase | Hoger verbruik, 3-fase aansluiting | € 5.700 |
+| 10 kWh | 5 kW hybride | Kleiner huishouden met een lager verbruik | € 4.200 |
+| 16 kWh | 6 kW, 1-fase | De meeste huishoudens met zonnepanelen (1-fase) | € 4.600 |
+| 16 kWh | 8 kW, 3-fase | Woningen met een 3-fase aansluiting | € 5.700 |
 
 Twijfel je? Met de [keuzehulp voor de thuisbatterij](/product-batterij#batterijkeuze) zie je in een paar vragen welk pakket bij jou past.
 
