@@ -106,7 +106,7 @@ def form_html():
     if MODE == 'vol':
         return (f'<div class="es-full"><strong>Alle {MAX} plekken zijn vergeven.</strong> Bedankt voor de enorme belangstelling! '
                 'Wil je toch advies? Stuur ons een appje of <a href="/bereken-je-prijs" style="color:var(--primary);font-weight:700;">bereken je prijs</a>.</div>')
-    kern = ''.join(f'<option>{esc(k)}</option>' for k in KERNEN)
+    kern = ''.join(f'<option>{esc(k)}</option>' for k in KERNEN) + '<option>Overig</option>'
     cal = ('<button type="button" class="btn-primary es-cal" data-book="scan">Kies direct je moment →</button>'
            '<div class="es-or"><span>of laat je terugbellen</span></div>') if CAL else ''
     return f'''<form class="es-form" name="energiescan" method="POST" action="/energiescan-bedankt" data-netlify="true" netlify-honeypot="bot-field">
@@ -220,7 +220,7 @@ def main():
     s = open('index.html', encoding='utf-8').read()
     s = re.sub(r'\s*<!-- scan:start -->.*?<!-- scan:end -->', '', s, flags=re.S)
     if MODE != 'uit':
-        anchor = 'geen wisselende onderaannemers, geen verrassingen achteraf.</p>'
+        anchor = 'dan hoor je dat altijd voordat we beginnen.</p>'  # einde van de intro op de homepage
         assert s.count(anchor) == 1
         s = s.replace(anchor, anchor + '\n    ' + BAND, 1)
     open('index.html', 'w', encoding='utf-8').write(s)
