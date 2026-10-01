@@ -91,9 +91,9 @@ Nee. Een grote batterij heeft bijna altijd een lagere prijs per kWh, omdat de om
 
 ## Wat kost een thuisbatterij bij Voltwijk?
 
-Bij Voltwijk betaal je een vaste prijs, inclusief installatie en btw. Er zijn drie pakketten:
+Bij Voltwijk betaal je een vaste prijs inclusief installatie. De prijzen hieronder zijn exclusief btw: die kun je in veel gevallen terugvragen (zie hierboven). Er zijn drie pakketten:
 
-| Pakket | Aansluiting | Prijs incl. installatie | Prijs per kWh |
+| Pakket | Aansluiting | Prijs incl. installatie, excl. btw | Prijs per kWh |
 |---|---|---|---|
 | 10 kWh + 5 kW hybride omvormer | 1-fase | € 4.200 | € 420 |
 | 16 kWh + 6 kW hybride omvormer | 1-fase | € 4.600 | € 288 |

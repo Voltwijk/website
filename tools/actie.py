@@ -11,7 +11,7 @@ ROOT = os.path.join(os.path.dirname(__file__), '..'); os.chdir(ROOT)
 SHELL = 'artikel-isde-subsidie-2026.html'
 SLUG = 'thuisbatterij-actie'
 TITLE = 'Thuisbatterij 16 kWh voor € 4.600 incl. installatie | Voltwijk'
-DESC = ('Thuisbatterij van 16 kWh met 6 kW hybride omvormer voor € 4.600, inclusief installatie en btw. '
+DESC = ('Thuisbatterij van 16 kWh met 6 kW hybride omvormer voor € 4.600 inclusief installatie (excl. btw, die je vaak terugkrijgt). '
         'Zie in 4 vragen welke batterij bij jou past.')
 TEL, TEL_HREF, WA = '085 333 56 87', 'tel:+31853335687', 'https://wa.me/31853335687'
 esc = lambda s: html.escape(s, quote=True)
@@ -41,7 +41,7 @@ GET = [
  ('Thuisbatterij van 16 kWh', 'Met een 6 kW hybride omvormer, voor een 1-fase aansluiting. Past een andere batterij beter, dan zie je dat in de keuzehulp.'),
  ('Complete installatie', 'Montage en bekabeling, en aansluiten op een eigen groep in de meterkast. Door onze eigen monteurs.'),
  ('App en uitleg', 'We stellen de app voor je in en leggen bij de oplevering uit hoe alles werkt.'),
- ('Vaste prijs vooraf', '€ 4.600 inclusief installatie en btw. Is er meerwerk nodig, dan hoor je dat altijd vooraf.'),
+ ('Vaste prijs vooraf', '€ 4.600 inclusief installatie, excl. btw. De btw kun je in veel gevallen terugvragen. Is er meerwerk nodig, dan hoor je dat altijd vooraf.'),
 ]
 STEPS = [
  ('Doe de keuzehulp', 'Vier korte vragen. Je ziet direct welke batterij past en wat die kost. Vraag je hem aan, dan betaal je nog niets.'),
@@ -125,7 +125,7 @@ def main_html():
         <div class="pill">Thuisbatterij · vaste prijs</div>
         <h1 class="vw-heading">Thuisbatterij van 16&nbsp;kWh voor €&nbsp;4.600, inclusief installatie</h1>
         <p class="l">Met een 6 kW hybride omvormer, voor een 1-fase aansluiting. Geïnstalleerd door onze eigen monteurs uit Zevenbergen. Twijfel je welke batterij bij jou past? De keuzehulp hieronder laat het in vier vragen zien.</p>
-        <div class="ta-price"><b>€ 4.600</b><span>vaste prijs, inclusief installatie en btw</span></div>
+        <div class="ta-price"><b>€ 4.600</b><span>vaste prijs incl. installatie, excl. btw</span></div>
         <div class="ta-cta"><a href="#batterijkeuze" class="btn-primary">Start de keuzehulp →</a><a class="tel" href="{TEL_HREF}">of bel {TEL}</a></div>
       </div>
       <div class="ta-img"><img fetchpriority="high" src="/images/batterij-installatie.webp" alt="Thuisbatterij met hybride omvormer, geplaatst op een zolder" width="1400" height="1050"></div>
