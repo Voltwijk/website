@@ -129,7 +129,7 @@ for f in sorted(glob.glob('*.html')):
             offer = {"@type": "AggregateOffer", "priceCurrency": "EUR", "lowPrice": str(min(prijzen)), "highPrice": str(max(prijzen)),
                      "offerCount": len(PAKKETTEN), "availability": "https://schema.org/InStock", "url": url, "seller": SELLER,
                      "offers": [{"@type": "Offer", "name": 'Thuisbatterij ' + p['naam'] + ' (' + p['fase'] + ')',
-                                 "description": "Vaste prijs inclusief installatie en btw", "price": str(p['prijs']), "priceCurrency": "EUR",
+                                 "description": "Vaste prijs inclusief installatie, exclusief btw", "price": str(p['prijs']), "priceCurrency": "EUR", "priceSpecification": {"@type": "UnitPriceSpecification", "price": str(p['prijs']), "priceCurrency": "EUR", "valueAddedTaxIncluded": False},
                                  "priceSpecification": {"@type": "UnitPriceSpecification", "price": str(p['prijs']), "priceCurrency": "EUR", "valueAddedTaxIncluded": True},
                                  "availability": "https://schema.org/InStock", "url": url, "seller": SELLER} for p in PAKKETTEN]}
         data.append({"@context": "https://schema.org", "@type": "Product", "name": name, "description": desc,
