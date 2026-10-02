@@ -670,8 +670,9 @@ def patch(f, s):
     if f == 'index.html':
         # homepage: de calculator zelf, direct onder de video; knoppen op de pagina scrollen ernaartoe
         s = re.sub(r'<!-- vw-funnel-cta:start -->.*?<!-- vw-funnel-cta:end -->', '', s, flags=re.S)
-        s = re.sub(r'<!-- vw-home-calc:start -->.*?<!-- vw-home-calc:end -->', lambda m: '<!-- vw-home-calc:start -->' + component() + '<!-- vw-home-calc:end -->', s, count=1, flags=re.S)
-        s = s.replace(f'href="{URL}"', 'href="#calculator"')
+        # de calculator staat op een eigen scherm; de homepage verwijst ernaar (geen dubbel blok)
+        s = re.sub(r'\s*<!-- vw-home-calc:start -->.*?<!-- vw-home-calc:end -->', '', s, flags=re.S)
+        s = s.replace('href="#calculator"', f'href="{URL}"')
     s = re.sub(r'<!-- vw-funnel-cta:start -->.*?<!-- vw-funnel-cta:end -->', '<!--vw-calc-plek-->', s, flags=re.S)
     m = re.search(r'<div id="calculator"', s)
     if m:
@@ -681,7 +682,7 @@ def patch(f, s):
         s = s.replace('<!--vw-calc-plek-->', band(f), 1).replace('<!--vw-calc-plek-->', '')
     s = s.replace('<!--vw-batterijkeuze-plek-->', '')
     # links naar de oude calculators
-    s = s.replace('href="/bereken-je-prijs"', f'href="{URL}"' if f != 'index.html' else 'href="#calculator"').replace('href="https://voltwijk.nl/bereken-je-prijs"', f'href="https://voltwijk.nl{URL}"')
+    s = s.replace('href="/bereken-je-prijs"', f'href="{URL}"').replace('href="https://voltwijk.nl/bereken-je-prijs"', f'href="https://voltwijk.nl{URL}"')
     s = s.replace('href="/product-batterij#batterijkeuze"', f'href="{URL}"').replace('href="/thuisbatterij-actie"', f'href="{URL}"')
     s = s.replace('href="#batterijkeuze"', f'href="{URL}"')
     if f in ANDERS: s = s.replace('href="#calculator"', 'href="#offerte"')
@@ -717,7 +718,7 @@ def patch(f, s):
     s = s.replace("cta:'Bereken welke batterij past'", "cta:'Bereken je thuisbatterij'").replace("cta:'Prijs berekenen &amp; inplannen'", "cta:'Vraag een offerte aan'")
     s = s.replace("'<a href=\"#calculator\" class=\"btn-primary\" style=\"background:'+p.accent+';color:var(--dark);text-decoration:none;\">'+p.cta+' →</a>'",
                   "'<a href=\"'+(p.cta==='Bereken je thuisbatterij'?'" + URL + "':'#offerte')+'\" class=\"btn-primary\" style=\"background:'+p.accent+';color:var(--dark);text-decoration:none;\">'+p.cta+' →</a>'")
-    if f == 'index.html': s = s.replace(f'href="{URL}"', 'href="#calculator"')
+    if f == 'index.html': s = s.replace('href="#calculator"', f'href="{URL}"')
     return s
 
 def main():
