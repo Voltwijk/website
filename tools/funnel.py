@@ -277,10 +277,10 @@ PK_TXT = {
    'foto': [('/images/calc-foxess-woning.webp', 'FoxESS P100 aan de buitenmuur', ''), ('/images/product-batterij.webp', 'Thuisbatterij', 'fit'), ('/images/thuisbatterij-bijkeuken.webp', 'Netjes weggewerkt in huis', '')]},
  'bat16-1': {'naam': 'Dyness LFP-batterij met Solis hybride omvormer', 'kort': 'De meeste opslag voor een woning met 1-fase aansluiting.',
    'feat': ['16 kWh opslag, ruim anderhalf keer het 10 kWh-pakket', 'Solis 6 kW hybride omvormer, ook geschikt voor je zonnepanelen', 'Veilige LFP-cellen', 'Werkt met dynamische contracten en energiemanagementsystemen'],
-   'foto': [('/images/calc-dyness-schuin-1.webp', 'Dyness LFP-batterij, 16 kWh', 'fit'), ('/images/calc-dyness-voor.webp', 'Dyness LFP-batterij, vooraanzicht', 'fit'), ('/images/calc-dyness-schuin-2.webp', 'Dyness LFP-batterij, zijaanzicht', 'fit'), ('/images/calc-solis-1fase.webp', 'Solis 6 kW hybride omvormer (1-fase)', 'fit')]},
+   'foto': [('/images/calc-dyness-schuin-1.webp', 'Dyness LFP-batterij, 16 kWh', 'fit'), ('/images/calc-dyness-voor.webp', 'Dyness LFP-batterij, vooraanzicht', 'fit'), ('/images/calc-dyness-schuin-2.webp', 'Dyness LFP-batterij, zijaanzicht', 'fit')]},
  'bat16-3': {'naam': 'Dyness LFP-batterij met Solis hybride omvormer', 'kort': 'Meer vermogen, verdeeld over drie fasen.',
    'feat': ['16 kWh opslag', 'Solis 8 kW hybride omvormer, verdeelt het vermogen over drie fasen', 'Veilige LFP-cellen', 'Geschikt bij een warmtepomp, laadpaal of dynamisch contract'],
-   'foto': [('/images/calc-dyness-schuin-1.webp', 'Dyness LFP-batterij, 16 kWh', 'fit'), ('/images/calc-dyness-voor.webp', 'Dyness LFP-batterij, vooraanzicht', 'fit'), ('/images/calc-dyness-schuin-2.webp', 'Dyness LFP-batterij, zijaanzicht', 'fit'), ('/images/calc-solis-3fase.webp', 'Solis 8 kW hybride omvormer (3-fase)', 'fit')]},
+   'foto': [('/images/calc-dyness-schuin-1.webp', 'Dyness LFP-batterij, 16 kWh', 'fit'), ('/images/calc-dyness-voor.webp', 'Dyness LFP-batterij, vooraanzicht', 'fit'), ('/images/calc-dyness-schuin-2.webp', 'Dyness LFP-batterij, zijaanzicht', 'fit')]},
 }
 INBEGREPEN = ['Batterij en hybride omvormer', 'Montage en bekabeling door onze eigen monteurs', 'Een eigen groep in de meterkast', 'Aanmelden bij de netbeheerder', 'App ingesteld en uitleg bij de oplevering', '2 jaar garantie op de installatie']
 
