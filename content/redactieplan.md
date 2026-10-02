@@ -11,7 +11,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 
 ## Open (op volgorde)
 - [klaar (2026-10-01, artikel-netcongestie-west-brabant)] Netcongestie in West-Brabant: wat betekent het voor jouw huis | netcongestie West-Brabant | batterij | lokaal, weinig concurrentie
-- [open] Warmtepomp bij vorst: werkt hij nog en wat kost het | warmtepomp vorst | warmtepomp | seizoensvraag oktober–februari
+- [klaar (2026-10-02, artikel-warmtepomp-bij-vorst)] Warmtepomp bij vorst: werkt hij nog en wat kost het | warmtepomp vorst | warmtepomp | seizoensvraag oktober–februari
 - [klaar (2026-10-01, artikel-airco-verwarmen-winter-kosten)] Airco als verwarming in de winter: wat kost het per maand | airco verwarmen kosten | airco | seizoensvraag, koopintentie
 - [klaar (2026-10-01, artikel-thuisbatterij-kopen-waar-op-letten)] Thuisbatterij kopen: 10 dingen om op te letten | thuisbatterij kopen waar op letten | batterij | koopintentie, gidsformaat
 - [klaar (2026-10-01, artikel-thuisbatterij-brandveiligheid)] Thuisbatterij en brandveiligheid: hoe veilig is een batterij in huis | thuisbatterij brandgevaar | batterij | veel gestelde zorgvraag
@@ -38,3 +38,5 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-10-01, artikel-subsidie-duurzaamheidslening-west-brabant)] Subsidie en duurzaamheidslening per gemeente in West-Brabant | subsidie zonnepanelen moerdijk | batterij | lokaal
 - [klaar (2026-10-01, artikel-zonnepanelen-west-brabant)] Zonnepanelen laten plaatsen in West-Brabant | zonnepanelen installeren etten-leur / breda | zonnepanelen | regionale pillar
 - [klaar (2026-10-01, artikel-airco-west-brabant)] Airco laten plaatsen in West-Brabant | airco laten plaatsen breda | airco | regionale pillar
+- [open] Stooklijn van je warmtepomp instellen: zo verlaag je je stroomverbruik | warmtepomp stooklijn instellen | warmtepomp | praktische wintervraag, weinig goede uitleg
+- [open] Hoeveel kWh levert een zonnepaneel in de winter? | zonnepaneel opbrengst winter | zonnepanelen | staat in zoekdata, seizoensvraag
