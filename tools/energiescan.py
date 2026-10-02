@@ -207,7 +207,7 @@ def page(shell, main, slug, title, desc, noindex=False):
     return s
 
 BAND = '''<!-- scan:start --><a href="/energiescan" class="reveal" style="display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;max-width:760px;margin:36px auto 0;padding:18px 22px;border-radius:18px;background:var(--dark);color:#fff;text-decoration:none;text-align:left;">
-      <span><span style="display:block;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--mint);">Gemeente Moerdijk · 26 t/m 31 oktober</span><span class="vw-heading" style="display:block;font-size:20px;margin-top:4px;">Gratis Energiescanweek: we komen gratis langs voor eerlijk advies</span></span>
+      <span><span style="display:block;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--mint);">Gemeente Moerdijk · 26 t/m 31 oktober</span><span class="vw-heading" style="display:block;font-size:20px;margin-top:4px;color:#fff;">Gratis Energiescanweek: we komen gratis langs voor eerlijk advies</span></span>
       <span style="font-weight:800;font-size:14px;color:var(--mint);white-space:nowrap;">Meld je aan →</span></a><!-- scan:end -->'''
 
 def main():

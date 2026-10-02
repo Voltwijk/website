@@ -303,17 +303,18 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
 <div>
 
   <!-- NAV -->
+  <style id="vw-navbook">.nav-book{border:1.5px solid currentColor;border-radius:999px;padding:8px 14px;white-space:nowrap;}#siteNav.is-stuck .nav-book,#siteNav.on-light .nav-book{background:var(--primary);border-color:var(--primary);color:#fff !important;}@media (max-width:1180px){#siteNav .nav-links a[href="/producten"]{display:none;}}</style>
   <div id="siteNav">
 
     <div class="wrap nav-inner" style="display:flex;align-items:center;justify-content:space-between;gap:20px;">
       <div class="nav-links">
-        <a href="/producten" style="color:inherit;text-decoration:none;">PRODUCTEN</a><a href="#calculator" class="nav-cta-link" style="color:inherit;text-decoration:none;">THUISBATTERIJ BEREKENEN</a><a href="/inzichten" style="color:inherit;text-decoration:none;">KENNISBANK</a>
+        <a href="/product-batterij" style="color:inherit;text-decoration:none;">THUISBATTERIJ</a><a href="/product-zonnepanelen" style="color:inherit;text-decoration:none;">ZONNEPANELEN</a><a href="/producten" style="color:inherit;text-decoration:none;">ALLE PRODUCTEN</a>
       </div>
       <a href="/" class="vw-heading" aria-label="Voltwijk, naar de homepage" style="display:inline-flex;align-items:center;white-space:nowrap;color:inherit;text-decoration:none;">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="10 -1616 10357 1646" class="vw-logo" role="img" aria-label="Voltwijk"><g transform="scale(1 -1)"><path transform="translate(0 0)" fill="currentColor" d="M464 0 10 1440H258L638 234L1023 1440H1271L817 0Z"/><path transform="translate(1341 0)" fill="currentColor" d="M749 -30Q533 -30 379 64Q225 159 142 328Q60 497 60 720Q60 943 142 1112Q225 1281 379 1376Q533 1470 749 1470Q965 1470 1119 1376Q1274 1281 1356 1112Q1439 943 1439 720Q1439 497 1356 328Q1274 159 1119 64Q965 -30 749 -30ZM749 197Q894 196 991 261Q1087 326 1135 444Q1184 562 1184 720Q1184 878 1135 994Q1087 1111 991 1176Q894 1241 749 1243Q604 1244 508 1179Q412 1114 364 996Q315 878 315 720Q315 562 363 446Q411 329 508 264Q604 199 749 197Z"/><path transform="translate(2940 0)" fill="currentColor" d="M160 0V1440H401V226H1037V0Z"/><path transform="translate(3957 0)" fill="currentColor" d="M486 0V1214H20V1440H1193V1214H727V0Z"/><clipPath id="vwnL"><rect x="-17" y="-100" width="992" height="1640"/></clipPath><clipPath id="vwnR"><rect x="976" y="-100" width="992" height="1640"/></clipPath><g transform="translate(5260 0)"><path clip-path="url(#vwnL)" fill="currentColor" d="M444 0 23 1440H276L563 400L849 1438L1102 1440L1389 400L1675 1440H1928L1508 0H1270L975 1024L682 0Z"/><path clip-path="url(#vwnR)" style="fill:var(--logo-v2)" d="M444 0 23 1440H276L563 400L849 1438L1102 1440L1389 400L1675 1440H1928L1508 0H1270L975 1024L682 0Z"/><circle cx="976" cy="1440" r="176" fill="#FF6B5B"/></g><path transform="translate(7311 0)" fill="currentColor" d="M160 0V1440H401V0Z"/><path transform="translate(7972 0)" fill="currentColor" d="M428 -30Q263 -30 154 56Q44 142 0 288L238 345Q249 284 302 240Q355 196 419 196Q461 196 508 218Q555 241 578 291Q592 323 595 368Q597 412 597 471V1440H841V471Q841 404 840 354Q840 303 830 259Q821 214 793 167Q734 65 639 17Q544 -30 428 -30Z"/><path transform="translate(9073 0)" fill="currentColor" d="M140 0V1440H381V772L956 1440H1252L633 734L1294 0H988L381 672V0Z"/></g></svg>
       </a>
       <div class="nav-links" style="justify-content:flex-end;">
-        <a href="/reviews" style="color:inherit;text-decoration:none;">REVIEWS</a><a href="/over-ons" style="color:inherit;text-decoration:none;">OVER ONS</a><a href="/contact" style="color:inherit;text-decoration:none;">CONTACT</a>
+        <a href="/over-ons" style="color:inherit;text-decoration:none;">OVER ONS</a><a href="/contact" style="color:inherit;text-decoration:none;">CONTACT</a><a href="/contact" data-book="" class="nav-book" style="color:inherit;text-decoration:none;">GRATIS ADVIESGESPREK</a>
         <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.6" y2="16.6"/></svg>
         <button type="button" class="nav-burger" aria-label="Menu" aria-expanded="false" onclick="var p=document.getElementById('mobileNavPanel');p.classList.toggle('is-open');this.setAttribute('aria-expanded',p.classList.contains('is-open'));">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -321,13 +322,16 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
       </div>
     </div>
     <div id="mobileNavPanel" class="mobile-nav-panel">
-      <a href="/producten">PRODUCTEN</a>
+      <a href="/product-batterij">THUISBATTERIJ</a>
       <a href="#calculator">THUISBATTERIJ BEREKENEN</a>
-      <a href="/inzichten">KENNISBANK</a>
-      <a href="/reviews">REVIEWS</a>
+      <a href="/product-zonnepanelen">ZONNEPANELEN</a>
+      <a href="/producten">ALLE PRODUCTEN</a>
       <a href="/hoe-het-werkt">HOE HET WERKT</a>
+      <a href="/reviews">REVIEWS</a>
+      <a href="/inzichten">KENNISBANK</a>
       <a href="/over-ons">OVER ONS</a>
       <a href="/contact">CONTACT</a>
+      <a href="/contact" data-book="">GRATIS ADVIESGESPREK</a>
       <a href="tel:+31853335687">Bel: 085 333 56 87</a>
     </div>
   </div>
@@ -340,29 +344,87 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
     <script>(function(){var v=document.querySelector('.hero-video');if(!v)return;var c=navigator.connection;if(c&&(c.saveData||/2g/.test(c.effectiveType||'')))return;try{if(matchMedia('(prefers-reduced-data: reduce)').matches)return;}catch(e){}var go=function(){v.autoplay=true;v.preload='auto';v.load();var p=v.play();if(p&&p.catch)p.catch(function(){});};if(document.readyState==='complete')setTimeout(go,0);else addEventListener('load',function(){setTimeout(go,0);});})();</script>
     <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(16,32,31,0.55) 0%, rgba(16,32,31,0.18) 16%, rgba(16,32,31,0) 30%), linear-gradient(0deg, rgba(16,32,31,0.78) 0%, rgba(16,32,31,0.25) 45%, rgba(16,32,31,0) 65%);"></div>
 
-    <div style="position:absolute;left:0;right:0;bottom:0;padding-bottom:40px;">
+    <div style="position:absolute;left:0;right:0;bottom:0;padding-bottom:44px;">
       <div class="wrap">
-        <div style="font-size:12px;font-weight:700;letter-spacing:.1em;color:#fff;text-transform:uppercase;">Thuisbatterij · vaste prijs inclusief installatie</div>
-        <h1 style="font-size:clamp(30px,4.6vw,46px);line-height:1.1;color:#fff;margin-top:12px;max-width:680px;">Een thuisbatterij van 16 kWh, geïnstalleerd voor € 4.600.</h1>
-        <div style="font-size:12px;color:#C9D6D3;margin-top:6px;">Prijs excl. btw. De btw op een thuisbatterij kun je in veel gevallen terugvragen.</div>
-        <p style="font-size:16px;color:#E6EEEC;margin-top:12px;max-width:560px;line-height:1.55;">Gebruik je eigen zonnestroom ook 's avonds, klaar voor het einde van salderen in 2027. Geplaatst door onze eigen monteurs uit Zevenbergen.</p>
-        <div style="margin-top:22px;display:flex;align-items:center;gap:18px;flex-wrap:wrap;">
-          <a href="#calculator" style="display:inline-flex;align-items:center;gap:10px;background:var(--mint);color:var(--dark);font-weight:800;font-size:14px;padding:14px 24px;border-radius:999px;text-decoration:none;box-shadow:0 14px 30px -14px rgba(111,214,200,.8);">Bereken je thuisbatterij →</a>
-          <a href="/producten" style="display:inline-flex;align-items:center;gap:10px;border:1.5px solid rgba(255,255,255,.8);color:#fff;font-weight:700;font-size:13px;padding:12px 20px;border-radius:999px;text-decoration:none;">Zonnepanelen, airco &amp; meer</a>
-          <span style="flex-basis:100%;font-size:13px;color:#DDE7E5;line-height:1.4;">📅 In 1 minuut je advies en vaste prijs · installatie al vanaf <b data-vw-first style="color:var(--mint);display:inline-block;min-width:4.6em;"></b></span>
+        <div style="font-size:12px;font-weight:800;letter-spacing:.12em;color:var(--mint);text-transform:uppercase;">Installateur uit Zevenbergen · vaste prijs inclusief installatie</div>
+        <h1 style="font-size:clamp(32px,5vw,54px);line-height:1.05;color:#fff;margin-top:12px;max-width:780px;">Thuisbatterijen, zonnepanelen en warmtepompen. Geïnstalleerd door onze eigen monteurs.</h1>
+        <p style="font-size:17px;color:#E6EEEC;margin-top:14px;max-width:600px;line-height:1.55;">Je weet vooraf wat je betaalt. En salderen stopt op 1 januari 2027: met een thuisbatterij gebruik je je eigen zonnestroom ook 's avonds.</p>
+        <div style="margin-top:24px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+          <a href="#calculator" style="display:inline-flex;align-items:center;gap:10px;background:var(--mint);color:var(--dark);font-weight:800;font-size:15px;padding:16px 26px;border-radius:999px;text-decoration:none;box-shadow:0 14px 30px -14px rgba(111,214,200,.8);">Bereken welke thuisbatterij past →</a>
+          <a href="#producten" style="display:inline-flex;align-items:center;gap:10px;border:1.5px solid rgba(255,255,255,.8);color:#fff;font-weight:800;font-size:14px;padding:14px 22px;border-radius:999px;text-decoration:none;">Ik zoek iets anders</a>
         </div>
-      </div>
-    </div>
-
-    <div style="position:absolute;right:24px;top:110px;background:rgba(16,32,31,0.85);border-radius:16px;padding:14px 16px;display:flex;align-items:center;gap:12px;max-width:260px;">
-      <div>
-        <div style="font-size:11px;color:var(--dark-text-muted);">Thuisbatterij, incl. installatie, excl. btw</div>
-        <div style="font-size:13.5px;color:#fff;line-height:1.6;margin-top:4px;">10 kWh <b style="float:right;margin-left:14px;">€ 4.200</b><br>16 kWh <b style="float:right;margin-left:14px;">€ 4.600</b><br>16 kWh 3-fase <b style="float:right;margin-left:14px;">€ 5.700</b></div>
+        <div class="hm-proof"><span><i>★★★★★</i> 4,7 / 5 op Google</span><span>12.500+ installaties</span><span>2 jaar installatiegarantie</span></div>
       </div>
     </div>
   </div>
-  <!-- THUISBATTERIJ BEREKENEN — direct onder de video: de calculator zelf -->
-  <!-- vw-home-calc:start --><style>
+  <!-- WAT WE DOEN — de thuisbatterij voorop, de andere producten direct ernaast -->
+  <div class="blk-light">
+  <style>
+.hm-proof{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:18px;font-size:13.5px;font-weight:700;color:#DDE7E5;}
+.hm-proof i{font-style:normal;color:#F5B400;letter-spacing:1px;margin-right:2px;}
+.hm-sec{padding-top:88px;padding-bottom:88px;}
+.hm-head{max-width:680px;}
+.hm-head h2{font-size:clamp(30px,4vw,44px);margin-top:14px;}
+.hm-head p{font-size:16.5px;color:var(--ink-soft);margin-top:12px;line-height:1.6;}
+.hm-choose{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:18px;margin-top:34px;align-items:stretch;}
+.hm-main{display:flex;flex-direction:column;background:var(--dark);color:#fff;border-radius:26px;overflow:hidden;text-decoration:none;}
+.hm-main .im{background:#F4F7F4;flex:1;min-height:250px;max-height:340px;display:flex;align-items:center;justify-content:center;position:relative;}
+.hm-main .im img{height:220px;width:auto;}
+.hm-main .tag{position:absolute;left:16px;top:16px;background:var(--accent);color:#fff;font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:6px 11px;}
+.hm-main .bd{padding:24px 26px 26px;display:flex;flex-direction:column;gap:10px;}
+.hm-main h3{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:28px;line-height:1.1;margin:0;color:#fff;}
+.hm-main p{font-size:15px;color:#C9D6D3;line-height:1.55;margin:0;}
+.hm-main .pr{font-size:14px;color:#fff;margin-top:4px;}
+.hm-main .pr b{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:22px;}
+.hm-main .go{margin-top:8px;align-self:flex-start;background:var(--mint);color:var(--dark);font-weight:800;font-size:14.5px;padding:14px 22px;border-radius:999px;}
+.hm-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;}
+.hm-p{display:flex;flex-direction:column;background:#fff;border:1px solid var(--border);border-radius:20px;overflow:hidden;text-decoration:none;color:var(--ink);transition:transform .15s,box-shadow .15s;}
+.hm-p:hover{transform:translateY(-2px);box-shadow:0 18px 36px -24px rgba(16,32,31,.35);}
+.hm-p img{width:100%;height:auto;aspect-ratio:16/11;object-fit:contain;padding:10px;display:block;background:#F4F7F4;}
+.hm-p .t{padding:14px 15px 15px;display:flex;flex-direction:column;gap:3px;flex:1;}
+.hm-p b{font-size:15.5px;}
+.hm-p span{font-size:13px;color:var(--ink-faint);}
+.hm-p em{font-style:normal;font-size:13px;font-weight:800;color:var(--primary);margin-top:auto;padding-top:8px;}
+.hm-calc-intro{background:var(--dark);color:#fff;padding:72px 0 8px;text-align:center;}
+.hm-calc-intro .k{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--mint);}
+.hm-calc-intro h2{color:#fff;font-size:clamp(28px,4vw,44px);margin-top:12px;}
+.hm-calc-intro p{color:#C9D6D3;font-size:16.5px;max-width:620px;margin:12px auto 0;line-height:1.6;}
+.hm-why{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:30px;}
+.hm-why div{background:#fff;border:1px solid var(--border);border-radius:20px;padding:22px;}
+.hm-why b{display:block;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:21px;color:var(--ink);}
+.hm-why span{display:block;font-size:14.5px;color:var(--ink-soft);margin-top:6px;line-height:1.55;}
+.hm-end{background:var(--dark);color:#fff;}
+.hm-end .box{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:36px;align-items:center;}
+.hm-end h2{color:#fff;font-size:clamp(28px,3.6vw,40px);}
+.hm-end p{color:#C9D6D3;font-size:16px;margin-top:12px;line-height:1.6;max-width:520px;}
+.hm-end .acts{display:grid;gap:10px;}
+.hm-end .acts a{display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:16px 18px;color:#fff;text-decoration:none;font-weight:800;font-size:15px;}
+.hm-end .acts a span{font-weight:600;font-size:13px;color:#9FB0AD;}
+.hm-end .acts a.pri{background:var(--mint);color:var(--dark);border-color:var(--mint);}
+.hm-end .acts a.pri span{color:#24423F;}
+.hm-read{margin-top:44px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);font-size:14px;color:#9FB0AD;display:flex;flex-wrap:wrap;gap:8px 18px;}
+.hm-read a{color:#fff;text-decoration:none;font-weight:700;}
+@media (max-width:1000px){.hm-choose{grid-template-columns:1fr;}.hm-why{grid-template-columns:repeat(2,minmax(0,1fr));}.hm-end .box{grid-template-columns:1fr;}}
+@media (max-width:640px){.hm-sec{padding-top:64px;padding-bottom:64px;}.hm-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;}.hm-main .im{height:190px;}.hm-main .im img{height:170px;}.hm-calc-intro{padding-top:56px;}.hm-why{grid-template-columns:1fr;}}
+</style>
+  <div id="producten" class="wrap reveal hm-sec" style="scroll-margin-top:80px;">
+    <div class="hm-head"><div class="pill">Wat we doen</div><h2 class="vw-heading">Waar kunnen we je mee helpen?</h2>
+      <p>Kies wat je zoekt. Bij elk product weet je vooraf wat je betaalt, inclusief installatie door onze eigen monteurs.</p></div>
+    <div class="hm-choose">
+      <a class="hm-main" href="#calculator"><span class="im"><span class="tag">Meest gekozen nu</span><img loading="lazy" decoding="async" src="/images/product-batterij.webp" alt="Thuisbatterij" width="280" height="210"></span>
+        <span class="bd"><h3>Thuisbatterij</h3><p>Salderen stopt op 1 januari 2027. Met een thuisbatterij bewaar je je zonnestroom van overdag voor de avond.</p>
+        <span class="pr">Vanaf <b>€ 4.200</b> incl. installatie, excl. btw</span><span class="go">Bereken welke thuisbatterij past →</span></span></a>
+      <div class="hm-grid"><a class="hm-p" href="/product-zonnepanelen"><img loading="lazy" decoding="async" src="/images/thumb-zonnepanelen.webp" alt="Zonnepanelen" width="400" height="300"><span class="t"><b>Zonnepanelen</b><span>vanaf € 3.999, incl. installatie</span><em>Bekijk en vraag offerte →</em></span></a><a class="hm-p" href="/product-warmtepomp"><img loading="lazy" decoding="async" src="/images/thumb-warmtepomp.webp" alt="Warmtepomp" width="400" height="300"><span class="t"><b>Warmtepomp</b><span>vanaf € 6.750, incl. installatie</span><em>Bekijk en vraag offerte →</em></span></a><a class="hm-p" href="/product-laadpaal"><img loading="lazy" decoding="async" src="/images/thumb-laadpaal.webp" alt="Laadpaal" width="400" height="300"><span class="t"><b>Laadpaal</b><span>vanaf € 1.299, incl. installatie</span><em>Bekijk en vraag offerte →</em></span></a><a class="hm-p" href="/product-airco"><img loading="lazy" decoding="async" src="/images/thumb-airco.webp" alt="Airco" width="400" height="300"><span class="t"><b>Airco</b><span>vanaf € 1.899, incl. installatie</span><em>Bekijk en vraag offerte →</em></span></a><a class="hm-p" href="/product-boiler"><img loading="lazy" decoding="async" src="/images/thumb-boiler.webp" alt="Elektrische boiler" width="400" height="300"><span class="t"><b>Elektrische boiler</b><span>vanaf € 1.199, incl. installatie</span><em>Bekijk en vraag offerte →</em></span></a><a class="hm-p" href="/product-meterkast"><img loading="lazy" decoding="async" src="/images/thumb-meterkast.webp" alt="Meterkast" width="400" height="300"><span class="t"><b>Meterkast</b><span>vanaf € 649, incl. installatie</span><em>Bekijk en vraag offerte →</em></span></a></div>
+    </div>
+  </div>
+  </div>
+  <!-- THUISBATTERIJ BEREKENEN — met uitleg waarom, daarna de calculator zelf -->
+  <div class="hm-calc-intro"><div class="wrap">
+    <div class="k">Thuisbatterij berekenen</div>
+    <h2 class="vw-heading">Welke thuisbatterij past bij jouw huis?</h2>
+    <p>Salderen stopt op 1 januari 2027. Beantwoord zes korte vragen en zie direct je advies, de vaste prijs en wat je ongeveer bespaart.</p>
+  </div></div>
+    <!-- vw-home-calc:start --><style>
 /* Calculator op één pagina: donkere kop met stappen, daaronder een rustig wit vlak met één vraag tegelijk. */
 .tb-band{background:var(--dark);padding:22px 0 0;}
 .tb-solo .tb-band{padding-top:84px;}
@@ -551,7 +613,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
   function render(scroll){
     var h = ''; steps();
     if(cur === 'adres'){
-      h = head('Bereken welke thuisbatterij bij jouw huis past', 'Vul je adres in. Daarna stellen we je nog vijf korte vragen en zie je direct je advies en vaste prijs.') +
+      h = head(document.querySelector('.tb-solo') ? 'Bereken welke thuisbatterij bij jouw huis past' : 'Begin met je adres', 'Vul je postcode en huisnummer in. Daarna stellen we je nog vijf korte vragen en zie je direct je advies en vaste prijs.') +
         '<div class="tb-content"><div class="tb-row"><div class="tb-field"><label for="tbPc">Postcode</label><input id="tbPc" autocomplete="postal-code" placeholder="4762 AS" value="' + esc(st.postcode) + '" maxlength="7"></div>' +
         '<div class="tb-field"><label for="tbHn">Huisnummer</label><input id="tbHn" inputmode="numeric" placeholder="15" value="' + esc(st.huisnummer) + '" maxlength="8"></div></div>' +
         '<div id="tbAdrErr" class="tb-err" hidden></div><p class="tb-hint">Met je adres zien we wanneer onze monteurs bij jou kunnen installeren. Je zit nergens aan vast.</p></div>' +
@@ -755,75 +817,23 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
   document.addEventListener('click', function(ev){ var t = ev.target.closest && ev.target.closest('#tbOfGo'); if(t){ track('offerte_klik', {batterij: st.keuze}); go('gegevens'); } });
 })();
 </script><!-- vw-home-calc:end -->
+  <!-- WAAROM VOLTWIJK -->
   <div class="blk-mesh">
-  <!-- INTRO — korte, klantgerichte welkomstboodschap (weheat-stijl: gecentreerd, geen formulier) -->
-  <div class="wrap reveal" style="padding-top:88px;padding-bottom:88px;text-align:center;">
-    <div class="pill" style="margin:0 auto;">Welkom bij Voltwijk</div>
-    <h2 style="font-size:clamp(30px,4vw,44px);margin-top:16px;max-width:760px;margin-left:auto;margin-right:auto;">Eén vaste prijs. Eigen monteurs uit Zevenbergen.</h2>
-    <p style="font-size:16px;color:var(--ink-soft);margin-top:14px;line-height:1.6;max-width:560px;margin-left:auto;margin-right:auto;">Je weet vooraf wat je betaalt, inclusief installatie. Onze eigen monteurs werken vanuit Zevenbergen in heel West-Brabant. Is er meerwerk nodig, zoals een extra groep in de meterkast, dan hoor je dat altijd voordat we beginnen.</p>
+  <div class="wrap reveal hm-sec">
+    <div class="hm-head"><div class="pill">Waarom Voltwijk</div><h2 class="vw-heading">Eén vaste prijs. Eigen monteurs uit Zevenbergen.</h2>
+      <p>Je weet vooraf wat je betaalt, inclusief installatie. Onze eigen monteurs werken vanuit Zevenbergen in heel West-Brabant. Is er meerwerk nodig, zoals een extra groep in de meterkast, dan hoor je dat altijd voordat we beginnen.</p>
     <!-- scan:start --><a href="/energiescan" class="reveal" style="display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;max-width:760px;margin:36px auto 0;padding:18px 22px;border-radius:18px;background:var(--dark);color:#fff;text-decoration:none;text-align:left;">
-      <span><span style="display:block;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--mint);">Gemeente Moerdijk · 26 t/m 31 oktober</span><span class="vw-heading" style="display:block;font-size:20px;margin-top:4px;">Gratis Energiescanweek: we komen gratis langs voor eerlijk advies</span></span>
-      <span style="font-weight:800;font-size:14px;color:var(--mint);white-space:nowrap;">Meld je aan →</span></a><!-- scan:end -->
+      <span><span style="display:block;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--mint);">Gemeente Moerdijk · 26 t/m 31 oktober</span><span class="vw-heading" style="display:block;font-size:20px;margin-top:4px;color:#fff;">Gratis Energiescanweek: we komen gratis langs voor eerlijk advies</span></span>
+      <span style="font-weight:800;font-size:14px;color:var(--mint);white-space:nowrap;">Meld je aan →</span></a><!-- scan:end --></div>
+    <div class="hm-why">
+      <div><b>Vaste prijs vooraf</b><span>Inclusief installatie. Geen verrassingen achteraf.</span></div>
+      <div><b>Eigen monteurs</b><span>Geen onderaannemers. Onze monteurs werken vanuit Zevenbergen.</span></div>
+      <div><b>12.500+ installaties</b><span>En een 4,7 / 5 op Google.</span></div>
+      <div><b>2 jaar garantie</b><span>Op de installatie, door ons eigen team.</span></div>
+    </div>
   </div>
   </div>
-  <!-- BATTERIJ UITGELICHT -->
   <div class="blk-light">
-    <div class="wrap reveal" style="padding-top:88px;padding-bottom:88px;">
-      <div class="row" style="align-items:stretch;">
-        <div style="border-radius:24px;overflow:hidden;aspect-ratio:4/3;">
-          <img loading="lazy" decoding="async" src="/images/batterij-zolder.webp" alt="Thuisbatterij van Voltwijk, geïnstalleerd op zolder" style="width:100%;height:100%;object-fit:cover;display:block;">
-        </div>
-        <div style="display:flex;flex-direction:column;">
-          <div class="pill" style="background:#fff;">Thuisbatterij uitgelicht</div>
-          <h2 style="font-size:36px;margin-top:16px;">Je merkt niet meer wanneer stroom duur is — je batterij wel.</h2>
-          <p style="font-size:14px;color:var(--ink-soft);margin-top:10px;line-height:1.55;max-width:460px;">De batterij schakelt zelf tussen opslaan, inkopen en verkopen — precies op het moment dat het net loont.</p>
-          <div style="display:flex;flex-direction:column;gap:12px;margin-top:20px;padding-top:18px;border-top:1px solid var(--border);">
-            <div style="display:flex;align-items:center;gap:10px;">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><circle cx="12" cy="12" r="4.6"/><path d="M12 2.5v2.6M12 18.9v2.6M4.7 4.7l1.85 1.85M17.45 17.45l1.85 1.85M2.5 12h2.6M18.9 12h2.6M4.7 19.3l1.85-1.85M17.45 6.55l1.85-1.85"/></svg>
-              <div class="vw-heading" style="font-size:13.5px;">Lente &amp; zomer: bijna los van het net</div>
-            </div>
-            <div style="display:flex;align-items:center;gap:10px;">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M6 17 17 6M17 6h-6M17 6v6"/><circle cx="12" cy="12" r="9.5" stroke-opacity=".35"/></svg>
-              <div class="vw-heading" style="font-size:13.5px;">Overschot verkocht op het beste moment</div>
-            </div>
-            <div style="display:flex;align-items:center;gap:10px;">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--primary-dark)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M12 2.5C9 6 7 9.2 7 12.3a5 5 0 0 0 10 0c0-3.1-2-6.3-5-9.8Z"/><path d="M9.3 14.5a3 3 0 0 0 3 2.7"/></svg>
-              <div class="vw-heading" style="font-size:13.5px;">Herfst &amp; winter: goedkoop in, duur uit</div>
-            </div>
-          </div>
-          <a href="/product-batterij" style="margin-top:18px;display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:13.5px;color:var(--primary);text-decoration:none;">Meer over de thuisbatterij<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
-      </div>
-    </div>
-    <div class="wrap reveal" style="padding-top:0;padding-bottom:88px;">
-      <div class="row" style="align-items:stretch;">
-        <div style="display:flex;flex-direction:column;">
-          <div class="pill" style="background:#fff;">Airconditioning</div>
-          <h2 style="font-size:36px;margin-top:16px;">Ook in de winter je beste stookoplossing.</h2>
-          <p style="font-size:14px;color:var(--ink-soft);margin-top:10px;line-height:1.55;max-width:460px;">Een moderne airco koelt niet alleen in de zomer, maar verwarmt je huis in de winter net zo efficiënt als een warmtepomp — tegen een fractie van de investering.</p>
-          <div style="display:flex;flex-direction:column;gap:12px;margin-top:20px;padding-top:18px;border-top:1px solid var(--border);">
-            <div style="display:flex;align-items:center;gap:10px;">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M12 2.5C9 6 7 9.2 7 12.3a5 5 0 0 0 10 0c0-3.1-2-6.3-5-9.8Z"/><path d="M9.3 14.5a3 3 0 0 0 3 2.7"/></svg>
-              <div class="vw-heading" style="font-size:13.5px;">Verwarmt én koelt — het hele jaar door comfort</div>
-            </div>
-            <div style="display:flex;align-items:center;gap:10px;">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
-              <div class="vw-heading" style="font-size:13.5px;">Slim algoritme leert je dagritme en stuurt zichzelf bij</div>
-            </div>
-            <div style="display:flex;align-items:center;gap:10px;">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--primary-dark)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M4 12c2-4 4-4 6 0s4 4 6 0 4-4 6 0"/><path d="M4 18c2-4 4-4 6 0s4 4 6 0 4-4 6 0"/></svg>
-              <div class="vw-heading" style="font-size:13.5px;">Filtert fijnstof en allergenen uit de lucht</div>
-            </div>
-          </div>
-          <a href="/product-airco" style="margin-top:18px;display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:13.5px;color:var(--primary);text-decoration:none;">Meer over de airconditioning<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
-        <div style="border-radius:24px;overflow:hidden;aspect-ratio:4/3;">
-          <img loading="lazy" decoding="async" src="/images/airco-sfeer.webp" alt="Design-airco aan de muur in een warme woonkamer" style="width:100%;height:100%;object-fit:cover;object-position:center 35%;display:block;">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="blk-mesh">
   <!-- HOE HET WERKT — foto + tekst in één rij, weheat-stijl -->
   <div id="hoe-het-werkt" class="wrap row reveal" style="padding-top:64px;padding-bottom:64px;align-items:center;position:relative;scroll-margin-top:96px;">
     <div style="border-radius:24px;overflow:hidden;position:relative;aspect-ratio:4/3;">
@@ -851,7 +861,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
   </div>
   <style>#hwTabs::-webkit-scrollbar{display:none;}</style>
   </div>
-  <div class="blk-light">
+  <div class="blk-mesh">
   <!-- REVIEWS — onder Contact, samengevoegd tot één doorlopend wit blok (voorkomt wit naast wit) -->
   <div class="wrap reveal" style="padding-top:88px;padding-bottom:88px;position:relative;">
     <h2 style="font-size:46px;text-align:center;position:relative;">Wat klanten zeggen</h2>
@@ -891,55 +901,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
     </div>
   </div>
   </div>
-  <div class="blk-asphalt">
-  <!-- OVER ONS / INSTALLATEURS -->
-  <div id="over-ons" class="wrap row reveal" style="padding-top:88px;padding-bottom:88px;position:relative;scroll-margin-top:96px;">
-    <div style="border-radius:24px;overflow:hidden;aspect-ratio:4/3;">
-      <img loading="lazy" decoding="async" src="/images/monteur-en-klant.webp" alt="Monteur en klant van Voltwijk lachen samen buiten na de installatie" style="width:100%;height:100%;object-fit:cover;display:block;">
-    </div>
-    <div>
-      <div class="pill">Over Voltwijk</div>
-      <h2 style="font-size:40px;margin-top:16px;">Opgericht door mensen die het zelf hebben geïnstalleerd.</h2>
-      <p style="font-size:15px;margin-top:12px;max-width:460px;line-height:1.6;">Voltwijk is begonnen omdat we zelf te vaak wisselende onderaannemers en verrassingen achteraf tegenkwamen. Nu werken we met één vast team en één vaste prijs — geen uitbesteding, elke installatie voeren onze eigen, gecertificeerde monteurs uit.</p>
-      <div style="display:flex;gap:28px;margin-top:24px;flex-wrap:wrap;">
-        <div><div class="vw-heading count-up" data-target="15" data-suffix="+ jaar" style="font-size:21px;color:#fff;">15+ jaar</div><div style="font-size:12px;color:var(--dark-text-muted);margin-top:3px;">ervaring</div></div>
-        <div><div class="vw-heading count-up" data-target="12500" data-suffix="+" style="font-size:21px;color:#fff;">12.500+</div><div style="font-size:12px;color:var(--dark-text-muted);margin-top:3px;">installaties</div></div>
-        <div><div class="vw-heading count-up" data-target="4.7" data-decimals="1" data-suffix=" / 5" style="font-size:21px;color:var(--mint);">4,7 / 5</div><div style="font-size:12px;color:var(--dark-text-muted);margin-top:3px;">op Google</div></div>
-        <div><div class="vw-heading" style="font-size:21px;color:#fff;">Verzekerd</div><div style="font-size:12px;color:var(--dark-text-muted);margin-top:3px;">WA-bedrijfsverzekering</div></div>
-      </div>
-      <a href="/over-ons" style="margin-top:26px;display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:13.5px;color:var(--mint);text-decoration:none;">Meer over onze installateurs<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    </div>
-  </div>
-  </div>
   <div class="blk-light">
-  <!-- GARANTIE & ZEKERHEID — vervangt Buurtprijs -->
-  <div id="garantie" class="wrap row reveal" style="padding-top:88px;padding-bottom:88px;scroll-margin-top:96px;">
-    <div class="tilt-card" style="border-radius:24px;overflow:hidden;aspect-ratio:4/3;">
-      <img loading="lazy" decoding="async" src="/images/monteur-dak.webp" alt="Voltwijk-monteur aan het werk aan de dakconstructie" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;">
-    </div>
-    <div>
-      <div class="pill">Garantie &amp; zekerheid</div>
-      <h2 style="font-size:36px;margin-top:16px;">2 jaar garantie. Eigen team. Geen verrassingen.</h2>
-      <p style="font-size:14px;margin-top:12px;line-height:1.55;max-width:440px;">Elke installatie voeren onze eigen, vaste monteurs uit — nooit een wisselende onderaannemer. En is er toch iets niet naar wens, dan lossen we dat gewoon op.</p>
-      <div class="card" style="margin-top:22px;padding:20px 24px;background:rgba(255,255,255,.65);border:none;display:flex;flex-direction:column;gap:14px;">
-        <div style="display:flex;align-items:center;gap:12px;">
-          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="var(--primary-dark)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-draw" style="flex-shrink:0;"><path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6z"/><path d="M9.3 12.2l2 2 3.6-3.8"/></svg>
-          <div style="font-size:13.5px;font-weight:700;color:var(--warm-text);">2 jaar garantie op elke installatie</div>
-        </div>
-        <div style="display:flex;align-items:center;gap:12px;">
-          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="var(--primary-dark)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-draw" style="flex-shrink:0;"><circle cx="12" cy="8" r="3.4"/><path d="M5.5 20c1-3.6 3.8-5.6 6.5-5.6s5.5 2 6.5 5.6"/></svg>
-          <div style="font-size:13.5px;font-weight:700;color:var(--warm-text);">Eigen, gecertificeerde monteurs — geen onderaannemers</div>
-        </div>
-        <div style="display:flex;align-items:center;gap:12px;">
-          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="var(--primary-dark)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-draw" style="flex-shrink:0;"><rect x="3.5" y="6" width="17" height="12" rx="2.5"/><path d="M3.5 10.5h17"/></svg>
-          <div style="font-size:13.5px;font-weight:700;color:var(--warm-text);">Eén vaste prijs vooraf, altijd besproken vóór de rekening</div>
-        </div>
-      </div>
-      <a href="/contact" style="margin-top:18px;display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:13.5px;color:var(--primary-dark);text-decoration:none;">Vraag het ons gerust<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    </div>
-  </div>
-  </div>
-  <div class="blk-mesh">
   <!-- ALGEMENE FAQ — nu een kleur -->
   <div class="wrap row reveal" style="padding-top:88px;padding-bottom:88px;align-items:flex-start;">
     <div style="flex:1 1 280px;">
@@ -972,337 +934,21 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
     </div>
   </div>
   </div>
-  <div class="blk-light">
-  <!-- CTA — conversie-band met 3 paden, nu wit -->
-  <div class="reveal" style="padding-top:88px;padding-bottom:88px;position:relative;overflow:hidden;">
-    <div class="blob" style="width:300px;height:300px;background:var(--warm-3);opacity:.22;bottom:-140px;right:8%;"></div>
-    <div class="blob" style="width:180px;height:180px;background:var(--primary);opacity:.1;top:-80px;left:6%;"></div>
-    <div class="wrap" style="position:relative;">
-      <h2 style="font-size:38px;max-width:560px;">Klaar om te beginnen? Kies zelf hoe.</h2>
-      <div id="ctaGrid" style="margin-top:32px;display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;">
-        <a href="#calculator" class="tilt-card" style="text-decoration:none;background:#fff;border:1px solid var(--border);border-radius:20px;padding:30px 32px;display:flex;flex-direction:column;gap:10px;box-shadow:0 24px 48px -30px rgba(16,32,31,.25);">
-          <span class="pill" style="align-self:flex-start;background:linear-gradient(120deg, var(--warm-2), var(--warm-3));color:#fff;">Thuisbatterij</span>
-          <div style="font-weight:700;font-size:22px;color:var(--dark);margin-top:8px;font-family:'Bricolage Grotesque',sans-serif;">Bereken je advies en vaste prijs</div>
-          <div style="font-size:13.5px;color:var(--ink-faint);line-height:1.5;max-width:320px;">Zes korte vragen, direct je advies. Je zit nergens aan vast.</div>
-          <span class="btn-primary" style="margin-top:10px;align-self:flex-start;">Start de berekening →</span>
-        </a>
-        <div style="display:flex;flex-direction:column;">
-          <a href="/#gids" style="text-decoration:none;display:flex;align-items:center;gap:14px;padding:15px 2px;border-bottom:1px solid var(--border);">
-            <span style="width:38px;height:38px;flex-shrink:0;border-radius:10px;background:var(--pill-bg);display:flex;align-items:center;justify-content:center;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 18h14"/></svg></span>
-            <span style="flex:1;">
-              <span style="display:block;font-weight:700;font-size:14.5px;color:var(--dark);">Download de gids</span>
-              <span style="display:block;font-size:12px;color:var(--ink-faint);margin-top:2px;">Alle producten en prijzen op één A4</span>
-            </span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-          <a href="/contact#terugbellen" style="text-decoration:none;display:flex;align-items:center;gap:14px;padding:15px 2px;border-bottom:1px solid var(--border);">
-            <span style="width:38px;height:38px;flex-shrink:0;border-radius:10px;background:var(--pill-bg);display:flex;align-items:center;justify-content:center;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 1.9"/></svg></span>
-            <span style="flex:1;">
-              <span style="display:block;font-weight:700;font-size:14.5px;color:var(--dark);">Plan een adviesgesprek</span>
-              <span style="display:block;font-size:12px;color:var(--ink-faint);margin-top:2px;">15 min, vrijblijvend</span>
-            </span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-          <a href="/contact" style="text-decoration:none;display:flex;align-items:center;gap:14px;padding:15px 2px;">
-            <span style="width:38px;height:38px;flex-shrink:0;border-radius:10px;background:var(--pill-bg);display:flex;align-items:center;justify-content:center;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
-            <span style="flex:1;">
-              <span style="display:block;font-weight:700;font-size:14.5px;color:var(--dark);">Bel of app ons</span>
-              <span style="display:block;font-size:12px;color:var(--ink-faint);margin-top:2px;">Gewoon ons team aan de lijn</span>
-            </span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-        </div>
-      </div>
-      <style>@media (max-width:720px){ #ctaGrid{grid-template-columns:1fr!important;} }</style>
-    </div>
-  </div>
-  </div>
-  <div id="pcParallax" class="blk-asphalt reveal pop-cover">
-  <!-- PRODUCTEN — ligt als kaart over de intro heen; rijst bovendien iets verder op naarmate je scrollt (zuivere scroll-parallax via transform, geen sticky/layout-trucs) -->
-  <div class="wrap" style="padding-top:88px;padding-bottom:88px;">
-    <div style="text-align:center;max-width:560px;margin:0 auto 40px;">
-      <div class="pill" style="margin:0 auto;">Ons assortiment</div>
-      <h2 style="font-size:40px;margin-top:16px;">Zeven producten, één vaste prijs</h2>
-      <p style="font-size:15px;margin-top:10px;">Elk product met een vaste prijs, inclusief installatie door ons eigen team. Plan een gratis adviesgesprek, of bereken direct welke thuisbatterij past.</p>
-    </div>
-
-    <div class="pgrid">
-      <a href="/product-batterij" class="pcard" style="--row-accent:var(--primary);">
-        <span class="pcard-thumb"><img src="/images/thumb-batterij.webp" alt="Thuisbatterij" loading="lazy"></span>
-        <span class="pcard-name">Thuisbatterij</span>
-        <span class="pcard-spec">10 of 16 kWh · incl. installatie</span>
-        <span class="pcard-foot">
-          <span class="pcard-price"><small>vanaf</small>€ 4.200</span>
-          <span class="pcard-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </span>
-      </a>
-      <a href="/product-zonnepanelen" class="pcard" style="--row-accent:var(--primary);">
-        <span class="pcard-thumb"><img src="/images/thumb-zonnepanelen.webp" alt="Zonnepanelen" loading="lazy"></span>
-        <span class="pcard-name">Zonnepanelen</span>
-        <span class="pcard-spec">440 Wp · full-black</span>
-        <span class="pcard-foot">
-          <span class="pcard-price"><small>vanaf</small>€ 3.999</span>
-          <span class="pcard-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </span>
-      </a>
-      <a href="/product-warmtepomp" class="pcard" style="--row-accent:var(--primary);">
-        <span class="pcard-thumb"><img src="/images/thumb-warmtepomp.webp" alt="Warmtepomp" loading="lazy"></span>
-        <span class="pcard-name">Warmtepomp</span>
-        <span class="pcard-spec">COP 4,7 · lucht/water</span>
-        <span class="pcard-foot">
-          <span class="pcard-price"><small>vanaf</small>€ 6.750</span>
-          <span class="pcard-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </span>
-      </a>
-      <a href="/product-airco" class="pcard" style="--row-accent:var(--primary);">
-        <span class="pcard-thumb"><img src="/images/thumb-airco.webp" alt="Airconditioning" loading="lazy"></span>
-        <span class="pcard-name">Airconditioning</span>
-        <span class="pcard-spec">Energielabel A+++</span>
-        <span class="pcard-foot">
-          <span class="pcard-price"><small>vanaf</small>€ 1.899</span>
-          <span class="pcard-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </span>
-      </a>
-      <a href="/product-boiler" class="pcard" style="--row-accent:var(--primary);">
-        <span class="pcard-thumb"><img src="/images/thumb-boiler.webp" alt="Elektrische boiler" loading="lazy"></span>
-        <span class="pcard-name">Elektrische boiler</span>
-        <span class="pcard-spec">200 liter · label A+</span>
-        <span class="pcard-foot">
-          <span class="pcard-price"><small>vanaf</small>€ 1.199</span>
-          <span class="pcard-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </span>
-      </a>
-      <a href="/product-laadpaal" class="pcard" style="--row-accent:var(--primary);">
-        <span class="pcard-thumb"><img src="/images/thumb-laadpaal.webp" alt="Laadpaal" loading="lazy"></span>
-        <span class="pcard-name">Laadpaal</span>
-        <span class="pcard-spec">11 kW · slim laden</span>
-        <span class="pcard-foot">
-          <span class="pcard-price"><small>vanaf</small>€ 1.299</span>
-          <span class="pcard-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </span>
-      </a>
-      <a href="/product-meterkast" class="pcard" style="--row-accent:var(--primary);">
-        <span class="pcard-thumb"><img src="/images/thumb-meterkast.webp" alt="Meterkast" loading="lazy"></span>
-        <span class="pcard-name">Meterkast</span>
-        <span class="pcard-spec">Vaak binnen 1 dag</span>
-        <span class="pcard-foot">
-          <span class="pcard-price"><small>vanaf</small>€ 649</span>
-          <span class="pcard-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </span>
-      </a>
-    </div>
-    <div style="text-align:center;margin-top:36px;">
-      <a href="#calculator" class="btn-primary" style="text-decoration:none;background:var(--mint);color:var(--dark);">Bereken je thuisbatterij →</a>
-    </div>
-  </div>
-  </div>
-  <div class="blk-light">
-  <!-- SPECIFICATIES — nu onderdeel van hetzelfde witte blok als Hoe/Calculator (Reviews is verplaatst naar onder Over Ons) -->
-  <div class="wrap reveal" style="padding-top:88px;padding-bottom:88px;position:relative;">
-    <div class="pill">Specificaties</div>
-    <h2 style="font-size:40px;margin-top:16px;position:relative;">Elk product, tot in detail</h2>
-    <p style="font-size:15px;margin-top:8px;max-width:520px;">Scroll door onze producten en bekijk direct het vermogen, rendement en garantie.</p>
-
-    <div class="spec-scroll">
-      <a class="spec-sticky" id="specLink" href="/product-batterij" style="display:block;text-decoration:none;color:inherit;">
-        <div class="spec-image-box">
-          <img loading="lazy" decoding="async" id="specImg" src="/images/thumb-batterij.webp" alt="" style="transform:scale(1)">
-        </div>
-        <div style="margin-top:18px;display:flex;align-items:baseline;justify-content:space-between;gap:12px;">
-          <div id="specTitle" class="vw-heading" style="font-size:19px;">Thuisbatterij</div>
-          <div id="specPrice" style="font-size:14px;color:var(--ink-soft);white-space:nowrap;">vanaf € 4.200</div>
-        </div>
-        <div class="spec-more">Bekijk product <span aria-hidden="true">→</span></div>
-      </a>
-
-      <div class="spec-list">
-        <div class="spec-item is-active" data-slug="batterij" data-title="Thuisbatterij" data-price="vanaf € 4.200">
-          <a href="/product-batterij" class="vw-heading spec-item-title" style="font-size:22px;">Thuisbatterij <span aria-hidden="true">→</span></a>
-          <div class="spec-rows">
-            <div class="spec-row"><span>Capaciteit</span><span>10 of 16 kWh</span></div>
-            <div class="spec-row"><span>Omvormer</span><span>5, 6 of 8 kW hybride</span></div>
-            <div class="spec-row"><span>Garantie</span><span>10 jaar</span></div>
-            <div class="spec-row"><span>Aansluiting</span><span>1-fase of 3-fase</span></div>
-          </div>
-        </div>
-        <div class="spec-item" data-slug="zonnepanelen" data-title="Zonnepanelen" data-price="vanaf € 3.999">
-          <a href="/product-zonnepanelen" class="vw-heading spec-item-title" style="font-size:22px;">Zonnepanelen <span aria-hidden="true">→</span></a>
-          <div class="spec-rows">
-            <div class="spec-row"><span>Vermogen per paneel</span><span>440 Wp</span></div>
-            <div class="spec-row"><span>Rendement</span><span>22,8%</span></div>
-            <div class="spec-row"><span>Type</span><span>Full-black mono</span></div>
-            <div class="spec-row"><span>Garantie</span><span>25 jaar</span></div>
-          </div>
-        </div>
-        <div class="spec-item" data-slug="warmtepomp" data-title="Warmtepomp" data-price="vanaf € 6.750">
-          <a href="/product-warmtepomp" class="vw-heading spec-item-title" style="font-size:22px;">Warmtepomp <span aria-hidden="true">→</span></a>
-          <div class="spec-rows">
-            <div class="spec-row"><span>Type</span><span>Lucht/water monoblock</span></div>
-            <div class="spec-row"><span>Vermogen (A7/W35)</span><span>6 kW</span></div>
-            <div class="spec-row"><span>COP (A7/W35)</span><span>4,7</span></div>
-            <div class="spec-row"><span>Geluidsniveau</span><span>34 dB(A)</span></div>
-          </div>
-        </div>
-        <div class="spec-item" data-slug="airco" data-title="Airconditioning" data-price="vanaf € 1.899">
-          <a href="/product-airco" class="vw-heading spec-item-title" style="font-size:22px;">Airconditioning <span aria-hidden="true">→</span></a>
-          <div class="spec-rows">
-            <div class="spec-row"><span>Type</span><span>Split-unit</span></div>
-            <div class="spec-row"><span>Koelvermogen</span><span>3,5 kW</span></div>
-            <div class="spec-row"><span>Verwarmingsvermogen</span><span>4,0 kW</span></div>
-            <div class="spec-row"><span>Energielabel</span><span>A+++</span></div>
-          </div>
-        </div>
-        <div class="spec-item" data-slug="boiler" data-title="Elektrische boiler" data-price="vanaf € 1.199">
-          <a href="/product-boiler" class="vw-heading spec-item-title" style="font-size:22px;">Elektrische boiler <span aria-hidden="true">→</span></a>
-          <div class="spec-rows">
-            <div class="spec-row"><span>Inhoud</span><span>200 liter</span></div>
-            <div class="spec-row"><span>COP</span><span>3,1</span></div>
-            <div class="spec-row"><span>Energielabel</span><span>A+</span></div>
-            <div class="spec-row"><span>Aansluiting</span><span>230V</span></div>
-          </div>
-        </div>
-        <div class="spec-item" data-slug="laadpaal" data-title="Laadpaal" data-price="vanaf € 1.299">
-          <a href="/product-laadpaal" class="vw-heading spec-item-title" style="font-size:22px;">Laadpaal <span aria-hidden="true">→</span></a>
-          <div class="spec-rows">
-            <div class="spec-row"><span>Laadvermogen</span><span>11 kW</span></div>
-            <div class="spec-row"><span>Connector</span><span>Type 2</span></div>
-            <div class="spec-row"><span>Connectiviteit</span><span>4G / wifi</span></div>
-            <div class="spec-row"><span>Garantie</span><span>5 jaar</span></div>
-          </div>
-        </div>
+  <!-- AFSLUITER — gratis adviesgesprek, of zelf berekenen -->
+  <div class="hm-end">
+  <div class="wrap hm-sec">
+    <div class="box">
+      <div><h2 class="vw-heading">Liever eerst even overleggen?</h2><p>Plan een gratis adviesgesprek met ons eigen team. We kijken samen wat bij jouw huis past en sturen je een offerte met vaste prijs. Je zit nergens aan vast.</p></div>
+      <div class="acts">
+        <a class="pri" href="/contact" data-book="">Plan gratis adviesgesprek <span>15 min, vrijblijvend →</span></a>
+        <a href="#calculator">Bereken welke thuisbatterij past <span>1 minuut →</span></a>
+        <a href="tel:+31853335687">Bel 085 333 56 87 <span>ma–vr 9:00–17:30</span></a>
+        <a href="https://wa.me/31853335687?text=Hoi%20Voltwijk%2C%20ik%20heb%20een%20vraag" target="_blank" rel="noopener">App ons via WhatsApp <span>stuur gerust een foto →</span></a>
       </div>
     </div>
+    <div class="hm-read"><span>Meer lezen:</span><a href="/artikel-salderingsregeling-2027">Salderen stopt in 2027</a><a href="/artikel-thuisbatterij-prijs">Wat kost een thuisbatterij?</a><a href="/artikel-thuisbatterij-terugverdientijd">Terugverdientijd</a><a href="/reviews">Alle reviews</a><a href="/inzichten">Kennisbank</a></div>
   </div>
   </div>
-  <div class="blk-mesh">
-  <!-- GIDS — brochure lead magnet, open en licht (geen donker vak), weheat-stijl -->
-  <div id="gids" class="wrap reveal" style="padding-top:88px;padding-bottom:88px;scroll-margin-top:96px;">
-    <div class="row" style="align-items:center;">
-      <div>
-        <div class="pill" style="background:linear-gradient(120deg, var(--warm-2), var(--warm-3));color:#fff;">Gratis vergelijkingsgids</div>
-        <h2 style="font-size:32px;margin-top:14px;">Alle 7 producten en prijzen naast elkaar, in één overzicht.</h2>
-        <ul class="p-bullets" style="margin-top:16px;">
-          <li style="color:var(--warm-text);"><span style="color:var(--primary);">✓</span>Specificaties en vaste prijzen van elk product op één A4</li>
-          <li style="color:var(--warm-text);"><span style="color:var(--primary);">✓</span>Actueel overzicht van de subsidieregels rond 2027</li>
-          <li style="color:var(--warm-text);"><span style="color:var(--primary);">✓</span>Direct in je mailbox, geen verkoopgesprek nodig</li>
-        </ul>
-        <div class="lead-block" data-sent="0" id="leadGids">
-          <form class="lead-form" onsubmit="return vwLeadSubmit(this,'leadGids');">
-            <input class="lead-input" type="email" required placeholder="jouw@email.nl" aria-label="E-mailadres">
-            <button type="submit" class="btn-primary">Download de gids →</button>
-          </form>
-          <div class="lead-micro">Geen spam. Je krijgt de gids direct, en daarna hooguit één update rond de salderingsregeling.</div>
-          <div class="lead-success">
-            <svg width="40" height="40" viewBox="0 0 100 100" style="flex-shrink:0;" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#0F6E6B"/><clipPath id="vs0L"><rect x="-17" y="-100" width="992" height="1640"/></clipPath><clipPath id="vs0R"><rect x="976" y="-100" width="992" height="1640"/></clipPath><g transform="translate(16.19 71.90) scale(0.03465 -0.03465)"><path clip-path="url(#vs0L)" fill="#fff" d="M444 0 23 1440H276L563 400L849 1438L1102 1440L1389 400L1675 1440H1928L1508 0H1270L975 1024L682 0Z"/><path clip-path="url(#vs0R)" fill="#6FD6C8" d="M444 0 23 1440H276L563 400L849 1438L1102 1440L1389 400L1675 1440H1928L1508 0H1270L975 1024L682 0Z"/><circle cx="976" cy="1440" r="176" fill="#FF6B5B"/></g></svg>
-            Verstuurd! Check zo je mailbox voor de gids.
-          </div>
-        </div>
-      </div>
-      <div style="position:relative;flex:0 1 320px;display:flex;justify-content:center;">
-        <div class="tilt-card" style="background:#fff;border-radius:16px;padding:20px 22px 16px;width:100%;max-width:300px;transform:rotate(3deg);box-shadow:0 32px 64px -22px rgba(16,32,31,.28);">
-          <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--border);padding-bottom:10px;margin-bottom:10px;">
-            <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:13px;color:var(--ink);">Prijsgids Voltwijk</div>
-            <div style="font-size:9px;font-weight:700;color:var(--ink-faint);background:var(--pill-bg);padding:3px 7px;border-radius:999px;flex-shrink:0;">1 A4</div>
-          </div>
-          <div style="display:flex;flex-direction:column;gap:7px;">
-            <div style="display:flex;justify-content:space-between;font-size:11.5px;"><span style="color:var(--ink-soft);">Thuisbatterij</span><span style="font-weight:700;">€ 4.200</span></div>
-            <div style="display:flex;justify-content:space-between;font-size:11.5px;"><span style="color:var(--ink-soft);">Zonnepanelen</span><span style="font-weight:700;">€ 3.999</span></div>
-            <div style="display:flex;justify-content:space-between;font-size:11.5px;"><span style="color:var(--ink-soft);">Warmtepomp</span><span style="font-weight:700;">€ 6.750</span></div>
-            <div style="display:flex;justify-content:space-between;font-size:11.5px;"><span style="color:var(--ink-soft);">Airconditioning</span><span style="font-weight:700;">€ 1.899</span></div>
-            <div style="display:flex;justify-content:space-between;font-size:11.5px;opacity:.5;"><span style="color:var(--ink-soft);">+ 3 producten meer</span><span style="font-weight:700;">···</span></div>
-          </div>
-        </div>
-        <div style="position:absolute;top:-16px;right:6px;width:48px;height:48px;border-radius:14px;background:var(--dark);display:flex;align-items:center;justify-content:center;transform:rotate(-10deg);box-shadow:0 14px 26px -10px rgba(16,32,31,.3);">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--mint)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 11l5 5 5-5M5 19h14"/></svg>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  <div class="blk-light">
-  <!-- INZICHTEN / BLOG -->
-  <div id="inzichten" class="wrap reveal" style="padding-top:88px;padding-bottom:88px;">
-    <div class="pill">Actueel</div>
-    <h2 style="font-size:38px;margin-top:16px;">Nieuws &amp; inzichten</h2>
-    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:8px;max-width:480px;">Wat er speelt rond energie, subsidies en verduurzamen — helder uitgelegd, zonder verkooppraatje.</p>
-    <div class="grid-3" style="margin-top:32px;">
-      <a href="/artikel-warmtepomp-sturing" class="card tilt-card" style="padding:0;overflow:hidden;display:block;text-decoration:none;color:inherit;">
-        <div style="aspect-ratio:4/3;overflow:hidden;">
-          <img loading="lazy" decoding="async" src="/images/warmtepomp-app.webp" alt="Man bedient zijn warmtepomp op afstand via zijn telefoon" style="width:100%;height:100%;object-fit:cover;display:block;">
-        </div>
-        <div style="padding:20px 22px 24px;">
-          <div style="font-size:11px;font-weight:700;letter-spacing:.05em;color:var(--primary);text-transform:uppercase;">Warmtepomp</div>
-          <h3 class="vw-heading" style="font-size:16.5px;margin-top:8px;line-height:1.35;">De warmtepomp wordt in 70.000 huishoudens straks extern aangestuurd — moet je dat willen?</h3>
-          <p style="font-size:13px;color:var(--ink-soft);margin-top:10px;line-height:1.55;">Netbeheerders mogen bij drukte op het net warmtepompen tijdelijk terugregelen. Wat betekent dat voor je comfort en je besparing?</p>
-          <span style="margin-top:14px;display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:13px;color:var(--primary);">Lees meer<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </div>
-      </a>
-      <a href="/artikel-zonnepanelen-prijs" class="card tilt-card" style="padding:0;overflow:hidden;display:block;text-decoration:none;color:inherit;">
-        <div style="aspect-ratio:4/3;overflow:hidden;">
-          <img loading="lazy" decoding="async" src="/images/zonnepanelen-dak.webp" alt="Monteur plaatst zonnepanelen op een dak" style="width:100%;height:100%;object-fit:cover;display:block;">
-        </div>
-        <div style="padding:20px 22px 24px;">
-          <div style="font-size:11px;font-weight:700;letter-spacing:.05em;color:var(--primary);text-transform:uppercase;">Zonnepanelen</div>
-          <h3 class="vw-heading" style="font-size:16.5px;margin-top:8px;line-height:1.35;">Zonnepanelen nu goedkoper dan ooit</h3>
-          <p style="font-size:13px;color:var(--ink-soft);margin-top:10px;line-height:1.55;">Panelen zijn fors goedkoper geworden terwijl het rendement juist steeg. Wat dat betekent voor je terugverdientijd, nu de subsidie is vervallen.</p>
-          <span style="margin-top:14px;display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:13px;color:var(--primary);">Lees meer<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </div>
-      </a>
-      <a href="/artikel-vergelijking" class="card tilt-card" style="padding:0;overflow:hidden;display:block;text-decoration:none;color:inherit;">
-        <div style="aspect-ratio:4/3;overflow:hidden;">
-          <img loading="lazy" decoding="async" src="/images/warmtepomp-tuinmuur.webp" alt="Warmtepomp-buitenunit tegen een tuinmuur" style="width:100%;height:100%;object-fit:cover;display:block;">
-        </div>
-        <div style="padding:20px 22px 24px;">
-          <div style="font-size:11px;font-weight:700;letter-spacing:.05em;color:var(--primary);text-transform:uppercase;">Vergelijking</div>
-          <h3 class="vw-heading" style="font-size:16.5px;margin-top:8px;line-height:1.35;">Zonneboiler, airco of warmtepomp: wat is slimmer in 2026?</h3>
-          <p style="font-size:13px;color:var(--ink-soft);margin-top:10px;line-height:1.55;">Alledrie besparen ze op gas — maar niet in dezelfde situatie. Een eerlijke vergelijking op investering, besparing en gemak.</p>
-          <span style="margin-top:14px;display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:13px;color:var(--primary);">Lees meer<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </div>
-      </a>
-    </div>
-  </div>
-  </div>
-  <div class="blk-mesh">
-  <!-- CONTACT — boven Reviews -->
-  <div id="contact" class="wrap row reveal" style="padding-top:88px;padding-bottom:88px;scroll-margin-top:96px;">
-    <div>
-      <div class="pill">Contact</div>
-      <h2 style="font-size:38px;margin-top:16px;">Liever gewoon iemand spreken?</h2>
-      <p style="font-size:14.5px;color:var(--ink-soft);margin-top:12px;line-height:1.6;max-width:440px;">Geen chatbot, geen keuzemenu — je krijgt gewoon ons team aan de lijn.</p>
-      <div style="display:flex;flex-direction:column;gap:14px;margin-top:24px;">
-        <a href="tel:+31853335687" style="display:flex;align-items:center;gap:12px;color:inherit;text-decoration:none;font-weight:700;font-size:15px;">
-          <span style="width:38px;height:38px;border-radius:999px;background:var(--surface-tint);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
-          085 333 56 87 <span style="font-weight:400;color:var(--ink-faint);font-size:12.5px;">— ma t/m vr, 9:00–17:30</span>
-        </a>
-        <a href="mailto:info@voltwijk.nl" style="display:flex;align-items:center;gap:12px;color:inherit;text-decoration:none;font-weight:700;font-size:15px;">
-          <span style="width:38px;height:38px;border-radius:999px;background:var(--surface-tint);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span>
-          info@voltwijk.nl
-        </a>
-        <a href="https://wa.me/31853335687" style="display:flex;align-items:center;gap:12px;color:inherit;text-decoration:none;font-weight:700;font-size:15px;">
-          <span style="width:38px;height:38px;border-radius:999px;background:var(--surface-tint);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
-          WhatsApp ons
-        </a>
-      </div>
-    </div>
-    <div class="card" style="padding:28px;">
-      <div class="vw-heading" style="font-size:18px;">Stel je vraag</div>
-      <p style="font-size:13.5px;color:var(--ink-soft);margin-top:8px;">We reageren meestal binnen een paar uur.</p>
-      <div class="lead-block" data-sent="0" id="leadContact">
-        <form class="lead-form lead-form-stack" onsubmit="return vwLeadSubmit(this,'leadContact');">
-          <input class="lead-input" type="text" required placeholder="Je naam">
-          <input class="lead-input" type="email" required placeholder="jouw@email.nl">
-          <textarea class="lead-input" required placeholder="Je vraag" rows="3" style="resize:vertical;font-family:inherit;"></textarea>
-          <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Verstuur bericht →</button>
-        </form>
-        <div class="lead-success">
-          <svg width="40" height="40" viewBox="0 0 100 100" style="flex-shrink:0;" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#0F6E6B"/><clipPath id="vs1L"><rect x="-17" y="-100" width="992" height="1640"/></clipPath><clipPath id="vs1R"><rect x="976" y="-100" width="992" height="1640"/></clipPath><g transform="translate(16.19 71.90) scale(0.03465 -0.03465)"><path clip-path="url(#vs1L)" fill="#fff" d="M444 0 23 1440H276L563 400L849 1438L1102 1440L1389 400L1675 1440H1928L1508 0H1270L975 1024L682 0Z"/><path clip-path="url(#vs1R)" fill="#6FD6C8" d="M444 0 23 1440H276L563 400L849 1438L1102 1440L1389 400L1675 1440H1928L1508 0H1270L975 1024L682 0Z"/><circle cx="976" cy="1440" r="176" fill="#FF6B5B"/></g></svg>
-          Bedankt! We reageren snel.
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-
 
 <div class="site-footer" style="background:var(--dark);padding:44px 0 28px;position:relative;overflow:hidden;">
     <div class="blob" style="width:260px;height:260px;background:var(--primary);opacity:.25;top:-120px;left:50%;transform:translateX(-50%);"></div>

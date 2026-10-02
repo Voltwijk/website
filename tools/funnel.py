@@ -316,7 +316,7 @@ JS = r'''<script>
   function render(scroll){
     var h = ''; steps();
     if(cur === 'adres'){
-      h = head('Bereken welke thuisbatterij bij jouw huis past', 'Vul je adres in. Daarna stellen we je nog vijf korte vragen en zie je direct je advies en vaste prijs.') +
+      h = head(document.querySelector('.tb-solo') ? 'Bereken welke thuisbatterij bij jouw huis past' : 'Begin met je adres', 'Vul je postcode en huisnummer in. Daarna stellen we je nog vijf korte vragen en zie je direct je advies en vaste prijs.') +
         '<div class="tb-content"><div class="tb-row"><div class="tb-field"><label for="tbPc">Postcode</label><input id="tbPc" autocomplete="postal-code" placeholder="4762 AS" value="' + esc(st.postcode) + '" maxlength="7"></div>' +
         '<div class="tb-field"><label for="tbHn">Huisnummer</label><input id="tbHn" inputmode="numeric" placeholder="15" value="' + esc(st.huisnummer) + '" maxlength="8"></div></div>' +
         '<div id="tbAdrErr" class="tb-err" hidden></div><p class="tb-hint">Met je adres zien we wanneer onze monteurs bij jou kunnen installeren. Je zit nergens aan vast.</p></div>' +
@@ -630,7 +630,34 @@ def remove_div(s, start):
 def anders(f):
     return f in ANDERS or (ANDERS_RE.search(f) and not BATTERIJ_RE.search(f))
 
+NAV_L = ('<a href="/product-batterij" style="color:inherit;text-decoration:none;">THUISBATTERIJ</a>'
+         '<a href="/product-zonnepanelen" style="color:inherit;text-decoration:none;">ZONNEPANELEN</a>'
+         '<a href="/producten" style="color:inherit;text-decoration:none;">ALLE PRODUCTEN</a>')
+NAV_R = ('<a href="/over-ons" style="color:inherit;text-decoration:none;">OVER ONS</a>'
+         '<a href="/contact" style="color:inherit;text-decoration:none;">CONTACT</a>'
+         '<a href="/contact" data-book="" class="nav-book" style="color:inherit;text-decoration:none;">GRATIS ADVIESGESPREK</a>')
+NAV_M = ('<a href="/product-batterij">THUISBATTERIJ</a>\n      <a href="' + URL + '">THUISBATTERIJ BEREKENEN</a>\n      <a href="/product-zonnepanelen">ZONNEPANELEN</a>\n'
+         '      <a href="/producten">ALLE PRODUCTEN</a>\n      <a href="/hoe-het-werkt">HOE HET WERKT</a>\n      <a href="/reviews">REVIEWS</a>\n'
+         '      <a href="/inzichten">KENNISBANK</a>\n      <a href="/over-ons">OVER ONS</a>\n      <a href="/contact">CONTACT</a>\n'
+         '      <a href="/contact" data-book="">GRATIS ADVIESGESPREK</a>\n')
+NAV_CSS = ('<style id="vw-navbook">.nav-book{border:1.5px solid currentColor;border-radius:999px;padding:8px 14px;white-space:nowrap;}'
+           '#siteNav.is-stuck .nav-book,#siteNav.on-light .nav-book{background:var(--primary);border-color:var(--primary);color:#fff !important;}'
+           '@media (max-width:1180px){#siteNav .nav-links a[href="/producten"]{display:none;}}</style>')
+
+def nav(s):
+    """Menu: wat we doen (thuisbatterij, zonnepanelen, alle producten), over ons, contact en een duidelijke knop voor een adviesgesprek."""
+    s = re.sub(r'(<div class="nav-links">\s*)<a href="/producten"[^>]*>PRODUCTEN</a><a href="[^"]*"[^>]*>THUISBATTERIJ BEREKENEN</a><a href="/inzichten"[^>]*>KENNISBANK</a>',
+               lambda m: m.group(1) + NAV_L, s, count=1)
+    s = re.sub(r'(<div class="nav-links" style="justify-content:flex-end;">\s*)<a href="/reviews"[^>]*>REVIEWS</a><a href="/over-ons"[^>]*>OVER ONS</a><a href="/contact"[^>]*>CONTACT</a>',
+               lambda m: m.group(1) + NAV_R, s, count=1)
+    s = re.sub(r'(<div id="mobileNavPanel" class="mobile-nav-panel">\n\s*)<a href="/producten">PRODUCTEN</a>\n.*?(?=\s*<a href="tel:)',
+               lambda m: m.group(1) + NAV_M.rstrip('\n'), s, count=1, flags=re.S)
+    if 'id="vw-navbook"' not in s and 'class="nav-book"' in s:
+        s = s.replace('<div id="siteNav">', NAV_CSS + '\n  <div id="siteNav">', 1)
+    return s
+
 def patch(f, s):
+    s = nav(s)
     if f == 'index.html':
         # homepage: de calculator zelf, direct onder de video; knoppen op de pagina scrollen ernaartoe
         s = re.sub(r'<!-- vw-funnel-cta:start -->.*?<!-- vw-funnel-cta:end -->', '', s, flags=re.S)
