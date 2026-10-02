@@ -99,7 +99,7 @@ Sluit nooit zelf een aggregaat of powerstation aan op je groepenkast zonder de j
 
 ## Hoe Voltwijk helpt
 
-Heb je een vraag over wat je installatie doet bij een storing, of wil je weten of noodstroom bij jou past? Onze eigen monteurs kijken mee naar je omvormer en je meterkast. De thuisbatterij van Voltwijk is er in 10 kWh met een hybride omvormer van 5 kW (€ 4.200), 16 kWh met 6 kW 1-fase (€ 4.600) en 16 kWh met 8 kW 3-fase (€ 5.700), inclusief installatie. Noodstroom is daarbij een optie. Met de [batterijcalculator](/thuisbatterij-berekenen) zie je snel welke maat bij je verbruik past. Meer over panelen lees je op de pagina over [zonnepanelen](/product-zonnepanelen).
+Heb je een vraag over wat je installatie doet bij een storing, of wil je weten of noodstroom bij jou past? Onze eigen monteurs kijken mee naar je omvormer en je meterkast. De thuisbatterij van Voltwijk is er in 10 kWh met een hybride omvormer van 5 kW (€ 4.200), 16 kWh met 6 kW 1-fase (€ 4.600) en 16 kWh met 8 kW 3-fase (€ 5.700), excl. btw en inclusief installatie. Noodstroom is daarbij een optie. Met de [batterijcalculator](/thuisbatterij-berekenen) zie je snel welke maat bij je verbruik past. Meer over panelen lees je op de pagina over [zonnepanelen](/product-zonnepanelen).
 
 faq:
 Q: Werken zonnepanelen bij een stroomstoring?

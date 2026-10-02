@@ -110,7 +110,7 @@ Kou op zich is voor de levensduur minder schadelijk dan hitte, zolang de batteri
 
 ## Hoe Voltwijk helpt
 
-Onze eigen monteurs kijken bij jou thuis of je garage of schuur geschikt is: temperatuur, vocht, afstand tot de meterkast en een veilige montageplek. Onze thuisbatterij is er als 10 kWh met een hybride omvormer van 5 kW (€ 4.200), 16 kWh met 6 kW op 1-fase (€ 4.600) en 16 kWh met 8 kW op 3-fase (€ 5.700), steeds inclusief installatie. Twijfel je welke bij je past, gebruik dan de [batterijcalculator](/thuisbatterij-berekenen).
+Onze eigen monteurs kijken bij jou thuis of je garage of schuur geschikt is: temperatuur, vocht, afstand tot de meterkast en een veilige montageplek. Onze thuisbatterij is er als 10 kWh met een hybride omvormer van 5 kW (€ 4.200), 16 kWh met 6 kW op 1-fase (€ 4.600) en 16 kWh met 8 kW op 3-fase (€ 5.700), steeds excl. btw en inclusief installatie. Twijfel je welke bij je past, gebruik dan de [batterijcalculator](/thuisbatterij-berekenen).
 
 faq:
 Q: Mag een thuisbatterij in een onverwarmde garage?

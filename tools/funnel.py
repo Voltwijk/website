@@ -69,7 +69,7 @@ FAQ = [
 TRUST = [('12.500+', 'installaties'), ('4,7 / 5', 'op Google'), ('Eigen monteurs', 'geen onderaannemers'),
          ('Vaste prijs', 'inclusief installatie'), ('2 jaar', 'garantie op de installatie')]
 STEPS = [
- ('Bereken', 'Zes korte vragen. Je ziet direct welke batterij past, wat hij kost en wat je ongeveer bespaart.'),
+ ('Bereken', 'Een paar korte vragen. Je ziet direct welke batterij past, wat hij kost en wat je ongeveer bespaart.'),
  ('Adviesgesprek', 'We bellen je of komen langs. We checken je meterkast (een foto via WhatsApp helpt) en rekenen het samen na.'),
  ('Installatie', 'Onze eigen monteurs plaatsen de batterij, sluiten hem aan op een eigen groep en stellen de app in.'),
  ('Besparen', 'Je gebruikt je eigen zonnestroom ook \'s avonds. Klaar voor het einde van salderen op 1 januari 2027.'),
@@ -316,7 +316,7 @@ JS = r'''<script>
   function render(scroll){
     var h = ''; steps();
     if(cur === 'adres'){
-      h = head(document.querySelector('.tb-solo') ? 'Bereken welke thuisbatterij bij jouw huis past' : 'Begin met je adres', 'Vul je postcode en huisnummer in. Daarna stellen we je nog vijf korte vragen en zie je direct je advies en vaste prijs.') +
+      h = head(document.querySelector('.tb-solo') ? 'Bereken welke thuisbatterij bij jouw huis past' : 'Begin met je adres', 'Vul je postcode en huisnummer in. Daarna stellen we je nog een paar korte vragen en zie je direct je advies en vaste prijs.') +
         '<div class="tb-content"><div class="tb-row"><div class="tb-field"><label for="tbPc">Postcode</label><input id="tbPc" autocomplete="postal-code" placeholder="4762 AS" value="' + esc(st.postcode) + '" maxlength="7"></div>' +
         '<div class="tb-field"><label for="tbHn">Huisnummer</label><input id="tbHn" inputmode="numeric" placeholder="15" value="' + esc(st.huisnummer) + '" maxlength="8"></div></div>' +
         '<div id="tbAdrErr" class="tb-err" hidden></div><p class="tb-hint">Met je adres zien we wanneer onze monteurs bij jou kunnen installeren. Je zit nergens aan vast.</p></div>' +
@@ -466,7 +466,7 @@ JS = r'''<script>
       '<div class="tb-sizes" role="group" aria-label="Kies je opslag">' + sizes + '</div>' +
       '<div class="tb-why"><b>Waarom dit systeem voor jou?</b>' + ck(waarom(id)) + '</div>' + ck(p.feat) + kpi +
       '<div class="tb-price"><div class="v">Vaste prijs, inclusief installatie</div><div class="p">' + eur(p.prijs) + '<small>excl. btw</small></div>' +
-      '<div class="i">' + eur(p.prijs * 1.21) + ' incl. btw. Met een dynamisch contract kun je de btw vaak terugvragen. Is er meerwerk nodig, dan hoor je dat altijd vooraf.</div></div>' +
+      '<div class="i">' + eur(p.prijs * 1.21) + ' incl. btw. Met een dynamisch contract kun je de btw soms terugvragen. Is er meerwerk nodig, dan hoor je dat altijd vooraf.</div></div>' +
       '<div class="tb-urg"><span class="g">Installatie al vanaf <b data-vw-first></b></span>' + (d27 ? '<span>Salderen stopt over ' + d27 + ' dagen</span>' : '') + '</div>' +
       '<button type="button" class="tb-btn full" data-offerte>Vraag vrijblijvend jouw offerte aan →</button>' +
       '<div class="tb-risk"><span>Je betaalt nu niets</span><span>Gratis technische check</span><span>Eigen monteurs</span></div>' +
@@ -604,25 +604,55 @@ def band(f):
     """Het blok dat op de plek van de oude calculator komt."""
     prod = ANDERS.get(f)
     if prod:
-        return f'''<!-- vw-funnel-cta:start --><div id="offerte" class="wrap reveal" style="padding-top:56px;padding-bottom:64px;scroll-margin-top:70px;">
-  <div style="background:var(--dark);color:#fff;border-radius:28px;padding:clamp(26px,4vw,44px);display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:28px;align-items:center;" class="vwf-grid">
+        extra = (f'<a href="{URL}" style="display:inline-block;margin-top:18px;font-weight:800;font-size:14px;color:var(--mint);text-decoration:none;">Ook een thuisbatterij? Bereken welke past →</a>'
+                 if f == 'product-zonnepanelen.html' else '')
+        return f"""<!-- vw-funnel-cta:start --><div id="offerte" class="wrap reveal" style="padding-top:56px;padding-bottom:64px;scroll-margin-top:70px;">
+  <style>
+  .vwo{{background:var(--dark);color:#fff;border-radius:28px;padding:clamp(26px,4vw,44px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:32px;align-items:center;}}
+  .vwo-ck{{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:8px;font-size:15px;color:#C9D6D3;}}
+  .vwo-ck li::before{{content:"✓";color:var(--mint);font-weight:800;margin-right:8px;}}
+  .vwo-f{{background:#fff;color:var(--ink);border-radius:22px;padding:24px;display:grid;gap:10px;}}
+  .vwo-f .r2{{display:grid;grid-template-columns:1fr 1fr;gap:10px;}}
+  .vwo-f input,.vwo-f textarea{{width:100%;box-sizing:border-box;border:1.5px solid var(--border);border-radius:12px;padding:13px 14px;font:600 15px 'Nunito Sans',system-ui,sans-serif;color:var(--ink);background:#fff;}}
+  .vwo-f input:focus,.vwo-f textarea:focus{{outline:none;border-color:var(--primary);}}
+  .vwo-f button{{background:var(--primary);color:#fff;border:0;border-radius:999px;padding:15px 20px;font:800 15.5px 'Nunito Sans',system-ui,sans-serif;cursor:pointer;}}
+  .vwo-f button:hover{{background:var(--primary-dark);}}
+  .vwo-f small{{font-size:12.5px;color:var(--ink-faint);line-height:1.45;}}
+  .vwo-ok{{display:none;background:#fff;color:var(--ink);border-radius:22px;padding:28px;}}
+  .vwo-sent .vwo-f{{display:none;}} .vwo-sent .vwo-ok{{display:block;}}
+  @media (max-width:860px){{.vwo{{grid-template-columns:1fr;}}}}
+  @media (max-width:420px){{.vwo-f .r2{{grid-template-columns:1fr;}}}}
+  </style>
+  <div class="vwo">
     <div><div style="font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--mint);">Vaste prijs · eigen monteurs</div>
-      <h2 class="vw-heading" style="color:#fff;font-size:clamp(26px,3.2vw,38px);margin-top:10px;line-height:1.1;">Offerte voor {esc(prod)}?</h2>
-      <p style="color:#C9D6D3;font-size:15.5px;line-height:1.6;margin-top:12px;max-width:520px;">Plan een gratis adviesgesprek. We kijken naar je woning en meterkast en sturen je een offerte met een vaste prijs, inclusief installatie.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;"><a href="/contact" data-book="" class="btn-primary" style="background:var(--mint);color:var(--dark);text-decoration:none;">Plan gratis adviesgesprek →</a><a href="{WA}?text=Hoi%20Voltwijk%2C%20ik%20wil%20graag%20een%20offerte" target="_blank" rel="noopener" class="btn-secondary" style="color:#fff;border-color:rgba(255,255,255,.5);text-decoration:none;">App ons</a></div></div>
-    <a href="{URL}" style="display:block;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:20px;color:#fff;text-decoration:none;">
-      <span style="font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--mint);">Ook interessant</span>
-      <b class="vw-heading" style="display:block;font-size:20px;margin-top:6px;">Bewaar je zonnestroom met een thuisbatterij</b>
-      <span style="display:block;font-size:14px;color:#C9D6D3;margin-top:6px;line-height:1.5;">Salderen stopt op 1 januari 2027. Bereken in 1 minuut welke batterij past. Vanaf {eur(VANAF).replace(' ', '&nbsp;')} incl. installatie, excl. btw.</span>
-      <span style="display:inline-block;font-weight:800;font-size:14px;color:var(--mint);margin-top:12px;">Bereken je thuisbatterij →</span></a>
+      <h2 class="vw-heading" style="color:#fff;font-size:clamp(26px,3.2vw,38px);margin-top:10px;line-height:1.1;">Vraag een offerte aan voor {esc(prod)}</h2>
+      <p style="color:#C9D6D3;font-size:15.5px;line-height:1.6;margin-top:12px;max-width:520px;">Laat je gegevens achter. We nemen contact op, stellen een paar vragen over je woning en sturen je een offerte met een vaste prijs, inclusief installatie.</p>
+      <ul class="vwo-ck"><li>Vrijblijvend, je zit nergens aan vast</li><li>Vaste prijs vooraf, meerwerk hoor je altijd vooraf</li><li>2 jaar garantie op de installatie</li></ul>
+      <div style="display:flex;flex-wrap:wrap;gap:10px 20px;margin-top:22px;font-size:14.5px;font-weight:800;"><a href="/contact" data-book="" style="color:#fff;text-decoration:none;">Liever een adviesgesprek →</a><a href="{WA}?text=Hoi%20Voltwijk%2C%20ik%20wil%20graag%20een%20offerte%20voor%20{esc(prod).replace(' ', '%20')}" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;">App ons →</a></div>
+      {extra}</div>
+    <div id="vwoBox">
+      <form class="vwo-f" name="offerte" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="return vwOfferte(this);">
+        <input type="hidden" name="form-name" value="offerte"><input type="hidden" name="product" value="{esc(prod)}">
+        <p style="display:none;"><label>Niet invullen: <input name="bot-field"></label></p>
+        <b class="vw-heading" style="font-size:20px;">Offerte aanvragen</b>
+        <input name="naam" autocomplete="name" required placeholder="Je naam" aria-label="Naam">
+        <div class="r2"><input name="telefoon" type="tel" autocomplete="tel" required placeholder="Telefoonnummer" aria-label="Telefoonnummer"><input name="email" type="email" autocomplete="email" required placeholder="E-mailadres" aria-label="E-mailadres"></div>
+        <div class="r2"><input name="postcode" autocomplete="postal-code" required placeholder="Postcode" aria-label="Postcode"><input name="huisnummer" required placeholder="Huisnummer" aria-label="Huisnummer"></div>
+        <textarea name="bericht" rows="3" placeholder="Iets wat we moeten weten? (optioneel)" aria-label="Opmerking"></textarea>
+        <button type="submit">Vraag een offerte aan →</button>
+        <small>We gebruiken je gegevens alleen voor deze aanvraag. Zie ons <a href="/privacybeleid" style="color:var(--primary);">privacybeleid</a>.</small>
+      </form>
+      <div class="vwo-ok" role="status"><b class="vw-heading" style="font-size:22px;">Je aanvraag is binnen</b><p style="color:var(--ink-soft);margin-top:8px;line-height:1.6;">Bedankt. We nemen contact met je op om je offerte voor {esc(prod)} voor te bereiden. Haast? Bel <a href="{TEL_HREF}" style="color:var(--primary);font-weight:800;">{TEL}</a>.</p></div>
+    </div>
   </div>
-  <style>@media (max-width:820px){{.vwf-grid{{grid-template-columns:1fr !important;}}}}</style>
-</div><!-- vw-funnel-cta:end -->'''
+  <script>function vwOfferte(f){{var b=f.querySelector('button'),t=b.innerHTML,d=new URLSearchParams(new FormData(f));d.append('pagina',location.pathname);b.disabled=true;b.innerHTML='Versturen…';
+  fetch('/',{{method:'POST',headers:{{'Content-Type':'application/x-www-form-urlencoded'}},body:d.toString()}}).then(function(r){{if(!r.ok)throw 0;document.getElementById('vwoBox').classList.add('vwo-sent');}}).catch(function(){{b.disabled=false;b.innerHTML=t;alert('Versturen lukte niet. Bel ons op {TEL} of app ons.');}});return false;}}</script>
+</div><!-- vw-funnel-cta:end -->"""
     return f'''<!-- vw-funnel-cta:start --><div id="calculator" class="wrap reveal" style="padding-top:56px;padding-bottom:64px;scroll-margin-top:70px;">
   <a href="{URL}" class="vwf-band" style="display:grid;grid-template-columns:minmax(0,1.4fr) auto;gap:24px;align-items:center;background:var(--dark);color:#fff;border-radius:28px;padding:clamp(26px,4vw,44px);text-decoration:none;">
     <span><span style="display:block;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--mint);">Thuisbatterij berekenen · 1 minuut</span>
       <span class="vw-heading" style="display:block;font-size:clamp(26px,3.2vw,38px);margin-top:10px;line-height:1.1;">Welke thuisbatterij past bij jouw huis?</span>
-      <span style="display:block;color:#C9D6D3;font-size:15.5px;line-height:1.6;margin-top:12px;max-width:560px;">Zes korte vragen. Je ziet direct je advies, de vaste prijs inclusief installatie en wat je ongeveer bespaart als salderen stopt. Vanaf {eur(VANAF).replace(' ', '&nbsp;')} excl. btw.</span></span>
+      <span style="display:block;color:#C9D6D3;font-size:15.5px;line-height:1.6;margin-top:12px;max-width:560px;">Een paar korte vragen. Je ziet direct je advies, de vaste prijs inclusief installatie en wat je ongeveer bespaart als salderen stopt. Vanaf {eur(VANAF).replace(' ', '&nbsp;')} excl. btw.</span></span>
     <span class="btn-primary" style="background:var(--mint);color:var(--dark);white-space:nowrap;">Bereken je thuisbatterij →</span>
   </a>
   <style>@media (max-width:820px){{.vwf-band{{grid-template-columns:1fr !important;}}.vwf-band .btn-primary{{justify-content:center;}}}}</style>

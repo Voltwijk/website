@@ -91,7 +91,7 @@ Een eerlijke kanttekening: een batterij is geen garantie dat je omvormer nooit m
 
 Dat hangt af van je verbruik en je aansluiting, niet van de regio. Voltwijk heeft drie pakketten, inclusief installatie:
 
-| Pakket | Aansluiting | Prijs |
+| Pakket | Aansluiting | Prijs (excl. btw) |
 |---|---|---|
 | 10 kWh + 5 kW hybride omvormer | 1-fase | € 4.200 |
 | 16 kWh + 6 kW omvormer | 1-fase | € 4.600 |

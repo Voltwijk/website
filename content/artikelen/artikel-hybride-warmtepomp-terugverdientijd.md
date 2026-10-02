@@ -40,7 +40,7 @@ Stijgt de gasprijs ten opzichte van de stroomprijs, dan wordt je voordeel groter
 
 ### De ISDE-subsidie
 
-Voor een hybride lucht/water-warmtepomp in een bestaande woning kun je ISDE-subsidie krijgen. In 2026 is dat voor je eerste lucht/water-warmtepomp **€ 1.025 plus € 225 per kW**, met **€ 200 extra** bij energielabel A+++. Voor een warmtepomp van 4 kW met A+++ is dat € 2.125. Het precieze bedrag per model staat op de meldcodelijst van RVO. Zie ook [ISDE-subsidie 2026](/artikel-isde-subsidie-2026).
+Voor een hybride lucht/water-warmtepomp in een bestaande woning kun je ISDE-subsidie krijgen. Hoeveel je krijgt, hangt af van het vermogen en het energielabel van de warmtepomp. Het precieze bedrag per model staat op de meldcodelijst van RVO. Zie ook [ISDE-subsidie 2026](/artikel-isde-subsidie-2026).
 
 ### Slimme sturing en zonnestroom
 
@@ -54,28 +54,28 @@ Hieronder een **rekenvoorbeeld met aannames**. Het is geen belofte, maar een man
 
 - Gasprijs inclusief belastingen: € 1,30 per m³.
 - Stroomprijs inclusief belastingen: € 0,27 per kWh.
-- Eén m³ gas levert in een moderne cv-ketel ongeveer 8,8 kWh nuttige warmte.
+- Eén m³ gas bevat ongeveer 8,8 kWh energie. Een moderne cv-ketel haalt daar met een rendement van zo'n 90% ongeveer 7,9 kWh nuttige warmte uit.
 - De warmtepomp haalt gemiddeld over het seizoen ongeveer 3,5 tot 4 kWh warmte uit 1 kWh stroom.
 - Investering: ongeveer € 4.500 tot € 6.000 inclusief installatie.
-- ISDE: ongeveer € 2.000.
+- ISDE: we rekenen hier met ongeveer € 2.000 (check het bedrag voor jouw model bij RVO).
 
 **Stap voor stap, voor een huis waar de warmtepomp 800 m³ gas overneemt:**
 
 1. Besparing op gas: 800 × € 1,30 = **€ 1.040** per jaar.
-2. Warmte die de warmtepomp levert: 800 × 8,8 = ongeveer 7.000 kWh.
-3. Stroom die daarvoor nodig is: 7.000 ÷ 3,8 = ongeveer 1.850 kWh.
-4. Extra stroomkosten: 1.850 × € 0,27 = ongeveer **€ 500** per jaar.
-5. Netto voordeel: ongeveer **€ 540** per jaar.
+2. Warmte die de warmtepomp levert: 800 × 7,9 = ongeveer 6.300 kWh.
+3. Stroom die daarvoor nodig is: 6.300 ÷ 3,8 = ongeveer 1.660 kWh.
+4. Extra stroomkosten: 1.660 × € 0,27 = ongeveer **€ 450** per jaar.
+5. Netto voordeel: ongeveer **€ 590** per jaar.
 6. Netto investering: € 5.000 min € 2.000 ISDE = € 3.000.
-7. Terugverdientijd: € 3.000 ÷ € 540 = ongeveer **5,5 jaar**.
+7. Terugverdientijd: € 3.000 ÷ € 590 = ongeveer **5 jaar**.
 
 ### Drie situaties naast elkaar
 
 | Situatie | Gas dat de warmtepomp overneemt | Netto voordeel per jaar (indicatief) | Terugverdientijd (indicatief) |
 |---|---|---|---|
-| Goed geïsoleerd, laag verbruik | ongeveer 500 m³ | ongeveer € 300 | ongeveer 10 jaar of langer |
-| Gemiddeld huis | ongeveer 800 m³ | ongeveer € 540 | ongeveer 5–6 jaar |
-| Groot huis, hoog verbruik, redelijke isolatie | ongeveer 1.000 m³ | ongeveer € 700 | ongeveer 4–5 jaar |
+| Goed geïsoleerd, laag verbruik | ongeveer 500 m³ | ongeveer € 370 | ongeveer 8 jaar of langer |
+| Gemiddeld huis | ongeveer 800 m³ | ongeveer € 590 | ongeveer 5 jaar |
+| Groot huis, hoog verbruik, redelijke isolatie | ongeveer 1.000 m³ | ongeveer € 740 | ongeveer 4 jaar |
 
 Ter vergelijking: Milieu Centraal rekent voor een matig geïsoleerde hoekwoning met een besparing van ongeveer 760 m³ gas tegenover ongeveer 1.700 kWh extra stroom, goed voor ruwweg € 625 per jaar. Dat ligt in dezelfde orde van grootte.
 
@@ -111,7 +111,7 @@ Wat een warmtepomp in totaal kost en wat de prijs bepaalt, lees je in [warmtepom
 
 ## Hoe Voltwijk helpt
 
-Voltwijk installeert een lucht/water-warmtepomp met een COP van 4,7, vanaf € 6.750. De ISDE-subsidie wordt verrekend. Onze eigen monteurs kijken met je naar je gasverbruik, je huis en je meterkast, en rekenen met realistische aannames door wat je kunt verwachten. Kijk op de pagina over de [warmtepomp](/product-warmtepomp) voor meer informatie.
+Voltwijk installeert een lucht/water-warmtepomp met een COP van 4,7, vanaf € 6.750. We helpen je met de ISDE-aanvraag; die doe je na de installatie bij RVO. Onze eigen monteurs kijken met je naar je gasverbruik, je huis en je meterkast, en rekenen met realistische aannames door wat je kunt verwachten. Kijk op de pagina over de [warmtepomp](/product-warmtepomp) voor meer informatie.
 
 faq:
 Q: Wat is de terugverdientijd van een hybride warmtepomp?
@@ -121,4 +121,4 @@ A: Dat verschilt sterk per huis. In veel gemiddelde woningen neemt een hybride w
 Q: Is een hybride warmtepomp rendabel bij een laag gasverbruik?
 A: Minder. Bij een laag gasverbruik valt er weinig te besparen en duurt het terugverdienen lang. Isoleren of andere maatregelen kunnen dan eerst meer opleveren.
 Q: Hoeveel subsidie krijg je voor een hybride warmtepomp?
-A: In 2026 geldt voor je eerste lucht/water-warmtepomp € 1.025 plus € 225 per kW, met € 200 extra bij label A+++. Het exacte bedrag per model staat op de meldcodelijst van RVO.
+A: Dat hangt af van het vermogen en het energielabel van de warmtepomp. Het exacte bedrag per model staat op de meldcodelijst van RVO.

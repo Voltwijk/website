@@ -4,7 +4,7 @@ description: Omvormer kapot? Herken de signalen, lees wanneer repareren of verva
 category: Zonnepanelen
 product: zonnepanelen
 lead: Een omvormer gaat meestal zo'n 10 tot 15 jaar mee. Is hij kapot, dan is vervangen vaak logischer dan repareren, en indicatief ben je ongeveer € 800 tot € 2.000 kwijt voor een gewone omvormer inclusief installatie.
-summary: Signalen: geen opbrengst in de app, een rood of knipperend lampje, foutcodes of een omvormer die steeds uitschakelt || Een omvormer gaat meestal 10 tot 15 jaar mee, panelen veel langer || Buiten de garantie is vervangen vaak slimmer dan repareren; op een losse vervanging betaal je 21% btw || Bij vervanging kun je overwegen meteen een hybride omvormer te nemen, zodat je later een batterij kunt koppelen
+summary: Signalen: geen opbrengst in de app, een rood of knipperend lampje, foutcodes of een omvormer die steeds uitschakelt || Een omvormer gaat meestal 10 tot 15 jaar mee, panelen veel langer || Buiten de garantie is vervangen vaak slimmer dan repareren; check of op een losse vervanging 0% of 21% btw geldt || Bij vervanging kun je overwegen meteen een hybride omvormer te nemen, zodat je later een batterij kunt koppelen
 ---
 Je panelen liggen er nog prima bij, maar de app geeft al dagen nul kWh. Of het lampje op de omvormer brandt rood. Grote kans dat het probleem niet bij de panelen zit, maar bij de omvormer. Dat is het onderdeel dat in een zonne-installatie het vaakst als eerste aandacht nodig heeft.
 
@@ -86,7 +86,7 @@ Wat een nieuwe omvormer kost, verschilt per type, vermogen en situatie. De bedra
 | Hybride omvormer | ongeveer € 1.800 – € 3.500 |
 | Micro-omvormer (per stuk, vervangen op het dak) | sterk wisselend, mede door de kosten van het dakwerk |
 
-Let op de **btw**. Voor de levering en installatie van zonnepanelen geldt 0% btw, maar dat geldt niet voor het los vervangen van een kapotte omvormer. Daarover betaal je gewoon **21% btw**. Meer over de regels lees je in [0% btw op zonnepanelen](/artikel-btw-zonnepanelen-nultarief).
+Let op de **btw**. Voor de levering en installatie van zonnepanelen geldt 0% btw, maar of dat ook geldt voor het los vervangen van een kapotte omvormer, is niet altijd vanzelfsprekend. Reken er voor de zekerheid op dat je **21% btw** kunt betalen, en vraag je installateur of check bij de Belastingdienst of in jouw situatie 0% of 21% geldt. Meer over de regels lees je in [0% btw op zonnepanelen](/artikel-btw-zonnepanelen-nultarief).
 
 ## Kans: overstappen op een hybride omvormer
 
@@ -115,7 +115,7 @@ Controleer na afloop op een zonnige dag of de opbrengst weer klopt met wat je ge
 
 ## Hoe Voltwijk helpt
 
-Denk je bij het vervangen van je omvormer ook na over een thuisbatterij of extra panelen? Onze eigen monteurs kijken met je mee naar wat bij je installatie en je verbruik past. De thuisbatterij van Voltwijk is er in 10 en 16 kWh, met een hybride omvormer die je oude omvormer vaak meteen vervangt, vanaf € 4.200 inclusief installatie. Kijk op de pagina over de [thuisbatterij](/product-batterij) of over [zonnepanelen](/product-zonnepanelen).
+Denk je bij het vervangen van je omvormer ook na over een thuisbatterij of extra panelen? Onze eigen monteurs kijken met je mee naar wat bij je installatie en je verbruik past. De thuisbatterij van Voltwijk is er in 10 en 16 kWh, met een hybride omvormer die je oude omvormer vaak meteen vervangt, vanaf € 4.200 excl. btw, inclusief installatie. Kijk op de pagina over de [thuisbatterij](/product-batterij) of over [zonnepanelen](/product-zonnepanelen).
 
 faq:
 Q: Hoe weet ik of mijn omvormer kapot is?
@@ -125,4 +125,4 @@ A: Een gewone stringomvormer kost indicatief ongeveer € 800 tot € 2.000 incl
 Q: Hoe lang gaat een omvormer mee?
 A: Meestal ongeveer 10 tot 15 jaar. Warmte, belasting en het type omvormer spelen daarbij een rol.
 Q: Betaal ik btw over een nieuwe omvormer?
-A: Ja. Het 0%-tarief geldt voor de levering en installatie van zonnepanelen, maar niet voor het los vervangen van een kapotte omvormer. Daarover betaal je 21% btw.
+A: Dat hangt af van de situatie. Het 0%-tarief geldt voor de levering en installatie van zonnepanelen; bij het los vervangen van een kapotte omvormer kan 21% btw gelden. Vraag je installateur welk tarief op de offerte staat, of check het bij de Belastingdienst.

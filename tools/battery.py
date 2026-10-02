@@ -179,7 +179,7 @@ SECTION = '''<!--vw-batterijkeuze-->
     <div class="bk-lbl">Ons advies voor jou</div>
     <h3 class="bk-name" id="bkNaam">Thuisbatterij 16 kWh</h3>
     <div class="bk-sub" id="bkSub">met 6 kW hybride omvormer · 1-fase</div>
-    <div class="bk-price"><b id="bkPrijs">€ 4.600</b><span>vaste prijs incl. installatie, excl. btw<br>btw vaak terug te vragen</span></div>
+    <div class="bk-price"><b id="bkPrijs">€ 4.600</b><span>vaste prijs incl. installatie, excl. btw<br>btw soms terug te vragen</span></div>
     <ul class="bk-why" id="bkWhy"></ul>
     <p class="bk-inc"><b>Inbegrepen:</b> batterij en hybride omvormer, montage en bekabeling, aansluiten op een eigen groep in de meterkast, instellen van de app en uitleg bij oplevering.</p>
     <button type="button" class="bk-go" id="bkKies">Vraag deze batterij aan →</button>

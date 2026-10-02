@@ -92,7 +92,7 @@ Doe dit nooit zelf. Werken in een groepenkast is gevaarlijk en een fout zie je n
 
 ## Meterkast aanpassen met Voltwijk
 
-Voltwijk past je meterkast aan met tot vier extra groepen, optioneel een aardlekschakelaar type B, inclusief NEN 1010-keuring en meestal binnen één dag. Bekijk onze [meterkastaanpassing](/product-meterkast).
+Voltwijk past je meterkast aan met tot vier extra groepen, optioneel een aardlekschakelaar type B, inclusief NEN 1010-keuring. Bekijk onze [meterkastaanpassing](/product-meterkast).
 
 faq:
 Q: Hoe oud mag een meterkast zijn?
@@ -100,6 +100,6 @@ A: Er is geen vaste leeftijd. Het gaat om de staat en de inhoud: schroefzekering
 Q: Is een meterkast zonder aardlekschakelaar gevaarlijk?
 A: Hij beschermt je niet tegen lekstroom, dus bij een defect apparaat is het risico op een elektrische schok groter. Laat de installatie bekijken door een installateur.
 Q: Hoe lang duurt het vervangen van een groepenkast?
-A: In de meeste gevallen gebeurt het binnen één dag. Je zit dan een deel van de dag zonder stroom.
+A: Dat hangt af van de omvang van het werk; dat hoor je vooraf. Tijdens het werk zit je een deel van de dag zonder stroom.
 Q: Moet de netbeheerder erbij komen?
 A: Voor het vervangen van alleen de groepenkast meestal niet. Wil je ook je aansluiting verzwaren, bijvoorbeeld naar 3-fase, dan regel je dat bij je netbeheerder.

@@ -4,7 +4,7 @@ description: Zijn zonnepanelen nog rendabel na 2027, als salderen stopt? Lees ho
 category: Zonnepanelen
 product: zonnepanelen
 lead: Ja, voor de meeste huishoudens blijven zonnepanelen na 2027 rendabel, maar de terugverdientijd wordt langer. Hoeveel langer hangt vooral af van hoeveel zonnestroom je zelf direct gebruikt.
-summary: Salderen stopt op 1 januari 2027; daarna krijg je voor teruggeleverde stroom een lagere vergoeding || Zelf verbruikte zonnestroom blijft het meeste waard, want je koopt die stroom niet in || Een terugverdientijd van ongeveer 8 tot 15 jaar is voor veel huishoudens realistisch, afhankelijk van de situatie || Zelfverbruik verhogen met slim plannen, een boiler, laadpaal of batterij maakt het verschil
+summary: Salderen stopt op 1 januari 2027; daarna krijg je voor teruggeleverde stroom een lagere vergoeding || Zelf verbruikte zonnestroom blijft het meeste waard, want je koopt die stroom niet in || Een terugverdientijd van ongeveer 6 tot 12 jaar is voor veel huishoudens realistisch; met weinig zelfverbruik kan het oplopen tot 15 jaar of meer || Zelfverbruik verhogen met slim plannen, een boiler, laadpaal of batterij maakt het verschil
 ---
 Vanaf **1 januari 2027** stopt de salderingsregeling. Veel mensen vragen zich daarom af of zonnepanelen nog wel uit kunnen. Het korte antwoord: meestal wel. Maar de rekensom verandert, en daarom is het goed om die zelf te begrijpen.
 
@@ -118,7 +118,7 @@ Twijfel je of panelen bij jou uitkunnen? Onze eigen monteurs kijken naar je dak,
 
 faq:
 Q: Zijn zonnepanelen nog rendabel na 2027?
-A: Voor de meeste huishoudens wel. De terugverdientijd wordt langer, vaak ergens tussen ongeveer 8 en 15 jaar, maar panelen gaan meestal 25 jaar of langer mee.
+A: Voor de meeste huishoudens wel. De terugverdientijd wordt langer, vaak ergens tussen ongeveer 6 en 12 jaar (met weinig zelfverbruik langer), maar panelen gaan meestal 25 jaar of langer mee.
 Q: Wat krijg ik voor teruggeleverde stroom vanaf 2027?
 A: Een terugleververgoeding van je energieleverancier. Tot 2030 is die minimaal 50% van het kale leveringstarief. Veel leveranciers rekenen daarnaast terugleverkosten.
 Q: Moet ik nu nog zonnepanelen kopen of wachten?

@@ -73,7 +73,7 @@ Kies een capaciteit rond je avondverbruik, maar niet veel groter dan je overscho
 
 Voltwijk werkt met drie vaste pakketten, inclusief installatie:
 
-| Pakket | Omvormer | Past bij | Prijs incl. installatie |
+| Pakket | Omvormer | Past bij | Prijs incl. installatie, excl. btw |
 |---|---|---|---|
 | 10 kWh | 5 kW hybride | Kleiner huishouden met een lager verbruik | € 4.200 |
 | 16 kWh | 6 kW, 1-fase | De meeste huishoudens met zonnepanelen (1-fase) | € 4.600 |
@@ -87,7 +87,7 @@ Hoe lang het plaatsen duurt, hangt vooral af van je meterkast. Is die in orde, d
 
 1. **Meterkastcheck.** De monteur kijkt of je meterkast de batterij aankan. Is er ruimte voor een extra groep? Zijn de aardlekschakelaars in orde? Gaat het om een 1-fase of 3-fase aansluiting?
 2. **Eigen groep.** De batterij krijgt een eigen groep in de meterkast. Zo staat hij los van je andere apparaten.
-3. **Plaatsing binnen.** Een thuisbatterij hoort op een droge plek met een gematigde temperatuur, zoals een bijkeuken, garage of zolder. Welke plekken wel en niet geschikt zijn, lees je in [waar plaats je een thuisbatterij](/artikel-thuisbatterij-plaatsen-waar).
+3. **Plaatsing binnen.** Een thuisbatterij hoort op een droge plek met een gematigde temperatuur, zoals een bijkeuken, garage of zolder (let op hitte). Welke plekken wel en niet geschikt zijn, lees je in [waar plaats je een thuisbatterij](/artikel-thuisbatterij-plaatsen-waar).
 4. **Aansluiten op de hybride omvormer.** De omvormer zet de stroom om tussen je zonnepanelen, de batterij en je huis.
 5. **App instellen.** Tot slot koppelt de monteur de batterij aan de app. Daarin zie je wat de batterij doet en stel je in hoe hij moet werken.
 
@@ -122,7 +122,7 @@ Voltwijk plaatst thuisbatterijen in heel West-Brabant, met eigen monteurs en een
 
 faq:
 Q: Wat kost een thuisbatterij in Breda of West-Brabant?
-A: Bij Voltwijk kost een thuisbatterij van 10 kWh met een 5 kW hybride omvormer € 4.200. Een 16 kWh-pakket kost € 4.600 (6 kW, 1-fase) of € 5.700 (8 kW, 3-fase). Die prijzen zijn inclusief installatie.
+A: Bij Voltwijk kost een thuisbatterij van 10 kWh met een 5 kW hybride omvormer € 4.200. Een 16 kWh-pakket kost € 4.600 (6 kW, 1-fase) of € 5.700 (8 kW, 3-fase). Die prijzen zijn inclusief installatie en exclusief btw.
 Q: Wie is de netbeheerder in West-Brabant?
 A: In grote delen van West-Brabant, waaronder Moerdijk, Breda, Etten-Leur, Roosendaal en Bergen op Zoom, is Enexis de netbeheerder. Controleer het voor je eigen adres op je jaarafrekening of via mijnaansluiting.nl.
 Q: Is een thuisbatterij rendabel na 2027?

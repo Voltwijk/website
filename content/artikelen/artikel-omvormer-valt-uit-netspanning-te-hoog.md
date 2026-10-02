@@ -95,7 +95,7 @@ Een batterij lost het probleem in de wijk niet op. Maar voor je eigen installati
 
 ## Hoe Voltwijk helpt
 
-Valt je omvormer vaak uit op zonnige dagen? Onze eigen monteurs kunnen je installatie nalopen: de kabel, de omvormer en de instellingen binnen de regels. Wil je meer van je eigen zonnestroom gebruiken, dan kijken we ook mee of een thuisbatterij bij je past. Die is er in 10 en 16 kWh, vanaf € 4.200 inclusief installatie. Meer lees je op de pagina over [zonnepanelen](/product-zonnepanelen).
+Valt je omvormer vaak uit op zonnige dagen? Onze eigen monteurs kunnen je installatie nalopen: de kabel, de omvormer en de instellingen binnen de regels. Wil je meer van je eigen zonnestroom gebruiken, dan kijken we ook mee of een thuisbatterij bij je past. Die is er in 10 en 16 kWh, vanaf € 4.200 excl. btw, inclusief installatie. Meer lees je op de pagina over [zonnepanelen](/product-zonnepanelen).
 
 faq:
 Q: Waarom valt mijn omvormer uit als de zon schijnt?
@@ -109,4 +109,4 @@ A: Nee. De grenswaarden liggen vast in de netcode en netbeheerders geven geen to
 Q: Waar meld ik dat mijn omvormer uitvalt door te hoge spanning?
 A: Bij je netbeheerder. Enexis heeft een meldformulier, bij Stedin meld je via Mijn Stedin en Liander heeft een pagina over spanningsproblemen. Laat eerst je installateur controleren of je eigen installatie in orde is.
 Q: Helpt een thuisbatterij tegen een uitvallende omvormer?
-A: Het kan helpen. Een batterij slaat stroom overdag op, waardoor je minder terugleveert op het drukste moment. Het probleem in de wijk lost een batterij niet op.
+A: Het kan helpen. Een batterij slaat stroom overdag op, waardoor je minder teruglevert op het drukste moment. Het probleem in de wijk lost een batterij niet op.

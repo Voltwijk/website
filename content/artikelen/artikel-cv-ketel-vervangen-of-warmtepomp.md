@@ -74,7 +74,7 @@ Alle details lees je in [ISDE subsidie 2026](/artikel-isde-subsidie-2026). Check
 
 Een paar vragen helpen je op weg:
 
-1. **Hoe goed is je huis geïsoleerd?** Label C of beter: een volledige warmtepomp is vaak haalbaar. Label D of lager: denk eerst aan isoleren of aan een hybride.
+1. **Hoe goed is je huis geïsoleerd?** Label A of B: een volledige warmtepomp is vaak haalbaar. Label C of lager: denk eerst aan isoleren of aan een hybride.
 2. **Hoe lang wil je hier wonen?** Blijf je lang, dan telt het lagere verbruik zwaarder.
 3. **Hoe oud is je ketel echt?** Werkt hij nog, dan is een hybride erbij een goedkope tussenstap.
 4. **Is er ruimte?** Een volledige warmtepomp heeft een plek nodig voor een binnenunit en een boilervat, en een buitenunit. Zie [de regels voor een buitenunit](/artikel-warmtepomp-buitenunit-plaatsen-regels).
@@ -101,7 +101,7 @@ Een punt dat vaak vergeten wordt: een cv-ketel maakt meestal ook je warme tapwat
 
 ## Hoe Voltwijk helpt
 
-Voltwijk installeert lucht/water-warmtepompen met een COP van 4,7, vanaf € 6.750, en verrekent de ISDE-subsidie direct. Onze eigen monteurs helpen je eerlijk afwegen of een warmtepomp nu al past, of dat een andere stap logischer is. Kijk op de pagina over de [warmtepomp](/product-warmtepomp) of [plan een gratis adviesgesprek](/contact).
+Voltwijk installeert lucht/water-warmtepompen met een COP van 4,7, vanaf € 6.750. We helpen je met de ISDE-aanvraag; die doe je na de installatie bij RVO. Onze eigen monteurs helpen je eerlijk afwegen of een warmtepomp nu al past, of dat een andere stap logischer is. Kijk op de pagina over de [warmtepomp](/product-warmtepomp) of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Is een warmtepomp verplicht als ik mijn cv-ketel vervang?

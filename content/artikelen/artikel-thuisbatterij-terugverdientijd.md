@@ -3,7 +3,7 @@ seo_title: Thuisbatterij terugverdientijd berekenen | Voltwijk
 description: Wat is de terugverdientijd van een thuisbatterij? Lees wat hem bepaalt, bekijk een rekenvoorbeeld met duidelijke aannames en ontdek je eigen bandbreedte.
 category: Thuisbatterij
 product: batterij
-lead: De terugverdientijd van een thuisbatterij ligt indicatief ergens tussen de 7 en 15 jaar, en soms daarbuiten. Hoe snel het bij jou gaat, hangt vooral af van hoeveel zonnestroom je zelf gaat gebruiken, je energiecontract en de prijs van de batterij.
+lead: De terugverdientijd van een thuisbatterij ligt indicatief ergens tussen de 8 en 15 jaar als je hem slim inzet, en kan oplopen tot meer dan 20 jaar als je alleen eigen zonnestroom opslaat. Hoe snel het bij jou gaat, hangt vooral af van hoeveel zonnestroom je zelf gaat gebruiken, je energiecontract en de prijs van de batterij.
 summary: Een batterij verdient geld door stroom te bewaren die je anders goedkoop terug zou leveren of duur zou inkopen || Na het einde van salderen op 1 januari 2027 wordt eigen gebruik van zonnestroom meer waard || Een dynamisch contract kan de opbrengst verhogen, vooral in de winter || Reken met je eigen verbruik en bandbreedtes, niet met één vast getal
 ---
 "Hoe snel verdien ik een thuisbatterij terug?" Het is misschien wel de vaakst gestelde vraag over thuisbatterijen. En het is een vraag waarop je veel verschillende antwoorden tegenkomt, van een paar jaar tot nooit.
@@ -99,11 +99,11 @@ Een terugverdientijd van 12 jaar heeft alleen zin als de batterij het zo lang vo
 
 ## Hoe Voltwijk kan helpen
 
-De thuisbatterij van Voltwijk is er in 10 en 16 kWh, met een hybride omvormer van 5, 6 of 8 kW, vanaf € 4.200 inclusief installatie. Met de [batterijcalculator](/thuisbatterij-berekenen) zie je welke bij je verbruik past. Onze monteurs rekenen graag met jouw eigen verbruik, zodat je weet waar je aan toe bent. Bekijk de [thuisbatterij](/product-batterij) of [bereken welke thuisbatterij past](/thuisbatterij-berekenen).
+De thuisbatterij van Voltwijk is er in 10 en 16 kWh, met een hybride omvormer van 5, 6 of 8 kW, vanaf € 4.200 excl. btw, inclusief installatie. Met de [batterijcalculator](/thuisbatterij-berekenen) zie je welke bij je verbruik past. Onze monteurs rekenen graag met jouw eigen verbruik, zodat je weet waar je aan toe bent. Bekijk de [thuisbatterij](/product-batterij) of [bereken welke thuisbatterij past](/thuisbatterij-berekenen).
 
 faq:
 Q: Wat is de terugverdientijd van een thuisbatterij?
-A: Indicatief ligt die tussen de 7 en 15 jaar, maar het kan korter of langer zijn. Het hangt af van je eigen verbruik, je zonnepanelen, je contract en de prijs van de batterij.
+A: Indicatief ligt die tussen de 8 en 15 jaar als je de batterij slim inzet, bijvoorbeeld met een dynamisch contract. Sla je alleen eigen zonnestroom op, dan kan het oplopen tot meer dan 20 jaar. Het hangt af van je eigen verbruik, je zonnepanelen, je contract en de prijs van de batterij.
 Q: Is een thuisbatterij rendabel na 2027?
 A: Na het einde van salderen op 1 januari 2027 wordt zelf gebruiken van zonnestroom meer waard. Daardoor wordt een batterij gunstiger, vooral in combinatie met een dynamisch contract en slimme sturing.
 Q: Is er subsidie op een thuisbatterij?

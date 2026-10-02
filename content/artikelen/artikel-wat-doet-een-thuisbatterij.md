@@ -89,7 +89,7 @@ Een batterij loont minder of niet als:
 - je hem vooral wilt als noodstroom, terwijl storingen bij jou zelden voorkomen;
 - je een vast contract zonder terugleverkosten hebt en tot 2027 nog volledig saldeert.
 
-Houd er ook rekening mee dat je op een thuisbatterij 21% btw betaalt. Verkoop je met de batterij stroom, bijvoorbeeld met een dynamisch contract, dan kun je die vaak terugvragen. Lees meer in [btw op een thuisbatterij](/artikel-btw-thuisbatterij-terugvragen).
+Houd er ook rekening mee dat je op een thuisbatterij 21% btw betaalt. Verkoop je met de batterij stroom, bijvoorbeeld met een dynamisch contract, dan kun je die soms terugvragen. Lees meer in [btw op een thuisbatterij](/artikel-btw-thuisbatterij-terugvragen).
 
 ## Hoe Voltwijk helpt
 

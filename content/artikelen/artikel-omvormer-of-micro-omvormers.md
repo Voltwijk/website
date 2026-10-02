@@ -96,7 +96,7 @@ Twijfel je over het aantal panelen? Lees dan [hoeveel zonnepanelen heb ik nodig]
 
 ## Omvormers bij Voltwijk
 
-Voltwijk kijkt bij de schouw naar schaduw, dakvlakken en je plannen voor een batterij, en adviseert op basis daarvan de omvormer. Op de omvormer krijg je 10 jaar garantie. Bekijk onze [zonnepanelen](/product-zonnepanelen).
+Voltwijk kijkt in het gratis adviesgesprek naar schaduw, dakvlakken en je plannen voor een batterij, en adviseert op basis daarvan de omvormer. Op de installatie krijg je 2 jaar garantie; op de omvormer zelf geldt daarnaast de fabrieksgarantie van de fabrikant. Bekijk onze [zonnepanelen](/product-zonnepanelen).
 
 faq:
 Q: Zijn micro-omvormers beter dan een string-omvormer?

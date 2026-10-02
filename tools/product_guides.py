@@ -7,7 +7,7 @@ G = {
  'batterij': [
   ['Wat doet een thuisbatterij?', 'Hij slaat de stroom op die je zonnepanelen overdag over hebben, en geeft die ’s avonds en ’s nachts weer af aan je huis. Zo gebruik je meer van je eigen stroom en koop je minder in.', 'artikel-wat-doet-een-thuisbatterij'],
   ['Wat doet het EMS?', 'Het energiemanagementsysteem is het brein van de batterij. Het kijkt naar de zonverwachting, je verbruik en (met een dynamisch contract) de uurprijzen, en beslist wanneer de batterij laadt, ontlaadt of wacht.', 'artikel-ems-energiemanagementsysteem-thuisbatterij'],
-  ['Krijg je de btw terug?', 'Vaak wel. Je betaalt eerst 21% btw (het nultarief geldt alleen voor zonnepanelen), maar verkoop je met de batterij stroom, bijvoorbeeld met een dynamisch contract, dan kun je die volgens de Belastingdienst vaak terugvragen.', 'artikel-btw-thuisbatterij-terugvragen'],
+  ['Krijg je de btw terug?', 'Soms. Je betaalt eerst 21% btw (het nultarief geldt alleen voor zonnepanelen). Verkoop je met de batterij stroom, bijvoorbeeld met een dynamisch contract, dan kun je de btw in sommige situaties terugvragen. Lees wanneer dat kan.', 'artikel-btw-thuisbatterij-terugvragen'],
   ['Hoe groot moet je batterij zijn?', 'Vuistregel: ongeveer zo groot als wat je ’s avonds en ’s nachts verbruikt, en niet groter dan het overschot dat je overdag echt hebt. Groter is niet automatisch beter.', 'artikel-thuisbatterij-hoe-groot'],
   ['Loont een batterij als salderen stopt?', 'Vanaf 2027 is stroom die je teruglevert minder waard. Met een batterij gebruik je die stroom zelf, en juist dan wordt opslaan interessanter.', 'artikel-thuisbatterij-na-salderen'],
   ['Batterij en een dynamisch contract', 'Met uurprijzen kan de batterij laden als stroom goedkoop is en ontladen als hij duur is. Dat levert ook op dagen zonder zon iets op.', 'artikel-dynamisch-contract-en-batterij'],
@@ -57,7 +57,7 @@ G = {
 }
 missing = [x[2] for v in G.values() for x in v if not os.path.exists(x[2] + '.html')]
 if missing: raise SystemExit('ontbrekende artikelen: ' + ', '.join(missing))
-TPL_ANCHOR = "    '<div class=\"wrap reveal\" style=\"padding-top:88px;padding-bottom:88px;\">' +\n      '<h2 style=\"font-size:22px;\">Vaak samen besteld</h2>' +"
+TPL_ANCHOR = "    '<div class=\"wrap reveal\" style=\"padding-top:88px;padding-bottom:88px;\">' +\n      '<h2 style=\"font-size:22px;\">Vaak samen gekozen</h2>' +"
 GUIDE_TPL = """    (p.guide ? '<div class="blk-light"><div class="wrap reveal" style="padding-top:88px;padding-bottom:40px;">' +
       '<div class="pill">Goed om te weten</div>' +
       '<h2 style="font-size:clamp(24px,3.4vw,32px);margin-top:12px;max-width:640px;">Alles over '+(p.guideName||p.name.toLowerCase())+', eerlijk uitgelegd</h2>' +

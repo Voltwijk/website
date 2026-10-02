@@ -33,7 +33,7 @@ Een goede installateur splitst dat netjes uit op de offerte en de factuur. Staat
 
 ## Wanneer kun je de btw wél terugvragen?
 
-De Belastingdienst heeft een eigen pagina over de thuisbatterij en btw. Daarop staat dat je de btw op de aanschaf en installatie van een thuisbatterij waarmee je stroom opslaat, **vaak kunt terugvragen**. De reden: als je met je batterij stroom levert aan het net en daar een vergoeding voor krijgt, zie de Belastingdienst je voor die activiteit als **ondernemer voor de btw**.
+De Belastingdienst heeft een eigen pagina over de thuisbatterij en btw. Daarop staat dat je de btw op de aanschaf en installatie van een thuisbatterij waarmee je stroom opslaat, **vaak kunt terugvragen**. De reden: als je met je batterij stroom levert aan het net en daar een vergoeding voor krijgt, ziet de Belastingdienst je voor die activiteit als **ondernemer voor de btw**.
 
 Dat speelt vooral als je de batterij actief inzet op de energiemarkt. Bijvoorbeeld met een **dynamisch energiecontract**, waarbij de batterij laadt als stroom goedkoop is en stroom teruglevert als hij duur is, en je voor die teruglevering betaald krijgt. Gebruik je de batterij alleen om je eigen zonnestroom 's avonds zelf te verbruiken, dan verkoop je weinig of niets, en ligt het anders.
 
@@ -55,10 +55,10 @@ Ben je al btw-ondernemer en gebruik je de batterij (deels) voor je bedrijf, bijv
 
 De btw is een flink deel van de prijs. Het is dus belangrijk om in je berekening met het juiste bedrag te rekenen: het bedrag **inclusief** btw.
 
-**Rekenvoorbeeld** (ronde aannames, geen offerte): een thuisbatterij kost € 3.630 inclusief installatie en btw. Daarvan is € 3.000 de prijs exclusief btw en € 630 btw. Stel dat de batterij je € 250 per jaar oplevert aan besparing, bijvoorbeeld door meer eigen zonnestroom te gebruiken en slim te laden met een dynamisch contract.
+**Rekenvoorbeeld** (ronde aannames, geen offerte): een thuisbatterij van 10 kWh kost € 4.200 exclusief btw, inclusief installatie. Met 21% btw (€ 882) betaal je € 5.082. Stel dat de batterij je € 350 per jaar oplevert aan besparing, bijvoorbeeld door meer eigen zonnestroom te gebruiken en slim te laden met een dynamisch contract.
 
-- Terugverdientijd met btw (als je de btw niet terugvraagt): € 3.630 / € 250 = ongeveer 14,5 jaar.
-- Terugverdientijd als je de btw volledig terugkrijgt: € 3.000 / € 250 = 12 jaar.
+- Terugverdientijd met btw (als je de btw niet terugvraagt): € 5.082 / € 350 = ongeveer 14,5 jaar.
+- Terugverdientijd als je de btw volledig terugkrijgt: € 4.200 / € 350 = 12 jaar.
 
 Het verschil is in dit voorbeeld zo'n 2,5 jaar. Reken voor de zekerheid eerst met het bedrag inclusief btw. Kun je de btw terugvragen, dan is dat meegenomen, maar tel wel de moeite van de btw-administratie mee.
 
@@ -78,11 +78,11 @@ En subsidie? Ook daar is het antwoord helaas nee. De ISDE-subsidie van RVO geldt
 
 ## Check altijd de actuele regels
 
-Btw-regels kunnen veranderen. Wat hier staat, is de stand van zaken in september 2026: op Prinsjesdag 2026 is geen nultarief voor thuisbatterijen aangekondigd. Kijk voor je eigen situatie op de website van de Belastingdienst, bel de BelastingTelefoon of vraag een belastingadviseur.
+Btw-regels kunnen veranderen. Wat hier staat, is de stand van zaken in oktober 2026: voor thuisbatterijen geldt het normale btw-tarief van 21%. Kijk voor je eigen situatie op de website van de Belastingdienst, bel de BelastingTelefoon of vraag een belastingadviseur.
 
 ## Hoe Voltwijk helpt
 
-Voltwijk werkt met een vaste prijs vooraf, waarin de btw op de batterij gewoon is meegerekend, en een factuur waarop de btw netjes is uitgesplitst. Bekijk de specificaties en prijs op onze [thuisbatterij-pagina](/product-batterij).
+Voltwijk werkt met een vaste prijs vooraf: een thuisbatterij vanaf € 4.200 excl. btw, inclusief installatie. Op de factuur staat de btw netjes uitgesplitst, zodat je precies ziet wat je betaalt en eventueel kunt terugvragen. Bekijk de specificaties en prijs op onze [thuisbatterij-pagina](/product-batterij).
 
 faq:
 Q: Kan ik de btw op mijn thuisbatterij terugvragen als particulier?
