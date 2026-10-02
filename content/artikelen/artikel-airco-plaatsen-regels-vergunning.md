@@ -103,7 +103,7 @@ Twijfel je welk vermogen je nodig hebt? Lees dan eerst [welk vermogen airco heb 
 
 ## Hoe Voltwijk kan helpen
 
-Voltwijk installeert split-airco's met energielabel A+++ vanaf € 1.899, inclusief installatie. Onze eigen monteurs denken mee over een goede plek voor de buitenunit en letten op geluid richting de buren. Een vergunning of VvE-toestemming vraag je zelf aan, maar we helpen je graag aan de technische gegevens die je daarvoor nodig hebt. Bekijk de [airco](/product-airco) of [bereken je prijs](/bereken-je-prijs).
+Voltwijk installeert split-airco's met energielabel A+++ vanaf € 1.899, inclusief installatie. Onze eigen monteurs denken mee over een goede plek voor de buitenunit en letten op geluid richting de buren. Een vergunning of VvE-toestemming vraag je zelf aan, maar we helpen je graag aan de technische gegevens die je daarvoor nodig hebt. Bekijk de [airco](/product-airco) of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Heb ik een vergunning nodig voor een airco?

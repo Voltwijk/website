@@ -108,7 +108,7 @@ De kookplaat in de perilex-contactdoos steken is niet moeilijk. Maar het aanlegg
 
 ## Hoe Voltwijk kan helpen
 
-Voltwijk past meterkasten aan volgens NEN 1010, vanaf € 649. Onze eigen monteurs kijken of je huidige kast twee extra groepen aankan, leggen de kookgroep aan en denken mee over andere grote verbruikers die je misschien later krijgt. Bekijk de [meterkast](/product-meterkast) of [bereken je prijs](/bereken-je-prijs).
+Voltwijk past meterkasten aan volgens NEN 1010, vanaf € 649. Onze eigen monteurs kijken of je huidige kast twee extra groepen aankan, leggen de kookgroep aan en denken mee over andere grote verbruikers die je misschien later krijgt. Bekijk de [meterkast](/product-meterkast) of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Kan ik een inductiekookplaat aansluiten op een 1-fase aansluiting?

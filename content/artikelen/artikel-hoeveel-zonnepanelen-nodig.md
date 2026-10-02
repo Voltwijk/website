@@ -94,7 +94,7 @@ Het laatste praktische punt: ruimte. Een paneel van rond de 440 Wp is ongeveer 1
 
 ## Zonnepanelen bij Voltwijk
 
-Voltwijk rekent op basis van je verbruik en je dak uit hoeveel panelen zinvol zijn, en installeert met eigen monteurs tegen een vaste prijs. Bekijk onze [zonnepanelen](/product-zonnepanelen) of [bereken je prijs](/bereken-je-prijs).
+Voltwijk rekent op basis van je verbruik en je dak uit hoeveel panelen zinvol zijn, en installeert met eigen monteurs tegen een vaste prijs. Bekijk onze [zonnepanelen](/product-zonnepanelen) of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Hoeveel zonnepanelen heb ik nodig bij 3.000 kWh verbruik?

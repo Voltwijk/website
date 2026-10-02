@@ -106,7 +106,7 @@ Een lage prijs zonder duidelijke omschrijving van het werk kan later duurder uit
 
 ## Hoe Voltwijk helpt
 
-Voltwijk installeert een slimme laadpaal van 11 kW vanaf € 1.299, met vaste prijzen en eigen monteurs. Moet je meterkast worden aangepast, dan kan dat vanaf € 649. We kijken vooraf naar je auto, je aansluiting en je meterkast, zodat je weet waar je aan toe bent. Bekijk de [laadpaal](/product-laadpaal) of [bereken je prijs](/bereken-je-prijs).
+Voltwijk installeert een slimme laadpaal van 11 kW vanaf € 1.299, met vaste prijzen en eigen monteurs. Moet je meterkast worden aangepast, dan kan dat vanaf € 649. We kijken vooraf naar je auto, je aansluiting en je meterkast, zodat je weet waar je aan toe bent. Bekijk de [laadpaal](/product-laadpaal) of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Wat kost een laadpaal thuis inclusief installatie?

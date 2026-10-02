@@ -94,7 +94,7 @@ Dat betekent: stroom die je zelf direct gebruikt, is meer waard dan stroom die j
 
 ## Zonnepanelen bij Voltwijk
 
-Voltwijk zet op elke offerte duidelijk welke posten onder het 0%-tarief vallen en welke niet, tegen een vaste prijs vooraf. Bekijk onze [zonnepanelen](/product-zonnepanelen) of [bereken direct je prijs](/bereken-je-prijs).
+Voltwijk zet op elke offerte duidelijk welke posten onder het 0%-tarief vallen en welke niet, tegen een vaste prijs vooraf. Bekijk onze [zonnepanelen](/product-zonnepanelen) of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Moet ik als particulier nog iets regelen met de Belastingdienst voor de btw op zonnepanelen?

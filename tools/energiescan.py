@@ -105,7 +105,7 @@ FAQ = [
 def form_html():
     if MODE == 'vol':
         return (f'<div class="es-full"><strong>Alle {MAX} plekken zijn vergeven.</strong> Bedankt voor de enorme belangstelling! '
-                'Wil je toch advies? Stuur ons een appje of <a href="/bereken-je-prijs" style="color:var(--primary);font-weight:700;">bereken je prijs</a>.</div>')
+                'Wil je toch advies? Stuur ons een appje of <a href="/thuisbatterij-berekenen" style="color:var(--primary);font-weight:700;">bereken welke thuisbatterij past</a>.</div>')
     kern = ''.join(f'<option>{esc(k)}</option>' for k in KERNEN) + '<option>Overig</option>'
     cal = ('<button type="button" class="btn-primary es-cal" data-book="scan">Kies direct je moment →</button>'
            '<div class="es-or"><span>of laat je terugbellen</span></div>') if CAL else ''

@@ -2,7 +2,7 @@
 #  1. Kapotte links: alle pagina's uit de sitemap en alle interne links daarop (live site).
 #  2. Indexering: welke pagina's Google wel/niet heeft opgenomen (Search Console, URL-inspectie).
 #  3. Zoekprestaties: afgelopen 7 dagen t.o.v. de 7 dagen ervoor, stijgers en dalers.
-#  4. Snelheid: PageSpeed-score (mobiel) van de homepage en de prijscalculator.
+#  4. Snelheid: PageSpeed-score (mobiel) van de homepage en de batterijcalculator.
 # Omgevingsvariabelen: GA_SERVICE_ACCOUNT_JSON (ook voor Search Console) en SMTP_* zoals bij daily_report.py.
 #   python3 tools/weekly_check.py            maakt en verstuurt de check
 #   python3 tools/weekly_check.py --preview  schrijft alleen weekcheck.html
@@ -89,7 +89,7 @@ def gsc():
 
 def speed():
     out = []
-    for path in ['/', '/bereken-je-prijs']:
+    for path in ['/', '/thuisbatterij-berekenen']:
         q = urllib.parse.urlencode({'url': SITE + path, 'strategy': 'mobile', 'category': 'performance'})
         s, body = fetch('https://www.googleapis.com/pagespeedonline/v5/runPagespeed?' + q, 90)
         try:

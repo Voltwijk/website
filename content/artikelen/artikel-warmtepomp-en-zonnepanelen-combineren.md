@@ -94,7 +94,7 @@ Heb je al zonnepanelen? Dan kun je vaak later een paar panelen bijplaatsen, als 
 
 ## Hoe Voltwijk helpt
 
-Voltwijk installeert zowel lucht/water-warmtepompen (COP 4,7, vanaf € 6.750, ISDE wordt verrekend) als zonnepanelen van 440 Wp (vanaf € 3.999 voor 12 panelen), met eigen monteurs. We kijken samen naar je verbruik en je dak, zodat je niet meer koopt dan nodig. Bekijk de [warmtepomp](/product-warmtepomp) en de [zonnepanelen](/product-zonnepanelen), of [bereken je prijs](/bereken-je-prijs).
+Voltwijk installeert zowel lucht/water-warmtepompen (COP 4,7, vanaf € 6.750, ISDE wordt verrekend) als zonnepanelen van 440 Wp (vanaf € 3.999 voor 12 panelen), met eigen monteurs. We kijken samen naar je verbruik en je dak, zodat je niet meer koopt dan nodig. Bekijk de [warmtepomp](/product-warmtepomp) en de [zonnepanelen](/product-zonnepanelen), of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Kan een warmtepomp op zonnepanelen draaien?

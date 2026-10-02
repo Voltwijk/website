@@ -88,7 +88,7 @@ Geef de uitbreiding daarnaast door aan je **energieleverancier**, zodat die je v
 
 ## Hoe Voltwijk helpt
 
-Voltwijk plaatst full-black zonnepanelen van 440 Wp, vanaf € 3.999 voor 12 panelen. Onze eigen monteurs bekijken eerst je huidige omvormer, je dak en je meterkast, zodat je weet welke manier van uitbreiden bij jou past. Is er iets aan de meterkast nodig, dan kan dat in dezelfde klus; een meterkastaanpassing is er vanaf € 649. Kijk bij [zonnepanelen](/product-zonnepanelen) of [bereken je prijs](/bereken-je-prijs).
+Voltwijk plaatst full-black zonnepanelen van 440 Wp, vanaf € 3.999 voor 12 panelen. Onze eigen monteurs bekijken eerst je huidige omvormer, je dak en je meterkast, zodat je weet welke manier van uitbreiden bij jou past. Is er iets aan de meterkast nodig, dan kan dat in dezelfde klus; een meterkastaanpassing is er vanaf € 649. Kijk bij [zonnepanelen](/product-zonnepanelen) of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Kan ik zomaar zonnepanelen bijplaatsen?

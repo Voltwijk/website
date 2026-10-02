@@ -107,7 +107,7 @@ Wil je zelf rekenen, gebruik dan je eigen uurverbruik uit de app van je leveranc
 
 ## Hoe Voltwijk helpt
 
-Onze eigen monteurs kijken naar je warmtepomp, je aansluiting en je meterkast, en stellen de sturing van de batterij daarop in. Onze thuisbatterij is er als 10 kWh met een hybride omvormer van 5 kW (€ 4.200), 16 kWh met 6 kW op 1-fase (€ 4.600) en 16 kWh met 8 kW op 3-fase (€ 5.700), steeds inclusief installatie. Met de [keuzehulp voor de thuisbatterij](/product-batterij#batterijkeuze) zie je snel welke bij jouw verbruik en aansluiting past.
+Onze eigen monteurs kijken naar je warmtepomp, je aansluiting en je meterkast, en stellen de sturing van de batterij daarop in. Onze thuisbatterij is er als 10 kWh met een hybride omvormer van 5 kW (€ 4.200), 16 kWh met 6 kW op 1-fase (€ 4.600) en 16 kWh met 8 kW op 3-fase (€ 5.700), steeds inclusief installatie. Met de [batterijcalculator](/thuisbatterij-berekenen) zie je snel welke bij jouw verbruik en aansluiting past.
 
 faq:
 Q: Is een thuisbatterij zinvol bij een warmtepomp?

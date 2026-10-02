@@ -104,7 +104,7 @@ De P1-poort heeft één aansluiting. Wil je hem gebruiken voor meerdere apparate
 
 ## Hoe Voltwijk helpt
 
-Bij het plaatsen van een thuisbatterij kijken onze eigen monteurs hoe de meting het best geregeld kan worden: via de P1-poort of met een aparte meter, en hoe die samengaat met apparaten die je al hebt. Wil je eerst weten welke batterij bij je verbruik past? Gebruik de [keuzehulp voor je thuisbatterij](/product-batterij#batterijkeuze).
+Bij het plaatsen van een thuisbatterij kijken onze eigen monteurs hoe de meting het best geregeld kan worden: via de P1-poort of met een aparte meter, en hoe die samengaat met apparaten die je al hebt. Wil je eerst weten welke batterij bij je verbruik past? Gebruik de [batterijcalculator](/thuisbatterij-berekenen).
 
 faq:
 Q: Wat is een P1-poort op een slimme meter?

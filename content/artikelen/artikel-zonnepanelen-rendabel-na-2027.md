@@ -114,7 +114,7 @@ Reken daarna met twee of drie scenario's: een voorzichtig, een gemiddeld en een 
 
 ## Hoe Voltwijk helpt
 
-Twijfel je of panelen bij jou uitkunnen? Onze eigen monteurs kijken naar je dak, je verbruik en je plannen, en rekenen met je mee met realistische aannames. Voltwijk plaatst full-black panelen van 440 Wp, vanaf € 3.999 voor 12 panelen. Kijk op de pagina over [zonnepanelen](/product-zonnepanelen) of [bereken je prijs](/bereken-je-prijs) voor een eerste indicatie.
+Twijfel je of panelen bij jou uitkunnen? Onze eigen monteurs kijken naar je dak, je verbruik en je plannen, en rekenen met je mee met realistische aannames. Voltwijk plaatst full-black panelen van 440 Wp, vanaf € 3.999 voor 12 panelen. Kijk op de pagina over [zonnepanelen](/product-zonnepanelen) of [plan een gratis adviesgesprek](/contact) voor een eerste indicatie.
 
 faq:
 Q: Zijn zonnepanelen nog rendabel na 2027?

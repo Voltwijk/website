@@ -104,7 +104,7 @@ Een paar tips:
 
 ## Hoe Voltwijk kan helpen
 
-Voltwijk installeert een elektrische boiler van 200 liter met energielabel A+ vanaf € 1.199. Onze eigen monteurs kijken ook naar je meterkast en of er een extra groep nodig is. Wil je verder van het gas af, dan kunnen we ook meedenken over een warmtepomp of airco. Bekijk de [boiler](/product-boiler) of [bereken je prijs](/bereken-je-prijs).
+Voltwijk installeert een elektrische boiler van 200 liter met energielabel A+ vanaf € 1.199. Onze eigen monteurs kijken ook naar je meterkast en of er een extra groep nodig is. Wil je verder van het gas af, dan kunnen we ook meedenken over een warmtepomp of airco. Bekijk de [boiler](/product-boiler) of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Kan ik mijn cv-ketel vervangen door een elektrische boiler?

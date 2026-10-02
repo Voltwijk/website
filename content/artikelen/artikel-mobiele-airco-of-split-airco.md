@@ -110,7 +110,7 @@ Twijfel je? Kijk dan naar drie vragen: hoeveel dagen per jaar gebruik je hem, ho
 
 ## Hoe Voltwijk kan helpen
 
-Voltwijk installeert split-airco's met energielabel A+++ vanaf € 1.899, inclusief installatie door onze eigen monteurs. We kijken samen met je naar de ruimte, het vermogen en een goede plek voor de buitenunit. En als een mobiele airco voor jou genoeg is, zeggen we dat ook. Bekijk de [airco](/product-airco) of [bereken je prijs](/bereken-je-prijs).
+Voltwijk installeert split-airco's met energielabel A+++ vanaf € 1.899, inclusief installatie door onze eigen monteurs. We kijken samen met je naar de ruimte, het vermogen en een goede plek voor de buitenunit. En als een mobiele airco voor jou genoeg is, zeggen we dat ook. Bekijk de [airco](/product-airco) of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Wat is beter, een mobiele airco of een split-airco?

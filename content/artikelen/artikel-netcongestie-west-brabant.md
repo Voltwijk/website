@@ -97,7 +97,7 @@ Dat hangt af van je verbruik en je aansluiting, niet van de regio. Voltwijk heef
 | 16 kWh + 6 kW omvormer | 1-fase | € 4.600 |
 | 16 kWh + 8 kW omvormer | 3-fase | € 5.700 |
 
-Twijfel je over de maat? Met de [keuzehulp voor je thuisbatterij](/product-batterij#batterijkeuze) zie je snel welke bij jouw verbruik past.
+Twijfel je over de maat? Met de [batterijcalculator](/thuisbatterij-berekenen) zie je snel welke bij jouw verbruik past.
 
 ## Hoe Voltwijk helpt
 

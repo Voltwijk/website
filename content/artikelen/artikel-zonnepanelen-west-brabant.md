@@ -40,7 +40,7 @@ Het gevolg is simpel: een kWh zonnestroom die je zelf gebruikt, is meer waard da
 
 Niet per se, maar het is wel het moment om ernaar te kijken. Een thuisbatterij slaat je overschot van de middag op, zodat je het 's avonds zelf gebruikt. Wie nu zonnepanelen laat plaatsen, kan kiezen voor een **hybride omvormer**. Daar kan een batterij direct of later op worden aangesloten.
 
-Twijfel je welke batterij past? Met de [keuzehulp voor de thuisbatterij](/product-batterij#batterijkeuze) zie je in een paar vragen welk pakket bij jou past. Wat een batterij in onze regio betekent, staat in [thuisbatterij kopen in West-Brabant](/artikel-thuisbatterij-west-brabant).
+Twijfel je welke batterij past? Met de [batterijcalculator](/thuisbatterij-berekenen) zie je in een paar vragen welk pakket bij jou past. Wat een batterij in onze regio betekent, staat in [thuisbatterij kopen in West-Brabant](/artikel-thuisbatterij-west-brabant).
 
 ## Heb je een vergunning nodig voor zonnepanelen?
 

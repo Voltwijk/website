@@ -101,7 +101,7 @@ Een punt dat vaak vergeten wordt: een cv-ketel maakt meestal ook je warme tapwat
 
 ## Hoe Voltwijk helpt
 
-Voltwijk installeert lucht/water-warmtepompen met een COP van 4,7, vanaf € 6.750, en verrekent de ISDE-subsidie direct. Onze eigen monteurs helpen je eerlijk afwegen of een warmtepomp nu al past, of dat een andere stap logischer is. Kijk op de pagina over de [warmtepomp](/product-warmtepomp) of [bereken je prijs](/bereken-je-prijs).
+Voltwijk installeert lucht/water-warmtepompen met een COP van 4,7, vanaf € 6.750, en verrekent de ISDE-subsidie direct. Onze eigen monteurs helpen je eerlijk afwegen of een warmtepomp nu al past, of dat een andere stap logischer is. Kijk op de pagina over de [warmtepomp](/product-warmtepomp) of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Is een warmtepomp verplicht als ik mijn cv-ketel vervang?

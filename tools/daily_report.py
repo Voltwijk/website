@@ -136,7 +136,7 @@ def build(end):
             if k in low: return v
         return s
     def p_label(p):
-        return {'/': 'Homepage', '/energiescan': 'Energiescan', '/bereken-je-prijs': 'Bereken je prijs', '/contact': 'Contact'}.get(p, p)
+        return {'/': 'Homepage', '/energiescan': 'Energiescan', '/thuisbatterij-berekenen': 'Thuisbatterij berekenen', '/contact': 'Contact'}.get(p, p)
     def merged(items, fn):
         out = {}
         for r in items: out[fn(r[0][0])] = out.get(fn(r[0][0]), 0) + r[1][0]
