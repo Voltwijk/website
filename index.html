@@ -22,7 +22,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":["HomeAndConstructionBusiness","Electrician"],"@id":"https://voltwijk.nl/#bedrijf","name":"Voltwijk","legalName":"Voltwijk B.V.","url":"https://voltwijk.nl/","logo":"https://voltwijk.nl/brand/voltwijk-icoon-512.png","image":"https://voltwijk.nl/images/og-voltwijk.jpg","telephone":"+31853335687","email":"info@voltwijk.nl","priceRange":"€€","address":{"@type":"PostalAddress","streetAddress":"Schoenmakerij 15a","postalCode":"4762 AS","addressLocality":"Zevenbergen","addressCountry":"NL"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"17:30"}],"areaServed":{"@type":"AdministrativeArea","name":"West-Brabant"},"sameAs":["https://instagram.com/voltwijk","https://www.tiktok.com/@voltwijk"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://voltwijk.nl/#website","name":"Voltwijk","url":"https://voltwijk.nl/","inLanguage":"nl-NL","publisher":{"@id":"https://voltwijk.nl/#bedrijf"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Hoe werkt die vaste prijs precies?","acceptedAnswer":{"@type":"Answer","text":"Je vult je postcode, woningtype en een paar foto's in en ziet meteen een vaste prijs, inclusief installatie. Alleen bij een afwijkende situatie ter plekke (bijvoorbeeld een verouderde meterkast) kan de prijs bijgesteld worden — en dat bespreken we altijd vooraf, nooit achteraf op de rekening."}},{"@type":"Question","name":"Werken jullie ook in mijn regio?","acceptedAnswer":{"@type":"Answer","text":"We zijn  actief in heel Nederland  met eigen installatieteams. Bij de check op de productpagina zie je meteen of we op jouw adres kunnen plannen en wanneer het eerstvolgende beschikbare moment is."}},{"@type":"Question","name":"Kan ik gespreid betalen?","acceptedAnswer":{"@type":"Answer","text":"Ja. Op elk product kun je kiezen voor betalen ineens of gespreid over meerdere maanden, zonder verborgen kosten. Bij het opvragen van je vaste prijs zie je direct wat dat per maand betekent."}},{"@type":"Question","name":"Wat als de installatie tegenvalt?","acceptedAnswer":{"@type":"Answer","text":"Je krijgt standaard 2 jaar garantie op de installatie zelf, los van de productgarantie. Is er iets niet naar wens, dan lossen we dat op — zonder gedoe of extra kosten."}},{"@type":"Question","name":"Moet ik meteen beslissen tijdens een adviesgesprek?","acceptedAnswer":{"@type":"Answer","text":"Nee. Het adviesgesprek is vrijblijvend en bedoeld om je vragen te beantwoorden. Je ontvangt daarna gewoon je vaste prijs online, zonder druk om direct te tekenen."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Hoe werkt die vaste prijs precies?","acceptedAnswer":{"@type":"Answer","text":"Na de berekening of een adviesgesprek krijg je een offerte met een vaste prijs, inclusief installatie. Is er meerwerk nodig, bijvoorbeeld een extra groep in de meterkast, dan hoor je dat altijd vooraf, nooit achteraf op de rekening."}},{"@type":"Question","name":"Werken jullie ook in mijn regio?","acceptedAnswer":{"@type":"Answer","text":"Laat je adres achter in de berekening of neem contact met ons op. Dan hoor je meteen of en wanneer we bij je langs kunnen komen."}},{"@type":"Question","name":"Heb ik zonnepanelen nodig voor een thuisbatterij?","acceptedAnswer":{"@type":"Answer","text":"Met zonnepanelen haal je het meeste uit een thuisbatterij: je bewaart je eigen zonnestroom voor de avond. Zonder zonnepanelen kan een batterij met een dynamisch energiecontract laden als stroom goedkoop is. In de berekening zie je wat bij jouw situatie past."}},{"@type":"Question","name":"Wat als de installatie tegenvalt?","acceptedAnswer":{"@type":"Answer","text":"Je krijgt standaard 2 jaar garantie op de installatie zelf, los van de productgarantie. Is er iets niet naar wens, dan lossen we dat op — zonder gedoe of extra kosten."}},{"@type":"Question","name":"Moet ik meteen beslissen tijdens een adviesgesprek?","acceptedAnswer":{"@type":"Answer","text":"Nee. Het adviesgesprek is vrijblijvend en bedoeld om je vragen te beantwoorden. Daarna ontvang je een offerte met een vaste prijs, zonder druk om direct te tekenen."}}]}</script>
 <!-- seo:end -->
 <script id="vw-early-reveal">(function(){if(!window.MutationObserver)return;var H=window.innerHeight||800,mo=new MutationObserver(function(ms){for(var i=0;i<ms.length;i++)for(var j=0,n=ms[i].addedNodes;j<n.length;j++){var e=n[j];if(e.nodeType===1&&e.classList&&e.classList.contains('reveal')&&e.getBoundingClientRect().top<H)e.classList.add('is-visible');}});mo.observe(document.documentElement,{childList:true,subtree:true});document.addEventListener('DOMContentLoaded',function(){mo.disconnect();});})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -92,6 +92,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
   .blk-mesh .btn-secondary:hover{background:rgba(255,255,255,.35);}
   .blk-offwhite{background:var(--surface-tint);}
   .blk-light{background:linear-gradient(180deg, #FAFCFB, var(--surface));}
+  .blk-tint{background:linear-gradient(180deg, #EEF6F5, #F5FAF9);border-radius:40px 40px 0 0;color:var(--ink);}
   /* POP-OVERLAP — vaste (niet scroll-gekoppelde) kaart-overlap: Producten ligt permanent over de Intro heen.
      position:sticky is hier bewust NIET gebruikt: in combinatie met de sticky navbar op deze pagina
      blokkeerde dat het scrollen volledig (getest en bevestigd), dus dit is de betrouwbare oplossing. */
@@ -415,26 +416,26 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
   </div>
   </div>
   <!-- WAAROM NU EEN THUISBATTERIJ — salderen stopt, in drie stappen uitgelegd -->
-  <div class="hm-now">
+  <div class="blk-tint hm-now">
   <style>
-  .hm-now{background:var(--dark);color:#fff;}
+  .hm-now{color:var(--ink);}
   .hm-now .top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:end;}
-  .hm-now .k{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--mint);}
-  .hm-now h2{color:#fff;font-size:clamp(30px,4vw,44px);margin-top:12px;}
-  .hm-now .top p{color:#C9D6D3;font-size:16.5px;line-height:1.6;}
+  .hm-now .k{display:inline-flex;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:#fff;border:1px solid var(--border);border-radius:999px;padding:6px 14px;}
+  .hm-now h2{color:var(--ink);font-size:clamp(30px,4vw,44px);margin-top:14px;}
+  .hm-now .top p{color:var(--ink-soft);font-size:16.5px;line-height:1.6;}
   .hm-flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:36px;}
-  .hm-flow div{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:22px;padding:24px;}
-  .hm-flow .n{width:44px;height:44px;border-radius:14px;background:var(--mint);color:var(--dark);display:flex;align-items:center;justify-content:center;}
-  .hm-flow b{display:block;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:20px;margin-top:16px;color:#fff;}
-  .hm-flow span{display:block;font-size:14.5px;color:#C9D6D3;line-height:1.55;margin-top:6px;}
-  .hm-vs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin-top:14px;border-radius:22px;overflow:hidden;border:1px solid rgba(255,255,255,.1);}
-  .hm-vs div{padding:20px 24px;font-size:14.5px;color:#C9D6D3;line-height:1.55;}
-  .hm-vs div+div{background:rgba(111,214,200,.1);}
-  .hm-vs em{display:block;font-style:normal;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#9FB0AD;margin-bottom:4px;}
-  .hm-vs div+div em{color:var(--mint);}
+  .hm-flow div{background:#fff;border:1px solid var(--border);border-radius:22px;padding:24px;}
+  .hm-flow .n{width:44px;height:44px;border-radius:14px;background:var(--surface-tint);color:var(--primary);display:flex;align-items:center;justify-content:center;}
+  .hm-flow b{display:block;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:20px;margin-top:16px;color:var(--ink);}
+  .hm-flow span{display:block;font-size:14.5px;color:var(--ink-soft);line-height:1.55;margin-top:6px;}
+  .hm-vs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin-top:14px;border-radius:22px;overflow:hidden;border:1px solid var(--border);background:#fff;}
+  .hm-vs div{padding:20px 24px;font-size:14.5px;color:var(--ink-soft);line-height:1.55;}
+  .hm-vs div+div{background:var(--surface-tint);}
+  .hm-vs em{display:block;font-style:normal;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:4px;}
+  .hm-vs div+div em{color:var(--primary);}
   .hm-now .cta{display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px;margin-top:30px;}
-  .hm-now .cta a.b{background:var(--mint);color:var(--dark);font-weight:800;font-size:15px;padding:16px 26px;border-radius:999px;text-decoration:none;}
-  .hm-now .cta a.l{color:#fff;font-weight:800;font-size:14.5px;text-decoration:none;}
+  .hm-now .cta a.b{background:var(--primary);color:#fff;font-weight:800;font-size:15px;padding:16px 26px;border-radius:999px;text-decoration:none;}
+  .hm-now .cta a.l{color:var(--primary);font-weight:800;font-size:14.5px;text-decoration:none;}
   @media (max-width:900px){.hm-now .top{grid-template-columns:1fr;gap:12px;}.hm-flow{grid-template-columns:1fr;}.hm-vs{grid-template-columns:1fr;}}
   </style>
   <div class="wrap reveal hm-sec">
@@ -449,22 +450,18 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
     <div class="cta"><a class="b" href="/thuisbatterij-berekenen">Bereken welke thuisbatterij past →</a><a class="l" href="/artikel-salderingsregeling-2027">Lees meer over salderen →</a></div>
   </div>
   </div>
-  <!-- WAAROM VOLTWIJK — foto van ons eigen team, de belofte en de cijfers -->
-  <div class="blk-mesh">
+  <!-- WAAROM VOLTWIJK — de belofte en de cijfers -->
+  <div class="blk-light">
   <style>
-  .hm-team{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:52px;align-items:center;}
-  .hm-team .ph{position:relative;border-radius:26px;overflow:hidden;aspect-ratio:4/3.4;box-shadow:0 40px 70px -40px rgba(16,32,31,.55);}
-  .hm-team .ph img{width:100%;height:100%;object-fit:cover;display:block;}
-  .hm-team .ph .lab{position:absolute;left:16px;bottom:16px;background:rgba(16,32,31,.85);color:#fff;border-radius:14px;padding:12px 14px;font-size:13px;line-height:1.35;max-width:270px;}
-  .hm-team .ph .lab b{display:block;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:16px;}
+  .hm-team{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:56px;align-items:start;}
   .hm-team h2{font-size:clamp(30px,3.8vw,42px);margin-top:14px;}
   .hm-team .lead{font-size:16.5px;color:var(--ink-soft);margin-top:12px;line-height:1.6;}
-  .hm-ck{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:12px;}
+  .hm-ck{list-style:none;padding:0;margin:0;display:grid;gap:12px;}
   .hm-ck li{display:grid;grid-template-columns:26px minmax(0,1fr);gap:12px;font-size:15.5px;line-height:1.5;color:var(--ink-soft);}
   .hm-ck li::before{content:"";width:26px;height:26px;border-radius:50%;background:var(--primary) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/14px no-repeat;}
   .hm-ck b{color:var(--ink);}
   .hm-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:26px;}
-  .hm-stats div{background:#fff;border:1px solid var(--border);border-radius:16px;padding:14px 16px;}
+  .hm-stats div{background:var(--surface-tint);border-color:transparent !important;border:1px solid var(--border);border-radius:16px;padding:14px 16px;}
   .hm-stats b{display:block;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:24px;color:var(--ink);line-height:1.1;}
   .hm-stats span{font-size:13px;color:var(--ink-faint);}
   @media (max-width:900px){.hm-team{grid-template-columns:1fr;gap:28px;}}
@@ -472,7 +469,6 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
   </style>
   <div class="wrap reveal hm-sec">
     <div class="hm-team">
-      <div class="ph"><img loading="lazy" decoding="async" src="/images/monteur-aan-het-werk-1080.webp" alt="Monteur van Voltwijk aan het werk" width="1080" height="810"><span class="lab"><b>Ons eigen team</b>Geen onderaannemers. Onze monteurs werken vanuit Zevenbergen.</span></div>
       <div>
         <div class="pill">Waarom Voltwijk</div>
         <h2 class="vw-heading">Eén vaste prijs. Eigen monteurs uit Zevenbergen.</h2>
@@ -481,9 +477,11 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
       <span aria-hidden="true" style="flex:none;width:48px;height:48px;border-radius:14px;background:var(--surface-tint);color:var(--primary);display:flex;align-items:center;justify-content:center;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span>
       <span style="flex:1;min-width:220px;"><span style="display:block;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--primary);">Gemeente Moerdijk · 26 t/m 31 oktober</span><span style="display:block;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:700;font-size:18px;line-height:1.25;margin-top:3px;color:var(--ink);">Gratis Energiescanweek: we komen gratis langs voor eerlijk advies</span></span>
       <span style="flex:none;background:var(--dark);color:#fff;font-weight:800;font-size:14px;padding:12px 18px;border-radius:999px;white-space:nowrap;">Meld je aan →</span></a><!-- scan:end -->
+      </div>
+      <div>
         <ul class="hm-ck">
           <li><span><b>Vaste prijs vooraf.</b> Geen verrassingen achteraf.</span></li>
-          <li><span><b>Eigen monteurs.</b> Vanuit Zevenbergen, in heel West-Brabant.</span></li>
+          <li><span><b>Eigen monteurs.</b> Ons eigen team installeert, vanuit Zevenbergen.</span></li>
           <li><span><b>Eerlijk advies.</b> We zeggen het ook als iets niet loont.</span></li>
           <li><span><b>2 jaar garantie</b> op de installatie.</span></li>
         </ul>
@@ -492,7 +490,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
     </div>
   </div>
   </div>
-  <div class="blk-light">
+  <div class="blk-tint">
   <!-- HOE HET WERKT — foto + tekst in één rij, weheat-stijl -->
   <div id="hoe-het-werkt" class="wrap row reveal" style="padding-top:64px;padding-bottom:64px;align-items:center;position:relative;scroll-margin-top:96px;">
     <div style="border-radius:24px;overflow:hidden;position:relative;aspect-ratio:4/3;">
@@ -520,13 +518,13 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
   </div>
   <style>#hwTabs::-webkit-scrollbar{display:none;}</style>
   </div>
-  <div class="blk-mesh">
+  <div class="blk-light">
   <!-- REVIEWS — onder Contact, samengevoegd tot één doorlopend wit blok (voorkomt wit naast wit) -->
   <div class="wrap reveal" style="padding-top:88px;padding-bottom:88px;position:relative;">
     <h2 style="font-size:46px;text-align:center;position:relative;">Wat klanten zeggen</h2>
     <p style="text-align:center;font-size:16px;margin-top:12px;max-width:460px;margin-left:auto;margin-right:auto;">Geen gekochte reviews — gewoon onze klanten, in hun eigen woorden.</p>
     <div id="reviewsGrid" style="margin-top:44px;display:grid;grid-template-columns:1.35fr 1fr;grid-template-rows:1fr 1fr;gap:20px;">
-      <div class="card tilt-card" style="grid-row:1 / 3;padding:0;background:#FBEAEA;border:none;overflow:hidden;">
+      <div class="card tilt-card" style="grid-row:1 / 3;padding:0;background:var(--surface-tint);border:none;overflow:hidden;">
         <video controls preload="none" poster="videos/review-6-poster.webp" style="width:100%;aspect-ratio:4/3;display:block;background:var(--dark);object-fit:cover;">
           <source src="videos/review-6.mp4" type="video/mp4">
         </video>
@@ -535,7 +533,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
           <div style="font-size:15px;color:var(--ink);font-weight:700;margin-top:8px;">Bijma</div><div style="font-size:12.5px;color:var(--ink-faint);margin-top:4px;">Klant van Voltwijk, in eigen woorden</div>
         </div>
       </div>
-      <div class="card tilt-card" style="padding:0;background:#FBEAEA;border:none;overflow:hidden;display:flex;">
+      <div class="card tilt-card" style="padding:0;background:var(--surface-tint);border:none;overflow:hidden;display:flex;">
         <video controls preload="none" poster="videos/review-1-poster.webp" style="width:42%;flex-shrink:0;object-fit:cover;display:block;background:var(--dark);">
           <source src="videos/review-1.mp4" type="video/mp4">
         </video>
@@ -544,7 +542,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
           <div style="font-size:13.5px;color:var(--ink);font-weight:700;margin-top:6px;">Lunshof</div><div style="font-size:12.5px;color:var(--ink-faint);margin-top:4px;">Klant van Voltwijk, in eigen woorden</div>
         </div>
       </div>
-      <div class="card tilt-card" style="padding:0;background:#FBEAEA;border:none;overflow:hidden;display:flex;">
+      <div class="card tilt-card" style="padding:0;background:var(--surface-tint);border:none;overflow:hidden;display:flex;">
         <video controls preload="none" poster="videos/review-2-poster.webp" style="width:42%;flex-shrink:0;object-fit:cover;display:block;background:var(--dark);">
           <source src="videos/review-2.mp4" type="video/mp4">
         </video>
@@ -560,35 +558,26 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
     </div>
   </div>
   </div>
-  <!-- WERKGEBIED EN KENNISBANK -->
-  <div class="blk-light">
+  <!-- KENNISBANK -->
+  <div class="blk-tint">
   <style>
-  .hm-two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:48px;align-items:start;}
-  .hm-two h2{font-size:clamp(26px,3vw,34px);margin-top:12px;}
-  .hm-two p.l{font-size:15.5px;color:var(--ink-soft);margin-top:10px;line-height:1.6;}
-  .hm-towns{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;}
-  .hm-towns a{background:#fff;border:1px solid var(--border);border-radius:999px;padding:8px 14px;font-size:14px;font-weight:700;color:var(--ink);text-decoration:none;}
-  .hm-towns a:hover{border-color:var(--primary);color:var(--primary);}
-  .hm-arts{display:grid;gap:12px;margin-top:18px;}
-  .hm-art{display:grid;gap:4px;background:#fff;border:1px solid var(--border);border-radius:18px;padding:18px 20px;text-decoration:none;color:var(--ink);}
-  .hm-art:hover{border-color:var(--primary);}
+  .hm-kb{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:12px 24px;}
+  .hm-kb h2{font-size:clamp(28px,3.4vw,38px);margin-top:12px;}
+  .hm-kb a{font-weight:800;color:var(--primary);text-decoration:none;font-size:15px;}
+  .hm-arts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:28px;}
+  .hm-art{display:flex;flex-direction:column;gap:8px;background:#fff;border:1px solid var(--border);border-radius:20px;padding:22px 22px 20px;text-decoration:none;color:var(--ink);transition:transform .15s,box-shadow .15s;}
+  .hm-art:hover{transform:translateY(-2px);box-shadow:0 18px 36px -24px rgba(16,32,31,.35);}
   .hm-art span{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--primary);}
-  .hm-art b{font-size:17px;line-height:1.3;}
-  .hm-art em{font-style:normal;font-size:13.5px;font-weight:800;color:var(--primary);}
-  @media (max-width:900px){.hm-two{grid-template-columns:1fr;gap:40px;}}
+  .hm-art b{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:19px;line-height:1.25;}
+  .hm-art em{font-style:normal;font-size:13.5px;font-weight:800;color:var(--primary);margin-top:auto;padding-top:6px;}
+  @media (max-width:900px){.hm-arts{grid-template-columns:1fr;}}
   </style>
   <div class="wrap reveal hm-sec">
-    <div class="hm-two">
-      <div><div class="pill">Werkgebied</div><h2 class="vw-heading">Actief in heel West-Brabant</h2>
-        <p class="l">Onze monteurs werken vanuit Zevenbergen. Bekijk wat we in jouw plaats doen.</p>
-        <div class="hm-towns"><a href="/installateur-zevenbergen">Zevenbergen</a><a href="/installateur-breda">Breda</a><a href="/installateur-etten-leur">Etten-Leur</a><a href="/installateur-roosendaal">Roosendaal</a><a href="/installateur-oosterhout">Oosterhout</a><a href="/installateur-bergen-op-zoom">Bergen op Zoom</a><a href="/installateur-moerdijk">Moerdijk</a><a href="/installateur-oudenbosch">Oudenbosch</a><a href="/installateur-klundert">Klundert</a><a href="/installateur-willemstad">Willemstad</a><a href="/installateur-made">Made</a><a href="/installateur-geertruidenberg">Geertruidenberg</a><a href="/werkgebied">Alle plaatsen →</a></div></div>
-      <div><div class="pill">Kennisbank</div><h2 class="vw-heading">Eerst zelf je huiswerk doen?</h2>
-        <div class="hm-arts"><a class="hm-art" href="/artikel-salderingsregeling-2027"><span>Salderen</span><b>Salderingsregeling stopt in 2027: wat verandert er?</b><em>Lees verder →</em></a><a class="hm-art" href="/artikel-thuisbatterij-prijs"><span>Thuisbatterij</span><b>Thuisbatterij prijs 2026: kosten en per kWh</b><em>Lees verder →</em></a><a class="hm-art" href="/artikel-thuisbatterij-terugverdientijd"><span>Thuisbatterij</span><b>Thuisbatterij terugverdientijd berekenen</b><em>Lees verder →</em></a></div>
-        <p style="margin-top:14px;"><a href="/inzichten" style="font-weight:800;color:var(--primary);text-decoration:none;">Alle artikelen in de kennisbank →</a></p></div>
-    </div>
+    <div class="hm-kb"><div><div class="pill">Kennisbank</div><h2 class="vw-heading">Eerst zelf je huiswerk doen?</h2></div><a href="/inzichten">Alle artikelen →</a></div>
+    <div class="hm-arts"><a class="hm-art" href="/artikel-salderingsregeling-2027"><span>Salderen</span><b>Salderingsregeling stopt in 2027: wat verandert er?</b><em>Lees verder →</em></a><a class="hm-art" href="/artikel-thuisbatterij-prijs"><span>Thuisbatterij</span><b>Thuisbatterij prijs 2026: kosten en per kWh</b><em>Lees verder →</em></a><a class="hm-art" href="/artikel-thuisbatterij-terugverdientijd"><span>Thuisbatterij</span><b>Thuisbatterij terugverdientijd berekenen</b><em>Lees verder →</em></a></div>
   </div>
   </div>
-  <div class="blk-mesh">
+  <div class="blk-light">
   <!-- ALGEMENE FAQ — nu een kleur -->
   <div class="wrap row reveal" style="padding-top:88px;padding-bottom:88px;align-items:flex-start;">
     <div style="flex:1 1 280px;">
@@ -600,15 +589,15 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
     <div class="faq" style="margin-top:0;flex:1 1 420px;">
       <details>
         <summary>Hoe werkt die vaste prijs precies?</summary>
-        <p>Je vult je postcode, woningtype en een paar foto's in en ziet meteen een vaste prijs, inclusief installatie. Alleen bij een afwijkende situatie ter plekke (bijvoorbeeld een verouderde meterkast) kan de prijs bijgesteld worden — en dat bespreken we altijd vooraf, nooit achteraf op de rekening.</p>
+        <p>Na de berekening of een adviesgesprek krijg je een offerte met een vaste prijs, inclusief installatie. Is er meerwerk nodig, bijvoorbeeld een extra groep in de meterkast, dan hoor je dat altijd vooraf, nooit achteraf op de rekening.</p>
       </details>
       <details>
         <summary>Werken jullie ook in mijn regio?</summary>
-        <p>We zijn <a href="/werkgebied" style="color:var(--primary);font-weight:700;">actief in heel Nederland</a> met eigen installatieteams. Bij de check op de productpagina zie je meteen of we op jouw adres kunnen plannen en wanneer het eerstvolgende beschikbare moment is.</p>
+        <p>Laat je adres achter in de berekening of neem contact met ons op. Dan hoor je meteen of en wanneer we bij je langs kunnen komen.</p>
       </details>
       <details>
-        <summary>Kan ik gespreid betalen?</summary>
-        <p>Ja. Op elk product kun je kiezen voor betalen ineens of gespreid over meerdere maanden, zonder verborgen kosten. Bij het opvragen van je vaste prijs zie je direct wat dat per maand betekent.</p>
+        <summary>Heb ik zonnepanelen nodig voor een thuisbatterij?</summary>
+        <p>Met zonnepanelen haal je het meeste uit een thuisbatterij: je bewaart je eigen zonnestroom voor de avond. Zonder zonnepanelen kan een batterij met een dynamisch energiecontract laden als stroom goedkoop is. In de berekening zie je wat bij jouw situatie past.</p>
       </details>
       <details>
         <summary>Wat als de installatie tegenvalt?</summary>
@@ -616,7 +605,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
       </details>
       <details>
         <summary>Moet ik meteen beslissen tijdens een adviesgesprek?</summary>
-        <p>Nee. Het adviesgesprek is vrijblijvend en bedoeld om je vragen te beantwoorden. Je ontvangt daarna gewoon je vaste prijs online, zonder druk om direct te tekenen.</p>
+        <p>Nee. Het adviesgesprek is vrijblijvend en bedoeld om je vragen te beantwoorden. Daarna ontvang je een offerte met een vaste prijs, zonder druk om direct te tekenen.</p>
       </details>
     </div>
   </div>
