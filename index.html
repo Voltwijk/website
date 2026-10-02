@@ -694,7 +694,13 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
   function adres(){ var pc = document.getElementById('tbPc').value.trim().toUpperCase().replace(/^(\d{4})\s*([A-Z]{2})$/, '$1 $2'), hn = document.getElementById('tbHn').value.trim(), er = document.getElementById('tbAdrErr');
     if(!/^\d{4} [A-Z]{2}$/.test(pc)){ er.textContent = 'Vul je postcode in, bijvoorbeeld 4762 AS.'; er.hidden = false; return; }
     if(!/^\d+/.test(hn)){ er.textContent = 'Vul je huisnummer in.'; er.hidden = false; return; }
-    st.postcode = pc; st.huisnummer = hn; go('panelen'); }
+    st.postcode = pc; st.huisnummer = hn;
+    /* buiten de losse calculatorpagina (bijv. de homepage): verder in een eigen scherm met alleen de calculator */
+    if(!document.querySelector('.tb-solo')){
+      try{ sessionStorage.setItem('vwCalcStart', JSON.stringify({postcode: pc, huisnummer: hn})); }catch(e){}
+      track('calc_start', {pagina: location.pathname}); location.href = '/thuisbatterij-berekenen'; return;
+    }
+    go('panelen'); }
 
   /* ---------- advies en besparing (indicatie) ---------- */
   function verbruik(){ var v = st.verbruik > 0 ? st.verbruik : 3500; if(st.extra.ev) v += 2000; if(st.extra.wp) v += 2500; if(st.extra.airco) v += 400; return v; }
@@ -812,6 +818,9 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
       '<div class="tb-book"><button type="button" data-book="bel"><b>Belafspraak</b><span>15 minuten, wij bellen jou</span></button><button type="button" data-book="huis"><b>Adviseur aan huis</b><span>we kijken naar je meterkast en woning</span></button>' +
       '<a href="https://wa.me/31853335687?text=' + encodeURIComponent('Hoi Voltwijk, ik heb net een offerte voor een thuisbatterij aangevraagd. Hier een foto van mijn meterkast:') + '" target="_blank" rel="noopener"><b>Foto meterkast sturen</b><span>via WhatsApp, dan gaat het nog sneller</span></a></div></div>';
   }
+  /* adres al ingevuld op een andere pagina? Dan meteen door naar de volgende vraag */
+  if(document.querySelector('.tb-solo')){ try{ var s0 = JSON.parse(sessionStorage.getItem('vwCalcStart') || 'null');
+    if(s0 && s0.postcode){ st.postcode = s0.postcode; st.huisnummer = s0.huisnummer; sessionStorage.removeItem('vwCalcStart'); hist = ['adres']; cur = 'panelen'; started = true; track('calc_stap', {stap: 'panelen'}); } }catch(e){} }
   render(false);
   /* knop onderaan het aanbod (mobiel) wijst ook naar de offerte */
   document.addEventListener('click', function(ev){ var t = ev.target.closest && ev.target.closest('#tbOfGo'); if(t){ track('offerte_klik', {batterij: st.keuze}); go('gegevens'); } });
@@ -822,9 +831,10 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
   <div class="wrap reveal hm-sec">
     <div class="hm-head"><div class="pill">Waarom Voltwijk</div><h2 class="vw-heading">Eén vaste prijs. Eigen monteurs uit Zevenbergen.</h2>
       <p>Je weet vooraf wat je betaalt, inclusief installatie. Onze eigen monteurs werken vanuit Zevenbergen in heel West-Brabant. Is er meerwerk nodig, zoals een extra groep in de meterkast, dan hoor je dat altijd voordat we beginnen.</p>
-    <!-- scan:start --><a href="/energiescan" class="reveal" style="display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;max-width:760px;margin:36px auto 0;padding:18px 22px;border-radius:18px;background:var(--dark);color:#fff;text-decoration:none;text-align:left;">
-      <span><span style="display:block;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--mint);">Gemeente Moerdijk · 26 t/m 31 oktober</span><span class="vw-heading" style="display:block;font-size:20px;margin-top:4px;color:#fff;">Gratis Energiescanweek: we komen gratis langs voor eerlijk advies</span></span>
-      <span style="font-weight:800;font-size:14px;color:var(--mint);white-space:nowrap;">Meld je aan →</span></a><!-- scan:end --></div>
+    <!-- scan:start --><a href="/energiescan" class="vw-scanband" style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:28px;padding:16px 18px;border-radius:18px;background:#fff;border:1px solid var(--border);box-shadow:0 18px 40px -30px rgba(16,32,31,.45);color:var(--ink);text-decoration:none;text-align:left;">
+      <span aria-hidden="true" style="flex:none;width:48px;height:48px;border-radius:14px;background:var(--surface-tint);color:var(--primary);display:flex;align-items:center;justify-content:center;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span>
+      <span style="flex:1;min-width:220px;"><span style="display:block;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--primary);">Gemeente Moerdijk · 26 t/m 31 oktober</span><span style="display:block;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:700;font-size:18px;line-height:1.25;margin-top:3px;color:var(--ink);">Gratis Energiescanweek: we komen gratis langs voor eerlijk advies</span></span>
+      <span style="flex:none;background:var(--dark);color:#fff;font-weight:800;font-size:14px;padding:12px 18px;border-radius:999px;white-space:nowrap;">Meld je aan →</span></a><!-- scan:end --></div>
     <div class="hm-why">
       <div><b>Vaste prijs vooraf</b><span>Inclusief installatie. Geen verrassingen achteraf.</span></div>
       <div><b>Eigen monteurs</b><span>Geen onderaannemers. Onze monteurs werken vanuit Zevenbergen.</span></div>

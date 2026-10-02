@@ -206,9 +206,10 @@ def page(shell, main, slug, title, desc, noindex=False):
     if noindex: s = s.replace('<link rel="canonical"', '<meta name="robots" content="noindex">\n<link rel="canonical"', 1)
     return s
 
-BAND = '''<!-- scan:start --><a href="/energiescan" class="reveal" style="display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;max-width:760px;margin:36px auto 0;padding:18px 22px;border-radius:18px;background:var(--dark);color:#fff;text-decoration:none;text-align:left;">
-      <span><span style="display:block;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--mint);">Gemeente Moerdijk · 26 t/m 31 oktober</span><span class="vw-heading" style="display:block;font-size:20px;margin-top:4px;color:#fff;">Gratis Energiescanweek: we komen gratis langs voor eerlijk advies</span></span>
-      <span style="font-weight:800;font-size:14px;color:var(--mint);white-space:nowrap;">Meld je aan →</span></a><!-- scan:end -->'''
+BAND = '''<!-- scan:start --><a href="/energiescan" class="vw-scanband" style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:28px;padding:16px 18px;border-radius:18px;background:#fff;border:1px solid var(--border);box-shadow:0 18px 40px -30px rgba(16,32,31,.45);color:var(--ink);text-decoration:none;text-align:left;">
+      <span aria-hidden="true" style="flex:none;width:48px;height:48px;border-radius:14px;background:var(--surface-tint);color:var(--primary);display:flex;align-items:center;justify-content:center;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span>
+      <span style="flex:1;min-width:220px;"><span style="display:block;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--primary);">Gemeente Moerdijk · 26 t/m 31 oktober</span><span style="display:block;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:700;font-size:18px;line-height:1.25;margin-top:3px;color:var(--ink);">Gratis Energiescanweek: we komen gratis langs voor eerlijk advies</span></span>
+      <span style="flex:none;background:var(--dark);color:#fff;font-weight:800;font-size:14px;padding:12px 18px;border-radius:999px;white-space:nowrap;">Meld je aan →</span></a><!-- scan:end -->'''
 
 def main():
     shell = open(SHELL, encoding='utf-8').read()

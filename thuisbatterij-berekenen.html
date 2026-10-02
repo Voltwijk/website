@@ -585,7 +585,13 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
   function adres(){ var pc = document.getElementById('tbPc').value.trim().toUpperCase().replace(/^(\d{4})\s*([A-Z]{2})$/, '$1 $2'), hn = document.getElementById('tbHn').value.trim(), er = document.getElementById('tbAdrErr');
     if(!/^\d{4} [A-Z]{2}$/.test(pc)){ er.textContent = 'Vul je postcode in, bijvoorbeeld 4762 AS.'; er.hidden = false; return; }
     if(!/^\d+/.test(hn)){ er.textContent = 'Vul je huisnummer in.'; er.hidden = false; return; }
-    st.postcode = pc; st.huisnummer = hn; go('panelen'); }
+    st.postcode = pc; st.huisnummer = hn;
+    /* buiten de losse calculatorpagina (bijv. de homepage): verder in een eigen scherm met alleen de calculator */
+    if(!document.querySelector('.tb-solo')){
+      try{ sessionStorage.setItem('vwCalcStart', JSON.stringify({postcode: pc, huisnummer: hn})); }catch(e){}
+      track('calc_start', {pagina: location.pathname}); location.href = '/thuisbatterij-berekenen'; return;
+    }
+    go('panelen'); }
 
   /* ---------- advies en besparing (indicatie) ---------- */
   function verbruik(){ var v = st.verbruik > 0 ? st.verbruik : 3500; if(st.extra.ev) v += 2000; if(st.extra.wp) v += 2500; if(st.extra.airco) v += 400; return v; }
@@ -703,6 +709,9 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
       '<div class="tb-book"><button type="button" data-book="bel"><b>Belafspraak</b><span>15 minuten, wij bellen jou</span></button><button type="button" data-book="huis"><b>Adviseur aan huis</b><span>we kijken naar je meterkast en woning</span></button>' +
       '<a href="https://wa.me/31853335687?text=' + encodeURIComponent('Hoi Voltwijk, ik heb net een offerte voor een thuisbatterij aangevraagd. Hier een foto van mijn meterkast:') + '" target="_blank" rel="noopener"><b>Foto meterkast sturen</b><span>via WhatsApp, dan gaat het nog sneller</span></a></div></div>';
   }
+  /* adres al ingevuld op een andere pagina? Dan meteen door naar de volgende vraag */
+  if(document.querySelector('.tb-solo')){ try{ var s0 = JSON.parse(sessionStorage.getItem('vwCalcStart') || 'null');
+    if(s0 && s0.postcode){ st.postcode = s0.postcode; st.huisnummer = s0.huisnummer; sessionStorage.removeItem('vwCalcStart'); hist = ['adres']; cur = 'panelen'; started = true; track('calc_stap', {stap: 'panelen'}); } }catch(e){} }
   render(false);
   /* knop onderaan het aanbod (mobiel) wijst ook naar de offerte */
   document.addEventListener('click', function(ev){ var t = ev.target.closest && ev.target.closest('#tbOfGo'); if(t){ track('offerte_klik', {batterij: st.keuze}); go('gegevens'); } });
