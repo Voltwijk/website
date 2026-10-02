@@ -402,7 +402,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
       </a>
     </div>
     <div style="text-align:center;margin-top:36px;">
-      <a href="/thuisbatterij-berekenen" class="btn-secondary" style="text-decoration:none;">Bereken je thuisbatterij →</a>
+      <a href="/contact" data-book="" class="btn-secondary" style="text-decoration:none;">Plan gratis adviesgesprek →</a>
     </div>
   </div>
   </div>
@@ -411,8 +411,8 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
   <div class="blk-light">
     <div class="wrap reveal" style="padding-top:64px;padding-bottom:88px;text-align:center;">
       <h2 style="font-size:30px;">Niet zeker welk product bij je past?</h2>
-      <p style="font-size:14.5px;color:var(--ink-soft);margin-top:10px;max-width:480px;margin-left:auto;margin-right:auto;">Doe de gratis prijscheck: vul je postcode en woningtype in en zie meteen wat elk product voor jouw huis kost.</p>
-      <a href="/thuisbatterij-berekenen" class="btn-primary" style="margin-top:20px;text-decoration:none;">Bereken je thuisbatterij →</a>
+      <p style="font-size:14.5px;color:var(--ink-soft);margin-top:10px;max-width:480px;margin-left:auto;margin-right:auto;">Plan een gratis adviesgesprek. We kijken samen wat bij jouw huis past en sturen je een offerte met vaste prijs, inclusief installatie.</p>
+      <a href="/contact" data-book="" class="btn-primary" style="margin-top:20px;text-decoration:none;">Plan gratis adviesgesprek →</a>
     </div>
   </div>
 
@@ -544,10 +544,12 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
       </a>
     </div>
   </div>
-  <div id="vwCookie" role="dialog" aria-live="polite" aria-label="Cookies" hidden>
-    <div class="ck-title">Even over cookies</div>
-    <p>We gebruiken functionele cookies zodat de site werkt. Met jouw toestemming meten we ook anoniem wat bezoekers nuttig vinden, zodat we de site beter maken. Geen advertentietracking. <a href="/cookiebeleid">Cookiebeleid</a></p>
-    <div class="ck-btns"><button type="button" class="ck-yes" data-ck="1">Akkoord</button><button type="button" class="ck-no" data-ck="0">Alleen noodzakelijk</button></div>
+  <div id="vwCookie" role="dialog" aria-live="polite" aria-modal="true" aria-labelledby="vwCookieT" hidden>
+    <div class="ck-ic" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a4 4 0 0 0 5 5 4 4 0 0 0 4.8 4.8z"/><circle cx="8.5" cy="10.5" r="1"/><circle cx="12" cy="15.5" r="1"/><circle cx="15.5" cy="12.5" r="1"/></svg></div>
+    <div class="ck-title" id="vwCookieT">Mogen we cookies gebruiken?</div>
+    <p>We gebruiken functionele cookies zodat de site goed werkt. Met jouw toestemming meten we ook anoniem welke pagina's bezoekers nuttig vinden, zodat we de site en ons advies kunnen verbeteren. We gebruiken geen advertentietracking en verkopen nooit gegevens.</p>
+    <div class="ck-btns"><button type="button" class="ck-yes" data-ck="1">Accepteren</button><button type="button" class="ck-no" data-ck="0">Alleen noodzakelijk</button></div>
+    <div class="ck-more">Je kunt je keuze altijd aanpassen. Lees ons <a href="/cookiebeleid">cookiebeleid</a> en <a href="/privacybeleid">privacybeleid</a>.</div>
   </div>
   <script>
     (function(){
@@ -1447,7 +1449,7 @@ body.vwb-lock{overflow:hidden;}
   try{ if(sessionStorage.getItem('vwpClosed')) return; }catch(e){}
   var calc = document.getElementById('calculator') || document.getElementById('calcCard');
   var bar = document.createElement('div'); bar.className = 'vwp'; bar.setAttribute('role', 'region'); bar.setAttribute('aria-label', 'Installatie plannen');
-  bar.innerHTML = '<span class="t">📅 Installatie al vanaf <b>' + first + '</b></span><a class="go" href="' + (calc ? '#' + calc.id : '/thuisbatterij-berekenen') + '">Plan nu →</a><button type="button" class="x" aria-label="Sluiten">×</button>';
+  bar.innerHTML = '<span class="t">📅 Installatie al vanaf <b>' + first + '</b></span><a class="go" href="/contact" data-book="">Plan gratis adviesgesprek →</a><button type="button" class="x" aria-label="Sluiten">×</button>';
   document.body.appendChild(bar);
   bar.querySelector('.x').addEventListener('click', function(){ bar.remove(); document.body.classList.remove('vwp-up'); try{ sessionStorage.setItem('vwpClosed', '1'); }catch(e){} });
   bar.querySelector('.go').addEventListener('click', function(){ try{ if(window.vwTrack) vwTrack('plan_balk_klik', {pagina: location.pathname}); }catch(e){} });

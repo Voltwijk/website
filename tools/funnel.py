@@ -100,15 +100,16 @@ def svg(k, s=22): return (f'<svg width="{s}" height="{s}" viewBox="0 0 24 24" fi
 
 CSS = '''<style>
 /* Calculator op één pagina: donkere kop met stappen, daaronder een rustig wit vlak met één vraag tegelijk. */
-.tb-page{padding-top:0 !important;background:#fff;}
-#waWidget{display:none !important;}
-.tb-band{background:var(--dark);padding:84px 0 0;}
+.tb-band{background:var(--dark);padding:22px 0 0;}
+.tb-solo .tb-band{padding-top:84px;}
 .tb-steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;max-width:1080px;margin:0 auto;padding:0 16px;}
 .tb-steps div{font-size:13px;font-weight:800;color:#6E8783;padding:10px 0 12px;border-bottom:3px solid #23403C;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .tb-steps div.done{color:var(--mint);border-color:var(--mint);}
 .tb-steps div.on{color:#fff;border-color:var(--accent);}
 .tb-steps div b{font-family:'Bricolage Grotesque',system-ui,sans-serif;margin-right:6px;}
-.tb-main{max-width:1080px;margin:0 auto;padding:44px 16px 40px;min-height:calc(100vh - 150px);min-height:calc(100svh - 150px);display:flex;flex-direction:column;}
+.tb-main{max-width:1080px;margin:0 auto;padding:44px 16px 40px;min-height:560px;display:flex;flex-direction:column;}
+.tb-solo .tb-main{min-height:calc(100vh - 150px);min-height:calc(100svh - 150px);}
+.tb-wrap{background:#fff;}
 .tb-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;}
 .tb-h{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:clamp(28px,3.6vw,40px);line-height:1.08;letter-spacing:-.02em;color:var(--ink);text-wrap:balance;margin:0;}
 .tb-sub{font-size:16.5px;color:var(--ink-faint);line-height:1.55;margin-top:10px;max-width:640px;}
@@ -232,22 +233,12 @@ CSS = '''<style>
 .tb-book a:hover,.tb-book button:hover{border-color:var(--accent);}
 .tb-book b{font-size:15px;color:var(--ink);} .tb-book span{font-size:13px;color:var(--ink-faint);line-height:1.4;}
 .tb-mob{display:none;}
-.tb-topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;}
-.tb-topbar .vw-logo{height:20px;}
-.tb-tel{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:15px;color:inherit;text-decoration:none;white-space:nowrap;}
-.tb-foot{background:var(--dark);color:#C9D6D3;padding:18px 0;font-size:13px;line-height:1.7;}
-.tb-foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;}
-.tb-foot a{color:#C9D6D3;}
-.vwp{display:none !important;}
-#vwCookie{padding:12px 14px !important;}#vwCookie .ck-title{display:none;}
-#vwCookie p{margin:0 0 10px !important;font-size:12px !important;line-height:1.45 !important;}
-#vwCookie .ck-btns{flex-wrap:nowrap;}#vwCookie .ck-btns button{flex:1;padding:10px 12px !important;font-size:13px !important;}
 @media (max-width:900px){
  .tb-offer,.tb-form{grid-template-columns:1fr;gap:22px;}.tb-gal{position:static;}
  .tb-opts.three{grid-template-columns:1fr;}
 }
 @media (max-width:640px){
- .tb-band{padding-top:72px;}.tb-steps{gap:4px;}.tb-steps div{font-size:11px;padding:8px 0 10px;}.tb-steps div span{display:none;}.tb-steps div.on span{display:inline;}
+ .tb-solo .tb-band{padding-top:72px;}.tb-steps{gap:4px;}.tb-steps div{font-size:11px;padding:8px 0 10px;}.tb-steps div span{display:none;}.tb-steps div.on span{display:inline;}
  .tb-main{padding-top:26px;}.tb-sub{font-size:15px;}.tb-content{margin-top:20px;}
  .tb-opts{grid-template-columns:1fr;gap:10px;}.tb-opt{padding:15px 14px;}.tb-opt .ic{width:42px;height:42px;}
  .tb-row{grid-template-columns:1fr;}
@@ -259,6 +250,18 @@ CSS = '''<style>
 }
 @media (min-width:641px){#tbOfGo{display:none;}}
 @media (prefers-reduced-motion:reduce){.tb-opt,.tb-btn{transition:none;}.tb-spin{animation:none;}}
+</style>'''
+
+PAGE_CSS = '''<style>
+.tb-page{padding-top:0 !important;background:#fff;}
+#waWidget{display:none !important;}
+.tb-topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.tb-topbar .vw-logo{height:20px;}
+.tb-tel{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:15px;color:inherit;text-decoration:none;white-space:nowrap;}
+.tb-foot{background:var(--dark);color:#C9D6D3;padding:18px 0;font-size:13px;line-height:1.7;}
+.tb-foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;}
+.tb-foot a{color:#C9D6D3;}
+.vwp{display:none !important;}
 </style>'''
 
 IC.update({
@@ -360,7 +363,7 @@ JS = r'''<script>
     else if(cur === 'gegevens'){ h = gegevens(); }
     else if(cur === 'klaar'){ h = klaar(); }
     main.innerHTML = h; wire();
-    if(scroll) window.scrollTo({top: 0, behavior: 'smooth'});
+    if(scroll){ var y = document.getElementById('calculator').getBoundingClientRect().top + window.scrollY - (document.querySelector('.tb-solo') ? 0 : 64); if(Math.abs(window.scrollY - y) > 40) window.scrollTo({top: Math.max(0, y), behavior: 'smooth'}); }
   }
 
   function wire(){
@@ -526,22 +529,28 @@ def pk_js():
                         'feat': t.get('feat', []), 'foto': t.get('foto', [])}
     return json.dumps(out, ensure_ascii=False)
 
-def main_html():
+def component(solo=False):
+    """De calculator zelf: stappenbalk + vraagvlak. Staat op /thuisbatterij-berekenen (solo) en op de homepage."""
     icjson = json.dumps({k: svg(k) for k in IC}, ensure_ascii=False)
     js = JS.replace('__PK__', pk_js()).replace('__IC__', icjson).replace('__INC__', json.dumps(INBEGREPEN, ensure_ascii=False))
-    return f'''<div class="blk-light tb-page">
-  {CSS}
+    return (CSS + f'''
+  <div class="tb-wrap{' tb-solo' if solo else ''}" id="calculator" style="scroll-margin-top:64px;">
   <div class="tb-band"><div class="tb-steps" id="tbSteps" aria-label="Stappen"></div></div>
-  <div class="tb-main" id="calculator" aria-live="polite"><div id="tbMain" style="display:flex;flex-direction:column;flex:1;"><noscript>Zet JavaScript aan om de calculator te gebruiken, of bel ons op {TEL}.</noscript></div></div>
+  <div class="tb-main" aria-live="polite"><div id="tbMain" style="display:flex;flex-direction:column;flex:1;"><noscript>Zet JavaScript aan om de calculator te gebruiken, of bel ons op {TEL}.</noscript></div></div>
+  </div>
+''' + js)
+
+def main_html():
+    return f'''<div class="blk-light tb-page">
+  {PAGE_CSS}
+  {component(True)}
   <form name="thuisbatterij-advies" data-netlify="true" netlify-honeypot="bot-field" hidden>
     <input name="bot-field"><input name="naam"><input name="telefoon"><input name="email"><input name="postcode"><input name="huisnummer">
     <input name="advies"><input name="prijs"><input name="zonnepanelen"><input name="ook_zonnepanelen"><input name="verbruik"><input name="extra">
     <input name="aansluiting"><input name="belangrijk"><input name="geschatte_besparing"><input name="pagina"><input name="bron"><input name="utm_content"><input name="gclid"><input name="fbclid">
   </form>
-  {js}
 </div>
 '''
-
 
 def nav_html(logo):
     return f'''<div id="siteNav">
@@ -622,6 +631,11 @@ def anders(f):
     return f in ANDERS or (ANDERS_RE.search(f) and not BATTERIJ_RE.search(f))
 
 def patch(f, s):
+    if f == 'index.html':
+        # homepage: de calculator zelf, direct onder de video; knoppen op de pagina scrollen ernaartoe
+        s = re.sub(r'<!-- vw-funnel-cta:start -->.*?<!-- vw-funnel-cta:end -->', '', s, flags=re.S)
+        s = re.sub(r'<!-- vw-home-calc:start -->.*?<!-- vw-home-calc:end -->', lambda m: '<!-- vw-home-calc:start -->' + component() + '<!-- vw-home-calc:end -->', s, count=1, flags=re.S)
+        s = s.replace(f'href="{URL}"', 'href="#calculator"')
     s = re.sub(r'<!-- vw-funnel-cta:start -->.*?<!-- vw-funnel-cta:end -->', '<!--vw-calc-plek-->', s, flags=re.S)
     m = re.search(r'<div id="calculator"', s)
     if m:
@@ -631,7 +645,7 @@ def patch(f, s):
         s = s.replace('<!--vw-calc-plek-->', band(f), 1).replace('<!--vw-calc-plek-->', '')
     s = s.replace('<!--vw-batterijkeuze-plek-->', '')
     # links naar de oude calculators
-    s = s.replace('href="/bereken-je-prijs"', f'href="{URL}"').replace('href="https://voltwijk.nl/bereken-je-prijs"', f'href="https://voltwijk.nl{URL}"')
+    s = s.replace('href="/bereken-je-prijs"', f'href="{URL}"' if f != 'index.html' else 'href="#calculator"').replace('href="https://voltwijk.nl/bereken-je-prijs"', f'href="https://voltwijk.nl{URL}"')
     s = s.replace('href="/product-batterij#batterijkeuze"', f'href="{URL}"').replace('href="/thuisbatterij-actie"', f'href="{URL}"')
     s = s.replace('href="#batterijkeuze"', f'href="{URL}"')
     if f in ANDERS: s = s.replace('href="#calculator"', 'href="#offerte"')
@@ -639,7 +653,7 @@ def patch(f, s):
     s = s.replace('bereken: "/bereken-je-prijs"', 'bereken: "' + URL + '"')
     s = s.replace("title:'Besparingscheck', desc:'Vul je postcode en woningtype in en zie binnen een minuut een eerste inschatting van je vaste prijs en besparing — nog voordat je ergens voor kiest.', cta:{label:'Check je besparing'",
                   "title:'Bereken je thuisbatterij', desc:'Beantwoord zes korte vragen en zie binnen een minuut welke thuisbatterij past, wat hij kost en wat je ongeveer bespaart. Je zit nergens aan vast.', cta:{label:'Bereken je thuisbatterij'")
-    if f not in ANDERS: s = s.replace('href="#calculator"', f'href="{URL}"')
+    if f not in ANDERS and f != 'index.html': s = s.replace('href="#calculator"', f'href="{URL}"')
     # knoppen en menu
     s = s.replace('>BEREKEN JE PRIJS<', '>THUISBATTERIJ BEREKENEN<')
     if anders(f):
@@ -648,13 +662,24 @@ def patch(f, s):
         s = s.replace('>Bereken je prijs &amp; plan direct →<', '>Bereken je thuisbatterij →<').replace('>Prijs berekenen &amp; inplannen →<', '>Bereken je thuisbatterij →<')
     s = s.replace('>bereken je prijs<', '>bereken welke thuisbatterij past<').replace('>Bereken je prijs<', '>Bereken je thuisbatterij<').replace('>bereken direct je prijs<', '>bereken welke thuisbatterij past<')
     s = s.replace('>prijscalculator<', '>batterijcalculator<')
-    s = s.replace('>Welke batterij past bij mij? →<', '>Bereken je thuisbatterij →<').replace('📅 In 4 vragen je advies en prijs', '📅 In 1 minuut je advies en vaste prijs')
+    s = s.replace('>Welke batterij past bij mij? →<', '>Bereken je thuisbatterij →<')
+    # knoppen naar een productpagina horen de tekst van dat product te dragen
+    s = re.sub(r'<a href="/product-([a-z]+)"([^>]*)>Bereken je thuisbatterij</a>',
+               lambda m: f'<a href="{URL}"{m.group(2)}>Bereken je thuisbatterij</a>' if m.group(1) == 'batterij' else f'<a href="/product-{m.group(1)}#offerte"{m.group(2)}>Vraag een offerte aan</a>', s)
+    # onder het overzicht van alle producten en in artikelen over andere producten: een adviesgesprek, geen batterijcalculator
+    for h in (URL, '#calculator'):
+        s = s.replace(f'<div style="text-align:center;margin-top:36px;">\n      <a href="{h}" class="btn-secondary" style="text-decoration:none;">Bereken je thuisbatterij →</a>',
+                      '<div style="text-align:center;margin-top:36px;">\n      <a href="/contact" data-book="" class="btn-secondary" style="text-decoration:none;">Plan gratis adviesgesprek →</a>')
+    if anders(f) or f == 'artikel-vergelijking.html':
+        s = s.replace(f'<a href="{URL}" class="btn" style="background:#fff;color:var(--primary);display:inline-block;padding:12px 26px;border-radius:100px;font-weight:800;text-decoration:none;font-size:14px;">Bereken je thuisbatterij</a>',
+                      '<a href="/contact" data-book="" class="btn" style="background:#fff;color:var(--primary);display:inline-block;padding:12px 26px;border-radius:100px;font-weight:800;text-decoration:none;font-size:14px;">Plan gratis adviesgesprek</a>').replace('📅 In 4 vragen je advies en prijs', '📅 In 1 minuut je advies en vaste prijs')
     s = s.replace('>batterijcalculator</a> of de <a href="' + URL + '">batterijkeuzehulp</a> zie je', '>batterijcalculator</a> zie je')
     s = s.replace('Met de batterijkeuzehulp zie je in vier vragen welke batterij bij je past', 'Met de batterijcalculator zie je in een minuut welke batterij bij je past')
     # productkaarten in PRODUCTS (JS): batterij naar de calculator, de rest naar het offerteblok
     s = s.replace("cta:'Bereken welke batterij past'", "cta:'Bereken je thuisbatterij'").replace("cta:'Prijs berekenen &amp; inplannen'", "cta:'Vraag een offerte aan'")
     s = s.replace("'<a href=\"#calculator\" class=\"btn-primary\" style=\"background:'+p.accent+';color:var(--dark);text-decoration:none;\">'+p.cta+' →</a>'",
                   "'<a href=\"'+(p.cta==='Bereken je thuisbatterij'?'" + URL + "':'#offerte')+'\" class=\"btn-primary\" style=\"background:'+p.accent+';color:var(--dark);text-decoration:none;\">'+p.cta+' →</a>'")
+    if f == 'index.html': s = s.replace(f'href="{URL}"', 'href="#calculator"')
     return s
 
 def main():

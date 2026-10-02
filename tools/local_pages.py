@@ -440,7 +440,7 @@ WA = 'https://wa.me/31853335687?text='
 def cta(title, sub):
     return f'''<div class="wrap reveal lp-sec" style="max-width:1000px;padding-bottom:80px;"><div class="lp-cta">
       <div><div class="vw-heading" style="font-size:clamp(22px,2.6vw,28px);color:#fff;">{esc(title)}</div><p>{esc(sub)}</p></div>
-      <div style="display:flex;gap:10px;flex-wrap:wrap;"><a href="/thuisbatterij-berekenen" class="btn-primary" style="background:var(--mint);color:var(--dark);text-decoration:none;">Bereken je thuisbatterij →</a><a href="/contact" class="btn-secondary" style="border-color:#fff;color:#fff;text-decoration:none;">Neem contact op</a></div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;"><a href="/thuisbatterij-berekenen" class="btn-primary" style="background:var(--mint);color:var(--dark);text-decoration:none;">Bereken je thuisbatterij →</a><a href="/contact" data-book="" class="btn-secondary" style="border-color:#fff;color:#fff;text-decoration:none;">Plan gratis adviesgesprek</a></div>
     </div></div>'''
 
 def city_faq(c):
@@ -454,7 +454,7 @@ def city_faq(c):
            (f'Wie regelt de netbeheerder en de vergunning in {n}?', f'Dat doen wij. In {n} is {NB[nb]} de netbeheerder (het precieze adres is bepalend). Wij regelen de aanmelding, een eventuele verzwaring van je aansluiting, een vergunning als die nodig is en bij een warmtepomp de ISDE-subsidie.'))
     qa = [c['faq'], kost, nbq,
           (f'Werken jullie in {n} met onderaannemers?', 'Nee. Alle installaties doen we met onze eigen monteurs. Daardoor weten we zeker dat het werk goed is en heb je één aanspreekpunt, ook na de installatie.'),
-          ('Hoe snel kan de installatie plaatsvinden?', 'De meeste klanten hebben binnen 2 tot 3 weken na de offerte een geplande installatiedatum. Bij de prijscheck zie je een indicatie voor jouw adres.')]
+          ('Hoe snel kan de installatie plaatsvinden?', 'De meeste klanten hebben binnen 2 tot 3 weken na de offerte een geplande installatiedatum. In de batterijcalculator zie je na het invullen van je adres vanaf wanneer we bij jou kunnen installeren.')]
     return qa
 
 def battery_block(n=None):
@@ -548,7 +548,7 @@ def city_main(c):
   <div class="wrap reveal lp-sec" style="max-width:1000px;">
     <h2 class="vw-heading lp-h2">Zo gaat het</h2>
     <div class="lp-steps">
-      <div><div class="step-num">1</div><p><b>Bereken je prijs</b>Vul je postcode en woningtype in en zie binnen een minuut je vaste prijs.</p></div>
+      <div><div class="step-num">1</div><p><b>Bereken of plan</b>Bereken in 1 minuut welke thuisbatterij past, of plan een gratis adviesgesprek voor een ander product.</p></div>
       <div><div class="step-num">2</div><p><b>Wij regelen de rest</b>Netbeheerder, vergunning en subsidie: wij nemen het papierwerk van je over.</p></div>
       <div><div class="step-num">3</div><p><b>Installatie door ons eigen team</b>Meestal binnen 2 tot 3 weken na de offerte ingepland. Je betaalt pas als alles naar wens werkt.</p></div>
     </div>
@@ -568,7 +568,7 @@ def city_main(c):
       </div>
     </div>
   </div>
-  {cta(f'Benieuwd wat het in {n} kost?', 'Bereken binnen een minuut je vaste prijs. Liever eerst persoonlijk advies? Ons eigen team denkt graag met je mee.')}
+  {cta(f'Een thuisbatterij in {n}?', 'Bereken in 1 minuut welke thuisbatterij bij je past, met vaste prijs inclusief installatie. Voor zonnepanelen, een warmtepomp of iets anders plan je een gratis adviesgesprek.')}
 </div>
 '''
 
@@ -601,7 +601,7 @@ def overview_main():
     {groups}
     <p style="font-size:15px;color:var(--ink-soft);margin-top:32px;line-height:1.6;">Staat jouw plaats er niet tussen? Vul je postcode in bij de <a href="/thuisbatterij-berekenen" style="color:var(--primary);font-weight:700;">batterijcalculator</a> of <a href="/contact" style="color:var(--primary);font-weight:700;">neem contact op</a>, dan hoor je snel of we bij jou kunnen komen.</p>
   </div>
-  {cta('Zie direct wat het bij jou kost', 'Vul je postcode en woningtype in en zie binnen een minuut je vaste prijs, inclusief installatie.')}
+  {cta('Welke thuisbatterij past bij jou?', 'Bereken in 1 minuut je advies en vaste prijs, inclusief installatie. Voor zonnepanelen, een warmtepomp of iets anders plan je een gratis adviesgesprek.')}
 </div>
 '''
 

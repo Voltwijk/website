@@ -352,7 +352,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
     <div class="card" style="margin-top:32px;padding:26px 28px;text-align:center;background:var(--primary-wash,var(--primary));">
       <h3 class="vw-heading" style="font-size:19px;color:#fff;margin:0 0 8px;">Wil je weten wat een airco jou bespaart?</h3>
       <p style="font-size:13.5px;color:rgba(255,255,255,.9);margin:0 0 16px;">We rekenen je situatie kosteloos door.</p>
-      <a href="/product-airco" class="btn" style="background:#fff;color:var(--primary);display:inline-block;padding:12px 26px;border-radius:100px;font-weight:800;text-decoration:none;font-size:14px;">Bereken je thuisbatterij</a>
+      <a href="/product-airco#offerte" class="btn" style="background:#fff;color:var(--primary);display:inline-block;padding:12px 26px;border-radius:100px;font-weight:800;text-decoration:none;font-size:14px;">Vraag een offerte aan</a>
     </div>
   </div>
 </div>
@@ -496,10 +496,12 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
       </a>
     </div>
   </div>
-  <div id="vwCookie" role="dialog" aria-live="polite" aria-label="Cookies" hidden>
-    <div class="ck-title">Even over cookies</div>
-    <p>We gebruiken functionele cookies zodat de site werkt. Met jouw toestemming meten we ook anoniem wat bezoekers nuttig vinden, zodat we de site beter maken. Geen advertentietracking. <a href="/cookiebeleid">Cookiebeleid</a></p>
-    <div class="ck-btns"><button type="button" class="ck-yes" data-ck="1">Akkoord</button><button type="button" class="ck-no" data-ck="0">Alleen noodzakelijk</button></div>
+  <div id="vwCookie" role="dialog" aria-live="polite" aria-modal="true" aria-labelledby="vwCookieT" hidden>
+    <div class="ck-ic" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a4 4 0 0 0 5 5 4 4 0 0 0 4.8 4.8z"/><circle cx="8.5" cy="10.5" r="1"/><circle cx="12" cy="15.5" r="1"/><circle cx="15.5" cy="12.5" r="1"/></svg></div>
+    <div class="ck-title" id="vwCookieT">Mogen we cookies gebruiken?</div>
+    <p>We gebruiken functionele cookies zodat de site goed werkt. Met jouw toestemming meten we ook anoniem welke pagina's bezoekers nuttig vinden, zodat we de site en ons advies kunnen verbeteren. We gebruiken geen advertentietracking en verkopen nooit gegevens.</p>
+    <div class="ck-btns"><button type="button" class="ck-yes" data-ck="1">Accepteren</button><button type="button" class="ck-no" data-ck="0">Alleen noodzakelijk</button></div>
+    <div class="ck-more">Je kunt je keuze altijd aanpassen. Lees ons <a href="/cookiebeleid">cookiebeleid</a> en <a href="/privacybeleid">privacybeleid</a>.</div>
   </div>
   <script>
     (function(){
@@ -1397,7 +1399,7 @@ body.vwb-lock{overflow:hidden;}
   try{ if(sessionStorage.getItem('vwpClosed')) return; }catch(e){}
   var calc = document.getElementById('calculator') || document.getElementById('calcCard');
   var bar = document.createElement('div'); bar.className = 'vwp'; bar.setAttribute('role', 'region'); bar.setAttribute('aria-label', 'Installatie plannen');
-  bar.innerHTML = '<span class="t">📅 Installatie al vanaf <b>' + first + '</b></span><a class="go" href="' + (calc ? '#' + calc.id : '/thuisbatterij-berekenen') + '">Plan nu →</a><button type="button" class="x" aria-label="Sluiten">×</button>';
+  bar.innerHTML = '<span class="t">📅 Installatie al vanaf <b>' + first + '</b></span><a class="go" href="/contact" data-book="">Plan gratis adviesgesprek →</a><button type="button" class="x" aria-label="Sluiten">×</button>';
   document.body.appendChild(bar);
   bar.querySelector('.x').addEventListener('click', function(){ bar.remove(); document.body.classList.remove('vwp-up'); try{ sessionStorage.setItem('vwpClosed', '1'); }catch(e){} });
   bar.querySelector('.go').addEventListener('click', function(){ try{ if(window.vwTrack) vwTrack('plan_balk_klik', {pagina: location.pathname}); }catch(e){} });

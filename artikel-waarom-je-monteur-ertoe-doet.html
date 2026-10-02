@@ -364,8 +364,8 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
 .art-cta .row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin-top:16px;}
 .art-cta .row span{font-size:13px;color:var(--ink-soft);} .art-cta .row b{color:var(--primary);}
 @media (max-width:600px){.art-cta{flex-direction:column;align-items:flex-start;padding:22px 18px;}.art-cta img{width:100%;height:150px;}.art-cta .btn-primary{width:100%;justify-content:center;}}</style><div class="art-cta"><div><div class="k">Vaste prijs · eigen monteurs</div>
-<h2>Welke thuisbatterij past bij jou?</h2><p>Bereken in 1 minuut welke batterij past, wat hij kost en wat je ongeveer bespaart als salderen stopt. Vaste prijs, inclusief installatie.</p>
-<div class="row"><a class="btn-primary" href="/thuisbatterij-berekenen" style="text-decoration:none;">Bereken je thuisbatterij →</a><span>📅 Installatie al vanaf <b data-vw-first></b></span></div></div></div>
+<h2>Benieuwd wat dit voor jouw huis betekent?</h2><p>Plan een gratis adviesgesprek met ons eigen team. Overweeg je een thuisbatterij, dan zie je met de calculator in 1 minuut welke past.</p>
+<div class="row"><a class="btn-primary" href="/contact" data-book="" style="text-decoration:none;">Plan gratis adviesgesprek →</a><a href="/thuisbatterij-berekenen" style="font-weight:800;color:var(--primary);text-decoration:none;">Thuisbatterij berekenen</a></div></div></div>
 <h2 class="vw-heading" style="font-size:22px;margin-top:40px;">Lees ook</h2><div class="rel-list"><a href="/artikel-thuisbatterij-na-salderen"><span>Thuisbatterij</span>Thuisbatterij: nu salderen verdwijnt, wordt dit dé investering</a><a href="/artikel-dynamisch-contract-en-batterij"><span>Thuisbatterij</span>Dynamisch energiecontract en een thuisbatterij: een sterke combinatie</a><a href="/artikel-salderingsregeling-2027"><span>Zonnepanelen</span>Salderingsregeling stopt per 2027: wat verandert er echt voor jou?</a><a href="/artikel-zonnepanelen-zonder-salderen-batterij-of-teruglevering"><span>Zonnepanelen</span>Zonnepanelen zonder salderen: batterij of toch alles terugleveren?</a><a href="/artikel-zonnepanelen-prijs"><span>Zonnepanelen</span>Zonnepanelen nu goedkoper dan ooit</a><a href="/artikel-isde-subsidie-2026"><span>Warmtepomp</span>ISDE-subsidie 2026: waar kun je nog gebruik van maken?</a></div>
 <p style="margin-top:18px;font-size:14px;"><a href="/inzichten" style="color:var(--primary);font-weight:800;text-decoration:none;">Alle artikelen →</a></p></div></div><!-- rel:end -->
 
@@ -496,10 +496,12 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
       </a>
     </div>
   </div>
-  <div id="vwCookie" role="dialog" aria-live="polite" aria-label="Cookies" hidden>
-    <div class="ck-title">Even over cookies</div>
-    <p>We gebruiken functionele cookies zodat de site werkt. Met jouw toestemming meten we ook anoniem wat bezoekers nuttig vinden, zodat we de site beter maken. Geen advertentietracking. <a href="/cookiebeleid">Cookiebeleid</a></p>
-    <div class="ck-btns"><button type="button" class="ck-yes" data-ck="1">Akkoord</button><button type="button" class="ck-no" data-ck="0">Alleen noodzakelijk</button></div>
+  <div id="vwCookie" role="dialog" aria-live="polite" aria-modal="true" aria-labelledby="vwCookieT" hidden>
+    <div class="ck-ic" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a4 4 0 0 0 5 5 4 4 0 0 0 4.8 4.8z"/><circle cx="8.5" cy="10.5" r="1"/><circle cx="12" cy="15.5" r="1"/><circle cx="15.5" cy="12.5" r="1"/></svg></div>
+    <div class="ck-title" id="vwCookieT">Mogen we cookies gebruiken?</div>
+    <p>We gebruiken functionele cookies zodat de site goed werkt. Met jouw toestemming meten we ook anoniem welke pagina's bezoekers nuttig vinden, zodat we de site en ons advies kunnen verbeteren. We gebruiken geen advertentietracking en verkopen nooit gegevens.</p>
+    <div class="ck-btns"><button type="button" class="ck-yes" data-ck="1">Accepteren</button><button type="button" class="ck-no" data-ck="0">Alleen noodzakelijk</button></div>
+    <div class="ck-more">Je kunt je keuze altijd aanpassen. Lees ons <a href="/cookiebeleid">cookiebeleid</a> en <a href="/privacybeleid">privacybeleid</a>.</div>
   </div>
   <script>
     (function(){
@@ -1397,7 +1399,7 @@ body.vwb-lock{overflow:hidden;}
   try{ if(sessionStorage.getItem('vwpClosed')) return; }catch(e){}
   var calc = document.getElementById('calculator') || document.getElementById('calcCard');
   var bar = document.createElement('div'); bar.className = 'vwp'; bar.setAttribute('role', 'region'); bar.setAttribute('aria-label', 'Installatie plannen');
-  bar.innerHTML = '<span class="t">📅 Installatie al vanaf <b>' + first + '</b></span><a class="go" href="' + (calc ? '#' + calc.id : '/thuisbatterij-berekenen') + '">Plan nu →</a><button type="button" class="x" aria-label="Sluiten">×</button>';
+  bar.innerHTML = '<span class="t">📅 Installatie al vanaf <b>' + first + '</b></span><a class="go" href="/contact" data-book="">Plan gratis adviesgesprek →</a><button type="button" class="x" aria-label="Sluiten">×</button>';
   document.body.appendChild(bar);
   bar.querySelector('.x').addEventListener('click', function(){ bar.remove(); document.body.classList.remove('vwp-up'); try{ sessionStorage.setItem('vwpClosed', '1'); }catch(e){} });
   bar.querySelector('.go').addEventListener('click', function(){ try{ if(window.vwTrack) vwTrack('plan_balk_klik', {pagina: location.pathname}); }catch(e){} });

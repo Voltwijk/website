@@ -98,7 +98,7 @@ FAQ = [
  ('Wie komt er langs?', 'Een adviseur of monteur uit ons eigen team. Geen callcenter of tussenpersoon.'),
  ('Hoe lang duurt het bezoek?', 'Reken op ongeveer 45 minuten. We kijken naar je meterkast, je dak en je energieverbruik en beantwoorden je vragen.'),
  ('Wat heb ik na afloop?', 'Binnen een paar werkdagen ontvang je per mail een kort persoonlijk adviesrapport: wat bij jouw huis past, wat het ongeveer kost en wat het oplevert. En wat je beter (nog) niet kunt doen.'),
- ('Ik woon niet in de gemeente Moerdijk. Kan ik ook meedoen?', 'Deze week is alleen voor inwoners van de gemeente Moerdijk. Woon je ergens anders, dan kun je altijd je prijs berekenen of ons een appje sturen voor advies.'),
+ ('Ik woon niet in de gemeente Moerdijk. Kan ik ook meedoen?', 'Deze week is alleen voor inwoners van de gemeente Moerdijk. Woon je ergens anders, dan kun je altijd een gratis adviesgesprek plannen of ons een appje sturen voor advies.'),
  ('Kan het ook \'s avonds of op zaterdag?', 'Ja. We komen overdag, in de avond en op zaterdag. Als we je bellen, spreken we een moment af dat jou uitkomt.'),
 ]
 
