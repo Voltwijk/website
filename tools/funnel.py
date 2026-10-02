@@ -284,8 +284,9 @@ JS = r'''<script>
     return '<button type="button" class="tb-opt' + (multi ? ' multi' : '') + '" data-k="' + k + '" data-v="' + val + '" aria-pressed="' + on + '">' + ic(icon) + '<span><b>' + title + '</b>' + (d ? '<span class="d">' + d + '</span>' : '') + '</span></button>'; }
   var ORDER = ['panelen','aantal','verbruik','extra','fase','doel','adres'];
   function steps(){ return ORDER.filter(function(s){ return s !== 'aantal' || st.panelen === 'ja'; }); }
-  function head(q, sub){ var list = steps(), i = list.indexOf(cur);
-    bar.style.width = Math.round(((i < 0 ? list.length : i) + 1) / (list.length + 1) * 100) + '%';
+  function head(q, sub){ var list = ORDER.filter(function(s){ return s !== 'aantal'; }), i = list.indexOf(cur === 'aantal' ? 'panelen' : cur);
+    var part = cur === 'aantal' ? .5 : 0;
+    bar.style.width = Math.round(((i < 0 ? list.length : i + part) + 1) / (list.length + 1) * 100) + '%';
     return '<div class="tb-top"><button type="button" class="tb-back" id="tbBack"' + (hist.length ? '' : ' hidden') + '>← Terug</button><span>' + (i < 0 ? 'Jouw advies' : 'Vraag ' + (i + 1) + ' van ' + list.length) + '</span></div>' +
       '<h2 class="tb-q">' + q + '</h2>' + (sub ? '<p class="tb-sub">' + sub + '</p>' : ''); }
   function go(next){ if(!started){ started = true; track('calc_start', {pagina: location.pathname}); } hist.push(cur); cur = next; render(true); track('calc_stap', {stap: next}); }
@@ -474,8 +475,7 @@ def nav_html(logo):
     return f'''<div id="siteNav">
     <div class="wrap nav-inner tb-topbar">
       <a href="/" aria-label="Voltwijk, naar de homepage" class="vw-heading" style="display:inline-flex;align-items:center;color:inherit;">{logo}</a>
-      <div class="r"><span class="tb-g"><i>★★★★★</i> 4,7 / 5 op Google</span>
-      <a class="tb-tel" href="{TEL_HREF}" aria-label="Bel Voltwijk: {TEL}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>{TEL}</span></a></div>
+      <div class="r"><a class="tb-tel" href="{TEL_HREF}" aria-label="Bel Voltwijk: {TEL}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>{TEL}</span></a></div>
     </div>
   </div>'''
 
@@ -486,92 +486,55 @@ def pk_js():
     return json.dumps(out, ensure_ascii=False)
 
 def main_html():
-    trust = ''.join(f'<div><b>{esc(a)}</b><span>{esc(b)}</span></div>' for a, b in TRUST)
-    steps = ''.join(f'<div><span class="n">{i}</span><b>{esc(h)}</b><p>{esc(t)}</p></div>' for i, (h, t) in enumerate(STEPS, 1))
-    faq = ''.join(f'<details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>' for q, a in FAQ)
-    prices = ''.join(f'<span>{p["kwh"]} kWh {p["fase"]}<b>{eur(p["prijs"])}</b></span>' for p in PAKKETTEN)
-    pk = ''
-    for p in PAKKETTEN:
-        lab, s, ul = PK_TXT.get(p['id'], ('', '', []))
-        pk += (f'<div class="{"hl" if p["id"] == "bat16-1" else ""}"><span class="lab">{esc(lab)}</span><h3>{p["kwh"]} kWh · {p["fase"]}</h3><p class="s">{esc(s)}</p>'
-               f'<div class="p">{eur(p["prijs"])}<small>vaste prijs incl. installatie, excl. btw</small></div>'
-               f'<ul>{"".join("<li>" + esc(x) + "</li>" for x in ul)}<li>Eigen groep in de meterkast</li><li>App ingesteld en uitgelegd</li></ul>'
-               f'<a href="#calculator" class="tb-btn" data-tb-start="{p["id"]}">Bereken of deze past →</a></div>')
-    ticks = ''.join(f'<li>{t}</li>' for t in ['Advies en vaste prijs in 1 minuut, zonder verplichtingen',
-                    'Geïnstalleerd door onze eigen monteurs uit Zevenbergen', 'Klaar voor het einde van salderen op 1 januari 2027'])
+    icjson = json.dumps({k: svg(k) for k in IC}, ensure_ascii=False)
+    # Eén ding op de pagina: de calculator, groot en in het midden. Geen prijzen, blokken of andere afleiding eromheen.
     return f'''<div class="blk-light tb-page">
   {CSS}
-  <div class="tb-hero">
-    <div class="wrap" style="max-width:1180px;">
-      <div class="tb-grid">
-        <div class="tb-intro">
-          <div class="kicker">Thuisbatterij berekenen</div>
-          <h1 class="vw-heading">Welke thuisbatterij past bij jouw huis?</h1>
-          <p class="l">Beantwoord zes korte vragen. Je ziet direct welke batterij past, wat hij kost en wat je ongeveer bespaart als salderen stopt.</p>
-          <ul class="tb-ticks">{ticks}</ul>
-          <div class="tb-prices">{prices}<small>Vaste prijzen inclusief installatie, excl. btw</small></div>
-        </div>
-        <div class="tb-card" id="calculator" aria-live="polite">
-          <div class="tb-prog"><i id="tbBar"></i></div>
-          <div class="tb-body" id="tbBody"><noscript>Zet JavaScript aan om de calculator te gebruiken, of bel ons op {TEL}.</noscript></div>
-        </div>
+  <style>
+  .tb-page{{padding-top:0 !important;background:var(--dark);}}
+  .tb-solo{{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;align-items:center;padding:96px 16px 40px;
+    background:radial-gradient(900px 480px at 50% -10%,rgba(111,214,200,.16),transparent 65%),var(--dark);}}
+  .tb-solo .wrapc{{width:100%;max-width:720px;}}
+  .tb-solo h1{{color:#fff;text-align:center;font-size:clamp(28px,4vw,44px);line-height:1.08;}}
+  .tb-solo .sub{{color:#C9D6D3;text-align:center;font-size:16.5px;margin:12px auto 26px;max-width:520px;line-height:1.55;}}
+  .tb-solo .tb-card{{box-shadow:0 50px 100px -40px rgba(0,0,0,.7);}}
+  .tb-solo .tb-body{{padding:34px 38px 36px;min-height:520px;}}
+  .tb-solo .tb-q{{font-size:clamp(24px,2.8vw,32px);}}
+  .tb-solo .tb-opt{{padding:20px 18px;}}
+  .tb-solo .tb-opt b{{font-size:17px;}}
+  .tb-mini{{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 18px;margin-top:20px;color:#9FB0AD;font-size:13px;font-weight:700;}}
+  .tb-mini i{{font-style:normal;color:#F5B400;letter-spacing:1px;margin-right:4px;}}
+  #waWidget{{display:none !important;}}
+  #vwCookie{{padding:12px 14px !important;}}#vwCookie .ck-title{{display:none;}}
+  #vwCookie p{{margin:0 0 10px !important;font-size:12px !important;line-height:1.45 !important;}}
+  #vwCookie .ck-btns{{flex-wrap:nowrap;}}#vwCookie .ck-btns button{{flex:1;padding:10px 12px !important;font-size:13px !important;}}
+  .tb-foot{{padding:18px 0;}}
+  @media (max-width:640px){{.tb-solo{{padding-top:80px;}}.tb-solo .sub{{font-size:15px;margin-bottom:18px;}}.tb-solo .tb-body{{padding:24px 18px 24px;min-height:460px;}}.tb-solo .tb-opt{{padding:15px 14px;}}}}
+  </style>
+  <div class="tb-solo">
+    <div class="wrapc">
+      <h1 class="vw-heading">Welke thuisbatterij past bij jouw huis?</h1>
+      <p class="sub">Beantwoord 6 korte vragen en zie direct je advies en vaste prijs, inclusief installatie.</p>
+      <div class="tb-card" id="calculator" aria-live="polite">
+        <div class="tb-prog"><i id="tbBar"></i></div>
+        <div class="tb-body" id="tbBody"><noscript>Zet JavaScript aan om de calculator te gebruiken, of bel ons op {TEL}.</noscript></div>
       </div>
+      <div class="tb-mini"><span><i>★★★★★</i>4,7 / 5 op Google</span><span>12.500+ installaties</span><span>Eigen monteurs</span></div>
     </div>
   </div>
-  <div class="wrap" style="max-width:1180px;"><div class="tb-trust">{trust}</div></div>
-
-  <div class="wrap tb-sec" style="max-width:1180px;">
-    <div class="pill">1 januari 2027</div>
-    <h2 class="vw-heading tb-h2">Salderen stopt. Je zonnestroom wordt minder waard, tenzij je hem bewaart.</h2>
-    <div class="tb-2027">
-      <div><div class="w">Tot en met 2026</div><h3>Salderen</h3><p>Stroom die je overdag teruglevert, mag je wegstrepen tegen stroom die je 's avonds gebruikt. Het net werkt als een gratis batterij.</p></div>
-      <div><div class="w">Vanaf 2027</div><h3>Zelf opslaan loont</h3><p>Je krijgt alleen nog een terugleververgoeding, en veel leveranciers rekenen terugleverkosten. Met een thuisbatterij gebruik je je eigen zonnestroom ook 's avonds, in plaats van hem voor een paar cent weg te geven.</p></div>
-    </div>
-  </div>
-
-  <div class="wrap tb-sec" style="max-width:1180px;" id="batterijen">
-    <div class="pill">Onze thuisbatterijen</div>
-    <h2 class="vw-heading tb-h2">Drie batterijen. Eén vaste prijs, inclusief installatie.</h2>
-    <p class="tb-lead">Geen verrassingen achteraf: in de prijs zitten de batterij, de hybride omvormer, montage, een eigen groep in de meterkast en het instellen van de app. Is er meerwerk nodig, dan hoor je dat altijd vooraf.</p>
-    <div class="tb-pk">{pk}</div>
-  </div>
-
-  <div class="wrap tb-sec" style="max-width:1180px;">
-    <div class="pill">Zo werkt het</div>
-    <h2 class="vw-heading tb-h2">Van berekening tot werkende batterij</h2>
-    <div class="tb-steps">{steps}</div>
-  </div>
-
-  <div class="wrap tb-sec tb-faq">
-    <h2 class="vw-heading tb-h2">Veelgestelde vragen</h2>
-    <div class="faq" style="margin-top:18px;">{faq}</div>
-  </div>
-
-  <div class="wrap" style="max-width:1180px;">
-    <div class="tb-other">
-      <div><h3>Op zoek naar iets anders?</h3><p>We installeren ook zonnepanelen, warmtepompen, laadpalen, airco's en meterkasten.</p></div>
-      <div class="links"><a href="/product-zonnepanelen">Zonnepanelen</a><a href="/product-warmtepomp">Warmtepomp</a><a href="/product-laadpaal">Laadpaal</a><a href="/product-airco">Airco</a><a href="/producten">Alles bekijken</a></div>
-    </div>
-    <div class="tb-end">
-      <div><h2 class="vw-heading">Bereken welke batterij bij jou past</h2><p>In 1 minuut je advies en vaste prijs. Liever eerst even praten? Bel {TEL} of app ons.</p></div>
-      <a href="#calculator" class="tb-btn mint" data-tb-start="">Start de berekening →</a>
-    </div>
-  </div>
-  <div style="height:80px;"></div>
-  <div class="tb-sticky" id="tbSticky"><a href="#calculator" class="tb-btn" data-tb-start="">Bereken je thuisbatterij →</a></div>
   <form name="thuisbatterij-advies" data-netlify="true" netlify-honeypot="bot-field" hidden>
     <input name="bot-field"><input name="naam"><input name="telefoon"><input name="email"><input name="postcode"><input name="huisnummer">
     <input name="advies"><input name="prijs"><input name="zonnepanelen"><input name="ook_zonnepanelen"><input name="verbruik"><input name="extra">
     <input name="aansluiting"><input name="belangrijk"><input name="geschatte_besparing"><input name="pagina"><input name="bron"><input name="utm_content"><input name="gclid"><input name="fbclid">
   </form>
-  {JS.replace('__PK__', pk_js()).replace('__IC__', json.dumps({k: svg(k) for k in IC}, ensure_ascii=False))}
+  {JS.replace('__PK__', pk_js()).replace('__IC__', icjson)}
 </div>
 '''
 
 FOOT = f'''<div class="tb-foot">
     <div class="wrap">
       <span><b style="color:#fff;">Voltwijk B.V.</b> · Schoenmakerij 15a, 4762 AS Zevenbergen · <a href="{TEL_HREF}">{TEL}</a> · <a href="mailto:info@voltwijk.nl">info@voltwijk.nl</a></span>
-      <span><a href="/">Home</a> · <a href="/producten">Producten</a> · <a href="/privacybeleid">Privacy</a> · <a href="/cookiebeleid">Cookies</a> · <a href="/algemene-voorwaarden">Voorwaarden</a></span>
+      <span><a href="/privacybeleid">Privacy</a> · <a href="/cookiebeleid">Cookies</a> · <a href="/algemene-voorwaarden">Voorwaarden</a></span>
     </div>
   </div>
 
