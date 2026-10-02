@@ -5,7 +5,7 @@ category: Zonnepanelen
 product: zonnepanelen
 date: 2026-10-01
 lead: De P1-poort is een kleine aansluiting op je slimme meter waar je zelf, live en gratis je stroomverbruik en teruglevering kunt uitlezen. Met die gegevens zie je wat je zonnepanelen echt doen, en kan een thuisbatterij of energiemanagementsysteem precies op het juiste moment laden en ontladen.
-summary: De P1-poort is een RJ12-aansluiting op je slimme meter die volgens de Nederlandse DSMR-standaard meetgegevens doorgeeft || Een DSMR 5-meter geeft elke seconde nieuwe stroomgegevens, een DSMR 4-meter ongeveer elke 10 seconden || Een thuisbatterij, EMS of laadpaal gebruikt die gegevens om te sturen op overschot, tekort en uurprijzen || De gegevens uit de P1-poort blijven in je eigen huis; je netbeheerder en leverancier zien ze niet
+summary: De P1-poort is een RJ12-aansluiting op je slimme meter die volgens de Nederlandse DSMR-standaard meetgegevens doorgeeft || Een DSMR 5-meter geeft elke seconde nieuwe stroomgegevens, een DSMR 4-meter ongeveer elke 10 seconden || Een thuisbatterij, EMS of laadpaal gebruikt die gegevens om te sturen op overschot, tekort en wisselende stroomprijzen || De gegevens uit de P1-poort blijven in je eigen huis; je netbeheerder en leverancier zien ze niet
 sources: Netbeheer Nederland - P1-poort vaak nog niet benut|https://www.netbeheernederland.nl/artikelen/nieuws/p1-poort-naar-snelle-energiebesparing-vaak-nog-niet-benut || Enexis - Inzicht met een energieverbruiksmanager|https://www.enexis.nl/meter-en-meterkast/meter/slimme-meter/inzicht-in-uw-energieverbruik || Netbeheer Nederland - Zo waarborgen slimme meters je privacy|https://www.netbeheernederland.nl/artikelen/zo-werkt-het/zo-werkt-het-dit-hoe-slimme-meters-je-privacy-waarborgen || Goedkoopenergievergelijken.nl - DSMR uitgelegd|https://www.goedkoopenergievergelijken.nl/energiebegrippen/dsmr/ || Thuisbatterijgids - DSMR 4 vs DSMR 5|https://thuisbatterijgids.net/dsmr-uitgelegd/
 ---
 Op bijna elke slimme meter zit een klein poortje dat de meeste mensen nooit gebruiken: de **P1-poort**. Toch is het een van de handigste onderdelen van je meterkast als je zonnepanelen hebt, of een thuisbatterij overweegt. Via die poort lees je live af wat je huis op dit moment verbruikt en teruglevert. En apparaten zoals een thuisbatterij kunnen er hun beslissingen op baseren.
@@ -69,7 +69,7 @@ Een **energiemanagementsysteem (EMS)** gaat nog een stap verder. Het gebruikt de
 
 ### 4. Slim omgaan met een dynamisch contract
 
-Met een dynamisch contract verandert je stroomprijs per uur. Een app of EMS dat je live verbruik kent, kan apparaten en je batterij laten draaien als stroom goedkoop is. Meer daarover in [dynamisch contract en batterij](/artikel-dynamisch-contract-en-batterij).
+Met een dynamisch contract verandert je stroomprijs per uur of per kwartier. Een app of EMS dat je live verbruik kent, kan apparaten en je batterij laten draaien als stroom goedkoop is. Meer daarover in [dynamisch contract en batterij](/artikel-dynamisch-contract-en-batterij).
 
 ### 5. Je aansluiting bewaken
 

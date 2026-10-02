@@ -1,6 +1,6 @@
 # Redactie: elke dag één artikel op voltwijk.nl
 
-Dit is de vaste werkwijze voor de dagelijkse blog. Volg hem stap voor stap. Doel: bovenaan Google komen op onderwerpen waar Voltwijk-klanten naar zoeken, en die lezers laten doorklikken naar "Bereken je prijs & plan direct".
+Dit is de vaste werkwijze voor de dagelijkse blog. Volg hem stap voor stap. Doel: bovenaan Google komen op onderwerpen waar Voltwijk-klanten naar zoeken, en die lezers laten doorklikken naar een geldige vervolgstap: "Bereken welke thuisbatterij past" (/thuisbatterij-berekenen), "Vraag een offerte aan" of "Plan een gratis adviesgesprek" (/contact).
 
 ## 1. Onderwerp kiezen (max. 10 minuten)
 
@@ -24,7 +24,8 @@ Voorkeur (wat het snelst in Google scoort voor een jonge site):
 - **Een feit komt alleen in het artikel als minstens twee onafhankelijke bronnen het bevestigen, of één officiële bron.** Anders laat je het weg of schrijf je het algemeen ("de vergoeding verschilt per leverancier").
 - Veel sites zijn via WebFetch niet bereikbaar; dan gelden de zoekresultaten van meerdere bronnen als bevestiging.
 - Verzin nooit cijfers, reviews, klantverhalen, citaten of statistieken over Voltwijk. Toegestaan over Voltwijk: 12.500+ installaties, 4,7/5 op Google, eigen monteurs, vaste prijs inclusief installatie, 2 jaar garantie op de installatie, gevestigd in Zevenbergen.
-- Prijzen van Voltwijk komen uit de calculator: thuisbatterij vanaf € 4.200 (10 kWh; 16 kWh 1-fase € 4.600, 16 kWh 3-fase € 5.700), zonnepanelen vanaf € 3.999, warmtepomp vanaf € 6.750, airco vanaf € 1.899, boiler vanaf € 1.199, laadpaal vanaf € 1.299, meterkast vanaf € 649. Noem geen andere Voltwijk-prijzen.
+- Niet toegestaan over Voltwijk (verzin dit ook niet): installatietermijnen ("binnen één dag", "2 tot 3 weken"), betaalvoorwaarden ("je betaalt pas als…"), "gecertificeerde monteurs", "kosteloos doorrekenen", "we checken gratis", andere garanties dan 2 jaar op de installatie (fabrieksgarantie alleen als "fabrieksgarantie" benoemd), financiering of maandbedragen, "landelijk" of "in heel Nederland". ISDE: "we helpen je met de ISDE-aanvraag; die doe je na de installatie bij RVO" (niet: "direct verrekend").
+- Prijzen van Voltwijk komen uit de calculator: thuisbatterij vanaf € 4.200 excl. btw, inclusief installatie (10 kWh; 16 kWh 1-fase € 4.600, 16 kWh 3-fase € 5.700, ook excl. btw). Zet bij een batterijprijs van Voltwijk altijd "excl. btw" erbij. zonnepanelen vanaf € 3.999, warmtepomp vanaf € 6.750, airco vanaf € 1.899, boiler vanaf € 1.199, laadpaal vanaf € 1.299, meterkast vanaf € 649. Noem geen andere Voltwijk-prijzen.
 - Noem de namen "Voltier" en "Zonne-installaties Noord" nooit.
 - Geen negatieve uitspraken over concurrenten. Merken van apparaten neutraal noemen.
 
@@ -56,7 +57,7 @@ Regels:
 - Minstens één tabel of stappenlijst als dat logisch is.
 - 3–5 interne links naar bestaande artikelen of productpagina's (`/product-batterij` enz.). Alleen pagina's die bestaan.
 - 4–6 FAQ's met de vragen die mensen echt stellen (kijk bij "Mensen vragen ook" in de zoekresultaten).
-- Eindig met één korte alinea over hoe Voltwijk helpt (geen harde verkoop). De knop "Bereken je prijs & plan direct" komt er automatisch onder.
+- Eindig met één korte alinea over hoe Voltwijk helpt (geen harde verkoop). De afsluitende knop ("Plan gratis adviesgesprek" of, bij thuisbatterij-artikelen, de batterijcalculator) komt er automatisch onder. Verwijs in de tekst alleen naar deze geldige vervolgstappen: "Bereken welke thuisbatterij past" (/thuisbatterij-berekenen), "Vraag een offerte aan" of "Plan een gratis adviesgesprek" (/contact). Niet: "Bereken hieronder je prijs" of "zie je direct je prijs" — die flow bestaat niet.
 - `sources` is verplicht bij Nieuws en sterk aangeraden bij alle andere artikelen.
 
 ## 4. Bouwen en controleren

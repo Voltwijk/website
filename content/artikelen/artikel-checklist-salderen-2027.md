@@ -106,7 +106,7 @@ Begin bij de maatregelen die weinig kosten. Pas als je daarna nog veel terugleve
 
 ## Hoe Voltwijk helpt
 
-Wil je weten wat het einde van salderen voor jouw huis betekent? Onze eigen monteurs kijken met je naar je opwek, je verbruik en je plannen, en geven een eerlijk advies. Soms is dat een boiler of slimme laadpaal, soms een [thuisbatterij](/product-batterij), en soms gewoon: nog even niets doen. Bereken hieronder vrijblijvend je prijs.
+Wil je weten wat het einde van salderen voor jouw huis betekent? Onze eigen monteurs kijken met je naar je opwek, je verbruik en je plannen, en geven een eerlijk advies. Soms is dat een boiler of slimme laadpaal, soms een [thuisbatterij](/product-batterij), en soms gewoon: nog even niets doen. Met de [batterijcalculator](/thuisbatterij-berekenen) zie je welke thuisbatterij past, of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Wanneer stopt de salderingsregeling precies?

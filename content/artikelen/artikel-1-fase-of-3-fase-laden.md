@@ -85,7 +85,7 @@ Eerlijk gezegd: voor veel huishoudens is 1-fase genoeg. De meeste auto's staan '
 
 ## De relatie met je aansluiting
 
-Een 3-fase laadpaal op een 1-fase aansluiting gaat niet: dan laadt hij hooguit op één fase. Wil je echt 3-fase laden, dan heb je een 3-fase aansluiting nodig.
+Een 3-fase laadpaal werkt ook op een 1-fase aansluiting, maar laadt dan maar op één fase en dus langzamer: rond de 3,7 kW (bij 16 A). Wil je echt 3-fase laden, dan heb je een 3-fase aansluiting nodig.
 
 Die aanvraag loopt via je netbeheerder (bijvoorbeeld Enexis, Stedin of Liander). Daar horen eenmalige kosten bij en soms een hoger vast netbeheertarief. Door netcongestie kan het in sommige regio's langer duren. Hoe dat werkt, lees je in [3-fase aansluiting aanvragen](/artikel-3-fase-aansluiting-aanvragen). Over het vaste tarief lees je meer in [capaciteitstarief en meterkast](/artikel-capaciteitstarief-en-meterkast).
 

@@ -100,7 +100,7 @@ De plek van de buitenunit is maar één onderdeel. Minstens zo belangrijk zijn j
 
 ## Hoe Voltwijk helpt
 
-Voltwijk plaatst lucht/water-warmtepompen met eigen monteurs, vanaf € 6.750 en met verrekening van de ISDE-subsidie. We kijken vooraf samen naar een goede plek voor de buitenunit en naar de geluidseis op je erfgrens. Meer informatie vind je op de pagina over de [warmtepomp](/product-warmtepomp).
+Voltwijk plaatst lucht/water-warmtepompen met eigen monteurs, vanaf € 6.750, en helpt je met de ISDE-aanvraag die je na de installatie bij RVO doet. We kijken vooraf samen naar een goede plek voor de buitenunit en naar de geluidseis op je erfgrens. Meer informatie vind je op de pagina over de [warmtepomp](/product-warmtepomp).
 
 faq:
 Q: Heb ik een vergunning nodig voor een warmtepomp buitenunit?

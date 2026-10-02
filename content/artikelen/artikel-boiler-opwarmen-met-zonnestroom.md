@@ -32,7 +32,7 @@ Rekenvoorbeeld, met als aannames een boiler van 200 liter en koud water van 10 Â
 
 Een volledig opgewarmde boiler bevat dus al snel evenveel energie als een flinke thuisbatterij, voor een fractie van de prijs. Een boiler kan alleen niets terugleveren: de energie komt er alleen als warm water uit.
 
-> Een boiler verliest ook als hij niet gebruikt wordt een beetje warmte. Warm hem daarom op op de dag dat je het water gebruikt, niet dagen van tevoren.
+> Een boiler verliest ook als hij niet gebruikt wordt een beetje warmte. Warm hem daarom op dezelfde dag op waarop je het water gebruikt, niet dagen van tevoren.
 
 ## Stap 1: de boiler rond het middaguur laten opwarmen
 

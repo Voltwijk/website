@@ -44,7 +44,7 @@ Alle regels staan uitgebreid in [airco plaatsen: heb je een vergunning nodig?](/
 
 ### Hoe zit het met geluid en de buren?
 
-Ook als je geen vergunning nodig hebt, gelden er geluidsregels. Een buitenunit mag op de erfgrens met de buren **'s avonds en 's nachts maximaal 40 dB(A)** geven. Overdag ligt de grens iets hoger.
+Ook als je geen vergunning nodig hebt, gelden er geluidsregels. Een buitenunit mag op de erfgrens met de buren **'s avonds en 's nachts maximaal 40 dB(A)** geven. Overdag mag 45 dB(A), maar alleen als de unit 's avonds en 's nachts in een stillere stand draait; anders geldt de hele dag 40 dB(A).
 
 Een paar tips om het rustig te houden:
 
@@ -121,7 +121,7 @@ A: Bij Voltwijk kost een split-airco vanaf € 1.899, met een vaste prijs inclus
 Q: Heb ik een vergunning nodig voor een airco?
 A: Meestal niet als de buitenunit aan de achterkant van een gewone woning komt. Aan de voorgevel, bij een monument of in een beschermd stadsgezicht vaak wel. In een appartement heb je bijna altijd toestemming van de VvE nodig.
 Q: Hoeveel geluid mag een airco buitenunit maken?
-A: Op de erfgrens met de buren mag een buitenunit 's avonds en 's nachts maximaal 40 dB(A) geven. Overdag ligt de grens iets hoger. Die regel geldt ook als je geen vergunning nodig hebt.
+A: Op de erfgrens met de buren mag een buitenunit 's avonds en 's nachts maximaal 40 dB(A) geven. Overdag mag 45 dB(A), maar alleen als de unit 's nachts in een stillere stand draait; anders geldt de hele dag 40 dB(A). Die regel geldt ook als je geen vergunning nodig hebt.
 Q: Mag ik zelf een split-airco installeren?
 A: Nee. Werk aan het koudemiddelcircuit mag alleen een bedrijf met een F-gassencertificaat (BRL 100) doen, met een gecertificeerde monteur (BRL 200). De ILT controleert daarop.
 Q: Kan ik met een airco mijn huis verwarmen?

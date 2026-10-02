@@ -90,7 +90,7 @@ Hoe dat doorwerkt in de terugverdientijd van je panelen, lees je in [zijn zonnep
 
 ## Hoe Voltwijk helpt
 
-Twijfel je hoe je na 2027 het meeste uit je panelen haalt? Onze eigen monteurs kijken met je naar je opwek, je teruglevering en je verbruik. Soms is een slimme boiler of laadpaal genoeg, soms past een thuisbatterij, en soms hoef je niets te doen. Bereken hieronder vrijblijvend je prijs.
+Twijfel je hoe je na 2027 het meeste uit je panelen haalt? Onze eigen monteurs kijken met je naar je opwek, je teruglevering en je verbruik. Soms is een slimme boiler of laadpaal genoeg, soms past een thuisbatterij, en soms hoef je niets te doen. Met de [batterijcalculator](/thuisbatterij-berekenen) zie je welke thuisbatterij past, of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Wat is de terugleververgoeding vanaf 2027?

@@ -75,7 +75,7 @@ Vanaf 1 januari 2027 stopt het salderen. Teruggeleverde stroom levert dan minder
 
 Technisch kan het, maar het is meestal **niet slim**:
 
-- **Het formaat klopt niet.** Een thuisbatterij heeft vaak 5 tot 10 kWh. De accu van een elektrische auto is vele malen groter. Een volle thuisbatterij is dus maar een klein deel van een autoaccu.
+- **Het formaat klopt niet.** Een thuisbatterij heeft een capaciteit van zo'n 10 tot 16 kWh (de pakketten van Voltwijk zijn 10 of 16 kWh). De accu van een elektrische auto is meestal vele malen groter. Een volle thuisbatterij is dus maar een klein deel van een autoaccu.
 - **Het vermogen is beperkt.** Een thuisbatterij levert vaak een paar kW, vaak minder dan wat een laadpaal op 3-fase vraagt.
 - **Je verliest energie.** Bij opslaan en weer afgeven gaat telkens een deel verloren.
 - **De batterij slijt sneller** zonder dat het veel oplevert.

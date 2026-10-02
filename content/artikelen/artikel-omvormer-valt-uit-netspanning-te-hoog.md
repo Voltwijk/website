@@ -109,4 +109,4 @@ A: Nee. De grenswaarden liggen vast in de netcode en netbeheerders geven geen to
 Q: Waar meld ik dat mijn omvormer uitvalt door te hoge spanning?
 A: Bij je netbeheerder. Enexis heeft een meldformulier, bij Stedin meld je via Mijn Stedin en Liander heeft een pagina over spanningsproblemen. Laat eerst je installateur controleren of je eigen installatie in orde is.
 Q: Helpt een thuisbatterij tegen een uitvallende omvormer?
-A: Het kan helpen. Een batterij slaat stroom overdag op, waardoor je minder terugleveert op het drukste moment. Het probleem in de wijk lost een batterij niet op.
+A: Het kan helpen. Een batterij slaat stroom overdag op, waardoor je minder teruglevert op het drukste moment. Het probleem in de wijk lost een batterij niet op.

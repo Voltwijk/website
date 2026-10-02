@@ -101,7 +101,7 @@ Een stappenplan voor een ouder huis:
 
 ## Hoe Voltwijk helpt
 
-Voltwijk installeert lucht/water-warmtepompen met een COP van 4,7, vanaf € 6.750, en verrekent de ISDE-subsidie. Onze eigen monteurs kijken eerlijk met je mee of je huis al klaar is of dat een tussenstap slimmer is. Bekijk de [warmtepomp](/product-warmtepomp) of [plan een gratis adviesgesprek](/contact).
+Voltwijk installeert lucht/water-warmtepompen met een COP van 4,7, vanaf € 6.750. We helpen je met de ISDE-aanvraag; die doe je na de installatie bij RVO. Onze eigen monteurs kijken eerlijk met je mee of je huis al klaar is of dat een tussenstap slimmer is. Bekijk de [warmtepomp](/product-warmtepomp) of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Kan een warmtepomp in een jaren 30-woning?
@@ -109,6 +109,6 @@ A: Vaak wel, maar meestal pas na extra isolatie of met een hybride warmtepomp al
 Q: Moet ik al mijn radiatoren vervangen voor een warmtepomp?
 A: Meestal niet. Vaak zijn de meeste radiatoren groot genoeg en gaat het om een paar kamers waar een grotere radiator of een radiatorventilator nodig is.
 Q: Welk energielabel heb je nodig voor een warmtepomp?
-A: Er is geen verplicht label. Als indicatie zijn huizen met label C of beter vaak geschikt, terwijl bij label D of lager meestal eerst extra isolatie nodig is.
+A: Er is geen verplicht label. Als indicatie zijn huizen met label A of B vaak geschikt voor een volledige warmtepomp. Bij label C of lager is meestal eerst extra isolatie nodig, of is een hybride warmtepomp een logische tussenstap.
 Q: Is een hybride warmtepomp slim in een oud huis?
 A: Vaak wel. Hij bespaart al veel gas, terwijl de cv-ketel bijspringt op koude dagen. Zo kun je rustig verder isoleren en later eventueel overstappen op volledig elektrisch.

@@ -46,7 +46,7 @@ Netbeheerders investeren fors in nieuwe kabels, stations en aansluitingen. Het s
 
 ## Wat zijn netbeheerkosten eigenlijk?
 
-Netbeheerkosten staan apart op je energierekening, maar je betaalt ze via je energieleverancier. Voor huishoudens is het een **vast bedrag per jaar**. Het hangt af van de grootte van je aansluiting (bijvoorbeeld 1x25A of 3x25A), niet van hoeveel stroom je verbruikt.
+Netbeheerkosten staan apart op je energierekening, maar je betaalt ze via je energieleverancier. Voor huishoudens is het een **vast bedrag per jaar**. Het hangt af van de grootte van je aansluiting (bijvoorbeeld 1x35 A of 3x25 A), niet van hoeveel stroom je verbruikt.
 
 Dat heeft een belangrijk gevolg: **minder verbruiken verlaagt je netbeheerkosten niet.** Zuiniger leven, zonnepanelen of een thuisbatterij helpen dus niet tegen deze stijging. Een grotere aansluiting, zoals 3x35A, kost juist meer per jaar. Hoe dat werkt, lees je in [het capaciteitstarief en je meterkast](/artikel-capaciteitstarief-en-meterkast).
 
@@ -70,7 +70,7 @@ Aan de netbeheerkosten kun je als huishouden weinig veranderen. Aan de rest van 
 
 ## Hoe Voltwijk helpt
 
-Wil je weten wat 2027 voor jouw huis betekent? Onze eigen monteurs kijken met je naar je verbruik, je zonnepanelen en je aansluiting, en geven een eerlijk advies. Soms is dat een slimme boiler of laadpaal, soms een thuisbatterij, en soms is je huidige situatie al prima. Bereken hieronder vrijblijvend je prijs.
+Wil je weten wat 2027 voor jouw huis betekent? Onze eigen monteurs kijken met je naar je verbruik, je zonnepanelen en je aansluiting, en geven een eerlijk advies. Soms is dat een slimme boiler of laadpaal, soms een thuisbatterij, en soms is je huidige situatie al prima. Met de [batterijcalculator](/thuisbatterij-berekenen) zie je welke thuisbatterij past, of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Stijgt de energiebelasting in 2027?

@@ -58,7 +58,7 @@ Bij een **laadpaal** is volgens NEN 1010 bescherming tegen DC-lekstromen nodig. 
 
 ## Hoeveel groepen per aardlekschakelaar?
 
-In veel groepenkasten beschermt één aardlekschakelaar een aantal groepen. De gangbare regel onder NEN 1010 is: **maximaal vier groepen per aardlekschakelaar**.
+In veel groepenkasten beschermt één aardlekschakelaar een aantal groepen. Veel mensen kennen de regel **maximaal vier groepen per aardlekschakelaar**. Die stond in oudere versies van NEN 1010; in de huidige norm is het geen harde grens meer. Het gaat om de totale **lekstroom**: elk apparaat lekt een klein beetje stroom weg, en tel je te veel groepen bij elkaar op, dan kan de aardlekschakelaar onterecht afslaan. Meer daarover lees je in [groep bijplaatsen in de meterkast](/artikel-groepen-bijplaatsen-meterkast).
 
 Daarnaast is het verstandig om groepen slim te verdelen over meerdere aardlekschakelaars. Bijvoorbeeld zodat niet alle verlichting of de koelkast en vriezer op dezelfde aardlekschakelaar zitten. Valt er één uit, dan zit je niet in het donker en blijft je vriezer koel.
 
@@ -105,6 +105,6 @@ A: Een groep is een stroomkring met een eigen beveiliging tegen overbelasting en
 Q: Heb ik een aardlekschakelaar type B nodig?
 A: Bij een laadpaal is bescherming tegen DC-lekstromen nodig: een type B, of een type A in combinatie met 6 mA DC-detectie in de laadpaal. Voor gewone groepen is type A de standaard.
 Q: Hoeveel groepen mogen op één aardlekschakelaar?
-A: De gangbare regel onder NEN 1010 is maximaal vier groepen per aardlekschakelaar. Met aardlekautomaten heeft elke groep zijn eigen aardlekbeveiliging.
+A: Vroeger gold maximaal vier. In de huidige NEN 1010 is dat geen vaste grens meer: de totale lekstroom van de aangesloten groepen bepaalt hoeveel er op één aardlekschakelaar kunnen. Met aardlekautomaten heeft elke groep zijn eigen aardlekbeveiliging.
 Q: Waarom slaat mijn aardlekschakelaar steeds af?
 A: Vaak door een defect apparaat of vocht, soms door een overbelaste of verouderde installatie. Haal apparaten een voor een uit het stopcontact om de oorzaak te vinden, en schakel een installateur in als het blijft gebeuren.
