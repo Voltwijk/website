@@ -122,7 +122,7 @@ De rook van een brandende lithium-batterij is giftig. Houd daarom afstand, ook a
 
 ## Hoe Voltwijk helpt
 
-Onze eigen monteurs installeren de thuisbatterij volgens NEN 1010, op een eigen groep met de juiste beveiliging. Vooraf kijken we samen met jou naar de veiligste plek in huis. Onze thuisbatterij is er in 10 en 16 kWh met een hybride omvormer, vanaf € 4.200 inclusief installatie. Bekijk de specificaties op de pagina over de [thuisbatterij](/product-batterij).
+Onze eigen monteurs installeren de thuisbatterij volgens NEN 1010, op een eigen groep met de juiste beveiliging. Vooraf kijken we samen met jou naar de veiligste plek in huis. Onze thuisbatterij is er in 10 en 16 kWh met een hybride omvormer, vanaf € 4.200 excl. btw, inclusief installatie. Bekijk de specificaties op de pagina over de [thuisbatterij](/product-batterij).
 
 faq:
 Q: Is een thuisbatterij brandgevaarlijk?

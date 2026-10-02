@@ -115,7 +115,7 @@ Controleer na afloop op een zonnige dag of de opbrengst weer klopt met wat je ge
 
 ## Hoe Voltwijk helpt
 
-Denk je bij het vervangen van je omvormer ook na over een thuisbatterij of extra panelen? Onze eigen monteurs kijken met je mee naar wat bij je installatie en je verbruik past. De thuisbatterij van Voltwijk is er in 10 en 16 kWh, met een hybride omvormer die je oude omvormer vaak meteen vervangt, vanaf € 4.200 inclusief installatie. Kijk op de pagina over de [thuisbatterij](/product-batterij) of over [zonnepanelen](/product-zonnepanelen).
+Denk je bij het vervangen van je omvormer ook na over een thuisbatterij of extra panelen? Onze eigen monteurs kijken met je mee naar wat bij je installatie en je verbruik past. De thuisbatterij van Voltwijk is er in 10 en 16 kWh, met een hybride omvormer die je oude omvormer vaak meteen vervangt, vanaf € 4.200 excl. btw, inclusief installatie. Kijk op de pagina over de [thuisbatterij](/product-batterij) of over [zonnepanelen](/product-zonnepanelen).
 
 faq:
 Q: Hoe weet ik of mijn omvormer kapot is?

@@ -96,7 +96,7 @@ Let wel: een batterij die 's ochtends al vol is, kan 's middags niets meer opvan
 
 ## Hoe Voltwijk helpt
 
-Voltwijk kiest je energiecontract niet voor je, maar kan wel helpen om meer van je eigen zonnestroom te gebruiken. Onze eigen monteurs plaatsen een thuisbatterij van 10 kWh met een hybride omvormer van 5 kW (€ 4.200), 16 kWh met 6 kW 1-fase (€ 4.600) of 16 kWh met 8 kW 3-fase (€ 5.700), inclusief installatie. Met de [batterijcalculator](/thuisbatterij-berekenen) zie je in een minuut welke maat bij je verbruik en je zonnepanelen past.
+Voltwijk kiest je energiecontract niet voor je, maar kan wel helpen om meer van je eigen zonnestroom te gebruiken. Onze eigen monteurs plaatsen een thuisbatterij van 10 kWh met een hybride omvormer van 5 kW (€ 4.200), 16 kWh met 6 kW 1-fase (€ 4.600) of 16 kWh met 8 kW 3-fase (€ 5.700), excl. btw en inclusief installatie. Met de [batterijcalculator](/thuisbatterij-berekenen) zie je in een minuut welke maat bij je verbruik en je zonnepanelen past.
 
 faq:
 Q: Wat betekent een negatieve stroomprijs?

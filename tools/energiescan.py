@@ -11,7 +11,7 @@ SHELL = 'artikel-isde-subsidie-2026.html'
 MAX = 60
 # Zet op True zodra het Cal.com-afspraaktype cal.com/voltwijk/energiescan bestaat: bezoekers kiezen dan zelf direct hun moment.
 CAL = True
-DATES = '26 t/m 31 oktober'
+DATES = '26 t/m 31 oktober 2026'
 DAYS = ['Maandag 26 oktober', 'Dinsdag 27 oktober', 'Woensdag 28 oktober', 'Donderdag 29 oktober', 'Vrijdag 30 oktober', 'Zaterdag 31 oktober']
 KERNEN = ['Zevenbergen', 'Klundert', 'Fijnaart', 'Willemstad', 'Moerdijk', 'Zevenbergschen Hoek', 'Standdaarbuiten',
           'Noordhoek', 'Langeweg', 'Heijningen', 'Helwijk', 'Oudemolen']
@@ -214,8 +214,8 @@ BAND = '''<!-- scan:start --><a href="/energiescan" class="vw-scanband" style="d
 def main():
     shell = open(SHELL, encoding='utf-8').read()
     open('energiescan.html', 'w', encoding='utf-8').write(page(shell, main_html(), 'energiescan',
-        'Gratis Energiescanweek Moerdijk (26–31 okt) | Voltwijk',
-        'Van 26 t/m 31 oktober komen we gratis bij je langs in de gemeente Moerdijk: meterkast, dak en salderen 2027, met persoonlijk adviesrapport. Maximaal 60 huishoudens.'))
+        'Gratis Energiescanweek Moerdijk (26–31 okt 2026) | Voltwijk',
+        'Van 26 t/m 31 oktober 2026 komen we gratis bij je langs in de gemeente Moerdijk: meterkast, dak en salderen 2027, met persoonlijk adviesrapport. Maximaal 60 huishoudens.'))
     open('energiescan-bedankt.html', 'w', encoding='utf-8').write(page(shell, thanks_html(), 'energiescan-bedankt',
         'Aanmelding ontvangen | Voltwijk', 'Je aanmelding voor de Gratis Energiescanweek Moerdijk is ontvangen.', noindex=True))
     s = open('index.html', encoding='utf-8').read()

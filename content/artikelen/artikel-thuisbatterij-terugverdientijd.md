@@ -99,7 +99,7 @@ Een terugverdientijd van 12 jaar heeft alleen zin als de batterij het zo lang vo
 
 ## Hoe Voltwijk kan helpen
 
-De thuisbatterij van Voltwijk is er in 10 en 16 kWh, met een hybride omvormer van 5, 6 of 8 kW, vanaf € 4.200 inclusief installatie. Met de [batterijcalculator](/thuisbatterij-berekenen) zie je welke bij je verbruik past. Onze monteurs rekenen graag met jouw eigen verbruik, zodat je weet waar je aan toe bent. Bekijk de [thuisbatterij](/product-batterij) of [bereken welke thuisbatterij past](/thuisbatterij-berekenen).
+De thuisbatterij van Voltwijk is er in 10 en 16 kWh, met een hybride omvormer van 5, 6 of 8 kW, vanaf € 4.200 excl. btw, inclusief installatie. Met de [batterijcalculator](/thuisbatterij-berekenen) zie je welke bij je verbruik past. Onze monteurs rekenen graag met jouw eigen verbruik, zodat je weet waar je aan toe bent. Bekijk de [thuisbatterij](/product-batterij) of [bereken welke thuisbatterij past](/thuisbatterij-berekenen).
 
 faq:
 Q: Wat is de terugverdientijd van een thuisbatterij?
