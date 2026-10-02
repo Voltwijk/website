@@ -40,7 +40,7 @@ for f in sorted(glob.glob('*.html')):
     s = open(f, encoding='utf-8').read(); o = s
     if '<div id="vwCookie"' not in s: continue
     s = re.sub(r'(<div id="vwCookie"[^>]*>).*?(\n  </div>)', lambda m: m.group(1).replace('aria-label="Cookies"', 'aria-modal="true" aria-labelledby="vwCookieT"') + INNER.rstrip() + m.group(2), s, count=1, flags=re.S)
-    s = re.sub(r'\n?<!-- vw-cookie:start -->.*?<!-- vw-cookie:end -->', '', s, flags=re.S)
-    s = s.replace('</head>', STYLE + '\n</head>', 1)
+    s = re.sub(r'<!-- vw-cookie:start -->.*?<!-- vw-cookie:end -->\n', '', s, flags=re.S)
+    s = s.replace('  <div id="vwCookie"', STYLE + '\n  <div id="vwCookie"', 1)
     if s != o: open(f, 'w', encoding='utf-8').write(s); n += 1
 print('cookie.py: cookiemelding bijgewerkt op', n, "pagina's")

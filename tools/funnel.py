@@ -651,8 +651,10 @@ def patch(f, s):
     if f in ANDERS: s = s.replace('href="#calculator"', 'href="#offerte"')
     s = re.sub(r'href="/(product-[a-z]+)#calculator"', lambda m: f'href="/{m.group(1)}#offerte"' if m.group(1) + '.html' in ANDERS else f'href="{URL}"', s)
     s = s.replace('bereken: "/bereken-je-prijs"', 'bereken: "' + URL + '"')
-    s = s.replace("title:'Besparingscheck', desc:'Vul je postcode en woningtype in en zie binnen een minuut een eerste inschatting van je vaste prijs en besparing — nog voordat je ergens voor kiest.', cta:{label:'Check je besparing'",
-                  "title:'Bereken je thuisbatterij', desc:'Beantwoord zes korte vragen en zie binnen een minuut welke thuisbatterij past, wat hij kost en wat je ongeveer bespaart. Je zit nergens aan vast.', cta:{label:'Bereken je thuisbatterij'")
+    s = s.replace("title:'Besparingscheck', desc:'Vul je postcode en woningtype in en zie binnen een minuut een eerste inschatting van je vaste prijs en besparing — nog voordat je ergens voor kiest.', cta:{label:'Check je besparing', href: VW_URLS.bereken}",
+                  "title:'Bereken of vraag aan', desc:'Bereken online in 1 minuut welke thuisbatterij bij je past, of vraag een offerte aan voor zonnepanelen, een warmtepomp of een ander product. Je zit nergens aan vast.', cta:{label:'Bekijk onze producten', href: '/producten'}")
+    s = s.replace("title:'Bereken je thuisbatterij', desc:'Beantwoord zes korte vragen en zie binnen een minuut welke thuisbatterij past, wat hij kost en wat je ongeveer bespaart. Je zit nergens aan vast.', cta:{label:'Bereken je thuisbatterij', href: VW_URLS.bereken}",
+                  "title:'Bereken of vraag aan', desc:'Bereken online in 1 minuut welke thuisbatterij bij je past, of vraag een offerte aan voor zonnepanelen, een warmtepomp of een ander product. Je zit nergens aan vast.', cta:{label:'Bekijk onze producten', href: '/producten'}")
     if f not in ANDERS and f != 'index.html': s = s.replace('href="#calculator"', f'href="{URL}"')
     # knoppen en menu
     s = s.replace('>BEREKEN JE PRIJS<', '>THUISBATTERIJ BEREKENEN<')
