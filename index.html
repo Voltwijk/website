@@ -92,6 +92,8 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
   .blk-mesh .btn-secondary:hover{background:rgba(255,255,255,.35);}
   .blk-offwhite{background:var(--surface-tint);}
   .blk-light{background:linear-gradient(180deg, #FAFCFB, var(--surface));}
+  .blk-warm{background:linear-gradient(160deg,#FCF9F4 0%,#F5EADB 100%);border-radius:40px 40px 0 0;color:var(--ink);}
+  .blk-warm p{color:var(--warm-text);}
   .blk-tint{background:linear-gradient(180deg, #EEF6F5, #F5FAF9);border-radius:40px 40px 0 0;color:var(--ink);}
   /* POP-OVERLAP — vaste (niet scroll-gekoppelde) kaart-overlap: Producten ligt permanent over de Intro heen.
      position:sticky is hier bewust NIET gebruikt: in combinatie met de sticky navbar op deze pagina
@@ -389,12 +391,12 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
 .hm-why div{background:#fff;border:1px solid var(--border);border-radius:20px;padding:22px;}
 .hm-why b{display:block;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:21px;color:var(--ink);}
 .hm-why span{display:block;font-size:14.5px;color:var(--ink-soft);margin-top:6px;line-height:1.55;}
-.hm-end{background:var(--surface-tint);color:var(--ink);}
+.hm-end{background:#fff;color:var(--ink);}
 .hm-end .box{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:36px;align-items:center;}
 .hm-end h2{color:var(--ink);font-size:clamp(28px,3.6vw,40px);}
 .hm-end p{color:var(--ink-soft);font-size:16px;margin-top:12px;line-height:1.6;max-width:520px;}
 .hm-end .acts{display:grid;gap:10px;}
-.hm-end .acts a{display:flex;align-items:center;justify-content:space-between;gap:12px;background:#fff;border:1px solid var(--border);border-radius:16px;padding:16px 18px;color:var(--ink);text-decoration:none;font-weight:800;font-size:15px;}
+.hm-end .acts a{box-shadow:0 14px 30px -24px rgba(16,32,31,.4);display:flex;align-items:center;justify-content:space-between;gap:12px;background:#fff;border:1px solid var(--border);border-radius:16px;padding:16px 18px;color:var(--ink);text-decoration:none;font-weight:800;font-size:15px;}
 .hm-end .acts a span{font-weight:600;font-size:13px;color:var(--ink-faint);}
 .hm-end .acts a.pri{background:var(--primary);color:#fff;border-color:var(--primary);}
 .hm-end .acts a.pri span{color:#CFE9E5;}
@@ -518,12 +520,90 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
   </div>
   </div>
   <div class="blk-light">
+  <!-- SPECIFICATIES — scroll door de producten; de kaart links wisselt mee -->
+  <div class="wrap reveal" style="padding-top:88px;padding-bottom:88px;position:relative;">
+    <div class="pill">Specificaties</div>
+    <h2 style="font-size:40px;margin-top:16px;position:relative;">Elk product, tot in detail</h2>
+    <p style="font-size:15px;margin-top:8px;max-width:520px;">Scroll door onze producten en bekijk direct het vermogen, rendement en garantie.</p>
+
+    <div class="spec-scroll">
+      <a class="spec-sticky" id="specLink" href="/product-batterij" style="display:block;text-decoration:none;color:inherit;">
+        <div class="spec-image-box">
+          <img loading="lazy" decoding="async" id="specImg" src="/images/thumb-batterij.webp" alt="" style="transform:scale(1)">
+        </div>
+        <div style="margin-top:18px;display:flex;align-items:baseline;justify-content:space-between;gap:12px;">
+          <div id="specTitle" class="vw-heading" style="font-size:19px;">Thuisbatterij</div>
+          <div id="specPrice" style="font-size:14px;color:var(--ink-soft);white-space:nowrap;">vanaf € 4.200</div>
+        </div>
+        <div class="spec-more">Bekijk product <span aria-hidden="true">→</span></div>
+      </a>
+
+      <div class="spec-list">
+        <div class="spec-item is-active" data-slug="batterij" data-title="Thuisbatterij" data-price="vanaf € 4.200">
+          <a href="/product-batterij" class="vw-heading spec-item-title" style="font-size:22px;">Thuisbatterij <span aria-hidden="true">→</span></a>
+          <div class="spec-rows">
+            <div class="spec-row"><span>Capaciteit</span><span>10 of 16 kWh</span></div>
+            <div class="spec-row"><span>Omvormer</span><span>5, 6 of 8 kW hybride</span></div>
+            <div class="spec-row"><span>Garantie</span><span>10 jaar</span></div>
+            <div class="spec-row"><span>Aansluiting</span><span>1-fase of 3-fase</span></div>
+          </div>
+        </div>
+        <div class="spec-item" data-slug="zonnepanelen" data-title="Zonnepanelen" data-price="vanaf € 3.999">
+          <a href="/product-zonnepanelen" class="vw-heading spec-item-title" style="font-size:22px;">Zonnepanelen <span aria-hidden="true">→</span></a>
+          <div class="spec-rows">
+            <div class="spec-row"><span>Vermogen per paneel</span><span>440 Wp</span></div>
+            <div class="spec-row"><span>Rendement</span><span>22,8%</span></div>
+            <div class="spec-row"><span>Type</span><span>Full-black mono</span></div>
+            <div class="spec-row"><span>Garantie</span><span>25 jaar</span></div>
+          </div>
+        </div>
+        <div class="spec-item" data-slug="warmtepomp" data-title="Warmtepomp" data-price="vanaf € 6.750">
+          <a href="/product-warmtepomp" class="vw-heading spec-item-title" style="font-size:22px;">Warmtepomp <span aria-hidden="true">→</span></a>
+          <div class="spec-rows">
+            <div class="spec-row"><span>Type</span><span>Lucht/water monoblock</span></div>
+            <div class="spec-row"><span>Vermogen (A7/W35)</span><span>6 kW</span></div>
+            <div class="spec-row"><span>COP (A7/W35)</span><span>4,7</span></div>
+            <div class="spec-row"><span>Geluidsniveau</span><span>34 dB(A)</span></div>
+          </div>
+        </div>
+        <div class="spec-item" data-slug="airco" data-title="Airconditioning" data-price="vanaf € 1.899">
+          <a href="/product-airco" class="vw-heading spec-item-title" style="font-size:22px;">Airconditioning <span aria-hidden="true">→</span></a>
+          <div class="spec-rows">
+            <div class="spec-row"><span>Type</span><span>Split-unit</span></div>
+            <div class="spec-row"><span>Koelvermogen</span><span>3,5 kW</span></div>
+            <div class="spec-row"><span>Verwarmingsvermogen</span><span>4,0 kW</span></div>
+            <div class="spec-row"><span>Energielabel</span><span>A+++</span></div>
+          </div>
+        </div>
+        <div class="spec-item" data-slug="boiler" data-title="Elektrische boiler" data-price="vanaf € 1.199">
+          <a href="/product-boiler" class="vw-heading spec-item-title" style="font-size:22px;">Elektrische boiler <span aria-hidden="true">→</span></a>
+          <div class="spec-rows">
+            <div class="spec-row"><span>Inhoud</span><span>200 liter</span></div>
+            <div class="spec-row"><span>COP</span><span>3,1</span></div>
+            <div class="spec-row"><span>Energielabel</span><span>A+</span></div>
+            <div class="spec-row"><span>Aansluiting</span><span>230V</span></div>
+          </div>
+        </div>
+        <div class="spec-item" data-slug="laadpaal" data-title="Laadpaal" data-price="vanaf € 1.299">
+          <a href="/product-laadpaal" class="vw-heading spec-item-title" style="font-size:22px;">Laadpaal <span aria-hidden="true">→</span></a>
+          <div class="spec-rows">
+            <div class="spec-row"><span>Laadvermogen</span><span>11 kW</span></div>
+            <div class="spec-row"><span>Connector</span><span>Type 2</span></div>
+            <div class="spec-row"><span>Connectiviteit</span><span>4G / wifi</span></div>
+            <div class="spec-row"><span>Garantie</span><span>5 jaar</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="blk-warm">
   <!-- REVIEWS — onder Contact, samengevoegd tot één doorlopend wit blok (voorkomt wit naast wit) -->
   <div class="wrap reveal" style="padding-top:88px;padding-bottom:88px;position:relative;">
     <h2 style="font-size:46px;text-align:center;position:relative;">Wat klanten zeggen</h2>
     <p style="text-align:center;font-size:16px;margin-top:12px;max-width:460px;margin-left:auto;margin-right:auto;">Geen gekochte reviews — gewoon onze klanten, in hun eigen woorden.</p>
     <div id="reviewsGrid" style="margin-top:44px;display:grid;grid-template-columns:1.35fr 1fr;grid-template-rows:1fr 1fr;gap:20px;">
-      <div class="card tilt-card" style="grid-row:1 / 3;padding:0;background:var(--surface-tint);border:none;overflow:hidden;">
+      <div class="card tilt-card" style="grid-row:1 / 3;padding:0;background:#fff;border:none;overflow:hidden;">
         <video controls preload="none" poster="videos/review-6-poster.webp" style="width:100%;aspect-ratio:4/3;display:block;background:var(--dark);object-fit:cover;">
           <source src="videos/review-6.mp4" type="video/mp4">
         </video>
@@ -532,7 +612,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
           <div style="font-size:15px;color:var(--ink);font-weight:700;margin-top:8px;">Bijma</div><div style="font-size:12.5px;color:var(--ink-faint);margin-top:4px;">Klant van Voltwijk, in eigen woorden</div>
         </div>
       </div>
-      <div class="card tilt-card" style="padding:0;background:var(--surface-tint);border:none;overflow:hidden;display:flex;">
+      <div class="card tilt-card" style="padding:0;background:#fff;border:none;overflow:hidden;display:flex;">
         <video controls preload="none" poster="videos/review-1-poster.webp" style="width:42%;flex-shrink:0;object-fit:cover;display:block;background:var(--dark);">
           <source src="videos/review-1.mp4" type="video/mp4">
         </video>
@@ -541,7 +621,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
           <div style="font-size:13.5px;color:var(--ink);font-weight:700;margin-top:6px;">Lunshof</div><div style="font-size:12.5px;color:var(--ink-faint);margin-top:4px;">Klant van Voltwijk, in eigen woorden</div>
         </div>
       </div>
-      <div class="card tilt-card" style="padding:0;background:var(--surface-tint);border:none;overflow:hidden;display:flex;">
+      <div class="card tilt-card" style="padding:0;background:#fff;border:none;overflow:hidden;display:flex;">
         <video controls preload="none" poster="videos/review-2-poster.webp" style="width:42%;flex-shrink:0;object-fit:cover;display:block;background:var(--dark);">
           <source src="videos/review-2.mp4" type="video/mp4">
         </video>
@@ -557,26 +637,50 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
     </div>
   </div>
   </div>
-  <!-- KENNISBANK -->
-  <div class="blk-tint">
-  <style>
-  .hm-kb{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:12px 24px;}
-  .hm-kb h2{font-size:clamp(28px,3.4vw,38px);margin-top:12px;}
-  .hm-kb a{font-weight:800;color:var(--primary);text-decoration:none;font-size:15px;}
-  .hm-arts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:28px;}
-  .hm-art{display:flex;flex-direction:column;gap:8px;background:#fff;border:1px solid var(--border);border-radius:20px;padding:22px 22px 20px;text-decoration:none;color:var(--ink);transition:transform .15s,box-shadow .15s;}
-  .hm-art:hover{transform:translateY(-2px);box-shadow:0 18px 36px -24px rgba(16,32,31,.35);}
-  .hm-art span{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--primary);}
-  .hm-art b{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:19px;line-height:1.25;}
-  .hm-art em{font-style:normal;font-size:13.5px;font-weight:800;color:var(--primary);margin-top:auto;padding-top:6px;}
-  @media (max-width:900px){.hm-arts{grid-template-columns:1fr;}}
-  </style>
-  <div class="wrap reveal hm-sec">
-    <div class="hm-kb"><div><div class="pill">Kennisbank</div><h2 class="vw-heading">Eerst zelf je huiswerk doen?</h2></div><a href="/inzichten">Alle artikelen →</a></div>
-    <div class="hm-arts"><a class="hm-art" href="/artikel-salderingsregeling-2027"><span>Salderen</span><b>Salderingsregeling stopt in 2027: wat verandert er?</b><em>Lees verder →</em></a><a class="hm-art" href="/artikel-thuisbatterij-prijs"><span>Thuisbatterij</span><b>Thuisbatterij prijs 2026: kosten en per kWh</b><em>Lees verder →</em></a><a class="hm-art" href="/artikel-thuisbatterij-terugverdientijd"><span>Thuisbatterij</span><b>Thuisbatterij terugverdientijd berekenen</b><em>Lees verder →</em></a></div>
-  </div>
-  </div>
   <div class="blk-light">
+  <!-- NIEUWS & INZICHTEN -->
+  <div id="inzichten" class="wrap reveal" style="padding-top:88px;padding-bottom:88px;">
+    <div class="pill">Actueel</div>
+    <h2 style="font-size:38px;margin-top:16px;">Nieuws &amp; inzichten</h2>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:8px;max-width:480px;">Wat er speelt rond energie, subsidies en verduurzamen — helder uitgelegd, zonder verkooppraatje.</p>
+    <div class="grid-3" style="margin-top:32px;">
+      <a href="/artikel-warmtepomp-sturing" class="card tilt-card" style="padding:0;overflow:hidden;display:block;text-decoration:none;color:inherit;">
+        <div style="aspect-ratio:4/3;overflow:hidden;">
+          <img loading="lazy" decoding="async" src="/images/warmtepomp-app.webp" alt="Man bedient zijn warmtepomp op afstand via zijn telefoon" style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+        <div style="padding:20px 22px 24px;">
+          <div style="font-size:11px;font-weight:700;letter-spacing:.05em;color:var(--primary);text-transform:uppercase;">Warmtepomp</div>
+          <h3 class="vw-heading" style="font-size:16.5px;margin-top:8px;line-height:1.35;">De warmtepomp wordt in 70.000 huishoudens straks extern aangestuurd — moet je dat willen?</h3>
+          <p style="font-size:13px;color:var(--ink-soft);margin-top:10px;line-height:1.55;">Netbeheerders mogen bij drukte op het net warmtepompen tijdelijk terugregelen. Wat betekent dat voor je comfort en je besparing?</p>
+          <span style="margin-top:14px;display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:13px;color:var(--primary);">Lees meer<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a href="/artikel-zonnepanelen-prijs" class="card tilt-card" style="padding:0;overflow:hidden;display:block;text-decoration:none;color:inherit;">
+        <div style="aspect-ratio:4/3;overflow:hidden;">
+          <img loading="lazy" decoding="async" src="/images/zonnepanelen-dak.webp" alt="Monteur plaatst zonnepanelen op een dak" style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+        <div style="padding:20px 22px 24px;">
+          <div style="font-size:11px;font-weight:700;letter-spacing:.05em;color:var(--primary);text-transform:uppercase;">Zonnepanelen</div>
+          <h3 class="vw-heading" style="font-size:16.5px;margin-top:8px;line-height:1.35;">Zonnepanelen nu goedkoper dan ooit</h3>
+          <p style="font-size:13px;color:var(--ink-soft);margin-top:10px;line-height:1.55;">Panelen zijn fors goedkoper geworden terwijl het rendement juist steeg. Wat dat betekent voor je terugverdientijd, nu de subsidie is vervallen.</p>
+          <span style="margin-top:14px;display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:13px;color:var(--primary);">Lees meer<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a href="/artikel-vergelijking" class="card tilt-card" style="padding:0;overflow:hidden;display:block;text-decoration:none;color:inherit;">
+        <div style="aspect-ratio:4/3;overflow:hidden;">
+          <img loading="lazy" decoding="async" src="/images/warmtepomp-tuinmuur.webp" alt="Warmtepomp-buitenunit tegen een tuinmuur" style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+        <div style="padding:20px 22px 24px;">
+          <div style="font-size:11px;font-weight:700;letter-spacing:.05em;color:var(--primary);text-transform:uppercase;">Vergelijking</div>
+          <h3 class="vw-heading" style="font-size:16.5px;margin-top:8px;line-height:1.35;">Zonneboiler, airco of warmtepomp: wat is slimmer in 2026?</h3>
+          <p style="font-size:13px;color:var(--ink-soft);margin-top:10px;line-height:1.55;">Alledrie besparen ze op gas — maar niet in dezelfde situatie. Een eerlijke vergelijking op investering, besparing en gemak.</p>
+          <span style="margin-top:14px;display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:13px;color:var(--primary);">Lees meer<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+    </div>
+  </div>
+  </div>
+  <div class="blk-tint">
   <!-- ALGEMENE FAQ — nu een kleur -->
   <div class="wrap row reveal" style="padding-top:88px;padding-bottom:88px;align-items:flex-start;">
     <div style="flex:1 1 280px;">
