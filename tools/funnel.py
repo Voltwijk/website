@@ -75,169 +75,6 @@ STEPS = [
  ('Besparen', 'Je gebruikt je eigen zonnestroom ook \'s avonds. Klaar voor het einde van salderen op 1 januari 2027.'),
 ]
 
-CSS = '''<style>
-.tb-page{padding-top:0 !important;}
-.tb-hero{background:var(--dark);color:#fff;padding:104px 0 64px;position:relative;overflow:hidden;}
-.tb-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(900px 420px at 85% 0%,rgba(111,214,200,.16),transparent 60%);pointer-events:none;}
-.tb-grid{position:relative;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:start;}
-.tb-intro{padding-top:28px;}
-.tb-intro .kicker{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--mint);}
-.tb-intro h1{font-size:clamp(32px,4.4vw,52px);line-height:1.04;margin-top:14px;color:#fff;}
-.tb-intro .l{font-size:17px;color:#D3DFDC;margin-top:16px;line-height:1.6;max-width:520px;}
-.tb-ticks{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:10px;}
-.tb-ticks li{display:flex;gap:10px;align-items:flex-start;font-size:15px;color:#E6EEEC;line-height:1.45;}
-.tb-ticks li::before{content:"";flex:none;width:20px;height:20px;border-radius:50%;margin-top:1px;background:var(--mint) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2310201F' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/13px no-repeat;}
-.tb-prices{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px;}
-.tb-prices span{border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:7px 13px;font-size:13px;color:#D3DFDC;}
-.tb-prices b{color:#fff;margin-left:4px;}
-.tb-prices small{display:block;flex-basis:100%;font-size:12px;color:var(--dark-text-muted);margin-top:2px;}
-
-.tb-card{background:#fff;color:var(--ink);border-radius:26px;box-shadow:0 40px 80px -36px rgba(0,0,0,.6);overflow:hidden;scroll-margin-top:20px;}
-.tb-prog{height:6px;background:var(--surface-tint);}
-.tb-prog i{display:block;height:100%;width:0;background:var(--primary);border-radius:0 6px 6px 0;transition:width .35s ease;}
-.tb-body{padding:28px 30px 30px;min-height:470px;display:flex;flex-direction:column;}
-.tb-top{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:13px;color:var(--ink-faint);font-weight:700;}
-.tb-back{border:0;background:none;color:var(--primary);font:inherit;font-weight:800;cursor:pointer;padding:4px 0;}
-.tb-back[hidden]{display:none;}
-.tb-q{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:clamp(22px,2.4vw,28px);line-height:1.15;margin:14px 0 4px;letter-spacing:-.01em;text-wrap:balance;}
-.tb-sub{font-size:14.5px;color:var(--ink-faint);line-height:1.5;margin-bottom:18px;}
-.tb-opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
-.tb-opts.one{grid-template-columns:1fr;}
-.tb-opt{position:relative;display:flex;align-items:center;gap:14px;text-align:left;border:1.5px solid var(--border);background:#fff;border-radius:18px;padding:16px;cursor:pointer;font:inherit;color:inherit;transition:border-color .15s,box-shadow .15s,transform .15s;}
-.tb-opt:hover{border-color:var(--primary);transform:translateY(-1px);box-shadow:0 10px 24px -16px rgba(15,110,107,.6);}
-.tb-opt[aria-pressed="true"]{border-color:var(--primary);background:var(--surface-tint);box-shadow:inset 0 0 0 1px var(--primary);}
-.tb-opt .ic{flex:none;width:46px;height:46px;border-radius:14px;background:var(--surface-tint);color:var(--primary);display:flex;align-items:center;justify-content:center;}
-.tb-opt[aria-pressed="true"] .ic{background:var(--primary);color:#fff;}
-.tb-opt b{display:block;font-size:15.5px;line-height:1.25;}
-.tb-opt span.d{display:block;font-size:13px;color:var(--ink-faint);margin-top:2px;line-height:1.35;}
-.tb-opt.multi::after{content:"";position:absolute;top:12px;right:12px;width:18px;height:18px;border-radius:6px;border:1.5px solid var(--border);background:#fff;}
-.tb-opt.multi[aria-pressed="true"]::after{background:var(--primary) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/12px no-repeat;border-color:var(--primary);}
-.tb-next{margin-top:auto;padding-top:20px;}
-.tb-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;width:100%;border:0;border-radius:999px;background:var(--primary);color:#fff;font:800 16px/1 'Nunito Sans',system-ui,sans-serif;padding:18px 24px;cursor:pointer;text-decoration:none;box-shadow:0 14px 30px -16px rgba(15,110,107,.9);transition:background .15s;}
-.tb-btn:hover{background:var(--primary-dark);}
-.tb-btn:disabled{opacity:.45;cursor:not-allowed;box-shadow:none;}
-.tb-btn.mint{background:var(--mint);color:var(--dark);}
-.tb-num{display:flex;align-items:center;gap:0;border:1.5px solid var(--border);border-radius:18px;overflow:hidden;width:max-content;max-width:100%;}
-.tb-num button{width:64px;height:64px;border:0;background:var(--surface-tint);color:var(--ink);font:700 28px/1 'Bricolage Grotesque',system-ui,sans-serif;cursor:pointer;}
-.tb-num output{min-width:130px;text-align:center;font:700 34px/1 'Bricolage Grotesque',system-ui,sans-serif;}
-.tb-num output small{display:block;font:700 11px 'Nunito Sans',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);margin-top:5px;}
-.tb-range{width:100%;margin-top:18px;accent-color:var(--primary);}
-.tb-link{border:0;background:none;color:var(--primary);font:inherit;font-weight:800;font-size:14px;cursor:pointer;padding:0;margin-top:14px;text-align:left;}
-.tb-field{display:grid;gap:6px;}
-.tb-field label{font-size:13.5px;font-weight:800;}
-.tb-field input{width:100%;border:1.5px solid var(--border);border-radius:14px;padding:15px 16px;font:600 16px 'Nunito Sans',system-ui,sans-serif;color:var(--ink);background:#fff;}
-.tb-field input:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(15,110,107,.15);}
-.tb-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;}
-.tb-hint{font-size:13px;color:var(--ink-faint);line-height:1.5;background:var(--bg);border-radius:14px;padding:12px 14px;margin-top:14px;}
-.tb-err{color:var(--accent-deep);font-size:13.5px;font-weight:700;margin-top:10px;}
-.tb-load{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-align:center;color:var(--ink-soft);}
-.tb-spin{width:46px;height:46px;border-radius:50%;border:4px solid var(--surface-tint);border-top-color:var(--primary);animation:tbspin .8s linear infinite;}
-@keyframes tbspin{to{transform:rotate(360deg);}}
-
-/* advies */
-.tb-res .tag{display:inline-flex;align-items:center;gap:6px;background:var(--surface-tint);color:var(--primary);font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:6px 11px;}
-.tb-prod{display:grid;grid-template-columns:120px minmax(0,1fr);gap:18px;align-items:center;margin-top:14px;}
-.tb-prod img{width:120px;height:120px;object-fit:cover;border-radius:18px;background:var(--bg);}
-.tb-prod h2{font-size:clamp(21px,2.3vw,26px);line-height:1.15;}
-.tb-prod p{font-size:13.5px;color:var(--ink-faint);margin-top:4px;}
-.tb-price{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 10px;margin-top:18px;padding:16px 18px;border-radius:18px;background:var(--bg);}
-.tb-price b{font:700 38px/1 'Bricolage Grotesque',system-ui,sans-serif;}
-.tb-price span{font-size:13.5px;color:var(--ink-soft);}
-.tb-price small{flex-basis:100%;font-size:12.5px;color:var(--ink-faint);}
-.tb-kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:12px;}
-.tb-kpis div{border:1px solid var(--border);border-radius:16px;padding:12px 13px;}
-.tb-kpis span{display:block;font-size:12px;font-weight:700;color:var(--ink-faint);line-height:1.3;}
-.tb-kpis b{display:block;font:700 19px/1.2 'Bricolage Grotesque',system-ui,sans-serif;margin-top:5px;font-variant-numeric:tabular-nums;}
-.tb-why{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:8px;}
-.tb-why li{display:flex;gap:10px;font-size:14px;line-height:1.45;color:var(--ink-soft);}
-.tb-why li::before{content:"";flex:none;width:18px;height:18px;border-radius:50%;margin-top:1px;background:var(--surface-tint) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230F6E6B' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/12px no-repeat;}
-.tb-alt{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;align-items:center;font-size:13px;color:var(--ink-faint);}
-.tb-alt button{border:1.5px solid var(--border);background:#fff;border-radius:999px;padding:8px 12px;font:700 13px 'Nunito Sans',sans-serif;color:var(--ink);cursor:pointer;}
-.tb-alt button[aria-pressed="true"]{border-color:var(--primary);background:var(--surface-tint);}
-.tb-form{margin-top:22px;padding-top:20px;border-top:1px solid var(--border);display:grid;gap:12px;}
-.tb-form h3{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:21px;line-height:1.2;}
-.tb-form .chk{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--ink-soft);cursor:pointer;}
-.tb-form .chk input{width:20px;height:20px;accent-color:var(--primary);flex:none;margin-top:1px;}
-.tb-small{font-size:12.5px;color:var(--ink-faint);line-height:1.5;text-align:center;}
-.tb-ok{text-align:center;padding:10px 0;}
-.tb-ok .big{width:64px;height:64px;border-radius:50%;background:var(--surface-tint);color:var(--primary);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;}
-.tb-ok h2{font-size:clamp(24px,2.6vw,30px);}
-.tb-ok p{font-size:15px;color:var(--ink-soft);line-height:1.6;margin:10px auto 0;max-width:440px;}
-.tb-book{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:22px;text-align:left;}
-.tb-book a,.tb-book button{display:flex;flex-direction:column;gap:3px;border:1.5px solid var(--border);border-radius:16px;padding:14px;background:#fff;font:inherit;color:inherit;text-decoration:none;cursor:pointer;text-align:left;}
-.tb-book a:hover,.tb-book button:hover{border-color:var(--primary);}
-.tb-book b{font-size:14.5px;} .tb-book span{font-size:12.5px;color:var(--ink-faint);line-height:1.35;}
-
-/* onder de calculator */
-.tb-sec{padding-top:84px;}
-.tb-sec .pill{margin-bottom:12px;}
-.tb-h2{font-size:clamp(26px,3.2vw,38px);line-height:1.1;max-width:760px;}
-.tb-lead{font-size:16.5px;color:var(--ink-soft);line-height:1.6;margin-top:12px;max-width:640px;}
-.tb-trust{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:-30px;position:relative;}
-.tb-trust div{background:#fff;border:1px solid var(--border);border-radius:18px;padding:14px 16px;box-shadow:0 18px 40px -30px rgba(16,32,31,.4);}
-.tb-trust b{display:block;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:19px;color:var(--ink);}
-.tb-trust span{font-size:12.5px;color:var(--ink-soft);}
-.tb-2027{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border-radius:24px;overflow:hidden;border:1px solid var(--border);margin-top:26px;}
-.tb-2027 > div{padding:26px;background:#fff;}
-.tb-2027 > div + div{background:var(--dark);color:#fff;}
-.tb-2027 .w{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);}
-.tb-2027 > div + div .w{color:var(--mint);}
-.tb-2027 h3{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:22px;margin:8px 0 10px;}
-.tb-2027 p{font-size:15px;line-height:1.6;color:var(--ink-soft);}
-.tb-2027 > div + div p{color:#D3DFDC;}
-.tb-pk{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:26px;}
-.tb-pk > div{background:#fff;border:1px solid var(--border);border-radius:22px;padding:22px;display:flex;flex-direction:column;gap:6px;}
-.tb-pk > div.hl{border:2px solid var(--primary);}
-.tb-pk .lab{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--primary);min-height:16px;}
-.tb-pk h3{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:24px;line-height:1.1;}
-.tb-pk .s{font-size:14px;color:var(--ink-soft);min-height:2.9em;}
-.tb-pk .p{font:700 30px/1 'Bricolage Grotesque',system-ui,sans-serif;margin-top:10px;}
-.tb-pk .p small{display:block;font:600 12.5px 'Nunito Sans',sans-serif;color:var(--ink-faint);margin-top:6px;}
-.tb-pk ul{list-style:none;padding:0;margin:10px 0 14px;display:grid;gap:6px;font-size:14px;color:var(--ink-soft);}
-.tb-pk ul li::before{content:"✓";color:var(--primary);font-weight:800;margin-right:8px;}
-.tb-pk .tb-btn{margin-top:auto;padding:15px 18px;font-size:14.5px;}
-.tb-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:26px;}
-.tb-steps div{background:#fff;border:1px solid var(--border);border-radius:20px;padding:20px;}
-.tb-steps .n{font:700 30px/1 'Bricolage Grotesque',system-ui,sans-serif;color:var(--primary);}
-.tb-steps b{display:block;font-size:16px;margin-top:10px;}
-.tb-steps p{font-size:14px;color:var(--ink-soft);line-height:1.55;margin-top:6px;}
-.tb-other{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;margin-top:84px;padding:24px 26px;border-radius:22px;background:var(--surface-tint);}
-.tb-other h3{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:20px;}
-.tb-other p{font-size:14.5px;color:var(--ink-soft);margin-top:4px;}
-.tb-other .links{display:flex;flex-wrap:wrap;gap:8px;}
-.tb-other .links a{background:#fff;border-radius:999px;padding:9px 14px;font-size:13.5px;font-weight:800;color:var(--ink);text-decoration:none;border:1px solid var(--border);}
-.tb-faq{max-width:780px;}
-.tb-faq .faq summary{font-size:15.5px;}
-.tb-faq .faq p{font-size:14.5px;line-height:1.65;max-width:none;}
-.tb-end{margin-top:84px;background:var(--dark);border-radius:28px;padding:40px;color:#fff;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;}
-.tb-end h2{color:#fff;font-size:clamp(24px,3vw,32px);}
-.tb-end p{color:#C9D6D3;font-size:15px;margin-top:6px;}
-.tb-end .tb-btn{width:auto;}
-.tb-topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;}
-.tb-topbar .vw-logo{height:20px;}
-.tb-topbar .r{display:flex;align-items:center;gap:20px;}
-.tb-g{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;white-space:nowrap;}
-.tb-g i{font-style:normal;color:#F5B400;letter-spacing:1px;}
-.tb-tel{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:15px;color:inherit;text-decoration:none;white-space:nowrap;}
-.tb-foot{background:var(--dark);color:#C9D6D3;padding:32px 0 28px;font-size:13px;line-height:1.7;}
-.tb-foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;}
-.tb-foot a{color:#C9D6D3;}
-.tb-sticky{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:70;display:none;}
-.tb-sticky.on{display:block;}
-.vwp{display:none !important;}
-@media (max-width:1000px){.tb-trust{grid-template-columns:repeat(3,minmax(0,1fr));}.tb-steps{grid-template-columns:repeat(2,minmax(0,1fr));}.tb-pk{grid-template-columns:1fr;max-width:520px;}}
-@media (max-width:900px){.tb-hero{padding-top:84px;}.tb-grid{grid-template-columns:1fr;gap:22px;}.tb-intro{padding-top:6px;}.tb-ticks,.tb-prices{display:none;}.tb-intro .l{font-size:15.5px;margin-top:10px;}.tb-hero{padding-bottom:48px;}}
-@media (max-width:640px){
- .tb-body{padding:22px 18px 22px;min-height:440px;}.tb-opts{grid-template-columns:1fr;gap:10px;}.tb-opt{padding:13px 14px;}.tb-opt .ic{width:40px;height:40px;border-radius:12px;}
- .tb-kpis{grid-template-columns:1fr 1fr;}.tb-kpis div:last-child{grid-column:1/-1;}.tb-prod{grid-template-columns:84px minmax(0,1fr);}.tb-prod img{width:84px;height:84px;}
- .tb-book{grid-template-columns:1fr;}.tb-row{grid-template-columns:1fr;}
- .tb-trust{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:-24px;}.tb-trust div:last-child{grid-column:1/-1;}
- .tb-2027{grid-template-columns:1fr;}.tb-steps{grid-template-columns:1fr;}.tb-end{padding:28px 22px;}.tb-end .tb-btn{width:100%;}
- .tb-g{display:none;}.tb-foot{padding-bottom:96px;}.tb-sec{padding-top:64px;}
-}
-@media (prefers-reduced-motion:reduce){.tb-prog i,.tb-opt{transition:none;}.tb-spin{animation:none;}}
-</style>'''
-
 IC = {
  'zon': '<path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/><circle cx="12" cy="12" r="4"/>',
  'geen': '<path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/>',
@@ -261,145 +98,328 @@ IC = {
 def svg(k, s=22): return (f'<svg width="{s}" height="{s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" '
                           f'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{IC[k]}</svg>')
 
-PK_TXT = {
- 'bat10': ('Compact', 'Voor een klein huishouden of een paar panelen.', ['FoxESS all-in-one, 10 kWh', '5 kW hybride omvormer', 'Noodstroom bij stroomuitval']),
- 'bat16-1': ('Meest gekozen', 'De meeste opslag voor een 1-fase aansluiting.', ['Dyness LFP-batterij, 16 kWh', 'Solis 6 kW hybride omvormer', 'Werkt met dynamische contracten']),
- 'bat16-3': ('Voor 3-fase', 'Meer vermogen, verdeeld over drie fasen.', ['Dyness LFP-batterij, 16 kWh', 'Solis 8 kW hybride omvormer', 'Geschikt bij warmtepomp of laadpaal']),
+CSS = '''<style>
+/* Calculator op één pagina: donkere kop met stappen, daaronder een rustig wit vlak met één vraag tegelijk. */
+.tb-page{padding-top:0 !important;background:#fff;}
+#waWidget{display:none !important;}
+.tb-band{background:var(--dark);padding:84px 0 0;}
+.tb-steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;max-width:1080px;margin:0 auto;padding:0 16px;}
+.tb-steps div{font-size:13px;font-weight:800;color:#6E8783;padding:10px 0 12px;border-bottom:3px solid #23403C;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.tb-steps div.done{color:var(--mint);border-color:var(--mint);}
+.tb-steps div.on{color:#fff;border-color:var(--accent);}
+.tb-steps div b{font-family:'Bricolage Grotesque',system-ui,sans-serif;margin-right:6px;}
+.tb-main{max-width:1080px;margin:0 auto;padding:44px 16px 40px;min-height:calc(100vh - 150px);min-height:calc(100svh - 150px);display:flex;flex-direction:column;}
+.tb-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;}
+.tb-h{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:clamp(28px,3.6vw,40px);line-height:1.08;letter-spacing:-.02em;color:var(--ink);text-wrap:balance;margin:0;}
+.tb-sub{font-size:16.5px;color:var(--ink-faint);line-height:1.55;margin-top:10px;max-width:640px;}
+.tb-reset{border:0;background:none;font:700 14px 'Nunito Sans',sans-serif;color:var(--ink);cursor:pointer;display:inline-flex;gap:6px;align-items:center;white-space:nowrap;padding:6px 0;}
+.tb-content{margin-top:28px;}
+.tb-opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;max-width:820px;}
+.tb-opts.three{grid-template-columns:repeat(3,minmax(0,1fr));max-width:none;}
+.tb-opt{position:relative;display:flex;align-items:center;gap:16px;text-align:left;border:1.5px solid var(--border);background:#fff;border-radius:18px;padding:20px 18px;cursor:pointer;font:inherit;color:inherit;transition:border-color .15s,box-shadow .15s,transform .15s;}
+.tb-opt:hover{border-color:var(--accent);transform:translateY(-1px);box-shadow:0 12px 26px -18px rgba(198,64,46,.55);}
+.tb-opt[aria-pressed="true"]{border-color:var(--accent);background:#FFF7F5;box-shadow:inset 0 0 0 1px var(--accent);}
+.tb-opt .ic{flex:none;width:48px;height:48px;border-radius:14px;background:var(--surface-tint);color:var(--primary);display:flex;align-items:center;justify-content:center;}
+.tb-opt[aria-pressed="true"] .ic{background:var(--accent);color:#fff;}
+.tb-opt b{display:block;font-size:16.5px;line-height:1.25;color:var(--ink);}
+.tb-opt .d{display:block;font-size:13.5px;color:var(--ink-faint);margin-top:3px;line-height:1.4;}
+.tb-opt.multi::after{content:"";position:absolute;top:14px;right:14px;width:20px;height:20px;border-radius:6px;border:1.5px solid var(--border);background:#fff;}
+.tb-opt.multi[aria-pressed="true"]::after{background:var(--accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/12px no-repeat;border-color:var(--accent);}
+.tb-field{display:grid;gap:7px;}
+.tb-field label{font-size:14px;font-weight:800;color:var(--ink);}
+.tb-field input{width:100%;border:1.5px solid var(--border);border-radius:14px;padding:16px;font:600 17px 'Nunito Sans',system-ui,sans-serif;color:var(--ink);background:#fff;}
+.tb-field input:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(15,110,107,.15);}
+.tb-row{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:14px;max-width:560px;}
+.tb-num{display:flex;align-items:center;border:1.5px solid var(--border);border-radius:18px;overflow:hidden;width:max-content;max-width:100%;}
+.tb-num button{width:68px;height:68px;border:0;background:var(--surface-tint);color:var(--ink);font:700 28px/1 'Bricolage Grotesque',system-ui,sans-serif;cursor:pointer;}
+.tb-num output{min-width:140px;text-align:center;font:700 36px/1 'Bricolage Grotesque',system-ui,sans-serif;color:var(--ink);}
+.tb-num output small{display:block;font:700 11px 'Nunito Sans',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);margin-top:5px;}
+.tb-range{width:100%;max-width:560px;margin-top:20px;accent-color:var(--accent);}
+.tb-hint{font-size:14px;color:var(--ink-soft);line-height:1.5;background:var(--bg);border-radius:14px;padding:13px 15px;margin-top:16px;max-width:560px;}
+.tb-err{color:var(--accent-deep);font-size:14px;font-weight:700;margin-top:10px;}
+.tb-foot2{margin-top:auto;padding-top:28px;}
+.tb-bar{display:flex;align-items:center;justify-content:space-between;gap:16px;border-top:1px solid var(--border);padding-top:22px;margin-top:36px;}
+.tb-back{border:0;background:none;font:800 15px 'Nunito Sans',sans-serif;color:var(--ink);cursor:pointer;padding:12px 4px;}
+.tb-back[hidden]{visibility:hidden;display:block;}
+.tb-go{text-align:right;}
+.tb-go small{display:block;font-size:12.5px;color:var(--ink-faint);margin-top:8px;}
+.tb-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:999px;background:var(--accent);color:#fff;font:800 16px/1 'Nunito Sans',system-ui,sans-serif;padding:18px 30px;cursor:pointer;text-decoration:none;box-shadow:0 16px 30px -16px rgba(198,64,46,.9);transition:background .15s,transform .15s;}
+.tb-btn:hover{background:var(--accent-deep);transform:translateY(-1px);}
+.tb-btn:disabled{opacity:.45;cursor:not-allowed;box-shadow:none;transform:none;}
+.tb-btn.full{width:100%;}
+.tb-load{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;color:var(--ink-soft);min-height:340px;}
+.tb-spin{width:48px;height:48px;border-radius:50%;border:4px solid var(--surface-tint);border-top-color:var(--accent);animation:tbspin .8s linear infinite;}
+.tb-load ul{list-style:none;padding:0;margin:6px 0 0;display:grid;gap:6px;font-size:14.5px;}
+.tb-load li{opacity:.35;transition:opacity .3s;} .tb-load li.ok{opacity:1;} .tb-load li.ok::before{content:"✓ ";color:var(--primary);font-weight:800;}
+@keyframes tbspin{to{transform:rotate(360deg);}}
+
+/* systeemadvies */
+.tb-sys{max-width:560px;margin:4px auto 0;border:2px solid var(--accent);border-radius:22px;overflow:hidden;background:#FFFBF9;}
+.tb-sys .img{background:#F4F7F4;height:220px;display:flex;align-items:center;justify-content:center;position:relative;}
+.tb-sys .img img{height:190px;width:auto;object-fit:contain;}
+.tb-sys .img .badge{position:absolute;left:18px;bottom:18px;width:44px;height:44px;border-radius:12px;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;}
+.tb-sys .bd{padding:22px 26px 24px;}
+.tb-sys .t{display:flex;justify-content:space-between;align-items:center;gap:10px;}
+.tb-sys .t b{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:21px;color:var(--ink);}
+.tb-sys .t i{width:26px;height:26px;border-radius:50%;background:var(--accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/14px no-repeat;flex:none;}
+.tb-sys p{font-size:15px;color:var(--ink-soft);margin-top:6px;}
+.tb-ck{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:9px;}
+.tb-ck li{display:flex;gap:10px;font-size:15px;line-height:1.45;color:var(--ink-soft);}
+.tb-ck li::before{content:"";flex:none;width:20px;height:20px;margin-top:1px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230F6E6B' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9.5'/%3E%3Cpath d='M7.5 12.5l3 3 6-6.5'/%3E%3C/svg%3E") center/20px no-repeat;}
+
+/* aanbod */
+.tb-offer{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:44px;align-items:start;margin-top:26px;}
+.tb-gal{position:sticky;top:90px;}
+.tb-gal .main{position:relative;background:#F4F7F4;border-radius:22px;aspect-ratio:4/3;overflow:hidden;}
+.tb-gal .main img{width:100%;height:100%;object-fit:cover;display:block;}
+.tb-gal .main img.fit{object-fit:contain;padding:6%;}
+.tb-gal .nav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:0;background:#fff;box-shadow:0 6px 18px -8px rgba(0,0,0,.4);cursor:pointer;font-size:20px;color:var(--ink);display:flex;align-items:center;justify-content:center;}
+.tb-gal .prev{left:14px;} .tb-gal .next{right:14px;}
+.tb-gal .cap{position:absolute;left:14px;bottom:12px;background:rgba(16,32,31,.78);color:#fff;font-size:12px;font-weight:700;border-radius:8px;padding:5px 9px;}
+.tb-thumbs{display:flex;gap:10px;justify-content:center;margin-top:12px;}
+.tb-thumbs button{width:64px;height:64px;border-radius:12px;border:2px solid transparent;background:#F4F7F4;padding:0;overflow:hidden;cursor:pointer;}
+.tb-thumbs button[aria-pressed="true"]{border-color:var(--accent);}
+.tb-thumbs img{width:100%;height:100%;object-fit:cover;display:block;}
+.tb-note{font-size:12px;color:var(--ink-faint);text-align:center;margin-top:8px;}
+.tb-of .lab{font-size:12.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-deep);}
+.tb-of h2{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:clamp(26px,3vw,34px);line-height:1.1;margin-top:8px;color:var(--ink);}
+.tb-of .s{font-size:15px;color:var(--ink-faint);margin-top:6px;}
+.tb-sizes{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;}
+.tb-sizes button{position:relative;border:1.5px solid var(--border);background:#fff;border-radius:14px;padding:10px 14px;font:700 14px 'Nunito Sans',sans-serif;color:var(--ink);cursor:pointer;text-align:left;}
+.tb-sizes button small{display:block;font-weight:600;font-size:12px;color:var(--ink-faint);}
+.tb-sizes button[aria-pressed="true"]{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent);}
+.tb-sizes button em{position:absolute;top:-9px;right:10px;background:var(--accent);color:#fff;font-style:normal;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:2px 7px;}
+.tb-why{background:var(--bg);border-radius:18px;padding:18px 20px;margin-top:18px;}
+.tb-why b{display:block;font-size:16px;color:var(--ink);}
+.tb-kpi{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:16px;}
+.tb-kpi div{border:1px solid var(--border);border-radius:16px;padding:12px 14px;}
+.tb-kpi span{display:block;font-size:12.5px;font-weight:700;color:var(--ink-faint);}
+.tb-kpi b{display:block;font:700 20px/1.2 'Bricolage Grotesque',system-ui,sans-serif;margin-top:4px;color:var(--ink);font-variant-numeric:tabular-nums;}
+.tb-price{margin-top:20px;padding-top:18px;border-top:1px solid var(--border);}
+.tb-price .v{font-size:13px;color:var(--ink-faint);}
+.tb-price .p{font:700 44px/1.05 'Bricolage Grotesque',system-ui,sans-serif;color:var(--accent-deep);margin-top:2px;}
+.tb-price .p small{font:700 15px 'Nunito Sans',sans-serif;color:var(--ink-soft);margin-left:8px;}
+.tb-price .i{font-size:13.5px;color:var(--ink-soft);margin-top:6px;line-height:1.5;}
+.tb-of .tb-btn{margin-top:18px;}
+.tb-risk{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:12px;font-size:13px;color:var(--ink-soft);justify-content:center;}
+.tb-risk span::before{content:"✓ ";color:var(--primary);font-weight:800;}
+.tb-urg{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+.tb-urg span{background:#FFF1EE;color:var(--accent-deep);font-size:13px;font-weight:800;border-radius:999px;padding:6px 12px;}
+.tb-urg span.g{background:var(--surface-tint);color:var(--primary);}
+.tb-proof{display:flex;align-items:center;justify-content:center;gap:8px 18px;flex-wrap:wrap;margin-top:16px;font-size:13px;font-weight:700;color:var(--ink-soft);}
+.tb-proof i{font-style:normal;color:#F5B400;letter-spacing:1px;}
+.tb-inc{margin-top:18px;border:1px solid var(--border);border-radius:16px;padding:4px 16px;}
+.tb-inc summary{cursor:pointer;font-weight:800;font-size:14.5px;padding:12px 0;color:var(--ink);}
+.tb-inc ul{margin:0 0 12px;}
+
+/* gegevens en bedankt */
+.tb-form{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:40px;align-items:start;margin-top:26px;}
+.tb-form form{display:grid;gap:14px;max-width:520px;}
+.tb-form .chk{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;color:var(--ink-soft);cursor:pointer;}
+.tb-form .chk input{width:20px;height:20px;accent-color:var(--accent);flex:none;margin-top:1px;}
+.tb-sum{background:var(--bg);border-radius:20px;padding:20px;}
+.tb-sum .r{display:grid;grid-template-columns:84px minmax(0,1fr);gap:14px;align-items:center;}
+.tb-sum img{width:84px;height:84px;border-radius:14px;object-fit:cover;background:#fff;}
+.tb-sum b{display:block;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:18px;color:var(--ink);line-height:1.2;}
+.tb-sum .pp{font:700 22px 'Bricolage Grotesque',system-ui,sans-serif;color:var(--accent-deep);margin-top:4px;}
+.tb-sum .tb-ck{margin-top:16px;} .tb-sum .tb-ck li{font-size:14px;}
+.tb-small{font-size:12.5px;color:var(--ink-faint);line-height:1.5;}
+.tb-ok{max-width:640px;margin:20px auto 0;text-align:center;}
+.tb-ok .big{width:72px;height:72px;border-radius:50%;background:var(--surface-tint);color:var(--primary);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;}
+.tb-ok p{font-size:16px;color:var(--ink-soft);line-height:1.6;margin-top:10px;}
+.tb-book{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:24px;text-align:left;}
+.tb-book a,.tb-book button{display:flex;flex-direction:column;gap:4px;border:1.5px solid var(--border);border-radius:16px;padding:16px;background:#fff;font:inherit;color:inherit;text-decoration:none;cursor:pointer;text-align:left;}
+.tb-book a:hover,.tb-book button:hover{border-color:var(--accent);}
+.tb-book b{font-size:15px;color:var(--ink);} .tb-book span{font-size:13px;color:var(--ink-faint);line-height:1.4;}
+.tb-mob{display:none;}
+.tb-topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.tb-topbar .vw-logo{height:20px;}
+.tb-tel{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:15px;color:inherit;text-decoration:none;white-space:nowrap;}
+.tb-foot{background:var(--dark);color:#C9D6D3;padding:18px 0;font-size:13px;line-height:1.7;}
+.tb-foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;}
+.tb-foot a{color:#C9D6D3;}
+.vwp{display:none !important;}
+#vwCookie{padding:12px 14px !important;}#vwCookie .ck-title{display:none;}
+#vwCookie p{margin:0 0 10px !important;font-size:12px !important;line-height:1.45 !important;}
+#vwCookie .ck-btns{flex-wrap:nowrap;}#vwCookie .ck-btns button{flex:1;padding:10px 12px !important;font-size:13px !important;}
+@media (max-width:900px){
+ .tb-offer,.tb-form{grid-template-columns:1fr;gap:22px;}.tb-gal{position:static;}
+ .tb-opts.three{grid-template-columns:1fr;}
 }
+@media (max-width:640px){
+ .tb-band{padding-top:72px;}.tb-steps{gap:4px;}.tb-steps div{font-size:11px;padding:8px 0 10px;}.tb-steps div span{display:none;}.tb-steps div.on span{display:inline;}
+ .tb-main{padding-top:26px;}.tb-sub{font-size:15px;}.tb-content{margin-top:20px;}
+ .tb-opts{grid-template-columns:1fr;gap:10px;}.tb-opt{padding:15px 14px;}.tb-opt .ic{width:42px;height:42px;}
+ .tb-row{grid-template-columns:1fr;}
+ .tb-bar{position:sticky;bottom:0;background:#fff;margin:24px -16px 0;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));box-shadow:0 -10px 24px -18px rgba(0,0,0,.35);}
+ .tb-bar .tb-btn{padding:16px 22px;}.tb-go small{display:none;}
+ .tb-sys .img{height:180px;}.tb-sys .img img{height:150px;}
+ .tb-price .p{font-size:38px;}.tb-book{grid-template-columns:1fr;}.tb-thumbs button{width:54px;height:54px;}
+ .tb-reset span{display:none;}
+}
+@media (min-width:641px){#tbOfGo{display:none;}}
+@media (prefers-reduced-motion:reduce){.tb-opt,.tb-btn{transition:none;}.tb-spin{animation:none;}}
+</style>'''
+
+IC.update({
+ 'reset': '<path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15.5 6.2L3 16"/><path d="M3 21v-5h5"/>',
+ 'tool': '<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/>',
+ 'pin': '<path d="M12 21s-7-6.3-7-11.5A7 7 0 0 1 19 9.5C19 14.7 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/>',
+})
+
+# Per pakket: wat het is, waarom het sterk is, en welke foto's de klant ziet. Alleen feiten uit de datasheets.
+PK_TXT = {
+ 'bat10': {'naam': 'FoxESS P100 all-in-one', 'kort': 'Omvormer en batterij in één strakke kast.',
+   'feat': ['10,24 kWh opslag, waarvan 95% bruikbaar', 'Veilige LFP-cellen, getest op 6.000 laadcycli', 'Noodstroom: schakelt bij een storing binnen enkele milliseconden om', 'Waterdicht (IP66), kan ook in garage of schuur'],
+   'foto': [('/images/calc-foxess-woning.webp', 'FoxESS P100 aan de buitenmuur', ''), ('/images/product-batterij.webp', 'Thuisbatterij', 'fit'), ('/images/thuisbatterij-bijkeuken.webp', 'Netjes weggewerkt in huis', '')]},
+ 'bat16-1': {'naam': 'Dyness LFP-batterij met Solis hybride omvormer', 'kort': 'De meeste opslag voor een woning met 1-fase aansluiting.',
+   'feat': ['16 kWh opslag, ruim anderhalf keer het 10 kWh-pakket', 'Solis 6 kW hybride omvormer, ook geschikt voor je zonnepanelen', 'Veilige LFP-cellen', 'Werkt met dynamische contracten en energiemanagementsystemen'],
+   'foto': [('/images/product-batterij.webp', 'Dyness LFP-batterij', 'fit'), ('/images/calc-solis-1fase.webp', 'Solis 6 kW hybride omvormer (1-fase)', 'fit'), ('/images/calc-solis-woning.webp', 'Batterij en omvormer in huis', ''), ('/images/thuisbatterij-bijkeuken.webp', 'Netjes weggewerkt in huis', '')]},
+ 'bat16-3': {'naam': 'Dyness LFP-batterij met Solis hybride omvormer', 'kort': 'Meer vermogen, verdeeld over drie fasen.',
+   'feat': ['16 kWh opslag', 'Solis 8 kW hybride omvormer, verdeelt het vermogen over drie fasen', 'Veilige LFP-cellen', 'Geschikt bij een warmtepomp, laadpaal of dynamisch contract'],
+   'foto': [('/images/product-batterij.webp', 'Dyness LFP-batterij', 'fit'), ('/images/calc-solis-3fase.webp', 'Solis 8 kW hybride omvormer (3-fase)', 'fit'), ('/images/calc-solis-woning.webp', 'Batterij en omvormer in huis', ''), ('/images/thuisbatterij-bijkeuken.webp', 'Netjes weggewerkt in huis', '')]},
+}
+INBEGREPEN = ['Batterij en hybride omvormer', 'Montage en bekabeling door onze eigen monteurs', 'Een eigen groep in de meterkast', 'Aanmelden bij de netbeheerder', 'App ingesteld en uitleg bij de oplevering', '2 jaar garantie op de installatie']
 
 JS = r'''<script>
 (function(){
-  var PK = __PK__, IC = __IC__, PRIJS = 0.28, SPREAD = 0.08, KWH_PANEEL = 340, EFF = 0.9, UTIL = 0.8;
+  var PK = __PK__, IC = __IC__, INC = __INC__, PRIJS = 0.28, SPREAD = 0.08, KWH_PANEEL = 340, EFF = 0.9, UTIL = 0.8;
   var MF = [2.6,4.6,8.1,11.4,13.3,13.2,13.1,11.6,8.8,6.2,3.3,2.2], CF = [10,9,8.9,7.8,7.4,6.8,6.9,7.1,7.5,8.6,9.6,10.4], DG = [31,28,31,30,31,30,31,31,30,31,30,31];
-  var card = document.getElementById('calculator'), body = document.getElementById('tbBody'), bar = document.getElementById('tbBar');
-  var st = {panelen:null, aantal:12, verbruik:null, extra:{}, fase:null, doel:null, postcode:'', huisnummer:'', keuze:null}, hist = [], cur = 'panelen', started = false;
+  var main = document.getElementById('tbMain'), stepsEl = document.getElementById('tbSteps');
+  var st = {panelen:null, aantal:12, verbruik:null, extra:{}, fase:null, doel:null, postcode:'', huisnummer:'', keuze:null, foto:0}, hist = [], cur = 'adres', started = false;
+  /* scherm -> fase in de stappenbalk */
+  var FASE = {adres:0, panelen:1, aantal:1, verbruik:1, extra:1, doel:2, fase:3, laden:3, systeem:3, aanbod:4, gegevens:4, klaar:5};
+  var NAMEN = ['Adres','Situatie','Doel','Systeem','Aanbod'];
   try{ var u = new URLSearchParams(location.search), t = {}; ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid','fbclid'].forEach(function(k){ if(u.get(k)) t[k] = u.get(k); });
     if(Object.keys(t).length) sessionStorage.setItem('vwUtm', JSON.stringify(t)); }catch(e){}
   function utm(){ try{ return JSON.parse(sessionStorage.getItem('vwUtm') || '{}'); }catch(e){ return {}; } }
   function track(n, p){ try{ if(window.vwTrack) vwTrack(n, p || {}); }catch(e){} }
   function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
   function fmt(n){ return Math.round(n).toLocaleString('nl-NL'); }
+  function eur(n){ return '€ ' + fmt(n); }
   function ic(k){ return '<span class="ic">' + IC[k] + '</span>'; }
-  function opt(k, val, title, d, icon, multi){ var on = multi ? !!st[k][val] : st[k] === val;
+  function opt(k, val, title, d, icon, multi){ var on = multi ? !!st[k][val] : String(st[k]) === String(val);
     return '<button type="button" class="tb-opt' + (multi ? ' multi' : '') + '" data-k="' + k + '" data-v="' + val + '" aria-pressed="' + on + '">' + ic(icon) + '<span><b>' + title + '</b>' + (d ? '<span class="d">' + d + '</span>' : '') + '</span></button>'; }
-  var ORDER = ['panelen','aantal','verbruik','extra','fase','doel','adres'];
-  function steps(){ return ORDER.filter(function(s){ return s !== 'aantal' || st.panelen === 'ja'; }); }
-  function head(q, sub){ var list = ORDER.filter(function(s){ return s !== 'aantal'; }), i = list.indexOf(cur === 'aantal' ? 'panelen' : cur);
-    var part = cur === 'aantal' ? .5 : 0;
-    bar.style.width = Math.round(((i < 0 ? list.length : i + part) + 1) / (list.length + 1) * 100) + '%';
-    return '<div class="tb-top"><button type="button" class="tb-back" id="tbBack"' + (hist.length ? '' : ' hidden') + '>← Terug</button><span>' + (i < 0 ? 'Jouw advies' : 'Vraag ' + (i + 1) + ' van ' + list.length) + '</span></div>' +
-      '<h2 class="tb-q">' + q + '</h2>' + (sub ? '<p class="tb-sub">' + sub + '</p>' : ''); }
+  function volgorde(){ return ['adres','panelen'].concat(st.panelen === 'ja' ? ['aantal'] : [], ['verbruik','extra','doel','fase','laden','systeem','aanbod','gegevens','klaar']); }
+  function nextOf(s){ var l = volgorde(); return l[l.indexOf(s) + 1]; }
   function go(next){ if(!started){ started = true; track('calc_start', {pagina: location.pathname}); } hist.push(cur); cur = next; render(true); track('calc_stap', {stap: next}); }
-  function back(){ if(!hist.length) return; cur = hist.pop(); render(true); }
-  function nextOf(s){ var l = steps(); return l[l.indexOf(s) + 1] || 'laden'; }
+  function back(){ if(!hist.length) return; cur = hist.pop(); if(cur === 'laden') cur = hist.pop() || 'fase'; render(true); }
+  function steps(){ var f = FASE[cur]; stepsEl.innerHTML = NAMEN.map(function(n, i){ return '<div class="' + (i < f ? 'done' : i === f ? 'on' : '') + '"><b>' + (i + 1) + '</b><span>' + n + '</span></div>'; }).join(''); }
+  function head(h, sub, reset){ return '<div class="tb-head"><div><h1 class="tb-h">' + h + '</h1>' + (sub ? '<p class="tb-sub">' + sub + '</p>' : '') + '</div>' +
+      (reset ? '<button type="button" class="tb-reset" id="tbReset">' + IC.reset.replace(/width="22" height="22"/, 'width="18" height="18"') + '<span>Opnieuw beginnen</span></button>' : '') + '</div>'; }
+  function bar(label, id, note, disabled){ return '<div class="tb-bar"><button type="button" class="tb-back" id="tbBack"' + (hist.length ? '' : ' hidden') + '>Terug</button>' +
+      (label ? '<div class="tb-go"><button type="button" class="tb-btn" id="' + id + '"' + (disabled ? ' disabled' : '') + '>' + label + '</button>' + (note ? '<small>' + note + '</small>' : '') + '</div>' : '') + '</div>'; }
 
   function render(scroll){
-    var h = '';
-    if(cur === 'panelen'){
-      h = head('Heb je zonnepanelen?', 'Dan bepalen we hoeveel zonnestroom je kunt opslaan.') + '<div class="tb-opts one">' +
-        opt('panelen','ja','Ja, ik heb zonnepanelen','Je slaat je eigen stroom van overdag op','zon') +
-        opt('panelen','straks','Nog niet, maar ik wil ze erbij','Dan nemen we panelen mee in je advies','plus') +
-        opt('panelen','nee','Nee, alleen een batterij','Je bespaart dan vooral met een dynamisch contract','geen') + '</div>';
+    var h = ''; steps();
+    if(cur === 'adres'){
+      h = head('Bereken welke thuisbatterij bij jouw huis past', 'Vul je adres in. Daarna stellen we je nog vijf korte vragen en zie je direct je advies en vaste prijs.') +
+        '<div class="tb-content"><div class="tb-row"><div class="tb-field"><label for="tbPc">Postcode</label><input id="tbPc" autocomplete="postal-code" placeholder="4762 AS" value="' + esc(st.postcode) + '" maxlength="7"></div>' +
+        '<div class="tb-field"><label for="tbHn">Huisnummer</label><input id="tbHn" inputmode="numeric" placeholder="15" value="' + esc(st.huisnummer) + '" maxlength="8"></div></div>' +
+        '<div id="tbAdrErr" class="tb-err" hidden></div><p class="tb-hint">Met je adres zien we wanneer onze monteurs bij jou kunnen installeren. Je zit nergens aan vast.</p></div>' +
+        bar('Start mijn advies →', 'tbAdrGo', 'Duurt ongeveer 1 minuut');
+    } else if(cur === 'panelen'){
+      h = head('Heb je zonnepanelen?', 'Dan weten we hoeveel zonnestroom je kunt opslaan.') + '<div class="tb-content"><div class="tb-opts three">' +
+        opt('panelen','ja','Ja, ik heb zonnepanelen','Ik wil mijn stroom van overdag bewaren','zon') +
+        opt('panelen','straks','Nog niet, maar ik wil ze erbij','We nemen panelen mee in je advies','plus') +
+        opt('panelen','nee','Nee, alleen een batterij','Besparen met een dynamisch contract','geen') + '</div></div>' + bar();
     } else if(cur === 'aantal'){
-      h = head('Hoeveel zonnepanelen heb je?', 'Een schatting is goed genoeg.') +
+      h = head('Hoeveel zonnepanelen heb je?', 'Een schatting is goed genoeg.') + '<div class="tb-content">' +
         '<div class="tb-num"><button type="button" data-n="-1" aria-label="Minder panelen">−</button><output id="tbN">' + st.aantal + '<small>panelen</small></output><button type="button" data-n="1" aria-label="Meer panelen">+</button></div>' +
         '<input class="tb-range" type="range" id="tbNr" min="4" max="40" value="' + st.aantal + '" aria-label="Aantal panelen">' +
-        '<p class="tb-hint">Dat is ongeveer <b id="tbOpw">' + fmt(st.aantal * KWH_PANEEL) + ' kWh</b> zonnestroom per jaar.</p>' +
-        '<div class="tb-next"><button type="button" class="tb-btn" data-go>Volgende →</button></div>';
+        '<p class="tb-hint">Dat is ongeveer <b id="tbOpw">' + fmt(st.aantal * KWH_PANEEL) + ' kWh</b> zonnestroom per jaar.</p></div>' + bar('Volgende →', 'tbNext');
     } else if(cur === 'verbruik'){
       var vb = st.verbruik, eigen = vb && [2300,3500,4800].indexOf(vb) < 0;
-      h = head('Hoeveel stroom gebruik je per jaar?', 'Staat op je jaarafrekening. Weet je het niet, kies dan je huishouden.') + '<div class="tb-opts">' +
-        opt('verbruik',2300,'1 of 2 personen','ca. 2.300 kWh','p1') + opt('verbruik',3500,'3 of 4 personen','ca. 3.500 kWh','p2') +
-        opt('verbruik',4800,'5 personen of meer','ca. 4.800 kWh','p3') +
+      h = head('Hoeveel stroom gebruik je per jaar?', 'Staat op je jaarafrekening. Weet je het niet, kies dan je huishouden.') + '<div class="tb-content"><div class="tb-opts">' +
+        opt('verbruik',2300,'1 of 2 personen','ca. 2.300 kWh per jaar','p1') + opt('verbruik',3500,'3 of 4 personen','ca. 3.500 kWh per jaar','p2') +
+        opt('verbruik',4800,'5 personen of meer','ca. 4.800 kWh per jaar','p3') +
         '<button type="button" class="tb-opt" id="tbEigen" aria-pressed="' + !!eigen + '">' + ic('kwh') + '<span><b>Ik weet het precies</b><span class="d">Vul je verbruik in</span></span></button></div>' +
-        '<div id="tbEigenBox"' + (eigen ? '' : ' hidden') + ' style="margin-top:14px;"><div class="tb-field"><label for="tbKwh">Verbruik per jaar (kWh)</label><input id="tbKwh" type="number" inputmode="numeric" min="500" max="30000" step="100" value="' + (eigen ? vb : '') + '" placeholder="bijvoorbeeld 3200"></div>' +
-        '<div class="tb-next"><button type="button" class="tb-btn" id="tbKwhGo">Volgende →</button></div></div>';
+        '<div id="tbEigenBox"' + (eigen ? '' : ' hidden') + ' style="margin-top:16px;max-width:320px;"><div class="tb-field"><label for="tbKwh">Verbruik per jaar (kWh)</label><input id="tbKwh" type="number" inputmode="numeric" min="500" max="30000" step="100" value="' + (eigen && vb > 0 ? vb : '') + '" placeholder="bijvoorbeeld 3200"></div></div></div>' +
+        bar(eigen ? 'Volgende →' : '', 'tbKwhGo');
     } else if(cur === 'extra'){
-      h = head('Heb je (straks) een van deze?', 'Die gebruiken veel stroom, ook \'s avonds. Kies alles wat geldt.') + '<div class="tb-opts">' +
-        opt('extra','ev','Elektrische auto','of je krijgt er binnenkort een','auto',1) + opt('extra','wp','Warmtepomp','hybride of volledig','wp',1) +
+      h = head('Heb je (straks) een van deze?', 'Die gebruiken veel stroom, ook \'s avonds. Kies alles wat geldt.') + '<div class="tb-content"><div class="tb-opts">' +
+        opt('extra','ev','Elektrische auto','of binnenkort','auto',1) + opt('extra','wp','Warmtepomp','hybride of volledig','wp',1) +
         opt('extra','airco','Airco','koelen en verwarmen','airco',1) +
-        '<button type="button" class="tb-opt" id="tbGeen" aria-pressed="' + (st.extraGezien && !Object.keys(st.extra).some(function(k){ return st.extra[k]; })) + '">' + ic('leeg') + '<span><b>Geen van deze</b></span></button></div>' +
-        '<div class="tb-next"><button type="button" class="tb-btn" data-go>Volgende →</button></div>';
-    } else if(cur === 'fase'){
-      h = head('Wat voor aansluiting heb je?', 'Dat bepaalt welke omvormer je nodig hebt.') + '<div class="tb-opts one">' +
-        opt('fase','1','1-fase','De meeste woningen. Eén hoofdschakelaar, meestal 1 x 35 A.','f1') +
-        opt('fase','3','3-fase','Drie hoofdzekeringen of 3 x 25 A op je energierekening.','f3') +
-        opt('fase','?','Weet ik niet','Geen probleem, we checken het samen met een foto van je meterkast.','vraag') + '</div>';
+        '<button type="button" class="tb-opt" id="tbGeen" aria-pressed="' + !!(st.extraGezien && !Object.keys(st.extra).some(function(k){ return st.extra[k]; })) + '">' + ic('leeg') + '<span><b>Geen van deze</b></span></button></div></div>' +
+        bar('Volgende →', 'tbNext');
     } else if(cur === 'doel'){
-      h = head('Wat vind je het belangrijkst?', 'Dan stemmen we het advies daarop af.') + '<div class="tb-opts">' +
-        opt('doel','besparen','Zoveel mogelijk besparen','Eigen zonnestroom zelf gebruiken','euro') +
-        opt('doel','2027','Klaar zijn voor 2027','Als salderen stopt','kal') +
-        opt('doel','noodstroom','Stroom bij een storing','Noodstroom als het net uitvalt','stroom') +
-        opt('doel','handel','Slim handelen','Met een dynamisch energiecontract','handel') + '</div>';
-    } else if(cur === 'adres'){
-      h = head('Waar komt de batterij?', 'Dan zien we wanneer onze monteurs bij jou kunnen installeren.') +
-        '<div class="tb-row"><div class="tb-field"><label for="tbPc">Postcode</label><input id="tbPc" autocomplete="postal-code" placeholder="4762 AS" value="' + esc(st.postcode) + '" maxlength="7"></div>' +
-        '<div class="tb-field"><label for="tbHn">Huisnummer</label><input id="tbHn" inputmode="numeric" placeholder="15" value="' + esc(st.huisnummer) + '" maxlength="8"></div></div>' +
-        '<div id="tbAdrErr" class="tb-err" hidden></div>' +
-        '<div class="tb-next"><button type="button" class="tb-btn" id="tbAdrGo">Bekijk mijn advies en prijs →</button><p class="tb-small" style="margin-top:10px;">Je ziet je advies direct. Je zit nergens aan vast.</p></div>';
+      h = head('Wat vind je het belangrijkst?', 'Dan stemmen we je advies daarop af.') + '<div class="tb-content"><div class="tb-opts">' +
+        opt('doel','besparen','Zoveel mogelijk besparen','Mijn eigen zonnestroom zelf gebruiken','euro') + opt('doel','2027','Klaar zijn voor 2027','Als salderen stopt','kal') +
+        opt('doel','noodstroom','Stroom bij een storing','Noodstroom als het net uitvalt','stroom') + opt('doel','handel','Slim handelen','Met een dynamisch energiecontract','handel') + '</div></div>' + bar();
+    } else if(cur === 'fase'){
+      h = head('Wat voor aansluiting heb je?', 'Dat bepaalt welke omvormer bij je past.') + '<div class="tb-content"><div class="tb-opts three">' +
+        opt('fase','1','1-fase','De meeste woningen. Eén hoofdschakelaar, meestal 1 x 35 A.','f1') +
+        opt('fase','3','3-fase','Drie hoofdzekeringen, of 3 x 25 A op je energierekening.','f3') +
+        opt('fase','?','Weet ik niet','We checken het samen met een foto van je meterkast.','vraag') + '</div></div>' + bar();
     } else if(cur === 'laden'){
-      bar.style.width = '100%';
-      h = '<div class="tb-load"><div class="tb-spin"></div><b style="font-size:17px;color:var(--ink);">Je advies wordt berekend…</b><span>We vergelijken onze drie batterijen met jouw situatie.</span></div>';
-      setTimeout(function(){ cur = 'advies'; st.keuze = advies(); track('calc_advies', {batterij: st.keuze}); render(false); }, 1100);
-    } else if(cur === 'advies'){ h = resultaat(); }
+      h = '<div class="tb-load"><div class="tb-spin"></div><b style="font-size:19px;color:var(--ink);">We stellen je advies samen…</b><ul><li id="l1">Jouw verbruik en zonnestroom</li><li id="l2">De juiste omvormer voor je aansluiting</li><li id="l3">Je vaste prijs en besparing</li></ul></div>';
+      [1,2,3].forEach(function(i){ setTimeout(function(){ var el = document.getElementById('l' + i); if(el) el.className = 'ok'; }, i * 380); });
+      setTimeout(function(){ if(cur !== 'laden') return; cur = 'systeem'; st.keuze = advies(); st.foto = 0; track('calc_advies', {batterij: st.keuze}); render(false); }, 1400);
+    } else if(cur === 'systeem'){ h = systeem(); }
+    else if(cur === 'aanbod'){ h = aanbod(); }
+    else if(cur === 'gegevens'){ h = gegevens(); }
     else if(cur === 'klaar'){ h = klaar(); }
-    body.innerHTML = h; wire();
-    if(scroll){ var r = card.getBoundingClientRect(); if(r.top < 0 || r.top > innerHeight * .5) card.scrollIntoView({behavior: 'smooth', block: 'start'}); }
+    main.innerHTML = h; wire();
+    if(scroll) window.scrollTo({top: 0, behavior: 'smooth'});
   }
 
   function wire(){
     var b = document.getElementById('tbBack'); if(b) b.onclick = back;
-    body.querySelectorAll('.tb-opt[data-k]').forEach(function(el){ el.onclick = function(){
+    var rs = document.getElementById('tbReset'); if(rs) rs.onclick = function(){ hist = []; cur = 'panelen'; st.keuze = null; render(true); };
+    main.querySelectorAll('.tb-opt[data-k]').forEach(function(el){ el.onclick = function(){
       var k = el.dataset.k, v = el.dataset.v; if(k === 'verbruik') v = +v;
       if(k === 'extra'){ st.extra[v] = !st.extra[v]; st.extraGezien = true; render(false); return; }
-      st[k] = v; render(false); setTimeout(function(){ go(nextOf(cur)); }, 160); }; });
-    body.querySelectorAll('[data-go]').forEach(function(el){ el.onclick = function(){ if(cur === 'extra') st.extraGezien = true; go(nextOf(cur)); }; });
-    body.querySelectorAll('[data-n]').forEach(function(el){ el.onclick = function(){ setN(st.aantal + (+el.dataset.n)); }; });
+      st[k] = v; render(false); setTimeout(function(){ go(nextOf(cur)); }, 180); }; });
+    var nx = document.getElementById('tbNext'); if(nx) nx.onclick = function(){ if(cur === 'extra') st.extraGezien = true; go(nextOf(cur)); };
+    main.querySelectorAll('[data-n]').forEach(function(el){ el.onclick = function(){ setN(st.aantal + (+el.dataset.n)); }; });
     var r = document.getElementById('tbNr'); if(r) r.oninput = function(){ setN(+r.value); };
-    var e = document.getElementById('tbEigen'); if(e) e.onclick = function(){ document.getElementById('tbEigenBox').hidden = false; e.setAttribute('aria-pressed', 'true'); document.getElementById('tbKwh').focus(); };
+    var e = document.getElementById('tbEigen'); if(e) e.onclick = function(){ st.verbruik = -1; render(false); var k = document.getElementById('tbKwh'); k.value = ''; k.focus(); };
     var kg = document.getElementById('tbKwhGo'); if(kg) kg.onclick = function(){ var v = +document.getElementById('tbKwh').value; if(v >= 500 && v <= 30000){ st.verbruik = Math.round(v); go(nextOf(cur)); } else document.getElementById('tbKwh').focus(); };
+    var kw = document.getElementById('tbKwh'); if(kw) kw.onkeydown = function(ev){ if(ev.key === 'Enter' && kg) kg.click(); };
     var g = document.getElementById('tbGeen'); if(g) g.onclick = function(){ st.extra = {}; st.extraGezien = true; go(nextOf(cur)); };
     var ag = document.getElementById('tbAdrGo'); if(ag) ag.onclick = adres;
     ['tbPc','tbHn'].forEach(function(id){ var x = document.getElementById(id); if(x) x.onkeydown = function(ev){ if(ev.key === 'Enter') adres(); }; });
-    body.querySelectorAll('[data-alt]').forEach(function(el){ el.onclick = function(){ st.keuze = el.dataset.alt; render(false); track('calc_wissel', {batterij: st.keuze}); }; });
+    var sg = document.getElementById('tbSysGo'); if(sg) sg.onclick = function(){ go('aanbod'); };
+    var og = document.querySelectorAll('[data-offerte]'); og.forEach(function(x){ x.onclick = function(){ track('offerte_klik', {batterij: st.keuze}); go('gegevens'); }; });
+    main.querySelectorAll('[data-size]').forEach(function(el){ el.onclick = function(){ st.keuze = el.dataset.size; st.foto = 0; render(false); track('calc_wissel', {batterij: st.keuze}); }; });
+    main.querySelectorAll('[data-foto]').forEach(function(el){ el.onclick = function(){ st.foto = +el.dataset.foto; foto(); }; });
+    var pv = document.getElementById('tbPrev'), nv = document.getElementById('tbNextF'), n = (PK[st.keuze] || {foto: []}).foto.length;
+    if(pv) pv.onclick = function(){ st.foto = (st.foto + n - 1) % n; foto(); };
+    if(nv) nv.onclick = function(){ st.foto = (st.foto + 1) % n; foto(); };
     var f = document.getElementById('tbForm'); if(f) f.addEventListener('submit', verstuur);
+    var nm = document.getElementById('tbNaam'); if(nm && !('ontouchstart' in window)) nm.focus();
   }
   function setN(n){ st.aantal = Math.max(4, Math.min(40, n)); var o = document.getElementById('tbN'); if(o) o.firstChild.textContent = st.aantal;
     var r = document.getElementById('tbNr'); if(r) r.value = st.aantal; var w = document.getElementById('tbOpw'); if(w) w.textContent = fmt(st.aantal * KWH_PANEEL) + ' kWh'; }
   function adres(){ var pc = document.getElementById('tbPc').value.trim().toUpperCase().replace(/^(\d{4})\s*([A-Z]{2})$/, '$1 $2'), hn = document.getElementById('tbHn').value.trim(), er = document.getElementById('tbAdrErr');
     if(!/^\d{4} [A-Z]{2}$/.test(pc)){ er.textContent = 'Vul je postcode in, bijvoorbeeld 4762 AS.'; er.hidden = false; return; }
     if(!/^\d+/.test(hn)){ er.textContent = 'Vul je huisnummer in.'; er.hidden = false; return; }
-    st.postcode = pc; st.huisnummer = hn; go('laden'); }
+    st.postcode = pc; st.huisnummer = hn; go('panelen'); }
 
   /* ---------- advies en besparing (indicatie) ---------- */
-  function verbruik(){ var v = st.verbruik || 3500; if(st.extra.ev) v += 2000; if(st.extra.wp) v += 2500; if(st.extra.airco) v += 400; return v; }
+  function verbruik(){ var v = st.verbruik > 0 ? st.verbruik : 3500; if(st.extra.ev) v += 2000; if(st.extra.wp) v += 2500; if(st.extra.airco) v += 400; return v; }
   function opwek(){ return st.panelen === 'ja' ? st.aantal * KWH_PANEEL : st.panelen === 'straks' ? 12 * KWH_PANEEL : 0; }
-  function advies(){
-    if(st.fase === '3') return 'bat16-3';
-    var groot = verbruik() >= 3200 || st.extra.ev || st.extra.wp || st.doel === 'handel' || opwek() >= 4400;
-    return groot ? 'bat16-1' : 'bat10';
-  }
+  function advies(){ if(st.fase === '3') return 'bat16-3';
+    return (verbruik() >= 3200 || st.extra.ev || st.extra.wp || st.doel === 'handel' || opwek() >= 4400) ? 'bat16-1' : 'bat10'; }
   function reken(id){
-    var p = PK[id], use = p.kwh * 0.95, C = verbruik(), P = opwek(), tot = {direct:0, extra:0, arb:0, prod:P};
+    var p = PK[id], use = p.kwh * 0.95, C = verbruik(), P = opwek(), tot = {direct:0, extra:0, arb:0};
     for(var i = 0; i < 12; i++){
       var prod = P * MF[i] / 98.4, cons = C * CF[i] / 100, direct = Math.min(prod, cons * .35), sur = prod - direct, rest = cons - direct;
       var cap = use * DG[i] * UTIL, extra = Math.min(sur * EFF, rest, cap), arb = Math.min(Math.max(0, cap - extra), rest - extra);
       tot.direct += direct; tot.extra += extra; tot.arb += arb;
     }
     var dyn = st.doel === 'handel' || st.panelen === 'nee';
-    var besparing = tot.extra * PRIJS + (dyn ? tot.arb * (SPREAD - (1 / EFF - 1) * (PRIJS - SPREAD)) : 0);
-    tot.besparing = besparing; tot.dyn = dyn;
-    tot.zelfZonder = P ? tot.direct / P : 0; tot.zelfMet = P ? (tot.direct + tot.extra / EFF) / P : 0;
+    tot.besparing = tot.extra * PRIJS + (dyn ? tot.arb * (SPREAD - (1 / EFF - 1) * (PRIJS - SPREAD)) : 0);
+    tot.zelfZonder = P ? tot.direct / P : 0; tot.zelfMet = P ? Math.min(.95, (tot.direct + tot.extra / EFF) / P) : 0;
     return tot;
   }
-  function range(v){ var lo = Math.floor(v * .85 / 10) * 10, hi = Math.ceil(v * 1.15 / 10) * 10; return '€ ' + fmt(lo) + ' – ' + fmt(hi); }
+  function range(v){ return eur(Math.floor(v * .85 / 10) * 10) + ' – ' + fmt(Math.ceil(v * 1.15 / 10) * 10); }
   function waarom(id){
     var p = PK[id], w = [];
-    w.push(p.fase === '3-fase' ? 'Je hebt een 3-fase aansluiting: de 8 kW omvormer verdeelt het vermogen over alle drie de fasen.' :
-      st.fase === '?' ? 'We gaan uit van een 1-fase aansluiting. Blijkt het 3-fase, dan wordt het de 16 kWh met 8 kW omvormer (' + '€ ' + fmt(PK['bat16-3'].prijs) + ').' :
-      'Past bij je 1-fase aansluiting, met een ' + p.kw + ' kW hybride omvormer.');
-    if(st.panelen === 'ja') w.push('Met ' + st.aantal + ' panelen maak je ongeveer ' + fmt(opwek()) + ' kWh per jaar. Een groot deel daarvan komt overdag, als je weinig gebruikt.');
-    if(st.panelen === 'straks') w.push('Zonnepanelen leggen we ook. Voor deze berekening gaan we uit van 12 panelen; in het adviesgesprek rekenen we panelen en batterij samen door.');
+    w.push(p.fase === '3-fase' ? 'Je hebt een 3-fase aansluiting. De 8 kW omvormer verdeelt het vermogen over alle drie de fasen.' :
+      st.fase === '?' ? 'We gaan uit van een 1-fase aansluiting. Blijkt het 3-fase, dan wordt het de 16 kWh met 8 kW omvormer.' : 'Past bij je 1-fase aansluiting, met een ' + p.kw + ' kW hybride omvormer.');
+    if(st.panelen === 'ja') w.push('Je ' + st.aantal + ' panelen maken ongeveer ' + fmt(opwek()) + ' kWh per jaar. Een groot deel daarvan komt overdag, als je weinig gebruikt. Die stroom bewaar je nu voor de avond.');
+    if(st.panelen === 'straks') w.push('Zonnepanelen leggen we ook. We rekenen hier met 12 panelen; in het gesprek rekenen we panelen en batterij samen door.');
     if(st.panelen === 'nee') w.push('Zonder zonnepanelen bespaar je vooral met een dynamisch contract: laden als stroom goedkoop is, gebruiken als hij duur is.');
     if(st.extra.ev || st.extra.wp) w.push('Met ' + [st.extra.ev && 'een elektrische auto', st.extra.wp && 'een warmtepomp'].filter(Boolean).join(' en ') + ' gebruik je \'s avonds veel stroom. Dan loont meer opslag.');
     if(st.doel === 'noodstroom') w.push('Valt de stroom uit, dan levert de batterij noodstroom aan je huis.');
@@ -407,31 +427,59 @@ JS = r'''<script>
     if((st.doel === '2027' || st.doel === 'besparen') && st.panelen !== 'nee') w.push('Vanaf 1 januari 2027 stopt salderen. Elke kWh die je zelf gebruikt in plaats van teruglevert, is dan meer waard.');
     return w;
   }
-  function resultaat(){
-    var id = st.keuze, p = PK[id], r = reken(id), alt = Object.keys(PK);
-    bar.style.width = '100%';
-    var kp = [
-      ['Geschatte besparing', r.besparing > 25 ? range(r.besparing) + '<span style="font:600 12px Nunito Sans,sans-serif;color:var(--ink-faint);"> per jaar</span>' : 'Bespreken we samen'],
-      [opwek() ? 'Eigen zonnestroom zelf gebruikt' : 'Opslag', opwek() ? Math.round(r.zelfZonder * 100) + '% → ' + Math.round(Math.min(.95, r.zelfMet) * 100) + '%' : p.kwh + ' kWh'],
-      ['Installatie al vanaf', '<span data-vw-first></span>']];
-    return '<div class="tb-res">' + head('Dit is je advies') .replace('<h2 class="tb-q">Dit is je advies</h2>', '') +
-      '<span class="tag">Past het best bij jou</span>' +
-      '<div class="tb-prod"><img src="/images/thumb-batterij.webp" alt="" width="120" height="120"><div><h2 class="vw-heading">Thuisbatterij ' + p.kwh + ' kWh met ' + p.kw + ' kW omvormer</h2><p>' + esc(p.merk) + ' · ' + p.fase + ' · vaste prijs inclusief installatie</p></div></div>' +
-      '<div class="tb-price"><b>€ ' + fmt(p.prijs) + '</b><span>incl. installatie, excl. btw</span><small>€ ' + fmt(p.prijs * 1.21) + ' incl. btw. Gebruik je een dynamisch contract, dan kun je de btw vaak terugvragen.</small></div>' +
-      '<div class="tb-kpis">' + kp.map(function(k){ return '<div><span>' + k[0] + '</span><b>' + k[1] + '</b></div>'; }).join('') + '</div>' +
-      '<ul class="tb-why">' + waarom(id).map(function(t){ return '<li>' + esc(t) + '</li>'; }).join('') + '</ul>' +
-      '<div class="tb-alt"><span>Vergelijk:</span>' + alt.map(function(a){ return '<button type="button" data-alt="' + a + '" aria-pressed="' + (a === id) + '">' + PK[a].kwh + ' kWh ' + PK[a].fase + ' · € ' + fmt(PK[a].prijs) + '</button>'; }).join('') + '</div>' +
-      '<form class="tb-form" id="tbForm" name="thuisbatterij-advies" novalidate><h3>Vraag je gratis adviesgesprek aan</h3>' +
-      '<p style="font-size:14px;color:var(--ink-soft);line-height:1.5;margin-top:-4px;">We bellen je om je situatie te checken en het advies samen door te rekenen. Daarna krijg je een offerte met vaste prijs.</p>' +
+  function ck(list){ return '<ul class="tb-ck">' + list.map(function(t){ return '<li>' + esc(t) + '</li>'; }).join('') + '</ul>'; }
+  function systeem(){
+    var id = st.keuze, p = PK[id];
+    return head('Dit past bij jouw situatie', 'Op basis van je antwoorden past deze batterij het best bij jouw woning en wat je belangrijk vindt.', true) +
+      '<div class="tb-content"><div class="tb-sys"><div class="img"><img src="/images/product-batterij.webp" alt="" onerror="this.style.display=\'none\'"><span class="badge">' + IC.tool + '</span></div>' +
+      '<div class="bd"><div class="t"><b>Thuisbatterij ' + p.kwh + ' kWh · ' + p.fase + '</b><i></i></div><p>' + esc(p.kort) + '</p>' + ck(p.feat.slice(0, 3).concat(['Installatie door onze eigen monteurs inbegrepen'])) + '</div></div></div>' +
+      bar('Bekijk jouw aanbod →', 'tbSysGo', 'Vrijblijvend: je ziet eerst je aanbod en de prijs.');
+  }
+  function galerij(p){
+    var f = p.foto[st.foto] || p.foto[0];
+    return '<div class="tb-gal"><div class="main"><img id="tbFoto" class="' + (f[2] || '') + '" src="' + f[0] + '" alt="' + esc(f[1]) + '"><span class="cap" id="tbCap">' + esc(f[1]) + '</span>' +
+      (p.foto.length > 1 ? '<button type="button" class="nav prev" id="tbPrev" aria-label="Vorige foto">‹</button><button type="button" class="nav next" id="tbNextF" aria-label="Volgende foto">›</button>' : '') + '</div>' +
+      '<div class="tb-thumbs">' + p.foto.map(function(x, i){ return '<button type="button" data-foto="' + i + '" aria-label="' + esc(x[1]) + '" aria-pressed="' + (i === st.foto) + '"><img src="' + x[0] + '" alt="" loading="lazy"></button>'; }).join('') + '</div>' +
+      '<p class="tb-note">Foto\'s ter illustratie. De uitvoering kan afwijken.</p></div>';
+  }
+  function foto(){ var p = PK[st.keuze], f = p.foto[st.foto], im = document.getElementById('tbFoto'); if(!im) return;
+    im.src = f[0]; im.alt = f[1]; im.className = f[2] || ''; document.getElementById('tbCap').textContent = f[1];
+    main.querySelectorAll('[data-foto]').forEach(function(b){ b.setAttribute('aria-pressed', String(+b.dataset.foto === st.foto)); }); }
+  function dagenTot2027(){ var d = Math.ceil((new Date(2027, 0, 1) - new Date()) / 864e5); return d > 0 ? d : 0; }
+  function aanbod(){
+    var id = st.keuze, p = PK[id], r = reken(id), adv = advies(), d27 = dagenTot2027();
+    var sizes = Object.keys(PK).map(function(k){ var x = PK[k]; return '<button type="button" data-size="' + k + '" aria-pressed="' + (k === id) + '">' + (k === adv ? '<em>Advies</em>' : '') + x.kwh + ' kWh · ' + x.fase + '<small>' + eur(x.prijs) + ' excl. btw</small></button>'; }).join('');
+    var kpi = '<div class="tb-kpi"><div><span>Geschatte besparing</span><b>' + (r.besparing > 25 ? range(r.besparing) + '<small style="font:600 12px Nunito Sans,sans-serif;color:var(--ink-faint);"> /jaar</small>' : 'Samen bekijken') + '</b></div>' +
+      '<div><span>' + (opwek() ? 'Eigen zonnestroom zelf gebruikt' : 'Bruikbare opslag') + '</span><b>' + (opwek() ? Math.round(r.zelfZonder * 100) + '% → ' + Math.round(r.zelfMet * 100) + '%' : 'ca. ' + fmt(p.kwh * .95) + ' kWh') + '</b></div></div>';
+    return head('Jouw aanbod', '', true) +
+      '<div class="tb-offer">' + galerij(p) +
+      '<div class="tb-of"><div class="lab">' + (id === adv ? 'Past het best bij jou' : 'Jouw keuze') + '</div><h2>Thuisbatterij ' + p.kwh + ' kWh met ' + p.kw + ' kW omvormer</h2><p class="s">' + esc(p.naam) + ' · ' + p.fase + '</p>' +
+      '<div class="tb-sizes" role="group" aria-label="Kies je opslag">' + sizes + '</div>' +
+      '<div class="tb-why"><b>Waarom dit systeem voor jou?</b>' + ck(waarom(id)) + '</div>' + ck(p.feat) + kpi +
+      '<div class="tb-price"><div class="v">Vaste prijs, inclusief installatie</div><div class="p">' + eur(p.prijs) + '<small>excl. btw</small></div>' +
+      '<div class="i">' + eur(p.prijs * 1.21) + ' incl. btw. Met een dynamisch contract kun je de btw vaak terugvragen. Is er meerwerk nodig, dan hoor je dat altijd vooraf.</div></div>' +
+      '<div class="tb-urg"><span class="g">Installatie al vanaf <b data-vw-first></b></span>' + (d27 ? '<span>Salderen stopt over ' + d27 + ' dagen</span>' : '') + '</div>' +
+      '<button type="button" class="tb-btn full" data-offerte>Vraag vrijblijvend jouw offerte aan →</button>' +
+      '<div class="tb-risk"><span>Je betaalt nu niets</span><span>Gratis technische check</span><span>Eigen monteurs</span></div>' +
+      '<div class="tb-proof"><span><i>★★★★★</i> 4,7 / 5 op Google</span><span>12.500+ installaties</span><span>2 jaar installatiegarantie</span></div>' +
+      '<details class="tb-inc"><summary>Wat zit er in de prijs?</summary>' + ck(INC) + '</details>' +
+      '<p class="tb-small" style="margin-top:14px;">Besparing is een indicatie vanaf 2027, bij € 0,28 per kWh en zonder salderen. In het adviesgesprek rekenen we het na met je jaarafrekening.</p>' +
+      '</div></div>' + bar('Vraag offerte aan →', 'tbOfGo');
+  }
+  function gegevens(){
+    var p = PK[st.keuze];
+    return head('Bijna klaar. Waar mogen we je offerte naartoe sturen?', 'We bellen je om je situatie kort te checken. Daarna krijg je je offerte met vaste prijs. Je zit nergens aan vast.') +
+      '<div class="tb-form"><form id="tbForm" name="thuisbatterij-advies" novalidate>' +
       '<p hidden><label>Niet invullen <input name="bot-field"></label></p>' +
-      '<div class="tb-field"><label for="tbNaam">Naam</label><input id="tbNaam" name="naam" autocomplete="name" required></div>' +
-      '<div class="tb-row"><div class="tb-field"><label for="tbTel">Telefoon</label><input id="tbTel" name="telefoon" type="tel" autocomplete="tel" inputmode="tel" required></div>' +
-      '<div class="tb-field"><label for="tbMail">E-mail</label><input id="tbMail" name="email" type="email" autocomplete="email" required></div></div>' +
-      (st.panelen !== 'ja' ? '<label class="chk"><input type="checkbox" id="tbZp"' + (st.panelen === 'straks' ? ' checked' : '') + '> Neem ook zonnepanelen mee in mijn advies</label>' : '') +
+      '<div class="tb-field"><label for="tbNaam">Voor- en achternaam</label><input id="tbNaam" name="naam" autocomplete="name" required></div>' +
+      '<div class="tb-field"><label for="tbTel">Telefoonnummer</label><input id="tbTel" name="telefoon" type="tel" autocomplete="tel" inputmode="tel" required></div>' +
+      '<div class="tb-field"><label for="tbMail">E-mailadres</label><input id="tbMail" name="email" type="email" autocomplete="email" required></div>' +
+      (st.panelen !== 'ja' ? '<label class="chk"><input type="checkbox" id="tbZp"' + (st.panelen === 'straks' ? ' checked' : '') + '> Neem ook zonnepanelen mee in mijn offerte</label>' : '') +
       '<div id="tbFormErr" class="tb-err" hidden></div>' +
-      '<button type="submit" class="tb-btn">Vraag gratis adviesgesprek aan →</button>' +
-      '<p class="tb-small">Gratis en vrijblijvend · je betaalt nu niets · wij bellen je, geen callcenter</p></form>' +
-      '<p class="tb-small" style="margin-top:14px;">Besparing is een indicatie vanaf 2027, bij € 0,28 per kWh en zonder salderen. In het gesprek rekenen we het na met je jaarafrekening.</p></div>';
+      '<button type="submit" class="tb-btn full">Verstuur mijn aanvraag →</button>' +
+      '<p class="tb-small" style="text-align:center;">Gratis en vrijblijvend. We gebruiken je gegevens alleen voor deze aanvraag. Zie ons <a href="/privacybeleid" style="color:inherit;">privacybeleid</a>.</p></form>' +
+      '<div class="tb-sum"><div class="r"><img src="' + p.foto[0][0] + '" alt=""><div><b>Thuisbatterij ' + p.kwh + ' kWh · ' + p.fase + '</b><div class="pp">' + eur(p.prijs) + ' <small style="font:600 13px Nunito Sans,sans-serif;color:var(--ink-faint);">excl. btw</small></div></div></div>' +
+      ck(['Vaste prijs, inclusief installatie', 'Installatie al vanaf ' + (window.vwFirstDate || 'binnen enkele weken'), 'Je betaalt nu niets', '4,7 / 5 op Google, 12.500+ installaties']) + '</div></div>' + bar();
   }
   function verstuur(e){
     e.preventDefault(); var f = e.target, er = document.getElementById('tbFormErr'), v = function(n){ return (f.elements[n].value || '').trim(); };
@@ -439,9 +487,9 @@ JS = r'''<script>
     if(fout){ er.textContent = fout; er.hidden = false; return; }
     var p = PK[st.keuze], r = reken(st.keuze), zp = document.getElementById('tbZp'), btn = f.querySelector('button[type=submit]'), t = utm();
     var velden = {'form-name':'thuisbatterij-advies', 'bot-field':v('bot-field'), naam:v('naam'), telefoon:v('telefoon'), email:v('email'),
-      postcode:st.postcode, huisnummer:st.huisnummer, advies:'Thuisbatterij ' + p.kwh + ' kWh + ' + p.kw + ' kW omvormer (' + p.fase + ')', prijs:'€ ' + fmt(p.prijs) + ' excl. btw',
+      postcode:st.postcode, huisnummer:st.huisnummer, advies:'Thuisbatterij ' + p.kwh + ' kWh + ' + p.kw + ' kW omvormer (' + p.fase + ')' + (st.keuze !== advies() ? ' (zelf gekozen; advies was ' + PK[advies()].kwh + ' kWh ' + PK[advies()].fase + ')' : ''), prijs:eur(p.prijs) + ' excl. btw',
       zonnepanelen:st.panelen === 'ja' ? 'ja, ca. ' + st.aantal + ' panelen' : st.panelen === 'straks' ? 'nog niet, wil ze erbij' : 'nee',
-      ook_zonnepanelen:zp && zp.checked ? 'ja' : '', verbruik:fmt(st.verbruik || 3500) + ' kWh',
+      ook_zonnepanelen:zp && zp.checked ? 'ja' : '', verbruik:fmt(st.verbruik > 0 ? st.verbruik : 3500) + ' kWh',
       extra:['ev','wp','airco'].filter(function(k){ return st.extra[k]; }).map(function(k){ return {ev:'elektrische auto', wp:'warmtepomp', airco:'airco'}[k]; }).join(', ') || 'geen',
       aansluiting:st.fase === '?' ? 'weet ik niet' : st.fase + '-fase', belangrijk:{besparen:'zoveel mogelijk besparen', '2027':'klaar zijn voor 2027', noodstroom:'noodstroom', handel:'slim handelen'}[st.doel] || '',
       geschatte_besparing:r.besparing > 25 ? range(r.besparing) + ' per jaar' : '', pagina:location.pathname,
@@ -458,18 +506,42 @@ JS = r'''<script>
     });
   }
   function klaar(){
-    bar.style.width = '100%'; var p = PK[st.keuze];
-    return '<div class="tb-ok"><div class="big">' + IC.kal.replace('width="22" height="22"', 'width="30" height="30"') + '</div><h2 class="vw-heading">Bedankt, ' + esc((st.naam || '').split(' ')[0]) + '! Je aanvraag is binnen.</h2>' +
-      '<p>We bellen je zo snel mogelijk over de thuisbatterij van ' + p.kwh + ' kWh. Wil je niet wachten? Plan meteen zelf een moment dat jou uitkomt.</p>' +
-      '<div class="tb-book"><button type="button" data-book="bel"><b>Belafspraak</b><span>15 min, wij bellen jou</span></button><button type="button" data-book="huis"><b>Adviseur aan huis</b><span>we kijken naar je meterkast en woning</span></button>' +
-      '<a href="https://wa.me/31853335687?text=' + encodeURIComponent('Hoi Voltwijk, ik heb net een advies voor een thuisbatterij aangevraagd. Hier een foto van mijn meterkast:') + '" target="_blank" rel="noopener"><b>Foto meterkast sturen</b><span>via WhatsApp, dan gaat het nog sneller</span></a></div></div>';
+    var p = PK[st.keuze];
+    return '<div class="tb-ok"><div class="big">' + IC.kal.replace('width="22" height="22"', 'width="32" height="32"') + '</div><h1 class="tb-h">Bedankt, ' + esc((st.naam || '').split(' ')[0]) + '! Je aanvraag is binnen.</h1>' +
+      '<p>We bellen je zo snel mogelijk over je thuisbatterij van ' + p.kwh + ' kWh. Wil je niet wachten? Plan meteen zelf een moment dat jou uitkomt.</p>' +
+      '<div class="tb-book"><button type="button" data-book="bel"><b>Belafspraak</b><span>15 minuten, wij bellen jou</span></button><button type="button" data-book="huis"><b>Adviseur aan huis</b><span>we kijken naar je meterkast en woning</span></button>' +
+      '<a href="https://wa.me/31853335687?text=' + encodeURIComponent('Hoi Voltwijk, ik heb net een offerte voor een thuisbatterij aangevraagd. Hier een foto van mijn meterkast:') + '" target="_blank" rel="noopener"><b>Foto meterkast sturen</b><span>via WhatsApp, dan gaat het nog sneller</span></a></div></div>';
   }
   render(false);
-  document.querySelectorAll('[data-tb-start]').forEach(function(a){ a.addEventListener('click', function(e){ e.preventDefault(); card.scrollIntoView({behavior: 'smooth', block: 'start'}); var p = a.getAttribute('data-tb-start'); if(p && cur === 'advies' && PK[p]){ st.keuze = p; render(false); } }); });
-  var sticky = document.getElementById('tbSticky');
-  if(sticky && 'IntersectionObserver' in window){ var vis = true; new IntersectionObserver(function(es){ vis = es[0].isIntersecting; sticky.classList.toggle('on', !vis && innerWidth < 900 && cur !== 'klaar'); }).observe(card); }
+  /* knop onderaan het aanbod (mobiel) wijst ook naar de offerte */
+  document.addEventListener('click', function(ev){ var t = ev.target.closest && ev.target.closest('#tbOfGo'); if(t){ track('offerte_klik', {batterij: st.keuze}); go('gegevens'); } });
 })();
 </script>'''
+
+def pk_js():
+    out = {}
+    for p in PAKKETTEN:
+        t = PK_TXT.get(p['id'], {})
+        out[p['id']] = {'kwh': p['kwh'], 'kw': p['kw'], 'fase': p['fase'], 'prijs': p['prijs'], 'naam': t.get('naam', ''), 'kort': t.get('kort', ''),
+                        'feat': t.get('feat', []), 'foto': t.get('foto', [])}
+    return json.dumps(out, ensure_ascii=False)
+
+def main_html():
+    icjson = json.dumps({k: svg(k) for k in IC}, ensure_ascii=False)
+    js = JS.replace('__PK__', pk_js()).replace('__IC__', icjson).replace('__INC__', json.dumps(INBEGREPEN, ensure_ascii=False))
+    return f'''<div class="blk-light tb-page">
+  {CSS}
+  <div class="tb-band"><div class="tb-steps" id="tbSteps" aria-label="Stappen"></div></div>
+  <div class="tb-main" id="calculator" aria-live="polite"><div id="tbMain" style="display:flex;flex-direction:column;flex:1;"><noscript>Zet JavaScript aan om de calculator te gebruiken, of bel ons op {TEL}.</noscript></div></div>
+  <form name="thuisbatterij-advies" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input name="bot-field"><input name="naam"><input name="telefoon"><input name="email"><input name="postcode"><input name="huisnummer">
+    <input name="advies"><input name="prijs"><input name="zonnepanelen"><input name="ook_zonnepanelen"><input name="verbruik"><input name="extra">
+    <input name="aansluiting"><input name="belangrijk"><input name="geschatte_besparing"><input name="pagina"><input name="bron"><input name="utm_content"><input name="gclid"><input name="fbclid">
+  </form>
+  {js}
+</div>
+'''
+
 
 def nav_html(logo):
     return f'''<div id="siteNav">
@@ -479,57 +551,6 @@ def nav_html(logo):
     </div>
   </div>'''
 
-def pk_js():
-    out = {}
-    merk = {'bat10': 'FoxESS all-in-one', 'bat16-1': 'Dyness LFP + Solis', 'bat16-3': 'Dyness LFP + Solis'}
-    for p in PAKKETTEN: out[p['id']] = {'kwh': p['kwh'], 'kw': p['kw'], 'fase': p['fase'], 'prijs': p['prijs'], 'merk': merk.get(p['id'], '')}
-    return json.dumps(out, ensure_ascii=False)
-
-def main_html():
-    icjson = json.dumps({k: svg(k) for k in IC}, ensure_ascii=False)
-    # Eén ding op de pagina: de calculator, groot en in het midden. Geen prijzen, blokken of andere afleiding eromheen.
-    return f'''<div class="blk-light tb-page">
-  {CSS}
-  <style>
-  .tb-page{{padding-top:0 !important;background:var(--dark);}}
-  .tb-solo{{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;align-items:center;padding:96px 16px 40px;
-    background:radial-gradient(900px 480px at 50% -10%,rgba(111,214,200,.16),transparent 65%),var(--dark);}}
-  .tb-solo .wrapc{{width:100%;max-width:720px;}}
-  .tb-solo h1{{color:#fff;text-align:center;font-size:clamp(28px,4vw,44px);line-height:1.08;}}
-  .tb-solo .sub{{color:#C9D6D3;text-align:center;font-size:16.5px;margin:12px auto 26px;max-width:520px;line-height:1.55;}}
-  .tb-solo .tb-card{{box-shadow:0 50px 100px -40px rgba(0,0,0,.7);}}
-  .tb-solo .tb-body{{padding:34px 38px 36px;min-height:520px;}}
-  .tb-solo .tb-q{{font-size:clamp(24px,2.8vw,32px);}}
-  .tb-solo .tb-opt{{padding:20px 18px;}}
-  .tb-solo .tb-opt b{{font-size:17px;}}
-  .tb-mini{{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 18px;margin-top:20px;color:#9FB0AD;font-size:13px;font-weight:700;}}
-  .tb-mini i{{font-style:normal;color:#F5B400;letter-spacing:1px;margin-right:4px;}}
-  #waWidget{{display:none !important;}}
-  #vwCookie{{padding:12px 14px !important;}}#vwCookie .ck-title{{display:none;}}
-  #vwCookie p{{margin:0 0 10px !important;font-size:12px !important;line-height:1.45 !important;}}
-  #vwCookie .ck-btns{{flex-wrap:nowrap;}}#vwCookie .ck-btns button{{flex:1;padding:10px 12px !important;font-size:13px !important;}}
-  .tb-foot{{padding:18px 0;}}
-  @media (max-width:640px){{.tb-solo{{padding-top:80px;}}.tb-solo .sub{{font-size:15px;margin-bottom:18px;}}.tb-solo .tb-body{{padding:24px 18px 24px;min-height:460px;}}.tb-solo .tb-opt{{padding:15px 14px;}}}}
-  </style>
-  <div class="tb-solo">
-    <div class="wrapc">
-      <h1 class="vw-heading">Welke thuisbatterij past bij jouw huis?</h1>
-      <p class="sub">Beantwoord 6 korte vragen en zie direct je advies en vaste prijs, inclusief installatie.</p>
-      <div class="tb-card" id="calculator" aria-live="polite">
-        <div class="tb-prog"><i id="tbBar"></i></div>
-        <div class="tb-body" id="tbBody"><noscript>Zet JavaScript aan om de calculator te gebruiken, of bel ons op {TEL}.</noscript></div>
-      </div>
-      <div class="tb-mini"><span><i>★★★★★</i>4,7 / 5 op Google</span><span>12.500+ installaties</span><span>Eigen monteurs</span></div>
-    </div>
-  </div>
-  <form name="thuisbatterij-advies" data-netlify="true" netlify-honeypot="bot-field" hidden>
-    <input name="bot-field"><input name="naam"><input name="telefoon"><input name="email"><input name="postcode"><input name="huisnummer">
-    <input name="advies"><input name="prijs"><input name="zonnepanelen"><input name="ook_zonnepanelen"><input name="verbruik"><input name="extra">
-    <input name="aansluiting"><input name="belangrijk"><input name="geschatte_besparing"><input name="pagina"><input name="bron"><input name="utm_content"><input name="gclid"><input name="fbclid">
-  </form>
-  {JS.replace('__PK__', pk_js()).replace('__IC__', icjson)}
-</div>
-'''
 
 FOOT = f'''<div class="tb-foot">
     <div class="wrap">
