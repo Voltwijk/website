@@ -79,7 +79,7 @@ Voltwijk werkt met drie vaste pakketten, inclusief installatie:
 | 16 kWh | 6 kW, 1-fase | De meeste huishoudens met zonnepanelen (1-fase) | € 4.600 |
 | 16 kWh | 8 kW, 3-fase | Woningen met een 3-fase aansluiting | € 5.700 |
 
-Twijfel je? Met de [keuzehulp voor de thuisbatterij](/product-batterij#batterijkeuze) zie je in een paar vragen welk pakket bij jou past.
+Twijfel je? Met de [batterijcalculator](/thuisbatterij-berekenen) zie je in een paar vragen welk pakket bij jou past.
 
 ## Hoe verloopt de installatie?
 
@@ -118,7 +118,7 @@ Een paar vragen om jezelf te stellen:
 
 ## Hoe Voltwijk helpt
 
-Voltwijk plaatst thuisbatterijen in heel West-Brabant, met eigen monteurs en een vaste prijs inclusief installatie. Op de installatie krijg je 2 jaar garantie. Bekijk de pakketten en de keuzehulp op de [thuisbatterij-pagina](/product-batterij). Heb je vragen over jouw situatie, dan kijken we graag met je mee.
+Voltwijk plaatst thuisbatterijen in heel West-Brabant, met eigen monteurs en een vaste prijs inclusief installatie. Op de installatie krijg je 2 jaar garantie. Bekijk de pakketten op de [thuisbatterij-pagina](/product-batterij) of bereken met de [batterijcalculator](/thuisbatterij-berekenen) welke bij je past. Heb je vragen over jouw situatie, dan kijken we graag met je mee.
 
 faq:
 Q: Wat kost een thuisbatterij in Breda of West-Brabant?

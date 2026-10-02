@@ -90,7 +90,7 @@ Andersom geldt ook: heb je een goed geïsoleerd huis en is je ketel toch aan ver
 
 ## Hoe Voltwijk helpt
 
-Voltwijk kijkt samen met je naar je isolatie, radiatoren en meterkast en adviseert eerlijk of hybride of volledig elektrisch het beste past, tegen een vaste prijs vooraf. Bekijk onze [warmtepomp](/product-warmtepomp) of [bereken je prijs](/bereken-je-prijs).
+Voltwijk kijkt samen met je naar je isolatie, radiatoren en meterkast en adviseert eerlijk of hybride of volledig elektrisch het beste past, tegen een vaste prijs vooraf. Bekijk onze [warmtepomp](/product-warmtepomp) of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Kan ik later van een hybride naar een volledig elektrische warmtepomp overstappen?

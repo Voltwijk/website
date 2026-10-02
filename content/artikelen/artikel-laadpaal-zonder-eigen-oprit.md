@@ -100,7 +100,7 @@ Er is geen antwoord dat voor iedereen geldt. Een paar vragen helpen je kiezen:
 
 ## Hoe Voltwijk kan helpen
 
-Heb je een eigen parkeerplek of mag je in je gemeente laden via een kabelgoot? Dan kijken onze eigen monteurs graag of een laadpaal bij jou past en wat er in je meterkast nodig is. Voltwijk installeert een slimme laadpaal van 11 kW vanaf € 1.299. Kan een thuislaadpaal bij jou niet, dan zeggen we dat ook eerlijk. Bekijk de [laadpaal](/product-laadpaal) of [bereken je prijs](/bereken-je-prijs).
+Heb je een eigen parkeerplek of mag je in je gemeente laden via een kabelgoot? Dan kijken onze eigen monteurs graag of een laadpaal bij jou past en wat er in je meterkast nodig is. Voltwijk installeert een slimme laadpaal van 11 kW vanaf € 1.299. Kan een thuislaadpaal bij jou niet, dan zeggen we dat ook eerlijk. Bekijk de [laadpaal](/product-laadpaal) of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Kan ik een laadpaal krijgen zonder eigen oprit?

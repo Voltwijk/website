@@ -11,7 +11,7 @@ Beheer: https://business.google.com. Gebruik overal exact de gegevens uit `bedri
 | Telefoon | 085 333 56 87 |
 | Website | https://voltwijk.nl |
 | Openingstijden | ma t/m vr 09:00–17:30, za en zo gesloten |
-| Afspraak-link | https://voltwijk.nl/bereken-je-prijs |
+| Afspraak-link | https://voltwijk.nl/thuisbatterij-berekenen |
 | Omschrijving | De lange omschrijving (717 tekens) uit `bedrijvengidsen.md` |
 
 **Adres tonen of verbergen?** Google wil dat je je adres alleen toont als klanten er ook echt langs kunnen komen tijdens de openingstijden. Kom je alleen bij klanten thuis en ontvang je geen klanten op de Schoenmakerij? Verberg dan het adres en stel alleen het servicegebied in (hieronder). Het adres blijft wel nodig voor de verificatie.

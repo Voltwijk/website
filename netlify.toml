@@ -9,6 +9,18 @@
   to = "/"
   status = 301
 
+# Eén calculator: de oude prijscalculator en de advertentiepagina gaan naar de batterijcalculator (UTM-codes blijven behouden)
+[[redirects]]
+  from = "/bereken-je-prijs"
+  to = "/thuisbatterij-berekenen"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/thuisbatterij-actie"
+  to = "/thuisbatterij-berekenen"
+  status = 301
+  force = true
+
 # Interne marketingdocumenten niet publiek tonen
 [[redirects]]
   from = "/marketing/*"

@@ -116,7 +116,7 @@ Een goede vraag aan je installateur is: "Wat heb ik over een paar jaar nodig, en
 
 ## Hoe Voltwijk kan helpen
 
-Voltwijk past meterkasten aan volgens NEN 1010, vanaf € 649. Onze eigen monteurs kijken of een extra groep genoeg is, of dat je kast of aansluiting ook aandacht nodig heeft. Plaatsen we een laadpaal, warmtepomp, airco of boiler, dan nemen we de meterkast direct mee. Bekijk de [meterkast](/product-meterkast) of [bereken je prijs](/bereken-je-prijs).
+Voltwijk past meterkasten aan volgens NEN 1010, vanaf € 649. Onze eigen monteurs kijken of een extra groep genoeg is, of dat je kast of aansluiting ook aandacht nodig heeft. Plaatsen we een laadpaal, warmtepomp, airco of boiler, dan nemen we de meterkast direct mee. Bekijk de [meterkast](/product-meterkast) of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Wat kost een extra groep in de meterkast?

@@ -11,7 +11,7 @@ HTML-pagina's, bedoeld om als static site op Netlify te draaien onder voltwijk.n
   meterkast, warmtepomp, zonnepanelen).
 - `artikel-*.html` — kennisbank-/bloginhoud (12 artikelen).
 - Overige pagina's: `hoe-het-werkt.html`, `producten.html`, `reviews.html`,
-  `garantie.html`, `over-ons.html`, `contact.html`, `bereken-je-prijs.html`,
+  `garantie.html`, `over-ons.html`, `contact.html`, `thuisbatterij-berekenen.html`,
   `inzichten.html`, `veelgestelde-vragen.html`, `algemene-voorwaarden.html`,
   `privacybeleid.html`, `cookiebeleid.html`.
 - `images/` — alle foto's, logo's en keurmerken (voorheen als base64 in elke pagina
@@ -49,7 +49,7 @@ formulierdefinities staan verborgen onderaan `index.html`:
 |---------------|----------------------------------------|--------|
 | `contact`     | /contact, homepage                     | onderwerp, naam, email, telefoon, bericht |
 | `terugbellen` | /contact (#terugbellen)                | naam, telefoon, moment |
-| `offerte`     | prijscalculator (elke productpagina, /bereken-je-prijs, homepage) | naam, email, telefoon, postcode, huistype, producten, prijsindicatie |
+| `thuisbatterij-advies` | de batterijcalculator op /thuisbatterij-berekenen (tools/funnel.py) | naam, email, telefoon, postcode, huisnummer, advies, prijs, antwoorden, UTM-bron |
 | `nieuwsbrief` | footer                                 | email |
 | `gids`        | homepage (#gids)                       | email |
 
@@ -113,7 +113,9 @@ gebruik alleen controleerbare feiten per plaats. Draai daarna `python3 tools/seo
 `python3 tools/booking.py` zet de Cal.com-afspraakplanner (cal.com/voltwijk) op alle pagina's: knoppen met `data-book="huis|video|bel"` openen een venster met de agenda, na een offerte- of contactaanvraag verschijnt "Plan direct je gratis adviesgesprek" (naam en e-mail al ingevuld), en de contactpagina krijgt het blok `#afspraak`. Een geboekte afspraak telt in Google Analytics als `afspraak_gepland`. Links wijzigen? Pas `TYPES` bovenin het script aan en draai het opnieuw. Uitzetten: `python3 tools/booking.py uit`.
 
 ## Online bestellen (calculator)
-`python3 tools/order.py` zet in stap 3 van de prijscalculator (homepage, /bereken-je-prijs en productpagina's) de knop "Bestel direct". De klant vult gegevens in, kiest een installatiedatum (ma–vr, vanaf 6 dagen) en doet een technische check (foto's of videocheck). De bestelling komt binnen via Netlify Forms als formulier `bestelling` (met foto's) en telt in Google Analytics als `bestelling_aangevraagd`. De klant betaalt nu niets; na de orderbevestiging volgt de aanbetaling (`AANBETALING`, nu € 350) via een betaallink, het restant na installatie.
+**Eén calculator.** Sinds oktober 2026 heeft de site één calculator: `/thuisbatterij-berekenen` (gebouwd door `python3 tools/funnel.py`). De oude prijscalculator (/bereken-je-prijs) en /thuisbatterij-actie verwijzen daar met een 301 naartoe (netlify.toml); gebruik deze URL ook in advertenties. Productpagina's van andere producten krijgen een offerteblok (#offerte) met een gratis adviesgesprek. `tools/order.py` zet nu alleen nog de planbalk op elke pagina; het bestelscherm hieronder werkt alleen op een pagina met de oude calculator (#calcCard) en staat dus uit.
+
+`python3 tools/order.py` zette in stap 3 van de oude prijscalculator de knop "Bestel direct". De klant vult gegevens in, kiest een installatiedatum (ma–vr, vanaf 6 dagen) en doet een technische check (foto's of videocheck). De bestelling komt binnen via Netlify Forms als formulier `bestelling` (met foto's) en telt in Google Analytics als `bestelling_aangevraagd`. De klant betaalt nu niets; na de orderbevestiging volgt de aanbetaling (`AANBETALING`, nu € 350) via een betaallink, het restant na installatie.
 Zet `CAL = True` zodra het Cal.com-afspraaktype `cal.com/voltwijk/installatie` bestaat: klanten kiezen dan een echte dag uit de agenda (max. 3 per dag, instellen in Cal.com) en de bestelling wordt na het boeken verstuurd.
 `tools/order.py` zet ook op elke pagina de planbalk ("Installatie al vanaf …  Plan nu"), vult elk element met `data-vw-first` met de eerst mogelijke installatiedatum, en vinkt op een productpagina dat product alvast aan in de calculator. Klanten kunnen tot 8 foto's toevoegen (velden `foto_1` t/m `foto_8`, automatisch verkleind).
 

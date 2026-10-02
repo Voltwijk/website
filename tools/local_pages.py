@@ -123,7 +123,7 @@ CITIES = [
          ('Woningen uit de jaren \'80 en \'90', 'Wijken als de Reeshof zijn grotendeels gebouwd vanaf de jaren \'80. Die woningen zijn vaak redelijk geïsoleerd en daardoor geschikt voor een hybride warmtepomp, of met extra maatregelen voor een volledige.'),
          ('Thuisbatterij met dynamisch contract', 'Met een dynamisch energiecontract laad je je batterij op als stroom goedkoop is en gebruik je hem als stroom duur is. We leggen eerlijk uit wanneer dat loont.'),
          ('Laadpaal thuis', 'Een slimme 11 kW laadpaal laadt de meeste elektrische auto\'s in een nacht vol. Met slim laden gebruik je de goedkoopste uren.')],
-  faq=('Hoeveel kost een thuisbatterij in Tilburg?', 'Een thuisbatterij kost bij ons vanaf € 4.200 inclusief installatie. Met de prijscalculator zie je binnen een minuut wat het voor jouw woning kost.'),
+  faq=('Hoeveel kost een thuisbatterij in Tilburg?', 'Een thuisbatterij kost bij ons vanaf € 4.200 inclusief installatie. Met de batterijcalculator zie je binnen een minuut wat het voor jouw woning kost.'),
   near=['Berkel-Enschot', 'Udenhout', 'Goirle', 'Oisterwijk', 'Hilvarenbeek', 'Reeshof'],
   buren=['breda', 'oosterhout', 's-hertogenbosch', 'eindhoven'],
   arts=['artikel-dynamisch-contract-en-batterij', 'artikel-hybride-of-volledige-warmtepomp', 'artikel-laadpaal-slim-laden']),
@@ -336,7 +336,7 @@ for c in CITIES:
 EXTRA = {
  'etten-leur': ('Zonnepanelen of een thuisbatterij laten installeren in Etten-Leur: zo gaat het',
    'Kort gezegd: je kiest wat je wilt, wij checken je dak en meterkast, en onze eigen monteurs installeren alles voor een vaste prijs. Een thuisbatterij kost vanaf ' + eur(VANAF) + ', zonnepanelen vanaf € 3.999 voor 12 panelen, allebei inclusief installatie.',
-   ['**Kies wat je wilt.** Alleen zonnepanelen, alleen een thuisbatterij of allebei. Met de [prijscalculator](/bereken-je-prijs) of de [batterijkeuzehulp](/product-batterij#batterijkeuze) zie je direct je prijs.',
+   ['**Kies wat je wilt.** Alleen zonnepanelen, alleen een thuisbatterij of allebei. Met de [batterijcalculator](/thuisbatterij-berekenen) zie je direct je prijs.',
     '**We checken je dak en meterkast.** Ligging, schaduw en ruimte op het dak, en of je aansluiting 1-fase of 3-fase is. Moet er iets bij, dan hoor je dat vooraf.',
     '**Onze eigen monteurs installeren.** Geen onderaannemers. Wij melden je installatie aan bij de netbeheerder; in Etten-Leur is dat in de regel Enexis.',
     '**Uitleg bij de oplevering.** Je krijgt uitleg over de app en 2 jaar garantie op de installatie.'],
@@ -440,15 +440,15 @@ WA = 'https://wa.me/31853335687?text='
 def cta(title, sub):
     return f'''<div class="wrap reveal lp-sec" style="max-width:1000px;padding-bottom:80px;"><div class="lp-cta">
       <div><div class="vw-heading" style="font-size:clamp(22px,2.6vw,28px);color:#fff;">{esc(title)}</div><p>{esc(sub)}</p></div>
-      <div style="display:flex;gap:10px;flex-wrap:wrap;"><a href="/bereken-je-prijs" class="btn-primary" style="background:var(--mint);color:var(--dark);text-decoration:none;">Bereken je prijs &amp; plan direct →</a><a href="/contact" class="btn-secondary" style="border-color:#fff;color:#fff;text-decoration:none;">Neem contact op</a></div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;"><a href="/thuisbatterij-berekenen" class="btn-primary" style="background:var(--mint);color:var(--dark);text-decoration:none;">Bereken je thuisbatterij →</a><a href="/contact" class="btn-secondary" style="border-color:#fff;color:#fff;text-decoration:none;">Neem contact op</a></div>
     </div></div>'''
 
 def city_faq(c):
     n, nb = label(c), c['nb']
     p = {x['id']: x for x in PAKKETTEN}
-    kost = ((f'Wat kost een thuisbatterij in {n}?', f'Een thuisbatterij kost bij ons {eur(p["bat10"]["prijs"])} (10 kWh), {eur(p["bat16-1"]["prijs"])} (16 kWh, 1-fase) of {eur(p["bat16-3"]["prijs"])} (16 kWh, 3-fase), inclusief installatie. Zonnepanelen kosten vanaf € 3.999 en een airco vanaf € 1.899. Met de batterijkeuzehulp zie je in vier vragen welke batterij bij je past.')
+    kost = ((f'Wat kost een thuisbatterij in {n}?', f'Een thuisbatterij kost bij ons {eur(p["bat10"]["prijs"])} (10 kWh), {eur(p["bat16-1"]["prijs"])} (16 kWh, 1-fase) of {eur(p["bat16-3"]["prijs"])} (16 kWh, 3-fase), inclusief installatie. Zonnepanelen kosten vanaf € 3.999 en een airco vanaf € 1.899. Met de batterijcalculator zie je in een minuut welke batterij bij je past.')
             if c['wb'] else
-            (f'Wat kost de installatie in {n}?', f'Je betaalt in {n} een vaste prijs die je vooraf kent: zonnepanelen vanaf € 3.999, een thuisbatterij vanaf € 4.200 en een warmtepomp vanaf € 6.750, inclusief installatie. Met de prijscalculator zie je binnen een minuut de prijs voor jouw woning.'))
+            (f'Wat kost de installatie in {n}?', f'Je betaalt in {n} een vaste prijs die je vooraf kent: zonnepanelen vanaf € 3.999, een thuisbatterij vanaf € 4.200 en een warmtepomp vanaf € 6.750, inclusief installatie. Met de batterijcalculator zie je binnen een minuut de prijs voor jouw woning.'))
     nbq = ((f'Wie regelt de netbeheerder en de vergunning in {n}?', f'Dat doen wij. In {n} is {NB[nb]} in de regel de netbeheerder (je exacte adres is bepalend). Wij regelen de aanmelding, een eventuele verzwaring van je aansluiting, een vergunning als die nodig is en bij een warmtepomp de ISDE-subsidie.')
            if c['wb'] else
            (f'Wie regelt de netbeheerder en de vergunning in {n}?', f'Dat doen wij. In {n} is {NB[nb]} de netbeheerder (het precieze adres is bepalend). Wij regelen de aanmelding, een eventuele verzwaring van je aansluiting, een vergunning als die nodig is en bij een warmtepomp de ISDE-subsidie.'))
@@ -466,7 +466,7 @@ def battery_block(n=None):
     <h2 class="vw-heading lp-h2">{kop}</h2>
     <p>Een batterij van 10 of 16 kWh met hybride omvormer, geplaatst door onze eigen monteurs. Welke past, hangt af van je verbruik, je zonnepanelen en je aansluiting (1-fase of 3-fase). Op de installatie krijg je 2 jaar garantie.</p>
     <div class="lp-pk">{cards}</div>
-    <div class="lp-bat-foot"><a href="/product-batterij#batterijkeuze" class="btn-primary" style="text-decoration:none;">Welke batterij past bij mij? →</a><a class="lp-more" href="/product-batterij">Meer over de thuisbatterij</a></div>
+    <div class="lp-bat-foot"><a href="/thuisbatterij-berekenen" class="btn-primary" style="text-decoration:none;">Bereken je thuisbatterij →</a><a class="lp-more" href="/product-batterij">Meer over de thuisbatterij</a></div>
   </div></div>'''
 
 def extra_block(c):
@@ -528,7 +528,7 @@ def city_main(c):
         <div class="pill">Werkgebied · {esc(c['region'])}</div>
         <h1 class="vw-heading"{h1attr} style="font-size:clamp(30px,4.6vw,44px);margin-top:14px;line-height:1.15;">{esc(h1_of(c))}</h1>{sub}
         <p style="font-size:17px;color:var(--ink-soft);margin-top:16px;line-height:1.65;">{esc(c['intro'])}</p>
-        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:24px;"><a href="/bereken-je-prijs" class="btn-primary" style="text-decoration:none;">Bereken je prijs &amp; plan direct →</a><a href="{wa}" target="_blank" rel="noopener" class="btn-secondary" style="text-decoration:none;">Stuur een appje</a></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:24px;"><a href="/thuisbatterij-berekenen" class="btn-primary" style="text-decoration:none;">Bereken je thuisbatterij →</a><a href="{wa}" target="_blank" rel="noopener" class="btn-secondary" style="text-decoration:none;">Stuur een appje</a></div>
       </div>
       <div class="img"><img fetchpriority="high" src="/images/{c['img']}.webp" alt="Installatie door een Voltwijk-monteur" width="800" height="600"></div>
     </div>
@@ -599,7 +599,7 @@ def overview_main():
   <div class="wrap reveal lp-sec" style="max-width:1000px;padding-top:24px;">
     <h2 class="vw-heading lp-h2" style="margin-top:16px;">Andere plaatsen</h2>
     {groups}
-    <p style="font-size:15px;color:var(--ink-soft);margin-top:32px;line-height:1.6;">Staat jouw plaats er niet tussen? Vul je postcode in bij de <a href="/bereken-je-prijs" style="color:var(--primary);font-weight:700;">prijscalculator</a> of <a href="/contact" style="color:var(--primary);font-weight:700;">neem contact op</a>, dan hoor je snel of we bij jou kunnen komen.</p>
+    <p style="font-size:15px;color:var(--ink-soft);margin-top:32px;line-height:1.6;">Staat jouw plaats er niet tussen? Vul je postcode in bij de <a href="/thuisbatterij-berekenen" style="color:var(--primary);font-weight:700;">batterijcalculator</a> of <a href="/contact" style="color:var(--primary);font-weight:700;">neem contact op</a>, dan hoor je snel of we bij jou kunnen komen.</p>
   </div>
   {cta('Zie direct wat het bij jou kost', 'Vul je postcode en woningtype in en zie binnen een minuut je vaste prijs, inclusief installatie.')}
 </div>

@@ -80,7 +80,7 @@ Ja, dat past goed bij elkaar. Koelen doe je vooral op warme, zonnige dagen. Dat 
 
 Dat wordt belangrijker vanaf **1 januari 2027**, als salderen stopt. Stroom die je zelf gebruikt, is dan meer waard dan stroom die je teruglevert. Een airco die overdag op zonnestroom koelt, helpt daarbij.
 
-Heb je ook een thuisbatterij, dan kun je zonnestroom van de middag opslaan voor de avond. Dat is handig als je 's avonds de slaapkamer wilt koelen. Welke batterij bij je past, zie je met de [keuzehulp voor de thuisbatterij](/product-batterij#batterijkeuze). Voor zonnepanelen in onze regio kun je verder lezen in [zonnepanelen laten plaatsen in West-Brabant](/artikel-zonnepanelen-west-brabant).
+Heb je ook een thuisbatterij, dan kun je zonnestroom van de middag opslaan voor de avond. Dat is handig als je 's avonds de slaapkamer wilt koelen. Welke batterij bij je past, zie je met de [batterijcalculator](/thuisbatterij-berekenen). Voor zonnepanelen in onze regio kun je verder lezen in [zonnepanelen laten plaatsen in West-Brabant](/artikel-zonnepanelen-west-brabant).
 
 ## Hoe verloopt het plaatsen van een airco?
 

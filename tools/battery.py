@@ -46,7 +46,7 @@ PRODUCT_FIELDS = {
     'bullets': ["10 of 16 kWh opslag met hybride omvormer, voor 1-fase én 3-fase aansluitingen",
                 "Vaste prijs inclusief installatie: je weet vooraf precies wat je betaalt",
                 "Geïnstalleerd door ons eigen team, klaar voor het einde van salderen in 2027"],
-    'cta': 'Bereken welke batterij past',
+    'cta': 'Bereken je thuisbatterij',
     'price': 'vanaf ' + eur(VANAF),
     'specs': [['Capaciteit', '10 of 16 kWh'], ['Omvormer', '5, 6 of 8 kW hybride'], ['Aansluiting', '1-fase of 3-fase'],
               ['Prijs', eur(PAKKETTEN[0]['prijs']) + ' – ' + eur(PAKKETTEN[-1]['prijs']) + ' incl. installatie'],
@@ -68,7 +68,7 @@ def patch_products(s):
     return s[:m.start(2)] + body + s[m.end(2):]
 
 # ---------- de keuzehulp (op de pagina's in KEUZEHULP_PAGINAS) ----------
-KEUZEHULP_PAGINAS = ('product-batterij.html', 'thuisbatterij-actie.html')
+KEUZEHULP_PAGINAS = ()  # vervangen door de calculator op /thuisbatterij-berekenen (tools/funnel.py)
 PLEK = '<!--vw-batterijkeuze-plek-->'
 # Eén kaart, één vraag per scherm; daarna het advies, dan de aanvraag (eigen scherm), dan de bevestiging.
 SECTION = '''<!--vw-batterijkeuze-->

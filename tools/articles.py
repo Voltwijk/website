@@ -209,21 +209,25 @@ CTACSS = """<style>.art-cta{display:flex;gap:22px;align-items:center;padding:26p
 @media (max-width:600px){.art-cta{flex-direction:column;align-items:flex-start;padding:22px 18px;}.art-cta img{width:100%;height:150px;}.art-cta .btn-primary{width:100%;justify-content:center;}}</style>"""
 
 def cta_card(pname, price, href, thumb):
-    title = f'{esc(pname)} laten installeren?' if pname else 'Klaar om het te regelen?'
+    batterij = href == '/thuisbatterij-berekenen'
+    title = ('Welke thuisbatterij past bij jou?' if batterij else f'{esc(pname)} laten installeren?') if pname or batterij else 'Klaar om het te regelen?'
+    tekst = ('Bereken in 1 minuut welke batterij past, wat hij kost en wat je ongeveer bespaart als salderen stopt. Vaste prijs, inclusief installatie.'
+             if batterij else 'Plan een gratis adviesgesprek. Je krijgt een offerte met een vaste prijs, inclusief installatie door onze eigen monteurs.')
+    knop = 'Bereken je thuisbatterij →' if batterij else 'Plan gratis adviesgesprek →'
     img = f'<img loading="lazy" decoding="async" src="{thumb}" alt="{esc(pname)}">' if thumb else ''
     return (CTACSS + f'''<div class="art-cta">{img}<div><div class="k">Vaste prijs · eigen monteurs{' · ' + esc(price) if price else ''}</div>
-<h2>{title}</h2><p>Bereken in 1 minuut je vaste prijs, inclusief installatie, en kies direct je installatiedatum. Je betaalt nu niets.</p>
-<div class="row"><a class="btn-primary" href="{href}" style="text-decoration:none;">Bereken je prijs &amp; plan direct →</a><span>📅 Installatie al vanaf <b data-vw-first></b></span></div></div></div>''')
+<h2>{title}</h2><p>{tekst}</p>
+<div class="row"><a class="btn-primary" href="{href}" style="text-decoration:none;">{knop}</a><span>📅 Installatie al vanaf <b data-vw-first></b></span></div></div></div>''')
 
 def related_block(slug, prod, catalog):
     if prod == 'algemeen':
-        pool = [c for c in catalog if c['slug'] != slug][:6]; card = cta_card(None, None, '/bereken-je-prijs', None)
+        pool = [c for c in catalog if c['slug'] != slug][:6]; card = cta_card(None, None, '/thuisbatterij-berekenen', None)
     else:
         pname, price, purl, pthumb = PRODUCTS[prod]
         prim = [c for c in catalog if c['product'] == prod and c['slug'] != slug]
         sec = [c for c in catalog if prod in c.get('also', []) and c['slug'] != slug and c not in prim]
         pool = (prim + sec)[:6]
-        card = cta_card(pname, price, purl + '#calculator', pthumb)
+        card = cta_card(pname, price, '/thuisbatterij-berekenen' if prod == 'batterij' else purl + '#offerte', pthumb)
     items = ''.join(f'<a href="/{c["slug"]}"><span>{esc(CATLABEL[c["product"]])}</span>{esc(c["title"])}</a>' for c in pool)
     lab = 'Lees ook' if prod == 'algemeen' else 'Meer over ' + CATLABEL[prod].lower()
     return f'''<!-- rel:start --><div class="blk-light"><div class="wrap rel-wrap" style="max-width:760px;"><div class="vw-endmark" aria-hidden="true"><span></span></div>{card}
