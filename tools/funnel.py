@@ -316,7 +316,7 @@ JS = r'''<script>
   function render(scroll){
     var h = ''; steps();
     if(cur === 'adres'){
-      h = head('Bereken welke thuisbatterij bij jouw huis past', 'Vul je adres in. Daarna stellen we je nog vijf korte vragen en zie je direct je advies en vaste prijs.') +
+      h = head(document.querySelector('.tb-solo') ? 'Bereken welke thuisbatterij bij jouw huis past' : 'Begin met je adres', 'Vul je postcode en huisnummer in. Daarna stellen we je nog vijf korte vragen en zie je direct je advies en vaste prijs.') +
         '<div class="tb-content"><div class="tb-row"><div class="tb-field"><label for="tbPc">Postcode</label><input id="tbPc" autocomplete="postal-code" placeholder="4762 AS" value="' + esc(st.postcode) + '" maxlength="7"></div>' +
         '<div class="tb-field"><label for="tbHn">Huisnummer</label><input id="tbHn" inputmode="numeric" placeholder="15" value="' + esc(st.huisnummer) + '" maxlength="8"></div></div>' +
         '<div id="tbAdrErr" class="tb-err" hidden></div><p class="tb-hint">Met je adres zien we wanneer onze monteurs bij jou kunnen installeren. Je zit nergens aan vast.</p></div>' +
@@ -397,7 +397,13 @@ JS = r'''<script>
   function adres(){ var pc = document.getElementById('tbPc').value.trim().toUpperCase().replace(/^(\d{4})\s*([A-Z]{2})$/, '$1 $2'), hn = document.getElementById('tbHn').value.trim(), er = document.getElementById('tbAdrErr');
     if(!/^\d{4} [A-Z]{2}$/.test(pc)){ er.textContent = 'Vul je postcode in, bijvoorbeeld 4762 AS.'; er.hidden = false; return; }
     if(!/^\d+/.test(hn)){ er.textContent = 'Vul je huisnummer in.'; er.hidden = false; return; }
-    st.postcode = pc; st.huisnummer = hn; go('panelen'); }
+    st.postcode = pc; st.huisnummer = hn;
+    /* buiten de losse calculatorpagina (bijv. de homepage): verder in een eigen scherm met alleen de calculator */
+    if(!document.querySelector('.tb-solo')){
+      try{ sessionStorage.setItem('vwCalcStart', JSON.stringify({postcode: pc, huisnummer: hn})); }catch(e){}
+      track('calc_start', {pagina: location.pathname}); location.href = '/thuisbatterij-berekenen'; return;
+    }
+    go('panelen'); }
 
   /* ---------- advies en besparing (indicatie) ---------- */
   function verbruik(){ var v = st.verbruik > 0 ? st.verbruik : 3500; if(st.extra.ev) v += 2000; if(st.extra.wp) v += 2500; if(st.extra.airco) v += 400; return v; }
@@ -515,6 +521,9 @@ JS = r'''<script>
       '<div class="tb-book"><button type="button" data-book="bel"><b>Belafspraak</b><span>15 minuten, wij bellen jou</span></button><button type="button" data-book="huis"><b>Adviseur aan huis</b><span>we kijken naar je meterkast en woning</span></button>' +
       '<a href="https://wa.me/31853335687?text=' + encodeURIComponent('Hoi Voltwijk, ik heb net een offerte voor een thuisbatterij aangevraagd. Hier een foto van mijn meterkast:') + '" target="_blank" rel="noopener"><b>Foto meterkast sturen</b><span>via WhatsApp, dan gaat het nog sneller</span></a></div></div>';
   }
+  /* adres al ingevuld op een andere pagina? Dan meteen door naar de volgende vraag */
+  if(document.querySelector('.tb-solo')){ try{ var s0 = JSON.parse(sessionStorage.getItem('vwCalcStart') || 'null');
+    if(s0 && s0.postcode){ st.postcode = s0.postcode; st.huisnummer = s0.huisnummer; sessionStorage.removeItem('vwCalcStart'); hist = ['adres']; cur = 'panelen'; started = true; track('calc_stap', {stap: 'panelen'}); } }catch(e){} }
   render(false);
   /* knop onderaan het aanbod (mobiel) wijst ook naar de offerte */
   document.addEventListener('click', function(ev){ var t = ev.target.closest && ev.target.closest('#tbOfGo'); if(t){ track('offerte_klik', {batterij: st.keuze}); go('gegevens'); } });
@@ -630,7 +639,34 @@ def remove_div(s, start):
 def anders(f):
     return f in ANDERS or (ANDERS_RE.search(f) and not BATTERIJ_RE.search(f))
 
+NAV_L = ('<a href="/product-batterij" style="color:inherit;text-decoration:none;">THUISBATTERIJ</a>'
+         '<a href="/product-zonnepanelen" style="color:inherit;text-decoration:none;">ZONNEPANELEN</a>'
+         '<a href="/producten" style="color:inherit;text-decoration:none;">ALLE PRODUCTEN</a>')
+NAV_R = ('<a href="/over-ons" style="color:inherit;text-decoration:none;">OVER ONS</a>'
+         '<a href="/contact" style="color:inherit;text-decoration:none;">CONTACT</a>'
+         '<a href="/contact" data-book="" class="nav-book" style="color:inherit;text-decoration:none;">GRATIS ADVIESGESPREK</a>')
+NAV_M = ('<a href="/product-batterij">THUISBATTERIJ</a>\n      <a href="' + URL + '">THUISBATTERIJ BEREKENEN</a>\n      <a href="/product-zonnepanelen">ZONNEPANELEN</a>\n'
+         '      <a href="/producten">ALLE PRODUCTEN</a>\n      <a href="/hoe-het-werkt">HOE HET WERKT</a>\n      <a href="/reviews">REVIEWS</a>\n'
+         '      <a href="/inzichten">KENNISBANK</a>\n      <a href="/over-ons">OVER ONS</a>\n      <a href="/contact">CONTACT</a>\n'
+         '      <a href="/contact" data-book="">GRATIS ADVIESGESPREK</a>\n')
+NAV_CSS = ('<style id="vw-navbook">.nav-book{border:1.5px solid currentColor;border-radius:999px;padding:8px 14px;white-space:nowrap;}'
+           '#siteNav.is-stuck .nav-book,#siteNav.on-light .nav-book{background:var(--primary);border-color:var(--primary);color:#fff !important;}'
+           '@media (max-width:1180px){#siteNav .nav-links a[href="/producten"]{display:none;}}</style>')
+
+def nav(s):
+    """Menu: wat we doen (thuisbatterij, zonnepanelen, alle producten), over ons, contact en een duidelijke knop voor een adviesgesprek."""
+    s = re.sub(r'(<div class="nav-links">\s*)<a href="/producten"[^>]*>PRODUCTEN</a><a href="[^"]*"[^>]*>THUISBATTERIJ BEREKENEN</a><a href="/inzichten"[^>]*>KENNISBANK</a>',
+               lambda m: m.group(1) + NAV_L, s, count=1)
+    s = re.sub(r'(<div class="nav-links" style="justify-content:flex-end;">\s*)<a href="/reviews"[^>]*>REVIEWS</a><a href="/over-ons"[^>]*>OVER ONS</a><a href="/contact"[^>]*>CONTACT</a>',
+               lambda m: m.group(1) + NAV_R, s, count=1)
+    s = re.sub(r'(<div id="mobileNavPanel" class="mobile-nav-panel">\n\s*)<a href="/producten">PRODUCTEN</a>\n.*?(?=\s*<a href="tel:)',
+               lambda m: m.group(1) + NAV_M.rstrip('\n'), s, count=1, flags=re.S)
+    if 'id="vw-navbook"' not in s and 'class="nav-book"' in s:
+        s = s.replace('<div id="siteNav">', NAV_CSS + '\n  <div id="siteNav">', 1)
+    return s
+
 def patch(f, s):
+    s = nav(s)
     if f == 'index.html':
         # homepage: de calculator zelf, direct onder de video; knoppen op de pagina scrollen ernaartoe
         s = re.sub(r'<!-- vw-funnel-cta:start -->.*?<!-- vw-funnel-cta:end -->', '', s, flags=re.S)
