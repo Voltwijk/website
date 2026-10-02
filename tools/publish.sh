@@ -10,5 +10,6 @@ python3 tools/booking.py
 python3 tools/order.py
 python3 tools/analytics.py G-6QJJ46JVWW
 python3 tools/battery.py
+python3 tools/cookie.py
 if grep -rli "voltier\|zonne-installaties noord" --include=*.html . >/dev/null; then echo "Verboden naam gevonden in HTML"; exit 1; fi
 echo "Klaar. Controleer met: git status"

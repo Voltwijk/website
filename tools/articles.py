@@ -209,8 +209,13 @@ CTACSS = """<style>.art-cta{display:flex;gap:22px;align-items:center;padding:26p
 @media (max-width:600px){.art-cta{flex-direction:column;align-items:flex-start;padding:22px 18px;}.art-cta img{width:100%;height:150px;}.art-cta .btn-primary{width:100%;justify-content:center;}}</style>"""
 
 def cta_card(pname, price, href, thumb):
-    batterij = href == '/thuisbatterij-berekenen'
-    title = ('Welke thuisbatterij past bij jou?' if batterij else f'{esc(pname)} laten installeren?') if pname or batterij else 'Klaar om het te regelen?'
+    batterij = href == '/thuisbatterij-berekenen' and bool(pname)
+    algemeen = not pname
+    if algemeen:
+        return (CTACSS + f'''<div class="art-cta"><div><div class="k">Vaste prijs · eigen monteurs</div>
+<h2>Benieuwd wat dit voor jouw huis betekent?</h2><p>Plan een gratis adviesgesprek met ons eigen team. Overweeg je een thuisbatterij, dan zie je met de calculator in 1 minuut welke past.</p>
+<div class="row"><a class="btn-primary" href="/contact" data-book="" style="text-decoration:none;">Plan gratis adviesgesprek →</a><a href="/thuisbatterij-berekenen" style="font-weight:800;color:var(--primary);text-decoration:none;">Thuisbatterij berekenen</a></div></div></div>''')
+    title = 'Welke thuisbatterij past bij jou?' if batterij else f'{esc(pname)} laten installeren?'
     tekst = ('Bereken in 1 minuut welke batterij past, wat hij kost en wat je ongeveer bespaart als salderen stopt. Vaste prijs, inclusief installatie.'
              if batterij else 'Plan een gratis adviesgesprek. Je krijgt een offerte met een vaste prijs, inclusief installatie door onze eigen monteurs.')
     knop = 'Bereken je thuisbatterij →' if batterij else 'Plan gratis adviesgesprek →'

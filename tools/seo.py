@@ -15,7 +15,7 @@ T = {  # titel, description
  'product-batterij': ('Thuisbatterij 10 of 16 kWh – vanaf € 4.200 | Voltwijk',
            'Thuisbatterij van 10 of 16 kWh met hybride omvormer, vanaf € 4.200 inclusief installatie. Zie in 4 vragen welke batterij bij jouw verbruik past.'),
  'product-warmtepomp': ('Warmtepomp laten installeren – vanaf € 6.750 | Voltwijk',
-           'Lucht/water-warmtepomp vanaf € 6.750 inclusief installatie. ISDE-subsidie direct verrekend, geplaatst door ons eigen team. Bereken je prijs.'),
+           'Lucht/water-warmtepomp vanaf € 6.750 inclusief installatie. ISDE-subsidie direct verrekend, geplaatst door ons eigen team. Plan een gratis adviesgesprek.'),
  'product-airco': ('Airco laten installeren – vanaf € 1.899 | Voltwijk',
            'Split-unit airco vanaf € 1.899 inclusief installatie: koelen in de zomer, zuinig bijverwarmen in de tussenseizoenen. Vaste prijs vooraf.'),
  'product-boiler': ('Elektrische boiler laten installeren – vanaf € 1.199 | Voltwijk',
@@ -26,8 +26,6 @@ T = {  # titel, description
            'Meterkast aanpassen of uitbreiden vanaf € 649, klaar voor zonnepanelen, thuisbatterij, laadpaal of warmtepomp. NEN 1010, vaste prijs vooraf.'),
  'producten': ('Alle producten & vaste prijzen | Voltwijk',
            'Bekijk al onze producten met vaste prijzen inclusief installatie: zonnepanelen, thuisbatterij, warmtepomp, airco, elektrische boiler, laadpaal en meterkast.'),
- 'bereken-je-prijs': ('Bereken direct je vaste prijs | Voltwijk',
-           'Vul je postcode en woningtype in en zie binnen een minuut je vaste prijs voor zonnepanelen, thuisbatterij, warmtepomp en meer, inclusief installatie.'),
 }
 T.update({  # kortere titels (Google toont ~60 tekens)
  'artikel-airco-als-bijverwarming': ('Airco als bijverwarming: bespaar je op gas? | Voltwijk', None),
@@ -192,7 +190,7 @@ for f in sorted(glob.glob('*.html')):
     s, k = re.subn(r'(<link rel="canonical"[^>]*>)', lambda m: m.group(1) + block, s, count=1)
     assert k == 1, f
     open(f, 'w', encoding='utf-8').write(s)
-    pri = '1.0' if slug == 'index' else ('0.9' if slug in PRODUCT or slug in ('producten','bereken-je-prijs') else ('0.8' if slug.startswith('installateur-') or slug == 'werkgebied' else ('0.3' if slug in ('privacybeleid','cookiebeleid','algemene-voorwaarden') else '0.7')))
+    pri = '1.0' if slug == 'index' else ('0.9' if slug in PRODUCT or slug in ('producten','thuisbatterij-berekenen') else ('0.8' if slug.startswith('installateur-') or slug == 'werkgebied' else ('0.3' if slug in ('privacybeleid','cookiebeleid','algemene-voorwaarden') else '0.7')))
     if 'name="robots" content="noindex"' not in s: urls.append((url, pri))
 with open('sitemap.xml', 'w', encoding='utf-8') as fh:
     fh.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
