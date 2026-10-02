@@ -504,7 +504,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
   function render(scroll){
     var h = ''; steps();
     if(cur === 'adres'){
-      h = head(document.querySelector('.tb-solo') ? 'Bereken welke thuisbatterij bij jouw huis past' : 'Begin met je adres', 'Vul je postcode en huisnummer in. Daarna stellen we je nog vijf korte vragen en zie je direct je advies en vaste prijs.') +
+      h = head(document.querySelector('.tb-solo') ? 'Bereken welke thuisbatterij bij jouw huis past' : 'Begin met je adres', 'Vul je postcode en huisnummer in. Daarna stellen we je nog een paar korte vragen en zie je direct je advies en vaste prijs.') +
         '<div class="tb-content"><div class="tb-row"><div class="tb-field"><label for="tbPc">Postcode</label><input id="tbPc" autocomplete="postal-code" placeholder="4762 AS" value="' + esc(st.postcode) + '" maxlength="7"></div>' +
         '<div class="tb-field"><label for="tbHn">Huisnummer</label><input id="tbHn" inputmode="numeric" placeholder="15" value="' + esc(st.huisnummer) + '" maxlength="8"></div></div>' +
         '<div id="tbAdrErr" class="tb-err" hidden></div><p class="tb-hint">Met je adres zien we wanneer onze monteurs bij jou kunnen installeren. Je zit nergens aan vast.</p></div>' +
@@ -654,7 +654,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
       '<div class="tb-sizes" role="group" aria-label="Kies je opslag">' + sizes + '</div>' +
       '<div class="tb-why"><b>Waarom dit systeem voor jou?</b>' + ck(waarom(id)) + '</div>' + ck(p.feat) + kpi +
       '<div class="tb-price"><div class="v">Vaste prijs, inclusief installatie</div><div class="p">' + eur(p.prijs) + '<small>excl. btw</small></div>' +
-      '<div class="i">' + eur(p.prijs * 1.21) + ' incl. btw. Met een dynamisch contract kun je de btw vaak terugvragen. Is er meerwerk nodig, dan hoor je dat altijd vooraf.</div></div>' +
+      '<div class="i">' + eur(p.prijs * 1.21) + ' incl. btw. Met een dynamisch contract kun je de btw soms terugvragen. Is er meerwerk nodig, dan hoor je dat altijd vooraf.</div></div>' +
       '<div class="tb-urg"><span class="g">Installatie al vanaf <b data-vw-first></b></span>' + (d27 ? '<span>Salderen stopt over ' + d27 + ' dagen</span>' : '') + '</div>' +
       '<button type="button" class="tb-btn full" data-offerte>Vraag vrijblijvend jouw offerte aan →</button>' +
       '<div class="tb-risk"><span>Je betaalt nu niets</span><span>Gratis technische check</span><span>Eigen monteurs</span></div>' +
@@ -911,10 +911,10 @@ var PRODUCTS = {
     name:'Thuisbatterij', eyebrow:'Thuisbatterij', accent:'var(--mint)',
     headline:'Een thuisbatterij van 10 of 16 kWh, inclusief installatie — vanaf € 4.200.',
     bullets:['10 of 16 kWh opslag met hybride omvormer, voor 1-fase én 3-fase aansluitingen','Vaste prijs inclusief installatie: je weet vooraf precies wat je betaalt','Geïnstalleerd door ons eigen team, klaar voor het einde van salderen in 2027'],
-    cta:'Bereken je thuisbatterij', price:'vanaf € 4.200 excl. btw',
+    cta:'Bereken je thuisbatterij', price:'vanaf € 4.200',
     image:'/images/product-batterij.webp', imgScale:1, heroImage:'/images/batterij-installatie.webp',
     description:'Een thuisbatterij slaat overdag opgewekte zonne-energie op, zodat je \'s avonds je eigen stroom gebruikt in plaats van duurdere stroom van het net te kopen. Met een dynamisch contract laadt hij ook als stroom goedkoop is, en hij is klaar voor de nieuwe salderingsregels vanaf 2027.',
-    specs:[['Capaciteit','10 of 16 kWh'],['Omvormer','5, 6 of 8 kW hybride'],['Aansluiting','1-fase of 3-fase'],['Prijs','€ 4.200 – € 5.700 incl. installatie, excl. btw'],['Garantie','10 jaar'],['App-koppeling','Ja']],
+    specs:[['Capaciteit','10 of 16 kWh'],['Omvormer','5, 6 of 8 kW hybride'],['Aansluiting','1-fase of 3-fase'],['Prijs','€ 4.200 – € 5.700 incl. installatie'],['Garantie','10 jaar'],['App-koppeling','Ja']],
     faq:[['Werkt de batterij ook zonder zonnepanelen?','Ja. De batterij kan ook stroom opslaan op momenten dat die goedkoop is, en die later gebruiken — al is de besparing het grootst in combinatie met zonnepanelen.'],['Wat gebeurt er bij een stroomstoring?','Dat hangt af van het pakket en je meterkast. Of noodstroom bij jouw installatie kan, en wat het kost, staat in je offerte.']],
     guideName:"de thuisbatterij",
     guide:[["Wat doet een thuisbatterij?", "Hij slaat de stroom op die je zonnepanelen overdag over hebben, en geeft die ’s avonds en ’s nachts weer af aan je huis. Zo gebruik je meer van je eigen stroom en koop je minder in.", "artikel-wat-doet-een-thuisbatterij"], ["Wat doet het EMS?", "Het energiemanagementsysteem is het brein van de batterij. Het kijkt naar de zonverwachting, je verbruik en (met een dynamisch contract) de uurprijzen, en beslist wanneer de batterij laadt, ontlaadt of wacht.", "artikel-ems-energiemanagementsysteem-thuisbatterij"], ["Krijg je de btw terug?", "Soms. Je betaalt eerst 21% btw (het nultarief geldt alleen voor zonnepanelen). Verkoop je met de batterij stroom, bijvoorbeeld met een dynamisch contract, dan kun je de btw in sommige situaties terugvragen. Lees wanneer dat kan.", "artikel-btw-thuisbatterij-terugvragen"], ["Hoe groot moet je batterij zijn?", "Vuistregel: ongeveer zo groot als wat je ’s avonds en ’s nachts verbruikt, en niet groter dan het overschot dat je overdag echt hebt. Groter is niet automatisch beter.", "artikel-thuisbatterij-hoe-groot"], ["Loont een batterij als salderen stopt?", "Vanaf 2027 is stroom die je teruglevert minder waard. Met een batterij gebruik je die stroom zelf, en juist dan wordt opslaan interessanter.", "artikel-thuisbatterij-na-salderen"], ["Batterij en een dynamisch contract", "Met uurprijzen kan de batterij laden als stroom goedkoop is en ontladen als hij duur is. Dat levert ook op dagen zonder zon iets op.", "artikel-dynamisch-contract-en-batterij"]]

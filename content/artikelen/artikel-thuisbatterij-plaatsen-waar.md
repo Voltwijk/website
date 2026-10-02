@@ -48,7 +48,7 @@ Een zolder lijkt handig omdat er ruimte is. Maar onder het dak kan het in de zom
 
 ## Temperatuur en ventilatie
 
-Batterijen werken het best bij een gematigde kamertemperatuur. Als indicatie: veel fabrikanten noemen ergens tussen ongeveer 5 en 30 graden als prettig bereik, en geven daarnaast een ruimer bereik waarbinnen de batterij nog mag werken. Kijk altijd naar de specificaties van jouw batterij.
+Batterijen werken het best bij een gematigde temperatuur. Het NIPV noemt 15 tot 35 °C als optimale temperatuur voor het laden en ontladen van lithium-ion batterijen. Daarbuiten werkt een batterij nog wel, maar minder goed; fabrikanten geven daarnaast een ruimer bereik waarbinnen de batterij nog mag werken. Kijk altijd naar de specificaties van jouw batterij. Meer over kou lees je in [thuisbatterij in garage of schuur](/artikel-thuisbatterij-garage-schuur-winter).
 
 - **Te warm** versnelt de veroudering. De batterij verliest dan sneller capaciteit. Meer daarover in [levensduur van een thuisbatterij](/artikel-thuisbatterij-levensduur).
 - **Te koud** kan het laden beperken. Onder het vriespunt laden de meeste batterijen niet, om schade te voorkomen.

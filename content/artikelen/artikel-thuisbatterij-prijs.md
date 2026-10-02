@@ -91,13 +91,13 @@ Nee. Een grote batterij heeft bijna altijd een lagere prijs per kWh, omdat de om
 
 ## Wat kost een thuisbatterij bij Voltwijk?
 
-Bij Voltwijk betaal je een vaste prijs inclusief installatie. De prijzen hieronder zijn exclusief btw: die kun je in veel gevallen terugvragen (zie hierboven). Er zijn drie pakketten:
+Bij Voltwijk betaal je een vaste prijs inclusief installatie. De prijzen hieronder zijn exclusief btw; die kun je soms terugvragen (zie hierboven). Er zijn drie pakketten:
 
-| Pakket | Aansluiting | Prijs incl. installatie, excl. btw | Prijs per kWh |
-|---|---|---|---|
-| 10 kWh + 5 kW hybride omvormer | 1-fase | € 4.200 | € 420 |
-| 16 kWh + 6 kW hybride omvormer | 1-fase | € 4.600 | € 288 |
-| 16 kWh + 8 kW hybride omvormer | 3-fase | € 5.700 | € 356 |
+| Pakket | Aansluiting | Prijs incl. installatie, excl. btw | Incl. 21% btw | Prijs per kWh (excl. btw) |
+|---|---|---|---|---|
+| 10 kWh + 5 kW hybride omvormer | 1-fase | € 4.200 | € 5.082 | € 420 |
+| 16 kWh + 6 kW hybride omvormer | 1-fase | € 4.600 | € 5.566 | € 288 |
+| 16 kWh + 8 kW hybride omvormer | 3-fase | € 5.700 | € 6.897 | € 356 |
 
 De prijs per kWh is hier berekend op de opgegeven capaciteit. Gebruik voor een eerlijke vergelijking met andere offertes dezelfde rekenmethode.
 
@@ -125,7 +125,7 @@ A: Volgens de Consumentenbond kost een gemiddelde vaste thuisbatterij tussen €
 Q: Wat kost een thuisbatterij per kWh?
 A: Dat verschilt sterk per systeem. Reken het zelf uit: deel de totaalprijs inclusief btw, omvormer en installatie door de bruikbare capaciteit in kWh. Grotere batterijen hebben meestal een lagere prijs per kWh.
 Q: Betaal je btw op een thuisbatterij?
-A: Ja, 21% op de batterij en de installatie. Het nultarief geldt alleen voor zonnepanelen. Verkoop je met de batterij stroom, bijvoorbeeld met een dynamisch contract, dan kun je de btw volgens de Belastingdienst vaak terugvragen.
+A: Ja, 21% op de batterij en de installatie. Het nultarief geldt alleen voor zonnepanelen. Verkoop je met de batterij stroom, bijvoorbeeld met een dynamisch contract, dan kun je de btw volgens de Belastingdienst soms terugvragen.
 Q: Is er subsidie op een thuisbatterij?
 A: Er is geen landelijke aanschafsubsidie voor een thuisbatterij. Check eventueel wel bij je gemeente of er een lokale regeling is.
 Q: Wat is het verschil tussen nominale en bruikbare capaciteit?

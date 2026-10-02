@@ -78,7 +78,7 @@ Zonder de auto blijft ongeveer 9 kWh over. Een batterij van rond de 10 kWh, aang
 Een grotere batterij voelt veilig, maar heeft een paar nadelen:
 
 - **Hij staat vaker half vol.** In de winter is er weinig zonne-overschot, en ook in voor- en najaar raakt een grote batterij lang niet altijd vol.
-- **Hij kost meer.** De prijs stijgt ongeveer mee met de capaciteit, en daarover betaal je als particulier 21% btw. Zie [btw op een thuisbatterij](/artikel-btw-thuisbatterij-terugvragen).
+- **Hij kost meer.** Hoeveel meer, verschilt per aanbieder: soms stijgt de prijs flink mee met de capaciteit, soms is het verschil klein. Vergelijk daarom de prijs per kWh die je echt gebruikt. Daarover betaal je als particulier ook nog 21% btw. Zie [btw op een thuisbatterij](/artikel-btw-thuisbatterij-terugvragen).
 - **Elke kWh die je niet gebruikt, levert niets op.** De terugverdientijd hangt af van hoe vaak de batterij een volle cyclus maakt.
 - **Rendementsverlies blijft.** Bij laden en ontladen gaat ongeveer 10% verloren (round-trip rendement rond de 90%). Een batterij die stroom lang vasthoudt zonder die te gebruiken, heeft daar geen voordeel van.
 
@@ -97,7 +97,7 @@ Let bij uitbreidbaarheid op een paar dingen:
 
 ## Hoe Voltwijk helpt
 
-De thuisbatterij van Voltwijk is er in 10 en 16 kWh, met een hybride omvormer van 5, 6 of 8 kW. Met de [batterijcalculator](/thuisbatterij-berekenen) zie je in een minuut welke maat bij je verbruik past. Bekijk de specificaties op onze [thuisbatterij-pagina](/product-batterij).
+De thuisbatterij van Voltwijk is er in 10 en 16 kWh, met een hybride omvormer van 5, 6 of 8 kW. Kleinere maten, zoals 5 kWh, hebben we niet. Heb je een laag avondverbruik, dan is 10 kWh bij ons de logische keuze: die is dan ruim genoeg. Bij een hoger avondverbruik, een warmtepomp of een dynamisch contract kan 16 kWh interessant zijn. Het prijsverschil is klein: op 1-fase kost 16 kWh € 4.600 tegenover € 4.200 voor 10 kWh (beide excl. btw, inclusief installatie). Met de [batterijcalculator](/thuisbatterij-berekenen) zie je in een minuut welke maat bij je verbruik past. Bekijk de specificaties op onze [thuisbatterij-pagina](/product-batterij).
 
 faq:
 Q: Hoeveel kWh thuisbatterij heb ik nodig?

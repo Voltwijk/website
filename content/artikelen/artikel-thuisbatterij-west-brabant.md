@@ -87,7 +87,7 @@ Hoe lang het plaatsen duurt, hangt vooral af van je meterkast. Is die in orde, d
 
 1. **Meterkastcheck.** De monteur kijkt of je meterkast de batterij aankan. Is er ruimte voor een extra groep? Zijn de aardlekschakelaars in orde? Gaat het om een 1-fase of 3-fase aansluiting?
 2. **Eigen groep.** De batterij krijgt een eigen groep in de meterkast. Zo staat hij los van je andere apparaten.
-3. **Plaatsing binnen.** Een thuisbatterij hoort op een droge plek met een gematigde temperatuur, zoals een bijkeuken, garage of zolder. Welke plekken wel en niet geschikt zijn, lees je in [waar plaats je een thuisbatterij](/artikel-thuisbatterij-plaatsen-waar).
+3. **Plaatsing binnen.** Een thuisbatterij hoort op een droge plek met een gematigde temperatuur, zoals een bijkeuken, garage of zolder (let op hitte). Welke plekken wel en niet geschikt zijn, lees je in [waar plaats je een thuisbatterij](/artikel-thuisbatterij-plaatsen-waar).
 4. **Aansluiten op de hybride omvormer.** De omvormer zet de stroom om tussen je zonnepanelen, de batterij en je huis.
 5. **App instellen.** Tot slot koppelt de monteur de batterij aan de app. Daarin zie je wat de batterij doet en stel je in hoe hij moet werken.
 
