@@ -16,7 +16,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-10-01, artikel-thuisbatterij-kopen-waar-op-letten)] Thuisbatterij kopen: 10 dingen om op te letten | thuisbatterij kopen waar op letten | batterij | koopintentie, gidsformaat
 - [klaar (2026-10-01, artikel-thuisbatterij-brandveiligheid)] Thuisbatterij en brandveiligheid: hoe veilig is een batterij in huis | thuisbatterij brandgevaar | batterij | veel gestelde zorgvraag
 - [klaar (2026-10-01, artikel-thuisbatterij-prijs)] Thuisbatterij prijs per kWh: zo vergelijk je eerlijk | thuisbatterij prijs per kwh | batterij | vergelijkingsintentie
-- [open] Warmtepomp stroomverbruik per jaar: reken het zelf uit | warmtepomp stroomverbruik | warmtepomp | veel gezocht, rekenvoorbeelden
+- [klaar (2026-10-03, artikel-warmtepomp-stroomverbruik)] Warmtepomp stroomverbruik per jaar: reken het zelf uit | warmtepomp stroomverbruik | warmtepomp | veel gezocht, rekenvoorbeelden
 - [open] Warmtepomp en geluid: regels en tips voor buren | warmtepomp geluid buren | warmtepomp | vult aan op buitenunit-artikel
 - [klaar (2026-10-01, artikel-p1-poort-slimme-meter)] Slimme meter en P1-poort: zo haal je meer uit je zonnepanelen | p1 poort slimme meter | zonnepanelen | praktisch, veel gezocht
 - [open] Groepenkast vervangen: wat kost het in 2026 | groepenkast vervangen kosten | meterkast | koopintentie
@@ -40,3 +40,5 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-10-01, artikel-airco-west-brabant)] Airco laten plaatsen in West-Brabant | airco laten plaatsen breda | airco | regionale pillar
 - [open] Stooklijn van je warmtepomp instellen: zo verlaag je je stroomverbruik | warmtepomp stooklijn instellen | warmtepomp | praktische wintervraag, weinig goede uitleg
 - [open] Hoeveel kWh levert een zonnepaneel in de winter? | zonnepaneel opbrengst winter | zonnepanelen | staat in zoekdata, seizoensvraag
+- [open] Warmtepomp en legionella: welke tapwatertemperatuur is veilig en zuinig? | warmtepomp legionella | warmtepomp | veelgestelde zorgvraag, praktische tips
+- [open] Gasverbruik in de zomer: zo zie je wat je aan warm water kwijt bent | gasverbruik warm water | boiler | rekenvraag, sluit aan op boiler- en warmtepompartikelen
