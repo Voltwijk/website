@@ -248,6 +248,40 @@ CSS = '''<style>
  .tb-price .p{font-size:38px;}.tb-book{grid-template-columns:1fr;}.tb-thumbs button{width:54px;height:54px;}
  .tb-reset span{display:none;}
 }
+/* woning */
+.tb-won{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;margin-top:22px;}
+.tb-won .c{border:1px solid var(--border);border-radius:20px;padding:20px 22px;background:var(--bg);}
+.tb-won .c.k{background:#F3F9F8;border-color:#CFE6E2;}
+.tb-won h3{font:700 16px 'Bricolage Grotesque',system-ui,sans-serif;color:var(--ink);margin:0 0 10px;padding-bottom:10px;border-bottom:1px solid var(--border);}
+.tb-won .c.k h3{color:var(--primary);}
+.tb-won dl{margin:0;display:grid;gap:0;}
+.tb-won dl div{display:flex;justify-content:space-between;gap:12px;padding:9px 0;font-size:15px;}
+.tb-won dt{color:var(--ink-soft);}.tb-won dd{margin:0;font-weight:800;color:var(--ink);text-align:right;}
+.tb-won .c.k .tb-ck{margin-top:4px;}
+.tb-wadr{display:flex;align-items:center;gap:14px;}
+.tb-wadr .ic{width:52px;height:52px;border-radius:50%;background:var(--surface-tint);color:var(--primary);display:flex;align-items:center;justify-content:center;flex:none;}
+.tb-wsk{height:15px;border-radius:8px;background:linear-gradient(90deg,#EDF2F1,#F7FAF9,#EDF2F1);background-size:200% 100%;animation:tbSk 1.2s linear infinite;margin:13px 0;}
+@keyframes tbSk{to{background-position:-200% 0;}}
+/* opbrengst */
+.tb-yield{border:1px solid var(--border);border-radius:20px;padding:20px 22px;margin-top:18px;}
+.tb-yield h3{font:700 18px 'Bricolage Grotesque',system-ui,sans-serif;color:var(--ink);margin:0;}
+.tb-yield .big{font:700 40px/1.05 'Bricolage Grotesque',system-ui,sans-serif;color:var(--primary);margin-top:6px;}
+.tb-yield .tv{font-size:13px;color:var(--ink-faint);margin-top:4px;}
+.tb-yg{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-top:14px;}
+.tb-yg>div{border:1px solid var(--border);border-radius:14px;padding:12px 14px;font-size:14px;color:var(--ink-soft);}
+.tb-yg b{display:block;color:var(--ink);font-size:14.5px;}
+.tb-yg .yr{display:flex;justify-content:space-between;gap:8px;margin-top:4px;}
+.tb-yg .yr span:last-child{font-weight:800;color:var(--ink);}
+.tb-dyn{display:flex;align-items:center;gap:12px;border:1px solid var(--border);border-radius:14px;padding:12px 14px;margin-top:10px;cursor:pointer;background:#fff;width:100%;text-align:left;font:inherit;}
+.tb-dyn .ic{width:38px;height:38px;border-radius:10px;background:var(--surface-tint);color:var(--primary);display:flex;align-items:center;justify-content:center;flex:none;}
+.tb-dyn b{display:block;color:var(--ink);font-size:14.5px;}.tb-dyn small{display:block;color:var(--ink-faint);font-size:12.5px;margin-top:1px;}
+.tb-sw{margin-left:auto;flex:none;width:46px;height:26px;border-radius:999px;background:#CBD5D3;position:relative;transition:background .2s;}
+.tb-sw::after{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;transition:left .2s;box-shadow:0 1px 3px rgba(0,0,0,.25);}
+.tb-dyn[aria-pressed="true"] .tb-sw{background:var(--primary);}.tb-dyn[aria-pressed="true"] .tb-sw::after{left:23px;}
+.tb-yield details{margin-top:12px;font-size:13.5px;color:var(--ink-soft);}
+.tb-yield summary{cursor:pointer;font-weight:800;color:var(--ink);}
+.tb-yield details ul{margin:8px 0 0;padding-left:18px;line-height:1.55;}
+@media (max-width:640px){.tb-won{grid-template-columns:1fr;}.tb-yg{grid-template-columns:1fr;}.tb-yield .big{font-size:34px;}}
 @media (min-width:641px){#tbOfGo{display:none;}}
 @media (prefers-reduced-motion:reduce){.tb-opt,.tb-btn{transition:none;}.tb-spin{animation:none;}}
 </style>'''
@@ -268,6 +302,8 @@ IC.update({
  'reset': '<path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15.5 6.2L3 16"/><path d="M3 21v-5h5"/>',
  'tool': '<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/>',
  'pin': '<path d="M12 21s-7-6.3-7-11.5A7 7 0 0 1 19 9.5C19 14.7 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/>',
+ 'huis': '<path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/>',
+ 'bolt': '<path d="M13 2L4 14h7l-1 8 9-12h-7z"/>',
 })
 
 # Per pakket: wat het is, waarom het sterk is, en welke foto's de klant ziet. Alleen feiten uit de datasheets.
@@ -289,9 +325,9 @@ JS = r'''<script>
   var PK = __PK__, IC = __IC__, INC = __INC__, PRIJS = 0.28, SPREAD = 0.08, KWH_PANEEL = 340, EFF = 0.9, UTIL = 0.8;
   var MF = [2.6,4.6,8.1,11.4,13.3,13.2,13.1,11.6,8.8,6.2,3.3,2.2], CF = [10,9,8.9,7.8,7.4,6.8,6.9,7.1,7.5,8.6,9.6,10.4], DG = [31,28,31,30,31,30,31,31,30,31,30,31];
   var main = document.getElementById('tbMain'), stepsEl = document.getElementById('tbSteps');
-  var st = {panelen:null, aantal:12, verbruik:null, extra:{}, fase:null, doel:null, postcode:'', huisnummer:'', keuze:null, foto:0}, hist = [], cur = 'adres', started = false;
+  var st = {panelen:null, aantal:12, verbruik:null, extra:{}, fase:null, doel:null, postcode:'', huisnummer:'', keuze:null, foto:0, woning:null, dyn:null}, hist = [], cur = 'adres', started = false;
   /* scherm -> fase in de stappenbalk */
-  var FASE = {adres:0, panelen:1, aantal:1, verbruik:1, extra:1, doel:2, fase:3, laden:3, systeem:3, aanbod:4, gegevens:4, klaar:5};
+  var FASE = {adres:0, woning:0, panelen:1, aantal:1, verbruik:1, extra:1, doel:2, fase:3, laden:3, systeem:3, aanbod:4, gegevens:4, klaar:5};
   var NAMEN = ['Adres','Situatie','Doel','Systeem','Aanbod'];
   try{ var u = new URLSearchParams(location.search), t = {}; ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid','fbclid'].forEach(function(k){ if(u.get(k)) t[k] = u.get(k); });
     if(Object.keys(t).length) sessionStorage.setItem('vwUtm', JSON.stringify(t)); }catch(e){}
@@ -303,7 +339,7 @@ JS = r'''<script>
   function ic(k){ return '<span class="ic">' + IC[k] + '</span>'; }
   function opt(k, val, title, d, icon, multi){ var on = multi ? !!st[k][val] : String(st[k]) === String(val);
     return '<button type="button" class="tb-opt' + (multi ? ' multi' : '') + '" data-k="' + k + '" data-v="' + val + '" aria-pressed="' + on + '">' + ic(icon) + '<span><b>' + title + '</b>' + (d ? '<span class="d">' + d + '</span>' : '') + '</span></button>'; }
-  function volgorde(){ return ['adres','panelen'].concat(st.panelen === 'ja' ? ['aantal'] : [], ['verbruik','extra','doel','fase','laden','systeem','aanbod','gegevens','klaar']); }
+  function volgorde(){ return ['adres','woning','panelen'].concat(st.panelen === 'ja' ? ['aantal'] : [], ['verbruik','extra','doel','fase','laden','systeem','aanbod','gegevens','klaar']); }
   function nextOf(s){ var l = volgorde(); return l[l.indexOf(s) + 1]; }
   function go(next){ if(!started){ started = true; track('calc_start', {pagina: location.pathname}); } hist.push(cur); cur = next; render(true); track('calc_stap', {stap: next}); }
   function back(){ if(!hist.length) return; cur = hist.pop(); if(cur === 'laden') cur = hist.pop() || 'fase'; render(true); }
@@ -321,6 +357,8 @@ JS = r'''<script>
         '<div class="tb-field"><label for="tbHn">Huisnummer</label><input id="tbHn" inputmode="numeric" placeholder="15" value="' + esc(st.huisnummer) + '" maxlength="8"></div></div>' +
         '<div id="tbAdrErr" class="tb-err" hidden></div><p class="tb-hint">Met je adres zien we wanneer onze monteurs bij jou kunnen installeren. Je zit nergens aan vast.</p></div>' +
         bar('Start mijn advies →', 'tbAdrGo', 'Duurt ongeveer 1 minuut');
+    } else if(cur === 'woning'){
+      h = woningScherm(); if(!st.woning && !st.woningBezig){ st.woningBezig = true; setTimeout(function(){ zoekWoning(); }, 0); }
     } else if(cur === 'panelen'){
       h = head('Heb je zonnepanelen?', 'Dan weten we hoeveel zonnestroom je kunt opslaan.') + '<div class="tb-content"><div class="tb-opts three">' +
         opt('panelen','ja','Ja, ik heb zonnepanelen','Ik wil mijn stroom van overdag bewaren','zon') +
@@ -381,6 +419,8 @@ JS = r'''<script>
     var kw = document.getElementById('tbKwh'); if(kw) kw.onkeydown = function(ev){ if(ev.key === 'Enter' && kg) kg.click(); };
     var g = document.getElementById('tbGeen'); if(g) g.onclick = function(){ st.extra = {}; st.extraGezien = true; go(nextOf(cur)); };
     var ag = document.getElementById('tbAdrGo'); if(ag) ag.onclick = adres;
+    var wg = document.getElementById('tbWonGo'); if(wg) wg.onclick = function(){ go('panelen'); };
+    main.querySelectorAll('[data-dyn]').forEach(function(el){ el.onclick = function(){ st.dyn = !dynAan(); render(false); track('calc_dynamisch', {aan: st.dyn}); }; });
     ['tbPc','tbHn'].forEach(function(id){ var x = document.getElementById(id); if(x) x.onkeydown = function(ev){ if(ev.key === 'Enter') adres(); }; });
     var sg = document.getElementById('tbSysGo'); if(sg) sg.onclick = function(){ go('aanbod'); };
     var og = document.querySelectorAll('[data-offerte]'); og.forEach(function(x){ x.onclick = function(){ track('offerte_klik', {batterij: st.keuze}); go('gegevens'); }; });
@@ -403,7 +443,81 @@ JS = r'''<script>
       try{ sessionStorage.setItem('vwCalcStart', JSON.stringify({postcode: pc, huisnummer: hn})); }catch(e){}
       track('calc_start', {pagina: location.pathname}); location.href = '/thuisbatterij-berekenen'; return;
     }
-    go('panelen'); }
+    st.woning = null; st.woningBezig = false; go('woning'); }
+
+  /* ---------- woninggegevens uit openbare bronnen (Kadaster: BAG en Kadastrale kaart, via PDOK) ---------- */
+  var WTOK = 0;
+  function tijd(p, ms){ return Promise.race([p, new Promise(function(_, rej){ setTimeout(function(){ rej(new Error('timeout')); }, ms); })]); }
+  function haal(url){ return tijd(fetch(url).then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); }), 7000); }
+  function wfs(base, type, x, y, d){ return haal(base + '?service=WFS&version=2.0.0&request=GetFeature&typeNames=' + type + '&outputFormat=application/json&srsName=EPSG:28992&count=200&bbox=' +
+      (x - d) + ',' + (y - d) + ',' + (x + d) + ',' + (y + d) + ',urn:ogc:def:crs:EPSG::28992').then(function(j){ return (j && j.features) || []; }); }
+  function ringen(g){ if(!g) return []; if(g.type === 'Polygon') return [g.coordinates[0]]; if(g.type === 'MultiPolygon') return g.coordinates.map(function(p){ return p[0]; }); return []; }
+  function binnen(pt, ring){ var x = pt[0], y = pt[1], ins = false; for(var i = 0, j = ring.length - 1; i < ring.length; j = i++){ var xi = ring[i][0], yi = ring[i][1], xj = ring[j][0], yj = ring[j][1];
+      if(((yi > y) !== (yj > y)) && (x < (xj - xi) * (y - yi) / ((yj - yi) || 1e-9) + xi)) ins = !ins; } return ins; }
+  function opp(ring){ var a = 0; for(var i = 0, j = ring.length - 1; i < ring.length; j = i++) a += (ring[j][0] + ring[i][0]) * (ring[j][1] - ring[i][1]); return Math.abs(a / 2); }
+  function segAfst(p, a, b){ var dx = b[0] - a[0], dy = b[1] - a[1], l = dx * dx + dy * dy, t = l ? Math.max(0, Math.min(1, ((p[0] - a[0]) * dx + (p[1] - a[1]) * dy) / l)) : 0;
+      var X = a[0] + t * dx - p[0], Y = a[1] + t * dy - p[1]; return Math.sqrt(X * X + Y * Y); }
+  function raakt(A, B){ /* delen twee panden een muur? */ var n = 0;
+      for(var i = 0; i < A.length; i++){ for(var j = 0; j + 1 < B.length; j++){ if(segAfst(A[i], B[j], B[j + 1]) < 0.4){ n++; break; } } if(n >= 2) return true; }
+      for(var k = 0; k < B.length; k++){ for(var m = 0; m + 1 < A.length; m++){ if(segAfst(B[k], A[m], A[m + 1]) < 0.4){ n++; break; } } if(n >= 2) return true; } return false; }
+  function prop(o, keys){ for(var i = 0; i < keys.length; i++){ var v = o && o[keys[i]]; if(v !== undefined && v !== null && v !== '') return v; } return null; }
+  function zoekWoning(){
+    var tok = ++WTOK, m = String(st.huisnummer).match(/^(\d+)\s*-?\s*(.*)$/), nr = m ? m[1] : st.huisnummer, toev = m ? m[2].replace(/[\s-]/g, '').toUpperCase() : '';
+    var pc = st.postcode.replace(/\s/g, ''), W = {gevonden:false}, BAG = 'https://service.pdok.nl/lv/bag/wfs/v2_0', BRK = 'https://service.pdok.nl/kadaster/kadastralekaart/wfs/v5_0';
+    haal('https://api.pdok.nl/bzk/locatieserver/search/v3_1/free?q=' + encodeURIComponent('postcode:' + pc + ' and huisnummer:' + nr) + '&fq=type:adres&rows=20').then(function(j){
+      var docs = (j && j.response && j.response.docs) || [];
+      if(!docs.length){ W.nietGevonden = true; throw new Error('geen adres'); }
+      var d = docs.filter(function(x){ return ((x.huisletter || '') + (x.huisnummertoevoeging || '')).toUpperCase() === toev; })[0] || docs[0];
+      W.gevonden = true; W.adres = d.weergavenaam || ''; W.gemeente = d.gemeentenaam || ''; W.vboId = d.adresseerbaarobject_id || '';
+      var c = /POINT\(([\d.]+) ([\d.]+)\)/.exec(d.centroide_rd || ''); if(!c) throw new Error('geen punt');
+      W.x = +c[1]; W.y = +c[2];
+      return wfs(BAG, 'bag:verblijfsobject', W.x, W.y, 3);
+    }).then(function(vbos){
+      var v = vbos.filter(function(f){ return String(prop(f.properties, ['identificatie'])) === String(W.vboId); })[0] || vbos[0];
+      if(v){ var p = v.properties; W.opp = +prop(p, ['oppervlakte']) || null; W.bouwjaar = +prop(p, ['bouwjaar']) || null; W.pandId = String(prop(p, ['pandidentificatie','pand_identificatie']) || ''); }
+      return Promise.all([wfs(BAG, 'bag:pand', W.x, W.y, 70).catch(function(){ return []; }), wfs(BAG, 'bag:verblijfsobject', W.x, W.y, 40).catch(function(){ return []; }),
+        wfs(BRK, 'kadastralekaart:Perceel', W.x, W.y, 2).catch(function(){ return []; })]);
+    }).then(function(r){
+      var panden = r[0], vbos = r[1], percelen = r[2], pt = [W.x, W.y];
+      var eigen = panden.filter(function(f){ return W.pandId && String(prop(f.properties, ['identificatie'])) === W.pandId; })[0] ||
+        panden.filter(function(f){ return ringen(f.geometry).some(function(rg){ return binnen(pt, rg); }); })[0];
+      if(eigen){
+        if(!W.bouwjaar) W.bouwjaar = +prop(eigen.properties, ['bouwjaar']) || null;
+        var pid = String(prop(eigen.properties, ['identificatie']) || W.pandId);
+        var wonen = vbos.filter(function(f){ return String(prop(f.properties, ['pandidentificatie','pand_identificatie'])) === pid && /woon/i.test(String(prop(f.properties, ['gebruiksdoel']) || 'woon')); }).length;
+        var R = ringen(eigen.geometry)[0];
+        var groot = panden.filter(function(f){ return f !== eigen && ringen(f.geometry).some(function(rg){ return opp(rg) >= 35; }); });
+        var buren = groot.filter(function(f){ return raakt(R, ringen(f.geometry)[0]); });
+        if(wonen > 2) W.type = 'Appartement';
+        else if(!buren.length) W.type = 'Vrijstaande woning';
+        else if(buren.length === 1){ var B = ringen(buren[0].geometry)[0];
+          var nb = groot.filter(function(f){ return f !== buren[0] && raakt(B, ringen(f.geometry)[0]); }).length;
+          W.type = nb === 0 ? '2-onder-1-kapwoning' : 'Hoekwoning'; }
+        else W.type = 'Tussenwoning';
+      }
+      if(W.type !== 'Appartement'){ var pc0 = percelen.filter(function(f){ return ringen(f.geometry).some(function(rg){ return binnen(pt, rg); }); })[0];
+        if(pc0){ W.perceel = +prop(pc0.properties, ['kadastraleGrootteWaarde','kadastraleGrootte']) || Math.round(opp(ringen(pc0.geometry)[0])); } }
+    }).catch(function(){}).then(function(){ if(tok !== WTOK) return; st.woning = W;
+      if(cur === 'woning'){ if(!W.gevonden && !W.nietGevonden){ cur = 'panelen'; track('calc_stap', {stap: 'panelen'}); } render(false); } });
+  }
+  function woningRij(k, v){ return v ? '<div><dt>' + k + '</dt><dd>' + v + '</dd></div>' : ''; }
+  function woningScherm(){
+    var W = st.woning, adr = W && W.adres ? esc(W.adres) : esc(st.postcode + ' ' + st.huisnummer);
+    var top = '<div class="tb-head"><div class="tb-wadr"><span class="ic">' + IC.huis + '</span><div><h1 class="tb-h" style="margin:0;">Dit weten we al over jouw woning</h1><p class="tb-sub" style="margin-top:4px;">' + adr + '</p></div></div></div>';
+    if(!W){ return top + '<div class="tb-won"><div class="c"><h3>Kenmerken</h3>' + [1,2,3,4,5].map(function(){ return '<div class="tb-wsk"></div>'; }).join('') + '</div><div class="c k"><h3>Kansen thuisbatterij</h3>' + [1,2,3].map(function(){ return '<div class="tb-wsk"></div>'; }).join('') + '</div></div>' +
+      '<p class="tb-hint">We zoeken je woning op in openbare gegevens van het Kadaster…</p>' + bar(); }
+    if(W.nietGevonden){ return top + '<div class="tb-content"><div class="tb-err">We kunnen dit adres niet vinden. Klopt je postcode en huisnummer?</div></div>' +
+      '<div class="tb-bar"><button type="button" class="tb-back" id="tbBack">Adres aanpassen</button><div class="tb-go"><button type="button" class="tb-btn" id="tbWonGo">Toch verder →</button></div></div>'; }
+    var rijen = woningRij('Type woning', W.type ? esc(W.type) : '') + woningRij('Bouwjaar', W.bouwjaar ? W.bouwjaar : '') + woningRij('Woonoppervlakte', W.opp ? fmt(W.opp) + ' m²' : '') +
+      woningRij('Perceeloppervlakte', W.perceel ? fmt(W.perceel) + ' m²' : '') + woningRij('Gemeente', W.gemeente ? esc(W.gemeente) : '');
+    var kans = ['Sla je eigen zonnestroom op voor de avond', 'Minder teruglevering, dus minder terugleverkosten na 2027', 'Laad slim bij lage stroomprijzen met een dynamisch contract'];
+    if(W.type && /Vrijstaand|2-onder|Hoek/.test(W.type)) kans.push('Vaak ruimte voor een batterij in de garage, schuur of bijkeuken');
+    if(W.bouwjaar && W.bouwjaar < 1992) kans.push('Woning van vóór 1992: we checken of je meterkast een extra groep nodig heeft');
+    return top + '<div class="tb-won">' + (rijen ? '<div class="c"><h3>Kenmerken</h3><dl>' + rijen + '</dl></div>' : '') + '<div class="c k"><h3>Kansen thuisbatterij</h3>' + ck(kans) + '</div></div>' +
+      '<p class="tb-hint" style="margin-top:18px;">Kloppen deze gegevens? In de volgende stappen rekenen we uit wat een thuisbatterij bij jouw woning kan opleveren.</p>' +
+      '<p class="tb-small">Woninggegevens uit openbare bronnen van het Kadaster (BAG en Kadastrale kaart). Het type woning is een inschatting.</p>' +
+      '<div class="tb-bar"><button type="button" class="tb-back" id="tbBack">Adres aanpassen</button><div class="tb-go"><button type="button" class="tb-btn" id="tbWonGo">Ga verder →</button></div></div>';
+  }
 
   /* ---------- advies en besparing (indicatie) ---------- */
   function verbruik(){ var v = st.verbruik > 0 ? st.verbruik : 3500; if(st.extra.ev) v += 2000; if(st.extra.wp) v += 2500; if(st.extra.airco) v += 400; return v; }
@@ -417,11 +531,12 @@ JS = r'''<script>
       var cap = use * DG[i] * UTIL, extra = Math.min(sur * EFF, rest, cap), arb = Math.min(Math.max(0, cap - extra), rest - extra);
       tot.direct += direct; tot.extra += extra; tot.arb += arb;
     }
-    var dyn = st.doel === 'handel' || st.panelen === 'nee';
-    tot.besparing = tot.extra * PRIJS + (dyn ? tot.arb * (SPREAD - (1 / EFF - 1) * (PRIJS - SPREAD)) : 0);
+    var dyn = dynAan();
+    tot.zelf = tot.extra * PRIJS; tot.handel = dyn ? tot.arb * (SPREAD - (1 / EFF - 1) * (PRIJS - SPREAD)) : 0; tot.besparing = tot.zelf + tot.handel;
     tot.zelfZonder = P ? tot.direct / P : 0; tot.zelfMet = P ? Math.min(.95, (tot.direct + tot.extra / EFF) / P) : 0;
     return tot;
   }
+  function dynAan(){ return st.dyn === null ? (st.doel === 'handel' || st.panelen === 'nee') : st.dyn; }
   function range(v){ return eur(Math.floor(v * .85 / 10) * 10) + ' – ' + fmt(Math.ceil(v * 1.15 / 10) * 10); }
   function waarom(id){
     var p = PK[id], w = [];
@@ -458,8 +573,19 @@ JS = r'''<script>
   function aanbod(){
     var id = st.keuze, p = PK[id], r = reken(id), adv = advies(), d27 = dagenTot2027();
     var sizes = Object.keys(PK).map(function(k){ var x = PK[k]; return '<button type="button" data-size="' + k + '" aria-pressed="' + (k === id) + '">' + (k === adv ? '<em>Advies</em>' : '') + x.kwh + ' kWh · ' + x.fase + '<small>' + eur(x.prijs) + ' excl. btw</small></button>'; }).join('');
-    var kpi = '<div class="tb-kpi"><div><span>Geschatte besparing</span><b>' + (r.besparing > 25 ? range(r.besparing) + '<small style="font:600 12px Nunito Sans,sans-serif;color:var(--ink-faint);"> /jaar</small>' : 'Samen bekijken') + '</b></div>' +
-      '<div><span>' + (opwek() ? 'Eigen zonnestroom zelf gebruikt' : 'Bruikbare opslag') + '</span><b>' + (opwek() ? Math.round(r.zelfZonder * 100) + '% → ' + Math.round(r.zelfMet * 100) + '%' : 'ca. ' + fmt(p.kwh * .95) + ' kWh') + '</b></div></div>';
+    var tv = r.besparing > 25 ? Math.round(p.prijs * 1.21 / r.besparing) : 0, r10 = function(v){ return eur(Math.round(v / 5) * 5); };
+    var kpi = '<div class="tb-yield"><h3>Wat kan dit jou opleveren?</h3>' +
+      (r.besparing > 25 ? '<div style="font-size:13px;font-weight:800;color:var(--ink-soft);margin-top:12px;">Geschatte besparing per jaar</div><div class="big">ca. ' + r10(r.besparing) + '</div>' +
+        (tv ? '<div class="tv">Indicatieve terugverdientijd: circa ' + tv + ' jaar (op de prijs incl. btw)</div>' : '') :
+        '<p style="margin-top:8px;color:var(--ink-soft);">Zet een dynamisch contract aan om te zien wat slim laden oplevert, of bespreek het in het adviesgesprek.</p>') +
+      '<div class="tb-yg">' + (opwek() ? '<div><b>Extra zelfverbruik</b>ca. ' + fmt(Math.round(r.extra / 50) * 50) + ' kWh per jaar<br><small>Zonnestroom die je opslaat en zelf gebruikt in plaats van teruglevert.</small></div>' :
+        '<div><b>Bruikbare opslag</b>ca. ' + fmt(p.kwh * .95) + ' kWh<br><small>Om te laden als stroom goedkoop is.</small></div>') +
+      '<div><b>Waar komt de besparing vandaan?</b><div class="yr"><span>Meer zelf gebruiken</span><span>' + r10(r.zelf) + '</span></div><div class="yr"><span>Dynamisch handelen</span><span>' + (dynAan() ? r10(r.handel) : '–') + '</span></div></div></div>' +
+      '<button type="button" class="tb-dyn" data-dyn aria-pressed="' + dynAan() + '"><span class="ic">' + IC.bolt + '</span><span><b>Dynamisch energiecontract</b><small>Laad slim bij lage prijzen en verdien aan prijsverschillen.</small></span><span class="tb-sw" aria-hidden="true"></span></button>' +
+      '<details><summary>Aannames en uitleg</summary><ul><li>Indicatie vanaf 2027, als salderen is gestopt. We rekenen met € 0,28 per kWh en gaan ervan uit dat teruggeleverde stroom dan vrijwel niets meer oplevert.</li>' +
+      '<li>Opwek: ca. ' + KWH_PANEEL + ' kWh per paneel per jaar, verdeeld over de maanden. Rendement van laden en ontladen: 90%.</li>' +
+      '<li>Dynamisch handelen: de batterij laadt bij lage prijzen en levert bij hoge prijzen. We rekenen met een gemiddeld prijsverschil van € 0,08 per kWh, na rendementsverlies. Een dynamisch contract sluit je af bij een energieleverancier naar keuze; we adviseren je er graag over.</li>' +
+      '<li>Je werkelijke besparing hangt af van je verbruik, je contract en de stroomprijzen. In het adviesgesprek rekenen we het na met je jaarafrekening.</li></ul></details></div>';
     return head('Jouw aanbod', '', true) +
       '<div class="tb-offer">' + galerij(p) +
       '<div class="tb-of"><div class="lab">' + (id === adv ? 'Past het best bij jou' : 'Jouw keuze') + '</div><h2>Thuisbatterij ' + p.kwh + ' kWh met ' + p.kw + ' kW omvormer</h2><p class="s">' + esc(p.naam) + ' · ' + p.fase + '</p>' +
@@ -472,7 +598,6 @@ JS = r'''<script>
       '<div class="tb-risk"><span>Je betaalt nu niets</span><span>Gratis technische check</span><span>Eigen monteurs</span></div>' +
       '<div class="tb-proof"><span><i>★★★★★</i> 4,7 / 5 op Google</span><span>12.500+ installaties</span><span>2 jaar installatiegarantie</span></div>' +
       '<details class="tb-inc"><summary>Wat zit er in de prijs?</summary>' + ck(INC) + '</details>' +
-      '<p class="tb-small" style="margin-top:14px;">Besparing is een indicatie vanaf 2027, bij € 0,28 per kWh en zonder salderen. In het adviesgesprek rekenen we het na met je jaarafrekening.</p>' +
       '</div></div>' + bar('Vraag offerte aan →', 'tbOfGo');
   }
   function gegevens(){
@@ -501,7 +626,8 @@ JS = r'''<script>
       ook_zonnepanelen:zp && zp.checked ? 'ja' : '', verbruik:fmt(st.verbruik > 0 ? st.verbruik : 3500) + ' kWh',
       extra:['ev','wp','airco'].filter(function(k){ return st.extra[k]; }).map(function(k){ return {ev:'elektrische auto', wp:'warmtepomp', airco:'airco'}[k]; }).join(', ') || 'geen',
       aansluiting:st.fase === '?' ? 'weet ik niet' : st.fase + '-fase', belangrijk:{besparen:'zoveel mogelijk besparen', '2027':'klaar zijn voor 2027', noodstroom:'noodstroom', handel:'slim handelen'}[st.doel] || '',
-      geschatte_besparing:r.besparing > 25 ? range(r.besparing) + ' per jaar' : '', pagina:location.pathname,
+      geschatte_besparing:r.besparing > 25 ? range(r.besparing) + ' per jaar' : '', dynamisch_contract:dynAan() ? 'ja' : 'nee',
+      woning:st.woning && st.woning.gevonden ? [st.woning.adres, st.woning.type, st.woning.bouwjaar && 'bouwjaar ' + st.woning.bouwjaar, st.woning.opp && st.woning.opp + ' m²', st.woning.perceel && 'perceel ' + st.woning.perceel + ' m²'].filter(Boolean).join(', ') : '', pagina:location.pathname,
       bron:[t.utm_source, t.utm_medium, t.utm_campaign].filter(Boolean).join(' / '), utm_content:t.utm_content || '', gclid:t.gclid || '', fbclid:t.fbclid || ''};
     var bd = Object.keys(velden).map(function(k){ return encodeURIComponent(k) + '=' + encodeURIComponent(velden[k]); }).join('&');
     var txt = btn.innerHTML; btn.disabled = true; btn.innerHTML = 'Versturen…'; er.hidden = true;
@@ -523,7 +649,7 @@ JS = r'''<script>
   }
   /* adres al ingevuld op een andere pagina? Dan meteen door naar de volgende vraag */
   if(document.querySelector('.tb-solo')){ try{ var s0 = JSON.parse(sessionStorage.getItem('vwCalcStart') || 'null');
-    if(s0 && s0.postcode){ st.postcode = s0.postcode; st.huisnummer = s0.huisnummer; sessionStorage.removeItem('vwCalcStart'); hist = ['adres']; cur = 'panelen'; started = true; track('calc_stap', {stap: 'panelen'}); } }catch(e){} }
+    if(s0 && s0.postcode){ st.postcode = s0.postcode; st.huisnummer = s0.huisnummer; sessionStorage.removeItem('vwCalcStart'); hist = ['adres']; cur = 'woning'; started = true; track('calc_stap', {stap: 'woning'}); } }catch(e){} }
   render(false);
   /* knop onderaan het aanbod (mobiel) wijst ook naar de offerte */
   document.addEventListener('click', function(ev){ var t = ev.target.closest && ev.target.closest('#tbOfGo'); if(t){ track('offerte_klik', {batterij: st.keuze}); go('gegevens'); } });
@@ -556,7 +682,7 @@ def main_html():
   <form name="thuisbatterij-advies" data-netlify="true" netlify-honeypot="bot-field" hidden>
     <input name="bot-field"><input name="naam"><input name="telefoon"><input name="email"><input name="postcode"><input name="huisnummer">
     <input name="advies"><input name="prijs"><input name="zonnepanelen"><input name="ook_zonnepanelen"><input name="verbruik"><input name="extra">
-    <input name="aansluiting"><input name="belangrijk"><input name="geschatte_besparing"><input name="pagina"><input name="bron"><input name="utm_content"><input name="gclid"><input name="fbclid">
+    <input name="aansluiting"><input name="belangrijk"><input name="geschatte_besparing"><input name="dynamisch_contract"><input name="woning"><input name="pagina"><input name="bron"><input name="utm_content"><input name="gclid"><input name="fbclid">
   </form>
 </div>
 '''
