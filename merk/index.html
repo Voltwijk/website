@@ -500,9 +500,23 @@ body       { font-family: 'Nunito Sans', system-ui, sans-serif; }</pre>
   <div class="grid g3" id="socials"></div>
 </section>
 
-<!-- 13 Downloads -->
+<!-- 13 Achtergronden -->
+<section class="sec" id="achtergrond" data-t="Achtergronden">
+  <header><div class="eyebrow">13 · Achtergronden</div><h2>Bureaubladachtergronden</h2>
+  <p>De donkere logovariant als achtergrond voor laptops en schermen op kantoor, bij beurzen en bij presentaties. Er is een stilstaande versie per schermformaat en een rustige bewegende versie: een naadloze loop van 20 seconden.</p></header>
+  <div class="grid g2" id="bgvideo"></div>
+  <div class="grid g3" id="bgstill" style="margin-top:18px;"></div>
+  <div class="box" style="margin-top:18px;font-size:14.5px;line-height:1.6;">
+    <b>Instellen</b><br>
+    <b>Mac:</b> download de afbeelding van jouw formaat, klik er met de rechtermuisknop op en kies <i>Stel bureaubladachtergrond in</i>. Bewegend: macOS ondersteunt geen eigen video als achtergrond, maar gratis apps als <i>Plash</i> of <i>Backdrop</i> kunnen dat wel. Kies daarin de MP4.<br>
+    <b>Windows:</b> rechtsklik op de afbeelding en kies <i>Als bureaubladachtergrond instellen</i>. Bewegend: gebruik de gratis app <i>Lively Wallpaper</i> (Microsoft Store) en kies de MP4.<br>
+    <b>Schermen en tv's:</b> speel de MP4 af in een loop, bijvoorbeeld via een USB-stick of een mediaspeler.
+  </div>
+</section>
+
+<!-- 14 Downloads -->
 <section class="sec" id="downloads" data-t="Downloads">
-  <header><div class="eyebrow">13 · Downloads</div><h2>Alle bestanden</h2><p>Alles uit dit merkboek in één lijst.</p></header>
+  <header><div class="eyebrow">14 · Downloads</div><h2>Alle bestanden</h2><p>Alles uit dit merkboek in één lijst.</p></header>
   <div class="files" id="files"></div>
 </section>
 </main>
@@ -686,7 +700,15 @@ var SOC = [
 ];
 $('#socials').innerHTML = SOC.map(function(s){ return asset('<img src="' + B + s[0] + '" alt="" loading="lazy" style="display:block;width:100%;aspect-ratio:16/10;object-fit:cover">', '', s[1], s[2], [['Download', B + s[0]]]).replace('class="stage "', 'class="stage" style="padding:0;min-height:0"'); }).join('');
 
-// 13 alle bestanden
+// 13 achtergronden
+var A = 'kit/achtergrond/';
+var BGV = [['voltwijk-bewegende-achtergrond-2880x1800.mp4', 'Bewegend · MacBook (16:10)', '2880 × 1800 · MP4 · 20 sec loop'], ['voltwijk-bewegende-achtergrond-1920x1080.mp4', 'Bewegend · Full HD (16:9)', '1920 × 1080 · MP4 · 20 sec loop']];
+var BGS = [['macbook-pro-14-3024x1964', 'MacBook Pro 14"', '3024 × 1964'], ['macbook-pro-16-3456x2234', 'MacBook Pro 16"', '3456 × 2234'], ['macbook-air-13-2560x1600', 'MacBook Air 13"', '2560 × 1600'],
+  ['macbook-air-15-2940x1912', 'MacBook Air 15"', '2940 × 1912'], ['full-hd-1920x1080', 'Full HD (Windows)', '1920 × 1080'], ['4k-3840x2160', '4K-scherm', '3840 × 2160']];
+$('#bgvideo').innerHTML = BGV.map(function(v){ return asset('<video src="' + A + v[0] + '" poster="' + A + 'poster.jpg" muted loop playsinline autoplay preload="metadata" style="display:block;width:100%;aspect-ratio:16/10;object-fit:cover"></video>', '', v[1], v[2], [['Download', A + v[0]]]); }).join('');
+$('#bgstill').innerHTML = BGS.map(function(v){ var u = A + 'voltwijk-achtergrond-' + v[0] + '.jpg'; return asset('<img src="' + u + '" alt="" loading="lazy" style="display:block;width:100%;aspect-ratio:16/10;object-fit:cover">', '', v[1], v[2] + ' · JPG', [['Download', u]]); }).join('');
+
+// 14 alle bestanden
 var FILES = [];
 LOGOS.forEach(function(l){ FILES.push([l[2] + ' (SVG)', K + l[4] + '.svg', 'LOGO']); FILES.push([l[2] + ' (PNG ' + l[6][1] + ' px)', K + l[4] + '-' + l[6][1] + 'px.png', 'LOGO']); });
 ['a', 'b', 'c'].forEach(function(v){ FILES.push(['Visitekaartje ' + VWKit.cards[v].naam + ' (drukklare PDF)', 'kit/visitekaartjes/voltwijk-visitekaartje-' + v + '-drukklaar.pdf', 'KAARTJE']); });
@@ -696,6 +718,8 @@ FILES.push(['Flyer Energiescanweek A5 (PDF)', '../brand/energiescan/flyer-a5-dub
 FILES.push(['Logo voor e-mailhandtekening (PNG)', 'kit/mail/voltwijk-logo-mail.png', 'MAIL']);
 FILES.push(['QR-code keuzehulp (SVG)', 'kit/qr-keuzehulp.svg', 'QR']); FILES.push(['QR-code keuzehulp (PNG)', 'kit/qr-keuzehulp.png', 'QR']);
 FILES.push(['QR-code website (SVG)', 'kit/qr-visitekaartje.svg', 'QR']);
+BGV.forEach(function(v){ FILES.push(['Achtergrond ' + v[1].toLowerCase(), A + v[0], 'ACHTERGROND']); });
+BGS.forEach(function(v){ FILES.push(['Achtergrond ' + v[1] + ' (' + v[2] + ')', A + 'voltwijk-achtergrond-' + v[0] + '.jpg', 'ACHTERGROND']); });
 FILES.push(['Lettertype Bricolage Grotesque (woff2)', 'assets/fonts/bricolage-grotesque.woff2', 'FONT']); FILES.push(['Lettertype Nunito Sans (woff2)', 'assets/fonts/nunito-sans.woff2', 'FONT']);
 $('#files').innerHTML = FILES.map(function(f){ return '<a href="' + f[1] + '" download><b>' + f[0] + '</b><span>' + f[2] + '</span><em>Download</em></a>'; }).join('');
 })();
