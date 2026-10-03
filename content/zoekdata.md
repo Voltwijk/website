@@ -1,4 +1,4 @@
-# Zoekdata voltwijk.nl (2026-09-02 t/m 2026-09-30)
+# Zoekdata voltwijk.nl (2026-09-03 t/m 2026-10-01)
 
 Automatisch gemaakt door tools/gsc.py. Gebruik dit bij het kiezen van onderwerpen (zie REDACTIE.md).
 
