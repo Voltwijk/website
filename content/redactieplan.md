@@ -17,9 +17,9 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-10-01, artikel-thuisbatterij-brandveiligheid)] Thuisbatterij en brandveiligheid: hoe veilig is een batterij in huis | thuisbatterij brandgevaar | batterij | veel gestelde zorgvraag
 - [klaar (2026-10-01, artikel-thuisbatterij-prijs)] Thuisbatterij prijs per kWh: zo vergelijk je eerlijk | thuisbatterij prijs per kwh | batterij | vergelijkingsintentie
 - [klaar (2026-10-03, artikel-warmtepomp-stroomverbruik)] Warmtepomp stroomverbruik per jaar: reken het zelf uit | warmtepomp stroomverbruik | warmtepomp | veel gezocht, rekenvoorbeelden
-- [open] Warmtepomp en geluid: regels en tips voor buren | warmtepomp geluid buren | warmtepomp | vult aan op buitenunit-artikel
+- [vervallen (2026-10-04): al gedekt door artikel-warmtepomp-geluid en artikel-warmtepomp-buitenunit-plaatsen-regels] Warmtepomp en geluid: regels en tips voor buren | warmtepomp geluid buren | warmtepomp | vult aan op buitenunit-artikel
 - [klaar (2026-10-01, artikel-p1-poort-slimme-meter)] Slimme meter en P1-poort: zo haal je meer uit je zonnepanelen | p1 poort slimme meter | zonnepanelen | praktisch, veel gezocht
-- [open] Groepenkast vervangen: wat kost het in 2026 | groepenkast vervangen kosten | meterkast | koopintentie
+- [klaar (2026-10-04, artikel-groepenkast-vervangen-kosten)] Groepenkast vervangen: wat kost het in 2026 | groepenkast vervangen kosten | meterkast | koopintentie
 - [open] Laadpaal en dynamisch energiecontract: laden op de goedkoopste uren | laadpaal dynamisch contract | laadpaal | combineert trends
 - [open] Zonnepanelen verzekeren: opstal of inboedel? | zonnepanelen verzekering | zonnepanelen | veelgestelde vraag
 - [open] Elektrische boiler ontkalken en onderhoud | boiler ontkalken | boiler | onderhoudsvraag, weinig concurrentie
@@ -42,3 +42,5 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Hoeveel kWh levert een zonnepaneel in de winter? | zonnepaneel opbrengst winter | zonnepanelen | staat in zoekdata, seizoensvraag
 - [open] Warmtepomp en legionella: welke tapwatertemperatuur is veilig en zuinig? | warmtepomp legionella | warmtepomp | veelgestelde zorgvraag, praktische tips
 - [open] Gasverbruik in de zomer: zo zie je wat je aan warm water kwijt bent | gasverbruik warm water | boiler | rekenvraag, sluit aan op boiler- en warmtepompartikelen
+- [open] Zegelrecht en de meterkast: wie mag wat aan je aansluiting doen? | zegelrecht meterkast | meterkast | praktische vraag, weinig consumentenuitleg
+- [open] Meetrapport elektrische installatie: wat staat erin en wanneer heb je het nodig? | meetrapport elektra | meterkast | verzekering/verkoop woning, weinig concurrentie
