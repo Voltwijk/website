@@ -4,6 +4,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 python3 tools/check_articles.py
 python3 tools/articles.py
+python3 tools/stadspaginas.py
 python3 tools/funnel.py
 python3 tools/seo.py
 python3 tools/booking.py
