@@ -95,6 +95,11 @@
   "title": "Airco plaatsen: heb je een vergunning nodig? De regels op een rij"
  },
  {
+  "slug": "artikel-airco-slaapkamer",
+  "product": "airco",
+  "title": "Airco in de slaapkamer: welk vermogen, hoe stil en waar hang je hem?"
+ },
+ {
   "slug": "artikel-airco-verwarmen-winter-kosten",
   "product": "airco",
   "title": "Airco als verwarming in de winter: wat kost het per maand?"
@@ -103,6 +108,11 @@
   "slug": "artikel-airco-west-brabant",
   "product": "airco",
   "title": "Airco laten plaatsen in West-Brabant: prijs, regels en tips"
+ },
+ {
+  "slug": "artikel-airco-zonder-buitenunit",
+  "product": "airco",
+  "title": "Airco zonder buitenunit: welke soorten zijn er en wat zijn de nadelen?"
  },
  {
   "slug": "artikel-boiler-opwarmen-met-zonnestroom",
@@ -220,6 +230,11 @@
   "title": "Load balancing bij je laadpaal: voorkom een overbelaste meterkast"
  },
  {
+  "slug": "artikel-lucht-water-of-lucht-lucht-warmtepomp",
+  "product": "warmtepomp",
+  "title": "Lucht-water of lucht-lucht warmtepomp: wat is het verschil en wat past bij jou?"
+ },
+ {
   "slug": "artikel-meterkast-vervangen-signalen",
   "product": "meterkast",
   "title": "Meterkast vervangen? Deze 7 signalen moet je serieus nemen"
@@ -260,6 +275,11 @@
   "title": "Slimme meter en P1-poort: zo haal je meer uit je zonnepanelen en thuisbatterij"
  },
  {
+  "slug": "artikel-plug-and-play-thuisbatterij",
+  "product": "batterij",
+  "title": "Plug-and-play thuisbatterij (stekkerbatterij): wat kan het wel en niet?"
+ },
+ {
   "slug": "artikel-stroomstoring-zonnepanelen-thuisbatterij",
   "product": "zonnepanelen",
   "title": "Stroomstoring in je wijk: wat gebeurt er met je zonnepanelen en thuisbatterij?"
@@ -285,6 +305,26 @@
   "title": "Thuisbatterij op een 1-fase aansluiting: kan dat en waar let je op?"
  },
  {
+  "slug": "artikel-thuisbatterij-10-kwh",
+  "product": "batterij",
+  "title": "Thuisbatterij 10 kWh: voor wie is het genoeg en wat kost het?"
+ },
+ {
+  "slug": "artikel-thuisbatterij-15-kwh",
+  "product": "batterij",
+  "title": "Thuisbatterij van 15 of 16 kWh: wanneer kies je een grote batterij?"
+ },
+ {
+  "slug": "artikel-thuisbatterij-3-fase",
+  "product": "batterij",
+  "title": "Thuisbatterij op 3-fase: wanneer is dat slim en wat heb je nodig?"
+ },
+ {
+  "slug": "artikel-thuisbatterij-5-kwh",
+  "product": "batterij",
+  "title": "Thuisbatterij 5 kWh: is een kleine batterij genoeg?"
+ },
+ {
   "slug": "artikel-thuisbatterij-bij-bestaande-zonnepanelen",
   "product": "batterij",
   "title": "Thuisbatterij bij bestaande zonnepanelen: AC of DC, en wat check je?"
@@ -308,6 +348,11 @@
   "slug": "artikel-thuisbatterij-kopen-waar-op-letten",
   "product": "batterij",
   "title": "Thuisbatterij kopen: 10 dingen om op te letten"
+ },
+ {
+  "slug": "artikel-thuisbatterij-laten-installeren",
+  "product": "batterij",
+  "title": "Thuisbatterij laten installeren: zo gaat het, stap voor stap"
  },
  {
   "slug": "artikel-thuisbatterij-levensduur",
@@ -390,6 +435,11 @@
   "title": "Warmtepomp stroomverbruik per jaar: zo reken je het zelf uit"
  },
  {
+  "slug": "artikel-warmtepomp-zonder-vloerverwarming",
+  "product": "warmtepomp",
+  "title": "Warmtepomp zonder vloerverwarming: werkt dat met radiatoren?"
+ },
+ {
   "slug": "artikel-warmtepompboiler-of-elektrische-boiler",
   "product": "boiler",
   "title": "Warmtepompboiler of elektrische boiler: wat past bij jouw huis?"
@@ -413,6 +463,11 @@
   "slug": "artikel-welke-boilerinhoud-heb-ik-nodig",
   "product": "boiler",
   "title": "Welke boilerinhoud heb ik nodig? Zo kies je het juiste aantal liters"
+ },
+ {
+  "slug": "artikel-zonnepanelen-met-thuisbatterij",
+  "product": "zonnepanelen",
+  "title": "Zonnepanelen met thuisbatterij (accu) in één keer: zo pak je het aan"
  },
  {
   "slug": "artikel-zonnepanelen-oost-west-of-zuid",

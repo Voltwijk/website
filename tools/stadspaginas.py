@@ -218,8 +218,10 @@ def crumbs(items):
 def faq_html(qa): return ''.join(f'<details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>' for q, a in qa)
 def lees_html(items): return ''.join(f'<a href="/{a}">{esc(t)} →</a>' for a, t in items if os.path.exists(a + '.html'))
 def prov_url(pv): return '/werkgebied-' + slug(pv)
+STAP1 = {'thuisbatterij': 'Bereken online welke thuisbatterij past, of plan een gratis adviesgesprek: aan huis of telefonisch.',
+         None: 'Bereken je thuisbatterij online, vraag een offerte aan of plan een gratis adviesgesprek: aan huis of telefonisch.'}
 STEPS = '''<div class="sp-steps">
-      <div><b>1. Aanvraag of gesprek</b><p>Bereken je thuisbatterij online, vraag een offerte aan of plan een gratis adviesgesprek: aan huis of telefonisch.</p></div>
+      <div><b>1. Aanvraag of gesprek</b><p>__STAP1__</p></div>
       <div><b>2. Vaste prijs vooraf</b><p>Je krijgt een offerte met een vaste prijs, inclusief installatie. Is er meerwerk nodig, dan hoor je dat altijd vooraf.</p></div>
       <div><b>3. Installatie</b><p>We plannen samen een datum. Aanmelding bij de netbeheerder regelen wij. Op de installatie krijg je 2 jaar garantie.</p></div>
     </div>'''
@@ -330,7 +332,7 @@ def ps_main(p, stad):
   {funnel_plek()}
   <div class="wrap reveal sp-sec" style="max-width:1000px;">
     <h2 class="vw-heading sp-h2">Zo gaat het</h2>
-    {STEPS}
+    {STEPS.replace('__STAP1__', STAP1.get(p, 'Vraag een offerte aan voor ' + d['lid'] + ' of plan een gratis adviesgesprek: aan huis of telefonisch.'))}
   </div>
   <div class="wrap reveal sp-sec" style="max-width:1000px;padding-bottom:80px;">
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;">
@@ -406,7 +408,7 @@ def gem_main(g):
   {funnel_plek()}
   <div class="wrap reveal sp-sec" style="max-width:1000px;">
     <h2 class="vw-heading sp-h2">Zo gaat het</h2>
-    {STEPS}
+    {STEPS.replace('__STAP1__', STAP1[None])}
   </div>
   <div class="wrap reveal sp-sec" style="max-width:1000px;padding-bottom:80px;">
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;">

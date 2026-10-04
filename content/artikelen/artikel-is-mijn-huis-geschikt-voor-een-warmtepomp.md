@@ -95,6 +95,8 @@ De buitenunit maakt geluid, vooral als hij hard moet werken op koude dagen. Er g
 
 Scoor je vooral goede tekens, dan is een volledig elektrische warmtepomp waarschijnlijk haalbaar. Heb je meerdere aandachtspunten, dan is dat geen afwijzing, maar wel een reden om eerst te isoleren of met een hybride systeem te beginnen.
 
+Heb je radiatoren en geen vloerverwarming, lees dan [warmtepomp zonder vloerverwarming](/artikel-warmtepomp-zonder-vloerverwarming).
+
 ## Hoe Voltwijk helpt
 
 Een monteur van Voltwijk bekijkt je isolatie, radiatoren, ruimte en meterkast en vertelt eerlijk of en welke warmtepomp past, met een vaste prijs vooraf. Meer informatie vind je op onze pagina over de [warmtepomp](/product-warmtepomp).

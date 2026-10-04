@@ -9,6 +9,18 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar 2026-09-29, artikel-energiebelasting-netbeheerkosten-2027] Energiebelasting en netbeheerkosten 2027: wat betekent Prinsjesdag voor jouw rekening | energiebelasting 2027 | batterij | actueel na Prinsjesdag, veel gezocht
 - [klaar 2026-09-30, artikel-terugleververgoeding-2027] Terugleververgoeding na 2027: hoe werkt het en waar let je op | terugleververgoeding 2027 | zonnepanelen | groeiend zoekvolume richting 2027
 
+- [klaar 2026-10-04, artikel-thuisbatterij-10-kwh] Thuisbatterij 10 kWh: voor wie genoeg | thuisbatterij 10 kwh (4.400/mnd) | batterij | Semrush-onderzoek, eigen pakket
+- [klaar 2026-10-04, artikel-thuisbatterij-15-kwh] Thuisbatterij 15 of 16 kWh | thuisbatterij 15 kwh (880/mnd) | batterij | Semrush-onderzoek, eigen pakket
+- [klaar 2026-10-04, artikel-thuisbatterij-5-kwh] Thuisbatterij 5 kWh: is klein genoeg? | thuisbatterij 5 kwh (1.600/mnd) | batterij | Semrush-onderzoek
+- [klaar 2026-10-04, artikel-plug-and-play-thuisbatterij] Plug-and-play thuisbatterij / stekkerbatterij | plug and play thuisbatterij (1.300/mnd) | batterij | Semrush-onderzoek
+- [klaar 2026-10-04, artikel-thuisbatterij-3-fase] Thuisbatterij op 3-fase | thuisbatterij 3 fase (390/mnd) | batterij | Semrush-onderzoek
+- [klaar 2026-10-04, artikel-thuisbatterij-laten-installeren] Thuisbatterij laten installeren | thuisbatterij installateur (480/mnd) | batterij | Semrush-onderzoek, koopintentie
+- [klaar 2026-10-04, artikel-airco-zonder-buitenunit] Airco zonder buitenunit | airco zonder buitenunit (14.800/mnd) | airco | Semrush-onderzoek
+- [klaar 2026-10-04, artikel-airco-slaapkamer] Airco in de slaapkamer | airco slaapkamer (2.400/mnd) | airco | Semrush-onderzoek
+- [klaar 2026-10-04, artikel-lucht-water-of-lucht-lucht-warmtepomp] Lucht-water of lucht-lucht warmtepomp | lucht water warmtepomp (2.400/mnd) | warmtepomp | Semrush-onderzoek
+- [klaar 2026-10-04, artikel-warmtepomp-zonder-vloerverwarming] Warmtepomp zonder vloerverwarming | warmtepomp zonder vloerverwarming (320/mnd) | warmtepomp | Semrush-onderzoek
+- [klaar 2026-10-04, artikel-zonnepanelen-met-thuisbatterij] Zonnepanelen met thuisbatterij in één keer | zonnepanelen met accu (1.000/mnd) | zonnepanelen | Semrush-onderzoek
+
 ## Open (op volgorde)
 - [klaar (2026-10-01, artikel-netcongestie-west-brabant)] Netcongestie in West-Brabant: wat betekent het voor jouw huis | netcongestie West-Brabant | batterij | lokaal, weinig concurrentie
 - [klaar (2026-10-02, artikel-warmtepomp-bij-vorst)] Warmtepomp bij vorst: werkt hij nog en wat kost het | warmtepomp vorst | warmtepomp | seizoensvraag oktober–februari
@@ -22,6 +34,8 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-10-04, artikel-groepenkast-vervangen-kosten)] Groepenkast vervangen: wat kost het in 2026 | groepenkast vervangen kosten | meterkast | koopintentie
 - [open] Laadpaal en dynamisch energiecontract: laden op de goedkoopste uren | laadpaal dynamisch contract | laadpaal | combineert trends
 - [open] Zonnepanelen verzekeren: opstal of inboedel? | zonnepanelen verzekering | zonnepanelen | veelgestelde vraag
+- [open] Split airco: wat is het en hoe werkt het | split airco (6.600/mnd) | airco | Semrush okt 2026, nog geen eigen artikel
+- [open] Slimme thuisbatterij: wat maakt een batterij slim | slimme thuisbatterij (1.300/mnd) | batterij | Semrush okt 2026, sluit aan op EMS-artikel
 - [open] Elektrische boiler ontkalken en onderhoud | boiler ontkalken | boiler | onderhoudsvraag, weinig concurrentie
 - [klaar (2026-10-01, artikel-thuisbatterij-garage-schuur-winter)] Thuisbatterij in de garage of schuur: kan dat in de winter? | thuisbatterij garage temperatuur | batterij | seizoensvraag
 - [klaar (2026-10-01, artikel-warmtepomp-en-thuisbatterij)] Hybride warmtepomp combineren met een thuisbatterij | warmtepomp en thuisbatterij | warmtepomp | kruisverkoop

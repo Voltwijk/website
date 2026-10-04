@@ -88,6 +88,8 @@ Eerlijk is eerlijk: een volledig elektrische warmtepomp in een slecht geïsoleer
 
 Andersom geldt ook: heb je een goed geïsoleerd huis en is je ketel toch aan vervanging toe, dan is een nieuwe ketel plus hybride warmtepomp vaak een halve stap. Dan kun je beter meteen volledig elektrisch gaan.
 
+Het verschil tussen een warmtepomp die water verwarmt en een die lucht verwarmt, lees je in [lucht-water of lucht-lucht warmtepomp](/artikel-lucht-water-of-lucht-lucht-warmtepomp). Geen vloerverwarming? Lees [warmtepomp zonder vloerverwarming](/artikel-warmtepomp-zonder-vloerverwarming).
+
 ## Hoe Voltwijk helpt
 
 Voltwijk kijkt samen met je naar je isolatie, radiatoren en meterkast en adviseert eerlijk of hybride of volledig elektrisch het beste past, tegen een vaste prijs vooraf. Bekijk onze [warmtepomp](/product-warmtepomp) of [plan een gratis adviesgesprek](/contact).

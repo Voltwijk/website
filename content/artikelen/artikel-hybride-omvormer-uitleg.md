@@ -93,6 +93,8 @@ Daardoor wordt het belangrijker om zonnestroom zelf te gebruiken. Een batterij h
 
 Ook belangrijk: de **sturing**. Een hybride omvormer met batterij levert het meest op als hij slim wordt aangestuurd, bijvoorbeeld op je verbruik of op stroomprijzen met een dynamisch contract. Zie [EMS bij een thuisbatterij](/artikel-ems-energiemanagementsysteem-thuisbatterij).
 
+Neem je nieuwe panelen en een batterij tegelijk? Lees dan ook [zonnepanelen met thuisbatterij in één keer](/artikel-zonnepanelen-met-thuisbatterij).
+
 ## Hoe Voltwijk helpt
 
 Voltwijk plaatst zonnepanelen van 440 Wp full-black (vanaf € 3.999 voor 12 panelen) en thuisbatterijen van 10 of 16 kWh met een hybride omvormer, vanaf € 3.900 excl. btw, inclusief installatie. Onze eigen monteurs bekijken samen met je welke omvormeroplossing past bij je dak, je plannen en je meterkast. Kijk op de [zonnepanelen-pagina](/product-zonnepanelen) of de [thuisbatterij-pagina](/product-batterij).
