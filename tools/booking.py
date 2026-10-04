@@ -107,7 +107,10 @@ body.vwb-lock{overflow:hidden;}
   function pc4(pc){ var m = /^(\\d{4})/.exec(String(pc||'').replace(/\\s/g,'')); return m ? +m[1] : 0; }
   /* Zelfde regel als het CRM: binnen 50 km van Zevenbergen of 40 km van Capelle a/d IJssel = adviseur aan huis */
   function regio(pc){ var n = pc4(pc); if(!n) return ''; return REGIO.split(',').some(function(x){ var r = x.split('-'), a = +r[0], b = +(r[1] || r[0]); return n >= a && n <= b; }) ? 'thuis' : 'telefonisch'; }
-  function product(){ var m = /(batterij|zonnepanelen|warmtepomp|airco|boiler|laadpaal|meterkast|energiescan)/.exec(location.pathname); return m ? (m[1] === 'batterij' ? 'thuisbatterij' : m[1]) : ''; }
+  function product(){ var pad = location.pathname, m = /(batterij|zonnepanelen|warmtepomp|airco|boiler|laadpaal|meterkast|energiescan)/.exec(pad); if(m) return m[1] === 'batterij' ? 'thuisbatterij' : m[1];
+    /* artikelen zonder productnaam in de url: het onderwerp bepaalt het product (zo komt de aanvraag in het CRM bij het juiste product) */
+    var T = [[/salder|terugle|dynamisch|-ems-|negatieve|stroomstoring|netcongestie|energiebelasting/, 'thuisbatterij'], [/isde|cv-ketel|cop-en-scop/, 'warmtepomp'], [/groepen|inductie|fase-aansluiting|capaciteitstarief/, 'meterkast'], [/laden|load-balancing|laadkosten/, 'laadpaal'], [/omvormer/, 'zonnepanelen']];
+    for(var i = 0; i < T.length; i++) if(T[i][0].test(pad)) return T[i][1]; return ''; }
   function werkdagen(n){ var d = new Date(), uit = []; d.setHours(12,0,0,0);
     while(uit.length < n){ d.setDate(d.getDate() + 1); if(d.getDay() % 6){ var morgen = uit.length === 0 && (d - new Date()) < 2 * 864e5;
       uit.push({kort: morgen ? 'Morgen' : DAG[d.getDay()].charAt(0).toUpperCase() + DAG[d.getDay()].slice(1), lang: (morgen ? 'morgen ' : '') + DAG[d.getDay()] + ' ' + d.getDate() + '/' + (d.getMonth() + 1)}); } }

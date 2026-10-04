@@ -110,7 +110,7 @@ def form_html():
     cal = ('<button type="button" class="btn-primary es-cal" data-book="scan">Kies direct je moment →</button>'
            '<div class="es-or"><span>of laat je terugbellen</span></div>') if CAL else ''
     return f'''<form class="es-form" name="energiescan" method="POST" action="/energiescan-bedankt" data-netlify="true" netlify-honeypot="bot-field">
-      <input type="hidden" name="form-name" value="energiescan">
+      <input type="hidden" name="form-name" value="energiescan"><input type="hidden" name="bron"><input type="hidden" name="utm_content"><input type="hidden" name="gclid"><input type="hidden" name="fbclid">
       <p style="display:none;"><label>Niet invullen: <input name="bot-field"></label></p>
       <div class="vw-heading" style="font-size:24px;">Meld je aan in 30 seconden</div>
       <p style="font-size:14px;color:var(--ink-soft);margin-top:6px;">{'Kies zelf dag en tijd, of laat je gegevens achter en wij bellen je.' if CAL else 'Alleen je naam, nummer en postcode. Wij bellen je om een moment af te spreken dat jou uitkomt.'}</p>

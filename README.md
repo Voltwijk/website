@@ -47,11 +47,20 @@ formulierdefinities staan verborgen onderaan `index.html`:
 
 | Formulier     | Waar                                   | Velden |
 |---------------|----------------------------------------|--------|
-| `contact`     | /contact, homepage                     | onderwerp, naam, email, telefoon, bericht |
-| `terugbellen` | /contact (#terugbellen)                | naam, telefoon, moment |
-| `thuisbatterij-advies` | de batterijcalculator op /thuisbatterij-berekenen (tools/funnel.py) | naam, email, telefoon, postcode, huisnummer, advies, prijs, antwoorden, UTM-bron |
+| `contact`     | /contact                               | product, onderwerp, naam, email, telefoon, bericht, pagina |
+| `terugbellen` | /contact (#terugbellen)                | naam, telefoon, product, moment, pagina |
+| `offerte`     | offerteblok op productpagina's (behalve batterij) en product-in-stadpagina's (tools/funnel.py) | product, naam, telefoon, email, postcode, huisnummer, bericht, pagina |
+| `thuisbatterij-advies` | de batterijcalculator op /thuisbatterij-berekenen (tools/funnel.py; definitie staat op die pagina zelf) | naam, email, telefoon, postcode, huisnummer, product, advies, prijs, verbruik, antwoorden, bron, utm_content, gclid, fbclid |
+| `gesprek` / `voorkeur` | gespreksplanner (tools/booking.py), terugval als online boeken in de CRM-agenda niet lukt | naam, email, telefoon, postcode, huisnummer, gesprek, voorkeur, product, pagina |
+| `energiescan` | /energiescan (tools/energiescan.py; definitie op die pagina) | naam, telefoon, postcode, woonplaats, akkoord |
 | `nieuwsbrief` | footer                                 | email |
 | `gids`        | homepage (#gids)                       | email |
+
+Herkomst: tools/attributie.py onthoudt UTM-codes, gclid en fbclid per bezoek en stuurt `bron`, `utm_content`, `gclid`
+en `fbclid` mee met contact, terugbellen, offerte, gesprek, voorkeur en energiescan.
+
+Elke formuliernaam heeft precies één definitie met `data-netlify="true"` (meestal verborgen onderaan `index.html`).
+Zichtbare formulieren op andere pagina's hebben dat attribuut niet; ze versturen via JavaScript met `form-name`.
 
 Eenmalig in Netlify: **Forms → Enable form detection**, daarna opnieuw deployen, en
 onder **Forms → Form notifications** een e-mailmelding instellen. Nieuwe velden moeten
