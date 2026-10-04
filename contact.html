@@ -443,7 +443,9 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
           <p style="font-size:14.5px;color:var(--ink-soft);margin-top:8px;line-height:1.55;">We reageren op werkdagen binnen één werkdag.</p>
           <div class="lead-block" data-sent="0" id="leadContact">
             <form class="lead-form lead-form-stack" data-form="contact" onsubmit="return vwLeadSubmit(this,'leadContact');" style="margin-top:6px;">
-              <span class="ct-label">Onderwerp</span>
+              <span class="ct-label">Waar gaat het over?</span>
+                <div class="ct-chips"><label class="ct-chip"><input type="radio" name="product" value="Thuisbatterij"><span>Thuisbatterij</span></label><label class="ct-chip"><input type="radio" name="product" value="Zonnepanelen"><span>Zonnepanelen</span></label><label class="ct-chip"><input type="radio" name="product" value="Warmtepomp"><span>Warmtepomp</span></label><label class="ct-chip"><input type="radio" name="product" value="Airco"><span>Airco</span></label><label class="ct-chip"><input type="radio" name="product" value="Laadpaal"><span>Laadpaal</span></label><label class="ct-chip"><input type="radio" name="product" value="Iets anders"><span>Iets anders</span></label></div>
+                <span class="ct-label" style="margin-top:16px;">Onderwerp</span>
               <div class="ct-chips">
                 <label class="ct-chip"><input type="radio" name="onderwerp" value="Prijs of offerte" checked><span>Prijs of offerte</span></label>
                 <label class="ct-chip"><input type="radio" name="onderwerp" value="Advies voor mijn woning"><span>Advies voor mijn woning</span></label>
@@ -477,6 +479,8 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
               <form class="lead-form lead-form-stack" data-form="terugbellen" onsubmit="return vwLeadSubmit(this,'leadCallback');" style="margin-top:4px;">
                 <input class="lead-input" name="naam" type="text" required placeholder="Je naam" autocomplete="name" style="margin-top:14px;">
                 <input class="lead-input" name="telefoon" type="tel" required placeholder="06 12 34 56 78" autocomplete="tel" style="margin-top:10px;">
+                <span class="ct-label" style="margin-top:16px;">Waar gaat het over?</span>
+                <div class="ct-chips"><label class="ct-chip"><input type="radio" name="product" value="Thuisbatterij"><span>Thuisbatterij</span></label><label class="ct-chip"><input type="radio" name="product" value="Zonnepanelen"><span>Zonnepanelen</span></label><label class="ct-chip"><input type="radio" name="product" value="Warmtepomp"><span>Warmtepomp</span></label><label class="ct-chip"><input type="radio" name="product" value="Airco"><span>Airco</span></label><label class="ct-chip"><input type="radio" name="product" value="Laadpaal"><span>Laadpaal</span></label><label class="ct-chip"><input type="radio" name="product" value="Iets anders"><span>Iets anders</span></label></div>
                 <span class="ct-label" style="margin-top:16px;">Wanneer schikt het?</span>
                 <div class="ct-chips">
                   <label class="ct-chip"><input type="radio" name="moment" value="Zo snel mogelijk" checked><span>Zo snel mogelijk</span></label>
