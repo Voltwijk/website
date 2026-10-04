@@ -97,7 +97,7 @@ Let bij uitbreidbaarheid op een paar dingen:
 
 ## Hoe Voltwijk helpt
 
-De thuisbatterij van Voltwijk is er in 10 en 16 kWh, met een hybride omvormer van 5, 6 of 8 kW. Kleinere maten, zoals 5 kWh, hebben we niet. Heb je een laag avondverbruik, dan is 10 kWh bij ons de logische keuze: die is dan ruim genoeg. Bij een hoger avondverbruik, een warmtepomp of een dynamisch contract kan 16 kWh interessant zijn. Het prijsverschil is klein: op 1-fase kost 16 kWh € 4.600 tegenover € 4.200 voor 10 kWh (beide excl. btw, inclusief installatie). Met de [batterijcalculator](/thuisbatterij-berekenen) zie je in een minuut welke maat bij je verbruik past. Bekijk de specificaties op onze [thuisbatterij-pagina](/product-batterij).
+De thuisbatterij van Voltwijk is er in 10 en 16 kWh, met een hybride omvormer van 5, 6 of 8 kW. Kleinere maten, zoals 5 kWh, hebben we niet. Heb je een laag avondverbruik, dan is 10 kWh bij ons de logische keuze: die is dan ruim genoeg. Bij een hoger avondverbruik, een warmtepomp of een dynamisch contract kan 16 kWh interessant zijn. Op 1-fase kost 16 kWh € 4.900 tegenover € 3.900 voor 10 kWh (beide excl. btw, inclusief installatie). Per kWh is 16 kWh daarmee de voordeligste keuze: € 306 tegenover € 390. Met de [batterijcalculator](/thuisbatterij-berekenen) zie je in een minuut welke maat bij je verbruik past. Bekijk de specificaties op onze [thuisbatterij-pagina](/product-batterij).
 
 faq:
 Q: Hoeveel kWh thuisbatterij heb ik nodig?

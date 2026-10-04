@@ -95,7 +95,7 @@ Een batterij lost het probleem in de wijk niet op. Maar voor je eigen installati
 
 ## Hoe Voltwijk helpt
 
-Valt je omvormer vaak uit op zonnige dagen? Onze eigen monteurs kunnen je installatie nalopen: de kabel, de omvormer en de instellingen binnen de regels. Wil je meer van je eigen zonnestroom gebruiken, dan kijken we ook mee of een thuisbatterij bij je past. Die is er in 10 en 16 kWh, vanaf € 4.200 excl. btw, inclusief installatie. Meer lees je op de pagina over [zonnepanelen](/product-zonnepanelen).
+Valt je omvormer vaak uit op zonnige dagen? Onze eigen monteurs kunnen je installatie nalopen: de kabel, de omvormer en de instellingen binnen de regels. Wil je meer van je eigen zonnestroom gebruiken, dan kijken we ook mee of een thuisbatterij bij je past. Die is er in 10 en 16 kWh, vanaf € 3.900 excl. btw, inclusief installatie. Meer lees je op de pagina over [zonnepanelen](/product-zonnepanelen).
 
 faq:
 Q: Waarom valt mijn omvormer uit als de zon schijnt?

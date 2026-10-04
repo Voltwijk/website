@@ -308,7 +308,7 @@ IC.update({
 
 # Per pakket: wat het is, waarom het sterk is, en welke foto's de klant ziet. Alleen feiten uit de datasheets.
 PK_TXT = {
- 'bat10': {'naam': 'FoxESS P100 all-in-one', 'kort': 'Omvormer en batterij in één strakke kast.',
+ 'bat10': {'naam': 'FoxESS Avocado P100 all-in-one', 'kort': 'Omvormer en batterij in één strakke kast.',
    'feat': ['10,24 kWh opslag, waarvan 95% bruikbaar', 'Veilige LFP-cellen, getest op 6.000 laadcycli', 'Noodstroom: schakelt bij een storing binnen enkele milliseconden om', 'Waterdicht (IP66), kan ook in garage of schuur'],
    'foto': [('/images/calc-foxess-woning.webp', 'FoxESS P100 aan de buitenmuur', ''), ('/images/product-batterij.webp', 'Thuisbatterij', 'fit'), ('/images/thuisbatterij-bijkeuken.webp', 'Netjes weggewerkt in huis', '')]},
  'bat16-1': {'naam': 'Dyness LFP-batterij met Solis hybride omvormer', 'kort': 'De meeste opslag voor een woning met 1-fase aansluiting.',
@@ -591,7 +591,7 @@ JS = r'''<script>
       '<div class="tb-of"><div class="lab">' + (id === adv ? 'Past het best bij jou' : 'Jouw keuze') + '</div><h2>Thuisbatterij ' + p.kwh + ' kWh met ' + p.kw + ' kW omvormer</h2><p class="s">' + esc(p.naam) + ' · ' + p.fase + '</p>' +
       '<div class="tb-sizes" role="group" aria-label="Kies je opslag">' + sizes + '</div>' +
       '<div class="tb-why"><b>Waarom dit systeem voor jou?</b>' + ck(waarom(id)) + '</div>' + ck(p.feat) + kpi +
-      '<div class="tb-price"><div class="v">Vaste prijs, inclusief installatie</div><div class="p">' + eur(p.prijs) + '<small>excl. btw</small></div>' +
+      '<div class="tb-price"><div class="v">Actieprijs t/m 31 oktober 2026, inclusief installatie</div><div class="p">' + eur(p.prijs) + '<small>excl. btw</small></div>' +
       '<div class="i">' + eur(p.prijs * 1.21) + ' incl. btw. Met een dynamisch contract kun je de btw soms terugvragen. Is er meerwerk nodig, dan hoor je dat altijd vooraf.</div></div>' +
       '<div class="tb-urg"><span class="g">Installatie al vanaf <b data-vw-first></b></span>' + (d27 ? '<span>Salderen stopt over ' + d27 + ' dagen</span>' : '') + '</div>' +
       '<button type="button" class="tb-btn full" data-offerte>Vraag vrijblijvend jouw offerte aan →</button>' +

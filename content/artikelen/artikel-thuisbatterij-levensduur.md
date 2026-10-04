@@ -98,7 +98,7 @@ Gaat hij er echt uit, dan wordt een thuisbatterij als elektronisch afval ingezam
 
 ## Hoe Voltwijk kan helpen
 
-De thuisbatterij van Voltwijk is er in 10 en 16 kWh, met een hybride omvormer van 5, 6 of 8 kW, vanaf € 4.200 excl. btw, inclusief installatie. Via de app zie je hoe je batterij presteert. Onze eigen monteurs kiezen samen met jou een plek waar hij lang meegaat. Bekijk de [thuisbatterij](/product-batterij).
+De thuisbatterij van Voltwijk is er in 10 en 16 kWh, met een hybride omvormer van 5, 6 of 8 kW, vanaf € 3.900 excl. btw, inclusief installatie. Via de app zie je hoe je batterij presteert. Onze eigen monteurs kiezen samen met jou een plek waar hij lang meegaat. Bekijk de [thuisbatterij](/product-batterij).
 
 faq:
 Q: Hoe lang gaat een thuisbatterij mee?

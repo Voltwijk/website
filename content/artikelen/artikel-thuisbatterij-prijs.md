@@ -95,9 +95,9 @@ Bij Voltwijk betaal je een vaste prijs inclusief installatie. De prijzen hierond
 
 | Pakket | Aansluiting | Prijs incl. installatie, excl. btw | Incl. 21% btw | Prijs per kWh (excl. btw) |
 |---|---|---|---|---|
-| 10 kWh + 5 kW hybride omvormer | 1-fase | € 4.200 | € 5.082 | € 420 |
-| 16 kWh + 6 kW hybride omvormer | 1-fase | € 4.600 | € 5.566 | € 288 |
-| 16 kWh + 8 kW hybride omvormer | 3-fase | € 5.700 | € 6.897 | € 356 |
+| 10 kWh + 5 kW hybride omvormer | 1-fase | € 3.900 | € 4.719 | € 390 |
+| 16 kWh + 6 kW hybride omvormer | 1-fase | € 4.900 | € 5.929 | € 306 |
+| 16 kWh + 8 kW hybride omvormer | 3-fase | € 5.500 | € 6.655 | € 344 |
 
 De prijs per kWh is hier berekend op de opgegeven capaciteit. Gebruik voor een eerlijke vergelijking met andere offertes dezelfde rekenmethode.
 
