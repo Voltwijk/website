@@ -92,6 +92,8 @@ Dat betekent niet dat je minder panelen moet nemen. Het betekent dat je kijkt na
 
 Het laatste praktische punt: ruimte. Een paneel van rond de 440 Wp is ongeveer 1,7 tot 2 m², afhankelijk van het model. Rond dakkapellen, schoorstenen, dakramen en de dakrand moet ruimte vrij blijven. Een installateur maakt een legplan waarin hij dit allemaal meeneemt.
 
+Wil je er meteen een batterij bij? Lees [zonnepanelen met thuisbatterij in één keer](/artikel-zonnepanelen-met-thuisbatterij).
+
 ## Zonnepanelen bij Voltwijk
 
 Voltwijk rekent op basis van je verbruik en je dak uit hoeveel panelen zinvol zijn, en installeert met eigen monteurs tegen een vaste prijs. Bekijk onze [zonnepanelen](/product-zonnepanelen) of [plan een gratis adviesgesprek](/contact).

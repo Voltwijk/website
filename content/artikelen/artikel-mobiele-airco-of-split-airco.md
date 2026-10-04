@@ -108,6 +108,8 @@ Er is geen goed of fout. Gebruik je de airco zelden, dan is een mobiele airco ee
 
 Twijfel je? Kijk dan naar drie vragen: hoeveel dagen per jaar gebruik je hem, hoe belangrijk is stilte, en wil je er ook mee verwarmen?
 
+Mag of kan er geen buitenunit komen? Lees [airco zonder buitenunit](/artikel-airco-zonder-buitenunit). Zoek je een airco voor je slaapkamer, lees dan [airco in de slaapkamer](/artikel-airco-slaapkamer).
+
 ## Hoe Voltwijk kan helpen
 
 Voltwijk installeert split-airco's met energielabel A+++ vanaf € 1.899, inclusief installatie door onze eigen monteurs. We kijken samen met je naar de ruimte, het vermogen en een goede plek voor de buitenunit. En als een mobiele airco voor jou genoeg is, zeggen we dat ook. Bekijk de [airco](/product-airco) of [plan een gratis adviesgesprek](/contact).

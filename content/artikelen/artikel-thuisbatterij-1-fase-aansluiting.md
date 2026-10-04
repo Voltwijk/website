@@ -95,6 +95,8 @@ Voor de meeste huishoudens wel. Een eenvoudige check:
 
 Staan er wel grote plannen op de lijst, zoals een warmtepomp en een laadpaal, dan is het slim om dat vooraf samen te bekijken. Dan hoef je je meterkast maar één keer aan te passen. Wat een batterij verder doet, lees je in [wat doet een thuisbatterij](/artikel-wat-doet-een-thuisbatterij).
 
+Heb je al 3-fase? Lees dan [thuisbatterij op 3-fase](/artikel-thuisbatterij-3-fase).
+
 ## Hoe Voltwijk kan helpen
 
 De thuisbatterij van Voltwijk is er voor 1-fase (10 of 16 kWh, met een hybride omvormer van 5 of 6 kW) en voor 3-fase (16 kWh met 8 kW), vanaf € 3.900 excl. btw, inclusief installatie. Onze eigen monteurs bekijken vooraf je aansluiting en meterkast. Is een aanpassing nodig, dan kan dat vanaf € 649. Bekijk de [thuisbatterij](/product-batterij) of de [meterkast](/product-meterkast).
