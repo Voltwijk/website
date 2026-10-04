@@ -109,14 +109,14 @@ gebruik alleen controleerbare feiten per plaats. Draai daarna `python3 tools/seo
   `energiescan`), `/energiescan-bedankt` (noindex) en de banner op de homepage. Daarna `python3 tools/seo.py`.
   Flyer, persbericht en Google-afbeelding staan in `brand/energiescan/`.
 
-## Afspraken plannen (Cal.com)
-`python3 tools/booking.py` zet de Cal.com-afspraakplanner (cal.com/voltwijk) op alle pagina's: knoppen met `data-book="huis|video|bel"` openen een venster met de agenda, na een offerte- of contactaanvraag verschijnt "Plan direct je gratis adviesgesprek" (naam en e-mail al ingevuld), en de contactpagina krijgt het blok `#afspraak`. Een geboekte afspraak telt in Google Analytics als `afspraak_gepland`. Links wijzigen? Pas `TYPES` bovenin het script aan en draai het opnieuw. Uitzetten: `python3 tools/booking.py uit`.
+## Gesprek plannen (aangesloten op het CRM, geen Cal.com)
+`python3 tools/booking.py` zet de eigen planner op alle pagina's. Knoppen met `data-book="huis|bel|scan"` (of leeg) openen een venster: postcode, dan per regio de vorm die het CRM ook gebruikt (thuisregio: adviseur aan huis met een voorkeur ochtend/middag/flexibel, wij stellen momenten voor; daarbuiten: telefonisch met een dagdeel op de eerstvolgende werkdagen), dan naam/telefoon/e-mail. Dat wordt het Netlify-formulier `gesprek`, dat via de webhook als lead in het CRM komt. Na een verstuurd formulier (batterijcalculator, offerte, contact) staat hetzelfde keuzeblok in de bevestiging (`vwVoorkeur`); één tik stuurt het formulier `voorkeur`, dat het CRM bij de bestaande aanvraag zet. Thuisregio: `tools/thuisregio.txt` (kopie uit het CRM). Telt in Google Analytics als `afspraak_gepland`. Uitzetten: `python3 tools/booking.py uit`.
 
 ## Online bestellen (calculator)
 **Eén calculator.** Sinds oktober 2026 heeft de site één calculator: `/thuisbatterij-berekenen` (gebouwd door `python3 tools/funnel.py`). De oude prijscalculator (/bereken-je-prijs) en /thuisbatterij-actie verwijzen daar met een 301 naartoe (netlify.toml); gebruik deze URL ook in advertenties. Productpagina's van andere producten krijgen een offerteblok (#offerte) met een gratis adviesgesprek. `tools/order.py` zet nu alleen nog de planbalk op elke pagina; het bestelscherm hieronder werkt alleen op een pagina met de oude calculator (#calcCard) en staat dus uit.
 
 `python3 tools/order.py` zette in stap 3 van de oude prijscalculator de knop "Bestel direct". De klant vult gegevens in, kiest een installatiedatum (ma–vr, vanaf 6 dagen) en doet een technische check (foto's of videocheck). De bestelling komt binnen via Netlify Forms als formulier `bestelling` (met foto's) en telt in Google Analytics als `bestelling_aangevraagd`. De klant betaalt nu niets; na de orderbevestiging volgt de aanbetaling (`AANBETALING`, nu € 350) via een betaallink, het restant na installatie.
-Zet `CAL = True` zodra het Cal.com-afspraaktype `cal.com/voltwijk/installatie` bestaat: klanten kiezen dan een echte dag uit de agenda (max. 3 per dag, instellen in Cal.com) en de bestelling wordt na het boeken verstuurd.
+Klanten kiezen een voorkeursdag; wij bevestigen en plannen de installatie in het CRM.
 `tools/order.py` zet ook op elke pagina de planbalk ("Installatie al vanaf …  Plan nu"), vult elk element met `data-vw-first` met de eerst mogelijke installatiedatum, en vinkt op een productpagina dat product alvast aan in de calculator. Klanten kunnen tot 8 foto's toevoegen (velden `foto_1` t/m `foto_8`, automatisch verkleind).
 
 ## Dagoverzicht per e-mail

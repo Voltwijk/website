@@ -228,10 +228,12 @@ CSS = '''<style>
 .tb-ok{max-width:640px;margin:20px auto 0;text-align:center;}
 .tb-ok .big{width:72px;height:72px;border-radius:50%;background:var(--surface-tint);color:var(--primary);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;}
 .tb-ok p{font-size:16px;color:var(--ink-soft);line-height:1.6;margin-top:10px;}
-.tb-book{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:24px;text-align:left;}
-.tb-book a,.tb-book button{display:flex;flex-direction:column;gap:4px;border:1.5px solid var(--border);border-radius:16px;padding:16px;background:#fff;font:inherit;color:inherit;text-decoration:none;cursor:pointer;text-align:left;}
-.tb-book a:hover,.tb-book button:hover{border-color:var(--accent);}
-.tb-book b{font-size:15px;color:var(--ink);} .tb-book span{font-size:13px;color:var(--ink-faint);line-height:1.4;}
+.tb-plan{margin:26px auto 0;padding:26px 26px 22px;border-radius:22px;background:#fff;border:1.5px solid var(--border);text-align:left;box-shadow:0 30px 60px -40px rgba(16,32,31,.45);}
+.tb-plan .vwg p{margin-top:0;font-size:15px;}
+.tb-next{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:22px;text-align:left;}
+.tb-next div{display:flex;flex-direction:column;gap:3px;padding:16px;border-radius:16px;background:var(--surface-tint);}
+.tb-next i{font-style:normal;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:700;color:var(--primary);font-size:20px;}
+.tb-next b{font-size:15px;color:var(--ink);} .tb-next span{font-size:13px;color:var(--ink-faint);line-height:1.45;}
 .tb-mob{display:none;}
 @media (max-width:900px){
  .tb-offer,.tb-form{grid-template-columns:1fr;gap:22px;}.tb-gal{position:static;}
@@ -245,7 +247,7 @@ CSS = '''<style>
  .tb-bar{position:sticky;bottom:0;background:#fff;margin:24px -16px 0;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));box-shadow:0 -10px 24px -18px rgba(0,0,0,.35);}
  .tb-bar .tb-btn{padding:16px 22px;}.tb-go small{display:none;}
  .tb-sys .img{height:180px;}.tb-sys .img img{height:150px;}
- .tb-price .p{font-size:38px;}.tb-book{grid-template-columns:1fr;}.tb-thumbs button{width:54px;height:54px;}
+ .tb-price .p{font-size:38px;}.tb-next{grid-template-columns:1fr;}.tb-plan{padding:20px 16px;}.tb-thumbs button{width:54px;height:54px;}
  .tb-reset span{display:none;}
 }
 /* woning */
@@ -635,18 +637,23 @@ JS = r'''<script>
     fetch('/', {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:bd}).then(function(res){
       if(!res.ok) throw new Error(res.status);
       track('aanvraag_batterij', {value:p.prijs, currency:'EUR', batterij:st.keuze});
-      st.naam = v('naam'); hist = []; cur = 'klaar'; render(true);
+      st.naam = v('naam'); st.email = v('email'); st.tel = v('telefoon'); hist = []; cur = 'klaar'; render(true);
+      /* keuzeblok voor het gesprek (tools/booking.py): één tik stuurt de voorkeur naar het CRM */
+      setTimeout(function(){ var el = document.getElementById('tbPlan'); if(el && window.vwVoorkeur) vwVoorkeur(el, {naam: st.naam, email: st.email, telefoon: st.tel, postcode: st.postcode, huisnummer: st.huisnummer}); }, 30);
     }).catch(function(){
       btn.disabled = false; btn.innerHTML = txt; er.hidden = false;
       er.innerHTML = 'Versturen lukte niet. Bel ons op <a href="tel:+31853335687" style="color:inherit;">085 333 56 87</a> of app via <a href="https://wa.me/31853335687" style="color:inherit;">WhatsApp</a>.';
     });
   }
   function klaar(){
-    var p = PK[st.keuze];
-    return '<div class="tb-ok"><div class="big">' + IC.kal.replace('width="22" height="22"', 'width="32" height="32"') + '</div><h1 class="tb-h">Bedankt, ' + esc((st.naam || '').split(' ')[0]) + '! Je aanvraag is binnen.</h1>' +
-      '<p>We bellen je zo snel mogelijk over je thuisbatterij van ' + p.kwh + ' kWh. Wil je niet wachten? Plan meteen zelf een moment dat jou uitkomt.</p>' +
-      '<div class="tb-book"><button type="button" data-book="bel"><b>Belafspraak</b><span>15 minuten, wij bellen jou</span></button><button type="button" data-book="huis"><b>Adviseur aan huis</b><span>we kijken naar je meterkast en woning</span></button>' +
-      '<a href="https://wa.me/31853335687?text=' + encodeURIComponent('Hoi Voltwijk, ik heb net een offerte voor een thuisbatterij aangevraagd. Hier een foto van mijn meterkast:') + '" target="_blank" rel="noopener"><b>Foto meterkast sturen</b><span>via WhatsApp, dan gaat het nog sneller</span></a></div></div>';
+    var p = PK[st.keuze], vn = esc((st.naam || '').split(' ')[0]);
+    return '<div class="tb-ok"><div class="big">' + IC.kal.replace('width="22" height="22"', 'width="32" height="32"') + '</div><h1 class="tb-h">Bedankt' + (vn ? ', ' + vn : '') + '! Je aanvraag is binnen.</h1>' +
+      '<p>Je thuisbatterij van ' + p.kwh + ' kWh staat genoteerd. Binnen een minuut krijg je een mail van ons met de volgende stappen.</p>' +
+      '<div class="tb-plan" id="tbPlan"></div>' +
+      '<div class="tb-next"><div><i>01</i><b>Je adviesgesprek</b><span>Aan huis of telefonisch. We rekenen alles na met jouw verbruik.</span></div>' +
+      '<div><i>02</i><b>Je plan met vaste prijs</b><span>Zwart op wit, inclusief installatie. Je zit nergens aan vast.</span></div>' +
+      '<div><i>03</i><b>Installatie door eigen monteurs</b><span>Al vanaf ' + (window.vwFirstDate || 'enkele weken') + '.</span></div></div>' +
+      '<p class="tb-small" style="margin-top:18px;">Liever direct contact? Bel <a href="tel:+31853335687" style="color:inherit;font-weight:800;">085 333 56 87</a> of <a href="https://wa.me/31853335687?text=' + encodeURIComponent('Hoi Voltwijk, ik heb net een offerte voor een thuisbatterij aangevraagd.') + '" target="_blank" rel="noopener" style="color:inherit;font-weight:800;">app ons</a>.</p></div>';
   }
   /* adres al ingevuld op een andere pagina? Dan meteen door naar de volgende vraag */
   if(document.querySelector('.tb-solo')){ try{ var s0 = JSON.parse(sessionStorage.getItem('vwCalcStart') || 'null');

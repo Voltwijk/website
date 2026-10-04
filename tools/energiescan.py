@@ -9,8 +9,8 @@ ROOT = os.path.join(os.path.dirname(__file__), '..'); os.chdir(ROOT)
 MODE = (sys.argv[1] if len(sys.argv) > 1 else 'aan').lower()
 SHELL = 'artikel-isde-subsidie-2026.html'
 MAX = 60
-# Zet op True zodra het Cal.com-afspraaktype cal.com/voltwijk/energiescan bestaat: bezoekers kiezen dan zelf direct hun moment.
-CAL = True
+# Geen Cal.com meer: aanmelden gaat via het formulier (komt in het CRM), of via de knop "Kies direct je moment" (tools/booking.py, data-book="scan") als CAL = True.
+CAL = False
 DATES = '26 t/m 31 oktober 2026'
 DAYS = ['Maandag 26 oktober', 'Dinsdag 27 oktober', 'Woensdag 28 oktober', 'Donderdag 29 oktober', 'Vrijdag 30 oktober', 'Zaterdag 31 oktober']
 KERNEN = ['Zevenbergen', 'Klundert', 'Fijnaart', 'Willemstad', 'Moerdijk', 'Zevenbergschen Hoek', 'Standdaarbuiten',

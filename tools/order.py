@@ -3,10 +3,7 @@
 # installatiedatum. De aanvraag gaat naar Netlify Forms ("bestelling"); de bestelling is pas definitief na onze
 # orderbevestiging. Daarna betaalt de klant de aanbetaling (via een betaallink), de rest na de installatie.
 # Gebruik:  python3 tools/order.py          (uit: python3 tools/order.py uit)
-# Installatiedatum:
-#  - CAL = True: de klant kiest een echte dag in de Cal.com-agenda CAL_LINK (ma-vr, max. 3 per dag, pas na 6 dagen;
-#    die regels staan in Cal.com). Na het boeken wordt de bestelling met die datum verstuurd.
-#  - CAL = False: de klant kiest een voorkeursdag (werkdagen, vanaf DAGEN_VOORUIT), die wij bevestigen.
+# Installatiedatum: de klant kiest een voorkeursdag (werkdagen, vanaf DAGEN_VOORUIT), die wij bevestigen en in het CRM inplannen.
 # SCHOUW: producten waarvoor we eerst komen kijken voordat de datum definitief is.
 import glob, os, re, sys
 os.chdir(os.path.join(os.path.dirname(__file__), '..'))
@@ -14,8 +11,6 @@ OFF = len(sys.argv) > 1 and sys.argv[1] == 'uit'
 AANBETALING = 350
 DAGEN_VOORUIT = 6
 DAGEN_KEUZE = 15
-CAL = False
-CAL_LINK = 'voltwijk/installatie'
 SCHOUW = ['zonnepanelen', 'warmtepomp']
 
 BLOCK = r'''<!-- vw-order:start -->
@@ -99,7 +94,7 @@ body.vwo-busy #waBubble{display:none !important;}
 <script>
 (function(){
   if(typeof renderCalc !== 'function' || !document.getElementById('calcCard')) return;
-  var MIN = __MIN__, N = __N__, SCHOUW = __SCHOUW__, PAY = __PAY__, CAL = __CAL__, CAL_LINK = '__CAL_LINK__';
+  var MIN = __MIN__, N = __N__, SCHOUW = __SCHOUW__, PAY = __PAY__, CAL = false;
   var DAG = ['zo','ma','di','wo','do','vr','za'], DAGL = ['zondag','maandag','dinsdag','woensdag','donderdag','vrijdag','zaterdag'];
   var MND = ['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
   var order = {};
@@ -256,36 +251,6 @@ body.vwo-busy #waBubble{display:none !important;}
         if(at) at.insertAdjacentElement('afterend', e);
       });
   }
-  function calHtml(){
-    return '<div class="vwo"><button type="button" class="vwo-back" onclick="calcGoStep(4)">← Terug naar je gegevens</button>' +
-      '<h3 class="vw-heading">Kies je installatiedatum</h3>' +
-      '<p class="sub">Kies een dag die jou uitkomt (maandag t/m vrijdag). Zodra je een dag kiest, versturen we je bestelling.</p>' +
-      '<div class="vwo-cal" id="vwoCal"><div class="vwb-load" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--ink-faint);font-weight:600;">Agenda laden…</div></div>' +
-      '<div class="vwo-note">Lukt het kiezen niet? <button type="button" class="vwo-back" id="vwoSkip">Verstuur je bestelling zonder datum</button>, dan plannen we samen een dag in.</div></div>';
-  }
-  var calN = 0;
-  function mountCal(){
-    if(!window.Cal){
-      (function (C, A, L) { var p = function (a, ar) { a.q.push(ar); }; var d = C.document; C.Cal = C.Cal || function () { var cal = C.Cal; var ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { var api = function () { p(api, arguments); }; var namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-    }
-    var ns = 'vwo' + (++calN), r = calcCompute(), sent = false;
-    Cal('init', ns, {origin: 'https://cal.com'});
-    Cal.ns[ns]('inline', {elementOrSelector: '#vwoCal', calLink: CAL_LINK, layout: 'month_view', config: {theme: 'light', name: order.naam || '', email: order.email || '',
-      notes: 'Bestelling via website: ' + r.items.map(function(it){ return it.label; }).join(', ') + ' (totaal € ' + calcFmt(r.total) + '). Adres: ' + [order.adres, order.postcode, order.plaats].join(' ') + '. Tel: ' + (order.telefoon || '')}});
-    Cal.ns[ns]('ui', {theme: 'light', layout: 'month_view', cssVarsPerTheme: {light: {'cal-brand': '#0F6E6B'}}});
-    var done = function(e){
-      if(sent) return; sent = true;
-      var m = JSON.stringify((e && e.detail && e.detail.data) || {}).match(/\d{4}-\d{2}-\d{2}T[\d:.]+Z?/);
-      order.installatiedatum = m ? fmtIso(m[0]) : 'Geboekt in Cal.com';
-      try{ if(window.vwTrack) vwTrack('installatie_gepland', {pagina: location.pathname}); }catch(err){}
-      send(null);
-    };
-    Cal.ns[ns]('on', {action: 'bookingSuccessfulV2', callback: done});
-    Cal.ns[ns]('on', {action: 'bookingSuccessful', callback: done});
-    Cal.ns[ns]('on', {action: 'linkReady', callback: function(){ var l = document.querySelector('#vwoCal .vwb-load'); if(l) l.remove(); }});
-    var skip = document.getElementById('vwoSkip');
-    if(skip) skip.addEventListener('click', function(){ order.installatiedatum = 'In overleg'; skip.disabled = true; send(null); });
-  }
   var base = renderCalc;
   window.renderCalc = renderCalc = function(){
     var card = document.getElementById('calcCard');
@@ -294,8 +259,7 @@ body.vwo-busy #waBubble{display:none !important;}
       if(!calcState.producten.length){ calcState.step = 2; return base(); }
       base.call(this, 3);
       var left = card.querySelector('.calc-grid > div');
-      if(left) left.innerHTML = calcState.step === 6 ? doneHtml() : calcState.step === 5 ? calHtml() : formHtml();
-      if(calcState.step === 5) mountCal();
+      if(left) left.innerHTML = calcState.step === 6 ? doneHtml() : formHtml();
       return;
     }
     base();
@@ -319,7 +283,7 @@ body.vwo-busy #waBubble{display:none !important;}
 <!-- vw-order:end -->'''
 
 BLOCK = (BLOCK.replace('__MAXF__', '8').replace('__MIN__', str(DAGEN_VOORUIT)).replace('__N__', str(DAGEN_KEUZE)).replace('__SCHOUW__', repr(SCHOUW))
-         .replace('__PAY__', str(AANBETALING)).replace('__CAL__', 'true' if CAL else 'false').replace('__CAL_LINK__', CAL_LINK))
+         .replace('__PAY__', str(AANBETALING)))
 
 PLAN = r'''<!-- vw-plan:start -->
 <style>
