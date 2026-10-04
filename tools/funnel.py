@@ -772,7 +772,7 @@ def band(f):
       <div style="display:flex;flex-wrap:wrap;gap:10px 20px;margin-top:22px;font-size:14.5px;font-weight:800;"><a href="/contact" data-book="" style="color:#fff;text-decoration:none;">Liever een adviesgesprek →</a><a href="{WA}?text=Hoi%20Voltwijk%2C%20ik%20wil%20graag%20een%20offerte%20voor%20{esc(prod).replace(' ', '%20')}" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;">App ons →</a></div>
       {extra}</div>
     <div id="vwoBox">
-      <form class="vwo-f" name="offerte" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="return vwOfferte(this);">
+      <form class="vwo-f" name="offerte" method="POST" onsubmit="return vwOfferte(this);">
         <input type="hidden" name="form-name" value="offerte"><input type="hidden" name="product" value="{esc(prod)}">
         <p style="display:none;"><label>Niet invullen: <input name="bot-field"></label></p>
         <b class="vw-heading" style="font-size:20px;">Offerte aanvragen</b>

@@ -54,6 +54,11 @@
   for = "/videos/*"
   [headers.values]
     Cache-Control = "public, max-age=604800"
+# Zelfgehoste lettertypen (bestandsnaam bevat de versie): een jaar cachen
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
 [[headers]]
   for = "/brand/*"
   [headers.values]

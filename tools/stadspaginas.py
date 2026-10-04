@@ -213,7 +213,7 @@ def crumbs(items):
     for i, (lab, href) in enumerate(items):
         if i: out.append('<span aria-hidden="true">/</span>')
         out.append(f'<a href="{href}" style="color:var(--primary);text-decoration:none;">{esc(lab)}</a>' if href else f'<span>{esc(lab)}</span>')
-    return '<nav aria-label="Kruimelpad" style="font-size:13px;font-weight:700;color:var(--ink-faint);display:flex;gap:8px;flex-wrap:wrap;align-items:center;">' + ''.join(out) + '</nav>'
+    return '<nav aria-label="Kruimelpad" style="font-size:13px;font-weight:700;color:var(--ink-faint);display:flex;gap:8px;flex-wrap:nowrap;white-space:nowrap;overflow-x:auto;scrollbar-width:none;align-items:center;">' + ''.join(out) + '</nav>'
 
 def faq_html(qa): return ''.join(f'<details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>' for q, a in qa)
 def lees_html(items): return ''.join(f'<a href="/{a}">{esc(t)} →</a>' for a, t in items if os.path.exists(a + '.html'))
