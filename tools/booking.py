@@ -63,6 +63,18 @@ BLOCK = '''<!-- vw-cal:start -->
 .vwg-steps{display:grid;gap:10px;text-align:left;margin:16px 0 0;}
 .vwg-steps div{display:flex;gap:12px;align-items:flex-start;font-size:14.5px;line-height:1.5;}
 .vwg-steps i{font-style:normal;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:700;color:#0F6E6B;font-size:18px;min-width:26px;}
+.vwg-days{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 10px;margin:4px -2px 6px;scrollbar-width:thin;}
+.vwg-day{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;min-width:64px;padding:10px 8px;border-radius:14px;border:2px solid #D5E3E0;background:#fff;cursor:pointer;font-family:inherit;color:#10201F;}
+.vwg-day b{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:#5B6A67;}
+.vwg-day span{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:17px;font-weight:700;}
+.vwg-day[aria-pressed="true"]{border-color:#0F6E6B;background:#0F6E6B;color:#fff;}
+.vwg-day[aria-pressed="true"] b{color:#CFE7E3;}
+.vwg-times{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:0 0 14px;}
+.vwg-time{padding:12px 6px;border-radius:12px;border:2px solid #D5E3E0;background:#fff;cursor:pointer;font:800 15px 'Nunito Sans',system-ui,sans-serif;color:#10201F;}
+.vwg-time:hover,.vwg-time:focus-visible{border-color:#0F6E6B;outline:none;}
+.vwg-laden{padding:30px 0;text-align:center;color:#5B6A67;font-weight:700;}
+.vwg-moment{background:#F3EFE6;border-radius:16px;padding:16px 18px;margin:12px 0 0;font-size:15px;line-height:1.55;color:#10201F;text-align:left;}
+.vwg-moment b{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:19px;}
 .vwb-after{margin-top:14px;padding:18px;border-radius:18px;background:#fff;border:1px solid #E6ECEA;text-align:left;width:100%;box-sizing:border-box;}
 .vwb-after .vwg h3{font-size:19px;}
 .vwb-btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;}
@@ -74,6 +86,7 @@ BLOCK = '''<!-- vw-cal:start -->
 .vwb-btns svg{width:17px;height:17px;}
 body.vwb-lock{overflow:hidden;}
 @media (max-width:720px){
+  .vwg-times{grid-template-columns:repeat(3,minmax(0,1fr));}
   .vwb-ov{padding:0;align-items:stretch;}
   .vwb-panel{max-height:none;height:100%;border-radius:0;}
   .vwb-head{padding:14px 16px;}
@@ -86,6 +99,8 @@ body.vwb-lock{overflow:hidden;}
 <script>
 (function(){
   var REGIO = '__REGIO__', IC = {__ICONS__}, WA = '31853335687', lead = {}, ov = null;
+  /* Online boeken in de CRM-agenda (crm.voltwijk.nl, netlify/functions/boeken.mjs). Lukt dat niet, dan valt de planner terug op een voorkeur. */
+  var BOEK = window.VW_BOEK || 'https://crm.voltwijk.nl/.netlify/functions/boeken';
   var DAG = ['zondag','maandag','dinsdag','woensdag','donderdag','vrijdag','zaterdag'];
   function esc(s){ return String(s||'').replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
   function track(name, p){ try{ if(window.vwTrack) vwTrack(name, p); }catch(e){} }
@@ -115,7 +130,7 @@ body.vwb-lock{overflow:hidden;}
 
   /* ---------- het planblok (in het venster of in een bevestiging) ---------- */
   function Plan(el, o){
-    var s = {stap: '', vorm: '', voorkeur: '', k: o.k || '', na: !!o.na, info: Object.assign({}, lead, o.info || {})};
+    var s = {stap: '', vorm: '', voorkeur: '', dagen: null, dag: '', tijd: '', vast: null, k: o.k || '', na: !!o.na, info: Object.assign({}, lead, o.info || {})};
     function keuzeVorm(){ var r = regio(s.info.postcode); if(s.k === 'bel') return 'telefonisch'; if(s.k === 'huis' || s.k === 'scan') return r === 'telefonisch' ? 'buiten' : 'thuis'; return r === 'telefonisch' ? 'telefonisch' : 'thuis'; }
     function render(){
       var h = '';
@@ -123,6 +138,30 @@ body.vwb-lock{overflow:hidden;}
         h = '<span class="vwg-eb">Gratis &amp; vrijblijvend</span><h3>' + (s.k === 'scan' ? 'Plan je gratis energiescan' : 'Plan je gratis adviesgesprek') + '</h3><p>Vul je postcode in. Dan zie je meteen of een adviseur bij je langskomt of dat we je bellen.</p>' +
           '<form class="vwg-f" data-vwp="pc" novalidate><div class="vwg-row"><label>Postcode<input name="postcode" autocomplete="postal-code" placeholder="1234 AB" value="' + esc(s.info.postcode) + '" required></label><label>Huisnr.<input name="huisnummer" inputmode="numeric" value="' + esc(s.info.huisnummer) + '"></label></div>' +
           '<div class="vwg-err" hidden></div><button type="submit" class="vwg-go">Verder →</button></form>';
+      } else if(s.stap === 'laden'){
+        h = '<div class="vwg-laden">Vrije momenten laden…</div>';
+      } else if(s.stap === 'agenda'){
+        var th = s.vorm === 'thuis', dg = (s.dagen || []).filter(function(d){ return d.datum === s.dag; })[0] || s.dagen[0];
+        h = '<span class="vwg-eb">' + (s.na ? 'Nog één ding' : th ? 'Adviseur aan huis' : 'Telefonisch adviesgesprek') + '</span><h3>' + (th ? 'Kies wanneer we langskomen' : 'Kies wanneer we je bellen') + '</h3>' +
+          '<p>' + (th ? 'Een adviseur komt bij je langs en kijkt samen met jou naar je woning, meterkast en verbruik (ongeveer een uur). Gratis en je zit nergens aan vast.'
+            : s.vorm === 'buiten' ? 'Je woont net buiten de regio waar onze adviseurs langskomen, dus we bellen je. Net zo compleet: daarna krijg je je plan met vaste prijs.'
+            : 'Een adviseur belt je en neemt in een half uur je situatie door. Daarna krijg je je persoonlijke plan met vaste prijs.') + '</p>' +
+          '<div class="vwg-days" role="group" aria-label="Kies een dag">' + s.dagen.map(function(d){ var p = d.label.split(' '); return '<button type="button" class="vwg-day" data-vwg-dag="' + d.datum + '" aria-pressed="' + (d.datum === dg.datum) + '"><b>' + p[0] + '</b><span>' + p[1] + ' ' + p[2] + '</span></button>'; }).join('') + '</div>' +
+          '<div class="vwg-times" role="group" aria-label="Kies een tijd">' + dg.tijden.map(function(t){ return '<button type="button" class="vwg-time" data-vwg-tijd="' + t + '">' + t + '</button>'; }).join('') + '</div>' +
+          '<div class="vwg-err" hidden></div>' +
+          (th && s.k !== 'scan' ? '<button type="button" class="vwg-alt" data-vwp="tel">Liever telefonisch?</button> &nbsp;·&nbsp; ' : !th && regio(s.info.postcode) === 'thuis' ? '<button type="button" class="vwg-alt" data-vwp="huis">Liever een adviseur aan huis?</button> &nbsp;·&nbsp; ' : '') +
+          '<button type="button" class="vwg-alt" data-vwp="voorkeur">Geen moment dat past?</button>';
+      } else if(s.stap === 'bevestig'){
+        h = '<span class="vwg-eb">Nog één tik</span><h3>Klopt dit moment?</h3><div class="vwg-moment"><b>' + esc(momentTekst()) + '</b><br>' + (s.vorm === 'thuis' ? 'Adviseur aan huis' : 'We bellen je op ' + esc(s.info.telefoon || 'je nummer')) + '</div>' +
+          '<div class="vwg-err" hidden></div><p style="margin:16px 0 0;"><button type="button" class="vwg-go" data-vwp="boek">Ja, zet het vast →</button></p><p class="vwg-small"><button type="button" class="vwg-alt" data-vwp="terug">Ander moment kiezen</button></p>';
+      } else if(s.stap === 'vast'){
+        var vn0 = String(s.info.naam || '').split(' ')[0], thv = s.vorm === 'thuis', adv = s.vast && s.vast.adviseur;
+        h = '<div class="vwg-ok"><div class="vwg-tick">✓</div><h3>Het staat vast' + (vn0 ? ', ' + esc(vn0) : '') + '!</h3>' +
+          '<div class="vwg-moment"><b>' + esc(s.vast && s.vast.wanneer || momentTekst()) + '</b><br>' + (thv ? (adv ? esc(adv) + ' komt' : 'Onze adviseur komt') + ' bij je langs. Ongeveer een uur.' : (adv ? esc(adv) + ' belt' : 'We bellen') + ' je op ' + esc(s.info.telefoon) + '. Ongeveer een half uur.') + '</div></div>' +
+          '<div class="vwg-steps"><div><i>01</i><span>Je krijgt nu een bevestiging met agenda-uitnodiging in je mail.</span></div>' +
+          '<div><i>02</i><span>Tip: leg je jaarafrekening van stroom en gas klaar. Dan rekenen we met jouw cijfers.</span></div>' +
+          '<div><i>03</i><span>Past het toch niet? App of bel ons, dan verzetten we het.</span></div></div>' +
+          '<a class="vwg-wa" href="' + waLink('Hallo Voltwijk! ' + (s.info.naam ? 'Ik ben ' + s.info.naam + '. ' : '') + 'Hier alvast een foto van mijn meterkast voor ons gesprek:') + '" target="_blank" rel="noopener">' + IC.wa + '<span><b>Nog sneller?</b> Stuur alvast een foto van je meterkast via WhatsApp.</span></a>';
       } else if(s.stap === 'keuze'){
         var thuis = s.vorm === 'thuis', buiten = s.vorm === 'buiten';
         if(thuis) h = '<span class="vwg-eb">' + (s.na ? 'Nog één ding' : 'Adviseur aan huis') + '</span><h3>' + (s.k === 'scan' ? 'Wanneer komt de energiescan jou uit?' : 'Wanneer komt een adviseur jou het best uit?') + '</h3>' +
@@ -142,12 +181,13 @@ body.vwb-lock{overflow:hidden;}
         h = '<h3>Welk moment past jou?</h3><p>Schrijf het op zoals je wilt, bijvoorbeeld "dinsdag na 18:00" of "liefst in de lunchpauze".</p>' +
           '<form class="vwg-f" data-vwp="ander" novalidate><label>Jouw moment<input name="moment" placeholder="Bijv. donderdag na 17:00" required></label><div class="vwg-err" hidden></div><button type="submit" class="vwg-go">Verder →</button></form>';
       } else if(s.stap === 'gegevens'){
-        h = '<div class="vwg-sum">' + (s.vorm === 'thuis' ? IC.huis : IC.bel) + '<span><b>' + (s.vorm === 'thuis' ? (s.k === 'scan' ? 'Energiescan aan huis' : 'Adviseur aan huis') : 'We bellen je') + '</b> · ' + esc(s.voorkeur) + '</span><button type="button" class="vwg-alt" data-vwp="terug">Wijzig</button></div>' +
+        h = '<div class="vwg-sum">' + (s.vorm === 'thuis' ? IC.huis : IC.bel) + '<span><b>' + (s.vorm === 'thuis' ? (s.k === 'scan' ? 'Energiescan aan huis' : 'Adviseur aan huis') : 'We bellen je') + '</b> · ' + esc(s.tijd ? momentTekst() : s.voorkeur) + '</span><button type="button" class="vwg-alt" data-vwp="terug">Wijzig</button></div>' +
           '<h3>Bijna klaar</h3><p>Waar kunnen we je bereiken? Je krijgt direct een bevestiging per mail.</p>' +
           '<form class="vwg-f" data-vwp="geg" novalidate><p hidden><label>Niet invullen <input name="bot-field"></label></p><label>Naam<input name="naam" autocomplete="name" value="' + esc(s.info.naam) + '" required></label>' +
           '<label>Telefoonnummer<input name="telefoon" type="tel" autocomplete="tel" inputmode="tel" value="' + esc(s.info.telefoon) + '" required></label>' +
           '<label>E-mailadres<input name="email" type="email" autocomplete="email" value="' + esc(s.info.email) + '" required></label>' +
-          '<div class="vwg-err" hidden></div><button type="submit" class="vwg-go">Gesprek aanvragen →</button></form><p class="vwg-small">Gratis en vrijblijvend. We gebruiken je gegevens alleen voor deze aanvraag (<a href="/privacybeleid" style="color:inherit;">privacybeleid</a>).</p>';
+          (s.tijd && s.vorm === 'thuis' && !s.info.huisnummer ? '<label>Huisnummer (voor het adres van de afspraak)<input name="huisnummer" inputmode="numeric" required></label>' : '') +
+          '<div class="vwg-err" hidden></div><button type="submit" class="vwg-go">' + (s.tijd ? 'Zet mijn afspraak vast →' : 'Gesprek aanvragen →') + '</button></form><p class="vwg-small">Gratis en vrijblijvend. We gebruiken je gegevens alleen voor deze aanvraag (<a href="/privacybeleid" style="color:inherit;">privacybeleid</a>).</p>';
       } else if(s.stap === 'klaar'){
         var vn = String(s.info.naam || '').split(' ')[0], th = s.vorm === 'thuis';
         h = '<div class="vwg-ok"><div class="vwg-tick">✓</div><h3>' + (vn ? 'Top, ' + esc(vn) + '!' : 'Top!') + ' We hebben je voorkeur.</h3><p style="margin:0;">' + (th ? 'Binnen één werkdag krijg je van ons een voorstel met een paar momenten. Kies er één en het staat vast.' : 'We bellen je ' + esc(s.voorkeur) + '. Je krijgt een bevestiging per mail.') + '</p></div>' +
@@ -158,6 +198,26 @@ body.vwb-lock{overflow:hidden;}
       }
       el.innerHTML = '<div class="vwg">' + h + '</div>';
       var f = el.querySelector('form input:not([type=hidden])'); if(f && !o.inline) setTimeout(function(){ try{ f.focus(); }catch(e){} }, 50);
+    }
+    function momentTekst(){ var d = (s.dagen || []).filter(function(x){ return x.datum === s.dag; })[0]; var dt = new Date(s.dag + 'T12:00:00');
+      return (d ? DAG[dt.getDay()] + ' ' + dt.getDate() + ' ' + ['januari','februari','maart','april','mei','juni','juli','augustus','september','oktober','november','december'][dt.getMonth()] : s.dag) + ' om ' + s.tijd; }
+    function agenda(){
+      if(s.k === 'scan'){ s.stap = 'keuze'; render(); return; }
+      s.tijd = ''; s.stap = 'laden'; render();
+      var c = window.AbortController ? new AbortController() : null; if(c) setTimeout(function(){ c.abort(); }, 7000);
+      fetch(BOEK + '?soort=' + (s.vorm === 'thuis' ? 'huis' : 'tel') + '&postcode=' + encodeURIComponent(s.info.postcode || ''), c ? {signal: c.signal} : {})
+        .then(function(r){ return r.json(); })
+        .then(function(d){ if(d && d.dagen && d.dagen.length){ s.dagen = d.dagen; s.dag = d.dagen[0].datum; s.stap = 'agenda'; } else s.stap = 'keuze'; render(); })
+        .catch(function(){ s.stap = 'keuze'; render(); });
+    }
+    function boek(btn){
+      if(btn){ btn.disabled = true; btn.textContent = 'Vastzetten…'; }
+      var b = {soort: s.vorm === 'thuis' ? 'huis' : 'tel', start: s.dag + 'T' + s.tijd, naam: s.info.naam, email: s.info.email, telefoon: s.info.telefoon, postcode: s.info.postcode || '', huisnummer: s.info.huisnummer || '', product: product(), pagina: location.pathname};
+      fetch(BOEK, {method: 'POST', headers: {'Content-Type': 'text/plain'}, body: JSON.stringify(b)}).then(function(r){ return r.json().then(function(d){ return {st: r.status, d: d}; }); }).then(function(x){
+        if(x.st === 200 && x.d.ok){ s.vast = x.d; s.stap = 'vast'; track('afspraak_gepland', {soort: b.soort === 'huis' ? 'huis' : 'bel', geboekt: 'ja', pagina: location.pathname}); render(); return; }
+        if(x.st === 409){ agenda(); setTimeout(function(){ fout('Dat moment is net door iemand anders gekozen. Kies een ander moment.'); }, 900); return; }
+        throw new Error(x.d && x.d.error || 'mislukt');
+      }).catch(function(){ /* niet gelukt: niets kwijt, de keuze gaat als voorkeur naar het CRM */ s.voorkeur = 'Gekozen moment: ' + momentTekst() + ' (online boeken lukte niet)'; s.tijd = ''; versturen(btn); });
     }
     function fout(msg){ var e = el.querySelector('.vwg-err'); if(e){ e.textContent = msg; e.hidden = !msg; } }
     function versturen(btn){
@@ -175,31 +235,36 @@ body.vwb-lock{overflow:hidden;}
     }
     el.addEventListener('click', function(e){
       var c = e.target.closest('[data-vwp-k]'); if(c){ gekozen(c.getAttribute('data-vwp-k')); return; }
+      var dg = e.target.closest('[data-vwg-dag]'); if(dg){ s.dag = dg.getAttribute('data-vwg-dag'); render(); return; }
+      var tj = e.target.closest('[data-vwg-tijd]'); if(tj){ s.tijd = tj.getAttribute('data-vwg-tijd'); track('afspraak_moment', {soort: s.vorm});
+        s.stap = (s.info.naam && s.info.email && s.info.telefoon && (s.vorm !== 'thuis' || s.info.huisnummer)) ? 'bevestig' : 'gegevens'; render(); return; }
       var a = e.target.closest('[data-vwp]'); if(!a || a.tagName === 'FORM') return;
       var w = a.getAttribute('data-vwp');
-      if(w === 'tel'){ s.vorm = 'telefonisch'; s.stap = 'keuze'; render(); }
-      else if(w === 'huis'){ s.vorm = 'thuis'; s.stap = 'keuze'; render(); }
+      if(w === 'tel'){ s.vorm = 'telefonisch'; agenda(); }
+      else if(w === 'huis'){ s.vorm = 'thuis'; agenda(); }
       else if(w === 'ander'){ s.stap = 'ander'; render(); }
-      else if(w === 'terug'){ s.stap = 'keuze'; render(); }
+      else if(w === 'voorkeur'){ s.tijd = ''; s.stap = 'keuze'; render(); }
+      else if(w === 'boek'){ boek(a); }
+      else if(w === 'terug'){ s.stap = s.tijd && s.dagen ? 'agenda' : 'keuze'; s.tijd = ''; render(); }
     });
     el.addEventListener('submit', function(e){
       var f = e.target.closest('form[data-vwp]'); if(!f) return; e.preventDefault();
       var v = function(n){ return f.elements[n] ? String(f.elements[n].value || '').trim() : ''; }, w = f.getAttribute('data-vwp');
       if(w === 'pc'){ var pc = v('postcode').toUpperCase().replace(/\\s+/g, ''); if(!/^\\d{4}([A-Z]{2})?$/.test(pc)){ fout('Vul je postcode in, bijvoorbeeld 4761 AB.'); return; }
         s.info.postcode = pc.length === 6 ? pc.slice(0,4) + ' ' + pc.slice(4) : pc; s.info.huisnummer = v('huisnummer'); lead.postcode = s.info.postcode; lead.huisnummer = s.info.huisnummer;
-        s.vorm = keuzeVorm(); s.stap = 'keuze'; track('afspraak_regio', {regio: regio(s.info.postcode)}); render(); }
+        s.vorm = keuzeVorm(); track('afspraak_regio', {regio: regio(s.info.postcode)}); agenda(); }
       else if(w === 'ander'){ if(!v('moment')){ fout('Schrijf een moment op.'); return; } gekozen(v('moment')); }
       else if(w === 'geg'){
         if(v('bot-field')) return;
         var m = !v('naam') ? 'Vul je naam in.' : !/^[+0-9 ()-]{10,}$/.test(v('telefoon')) ? 'Vul een geldig telefoonnummer in.' : !/^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$/.test(v('email')) ? 'Vul een geldig e-mailadres in.' : '';
         if(m){ fout(m); return; } fout('');
-        s.info.naam = lead.naam = v('naam'); s.info.telefoon = lead.telefoon = v('telefoon'); s.info.email = lead.email = v('email');
-        versturen(f.querySelector('.vwg-go'));
+        if(f.elements.huisnummer && !v('huisnummer')){ fout('Vul je huisnummer in.'); return; }
+        s.info.naam = lead.naam = v('naam'); s.info.telefoon = lead.telefoon = v('telefoon'); s.info.email = lead.email = v('email'); if(v('huisnummer')) s.info.huisnummer = lead.huisnummer = v('huisnummer');
+        if(s.tijd) boek(f.querySelector('.vwg-go')); else versturen(f.querySelector('.vwg-go'));
       }
     });
     s.vorm = keuzeVorm();
-    s.stap = (s.k === 'bel' || s.info.postcode) ? 'keuze' : 'postcode';
-    render();
+    if(s.k === 'bel' || s.info.postcode) agenda(); else { s.stap = 'postcode'; render(); }
   }
 
   /* ---------- venster ---------- */
