@@ -95,7 +95,7 @@ Bij een goed installatiebezoek kijkt de monteur onder meer naar:
 
 ## Hoe Voltwijk kan helpen
 
-Onze eigen monteurs kijken bij jou thuis waar de thuisbatterij het best past, en houden rekening met temperatuur, veiligheid en de weg naar de meterkast. Onze batterij is er in 10 en 16 kWh, met een hybride omvormer en een app-koppeling, vanaf € 4.200 excl. btw, inclusief installatie. Bekijk de [thuisbatterij](/product-batterij) of lees eerst [wat een thuisbatterij doet](/artikel-wat-doet-een-thuisbatterij).
+Onze eigen monteurs kijken bij jou thuis waar de thuisbatterij het best past, en houden rekening met temperatuur, veiligheid en de weg naar de meterkast. Onze batterij is er in 10 en 16 kWh, met een hybride omvormer en een app-koppeling, vanaf € 3.900 excl. btw, inclusief installatie. Bekijk de [thuisbatterij](/product-batterij) of lees eerst [wat een thuisbatterij doet](/artikel-wat-doet-een-thuisbatterij).
 
 faq:
 Q: Waar kan ik een thuisbatterij het beste plaatsen?
