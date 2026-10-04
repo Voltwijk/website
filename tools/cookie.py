@@ -4,17 +4,27 @@
 # - Vervangt de inhoud van <div id="vwCookie"> op alle pagina's; de bestaande knoppen (data-ck="1"/"0") en het
 #   script dat de keuze opslaat, blijven werken.
 # - Weigeren is net zo makkelijk als accepteren (AVG/ePrivacy): beide knoppen staan even groot naast elkaar.
-import glob, os, re
+import glob, json, os, re
 
 os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
+
+# Staat de Meta-pixel aan (tools/meta.json), dan noemt de melding ook de advertentiecookies.
+try: META = bool(json.load(open('tools/meta.json', encoding='utf-8')).get('pixel_id'))
+except Exception: META = False
+CKTEKST = ("Met jouw toestemming meten we welke pagina's bezoekers nuttig vinden en of onze advertenties op Facebook en Instagram "
+           "tot een aanvraag leiden (Google Analytics en de Meta-pixel). We verkopen nooit gegevens." if META else
+           "Met jouw toestemming meten we ook anoniem welke pagina's bezoekers nuttig vinden, zodat we de site en ons advies kunnen "
+           "verbeteren. We gebruiken geen advertentietracking en verkopen nooit gegevens.")
 
 INNER = '''
     <div class="ck-ic" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a4 4 0 0 0 5 5 4 4 0 0 0 4.8 4.8z"/><circle cx="8.5" cy="10.5" r="1"/><circle cx="12" cy="15.5" r="1"/><circle cx="15.5" cy="12.5" r="1"/></svg></div>
     <div class="ck-title" id="vwCookieT">Mogen we cookies gebruiken?</div>
-    <p>We gebruiken functionele cookies zodat de site goed werkt. Met jouw toestemming meten we ook anoniem welke pagina's bezoekers nuttig vinden, zodat we de site en ons advies kunnen verbeteren. We gebruiken geen advertentietracking en verkopen nooit gegevens.</p>
+    <p>We gebruiken functionele cookies zodat de site goed werkt. __CKTEKST__</p>
     <div class="ck-btns"><button type="button" class="ck-yes" data-ck="1">Accepteren</button><button type="button" class="ck-no" data-ck="0">Alleen noodzakelijk</button></div>
     <div class="ck-more">Je kunt je keuze altijd aanpassen. Lees ons <a href="/cookiebeleid">cookiebeleid</a> en <a href="/privacybeleid">privacybeleid</a>.</div>
   '''
+
+INNER = INNER.replace('__CKTEKST__', CKTEKST)
 
 STYLE = '''<!-- vw-cookie:start --><style>
 #vwCookie{left:50% !important;top:50% !important;right:auto !important;bottom:auto !important;width:min(520px,calc(100vw - 32px)) !important;max-height:calc(100vh - 32px);overflow:auto;
