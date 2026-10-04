@@ -807,6 +807,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
     if(fout){ er.textContent = fout; er.hidden = false; return; }
     var p = PK[st.keuze], r = reken(st.keuze), zp = document.getElementById('tbZp'), btn = f.querySelector('button[type=submit]'), t = utm();
     var velden = {'form-name':'thuisbatterij-advies', 'bot-field':v('bot-field'), naam:v('naam'), telefoon:v('telefoon'), email:v('email'),
+      product:'thuisbatterij' + (zp && zp.checked ? ', zonnepanelen' : ''),
       postcode:st.postcode, huisnummer:st.huisnummer, advies:'Thuisbatterij ' + p.kwh + ' kWh + ' + p.kw + ' kW omvormer (' + p.fase + ')' + (st.keuze !== advies() ? ' (zelf gekozen; advies was ' + PK[advies()].kwh + ' kWh ' + PK[advies()].fase + ')' : ''), prijs:eur(p.prijs) + ' excl. btw',
       zonnepanelen:st.panelen === 'ja' ? 'ja, ca. ' + st.aantal + ' panelen' : st.panelen === 'straks' ? 'nog niet, wil ze erbij' : 'nee',
       ook_zonnepanelen:zp && zp.checked ? 'ja' : '', verbruik:fmt(st.verbruik > 0 ? st.verbruik : 3500) + ' kWh',
@@ -843,7 +844,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
 </script>
   <form name="thuisbatterij-advies" data-netlify="true" netlify-honeypot="bot-field" hidden>
     <input name="bot-field"><input name="naam"><input name="telefoon"><input name="email"><input name="postcode"><input name="huisnummer">
-    <input name="advies"><input name="prijs"><input name="zonnepanelen"><input name="ook_zonnepanelen"><input name="verbruik"><input name="extra">
+    <input name="product"><input name="advies"><input name="prijs"><input name="zonnepanelen"><input name="ook_zonnepanelen"><input name="verbruik"><input name="extra">
     <input name="aansluiting"><input name="belangrijk"><input name="geschatte_besparing"><input name="dynamisch_contract"><input name="woning"><input name="pagina"><input name="bron"><input name="utm_content"><input name="gclid"><input name="fbclid">
   </form>
 </div>
