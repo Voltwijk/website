@@ -1,0 +1,4903 @@
+{
+ "'s-Gravenhage": {
+  "cbs": {
+   "AantalInwoners": 566221,
+   "AardgasvrijeWoningen": 13,
+   "GemiddeldAardgasverbruik": 720,
+   "GemiddeldeElektriciteitslevering": 2150,
+   "GemiddeldeElektriciteitsteruglevering": 190,
+   "GemiddeldeWOZWaardeVanWoningen": 362,
+   "Koopwoningen": 42,
+   "PercentageEengezinswoning": 21,
+   "PercentageTweeOnderEenKapWoningEe": 1,
+   "PercentageVrijstaandeWoningEengezins": 1,
+   "WoningenMetZonnestroom": 12,
+   "Woningvoorraad": 272242
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Haaglanden",
+  "stedelijkheid": "Zeer sterk stedelijk",
+  "woonplaatsen": [
+   "'s-Gravenhage"
+  ]
+ },
+ "'s-Hertogenbosch": {
+  "cbs": {
+   "AantalInwoners": 160757,
+   "AardgasvrijeWoningen": 9,
+   "GemiddeldAardgasverbruik": 770,
+   "GemiddeldeElektriciteitslevering": 2560,
+   "GemiddeldeElektriciteitsteruglevering": 730,
+   "GemiddeldeWOZWaardeVanWoningen": 403,
+   "Koopwoningen": 52,
+   "PercentageEengezinswoning": 59,
+   "PercentageTweeOnderEenKapWoningEe": 5,
+   "PercentageVrijstaandeWoningEengezins": 8,
+   "WoningenMetZonnestroom": 35,
+   "Woningvoorraad": 76264
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Noordoost-Brabant",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "'s-Hertogenbosch",
+   "Nuland",
+   "Rosmalen",
+   "Vinkel"
+  ]
+ },
+ "Aalsmeer": {
+  "cbs": {
+   "AantalInwoners": 33279,
+   "AardgasvrijeWoningen": 5,
+   "GemiddeldAardgasverbruik": 900,
+   "GemiddeldeElektriciteitslevering": 2810,
+   "GemiddeldeElektriciteitsteruglevering": 900,
+   "GemiddeldeWOZWaardeVanWoningen": 491,
+   "Koopwoningen": 64,
+   "PercentageEengezinswoning": 77,
+   "PercentageTweeOnderEenKapWoningEe": 8,
+   "PercentageVrijstaandeWoningEengezins": 14,
+   "WoningenMetZonnestroom": 41,
+   "Woningvoorraad": 13698
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Groot Amsterdam",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Aalsmeer",
+   "Kudelstaart"
+  ]
+ },
+ "Alblasserdam": {
+  "cbs": {
+   "AantalInwoners": 20314,
+   "AardgasvrijeWoningen": 4,
+   "GemiddeldAardgasverbruik": 730,
+   "GemiddeldeElektriciteitslevering": 2550,
+   "GemiddeldeElektriciteitsteruglevering": 600,
+   "GemiddeldeWOZWaardeVanWoningen": 343,
+   "Koopwoningen": 62,
+   "PercentageEengezinswoning": 68,
+   "PercentageTweeOnderEenKapWoningEe": 6,
+   "PercentageVrijstaandeWoningEengezins": 6,
+   "WoningenMetZonnestroom": 29,
+   "Woningvoorraad": 8473
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Drechtsteden",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Alblasserdam"
+  ]
+ },
+ "Albrandswaard": {
+  "cbs": {
+   "AantalInwoners": 26428,
+   "AardgasvrijeWoningen": 4,
+   "GemiddeldAardgasverbruik": 830,
+   "GemiddeldeElektriciteitslevering": 2840,
+   "GemiddeldeElektriciteitsteruglevering": 930,
+   "GemiddeldeWOZWaardeVanWoningen": 446,
+   "Koopwoningen": 70,
+   "PercentageEengezinswoning": 80,
+   "PercentageTweeOnderEenKapWoningEe": 10,
+   "PercentageVrijstaandeWoningEengezins": 10,
+   "WoningenMetZonnestroom": 43,
+   "Woningvoorraad": 10763
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Rijnmond",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Poortugaal",
+   "Rhoon",
+   "Rotterdam-Albrandswaard"
+  ]
+ },
+ "Alkmaar": {
+  "cbs": {
+   "AantalInwoners": 112304,
+   "AardgasvrijeWoningen": 11,
+   "GemiddeldAardgasverbruik": 750,
+   "GemiddeldeElektriciteitslevering": 2260,
+   "GemiddeldeElektriciteitsteruglevering": 610,
+   "GemiddeldeWOZWaardeVanWoningen": 359,
+   "Koopwoningen": 58,
+   "PercentageEengezinswoning": 62,
+   "PercentageTweeOnderEenKapWoningEe": 4,
+   "PercentageVrijstaandeWoningEengezins": 6,
+   "WoningenMetZonnestroom": 34,
+   "Woningvoorraad": 53936
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Noord-Holland Noord",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Alkmaar",
+   "De Rijp",
+   "Driehuizen",
+   "Graft",
+   "Grootschermer",
+   "Koedijk",
+   "Markenbinnen",
+   "Noordeinde",
+   "Oost-Graftdijk",
+   "Oterleek",
+   "Oudorp",
+   "Schermerhorn",
+   "Starnmeer",
+   "Stompetoren",
+   "Ursem",
+   "West-Graftdijk",
+   "Zuidschermer"
+  ]
+ },
+ "Alphen aan den Rijn": {
+  "cbs": {
+   "AantalInwoners": 114966,
+   "AardgasvrijeWoningen": 4,
+   "GemiddeldAardgasverbruik": 780,
+   "GemiddeldeElektriciteitslevering": 2580,
+   "GemiddeldeElektriciteitsteruglevering": 820,
+   "GemiddeldeWOZWaardeVanWoningen": 373,
+   "Koopwoningen": 63,
+   "PercentageEengezinswoning": 64,
+   "PercentageTweeOnderEenKapWoningEe": 5,
+   "PercentageVrijstaandeWoningEengezins": 8,
+   "WoningenMetZonnestroom": 39,
+   "Woningvoorraad": 50799
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Holland Rijnland",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Aarlanderveen",
+   "Alphen aan den Rijn",
+   "Benthuizen",
+   "Boskoop",
+   "Hazerswoude-Dorp",
+   "Hazerswoude-Rijndijk",
+   "Koudekerk aan den Rijn",
+   "Zwammerdam"
+  ]
+ },
+ "Alphen-Chaam": {
+  "cbs": {
+   "AantalInwoners": 10455,
+   "AardgasvrijeWoningen": 7,
+   "GemiddeldAardgasverbruik": 1070,
+   "GemiddeldeElektriciteitslevering": 3380,
+   "GemiddeldeElektriciteitsteruglevering": 1390,
+   "GemiddeldeWOZWaardeVanWoningen": 459,
+   "Koopwoningen": 75,
+   "PercentageEengezinswoning": 89,
+   "PercentageTweeOnderEenKapWoningEe": 19,
+   "PercentageVrijstaandeWoningEengezins": 45,
+   "WoningenMetZonnestroom": 45,
+   "Woningvoorraad": 4580
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Midden-Brabant",
+  "stedelijkheid": "Niet stedelijk",
+  "woonplaatsen": [
+   "Alphen",
+   "Bavel AC",
+   "Chaam",
+   "Galder",
+   "Strijbeek",
+   "Ulvenhout AC"
+  ]
+ },
+ "Altena": {
+  "cbs": {
+   "AantalInwoners": 58277,
+   "AardgasvrijeWoningen": 5,
+   "GemiddeldAardgasverbruik": 910,
+   "GemiddeldeElektriciteitslevering": 3030,
+   "GemiddeldeElektriciteitsteruglevering": 1160,
+   "GemiddeldeWOZWaardeVanWoningen": 396,
+   "Koopwoningen": 69,
+   "PercentageEengezinswoning": 87,
+   "PercentageTweeOnderEenKapWoningEe": 16,
+   "PercentageVrijstaandeWoningEengezins": 28,
+   "WoningenMetZonnestroom": 45,
+   "Woningvoorraad": 23370
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "West-Brabant",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Almkerk",
+   "Andel",
+   "Babyloniënbroek",
+   "Drongelen",
+   "Dussen",
+   "Eethen",
+   "Genderen",
+   "Giessen",
+   "Hank",
+   "Meeuwen",
+   "Nieuwendijk",
+   "Rijswijk (NB)",
+   "Sleeuwijk",
+   "Uitwijk",
+   "Veen",
+   "Waardhuizen",
+   "Werkendam",
+   "Wijk en Aalburg",
+   "Woudrichem"
+  ]
+ },
+ "Amersfoort": {
+  "cbs": {
+   "AantalInwoners": 161852,
+   "AardgasvrijeWoningen": 12,
+   "GemiddeldAardgasverbruik": 720,
+   "GemiddeldeElektriciteitslevering": 2440,
+   "GemiddeldeElektriciteitsteruglevering": 680,
+   "GemiddeldeWOZWaardeVanWoningen": 420,
+   "Koopwoningen": 58,
+   "PercentageEengezinswoning": 62,
+   "PercentageTweeOnderEenKapWoningEe": 6,
+   "PercentageVrijstaandeWoningEengezins": 4,
+   "WoningenMetZonnestroom": 40,
+   "Woningvoorraad": 71416
+  },
+  "provincie": "Utrecht",
+  "regio": "Amersfoort",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Amersfoort",
+   "Hoogland",
+   "Hooglanderveen",
+   "Stoutenburg Noord"
+  ]
+ },
+ "Amstelveen": {
+  "cbs": {
+   "AantalInwoners": 95014,
+   "AardgasvrijeWoningen": 10,
+   "GemiddeldAardgasverbruik": 800,
+   "GemiddeldeElektriciteitslevering": 2490,
+   "GemiddeldeElektriciteitsteruglevering": 420,
+   "GemiddeldeWOZWaardeVanWoningen": 536,
+   "Koopwoningen": 47,
+   "PercentageEengezinswoning": 48,
+   "PercentageTweeOnderEenKapWoningEe": 2,
+   "PercentageVrijstaandeWoningEengezins": 3,
+   "WoningenMetZonnestroom": 24,
+   "Woningvoorraad": 42918
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Groot Amsterdam",
+  "stedelijkheid": "Zeer sterk stedelijk",
+  "woonplaatsen": [
+   "Amstelveen"
+  ]
+ },
+ "Amsterdam": {
+  "cbs": {
+   "AantalInwoners": 931298,
+   "AardgasvrijeWoningen": 18,
+   "GemiddeldAardgasverbruik": 580,
+   "GemiddeldeElektriciteitslevering": 1890,
+   "GemiddeldeElektriciteitsteruglevering": 110,
+   "GemiddeldeWOZWaardeVanWoningen": 498,
+   "Koopwoningen": 30,
+   "PercentageEengezinswoning": 13,
+   "PercentageTweeOnderEenKapWoningEe": 1,
+   "PercentageVrijstaandeWoningEengezins": 1,
+   "WoningenMetZonnestroom": 9,
+   "Woningvoorraad": 480852
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Groot Amsterdam",
+  "stedelijkheid": "Zeer sterk stedelijk",
+  "woonplaatsen": [
+   "Amsterdam",
+   "Weesp"
+  ]
+ },
+ "Asten": {
+  "cbs": {
+   "AantalInwoners": 17302,
+   "AardgasvrijeWoningen": 7,
+   "GemiddeldAardgasverbruik": 960,
+   "GemiddeldeElektriciteitslevering": 3130,
+   "GemiddeldeElektriciteitsteruglevering": 1440,
+   "GemiddeldeWOZWaardeVanWoningen": 417,
+   "Koopwoningen": 71,
+   "PercentageEengezinswoning": 85,
+   "PercentageTweeOnderEenKapWoningEe": 14,
+   "PercentageVrijstaandeWoningEengezins": 28,
+   "WoningenMetZonnestroom": 49,
+   "Woningvoorraad": 7335
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Helmond-De Peel",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Asten",
+   "Heusden",
+   "Ommel"
+  ]
+ },
+ "Baarle-Nassau": {
+  "cbs": {
+   "AantalInwoners": 7076,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 1060,
+   "GemiddeldeElektriciteitslevering": 3200,
+   "GemiddeldeElektriciteitsteruglevering": 1220,
+   "GemiddeldeWOZWaardeVanWoningen": 410,
+   "Koopwoningen": 70,
+   "PercentageEengezinswoning": 86,
+   "PercentageTweeOnderEenKapWoningEe": 13,
+   "PercentageVrijstaandeWoningEengezins": 40,
+   "WoningenMetZonnestroom": 39,
+   "Woningvoorraad": 3012
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Midden-Brabant",
+  "stedelijkheid": "Niet stedelijk",
+  "woonplaatsen": [
+   "Baarle-Nassau",
+   "Castelre",
+   "Ulicoten"
+  ]
+ },
+ "Baarn": {
+  "cbs": {
+   "AantalInwoners": 25065,
+   "AardgasvrijeWoningen": 3,
+   "GemiddeldAardgasverbruik": 990,
+   "GemiddeldeElektriciteitslevering": 2610,
+   "GemiddeldeElektriciteitsteruglevering": 570,
+   "GemiddeldeWOZWaardeVanWoningen": 490,
+   "Koopwoningen": 62,
+   "PercentageEengezinswoning": 66,
+   "PercentageTweeOnderEenKapWoningEe": 14,
+   "PercentageVrijstaandeWoningEengezins": 10,
+   "WoningenMetZonnestroom": 33,
+   "Woningvoorraad": 11923
+  },
+  "provincie": "Utrecht",
+  "regio": "Amersfoort",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Baarn",
+   "Lage Vuursche"
+  ]
+ },
+ "Barendrecht": {
+  "cbs": {
+   "AantalInwoners": 48690,
+   "AardgasvrijeWoningen": 7,
+   "GemiddeldAardgasverbruik": 760,
+   "GemiddeldeElektriciteitslevering": 2770,
+   "GemiddeldeElektriciteitsteruglevering": 880,
+   "GemiddeldeWOZWaardeVanWoningen": 436,
+   "Koopwoningen": 70,
+   "PercentageEengezinswoning": 73,
+   "PercentageTweeOnderEenKapWoningEe": 7,
+   "PercentageVrijstaandeWoningEengezins": 5,
+   "WoningenMetZonnestroom": 45,
+   "Woningvoorraad": 19697
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Rijnmond",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Barendrecht"
+  ]
+ },
+ "Bergeijk": {
+  "cbs": {
+   "AantalInwoners": 19196,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 1020,
+   "GemiddeldeElektriciteitslevering": 3270,
+   "GemiddeldeElektriciteitsteruglevering": 1480,
+   "GemiddeldeWOZWaardeVanWoningen": 473,
+   "Koopwoningen": 78,
+   "PercentageEengezinswoning": 87,
+   "PercentageTweeOnderEenKapWoningEe": 18,
+   "PercentageVrijstaandeWoningEengezins": 39,
+   "WoningenMetZonnestroom": 50,
+   "Woningvoorraad": 8343
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Zuidoost-Brabant",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Bergeijk",
+   "Luyksgestel",
+   "Riethoven",
+   "Westerhoven"
+  ]
+ },
+ "Bergen (NH.)": {
+  "cbs": {
+   "AantalInwoners": 29932,
+   "AardgasvrijeWoningen": 3,
+   "GemiddeldAardgasverbruik": 1050,
+   "GemiddeldeElektriciteitslevering": 2620,
+   "GemiddeldeElektriciteitsteruglevering": 940,
+   "GemiddeldeWOZWaardeVanWoningen": 579,
+   "Koopwoningen": 67,
+   "PercentageEengezinswoning": 71,
+   "PercentageTweeOnderEenKapWoningEe": 10,
+   "PercentageVrijstaandeWoningEengezins": 25,
+   "WoningenMetZonnestroom": 46,
+   "Woningvoorraad": 15491
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Noord-Holland Noord",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Bergen (NH)",
+   "Bergen aan Zee",
+   "Egmond aan Zee",
+   "Egmond aan den Hoef",
+   "Egmond-Binnen",
+   "Groet",
+   "Schoorl"
+  ]
+ },
+ "Bergen op Zoom": {
+  "cbs": {
+   "AantalInwoners": 69694,
+   "AardgasvrijeWoningen": 10,
+   "GemiddeldAardgasverbruik": 790,
+   "GemiddeldeElektriciteitslevering": 2620,
+   "GemiddeldeElektriciteitsteruglevering": 770,
+   "GemiddeldeWOZWaardeVanWoningen": 312,
+   "Koopwoningen": 59,
+   "PercentageEengezinswoning": 70,
+   "PercentageTweeOnderEenKapWoningEe": 7,
+   "PercentageVrijstaandeWoningEengezins": 10,
+   "WoningenMetZonnestroom": 39,
+   "Woningvoorraad": 32087
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "West-Brabant",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Bergen op Zoom",
+   "Halsteren",
+   "Lepelstraat"
+  ]
+ },
+ "Bernheze": {
+  "cbs": {
+   "AantalInwoners": 32527,
+   "AardgasvrijeWoningen": 7,
+   "GemiddeldAardgasverbruik": 970,
+   "GemiddeldeElektriciteitslevering": 3190,
+   "GemiddeldeElektriciteitsteruglevering": 1560,
+   "GemiddeldeWOZWaardeVanWoningen": 456,
+   "Koopwoningen": 71,
+   "PercentageEengezinswoning": 88,
+   "PercentageTweeOnderEenKapWoningEe": 18,
+   "PercentageVrijstaandeWoningEengezins": 32,
+   "WoningenMetZonnestroom": 56,
+   "Woningvoorraad": 13436
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Noordoost-Brabant",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Heesch",
+   "Heeswijk-Dinther",
+   "Loosbroek",
+   "Nistelrode",
+   "Vinkel",
+   "Vorstenbosch"
+  ]
+ },
+ "Best": {
+  "cbs": {
+   "AantalInwoners": 31223,
+   "AardgasvrijeWoningen": 10,
+   "GemiddeldAardgasverbruik": 860,
+   "GemiddeldeElektriciteitslevering": 2940,
+   "GemiddeldeElektriciteitsteruglevering": 1230,
+   "GemiddeldeWOZWaardeVanWoningen": 431,
+   "Koopwoningen": 71,
+   "PercentageEengezinswoning": 80,
+   "PercentageTweeOnderEenKapWoningEe": 9,
+   "PercentageVrijstaandeWoningEengezins": 13,
+   "WoningenMetZonnestroom": 51,
+   "Woningvoorraad": 13461
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Zuidoost-Brabant",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Best"
+  ]
+ },
+ "Beverwijk": {
+  "cbs": {
+   "AantalInwoners": 42866,
+   "AardgasvrijeWoningen": 3,
+   "GemiddeldAardgasverbruik": 800,
+   "GemiddeldeElektriciteitslevering": 2320,
+   "GemiddeldeElektriciteitsteruglevering": 520,
+   "GemiddeldeWOZWaardeVanWoningen": 336,
+   "Koopwoningen": 54,
+   "PercentageEengezinswoning": 54,
+   "PercentageTweeOnderEenKapWoningEe": 7,
+   "PercentageVrijstaandeWoningEengezins": 5,
+   "WoningenMetZonnestroom": 29,
+   "Woningvoorraad": 20015
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Zuid-Kennemerland en IJmond",
+  "stedelijkheid": "Zeer sterk stedelijk",
+  "woonplaatsen": [
+   "Beverwijk",
+   "Wijk aan Zee"
+  ]
+ },
+ "Bladel": {
+  "cbs": {
+   "AantalInwoners": 20985,
+   "AardgasvrijeWoningen": 5,
+   "GemiddeldAardgasverbruik": 930,
+   "GemiddeldeElektriciteitslevering": 3050,
+   "GemiddeldeElektriciteitsteruglevering": 1340,
+   "GemiddeldeWOZWaardeVanWoningen": 433,
+   "Koopwoningen": 74,
+   "PercentageEengezinswoning": 83,
+   "PercentageTweeOnderEenKapWoningEe": 21,
+   "PercentageVrijstaandeWoningEengezins": 29,
+   "WoningenMetZonnestroom": 48,
+   "Woningvoorraad": 9170
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Zuidoost-Brabant",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Bladel",
+   "Casteren",
+   "Hapert",
+   "Hoogeloon",
+   "Netersel"
+  ]
+ },
+ "Blaricum": {
+  "cbs": {
+   "AantalInwoners": 12724,
+   "AardgasvrijeWoningen": 24,
+   "GemiddeldAardgasverbruik": 1080,
+   "GemiddeldeElektriciteitslevering": 3690,
+   "GemiddeldeElektriciteitsteruglevering": 690,
+   "GemiddeldeWOZWaardeVanWoningen": 856,
+   "Koopwoningen": 70,
+   "PercentageEengezinswoning": 86,
+   "PercentageTweeOnderEenKapWoningEe": 18,
+   "PercentageVrijstaandeWoningEengezins": 24,
+   "WoningenMetZonnestroom": 34,
+   "Woningvoorraad": 5374
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Gooi en Vechtstreek",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Blaricum"
+  ]
+ },
+ "Bloemendaal": {
+  "cbs": {
+   "AantalInwoners": 23786,
+   "AardgasvrijeWoningen": 3,
+   "GemiddeldAardgasverbruik": 1280,
+   "GemiddeldeElektriciteitslevering": 3170,
+   "GemiddeldeElektriciteitsteruglevering": 610,
+   "GemiddeldeWOZWaardeVanWoningen": 900,
+   "Koopwoningen": 71,
+   "PercentageEengezinswoning": 72,
+   "PercentageTweeOnderEenKapWoningEe": 14,
+   "PercentageVrijstaandeWoningEengezins": 16,
+   "WoningenMetZonnestroom": 30,
+   "Woningvoorraad": 10376
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Zuid-Kennemerland en IJmond",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Aerdenhout",
+   "Bennebroek",
+   "Bloemendaal",
+   "Overveen",
+   "Vogelenzang"
+  ]
+ },
+ "Bodegraven-Reeuwijk": {
+  "cbs": {
+   "AantalInwoners": 36569,
+   "AardgasvrijeWoningen": 8,
+   "GemiddeldAardgasverbruik": 840,
+   "GemiddeldeElektriciteitslevering": 2800,
+   "GemiddeldeElektriciteitsteruglevering": 1070,
+   "GemiddeldeWOZWaardeVanWoningen": 450,
+   "Koopwoningen": 72,
+   "PercentageEengezinswoning": 80,
+   "PercentageTweeOnderEenKapWoningEe": 8,
+   "PercentageVrijstaandeWoningEengezins": 16,
+   "WoningenMetZonnestroom": 46,
+   "Woningvoorraad": 15181
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Midden-Holland",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Bodegraven",
+   "Driebruggen",
+   "Nieuwerbrug aan den Rijn",
+   "Reeuwijk",
+   "Waarder"
+  ]
+ },
+ "Boekel": {
+  "cbs": {
+   "AantalInwoners": 11293,
+   "AardgasvrijeWoningen": 12,
+   "GemiddeldAardgasverbruik": 950,
+   "GemiddeldeElektriciteitslevering": 3340,
+   "GemiddeldeElektriciteitsteruglevering": 1770,
+   "GemiddeldeWOZWaardeVanWoningen": 417,
+   "Koopwoningen": 74,
+   "PercentageEengezinswoning": 87,
+   "PercentageTweeOnderEenKapWoningEe": 25,
+   "PercentageVrijstaandeWoningEengezins": 39,
+   "WoningenMetZonnestroom": 54,
+   "Woningvoorraad": 4615
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Noordoost-Brabant",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Boekel",
+   "Venhorst"
+  ]
+ },
+ "Borsele": {
+  "cbs": {
+   "AantalInwoners": 23121,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 900,
+   "GemiddeldeElektriciteitslevering": 2810,
+   "GemiddeldeElektriciteitsteruglevering": 1420,
+   "GemiddeldeWOZWaardeVanWoningen": 318,
+   "Koopwoningen": 75,
+   "PercentageEengezinswoning": 92,
+   "PercentageTweeOnderEenKapWoningEe": 17,
+   "PercentageVrijstaandeWoningEengezins": 38,
+   "WoningenMetZonnestroom": 59,
+   "Woningvoorraad": 10099
+  },
+  "provincie": "Zeeland",
+  "regio": "Zeeland",
+  "stedelijkheid": "Niet stedelijk",
+  "woonplaatsen": [
+   "'s-Gravenpolder",
+   "'s-Heer Abtskerke",
+   "'s-Heerenhoek",
+   "Baarland",
+   "Borssele",
+   "Driewegen",
+   "Ellewoutsdijk",
+   "Heinkenszand",
+   "Hoedekenskerke",
+   "Kwadendamme",
+   "Lewedorp",
+   "Nieuwdorp",
+   "Nisse",
+   "Oudelande",
+   "Ovezande"
+  ]
+ },
+ "Boxtel": {
+  "cbs": {
+   "AantalInwoners": 33979,
+   "AardgasvrijeWoningen": 7,
+   "GemiddeldAardgasverbruik": 880,
+   "GemiddeldeElektriciteitslevering": 2780,
+   "GemiddeldeElektriciteitsteruglevering": 1040,
+   "GemiddeldeWOZWaardeVanWoningen": 378,
+   "Koopwoningen": 63,
+   "PercentageEengezinswoning": 74,
+   "PercentageTweeOnderEenKapWoningEe": 12,
+   "PercentageVrijstaandeWoningEengezins": 16,
+   "WoningenMetZonnestroom": 43,
+   "Woningvoorraad": 14818
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Noordoost-Brabant",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Boxtel",
+   "Esch",
+   "Liempde"
+  ]
+ },
+ "Breda": {
+  "cbs": {
+   "AantalInwoners": 188078,
+   "AardgasvrijeWoningen": 24,
+   "GemiddeldAardgasverbruik": 670,
+   "GemiddeldeElektriciteitslevering": 2530,
+   "GemiddeldeElektriciteitsteruglevering": 570,
+   "GemiddeldeWOZWaardeVanWoningen": 391,
+   "Koopwoningen": 55,
+   "PercentageEengezinswoning": 60,
+   "PercentageTweeOnderEenKapWoningEe": 5,
+   "PercentageVrijstaandeWoningEengezins": 7,
+   "WoningenMetZonnestroom": 27,
+   "Woningvoorraad": 87800
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "West-Brabant",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Bavel",
+   "Breda",
+   "Prinsenbeek",
+   "Teteringen",
+   "Ulvenhout"
+  ]
+ },
+ "Bunnik": {
+  "cbs": {
+   "AantalInwoners": 16108,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 920,
+   "GemiddeldeElektriciteitslevering": 2790,
+   "GemiddeldeElektriciteitsteruglevering": 1180,
+   "GemiddeldeWOZWaardeVanWoningen": 522,
+   "Koopwoningen": 74,
+   "PercentageEengezinswoning": 82,
+   "PercentageTweeOnderEenKapWoningEe": 15,
+   "PercentageVrijstaandeWoningEengezins": 10,
+   "WoningenMetZonnestroom": 51,
+   "Woningvoorraad": 6787
+  },
+  "provincie": "Utrecht",
+  "regio": "Midden-Utrecht",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Bunnik",
+   "Odijk",
+   "Werkhoven"
+  ]
+ },
+ "Bunschoten": {
+  "cbs": {
+   "AantalInwoners": 22619,
+   "AardgasvrijeWoningen": 5,
+   "GemiddeldAardgasverbruik": 890,
+   "GemiddeldeElektriciteitslevering": 3040,
+   "GemiddeldeElektriciteitsteruglevering": 950,
+   "GemiddeldeWOZWaardeVanWoningen": 438,
+   "Koopwoningen": 73,
+   "PercentageEengezinswoning": 78,
+   "PercentageTweeOnderEenKapWoningEe": 10,
+   "PercentageVrijstaandeWoningEengezins": 8,
+   "WoningenMetZonnestroom": 42,
+   "Woningvoorraad": 8946
+  },
+  "provincie": "Utrecht",
+  "regio": "Amersfoort",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Bunschoten-Spakenburg",
+   "Eemdijk"
+  ]
+ },
+ "Capelle aan den IJssel": {
+  "cbs": {
+   "AantalInwoners": 67925,
+   "AardgasvrijeWoningen": 32,
+   "GemiddeldAardgasverbruik": 540,
+   "GemiddeldeElektriciteitslevering": 2400,
+   "GemiddeldeElektriciteitsteruglevering": 380,
+   "GemiddeldeWOZWaardeVanWoningen": 350,
+   "Koopwoningen": 54,
+   "PercentageEengezinswoning": 45,
+   "PercentageTweeOnderEenKapWoningEe": 2,
+   "PercentageVrijstaandeWoningEengezins": 2,
+   "WoningenMetZonnestroom": 21,
+   "Woningvoorraad": 31596
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Rijnmond",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Capelle aan den IJssel"
+  ]
+ },
+ "Castricum": {
+  "cbs": {
+   "AantalInwoners": 36366,
+   "AardgasvrijeWoningen": 4,
+   "GemiddeldAardgasverbruik": 930,
+   "GemiddeldeElektriciteitslevering": 2540,
+   "GemiddeldeElektriciteitsteruglevering": 1020,
+   "GemiddeldeWOZWaardeVanWoningen": 484,
+   "Koopwoningen": 75,
+   "PercentageEengezinswoning": 76,
+   "PercentageTweeOnderEenKapWoningEe": 11,
+   "PercentageVrijstaandeWoningEengezins": 15,
+   "WoningenMetZonnestroom": 53,
+   "Woningvoorraad": 16558
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Noord-Holland Noord",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Akersloot",
+   "Castricum",
+   "Limmen",
+   "de Woude"
+  ]
+ },
+ "Cranendonck": {
+  "cbs": {
+   "AantalInwoners": 20841,
+   "AardgasvrijeWoningen": 4,
+   "GemiddeldAardgasverbruik": 1010,
+   "GemiddeldeElektriciteitslevering": 3110,
+   "GemiddeldeElektriciteitsteruglevering": 1450,
+   "GemiddeldeWOZWaardeVanWoningen": 372,
+   "Koopwoningen": 73,
+   "PercentageEengezinswoning": 90,
+   "PercentageTweeOnderEenKapWoningEe": 19,
+   "PercentageVrijstaandeWoningEengezins": 33,
+   "WoningenMetZonnestroom": 52,
+   "Woningvoorraad": 9255
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Midden-Limburg",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Budel",
+   "Budel-Dorplein",
+   "Budel-Schoot",
+   "Gastel",
+   "Maarheeze",
+   "Soerendonk"
+  ]
+ },
+ "De Bilt": {
+  "cbs": {
+   "AantalInwoners": 43718,
+   "AardgasvrijeWoningen": 3,
+   "GemiddeldAardgasverbruik": 1020,
+   "GemiddeldeElektriciteitslevering": 2770,
+   "GemiddeldeElektriciteitsteruglevering": 610,
+   "GemiddeldeWOZWaardeVanWoningen": 578,
+   "Koopwoningen": 61,
+   "PercentageEengezinswoning": 65,
+   "PercentageTweeOnderEenKapWoningEe": 13,
+   "PercentageVrijstaandeWoningEengezins": 13,
+   "WoningenMetZonnestroom": 29,
+   "Woningvoorraad": 19906
+  },
+  "provincie": "Utrecht",
+  "regio": "Midden-Utrecht",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Bilthoven",
+   "De Bilt",
+   "Groenekan",
+   "Hollandsche Rading",
+   "Maartensdijk",
+   "Westbroek"
+  ]
+ },
+ "De Ronde Venen": {
+  "cbs": {
+   "AantalInwoners": 45813,
+   "AardgasvrijeWoningen": 5,
+   "GemiddeldAardgasverbruik": 910,
+   "GemiddeldeElektriciteitslevering": 2850,
+   "GemiddeldeElektriciteitsteruglevering": 1020,
+   "GemiddeldeWOZWaardeVanWoningen": 515,
+   "Koopwoningen": 66,
+   "PercentageEengezinswoning": 79,
+   "PercentageTweeOnderEenKapWoningEe": 10,
+   "PercentageVrijstaandeWoningEengezins": 15,
+   "WoningenMetZonnestroom": 49,
+   "Woningvoorraad": 19039
+  },
+  "provincie": "Utrecht",
+  "regio": "Groot Amsterdam",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Abcoude",
+   "Amstelhoek",
+   "Baambrugge",
+   "Mijdrecht",
+   "Vinkeveen",
+   "Waverveen",
+   "Wilnis",
+   "de Hoef"
+  ]
+ },
+ "Delft": {
+  "cbs": {
+   "AantalInwoners": 109577,
+   "AardgasvrijeWoningen": 15,
+   "GemiddeldAardgasverbruik": 610,
+   "GemiddeldeElektriciteitslevering": 2140,
+   "GemiddeldeElektriciteitsteruglevering": 280,
+   "GemiddeldeWOZWaardeVanWoningen": 335,
+   "Koopwoningen": 37,
+   "PercentageEengezinswoning": 32,
+   "PercentageTweeOnderEenKapWoningEe": 1,
+   "PercentageVrijstaandeWoningEengezins": 1,
+   "WoningenMetZonnestroom": 17,
+   "Woningvoorraad": 54219
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Haaglanden",
+  "stedelijkheid": "Zeer sterk stedelijk",
+  "woonplaatsen": [
+   "Delft"
+  ]
+ },
+ "Den Helder": {
+  "cbs": {
+   "AantalInwoners": 56432,
+   "AardgasvrijeWoningen": 3,
+   "GemiddeldAardgasverbruik": 830,
+   "GemiddeldeElektriciteitslevering": 2170,
+   "GemiddeldeElektriciteitsteruglevering": 710,
+   "GemiddeldeWOZWaardeVanWoningen": 241,
+   "Koopwoningen": 55,
+   "PercentageEengezinswoning": 73,
+   "PercentageTweeOnderEenKapWoningEe": 5,
+   "PercentageVrijstaandeWoningEengezins": 6,
+   "WoningenMetZonnestroom": 40,
+   "Woningvoorraad": 28734
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Noord-Holland Noord",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Den Helder",
+   "Huisduinen",
+   "Julianadorp"
+  ]
+ },
+ "Deurne": {
+  "cbs": {
+   "AantalInwoners": 33180,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 980,
+   "GemiddeldeElektriciteitslevering": 3030,
+   "GemiddeldeElektriciteitsteruglevering": 1270,
+   "GemiddeldeWOZWaardeVanWoningen": 396,
+   "Koopwoningen": 66,
+   "PercentageEengezinswoning": 85,
+   "PercentageTweeOnderEenKapWoningEe": 15,
+   "PercentageVrijstaandeWoningEengezins": 28,
+   "WoningenMetZonnestroom": 46,
+   "Woningvoorraad": 14453
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Helmond-De Peel",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Deurne",
+   "Helenaveen",
+   "Liessel",
+   "Neerkant",
+   "Vlierden"
+  ]
+ },
+ "Diemen": {
+  "cbs": {
+   "AantalInwoners": 32977,
+   "AardgasvrijeWoningen": 30,
+   "GemiddeldAardgasverbruik": 530,
+   "GemiddeldeElektriciteitslevering": 2270,
+   "GemiddeldeElektriciteitsteruglevering": 340,
+   "GemiddeldeWOZWaardeVanWoningen": 428,
+   "Koopwoningen": 40,
+   "PercentageEengezinswoning": 36,
+   "PercentageTweeOnderEenKapWoningEe": 1,
+   "PercentageVrijstaandeWoningEengezins": 1,
+   "WoningenMetZonnestroom": 22,
+   "Woningvoorraad": 15814
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Groot Amsterdam",
+  "stedelijkheid": "Zeer sterk stedelijk",
+  "woonplaatsen": [
+   "Diemen"
+  ]
+ },
+ "Dijk en Waard": {
+  "cbs": {
+   "AantalInwoners": 90076,
+   "AardgasvrijeWoningen": 21,
+   "GemiddeldAardgasverbruik": 690,
+   "GemiddeldeElektriciteitslevering": 2680,
+   "GemiddeldeElektriciteitsteruglevering": 1090,
+   "GemiddeldeWOZWaardeVanWoningen": 392,
+   "Koopwoningen": 71,
+   "PercentageEengezinswoning": 79,
+   "PercentageTweeOnderEenKapWoningEe": 8,
+   "PercentageVrijstaandeWoningEengezins": 16,
+   "WoningenMetZonnestroom": 53,
+   "Woningvoorraad": 38007
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Noord-Holland Noord",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Broek op Langedijk",
+   "Heerhugowaard",
+   "Koedijk",
+   "Noord-Scharwoude",
+   "Oudkarspel",
+   "Sint Pancras",
+   "Zuid-Scharwoude"
+  ]
+ },
+ "Dongen": {
+  "cbs": {
+   "AantalInwoners": 27095,
+   "AardgasvrijeWoningen": 10,
+   "GemiddeldAardgasverbruik": 840,
+   "GemiddeldeElektriciteitslevering": 2910,
+   "GemiddeldeElektriciteitsteruglevering": 1030,
+   "GemiddeldeWOZWaardeVanWoningen": 352,
+   "Koopwoningen": 71,
+   "PercentageEengezinswoning": 84,
+   "PercentageTweeOnderEenKapWoningEe": 13,
+   "PercentageVrijstaandeWoningEengezins": 17,
+   "WoningenMetZonnestroom": 42,
+   "Woningvoorraad": 11734
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Midden-Brabant",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "'s Gravenmoer",
+   "Dongen"
+  ]
+ },
+ "Dordrecht": {
+  "cbs": {
+   "AantalInwoners": 122070,
+   "AardgasvrijeWoningen": 10,
+   "GemiddeldAardgasverbruik": 730,
+   "GemiddeldeElektriciteitslevering": 2370,
+   "GemiddeldeElektriciteitsteruglevering": 430,
+   "GemiddeldeWOZWaardeVanWoningen": 309,
+   "Koopwoningen": 58,
+   "PercentageEengezinswoning": 55,
+   "PercentageTweeOnderEenKapWoningEe": 4,
+   "PercentageVrijstaandeWoningEengezins": 3,
+   "WoningenMetZonnestroom": 22,
+   "Woningvoorraad": 57276
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Drechtsteden",
+  "stedelijkheid": "Zeer sterk stedelijk",
+  "woonplaatsen": [
+   "Dordrecht"
+  ]
+ },
+ "Drechterland": {
+  "cbs": {
+   "AantalInwoners": 20496,
+   "AardgasvrijeWoningen": 8,
+   "GemiddeldAardgasverbruik": 920,
+   "GemiddeldeElektriciteitslevering": 2950,
+   "GemiddeldeElektriciteitsteruglevering": 1360,
+   "GemiddeldeWOZWaardeVanWoningen": 412,
+   "Koopwoningen": 74,
+   "PercentageEengezinswoning": 88,
+   "PercentageTweeOnderEenKapWoningEe": 13,
+   "PercentageVrijstaandeWoningEengezins": 35,
+   "WoningenMetZonnestroom": 58,
+   "Woningvoorraad": 8708
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Noord-Holland Noord",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Hem",
+   "Hoogkarspel",
+   "Oosterblokker",
+   "Oosterleek",
+   "Schellinkhout",
+   "Venhuizen",
+   "Westwoud",
+   "Wijdenes"
+  ]
+ },
+ "Drimmelen": {
+  "cbs": {
+   "AantalInwoners": 28192,
+   "AardgasvrijeWoningen": 7,
+   "GemiddeldAardgasverbruik": 920,
+   "GemiddeldeElektriciteitslevering": 2970,
+   "GemiddeldeElektriciteitsteruglevering": 1050,
+   "GemiddeldeWOZWaardeVanWoningen": 414,
+   "Koopwoningen": 72,
+   "PercentageEengezinswoning": 87,
+   "PercentageTweeOnderEenKapWoningEe": 16,
+   "PercentageVrijstaandeWoningEengezins": 26,
+   "WoningenMetZonnestroom": 40,
+   "Woningvoorraad": 12322
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "West-Brabant",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Drimmelen",
+   "Hooge Zwaluwe",
+   "Lage Zwaluwe",
+   "Made",
+   "Terheijden",
+   "Wagenberg",
+   "Zevenbergschen Hoek"
+  ]
+ },
+ "Edam-Volendam": {
+  "cbs": {
+   "AantalInwoners": 36917,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 1000,
+   "GemiddeldeElektriciteitslevering": 2930,
+   "GemiddeldeElektriciteitsteruglevering": 840,
+   "GemiddeldeWOZWaardeVanWoningen": 409,
+   "Koopwoningen": 77,
+   "PercentageEengezinswoning": 85,
+   "PercentageTweeOnderEenKapWoningEe": 6,
+   "PercentageVrijstaandeWoningEengezins": 11,
+   "WoningenMetZonnestroom": 39,
+   "Woningvoorraad": 15961
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Zaanstreek/Waterland",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Beets",
+   "Edam",
+   "Hobrede",
+   "Kwadijk",
+   "Middelie",
+   "Oosthuizen",
+   "Purmer",
+   "Schardam",
+   "Volendam",
+   "Warder"
+  ]
+ },
+ "Eemnes": {
+  "cbs": {
+   "AantalInwoners": 9755,
+   "AardgasvrijeWoningen": 7,
+   "GemiddeldAardgasverbruik": 930,
+   "GemiddeldeElektriciteitslevering": 2800,
+   "GemiddeldeElektriciteitsteruglevering": 1040,
+   "GemiddeldeWOZWaardeVanWoningen": 526,
+   "Koopwoningen": 72,
+   "PercentageEengezinswoning": 88,
+   "PercentageTweeOnderEenKapWoningEe": 10,
+   "PercentageVrijstaandeWoningEengezins": 10,
+   "WoningenMetZonnestroom": 54,
+   "Woningvoorraad": 4304
+  },
+  "provincie": "Utrecht",
+  "regio": "Gooi en Vechtstreek",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Eemnes"
+  ]
+ },
+ "Eersel": {
+  "cbs": {
+   "AantalInwoners": 20199,
+   "AardgasvrijeWoningen": 7,
+   "GemiddeldAardgasverbruik": 1000,
+   "GemiddeldeElektriciteitslevering": 3230,
+   "GemiddeldeElektriciteitsteruglevering": 1500,
+   "GemiddeldeWOZWaardeVanWoningen": 485,
+   "Koopwoningen": 74,
+   "PercentageEengezinswoning": 83,
+   "PercentageTweeOnderEenKapWoningEe": 17,
+   "PercentageVrijstaandeWoningEengezins": 32,
+   "WoningenMetZonnestroom": 49,
+   "Woningvoorraad": 8739
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Zuidoost-Brabant",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Duizel",
+   "Eersel",
+   "Knegsel",
+   "Steensel",
+   "Vessem",
+   "Wintelre"
+  ]
+ },
+ "Eindhoven": {
+  "cbs": {
+   "AantalInwoners": 246417,
+   "AardgasvrijeWoningen": 14,
+   "GemiddeldAardgasverbruik": 750,
+   "GemiddeldeElektriciteitslevering": 2310,
+   "GemiddeldeElektriciteitsteruglevering": 560,
+   "GemiddeldeWOZWaardeVanWoningen": 363,
+   "Koopwoningen": 44,
+   "PercentageEengezinswoning": 59,
+   "PercentageTweeOnderEenKapWoningEe": 2,
+   "PercentageVrijstaandeWoningEengezins": 4,
+   "WoningenMetZonnestroom": 30,
+   "Woningvoorraad": 119376
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Zuidoost-Brabant",
+  "stedelijkheid": "Zeer sterk stedelijk",
+  "woonplaatsen": [
+   "Eindhoven"
+  ]
+ },
+ "Enkhuizen": {
+  "cbs": {
+   "AantalInwoners": 18895,
+   "AardgasvrijeWoningen": 2,
+   "GemiddeldAardgasverbruik": 840,
+   "GemiddeldeElektriciteitslevering": 2380,
+   "GemiddeldeElektriciteitsteruglevering": 570,
+   "GemiddeldeWOZWaardeVanWoningen": 321,
+   "Koopwoningen": 61,
+   "PercentageEengezinswoning": 73,
+   "PercentageTweeOnderEenKapWoningEe": 8,
+   "PercentageVrijstaandeWoningEengezins": 9,
+   "WoningenMetZonnestroom": 33,
+   "Woningvoorraad": 8955
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Noord-Holland Noord",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Enkhuizen"
+  ]
+ },
+ "Etten-Leur": {
+  "cbs": {
+   "AantalInwoners": 45237,
+   "AardgasvrijeWoningen": 15,
+   "GemiddeldAardgasverbruik": 760,
+   "GemiddeldeElektriciteitslevering": 2860,
+   "GemiddeldeElektriciteitsteruglevering": 920,
+   "GemiddeldeWOZWaardeVanWoningen": 355,
+   "Koopwoningen": 64,
+   "PercentageEengezinswoning": 79,
+   "PercentageTweeOnderEenKapWoningEe": 6,
+   "PercentageVrijstaandeWoningEengezins": 13,
+   "WoningenMetZonnestroom": 39,
+   "Woningvoorraad": 20121
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "West-Brabant",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Etten-Leur"
+  ]
+ },
+ "Geertruidenberg": {
+  "cbs": {
+   "AantalInwoners": 22060,
+   "AardgasvrijeWoningen": 14,
+   "GemiddeldAardgasverbruik": 760,
+   "GemiddeldeElektriciteitslevering": 2670,
+   "GemiddeldeElektriciteitsteruglevering": 860,
+   "GemiddeldeWOZWaardeVanWoningen": 346,
+   "Koopwoningen": 62,
+   "PercentageEengezinswoning": 79,
+   "PercentageTweeOnderEenKapWoningEe": 10,
+   "PercentageVrijstaandeWoningEengezins": 11,
+   "WoningenMetZonnestroom": 39,
+   "Woningvoorraad": 10156
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "West-Brabant",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Geertruidenberg",
+   "Raamsdonk",
+   "Raamsdonksveer"
+  ]
+ },
+ "Geldrop-Mierlo": {
+  "cbs": {
+   "AantalInwoners": 40733,
+   "AardgasvrijeWoningen": 4,
+   "GemiddeldAardgasverbruik": 910,
+   "GemiddeldeElektriciteitslevering": 2710,
+   "GemiddeldeElektriciteitsteruglevering": 950,
+   "GemiddeldeWOZWaardeVanWoningen": 386,
+   "Koopwoningen": 65,
+   "PercentageEengezinswoning": 77,
+   "PercentageTweeOnderEenKapWoningEe": 8,
+   "PercentageVrijstaandeWoningEengezins": 12,
+   "WoningenMetZonnestroom": 44,
+   "Woningvoorraad": 18448
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Helmond-De Peel",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Geldrop",
+   "Mierlo"
+  ]
+ },
+ "Gemert-Bakel": {
+  "cbs": {
+   "AantalInwoners": 31435,
+   "AardgasvrijeWoningen": 8,
+   "GemiddeldAardgasverbruik": 970,
+   "GemiddeldeElektriciteitslevering": 3120,
+   "GemiddeldeElektriciteitsteruglevering": 1430,
+   "GemiddeldeWOZWaardeVanWoningen": 406,
+   "Koopwoningen": 69,
+   "PercentageEengezinswoning": 85,
+   "PercentageTweeOnderEenKapWoningEe": 20,
+   "PercentageVrijstaandeWoningEengezins": 28,
+   "WoningenMetZonnestroom": 52,
+   "Woningvoorraad": 13110
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Helmond-De Peel",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Bakel",
+   "De Mortel",
+   "De Rips",
+   "Elsendorp",
+   "Gemert",
+   "Handel",
+   "Milheeze"
+  ]
+ },
+ "Gilze en Rijen": {
+  "cbs": {
+   "AantalInwoners": 27343,
+   "AardgasvrijeWoningen": 7,
+   "GemiddeldAardgasverbruik": 840,
+   "GemiddeldeElektriciteitslevering": 2860,
+   "GemiddeldeElektriciteitsteruglevering": 1020,
+   "GemiddeldeWOZWaardeVanWoningen": 367,
+   "Koopwoningen": 64,
+   "PercentageEengezinswoning": 84,
+   "PercentageTweeOnderEenKapWoningEe": 12,
+   "PercentageVrijstaandeWoningEengezins": 18,
+   "WoningenMetZonnestroom": 40,
+   "Woningvoorraad": 11728
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Midden-Brabant",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Gilze",
+   "Hulten",
+   "Molenschot",
+   "Rijen"
+  ]
+ },
+ "Goeree-Overflakkee": {
+  "cbs": {
+   "AantalInwoners": 51867,
+   "AardgasvrijeWoningen": 7,
+   "GemiddeldAardgasverbruik": 840,
+   "GemiddeldeElektriciteitslevering": 2770,
+   "GemiddeldeElektriciteitsteruglevering": 1160,
+   "GemiddeldeWOZWaardeVanWoningen": 362,
+   "Koopwoningen": 65,
+   "PercentageEengezinswoning": 85,
+   "PercentageTweeOnderEenKapWoningEe": 13,
+   "PercentageVrijstaandeWoningEengezins": 22,
+   "WoningenMetZonnestroom": 48,
+   "Woningvoorraad": 22916
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Rijnmond",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Achthuizen",
+   "Den Bommel",
+   "Dirksland",
+   "Goedereede",
+   "Herkingen",
+   "Melissant",
+   "Middelharnis",
+   "Nieuwe-Tonge",
+   "Ooltgensplaat",
+   "Ouddorp",
+   "Oude-Tonge",
+   "Sommelsdijk",
+   "Stad aan 't Haringvliet",
+   "Stellendam"
+  ]
+ },
+ "Goes": {
+  "cbs": {
+   "AantalInwoners": 39682,
+   "AardgasvrijeWoningen": 12,
+   "GemiddeldAardgasverbruik": 750,
+   "GemiddeldeElektriciteitslevering": 2480,
+   "GemiddeldeElektriciteitsteruglevering": 1000,
+   "GemiddeldeWOZWaardeVanWoningen": 320,
+   "Koopwoningen": 60,
+   "PercentageEengezinswoning": 74,
+   "PercentageTweeOnderEenKapWoningEe": 11,
+   "PercentageVrijstaandeWoningEengezins": 16,
+   "WoningenMetZonnestroom": 47,
+   "Woningvoorraad": 19254
+  },
+  "provincie": "Zeeland",
+  "regio": "Zeeland",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "'s-Heer Arendskerke",
+   "'s-Heer Hendrikskinderen",
+   "Goes",
+   "Kattendijke",
+   "Kloetinge",
+   "Wilhelminadorp",
+   "Wolphaartsdijk"
+  ]
+ },
+ "Goirle": {
+  "cbs": {
+   "AantalInwoners": 24327,
+   "AardgasvrijeWoningen": 10,
+   "GemiddeldAardgasverbruik": 870,
+   "GemiddeldeElektriciteitslevering": 2980,
+   "GemiddeldeElektriciteitsteruglevering": 1000,
+   "GemiddeldeWOZWaardeVanWoningen": 425,
+   "Koopwoningen": 71,
+   "PercentageEengezinswoning": 84,
+   "PercentageTweeOnderEenKapWoningEe": 12,
+   "PercentageVrijstaandeWoningEengezins": 15,
+   "WoningenMetZonnestroom": 41,
+   "Woningvoorraad": 10585
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Midden-Brabant",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Goirle",
+   "Riel"
+  ]
+ },
+ "Gooise Meren": {
+  "cbs": {
+   "AantalInwoners": 60370,
+   "AardgasvrijeWoningen": 3,
+   "GemiddeldAardgasverbruik": 1050,
+   "GemiddeldeElektriciteitslevering": 2780,
+   "GemiddeldeElektriciteitsteruglevering": 490,
+   "GemiddeldeWOZWaardeVanWoningen": 578,
+   "Koopwoningen": 64,
+   "PercentageEengezinswoning": 67,
+   "PercentageTweeOnderEenKapWoningEe": 13,
+   "PercentageVrijstaandeWoningEengezins": 6,
+   "WoningenMetZonnestroom": 26,
+   "Woningvoorraad": 27705
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Gooi en Vechtstreek",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Bussum",
+   "Muiden",
+   "Muiderberg",
+   "Naarden"
+  ]
+ },
+ "Gorinchem": {
+  "cbs": {
+   "AantalInwoners": 38671,
+   "AardgasvrijeWoningen": 7,
+   "GemiddeldAardgasverbruik": 700,
+   "GemiddeldeElektriciteitslevering": 2430,
+   "GemiddeldeElektriciteitsteruglevering": 640,
+   "GemiddeldeWOZWaardeVanWoningen": 348,
+   "Koopwoningen": 50,
+   "PercentageEengezinswoning": 57,
+   "PercentageTweeOnderEenKapWoningEe": 5,
+   "PercentageVrijstaandeWoningEengezins": 5,
+   "WoningenMetZonnestroom": 33,
+   "Woningvoorraad": 17978
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Gorinchem",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Dalem",
+   "Gorinchem"
+  ]
+ },
+ "Gouda": {
+  "cbs": {
+   "AantalInwoners": 75758,
+   "AardgasvrijeWoningen": 5,
+   "GemiddeldAardgasverbruik": 730,
+   "GemiddeldeElektriciteitslevering": 2250,
+   "GemiddeldeElektriciteitsteruglevering": 490,
+   "GemiddeldeWOZWaardeVanWoningen": 334,
+   "Koopwoningen": 56,
+   "PercentageEengezinswoning": 58,
+   "PercentageTweeOnderEenKapWoningEe": 2,
+   "PercentageVrijstaandeWoningEengezins": 2,
+   "WoningenMetZonnestroom": 28,
+   "Woningvoorraad": 34785
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Midden-Holland",
+  "stedelijkheid": "Zeer sterk stedelijk",
+  "woonplaatsen": [
+   "Gouda"
+  ]
+ },
+ "Haarlem": {
+  "cbs": {
+   "AantalInwoners": 167636,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 800,
+   "GemiddeldeElektriciteitslevering": 2160,
+   "GemiddeldeElektriciteitsteruglevering": 310,
+   "GemiddeldeWOZWaardeVanWoningen": 483,
+   "Koopwoningen": 53,
+   "PercentageEengezinswoning": 49,
+   "PercentageTweeOnderEenKapWoningEe": 1,
+   "PercentageVrijstaandeWoningEengezins": 1,
+   "WoningenMetZonnestroom": 20,
+   "Woningvoorraad": 79434
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Zuid-Kennemerland en IJmond",
+  "stedelijkheid": "Zeer sterk stedelijk",
+  "woonplaatsen": [
+   "Haarlem",
+   "Spaarndam gem. Haarlem"
+  ]
+ },
+ "Haarlemmermeer": {
+  "cbs": {
+   "AantalInwoners": 163128,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 820,
+   "GemiddeldeElektriciteitslevering": 2780,
+   "GemiddeldeElektriciteitsteruglevering": 770,
+   "GemiddeldeWOZWaardeVanWoningen": 473,
+   "Koopwoningen": 67,
+   "PercentageEengezinswoning": 74,
+   "PercentageTweeOnderEenKapWoningEe": 7,
+   "PercentageVrijstaandeWoningEengezins": 8,
+   "WoningenMetZonnestroom": 39,
+   "Woningvoorraad": 67121
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Groot Amsterdam",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Aalsmeerderbrug",
+   "Abbenes",
+   "Badhoevedorp",
+   "Beinsdorp",
+   "Boesingheliede",
+   "Buitenkaag",
+   "Burgerveen",
+   "Cruquius",
+   "Haarlemmerliede",
+   "Halfweg",
+   "Hoofddorp",
+   "Leimuiderbrug",
+   "Lijnden",
+   "Lisserbroek",
+   "Nieuw-Vennep",
+   "Oude Meer",
+   "Rijsenhout",
+   "Rozenburg",
+   "Schiphol",
+   "Schiphol-Rijk",
+   "Spaarndam",
+   "Vijfhuizen",
+   "Weteringbrug",
+   "Zwaanshoek",
+   "Zwanenburg"
+  ]
+ },
+ "Halderberge": {
+  "cbs": {
+   "AantalInwoners": 31183,
+   "AardgasvrijeWoningen": 4,
+   "GemiddeldAardgasverbruik": 930,
+   "GemiddeldeElektriciteitslevering": 2930,
+   "GemiddeldeElektriciteitsteruglevering": 1100,
+   "GemiddeldeWOZWaardeVanWoningen": 357,
+   "Koopwoningen": 65,
+   "PercentageEengezinswoning": 87,
+   "PercentageTweeOnderEenKapWoningEe": 13,
+   "PercentageVrijstaandeWoningEengezins": 28,
+   "WoningenMetZonnestroom": 44,
+   "Woningvoorraad": 13744
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "West-Brabant",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Bosschenhoofd",
+   "Hoeven",
+   "Oud Gastel",
+   "Oudenbosch",
+   "Stampersgat"
+  ]
+ },
+ "Hardinxveld-Giessendam": {
+  "cbs": {
+   "AantalInwoners": 18762,
+   "AardgasvrijeWoningen": 3,
+   "GemiddeldAardgasverbruik": 790,
+   "GemiddeldeElektriciteitslevering": 2610,
+   "GemiddeldeElektriciteitsteruglevering": 890,
+   "GemiddeldeWOZWaardeVanWoningen": 362,
+   "Koopwoningen": 66,
+   "PercentageEengezinswoning": 75,
+   "PercentageTweeOnderEenKapWoningEe": 15,
+   "PercentageVrijstaandeWoningEengezins": 15,
+   "WoningenMetZonnestroom": 50,
+   "Woningvoorraad": 7623
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Drechtsteden",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Hardinxveld-Giessendam"
+  ]
+ },
+ "Heemskerk": {
+  "cbs": {
+   "AantalInwoners": 39452,
+   "AardgasvrijeWoningen": 3,
+   "GemiddeldAardgasverbruik": 790,
+   "GemiddeldeElektriciteitslevering": 2340,
+   "GemiddeldeElektriciteitsteruglevering": 770,
+   "GemiddeldeWOZWaardeVanWoningen": 402,
+   "Koopwoningen": 59,
+   "PercentageEengezinswoning": 66,
+   "PercentageTweeOnderEenKapWoningEe": 4,
+   "PercentageVrijstaandeWoningEengezins": 6,
+   "WoningenMetZonnestroom": 40,
+   "Woningvoorraad": 17989
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Zuid-Kennemerland en IJmond",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Heemskerk"
+  ]
+ },
+ "Heemstede": {
+  "cbs": {
+   "AantalInwoners": 27593,
+   "AardgasvrijeWoningen": 3,
+   "GemiddeldAardgasverbruik": 1050,
+   "GemiddeldeElektriciteitslevering": 2660,
+   "GemiddeldeElektriciteitsteruglevering": 580,
+   "GemiddeldeWOZWaardeVanWoningen": 657,
+   "Koopwoningen": 65,
+   "PercentageEengezinswoning": 65,
+   "PercentageTweeOnderEenKapWoningEe": 8,
+   "PercentageVrijstaandeWoningEengezins": 5,
+   "WoningenMetZonnestroom": 30,
+   "Woningvoorraad": 12897
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Zuid-Kennemerland en IJmond",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Heemstede"
+  ]
+ },
+ "Heeze-Leende": {
+  "cbs": {
+   "AantalInwoners": 16807,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 1030,
+   "GemiddeldeElektriciteitslevering": 3190,
+   "GemiddeldeElektriciteitsteruglevering": 1530,
+   "GemiddeldeWOZWaardeVanWoningen": 477,
+   "Koopwoningen": 78,
+   "PercentageEengezinswoning": 90,
+   "PercentageTweeOnderEenKapWoningEe": 17,
+   "PercentageVrijstaandeWoningEengezins": 33,
+   "WoningenMetZonnestroom": 55,
+   "Woningvoorraad": 7243
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Zuidoost-Brabant",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Heeze",
+   "Leende",
+   "Sterksel"
+  ]
+ },
+ "Heiloo": {
+  "cbs": {
+   "AantalInwoners": 24312,
+   "AardgasvrijeWoningen": 4,
+   "GemiddeldAardgasverbruik": 930,
+   "GemiddeldeElektriciteitslevering": 2570,
+   "GemiddeldeElektriciteitsteruglevering": 1030,
+   "GemiddeldeWOZWaardeVanWoningen": 515,
+   "Koopwoningen": 73,
+   "PercentageEengezinswoning": 74,
+   "PercentageTweeOnderEenKapWoningEe": 14,
+   "PercentageVrijstaandeWoningEengezins": 20,
+   "WoningenMetZonnestroom": 54,
+   "Woningvoorraad": 11225
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Noord-Holland Noord",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Heiloo"
+  ]
+ },
+ "Helmond": {
+  "cbs": {
+   "AantalInwoners": 95874,
+   "AardgasvrijeWoningen": 20,
+   "GemiddeldAardgasverbruik": 710,
+   "GemiddeldeElektriciteitslevering": 2660,
+   "GemiddeldeElektriciteitsteruglevering": 790,
+   "GemiddeldeWOZWaardeVanWoningen": 320,
+   "Koopwoningen": 54,
+   "PercentageEengezinswoning": 72,
+   "PercentageTweeOnderEenKapWoningEe": 6,
+   "PercentageVrijstaandeWoningEengezins": 8,
+   "WoningenMetZonnestroom": 39,
+   "Woningvoorraad": 43215
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Helmond-De Peel",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Helmond"
+  ]
+ },
+ "Hendrik-Ido-Ambacht": {
+  "cbs": {
+   "AantalInwoners": 32689,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 730,
+   "GemiddeldeElektriciteitslevering": 2730,
+   "GemiddeldeElektriciteitsteruglevering": 850,
+   "GemiddeldeWOZWaardeVanWoningen": 414,
+   "Koopwoningen": 72,
+   "PercentageEengezinswoning": 76,
+   "PercentageTweeOnderEenKapWoningEe": 6,
+   "PercentageVrijstaandeWoningEengezins": 7,
+   "WoningenMetZonnestroom": 43,
+   "Woningvoorraad": 12844
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Drechtsteden",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Hendrik-Ido-Ambacht"
+  ]
+ },
+ "Heusden": {
+  "cbs": {
+   "AantalInwoners": 46026,
+   "AardgasvrijeWoningen": 8,
+   "GemiddeldAardgasverbruik": 900,
+   "GemiddeldeElektriciteitslevering": 3000,
+   "GemiddeldeElektriciteitsteruglevering": 1180,
+   "GemiddeldeWOZWaardeVanWoningen": 415,
+   "Koopwoningen": 68,
+   "PercentageEengezinswoning": 85,
+   "PercentageTweeOnderEenKapWoningEe": 12,
+   "PercentageVrijstaandeWoningEengezins": 19,
+   "WoningenMetZonnestroom": 43,
+   "Woningvoorraad": 19919
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Midden-Brabant",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Doeveren",
+   "Drunen",
+   "Elshout",
+   "Haarsteeg",
+   "Hedikhuizen",
+   "Heesbeen",
+   "Herpt",
+   "Heusden",
+   "Nieuwkuijk",
+   "Oudheusden",
+   "Vlijmen"
+  ]
+ },
+ "Hillegom": {
+  "cbs": {
+   "AantalInwoners": 22822,
+   "AardgasvrijeWoningen": 5,
+   "GemiddeldAardgasverbruik": 800,
+   "GemiddeldeElektriciteitslevering": 2530,
+   "GemiddeldeElektriciteitsteruglevering": 730,
+   "GemiddeldeWOZWaardeVanWoningen": 415,
+   "Koopwoningen": 67,
+   "PercentageEengezinswoning": 69,
+   "PercentageTweeOnderEenKapWoningEe": 6,
+   "PercentageVrijstaandeWoningEengezins": 6,
+   "WoningenMetZonnestroom": 38,
+   "Woningvoorraad": 10297
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Holland Rijnland",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Hillegom"
+  ]
+ },
+ "Hilvarenbeek": {
+  "cbs": {
+   "AantalInwoners": 15961,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 1000,
+   "GemiddeldeElektriciteitslevering": 3130,
+   "GemiddeldeElektriciteitsteruglevering": 1370,
+   "GemiddeldeWOZWaardeVanWoningen": 464,
+   "Koopwoningen": 75,
+   "PercentageEengezinswoning": 88,
+   "PercentageTweeOnderEenKapWoningEe": 18,
+   "PercentageVrijstaandeWoningEengezins": 33,
+   "WoningenMetZonnestroom": 45,
+   "Woningvoorraad": 7080
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Midden-Brabant",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Biest-Houtakker",
+   "Diessen",
+   "Esbeek",
+   "Haghorst",
+   "Hilvarenbeek"
+  ]
+ },
+ "Hilversum": {
+  "cbs": {
+   "AantalInwoners": 94435,
+   "AardgasvrijeWoningen": 4,
+   "GemiddeldAardgasverbruik": 920,
+   "GemiddeldeElektriciteitslevering": 2450,
+   "GemiddeldeElektriciteitsteruglevering": 380,
+   "GemiddeldeWOZWaardeVanWoningen": 469,
+   "Koopwoningen": 54,
+   "PercentageEengezinswoning": 58,
+   "PercentageTweeOnderEenKapWoningEe": 7,
+   "PercentageVrijstaandeWoningEengezins": 4,
+   "WoningenMetZonnestroom": 24,
+   "Woningvoorraad": 43792
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Gooi en Vechtstreek",
+  "stedelijkheid": "Zeer sterk stedelijk",
+  "woonplaatsen": [
+   "Hilversum"
+  ]
+ },
+ "Hoeksche Waard": {
+  "cbs": {
+   "AantalInwoners": 90256,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 820,
+   "GemiddeldeElektriciteitslevering": 2810,
+   "GemiddeldeElektriciteitsteruglevering": 1130,
+   "GemiddeldeWOZWaardeVanWoningen": 382,
+   "Koopwoningen": 71,
+   "PercentageEengezinswoning": 83,
+   "PercentageTweeOnderEenKapWoningEe": 8,
+   "PercentageVrijstaandeWoningEengezins": 18,
+   "WoningenMetZonnestroom": 47,
+   "Woningvoorraad": 39574
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Rijnmond",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "'s-Gravendeel",
+   "Goudswaard",
+   "Heinenoord",
+   "Klaaswaal",
+   "Maasdam",
+   "Mijnsheerenland",
+   "Mookhoek",
+   "Nieuw-Beijerland",
+   "Numansdorp",
+   "Oud-Beijerland",
+   "Piershil",
+   "Puttershoek",
+   "Strijen",
+   "Strijensas",
+   "Westmaas",
+   "Zuid-Beijerland"
+  ]
+ },
+ "Hollands Kroon": {
+  "cbs": {
+   "AantalInwoners": 49522,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 920,
+   "GemiddeldeElektriciteitslevering": 2880,
+   "GemiddeldeElektriciteitsteruglevering": 1300,
+   "GemiddeldeWOZWaardeVanWoningen": 351,
+   "Koopwoningen": 71,
+   "PercentageEengezinswoning": 89,
+   "PercentageTweeOnderEenKapWoningEe": 15,
+   "PercentageVrijstaandeWoningEengezins": 31,
+   "WoningenMetZonnestroom": 51,
+   "Woningvoorraad": 21580
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Noord-Holland Noord",
+  "stedelijkheid": "Niet stedelijk",
+  "woonplaatsen": [
+   "'t Veld",
+   "Anna Paulowna",
+   "Barsingerhorn",
+   "Breezand",
+   "Den Oever",
+   "Haringhuizen",
+   "Hippolytushoef",
+   "Kolhorn",
+   "Kreileroord",
+   "Lutjewinkel",
+   "Middenmeer",
+   "Nieuwe Niedorp",
+   "Oude Niedorp",
+   "Slootdorp",
+   "Westerland",
+   "Wieringerwaard",
+   "Wieringerwerf",
+   "Winkel",
+   "Zijdewind"
+  ]
+ },
+ "Hoorn": {
+  "cbs": {
+   "AantalInwoners": 75645,
+   "AardgasvrijeWoningen": 4,
+   "GemiddeldAardgasverbruik": 790,
+   "GemiddeldeElektriciteitslevering": 2430,
+   "GemiddeldeElektriciteitsteruglevering": 650,
+   "GemiddeldeWOZWaardeVanWoningen": 350,
+   "Koopwoningen": 61,
+   "PercentageEengezinswoning": 71,
+   "PercentageTweeOnderEenKapWoningEe": 4,
+   "PercentageVrijstaandeWoningEengezins": 7,
+   "WoningenMetZonnestroom": 36,
+   "Woningvoorraad": 34609
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Noord-Holland Noord",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Blokker",
+   "Hoorn",
+   "Zwaag"
+  ]
+ },
+ "Houten": {
+  "cbs": {
+   "AantalInwoners": 50847,
+   "AardgasvrijeWoningen": 25,
+   "GemiddeldAardgasverbruik": 610,
+   "GemiddeldeElektriciteitslevering": 2690,
+   "GemiddeldeElektriciteitsteruglevering": 1050,
+   "GemiddeldeWOZWaardeVanWoningen": 500,
+   "Koopwoningen": 67,
+   "PercentageEengezinswoning": 75,
+   "PercentageTweeOnderEenKapWoningEe": 5,
+   "PercentageVrijstaandeWoningEengezins": 7,
+   "WoningenMetZonnestroom": 47,
+   "Woningvoorraad": 21335
+  },
+  "provincie": "Utrecht",
+  "regio": "Midden-Utrecht",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "'t Goy",
+   "Houten",
+   "Schalkwijk",
+   "Tull en 't Waal"
+  ]
+ },
+ "Huizen": {
+  "cbs": {
+   "AantalInwoners": 41193,
+   "AardgasvrijeWoningen": 2,
+   "GemiddeldAardgasverbruik": 910,
+   "GemiddeldeElektriciteitslevering": 2530,
+   "GemiddeldeElektriciteitsteruglevering": 680,
+   "GemiddeldeWOZWaardeVanWoningen": 460,
+   "Koopwoningen": 59,
+   "PercentageEengezinswoning": 71,
+   "PercentageTweeOnderEenKapWoningEe": 9,
+   "PercentageVrijstaandeWoningEengezins": 6,
+   "WoningenMetZonnestroom": 39,
+   "Woningvoorraad": 19156
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Gooi en Vechtstreek",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Huizen"
+  ]
+ },
+ "Hulst": {
+  "cbs": {
+   "AantalInwoners": 27330,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 960,
+   "GemiddeldeElektriciteitslevering": 2690,
+   "GemiddeldeElektriciteitsteruglevering": 1190,
+   "GemiddeldeWOZWaardeVanWoningen": 296,
+   "Koopwoningen": 74,
+   "PercentageEengezinswoning": 90,
+   "PercentageTweeOnderEenKapWoningEe": 18,
+   "PercentageVrijstaandeWoningEengezins": 41,
+   "WoningenMetZonnestroom": 54,
+   "Woningvoorraad": 13684
+  },
+  "provincie": "Zeeland",
+  "regio": "Zeeland",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Clinge",
+   "Graauw",
+   "Heikant",
+   "Hengstdijk",
+   "Hulst",
+   "Kapellebrug",
+   "Kloosterzande",
+   "Kuitaart",
+   "Lamswaarde",
+   "Nieuw Namen",
+   "Ossenisse",
+   "Sint Jansteen",
+   "Terhole",
+   "Vogelwaarde",
+   "Walsoorden"
+  ]
+ },
+ "IJsselstein": {
+  "cbs": {
+   "AantalInwoners": 33421,
+   "AardgasvrijeWoningen": 2,
+   "GemiddeldAardgasverbruik": 780,
+   "GemiddeldeElektriciteitslevering": 2650,
+   "GemiddeldeElektriciteitsteruglevering": 760,
+   "GemiddeldeWOZWaardeVanWoningen": 424,
+   "Koopwoningen": 64,
+   "PercentageEengezinswoning": 69,
+   "PercentageTweeOnderEenKapWoningEe": 6,
+   "PercentageVrijstaandeWoningEengezins": 4,
+   "WoningenMetZonnestroom": 39,
+   "Woningvoorraad": 14544
+  },
+  "provincie": "Utrecht",
+  "regio": "Midden-Utrecht",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "IJsselstein"
+  ]
+ },
+ "Kaag en Braassem": {
+  "cbs": {
+   "AantalInwoners": 29168,
+   "AardgasvrijeWoningen": 10,
+   "GemiddeldAardgasverbruik": 830,
+   "GemiddeldeElektriciteitslevering": 2790,
+   "GemiddeldeElektriciteitsteruglevering": 1240,
+   "GemiddeldeWOZWaardeVanWoningen": 463,
+   "Koopwoningen": 65,
+   "PercentageEengezinswoning": 80,
+   "PercentageTweeOnderEenKapWoningEe": 10,
+   "PercentageVrijstaandeWoningEengezins": 17,
+   "WoningenMetZonnestroom": 50,
+   "Woningvoorraad": 12721
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Holland Rijnland",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Hoogmade",
+   "Kaag",
+   "Leimuiden",
+   "Nieuwe Wetering",
+   "Oud Ade",
+   "Oude Wetering",
+   "Rijnsaterwoude",
+   "Rijpwetering",
+   "Roelofarendsveen",
+   "Woubrugge"
+  ]
+ },
+ "Kapelle": {
+  "cbs": {
+   "AantalInwoners": 13009,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 880,
+   "GemiddeldeElektriciteitslevering": 2740,
+   "GemiddeldeElektriciteitsteruglevering": 1410,
+   "GemiddeldeWOZWaardeVanWoningen": 351,
+   "Koopwoningen": 77,
+   "PercentageEengezinswoning": 91,
+   "PercentageTweeOnderEenKapWoningEe": 22,
+   "PercentageVrijstaandeWoningEengezins": 29,
+   "WoningenMetZonnestroom": 58,
+   "Woningvoorraad": 5523
+  },
+  "provincie": "Zeeland",
+  "regio": "Zeeland",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Kapelle",
+   "Kloetinge",
+   "Schore",
+   "Wemeldinge"
+  ]
+ },
+ "Katwijk": {
+  "cbs": {
+   "AantalInwoners": 66966,
+   "AardgasvrijeWoningen": 4,
+   "GemiddeldAardgasverbruik": 770,
+   "GemiddeldeElektriciteitslevering": 2550,
+   "GemiddeldeElektriciteitsteruglevering": 630,
+   "GemiddeldeWOZWaardeVanWoningen": 439,
+   "Koopwoningen": 65,
+   "PercentageEengezinswoning": 59,
+   "PercentageTweeOnderEenKapWoningEe": 5,
+   "PercentageVrijstaandeWoningEengezins": 4,
+   "WoningenMetZonnestroom": 32,
+   "Woningvoorraad": 27594
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Holland Rijnland",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Katwijk",
+   "Rijnsburg",
+   "Valkenburg"
+  ]
+ },
+ "Koggenland": {
+  "cbs": {
+   "AantalInwoners": 23587,
+   "AardgasvrijeWoningen": 7,
+   "GemiddeldAardgasverbruik": 900,
+   "GemiddeldeElektriciteitslevering": 2920,
+   "GemiddeldeElektriciteitsteruglevering": 1250,
+   "GemiddeldeWOZWaardeVanWoningen": 398,
+   "Koopwoningen": 79,
+   "PercentageEengezinswoning": 84,
+   "PercentageTweeOnderEenKapWoningEe": 13,
+   "PercentageVrijstaandeWoningEengezins": 32,
+   "WoningenMetZonnestroom": 50,
+   "Woningvoorraad": 9869
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Noord-Holland Noord",
+  "stedelijkheid": "Niet stedelijk",
+  "woonplaatsen": [
+   "Avenhorn",
+   "Berkhout",
+   "De Goorn",
+   "Hensbroek",
+   "Obdam",
+   "Oudendijk",
+   "Scharwoude",
+   "Spierdijk",
+   "Ursem",
+   "Zuidermeer"
+  ]
+ },
+ "Krimpen aan den IJssel": {
+  "cbs": {
+   "AantalInwoners": 29626,
+   "AardgasvrijeWoningen": 4,
+   "GemiddeldAardgasverbruik": 790,
+   "GemiddeldeElektriciteitslevering": 2550,
+   "GemiddeldeElektriciteitsteruglevering": 710,
+   "GemiddeldeWOZWaardeVanWoningen": 377,
+   "Koopwoningen": 60,
+   "PercentageEengezinswoning": 70,
+   "PercentageTweeOnderEenKapWoningEe": 6,
+   "PercentageVrijstaandeWoningEengezins": 6,
+   "WoningenMetZonnestroom": 37,
+   "Woningvoorraad": 12616
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Rijnmond",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Krimpen aan den IJssel"
+  ]
+ },
+ "Krimpenerwaard": {
+  "cbs": {
+   "AantalInwoners": 57785,
+   "AardgasvrijeWoningen": 4,
+   "GemiddeldAardgasverbruik": 860,
+   "GemiddeldeElektriciteitslevering": 2680,
+   "GemiddeldeElektriciteitsteruglevering": 950,
+   "GemiddeldeWOZWaardeVanWoningen": 405,
+   "Koopwoningen": 67,
+   "PercentageEengezinswoning": 80,
+   "PercentageTweeOnderEenKapWoningEe": 8,
+   "PercentageVrijstaandeWoningEengezins": 18,
+   "WoningenMetZonnestroom": 44,
+   "Woningvoorraad": 24529
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Midden-Holland",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Ammerstol",
+   "Bergambacht",
+   "Berkenwoude",
+   "Gouderak",
+   "Haastrecht",
+   "Krimpen aan de Lek",
+   "Lekkerkerk",
+   "Ouderkerk aan den IJssel",
+   "Schoonhoven",
+   "Stolwijk",
+   "Vlist"
+  ]
+ },
+ "Laarbeek": {
+  "cbs": {
+   "AantalInwoners": 23220,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 980,
+   "GemiddeldeElektriciteitslevering": 3090,
+   "GemiddeldeElektriciteitsteruglevering": 1370,
+   "GemiddeldeWOZWaardeVanWoningen": 410,
+   "Koopwoningen": 70,
+   "PercentageEengezinswoning": 88,
+   "PercentageTweeOnderEenKapWoningEe": 21,
+   "PercentageVrijstaandeWoningEengezins": 26,
+   "WoningenMetZonnestroom": 50,
+   "Woningvoorraad": 9978
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Helmond-De Peel",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Aarle-Rixtel",
+   "Beek en Donk",
+   "Lieshout",
+   "Mariahout"
+  ]
+ },
+ "Land van Cuijk": {
+  "cbs": {
+   "AantalInwoners": 91722,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 940,
+   "GemiddeldeElektriciteitslevering": 2960,
+   "GemiddeldeElektriciteitsteruglevering": 1400,
+   "GemiddeldeWOZWaardeVanWoningen": 374,
+   "Koopwoningen": 69,
+   "PercentageEengezinswoning": 83,
+   "PercentageTweeOnderEenKapWoningEe": 17,
+   "PercentageVrijstaandeWoningEengezins": 29,
+   "WoningenMetZonnestroom": 51,
+   "Woningvoorraad": 40186
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Noordoost-Brabant",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Beers NB",
+   "Beugen",
+   "Boxmeer",
+   "Cuijk",
+   "Escharen",
+   "Gassel",
+   "Grave",
+   "Groeningen",
+   "Haps",
+   "Holthees",
+   "Katwijk NB",
+   "Landhorst",
+   "Langenboom",
+   "Ledeacker",
+   "Linden",
+   "Maashees",
+   "Mill",
+   "Oeffelt",
+   "Oploo",
+   "Overloon",
+   "Rijkevoort",
+   "Rijkevoort-De Walsert",
+   "Sambeek",
+   "Sint Agatha",
+   "Sint Anthonis",
+   "Sint Hubert",
+   "Stevensbeek",
+   "Velp",
+   "Vianen NB",
+   "Vierlingsbeek",
+   "Vortum-Mullem",
+   "Wanroij",
+   "Westerbeek",
+   "Wilbertoord"
+  ]
+ },
+ "Landsmeer": {
+  "cbs": {
+   "AantalInwoners": 11661,
+   "AardgasvrijeWoningen": 4,
+   "GemiddeldAardgasverbruik": 970,
+   "GemiddeldeElektriciteitslevering": 2910,
+   "GemiddeldeElektriciteitsteruglevering": 860,
+   "GemiddeldeWOZWaardeVanWoningen": 577,
+   "Koopwoningen": 66,
+   "PercentageEengezinswoning": 85,
+   "PercentageTweeOnderEenKapWoningEe": 6,
+   "PercentageVrijstaandeWoningEengezins": 16,
+   "WoningenMetZonnestroom": 37,
+   "Woningvoorraad": 4923
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Zaanstreek/Waterland",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Den Ilp",
+   "Landsmeer",
+   "Purmerland"
+  ]
+ },
+ "Lansingerland": {
+  "cbs": {
+   "AantalInwoners": 65594,
+   "AardgasvrijeWoningen": 10,
+   "GemiddeldAardgasverbruik": 760,
+   "GemiddeldeElektriciteitslevering": 2890,
+   "GemiddeldeElektriciteitsteruglevering": 1080,
+   "GemiddeldeWOZWaardeVanWoningen": 500,
+   "Koopwoningen": 73,
+   "PercentageEengezinswoning": 81,
+   "PercentageTweeOnderEenKapWoningEe": 7,
+   "PercentageVrijstaandeWoningEengezins": 10,
+   "WoningenMetZonnestroom": 52,
+   "Woningvoorraad": 25539
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Zuid-Holland Centraal",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Bergschenhoek",
+   "Berkel en Rodenrijs",
+   "Bleiswijk"
+  ]
+ },
+ "Laren (NH.)": {
+  "cbs": {
+   "AantalInwoners": 11439,
+   "AardgasvrijeWoningen": 3,
+   "GemiddeldAardgasverbruik": 1400,
+   "GemiddeldeElektriciteitslevering": 3410,
+   "GemiddeldeElektriciteitsteruglevering": 430,
+   "GemiddeldeWOZWaardeVanWoningen": 885,
+   "Koopwoningen": 68,
+   "PercentageEengezinswoning": 81,
+   "PercentageTweeOnderEenKapWoningEe": 27,
+   "PercentageVrijstaandeWoningEengezins": 20,
+   "WoningenMetZonnestroom": 20,
+   "Woningvoorraad": 5489
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Gooi en Vechtstreek",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Laren"
+  ]
+ },
+ "Leiden": {
+  "cbs": {
+   "AantalInwoners": 130108,
+   "AardgasvrijeWoningen": 21,
+   "GemiddeldAardgasverbruik": 590,
+   "GemiddeldeElektriciteitslevering": 2060,
+   "GemiddeldeElektriciteitsteruglevering": 270,
+   "GemiddeldeWOZWaardeVanWoningen": 393,
+   "Koopwoningen": 41,
+   "PercentageEengezinswoning": 40,
+   "PercentageTweeOnderEenKapWoningEe": 1,
+   "PercentageVrijstaandeWoningEengezins": 1,
+   "WoningenMetZonnestroom": 18,
+   "Woningvoorraad": 63853
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Holland Rijnland",
+  "stedelijkheid": "Zeer sterk stedelijk",
+  "woonplaatsen": [
+   "Leiden"
+  ]
+ },
+ "Leiderdorp": {
+  "cbs": {
+   "AantalInwoners": 27736,
+   "AardgasvrijeWoningen": 8,
+   "GemiddeldAardgasverbruik": 730,
+   "GemiddeldeElektriciteitslevering": 2390,
+   "GemiddeldeElektriciteitsteruglevering": 580,
+   "GemiddeldeWOZWaardeVanWoningen": 423,
+   "Koopwoningen": 64,
+   "PercentageEengezinswoning": 58,
+   "PercentageTweeOnderEenKapWoningEe": 2,
+   "PercentageVrijstaandeWoningEengezins": 2,
+   "WoningenMetZonnestroom": 31,
+   "Woningvoorraad": 12687
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Holland Rijnland",
+  "stedelijkheid": "Zeer sterk stedelijk",
+  "woonplaatsen": [
+   "Leiderdorp"
+  ]
+ },
+ "Leidschendam-Voorburg": {
+  "cbs": {
+   "AantalInwoners": 78229,
+   "AardgasvrijeWoningen": 3,
+   "GemiddeldAardgasverbruik": 840,
+   "GemiddeldeElektriciteitslevering": 2280,
+   "GemiddeldeElektriciteitsteruglevering": 360,
+   "GemiddeldeWOZWaardeVanWoningen": 389,
+   "Koopwoningen": 58,
+   "PercentageEengezinswoning": 38,
+   "PercentageTweeOnderEenKapWoningEe": 3,
+   "PercentageVrijstaandeWoningEengezins": 3,
+   "WoningenMetZonnestroom": 19,
+   "Woningvoorraad": 37746
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Zuid-Holland Centraal",
+  "stedelijkheid": "Zeer sterk stedelijk",
+  "woonplaatsen": [
+   "Leidschendam",
+   "Voorburg"
+  ]
+ },
+ "Leusden": {
+  "cbs": {
+   "AantalInwoners": 31681,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 830,
+   "GemiddeldeElektriciteitslevering": 2720,
+   "GemiddeldeElektriciteitsteruglevering": 1080,
+   "GemiddeldeWOZWaardeVanWoningen": 459,
+   "Koopwoningen": 71,
+   "PercentageEengezinswoning": 80,
+   "PercentageTweeOnderEenKapWoningEe": 10,
+   "PercentageVrijstaandeWoningEengezins": 11,
+   "WoningenMetZonnestroom": 51,
+   "Woningvoorraad": 13696
+  },
+  "provincie": "Utrecht",
+  "regio": "Amersfoort",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Achterveld",
+   "Leusden",
+   "Stoutenburg"
+  ]
+ },
+ "Lisse": {
+  "cbs": {
+   "AantalInwoners": 23447,
+   "AardgasvrijeWoningen": 3,
+   "GemiddeldAardgasverbruik": 790,
+   "GemiddeldeElektriciteitslevering": 2480,
+   "GemiddeldeElektriciteitsteruglevering": 830,
+   "GemiddeldeWOZWaardeVanWoningen": 408,
+   "Koopwoningen": 64,
+   "PercentageEengezinswoning": 69,
+   "PercentageTweeOnderEenKapWoningEe": 6,
+   "PercentageVrijstaandeWoningEengezins": 6,
+   "WoningenMetZonnestroom": 48,
+   "Woningvoorraad": 10554
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Holland Rijnland",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Lisse"
+  ]
+ },
+ "Loon op Zand": {
+  "cbs": {
+   "AantalInwoners": 23850,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 910,
+   "GemiddeldeElektriciteitslevering": 2930,
+   "GemiddeldeElektriciteitsteruglevering": 940,
+   "GemiddeldeWOZWaardeVanWoningen": 384,
+   "Koopwoningen": 65,
+   "PercentageEengezinswoning": 83,
+   "PercentageTweeOnderEenKapWoningEe": 14,
+   "PercentageVrijstaandeWoningEengezins": 18,
+   "WoningenMetZonnestroom": 39,
+   "Woningvoorraad": 10607
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Midden-Brabant",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "De Moer",
+   "Kaatsheuvel",
+   "Loon op Zand"
+  ]
+ },
+ "Lopik": {
+  "cbs": {
+   "AantalInwoners": 14724,
+   "AardgasvrijeWoningen": 3,
+   "GemiddeldAardgasverbruik": 950,
+   "GemiddeldeElektriciteitslevering": 2970,
+   "GemiddeldeElektriciteitsteruglevering": 1220,
+   "GemiddeldeWOZWaardeVanWoningen": 454,
+   "Koopwoningen": 74,
+   "PercentageEengezinswoning": 85,
+   "PercentageTweeOnderEenKapWoningEe": 12,
+   "PercentageVrijstaandeWoningEengezins": 26,
+   "WoningenMetZonnestroom": 48,
+   "Woningvoorraad": 5904
+  },
+  "provincie": "Utrecht",
+  "regio": "Midden-Utrecht",
+  "stedelijkheid": "Niet stedelijk",
+  "woonplaatsen": [
+   "Benschop",
+   "Jaarsveld",
+   "Lopik",
+   "Lopikerkapel",
+   "Polsbroek"
+  ]
+ },
+ "Maashorst": {
+  "cbs": {
+   "AantalInwoners": 59222,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 900,
+   "GemiddeldeElektriciteitslevering": 2910,
+   "GemiddeldeElektriciteitsteruglevering": 1260,
+   "GemiddeldeWOZWaardeVanWoningen": 401,
+   "Koopwoningen": 65,
+   "PercentageEengezinswoning": 77,
+   "PercentageTweeOnderEenKapWoningEe": 11,
+   "PercentageVrijstaandeWoningEengezins": 20,
+   "WoningenMetZonnestroom": 53,
+   "Woningvoorraad": 26320
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Noordoost-Brabant",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Odiliapeel",
+   "Reek",
+   "Schaijk",
+   "Uden",
+   "Volkel",
+   "Zeeland"
+  ]
+ },
+ "Maassluis": {
+  "cbs": {
+   "AantalInwoners": 35832,
+   "AardgasvrijeWoningen": 11,
+   "GemiddeldAardgasverbruik": 690,
+   "GemiddeldeElektriciteitslevering": 2440,
+   "GemiddeldeElektriciteitsteruglevering": 560,
+   "GemiddeldeWOZWaardeVanWoningen": 324,
+   "Koopwoningen": 55,
+   "PercentageEengezinswoning": 52,
+   "PercentageTweeOnderEenKapWoningEe": 2,
+   "PercentageVrijstaandeWoningEengezins": 1,
+   "WoningenMetZonnestroom": 30,
+   "Woningvoorraad": 16379
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Rijnmond",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Maassluis"
+  ]
+ },
+ "Medemblik": {
+  "cbs": {
+   "AantalInwoners": 46002,
+   "AardgasvrijeWoningen": 5,
+   "GemiddeldAardgasverbruik": 920,
+   "GemiddeldeElektriciteitslevering": 2840,
+   "GemiddeldeElektriciteitsteruglevering": 1210,
+   "GemiddeldeWOZWaardeVanWoningen": 386,
+   "Koopwoningen": 70,
+   "PercentageEengezinswoning": 86,
+   "PercentageTweeOnderEenKapWoningEe": 13,
+   "PercentageVrijstaandeWoningEengezins": 32,
+   "WoningenMetZonnestroom": 54,
+   "Woningvoorraad": 19492
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Noord-Holland Noord",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Abbekerk",
+   "Andijk",
+   "Benningbroek",
+   "Hauwert",
+   "Lambertschaag",
+   "Medemblik",
+   "Midwoud",
+   "Nibbixwoud",
+   "Oostwoud",
+   "Opperdoes",
+   "Sijbekarspel",
+   "Twisk",
+   "Wervershoof",
+   "Wognum",
+   "Zwaagdijk-Oost",
+   "Zwaagdijk-West"
+  ]
+ },
+ "Meierijstad": {
+  "cbs": {
+   "AantalInwoners": 84304,
+   "AardgasvrijeWoningen": 7,
+   "GemiddeldAardgasverbruik": 920,
+   "GemiddeldeElektriciteitslevering": 3010,
+   "GemiddeldeElektriciteitsteruglevering": 1320,
+   "GemiddeldeWOZWaardeVanWoningen": 420,
+   "Koopwoningen": 69,
+   "PercentageEengezinswoning": 81,
+   "PercentageTweeOnderEenKapWoningEe": 13,
+   "PercentageVrijstaandeWoningEengezins": 21,
+   "WoningenMetZonnestroom": 52,
+   "Woningvoorraad": 36361
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Noordoost-Brabant",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Erp",
+   "Schijndel",
+   "Sint-Oedenrode",
+   "Veghel"
+  ]
+ },
+ "Middelburg (Z.)": {
+  "cbs": {
+   "AantalInwoners": 50004,
+   "AardgasvrijeWoningen": 5,
+   "GemiddeldAardgasverbruik": 800,
+   "GemiddeldeElektriciteitslevering": 2210,
+   "GemiddeldeElektriciteitsteruglevering": 770,
+   "GemiddeldeWOZWaardeVanWoningen": 288,
+   "Koopwoningen": 60,
+   "PercentageEengezinswoning": 69,
+   "PercentageTweeOnderEenKapWoningEe": 8,
+   "PercentageVrijstaandeWoningEengezins": 9,
+   "WoningenMetZonnestroom": 41,
+   "Woningvoorraad": 24703
+  },
+  "provincie": "Zeeland",
+  "regio": "Zeeland",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Arnemuiden",
+   "Middelburg",
+   "Nieuw- en Sint Joosland"
+  ]
+ },
+ "Midden-Delfland": {
+  "cbs": {
+   "AantalInwoners": 19377,
+   "AardgasvrijeWoningen": 7,
+   "GemiddeldAardgasverbruik": 800,
+   "GemiddeldeElektriciteitslevering": 2710,
+   "GemiddeldeElektriciteitsteruglevering": 1160,
+   "GemiddeldeWOZWaardeVanWoningen": 480,
+   "Koopwoningen": 73,
+   "PercentageEengezinswoning": 76,
+   "PercentageTweeOnderEenKapWoningEe": 5,
+   "PercentageVrijstaandeWoningEengezins": 13,
+   "WoningenMetZonnestroom": 49,
+   "Woningvoorraad": 8103
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Haaglanden",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Den Hoorn",
+   "Maasland",
+   "Schipluiden"
+  ]
+ },
+ "Moerdijk": {
+  "cbs": {
+   "AantalInwoners": 38091,
+   "AardgasvrijeWoningen": 5,
+   "GemiddeldAardgasverbruik": 880,
+   "GemiddeldeElektriciteitslevering": 2880,
+   "GemiddeldeElektriciteitsteruglevering": 1070,
+   "GemiddeldeWOZWaardeVanWoningen": 352,
+   "Koopwoningen": 67,
+   "PercentageEengezinswoning": 86,
+   "PercentageTweeOnderEenKapWoningEe": 12,
+   "PercentageVrijstaandeWoningEengezins": 21,
+   "WoningenMetZonnestroom": 45,
+   "Woningvoorraad": 16997
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "West-Brabant",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Fijnaart",
+   "Heijningen",
+   "Klundert",
+   "Langeweg",
+   "Moerdijk",
+   "Noordhoek",
+   "Oudemolen",
+   "Standdaarbuiten",
+   "Willemstad",
+   "Zevenbergen",
+   "Zevenbergschen Hoek"
+  ]
+ },
+ "Molenlanden": {
+  "cbs": {
+   "AantalInwoners": 45271,
+   "AardgasvrijeWoningen": 5,
+   "GemiddeldAardgasverbruik": 890,
+   "GemiddeldeElektriciteitslevering": 2860,
+   "GemiddeldeElektriciteitsteruglevering": 1160,
+   "GemiddeldeWOZWaardeVanWoningen": 413,
+   "Koopwoningen": 70,
+   "PercentageEengezinswoning": 87,
+   "PercentageTweeOnderEenKapWoningEe": 12,
+   "PercentageVrijstaandeWoningEengezins": 24,
+   "WoningenMetZonnestroom": 48,
+   "Woningvoorraad": 18025
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Gorinchem",
+  "stedelijkheid": "Niet stedelijk",
+  "woonplaatsen": [
+   "Arkel",
+   "Bleskensgraaf ca",
+   "Brandwijk",
+   "Giessenburg",
+   "Goudriaan",
+   "Groot-Ammers",
+   "Hoogblokland",
+   "Hoornaar",
+   "Kinderdijk",
+   "Langerak",
+   "Molenaarsgraaf",
+   "Nieuw-Lekkerland",
+   "Nieuwpoort",
+   "Noordeloos",
+   "Ottoland",
+   "Oud-Alblas",
+   "Schelluinen",
+   "Streefkerk",
+   "Waal",
+   "Wijngaarden"
+  ]
+ },
+ "Montfoort": {
+  "cbs": {
+   "AantalInwoners": 13868,
+   "AardgasvrijeWoningen": 4,
+   "GemiddeldAardgasverbruik": 910,
+   "GemiddeldeElektriciteitslevering": 2780,
+   "GemiddeldeElektriciteitsteruglevering": 1170,
+   "GemiddeldeWOZWaardeVanWoningen": 454,
+   "Koopwoningen": 74,
+   "PercentageEengezinswoning": 84,
+   "PercentageTweeOnderEenKapWoningEe": 7,
+   "PercentageVrijstaandeWoningEengezins": 16,
+   "WoningenMetZonnestroom": 48,
+   "Woningvoorraad": 5813
+  },
+  "provincie": "Utrecht",
+  "regio": "Midden-Utrecht",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Linschoten",
+   "Montfoort"
+  ]
+ },
+ "Nieuwegein": {
+  "cbs": {
+   "AantalInwoners": 65971,
+   "AardgasvrijeWoningen": 57,
+   "GemiddeldAardgasverbruik": 370,
+   "GemiddeldeElektriciteitslevering": 2440,
+   "GemiddeldeElektriciteitsteruglevering": 570,
+   "GemiddeldeWOZWaardeVanWoningen": 352,
+   "Koopwoningen": 58,
+   "PercentageEengezinswoning": 58,
+   "PercentageTweeOnderEenKapWoningEe": 2,
+   "PercentageVrijstaandeWoningEengezins": 2,
+   "WoningenMetZonnestroom": 34,
+   "Woningvoorraad": 30773
+  },
+  "provincie": "Utrecht",
+  "regio": "Midden-Utrecht",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Nieuwegein"
+  ]
+ },
+ "Nieuwkoop": {
+  "cbs": {
+   "AantalInwoners": 29501,
+   "AardgasvrijeWoningen": 8,
+   "GemiddeldAardgasverbruik": 870,
+   "GemiddeldeElektriciteitslevering": 2950,
+   "GemiddeldeElektriciteitsteruglevering": 1060,
+   "GemiddeldeWOZWaardeVanWoningen": 477,
+   "Koopwoningen": 72,
+   "PercentageEengezinswoning": 87,
+   "PercentageTweeOnderEenKapWoningEe": 9,
+   "PercentageVrijstaandeWoningEengezins": 22,
+   "WoningenMetZonnestroom": 41,
+   "Woningvoorraad": 11919
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Holland Rijnland",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Nieuwkoop",
+   "Nieuwveen",
+   "Noorden",
+   "Ter Aar",
+   "Vrouwenakker",
+   "Woerdense Verlaat",
+   "Zevenhoven"
+  ]
+ },
+ "Nissewaard": {
+  "cbs": {
+   "AantalInwoners": 87639,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 720,
+   "GemiddeldeElektriciteitslevering": 2590,
+   "GemiddeldeElektriciteitsteruglevering": 710,
+   "GemiddeldeWOZWaardeVanWoningen": 288,
+   "Koopwoningen": 59,
+   "PercentageEengezinswoning": 68,
+   "PercentageTweeOnderEenKapWoningEe": 3,
+   "PercentageVrijstaandeWoningEengezins": 5,
+   "WoningenMetZonnestroom": 38,
+   "Woningvoorraad": 40308
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Rijnmond",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Abbenbroek",
+   "Geervliet",
+   "Heenvliet",
+   "Hekelingen",
+   "Simonshaven",
+   "Spijkenisse",
+   "Zuidland"
+  ]
+ },
+ "Noord-Beveland": {
+  "cbs": {
+   "AantalInwoners": 7943,
+   "AardgasvrijeWoningen": 7,
+   "GemiddeldAardgasverbruik": 830,
+   "GemiddeldeElektriciteitslevering": 2540,
+   "GemiddeldeElektriciteitsteruglevering": 1180,
+   "GemiddeldeWOZWaardeVanWoningen": 305,
+   "Koopwoningen": 73,
+   "PercentageEengezinswoning": 89,
+   "PercentageTweeOnderEenKapWoningEe": 14,
+   "PercentageVrijstaandeWoningEengezins": 36,
+   "WoningenMetZonnestroom": 48,
+   "Woningvoorraad": 4800
+  },
+  "provincie": "Zeeland",
+  "regio": "Zeeland",
+  "stedelijkheid": "Niet stedelijk",
+  "woonplaatsen": [
+   "Colijnsplaat",
+   "Geersdijk",
+   "Kamperland",
+   "Kats",
+   "Kortgene",
+   "Wissenkerke"
+  ]
+ },
+ "Noordwijk": {
+  "cbs": {
+   "AantalInwoners": 45734,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 850,
+   "GemiddeldeElektriciteitslevering": 2590,
+   "GemiddeldeElektriciteitsteruglevering": 780,
+   "GemiddeldeWOZWaardeVanWoningen": 494,
+   "Koopwoningen": 63,
+   "PercentageEengezinswoning": 65,
+   "PercentageTweeOnderEenKapWoningEe": 6,
+   "PercentageVrijstaandeWoningEengezins": 10,
+   "WoningenMetZonnestroom": 38,
+   "Woningvoorraad": 21103
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Holland Rijnland",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "De Zilk",
+   "Noordwijk",
+   "Noordwijkerhout"
+  ]
+ },
+ "Nuenen, Gerwen en Nederwetten": {
+  "cbs": {
+   "AantalInwoners": 24231,
+   "AardgasvrijeWoningen": 5,
+   "GemiddeldAardgasverbruik": 1010,
+   "GemiddeldeElektriciteitslevering": 2990,
+   "GemiddeldeElektriciteitsteruglevering": 1180,
+   "GemiddeldeWOZWaardeVanWoningen": 491,
+   "Koopwoningen": 76,
+   "PercentageEengezinswoning": 86,
+   "PercentageTweeOnderEenKapWoningEe": 11,
+   "PercentageVrijstaandeWoningEengezins": 20,
+   "WoningenMetZonnestroom": 49,
+   "Woningvoorraad": 10712
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Zuidoost-Brabant",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Nuenen"
+  ]
+ },
+ "Oegstgeest": {
+  "cbs": {
+   "AantalInwoners": 25948,
+   "AardgasvrijeWoningen": 13,
+   "GemiddeldAardgasverbruik": 830,
+   "GemiddeldeElektriciteitslevering": 2660,
+   "GemiddeldeElektriciteitsteruglevering": 730,
+   "GemiddeldeWOZWaardeVanWoningen": 566,
+   "Koopwoningen": 72,
+   "PercentageEengezinswoning": 65,
+   "PercentageTweeOnderEenKapWoningEe": 6,
+   "PercentageVrijstaandeWoningEengezins": 6,
+   "WoningenMetZonnestroom": 38,
+   "Woningvoorraad": 11273
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Holland Rijnland",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Oegstgeest"
+  ]
+ },
+ "Oirschot": {
+  "cbs": {
+   "AantalInwoners": 19280,
+   "AardgasvrijeWoningen": 7,
+   "GemiddeldAardgasverbruik": 970,
+   "GemiddeldeElektriciteitslevering": 3200,
+   "GemiddeldeElektriciteitsteruglevering": 1360,
+   "GemiddeldeWOZWaardeVanWoningen": 500,
+   "Koopwoningen": 76,
+   "PercentageEengezinswoning": 83,
+   "PercentageTweeOnderEenKapWoningEe": 13,
+   "PercentageVrijstaandeWoningEengezins": 35,
+   "WoningenMetZonnestroom": 45,
+   "Woningvoorraad": 8303
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Zuidoost-Brabant",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Oirschot",
+   "Oost West en Middelbeers"
+  ]
+ },
+ "Oisterwijk": {
+  "cbs": {
+   "AantalInwoners": 32952,
+   "AardgasvrijeWoningen": 5,
+   "GemiddeldAardgasverbruik": 970,
+   "GemiddeldeElektriciteitslevering": 3070,
+   "GemiddeldeElektriciteitsteruglevering": 1030,
+   "GemiddeldeWOZWaardeVanWoningen": 492,
+   "Koopwoningen": 68,
+   "PercentageEengezinswoning": 81,
+   "PercentageTweeOnderEenKapWoningEe": 16,
+   "PercentageVrijstaandeWoningEengezins": 23,
+   "WoningenMetZonnestroom": 38,
+   "Woningvoorraad": 14436
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Midden-Brabant",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Haaren",
+   "Heukelom",
+   "Moergestel",
+   "Oisterwijk"
+  ]
+ },
+ "Oosterhout": {
+  "cbs": {
+   "AantalInwoners": 57924,
+   "AardgasvrijeWoningen": 9,
+   "GemiddeldAardgasverbruik": 790,
+   "GemiddeldeElektriciteitslevering": 2700,
+   "GemiddeldeElektriciteitsteruglevering": 820,
+   "GemiddeldeWOZWaardeVanWoningen": 366,
+   "Koopwoningen": 61,
+   "PercentageEengezinswoning": 74,
+   "PercentageTweeOnderEenKapWoningEe": 8,
+   "PercentageVrijstaandeWoningEengezins": 10,
+   "WoningenMetZonnestroom": 38,
+   "Woningvoorraad": 26149
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "West-Brabant",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Den Hout",
+   "Dorst",
+   "Oosteind",
+   "Oosterhout"
+  ]
+ },
+ "Oostzaan": {
+  "cbs": {
+   "AantalInwoners": 9694,
+   "AardgasvrijeWoningen": 2,
+   "GemiddeldAardgasverbruik": 920,
+   "GemiddeldeElektriciteitslevering": 2790,
+   "GemiddeldeElektriciteitsteruglevering": 770,
+   "GemiddeldeWOZWaardeVanWoningen": 489,
+   "Koopwoningen": 67,
+   "PercentageEengezinswoning": 83,
+   "PercentageTweeOnderEenKapWoningEe": 11,
+   "PercentageVrijstaandeWoningEengezins": 15,
+   "WoningenMetZonnestroom": 35,
+   "Woningvoorraad": 4149
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Zaanstreek/Waterland",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Oostzaan"
+  ]
+ },
+ "Opmeer": {
+  "cbs": {
+   "AantalInwoners": 12199,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 920,
+   "GemiddeldeElektriciteitslevering": 2800,
+   "GemiddeldeElektriciteitsteruglevering": 1210,
+   "GemiddeldeWOZWaardeVanWoningen": 378,
+   "Koopwoningen": 76,
+   "PercentageEengezinswoning": 84,
+   "PercentageTweeOnderEenKapWoningEe": 12,
+   "PercentageVrijstaandeWoningEengezins": 30,
+   "WoningenMetZonnestroom": 48,
+   "Woningvoorraad": 5139
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Noord-Holland Noord",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Aartswoud",
+   "De Weere",
+   "Hoogwoud",
+   "Opmeer",
+   "Spanbroek"
+  ]
+ },
+ "Oss": {
+  "cbs": {
+   "AantalInwoners": 94634,
+   "AardgasvrijeWoningen": 5,
+   "GemiddeldAardgasverbruik": 910,
+   "GemiddeldeElektriciteitslevering": 2850,
+   "GemiddeldeElektriciteitsteruglevering": 1090,
+   "GemiddeldeWOZWaardeVanWoningen": 365,
+   "Koopwoningen": 63,
+   "PercentageEengezinswoning": 77,
+   "PercentageTweeOnderEenKapWoningEe": 11,
+   "PercentageVrijstaandeWoningEengezins": 19,
+   "WoningenMetZonnestroom": 46,
+   "Woningvoorraad": 42122
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Noordoost-Brabant",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Berghem",
+   "Demen",
+   "Deursen-Dennenburg",
+   "Dieden",
+   "Geffen",
+   "Haren",
+   "Herpen",
+   "Huisseling",
+   "Keent",
+   "Lith",
+   "Lithoijen",
+   "Macharen",
+   "Maren-Kessel",
+   "Megen",
+   "Neerlangel",
+   "Neerloon",
+   "Oijen",
+   "Oss",
+   "Overlangel",
+   "Ravenstein",
+   "Teeffelen"
+  ]
+ },
+ "Ouder-Amstel": {
+  "cbs": {
+   "AantalInwoners": 14447,
+   "AardgasvrijeWoningen": 11,
+   "GemiddeldAardgasverbruik": 800,
+   "GemiddeldeElektriciteitslevering": 2590,
+   "GemiddeldeElektriciteitsteruglevering": 610,
+   "GemiddeldeWOZWaardeVanWoningen": 558,
+   "Koopwoningen": 55,
+   "PercentageEengezinswoning": 59,
+   "PercentageTweeOnderEenKapWoningEe": 6,
+   "PercentageVrijstaandeWoningEengezins": 6,
+   "WoningenMetZonnestroom": 32,
+   "Woningvoorraad": 6400
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Groot Amsterdam",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Amsterdam-Duivendrecht",
+   "Duivendrecht",
+   "Ouderkerk aan de Amstel"
+  ]
+ },
+ "Oudewater": {
+  "cbs": {
+   "AantalInwoners": 10223,
+   "AardgasvrijeWoningen": 5,
+   "GemiddeldAardgasverbruik": 920,
+   "GemiddeldeElektriciteitslevering": 2790,
+   "GemiddeldeElektriciteitsteruglevering": 1070,
+   "GemiddeldeWOZWaardeVanWoningen": 420,
+   "Koopwoningen": 69,
+   "PercentageEengezinswoning": 79,
+   "PercentageTweeOnderEenKapWoningEe": 7,
+   "PercentageVrijstaandeWoningEengezins": 17,
+   "WoningenMetZonnestroom": 43,
+   "Woningvoorraad": 4465
+  },
+  "provincie": "Utrecht",
+  "regio": "Midden-Utrecht",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Hekendorp",
+   "Oudewater",
+   "Papekop",
+   "Snelrewaard"
+  ]
+ },
+ "Papendrecht": {
+  "cbs": {
+   "AantalInwoners": 32178,
+   "AardgasvrijeWoningen": 11,
+   "GemiddeldAardgasverbruik": 700,
+   "GemiddeldeElektriciteitslevering": 2560,
+   "GemiddeldeElektriciteitsteruglevering": 620,
+   "GemiddeldeWOZWaardeVanWoningen": 345,
+   "Koopwoningen": 66,
+   "PercentageEengezinswoning": 66,
+   "PercentageTweeOnderEenKapWoningEe": 4,
+   "PercentageVrijstaandeWoningEengezins": 4,
+   "WoningenMetZonnestroom": 30,
+   "Woningvoorraad": 14537
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Drechtsteden",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Papendrecht"
+  ]
+ },
+ "Pijnacker-Nootdorp": {
+  "cbs": {
+   "AantalInwoners": 57932,
+   "AardgasvrijeWoningen": 19,
+   "GemiddeldAardgasverbruik": 660,
+   "GemiddeldeElektriciteitslevering": 2820,
+   "GemiddeldeElektriciteitsteruglevering": 1040,
+   "GemiddeldeWOZWaardeVanWoningen": 502,
+   "Koopwoningen": 72,
+   "PercentageEengezinswoning": 76,
+   "PercentageTweeOnderEenKapWoningEe": 6,
+   "PercentageVrijstaandeWoningEengezins": 9,
+   "WoningenMetZonnestroom": 48,
+   "Woningvoorraad": 22656
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Zuid-Holland Centraal",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Delfgauw",
+   "Nootdorp",
+   "Pijnacker"
+  ]
+ },
+ "Purmerend": {
+  "cbs": {
+   "AantalInwoners": 95168,
+   "AardgasvrijeWoningen": 65,
+   "GemiddeldAardgasverbruik": 310,
+   "GemiddeldeElektriciteitslevering": 2480,
+   "GemiddeldeElektriciteitsteruglevering": 570,
+   "GemiddeldeWOZWaardeVanWoningen": 394,
+   "Koopwoningen": 60,
+   "PercentageEengezinswoning": 67,
+   "PercentageTweeOnderEenKapWoningEe": 3,
+   "PercentageVrijstaandeWoningEengezins": 6,
+   "WoningenMetZonnestroom": 30,
+   "Woningvoorraad": 43061
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Zaanstreek/Waterland",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Middenbeemster",
+   "Noordbeemster",
+   "Purmerend",
+   "Westbeemster",
+   "Zuidoostbeemster"
+  ]
+ },
+ "Reimerswaal": {
+  "cbs": {
+   "AantalInwoners": 23325,
+   "AardgasvrijeWoningen": 5,
+   "GemiddeldAardgasverbruik": 900,
+   "GemiddeldeElektriciteitslevering": 2740,
+   "GemiddeldeElektriciteitsteruglevering": 1220,
+   "GemiddeldeWOZWaardeVanWoningen": 295,
+   "Koopwoningen": 71,
+   "PercentageEengezinswoning": 86,
+   "PercentageTweeOnderEenKapWoningEe": 21,
+   "PercentageVrijstaandeWoningEengezins": 26,
+   "WoningenMetZonnestroom": 52,
+   "Woningvoorraad": 9424
+  },
+  "provincie": "Zeeland",
+  "regio": "Zeeland",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Hansweert",
+   "Krabbendijke",
+   "Kruiningen",
+   "Oostdijk",
+   "Rilland",
+   "Waarde",
+   "Yerseke"
+  ]
+ },
+ "Renswoude": {
+  "cbs": {
+   "AantalInwoners": 5753,
+   "AardgasvrijeWoningen": 8,
+   "GemiddeldAardgasverbruik": 950,
+   "GemiddeldeElektriciteitslevering": 3020,
+   "GemiddeldeElektriciteitsteruglevering": 1340,
+   "GemiddeldeWOZWaardeVanWoningen": 515,
+   "Koopwoningen": 74,
+   "PercentageEengezinswoning": 86,
+   "PercentageTweeOnderEenKapWoningEe": 12,
+   "PercentageVrijstaandeWoningEengezins": 22,
+   "WoningenMetZonnestroom": 51,
+   "Woningvoorraad": 2195
+  },
+  "provincie": "Utrecht",
+  "regio": "FoodValley",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Renswoude"
+  ]
+ },
+ "Reusel-De Mierden": {
+  "cbs": {
+   "AantalInwoners": 13577,
+   "AardgasvrijeWoningen": 11,
+   "GemiddeldAardgasverbruik": 960,
+   "GemiddeldeElektriciteitslevering": 3290,
+   "GemiddeldeElektriciteitsteruglevering": 1510,
+   "GemiddeldeWOZWaardeVanWoningen": 439,
+   "Koopwoningen": 77,
+   "PercentageEengezinswoning": 87,
+   "PercentageTweeOnderEenKapWoningEe": 23,
+   "PercentageVrijstaandeWoningEengezins": 37,
+   "WoningenMetZonnestroom": 50,
+   "Woningvoorraad": 5830
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Zuidoost-Brabant",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Hooge Mierde",
+   "Hulsel",
+   "Lage Mierde",
+   "Reusel"
+  ]
+ },
+ "Rhenen": {
+  "cbs": {
+   "AantalInwoners": 20235,
+   "AardgasvrijeWoningen": 4,
+   "GemiddeldAardgasverbruik": 940,
+   "GemiddeldeElektriciteitslevering": 2860,
+   "GemiddeldeElektriciteitsteruglevering": 1010,
+   "GemiddeldeWOZWaardeVanWoningen": 434,
+   "Koopwoningen": 65,
+   "PercentageEengezinswoning": 79,
+   "PercentageTweeOnderEenKapWoningEe": 15,
+   "PercentageVrijstaandeWoningEengezins": 21,
+   "WoningenMetZonnestroom": 49,
+   "Woningvoorraad": 8404
+  },
+  "provincie": "Utrecht",
+  "regio": "FoodValley",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Elst Ut",
+   "Rhenen"
+  ]
+ },
+ "Ridderkerk": {
+  "cbs": {
+   "AantalInwoners": 47721,
+   "AardgasvrijeWoningen": 4,
+   "GemiddeldAardgasverbruik": 740,
+   "GemiddeldeElektriciteitslevering": 2550,
+   "GemiddeldeElektriciteitsteruglevering": 560,
+   "GemiddeldeWOZWaardeVanWoningen": 342,
+   "Koopwoningen": 57,
+   "PercentageEengezinswoning": 56,
+   "PercentageTweeOnderEenKapWoningEe": 6,
+   "PercentageVrijstaandeWoningEengezins": 5,
+   "WoningenMetZonnestroom": 30,
+   "Woningvoorraad": 21737
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Rijnmond",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Ridderkerk"
+  ]
+ },
+ "Rijswijk (ZH.)": {
+  "cbs": {
+   "AantalInwoners": 59642,
+   "AardgasvrijeWoningen": 11,
+   "GemiddeldAardgasverbruik": 730,
+   "GemiddeldeElektriciteitslevering": 2300,
+   "GemiddeldeElektriciteitsteruglevering": 410,
+   "GemiddeldeWOZWaardeVanWoningen": 354,
+   "Koopwoningen": 49,
+   "PercentageEengezinswoning": 30,
+   "PercentageTweeOnderEenKapWoningEe": 1,
+   "PercentageVrijstaandeWoningEengezins": 1,
+   "WoningenMetZonnestroom": 23,
+   "Woningvoorraad": 28745
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Haaglanden",
+  "stedelijkheid": "Zeer sterk stedelijk",
+  "woonplaatsen": [
+   "Rijswijk"
+  ]
+ },
+ "Roosendaal": {
+  "cbs": {
+   "AantalInwoners": 77559,
+   "AardgasvrijeWoningen": 5,
+   "GemiddeldAardgasverbruik": 870,
+   "GemiddeldeElektriciteitslevering": 2620,
+   "GemiddeldeElektriciteitsteruglevering": 820,
+   "GemiddeldeWOZWaardeVanWoningen": 300,
+   "Koopwoningen": 62,
+   "PercentageEengezinswoning": 74,
+   "PercentageTweeOnderEenKapWoningEe": 8,
+   "PercentageVrijstaandeWoningEengezins": 15,
+   "WoningenMetZonnestroom": 35,
+   "Woningvoorraad": 36069
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "West-Brabant",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Heerle",
+   "Moerstraten",
+   "Nispen",
+   "Roosendaal",
+   "Wouw",
+   "Wouwse Plantage"
+  ]
+ },
+ "Rotterdam": {
+  "cbs": {
+   "AantalInwoners": 670610,
+   "AardgasvrijeWoningen": 23,
+   "GemiddeldAardgasverbruik": 580,
+   "GemiddeldeElektriciteitslevering": 2120,
+   "GemiddeldeElektriciteitsteruglevering": 180,
+   "GemiddeldeWOZWaardeVanWoningen": 334,
+   "Koopwoningen": 35,
+   "PercentageEengezinswoning": 25,
+   "PercentageTweeOnderEenKapWoningEe": 1,
+   "PercentageVrijstaandeWoningEengezins": 1,
+   "WoningenMetZonnestroom": 11,
+   "Woningvoorraad": 324597
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Rijnmond",
+  "stedelijkheid": "Zeer sterk stedelijk",
+  "woonplaatsen": [
+   "Botlek Rotterdam",
+   "Europoort Rotterdam",
+   "Hoek van Holland",
+   "Hoogvliet Rotterdam",
+   "Maasvlakte Rotterdam",
+   "Pernis Rotterdam",
+   "Rotterdam",
+   "Rozenburg",
+   "Vondelingenplaat Rotterdam"
+  ]
+ },
+ "Rucphen": {
+  "cbs": {
+   "AantalInwoners": 23920,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 1020,
+   "GemiddeldeElektriciteitslevering": 3300,
+   "GemiddeldeElektriciteitsteruglevering": 1240,
+   "GemiddeldeWOZWaardeVanWoningen": 370,
+   "Koopwoningen": 67,
+   "PercentageEengezinswoning": 91,
+   "PercentageTweeOnderEenKapWoningEe": 24,
+   "PercentageVrijstaandeWoningEengezins": 40,
+   "WoningenMetZonnestroom": 48,
+   "Woningvoorraad": 10295
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "West-Brabant",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Rucphen",
+   "Schijf",
+   "Sprundel",
+   "St. Willebrord",
+   "Zegge"
+  ]
+ },
+ "Schagen": {
+  "cbs": {
+   "AantalInwoners": 47744,
+   "AardgasvrijeWoningen": 7,
+   "GemiddeldAardgasverbruik": 870,
+   "GemiddeldeElektriciteitslevering": 2720,
+   "GemiddeldeElektriciteitsteruglevering": 1170,
+   "GemiddeldeWOZWaardeVanWoningen": 356,
+   "Koopwoningen": 70,
+   "PercentageEengezinswoning": 83,
+   "PercentageTweeOnderEenKapWoningEe": 10,
+   "PercentageVrijstaandeWoningEengezins": 25,
+   "WoningenMetZonnestroom": 48,
+   "Woningvoorraad": 21470
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Noord-Holland Noord",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "'t Zand",
+   "Burgerbrug",
+   "Callantsoog",
+   "Dirkshorn",
+   "Oudesluis",
+   "Oudkarspel",
+   "Petten",
+   "Schagen",
+   "Schagerbrug",
+   "Sint Maarten",
+   "Sint Maartensbrug",
+   "Sint Maartensvlotbrug",
+   "Tuitjenhorn",
+   "Waarland",
+   "Warmenhuizen"
+  ]
+ },
+ "Schiedam": {
+  "cbs": {
+   "AantalInwoners": 81838,
+   "AardgasvrijeWoningen": 5,
+   "GemiddeldAardgasverbruik": 730,
+   "GemiddeldeElektriciteitslevering": 2330,
+   "GemiddeldeElektriciteitsteruglevering": 280,
+   "GemiddeldeWOZWaardeVanWoningen": 299,
+   "Koopwoningen": 49,
+   "PercentageEengezinswoning": 32,
+   "PercentageTweeOnderEenKapWoningEe": 1,
+   "PercentageVrijstaandeWoningEengezins": 1,
+   "WoningenMetZonnestroom": 15,
+   "Woningvoorraad": 38360
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Rijnmond",
+  "stedelijkheid": "Zeer sterk stedelijk",
+  "woonplaatsen": [
+   "Schiedam"
+  ]
+ },
+ "Schouwen-Duiveland": {
+  "cbs": {
+   "AantalInwoners": 34631,
+   "AardgasvrijeWoningen": 5,
+   "GemiddeldAardgasverbruik": 930,
+   "GemiddeldeElektriciteitslevering": 2720,
+   "GemiddeldeElektriciteitsteruglevering": 1260,
+   "GemiddeldeWOZWaardeVanWoningen": 382,
+   "Koopwoningen": 68,
+   "PercentageEengezinswoning": 89,
+   "PercentageTweeOnderEenKapWoningEe": 10,
+   "PercentageVrijstaandeWoningEengezins": 35,
+   "WoningenMetZonnestroom": 54,
+   "Woningvoorraad": 16912
+  },
+  "provincie": "Zeeland",
+  "regio": "Zeeland",
+  "stedelijkheid": "Niet stedelijk",
+  "woonplaatsen": [
+   "Brouwershaven",
+   "Bruinisse",
+   "Burgh-Haamstede",
+   "Dreischor",
+   "Ellemeet",
+   "Kerkwerve",
+   "Nieuwerkerk",
+   "Noordgouwe",
+   "Noordwelle",
+   "Oosterland",
+   "Ouwerkerk",
+   "Renesse",
+   "Scharendijke",
+   "Serooskerke",
+   "Sirjansland",
+   "Zierikzee",
+   "Zonnemaire"
+  ]
+ },
+ "Sint-Michielsgestel": {
+  "cbs": {
+   "AantalInwoners": 30094,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 1010,
+   "GemiddeldeElektriciteitslevering": 3200,
+   "GemiddeldeElektriciteitsteruglevering": 1370,
+   "GemiddeldeWOZWaardeVanWoningen": 465,
+   "Koopwoningen": 75,
+   "PercentageEengezinswoning": 86,
+   "PercentageTweeOnderEenKapWoningEe": 20,
+   "PercentageVrijstaandeWoningEengezins": 27,
+   "WoningenMetZonnestroom": 52,
+   "Woningvoorraad": 12674
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Noordoost-Brabant",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Berlicum",
+   "Den Dungen",
+   "Gemonde",
+   "Sint-Michielsgestel"
+  ]
+ },
+ "Sliedrecht": {
+  "cbs": {
+   "AantalInwoners": 26261,
+   "AardgasvrijeWoningen": 12,
+   "GemiddeldAardgasverbruik": 690,
+   "GemiddeldeElektriciteitslevering": 2410,
+   "GemiddeldeElektriciteitsteruglevering": 560,
+   "GemiddeldeWOZWaardeVanWoningen": 315,
+   "Koopwoningen": 58,
+   "PercentageEengezinswoning": 62,
+   "PercentageTweeOnderEenKapWoningEe": 10,
+   "PercentageVrijstaandeWoningEengezins": 6,
+   "WoningenMetZonnestroom": 30,
+   "Woningvoorraad": 11257
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Drechtsteden",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Sliedrecht"
+  ]
+ },
+ "Sluis": {
+  "cbs": {
+   "AantalInwoners": 23150,
+   "AardgasvrijeWoningen": 5,
+   "GemiddeldAardgasverbruik": 940,
+   "GemiddeldeElektriciteitslevering": 2420,
+   "GemiddeldeElektriciteitsteruglevering": 910,
+   "GemiddeldeWOZWaardeVanWoningen": 322,
+   "Koopwoningen": 67,
+   "PercentageEengezinswoning": 85,
+   "PercentageTweeOnderEenKapWoningEe": 10,
+   "PercentageVrijstaandeWoningEengezins": 30,
+   "WoningenMetZonnestroom": 40,
+   "Woningvoorraad": 14051
+  },
+  "provincie": "Zeeland",
+  "regio": "Zeeland",
+  "stedelijkheid": "Niet stedelijk",
+  "woonplaatsen": [
+   "Aardenburg",
+   "Biervliet",
+   "Breskens",
+   "Cadzand",
+   "Eede",
+   "Groede",
+   "Hoofdplaat",
+   "IJzendijke",
+   "Nieuwvliet",
+   "Oostburg",
+   "Retranchement",
+   "Schoondijke",
+   "Sint Kruis",
+   "Sluis",
+   "Waterlandkerkje",
+   "Zuidzande"
+  ]
+ },
+ "Soest": {
+  "cbs": {
+   "AantalInwoners": 47682,
+   "AardgasvrijeWoningen": 5,
+   "GemiddeldAardgasverbruik": 930,
+   "GemiddeldeElektriciteitslevering": 2790,
+   "GemiddeldeElektriciteitsteruglevering": 700,
+   "GemiddeldeWOZWaardeVanWoningen": 454,
+   "Koopwoningen": 64,
+   "PercentageEengezinswoning": 64,
+   "PercentageTweeOnderEenKapWoningEe": 14,
+   "PercentageVrijstaandeWoningEengezins": 12,
+   "WoningenMetZonnestroom": 35,
+   "Woningvoorraad": 21377
+  },
+  "provincie": "Utrecht",
+  "regio": "Amersfoort",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Soest",
+   "Soesterberg"
+  ]
+ },
+ "Someren": {
+  "cbs": {
+   "AantalInwoners": 20188,
+   "AardgasvrijeWoningen": 7,
+   "GemiddeldAardgasverbruik": 960,
+   "GemiddeldeElektriciteitslevering": 3160,
+   "GemiddeldeElektriciteitsteruglevering": 1720,
+   "GemiddeldeWOZWaardeVanWoningen": 409,
+   "Koopwoningen": 72,
+   "PercentageEengezinswoning": 86,
+   "PercentageTweeOnderEenKapWoningEe": 15,
+   "PercentageVrijstaandeWoningEengezins": 31,
+   "WoningenMetZonnestroom": 56,
+   "Woningvoorraad": 8542
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Helmond-De Peel",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Lierop",
+   "Someren"
+  ]
+ },
+ "Son en Breugel": {
+  "cbs": {
+   "AantalInwoners": 17959,
+   "AardgasvrijeWoningen": 5,
+   "GemiddeldAardgasverbruik": 1040,
+   "GemiddeldeElektriciteitslevering": 3040,
+   "GemiddeldeElektriciteitsteruglevering": 1260,
+   "GemiddeldeWOZWaardeVanWoningen": 489,
+   "Koopwoningen": 75,
+   "PercentageEengezinswoning": 87,
+   "PercentageTweeOnderEenKapWoningEe": 12,
+   "PercentageVrijstaandeWoningEengezins": 17,
+   "WoningenMetZonnestroom": 53,
+   "Woningvoorraad": 7639
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Zuidoost-Brabant",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Son en Breugel"
+  ]
+ },
+ "Stede Broec": {
+  "cbs": {
+   "AantalInwoners": 22217,
+   "AardgasvrijeWoningen": 4,
+   "GemiddeldAardgasverbruik": 870,
+   "GemiddeldeElektriciteitslevering": 2590,
+   "GemiddeldeElektriciteitsteruglevering": 1060,
+   "GemiddeldeWOZWaardeVanWoningen": 363,
+   "Koopwoningen": 70,
+   "PercentageEengezinswoning": 89,
+   "PercentageTweeOnderEenKapWoningEe": 9,
+   "PercentageVrijstaandeWoningEengezins": 20,
+   "WoningenMetZonnestroom": 54,
+   "Woningvoorraad": 9505
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Noord-Holland Noord",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Bovenkarspel",
+   "Grootebroek",
+   "Lutjebroek"
+  ]
+ },
+ "Steenbergen": {
+  "cbs": {
+   "AantalInwoners": 24476,
+   "AardgasvrijeWoningen": 7,
+   "GemiddeldAardgasverbruik": 900,
+   "GemiddeldeElektriciteitslevering": 2950,
+   "GemiddeldeElektriciteitsteruglevering": 1160,
+   "GemiddeldeWOZWaardeVanWoningen": 345,
+   "Koopwoningen": 70,
+   "PercentageEengezinswoning": 86,
+   "PercentageTweeOnderEenKapWoningEe": 14,
+   "PercentageVrijstaandeWoningEengezins": 25,
+   "WoningenMetZonnestroom": 47,
+   "Woningvoorraad": 10877
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "West-Brabant",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "De Heen",
+   "Dinteloord",
+   "Kruisland",
+   "Nieuw-Vossemeer",
+   "Steenbergen"
+  ]
+ },
+ "Stichtse Vecht": {
+  "cbs": {
+   "AantalInwoners": 65878,
+   "AardgasvrijeWoningen": 3,
+   "GemiddeldAardgasverbruik": 880,
+   "GemiddeldeElektriciteitslevering": 2720,
+   "GemiddeldeElektriciteitsteruglevering": 770,
+   "GemiddeldeWOZWaardeVanWoningen": 460,
+   "Koopwoningen": 65,
+   "PercentageEengezinswoning": 74,
+   "PercentageTweeOnderEenKapWoningEe": 6,
+   "PercentageVrijstaandeWoningEengezins": 11,
+   "WoningenMetZonnestroom": 36,
+   "Woningvoorraad": 29138
+  },
+  "provincie": "Utrecht",
+  "regio": "Midden-Utrecht",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Breukelen",
+   "Kockengen",
+   "Loenen aan de Vecht",
+   "Loenersloot",
+   "Maarssen",
+   "Nieuwer Ter Aa",
+   "Nieuwersluis",
+   "Nigtevecht",
+   "Oud Zuilen",
+   "Tienhoven",
+   "Vreeland"
+  ]
+ },
+ "Terneuzen": {
+  "cbs": {
+   "AantalInwoners": 55132,
+   "AardgasvrijeWoningen": 5,
+   "GemiddeldAardgasverbruik": 890,
+   "GemiddeldeElektriciteitslevering": 2510,
+   "GemiddeldeElektriciteitsteruglevering": 930,
+   "GemiddeldeWOZWaardeVanWoningen": 243,
+   "Koopwoningen": 68,
+   "PercentageEengezinswoning": 81,
+   "PercentageTweeOnderEenKapWoningEe": 12,
+   "PercentageVrijstaandeWoningEengezins": 21,
+   "WoningenMetZonnestroom": 44,
+   "Woningvoorraad": 27705
+  },
+  "provincie": "Zeeland",
+  "regio": "Zeeland",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Axel",
+   "Biervliet",
+   "Hoek",
+   "Koewacht",
+   "Overslag",
+   "Philippine",
+   "Sas van Gent",
+   "Sluiskil",
+   "Spui",
+   "Terneuzen",
+   "Westdorpe",
+   "Zaamslag",
+   "Zuiddorpe"
+  ]
+ },
+ "Texel": {
+  "cbs": {
+   "AantalInwoners": 13815,
+   "AardgasvrijeWoningen": 7,
+   "GemiddeldAardgasverbruik": 940,
+   "GemiddeldeElektriciteitslevering": 2600,
+   "GemiddeldeElektriciteitsteruglevering": 1030,
+   "GemiddeldeWOZWaardeVanWoningen": 393,
+   "Koopwoningen": 66,
+   "PercentageEengezinswoning": 78,
+   "PercentageTweeOnderEenKapWoningEe": 16,
+   "PercentageVrijstaandeWoningEengezins": 26,
+   "WoningenMetZonnestroom": 40,
+   "Woningvoorraad": 6980
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Noord-Holland Noord",
+  "stedelijkheid": "Niet stedelijk",
+  "woonplaatsen": [
+   "De Cocksdorp",
+   "De Koog",
+   "De Waal",
+   "Den Burg",
+   "Den Hoorn",
+   "Oosterend",
+   "Oudeschild"
+  ]
+ },
+ "Teylingen": {
+  "cbs": {
+   "AantalInwoners": 38470,
+   "AardgasvrijeWoningen": 5,
+   "GemiddeldAardgasverbruik": 810,
+   "GemiddeldeElektriciteitslevering": 2610,
+   "GemiddeldeElektriciteitsteruglevering": 870,
+   "GemiddeldeWOZWaardeVanWoningen": 462,
+   "Koopwoningen": 66,
+   "PercentageEengezinswoning": 74,
+   "PercentageTweeOnderEenKapWoningEe": 7,
+   "PercentageVrijstaandeWoningEengezins": 8,
+   "WoningenMetZonnestroom": 44,
+   "Woningvoorraad": 16781
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Holland Rijnland",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Sassenheim",
+   "Voorhout",
+   "Warmond"
+  ]
+ },
+ "Tholen": {
+  "cbs": {
+   "AantalInwoners": 26851,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 870,
+   "GemiddeldeElektriciteitslevering": 2830,
+   "GemiddeldeElektriciteitsteruglevering": 1200,
+   "GemiddeldeWOZWaardeVanWoningen": 287,
+   "Koopwoningen": 72,
+   "PercentageEengezinswoning": 89,
+   "PercentageTweeOnderEenKapWoningEe": 12,
+   "PercentageVrijstaandeWoningEengezins": 21,
+   "WoningenMetZonnestroom": 50,
+   "Woningvoorraad": 11370
+  },
+  "provincie": "Zeeland",
+  "regio": "Zeeland",
+  "stedelijkheid": "Niet stedelijk",
+  "woonplaatsen": [
+   "Oud-Vossemeer",
+   "Poortvliet",
+   "Scherpenisse",
+   "Sint Philipsland",
+   "Sint-Annaland",
+   "Sint-Maartensdijk",
+   "Stavenisse",
+   "Tholen"
+  ]
+ },
+ "Tilburg": {
+  "cbs": {
+   "AantalInwoners": 229836,
+   "AardgasvrijeWoningen": 30,
+   "GemiddeldAardgasverbruik": 580,
+   "GemiddeldeElektriciteitslevering": 2460,
+   "GemiddeldeElektriciteitsteruglevering": 630,
+   "GemiddeldeWOZWaardeVanWoningen": 326,
+   "Koopwoningen": 50,
+   "PercentageEengezinswoning": 62,
+   "PercentageTweeOnderEenKapWoningEe": 5,
+   "PercentageVrijstaandeWoningEengezins": 4,
+   "WoningenMetZonnestroom": 32,
+   "Woningvoorraad": 106200
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Midden-Brabant",
+  "stedelijkheid": "Zeer sterk stedelijk",
+  "woonplaatsen": [
+   "Berkel-Enschot",
+   "Biezenmortel",
+   "Tilburg",
+   "Udenhout"
+  ]
+ },
+ "Uitgeest": {
+  "cbs": {
+   "AantalInwoners": 13400,
+   "AardgasvrijeWoningen": 1,
+   "GemiddeldAardgasverbruik": 880,
+   "GemiddeldeElektriciteitslevering": 2500,
+   "GemiddeldeElektriciteitsteruglevering": 1090,
+   "GemiddeldeWOZWaardeVanWoningen": 441,
+   "Koopwoningen": 73,
+   "PercentageEengezinswoning": 80,
+   "PercentageTweeOnderEenKapWoningEe": 8,
+   "PercentageVrijstaandeWoningEengezins": 11,
+   "WoningenMetZonnestroom": 58,
+   "Woningvoorraad": 5701
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Noord-Holland Noord",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Uitgeest"
+  ]
+ },
+ "Uithoorn": {
+  "cbs": {
+   "AantalInwoners": 31685,
+   "AardgasvrijeWoningen": 8,
+   "GemiddeldAardgasverbruik": 810,
+   "GemiddeldeElektriciteitslevering": 2610,
+   "GemiddeldeElektriciteitsteruglevering": 760,
+   "GemiddeldeWOZWaardeVanWoningen": 433,
+   "Koopwoningen": 60,
+   "PercentageEengezinswoning": 72,
+   "PercentageTweeOnderEenKapWoningEe": 4,
+   "PercentageVrijstaandeWoningEengezins": 7,
+   "WoningenMetZonnestroom": 38,
+   "Woningvoorraad": 13664
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Groot Amsterdam",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "De Kwakel",
+   "Uithoorn"
+  ]
+ },
+ "Utrecht": {
+  "cbs": {
+   "AantalInwoners": 374238,
+   "AardgasvrijeWoningen": 34,
+   "GemiddeldAardgasverbruik": 500,
+   "GemiddeldeElektriciteitslevering": 2140,
+   "GemiddeldeElektriciteitsteruglevering": 420,
+   "GemiddeldeWOZWaardeVanWoningen": 451,
+   "Koopwoningen": 44,
+   "PercentageEengezinswoning": 42,
+   "PercentageTweeOnderEenKapWoningEe": 2,
+   "PercentageVrijstaandeWoningEengezins": 2,
+   "WoningenMetZonnestroom": 26,
+   "Woningvoorraad": 167124
+  },
+  "provincie": "Utrecht",
+  "regio": "Midden-Utrecht",
+  "stedelijkheid": "Zeer sterk stedelijk",
+  "woonplaatsen": [
+   "De Meern",
+   "Haarzuilens",
+   "Utrecht",
+   "Vleuten"
+  ]
+ },
+ "Utrechtse Heuvelrug": {
+  "cbs": {
+   "AantalInwoners": 50550,
+   "AardgasvrijeWoningen": 5,
+   "GemiddeldAardgasverbruik": 1020,
+   "GemiddeldeElektriciteitslevering": 2910,
+   "GemiddeldeElektriciteitsteruglevering": 900,
+   "GemiddeldeWOZWaardeVanWoningen": 507,
+   "Koopwoningen": 64,
+   "PercentageEengezinswoning": 74,
+   "PercentageTweeOnderEenKapWoningEe": 22,
+   "PercentageVrijstaandeWoningEengezins": 18,
+   "WoningenMetZonnestroom": 44,
+   "Woningvoorraad": 22405
+  },
+  "provincie": "Utrecht",
+  "regio": "Midden-Utrecht",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Amerongen",
+   "Doorn",
+   "Driebergen-Rijsenburg",
+   "Leersum",
+   "Maarn",
+   "Maarsbergen",
+   "Overberg"
+  ]
+ },
+ "Valkenswaard": {
+  "cbs": {
+   "AantalInwoners": 31714,
+   "AardgasvrijeWoningen": 5,
+   "GemiddeldAardgasverbruik": 880,
+   "GemiddeldeElektriciteitslevering": 2730,
+   "GemiddeldeElektriciteitsteruglevering": 1030,
+   "GemiddeldeWOZWaardeVanWoningen": 381,
+   "Koopwoningen": 60,
+   "PercentageEengezinswoning": 75,
+   "PercentageTweeOnderEenKapWoningEe": 12,
+   "PercentageVrijstaandeWoningEengezins": 12,
+   "WoningenMetZonnestroom": 46,
+   "Woningvoorraad": 15258
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Zuidoost-Brabant",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Valkenswaard"
+  ]
+ },
+ "Veenendaal": {
+  "cbs": {
+   "AantalInwoners": 69440,
+   "AardgasvrijeWoningen": 12,
+   "GemiddeldAardgasverbruik": 720,
+   "GemiddeldeElektriciteitslevering": 2560,
+   "GemiddeldeElektriciteitsteruglevering": 780,
+   "GemiddeldeWOZWaardeVanWoningen": 388,
+   "Koopwoningen": 59,
+   "PercentageEengezinswoning": 60,
+   "PercentageTweeOnderEenKapWoningEe": 9,
+   "PercentageVrijstaandeWoningEengezins": 6,
+   "WoningenMetZonnestroom": 42,
+   "Woningvoorraad": 29786
+  },
+  "provincie": "Utrecht",
+  "regio": "FoodValley",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Veenendaal"
+  ]
+ },
+ "Veere": {
+  "cbs": {
+   "AantalInwoners": 22067,
+   "AardgasvrijeWoningen": 4,
+   "GemiddeldAardgasverbruik": 980,
+   "GemiddeldeElektriciteitslevering": 2690,
+   "GemiddeldeElektriciteitsteruglevering": 1310,
+   "GemiddeldeWOZWaardeVanWoningen": 436,
+   "Koopwoningen": 79,
+   "PercentageEengezinswoning": 87,
+   "PercentageTweeOnderEenKapWoningEe": 16,
+   "PercentageVrijstaandeWoningEengezins": 36,
+   "WoningenMetZonnestroom": 51,
+   "Woningvoorraad": 11116
+  },
+  "provincie": "Zeeland",
+  "regio": "Zeeland",
+  "stedelijkheid": "Niet stedelijk",
+  "woonplaatsen": [
+   "Aagtekerke",
+   "Biggekerke",
+   "Domburg",
+   "Gapinge",
+   "Grijpskerke",
+   "Koudekerke",
+   "Meliskerke",
+   "Oostkapelle",
+   "Serooskerke",
+   "Veere",
+   "Vrouwenpolder",
+   "Westkapelle",
+   "Zoutelande"
+  ]
+ },
+ "Veldhoven": {
+  "cbs": {
+   "AantalInwoners": 46827,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 880,
+   "GemiddeldeElektriciteitslevering": 2780,
+   "GemiddeldeElektriciteitsteruglevering": 1100,
+   "GemiddeldeWOZWaardeVanWoningen": 459,
+   "Koopwoningen": 67,
+   "PercentageEengezinswoning": 79,
+   "PercentageTweeOnderEenKapWoningEe": 11,
+   "PercentageVrijstaandeWoningEengezins": 15,
+   "WoningenMetZonnestroom": 47,
+   "Woningvoorraad": 20792
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Zuidoost-Brabant",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Veldhoven"
+  ]
+ },
+ "Velsen": {
+  "cbs": {
+   "AantalInwoners": 69241,
+   "AardgasvrijeWoningen": 3,
+   "GemiddeldAardgasverbruik": 840,
+   "GemiddeldeElektriciteitslevering": 2340,
+   "GemiddeldeElektriciteitsteruglevering": 440,
+   "GemiddeldeWOZWaardeVanWoningen": 393,
+   "Koopwoningen": 56,
+   "PercentageEengezinswoning": 60,
+   "PercentageTweeOnderEenKapWoningEe": 6,
+   "PercentageVrijstaandeWoningEengezins": 2,
+   "WoningenMetZonnestroom": 25,
+   "Woningvoorraad": 31965
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Zuid-Kennemerland en IJmond",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Driehuis NH",
+   "IJmuiden",
+   "Santpoort-Noord",
+   "Santpoort-Zuid",
+   "Velsen-Noord",
+   "Velsen-Zuid",
+   "Velserbroek"
+  ]
+ },
+ "Vijfheerenlanden": {
+  "cbs": {
+   "AantalInwoners": 61669,
+   "AardgasvrijeWoningen": 9,
+   "GemiddeldAardgasverbruik": 800,
+   "GemiddeldeElektriciteitslevering": 2700,
+   "GemiddeldeElektriciteitsteruglevering": 1050,
+   "GemiddeldeWOZWaardeVanWoningen": 387,
+   "Koopwoningen": 63,
+   "PercentageEengezinswoning": 78,
+   "PercentageTweeOnderEenKapWoningEe": 9,
+   "PercentageVrijstaandeWoningEengezins": 14,
+   "WoningenMetZonnestroom": 49,
+   "Woningvoorraad": 25850
+  },
+  "provincie": "Utrecht",
+  "regio": "Gorinchem",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Ameide",
+   "Everdingen",
+   "Hagestein",
+   "Hei- en Boeicop",
+   "Hoef en Haag",
+   "Kedichem",
+   "Leerbroek",
+   "Leerdam",
+   "Lexmond",
+   "Meerkerk",
+   "Nieuwland",
+   "Oosterwijk",
+   "Ossenwaard",
+   "Schoonrewoerd",
+   "Tienhoven aan de Lek",
+   "Vianen",
+   "Zijderveld"
+  ]
+ },
+ "Vlaardingen": {
+  "cbs": {
+   "AantalInwoners": 76409,
+   "AardgasvrijeWoningen": 3,
+   "GemiddeldAardgasverbruik": 740,
+   "GemiddeldeElektriciteitslevering": 2260,
+   "GemiddeldeElektriciteitsteruglevering": 310,
+   "GemiddeldeWOZWaardeVanWoningen": 290,
+   "Koopwoningen": 47,
+   "PercentageEengezinswoning": 38,
+   "PercentageTweeOnderEenKapWoningEe": 2,
+   "PercentageVrijstaandeWoningEengezins": 1,
+   "WoningenMetZonnestroom": 19,
+   "Woningvoorraad": 36856
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Rijnmond",
+  "stedelijkheid": "Zeer sterk stedelijk",
+  "woonplaatsen": [
+   "Vlaardingen"
+  ]
+ },
+ "Vlissingen": {
+  "cbs": {
+   "AantalInwoners": 45389,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 760,
+   "GemiddeldeElektriciteitslevering": 2170,
+   "GemiddeldeElektriciteitsteruglevering": 680,
+   "GemiddeldeWOZWaardeVanWoningen": 247,
+   "Koopwoningen": 57,
+   "PercentageEengezinswoning": 63,
+   "PercentageTweeOnderEenKapWoningEe": 6,
+   "PercentageVrijstaandeWoningEengezins": 7,
+   "WoningenMetZonnestroom": 40,
+   "Woningvoorraad": 23715
+  },
+  "provincie": "Zeeland",
+  "regio": "Zeeland",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Oost-Souburg",
+   "Ritthem",
+   "Vlissingen"
+  ]
+ },
+ "Voorne aan Zee": {
+  "cbs": {
+   "AantalInwoners": 74304,
+   "AardgasvrijeWoningen": 5,
+   "GemiddeldAardgasverbruik": 810,
+   "GemiddeldeElektriciteitslevering": 2750,
+   "GemiddeldeElektriciteitsteruglevering": 980,
+   "GemiddeldeWOZWaardeVanWoningen": 389,
+   "Koopwoningen": 68,
+   "PercentageEengezinswoning": 76,
+   "PercentageTweeOnderEenKapWoningEe": 5,
+   "PercentageVrijstaandeWoningEengezins": 15,
+   "WoningenMetZonnestroom": 44,
+   "Woningvoorraad": 33668
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Rijnmond",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Brielle",
+   "Hellevoetsluis",
+   "Oostvoorne",
+   "Oudenhoorn",
+   "Rockanje",
+   "Tinte",
+   "Vierpolders",
+   "Zwartewaal"
+  ]
+ },
+ "Voorschoten": {
+  "cbs": {
+   "AantalInwoners": 25625,
+   "AardgasvrijeWoningen": 2,
+   "GemiddeldAardgasverbruik": 870,
+   "GemiddeldeElektriciteitslevering": 2520,
+   "GemiddeldeElektriciteitsteruglevering": 630,
+   "GemiddeldeWOZWaardeVanWoningen": 501,
+   "Koopwoningen": 64,
+   "PercentageEengezinswoning": 64,
+   "PercentageTweeOnderEenKapWoningEe": 3,
+   "PercentageVrijstaandeWoningEengezins": 4,
+   "WoningenMetZonnestroom": 32,
+   "Woningvoorraad": 11576
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Zuid-Holland Centraal",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Voorschoten"
+  ]
+ },
+ "Vught": {
+  "cbs": {
+   "AantalInwoners": 32356,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 970,
+   "GemiddeldeElektriciteitslevering": 2960,
+   "GemiddeldeElektriciteitsteruglevering": 810,
+   "GemiddeldeWOZWaardeVanWoningen": 524,
+   "Koopwoningen": 65,
+   "PercentageEengezinswoning": 76,
+   "PercentageTweeOnderEenKapWoningEe": 13,
+   "PercentageVrijstaandeWoningEengezins": 17,
+   "WoningenMetZonnestroom": 35,
+   "Woningvoorraad": 14111
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Noordoost-Brabant",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Cromvoirt",
+   "Helvoirt",
+   "Vught"
+  ]
+ },
+ "Waalre": {
+  "cbs": {
+   "AantalInwoners": 17988,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 1030,
+   "GemiddeldeElektriciteitslevering": 3000,
+   "GemiddeldeElektriciteitsteruglevering": 1080,
+   "GemiddeldeWOZWaardeVanWoningen": 509,
+   "Koopwoningen": 74,
+   "PercentageEengezinswoning": 82,
+   "PercentageTweeOnderEenKapWoningEe": 14,
+   "PercentageVrijstaandeWoningEengezins": 18,
+   "WoningenMetZonnestroom": 48,
+   "Woningvoorraad": 8088
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Zuidoost-Brabant",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Waalre"
+  ]
+ },
+ "Waalwijk": {
+  "cbs": {
+   "AantalInwoners": 50302,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 850,
+   "GemiddeldeElektriciteitslevering": 2770,
+   "GemiddeldeElektriciteitsteruglevering": 800,
+   "GemiddeldeWOZWaardeVanWoningen": 351,
+   "Koopwoningen": 61,
+   "PercentageEengezinswoning": 75,
+   "PercentageTweeOnderEenKapWoningEe": 11,
+   "PercentageVrijstaandeWoningEengezins": 16,
+   "WoningenMetZonnestroom": 34,
+   "Woningvoorraad": 22613
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "Midden-Brabant",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Sprang-Capelle",
+   "Waalwijk",
+   "Waspik"
+  ]
+ },
+ "Waddinxveen": {
+  "cbs": {
+   "AantalInwoners": 34000,
+   "AardgasvrijeWoningen": 15,
+   "GemiddeldAardgasverbruik": 670,
+   "GemiddeldeElektriciteitslevering": 2760,
+   "GemiddeldeElektriciteitsteruglevering": 880,
+   "GemiddeldeWOZWaardeVanWoningen": 389,
+   "Koopwoningen": 66,
+   "PercentageEengezinswoning": 69,
+   "PercentageTweeOnderEenKapWoningEe": 5,
+   "PercentageVrijstaandeWoningEengezins": 7,
+   "WoningenMetZonnestroom": 42,
+   "Woningvoorraad": 13842
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Midden-Holland",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Waddinxveen"
+  ]
+ },
+ "Wassenaar": {
+  "cbs": {
+   "AantalInwoners": 27100,
+   "AardgasvrijeWoningen": 3,
+   "GemiddeldAardgasverbruik": 1240,
+   "GemiddeldeElektriciteitslevering": 3030,
+   "GemiddeldeElektriciteitsteruglevering": 480,
+   "GemiddeldeWOZWaardeVanWoningen": 728,
+   "Koopwoningen": 57,
+   "PercentageEengezinswoning": 71,
+   "PercentageTweeOnderEenKapWoningEe": 12,
+   "PercentageVrijstaandeWoningEengezins": 12,
+   "WoningenMetZonnestroom": 29,
+   "Woningvoorraad": 12367
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Zuid-Holland Centraal",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Wassenaar"
+  ]
+ },
+ "Waterland": {
+  "cbs": {
+   "AantalInwoners": 17525,
+   "AardgasvrijeWoningen": 3,
+   "GemiddeldAardgasverbruik": 970,
+   "GemiddeldeElektriciteitslevering": 2690,
+   "GemiddeldeElektriciteitsteruglevering": 760,
+   "GemiddeldeWOZWaardeVanWoningen": 467,
+   "Koopwoningen": 70,
+   "PercentageEengezinswoning": 84,
+   "PercentageTweeOnderEenKapWoningEe": 11,
+   "PercentageVrijstaandeWoningEengezins": 16,
+   "WoningenMetZonnestroom": 35,
+   "Woningvoorraad": 7497
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Zaanstreek/Waterland",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Broek in Waterland",
+   "Ilpendam",
+   "Katwoude",
+   "Marken",
+   "Monnickendam",
+   "Purmer",
+   "Uitdam",
+   "Watergang",
+   "Zuiderwoude"
+  ]
+ },
+ "Westland": {
+  "cbs": {
+   "AantalInwoners": 115941,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 810,
+   "GemiddeldeElektriciteitslevering": 2730,
+   "GemiddeldeElektriciteitsteruglevering": 1050,
+   "GemiddeldeWOZWaardeVanWoningen": 447,
+   "Koopwoningen": 69,
+   "PercentageEengezinswoning": 75,
+   "PercentageTweeOnderEenKapWoningEe": 5,
+   "PercentageVrijstaandeWoningEengezins": 12,
+   "WoningenMetZonnestroom": 43,
+   "Woningvoorraad": 47590
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Haaglanden",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "'s-Gravenzande",
+   "De Lier",
+   "Honselersdijk",
+   "Kwintsheul",
+   "Maasdijk",
+   "Monster",
+   "Naaldwijk",
+   "Poeldijk",
+   "Ter Heijde",
+   "Wateringen"
+  ]
+ },
+ "Wijdemeren": {
+  "cbs": {
+   "AantalInwoners": 24605,
+   "AardgasvrijeWoningen": 4,
+   "GemiddeldAardgasverbruik": 1010,
+   "GemiddeldeElektriciteitslevering": 2920,
+   "GemiddeldeElektriciteitsteruglevering": 780,
+   "GemiddeldeWOZWaardeVanWoningen": 562,
+   "Koopwoningen": 70,
+   "PercentageEengezinswoning": 83,
+   "PercentageTweeOnderEenKapWoningEe": 11,
+   "PercentageVrijstaandeWoningEengezins": 18,
+   "WoningenMetZonnestroom": 36,
+   "Woningvoorraad": 10880
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Gooi en Vechtstreek",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "'s-Graveland",
+   "Ankeveen",
+   "Breukeleveen",
+   "Kortenhoef",
+   "Loosdrecht",
+   "Nederhorst den Berg"
+  ]
+ },
+ "Wijk bij Duurstede": {
+  "cbs": {
+   "AantalInwoners": 23945,
+   "AardgasvrijeWoningen": 5,
+   "GemiddeldAardgasverbruik": 860,
+   "GemiddeldeElektriciteitslevering": 2770,
+   "GemiddeldeElektriciteitsteruglevering": 1080,
+   "GemiddeldeWOZWaardeVanWoningen": 435,
+   "Koopwoningen": 70,
+   "PercentageEengezinswoning": 81,
+   "PercentageTweeOnderEenKapWoningEe": 9,
+   "PercentageVrijstaandeWoningEengezins": 9,
+   "WoningenMetZonnestroom": 49,
+   "Woningvoorraad": 10403
+  },
+  "provincie": "Utrecht",
+  "regio": "Midden-Utrecht",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Cothen",
+   "Langbroek",
+   "Wijk bij Duurstede"
+  ]
+ },
+ "Woensdrecht": {
+  "cbs": {
+   "AantalInwoners": 22208,
+   "AardgasvrijeWoningen": 4,
+   "GemiddeldAardgasverbruik": 960,
+   "GemiddeldeElektriciteitslevering": 3040,
+   "GemiddeldeElektriciteitsteruglevering": 1080,
+   "GemiddeldeWOZWaardeVanWoningen": 343,
+   "Koopwoningen": 73,
+   "PercentageEengezinswoning": 88,
+   "PercentageTweeOnderEenKapWoningEe": 14,
+   "PercentageVrijstaandeWoningEengezins": 33,
+   "WoningenMetZonnestroom": 42,
+   "Woningvoorraad": 10074
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "West-Brabant",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Hoogerheide",
+   "Huijbergen",
+   "Ossendrecht",
+   "Putte",
+   "Woensdrecht"
+  ]
+ },
+ "Woerden": {
+  "cbs": {
+   "AantalInwoners": 53724,
+   "AardgasvrijeWoningen": 7,
+   "GemiddeldAardgasverbruik": 820,
+   "GemiddeldeElektriciteitslevering": 2600,
+   "GemiddeldeElektriciteitsteruglevering": 890,
+   "GemiddeldeWOZWaardeVanWoningen": 411,
+   "Koopwoningen": 66,
+   "PercentageEengezinswoning": 70,
+   "PercentageTweeOnderEenKapWoningEe": 6,
+   "PercentageVrijstaandeWoningEengezins": 10,
+   "WoningenMetZonnestroom": 42,
+   "Woningvoorraad": 23125
+  },
+  "provincie": "Utrecht",
+  "regio": "Midden-Utrecht",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Harmelen",
+   "Kamerik",
+   "Woerden",
+   "Zegveld"
+  ]
+ },
+ "Wormerland": {
+  "cbs": {
+   "AantalInwoners": 16552,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 850,
+   "GemiddeldeElektriciteitslevering": 2540,
+   "GemiddeldeElektriciteitsteruglevering": 860,
+   "GemiddeldeWOZWaardeVanWoningen": 421,
+   "Koopwoningen": 63,
+   "PercentageEengezinswoning": 75,
+   "PercentageTweeOnderEenKapWoningEe": 10,
+   "PercentageVrijstaandeWoningEengezins": 15,
+   "WoningenMetZonnestroom": 46,
+   "Woningvoorraad": 7171
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Zaanstreek/Waterland",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Jisp",
+   "Oostknollendam",
+   "Spijkerboor",
+   "Wijdewormer",
+   "Wormer"
+  ]
+ },
+ "Woudenberg": {
+  "cbs": {
+   "AantalInwoners": 14637,
+   "AardgasvrijeWoningen": 13,
+   "GemiddeldAardgasverbruik": 850,
+   "GemiddeldeElektriciteitslevering": 2940,
+   "GemiddeldeElektriciteitsteruglevering": 1110,
+   "GemiddeldeWOZWaardeVanWoningen": 491,
+   "Koopwoningen": 70,
+   "PercentageEengezinswoning": 81,
+   "PercentageTweeOnderEenKapWoningEe": 14,
+   "PercentageVrijstaandeWoningEengezins": 15,
+   "WoningenMetZonnestroom": 51,
+   "Woningvoorraad": 5705
+  },
+  "provincie": "Utrecht",
+  "regio": "Amersfoort",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Woudenberg"
+  ]
+ },
+ "Zaanstad": {
+  "cbs": {
+   "AantalInwoners": 161389,
+   "AardgasvrijeWoningen": 8,
+   "GemiddeldAardgasverbruik": 780,
+   "GemiddeldeElektriciteitslevering": 2360,
+   "GemiddeldeElektriciteitsteruglevering": 500,
+   "GemiddeldeWOZWaardeVanWoningen": 387,
+   "Koopwoningen": 54,
+   "PercentageEengezinswoning": 62,
+   "PercentageTweeOnderEenKapWoningEe": 7,
+   "PercentageVrijstaandeWoningEengezins": 5,
+   "WoningenMetZonnestroom": 27,
+   "Woningvoorraad": 70945
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Zaanstreek/Waterland",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Assendelft",
+   "Koog aan de Zaan",
+   "Krommenie",
+   "Westknollendam",
+   "Westzaan",
+   "Wormerveer",
+   "Zaandam",
+   "Zaandijk"
+  ]
+ },
+ "Zandvoort": {
+  "cbs": {
+   "AantalInwoners": 17469,
+   "AardgasvrijeWoningen": 9,
+   "GemiddeldAardgasverbruik": 890,
+   "GemiddeldeElektriciteitslevering": 2450,
+   "GemiddeldeElektriciteitsteruglevering": 300,
+   "GemiddeldeWOZWaardeVanWoningen": 459,
+   "Koopwoningen": 54,
+   "PercentageEengezinswoning": 47,
+   "PercentageTweeOnderEenKapWoningEe": 6,
+   "PercentageVrijstaandeWoningEengezins": 7,
+   "WoningenMetZonnestroom": 14,
+   "Woningvoorraad": 9828
+  },
+  "provincie": "Noord-Holland",
+  "regio": "Zuid-Kennemerland en IJmond",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Bentveld",
+   "Zandvoort"
+  ]
+ },
+ "Zeist": {
+  "cbs": {
+   "AantalInwoners": 66641,
+   "AardgasvrijeWoningen": 4,
+   "GemiddeldAardgasverbruik": 920,
+   "GemiddeldeElektriciteitslevering": 2640,
+   "GemiddeldeElektriciteitsteruglevering": 590,
+   "GemiddeldeWOZWaardeVanWoningen": 525,
+   "Koopwoningen": 53,
+   "PercentageEengezinswoning": 54,
+   "PercentageTweeOnderEenKapWoningEe": 14,
+   "PercentageVrijstaandeWoningEengezins": 7,
+   "WoningenMetZonnestroom": 32,
+   "Woningvoorraad": 30196
+  },
+  "provincie": "Utrecht",
+  "regio": "Midden-Utrecht",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Austerlitz",
+   "Bosch en Duin",
+   "Den Dolder",
+   "Huis ter Heide",
+   "Zeist"
+  ]
+ },
+ "Zoetermeer": {
+  "cbs": {
+   "AantalInwoners": 128434,
+   "AardgasvrijeWoningen": 11,
+   "GemiddeldAardgasverbruik": 670,
+   "GemiddeldeElektriciteitslevering": 2520,
+   "GemiddeldeElektriciteitsteruglevering": 610,
+   "GemiddeldeWOZWaardeVanWoningen": 362,
+   "Koopwoningen": 55,
+   "PercentageEengezinswoning": 57,
+   "PercentageTweeOnderEenKapWoningEe": 2,
+   "PercentageVrijstaandeWoningEengezins": 2,
+   "WoningenMetZonnestroom": 30,
+   "Woningvoorraad": 57653
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Zuid-Holland Centraal",
+  "stedelijkheid": "Zeer sterk stedelijk",
+  "woonplaatsen": [
+   "Zoetermeer"
+  ]
+ },
+ "Zoeterwoude": {
+  "cbs": {
+   "AantalInwoners": 9732,
+   "AardgasvrijeWoningen": 12,
+   "GemiddeldAardgasverbruik": 730,
+   "GemiddeldeElektriciteitslevering": 2740,
+   "GemiddeldeElektriciteitsteruglevering": 890,
+   "GemiddeldeWOZWaardeVanWoningen": 467,
+   "Koopwoningen": 69,
+   "PercentageEengezinswoning": 69,
+   "PercentageTweeOnderEenKapWoningEe": 7,
+   "PercentageVrijstaandeWoningEengezins": 9,
+   "WoningenMetZonnestroom": 45,
+   "Woningvoorraad": 4142
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Holland Rijnland",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Gelderswoude",
+   "Zoeterwoude"
+  ]
+ },
+ "Zuidplas": {
+  "cbs": {
+   "AantalInwoners": 47843,
+   "AardgasvrijeWoningen": 9,
+   "GemiddeldAardgasverbruik": 780,
+   "GemiddeldeElektriciteitslevering": 2910,
+   "GemiddeldeElektriciteitsteruglevering": 970,
+   "GemiddeldeWOZWaardeVanWoningen": 437,
+   "Koopwoningen": 69,
+   "PercentageEengezinswoning": 79,
+   "PercentageTweeOnderEenKapWoningEe": 7,
+   "PercentageVrijstaandeWoningEengezins": 11,
+   "WoningenMetZonnestroom": 43,
+   "Woningvoorraad": 19285
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Rijnmond",
+  "stedelijkheid": "Matig stedelijk",
+  "woonplaatsen": [
+   "Moerkapelle",
+   "Moordrecht",
+   "Nieuwerkerk aan den IJssel",
+   "Zevenhuizen"
+  ]
+ },
+ "Zundert": {
+  "cbs": {
+   "AantalInwoners": 22553,
+   "AardgasvrijeWoningen": 6,
+   "GemiddeldAardgasverbruik": 1030,
+   "GemiddeldeElektriciteitslevering": 3130,
+   "GemiddeldeElektriciteitsteruglevering": 1260,
+   "GemiddeldeWOZWaardeVanWoningen": 434,
+   "Koopwoningen": 75,
+   "PercentageEengezinswoning": 87,
+   "PercentageTweeOnderEenKapWoningEe": 17,
+   "PercentageVrijstaandeWoningEengezins": 39,
+   "WoningenMetZonnestroom": 43,
+   "Woningvoorraad": 10085
+  },
+  "provincie": "Noord-Brabant",
+  "regio": "West-Brabant",
+  "stedelijkheid": "Weinig stedelijk",
+  "woonplaatsen": [
+   "Achtmaal",
+   "Klein Zundert",
+   "Rijsbergen",
+   "Wernhout",
+   "Zundert"
+  ]
+ },
+ "Zwijndrecht": {
+  "cbs": {
+   "AantalInwoners": 44874,
+   "AardgasvrijeWoningen": 2,
+   "GemiddeldAardgasverbruik": 790,
+   "GemiddeldeElektriciteitslevering": 2430,
+   "GemiddeldeElektriciteitsteruglevering": 550,
+   "GemiddeldeWOZWaardeVanWoningen": 314,
+   "Koopwoningen": 57,
+   "PercentageEengezinswoning": 60,
+   "PercentageTweeOnderEenKapWoningEe": 4,
+   "PercentageVrijstaandeWoningEengezins": 3,
+   "WoningenMetZonnestroom": 29,
+   "Woningvoorraad": 20831
+  },
+  "provincie": "Zuid-Holland",
+  "regio": "Drechtsteden",
+  "stedelijkheid": "Sterk stedelijk",
+  "woonplaatsen": [
+   "Heerjansdam",
+   "Zwijndrecht"
+  ]
+ }
+}

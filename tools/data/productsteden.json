@@ -1,0 +1,974 @@
+[
+ {
+  "product": "zonnepanelen",
+  "stad": "amsterdam",
+  "volume": 390,
+  "kd": 17
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "amsterdam",
+  "volume": 90,
+  "kd": 8
+ },
+ {
+  "product": "airco",
+  "stad": "amsterdam",
+  "volume": 720,
+  "kd": 13
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "amsterdam",
+  "volume": 320,
+  "kd": 14
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "rotterdam",
+  "volume": 480,
+  "kd": 18
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "rotterdam",
+  "volume": 50,
+  "kd": 7
+ },
+ {
+  "product": "airco",
+  "stad": "rotterdam",
+  "volume": 880,
+  "kd": 26
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "rotterdam",
+  "volume": 390,
+  "kd": 26
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "den haag",
+  "volume": 480,
+  "kd": 29
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "den haag",
+  "volume": 50,
+  "kd": 7
+ },
+ {
+  "product": "airco",
+  "stad": "den haag",
+  "volume": 590,
+  "kd": 28
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "den haag",
+  "volume": 320,
+  "kd": 16
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "utrecht",
+  "volume": 590,
+  "kd": 18
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "utrecht",
+  "volume": 70,
+  "kd": 8
+ },
+ {
+  "product": "airco",
+  "stad": "utrecht",
+  "volume": 720,
+  "kd": 20
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "utrecht",
+  "volume": 480,
+  "kd": 20
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "eindhoven",
+  "volume": 480,
+  "kd": 22
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "eindhoven",
+  "volume": 70,
+  "kd": 11
+ },
+ {
+  "product": "airco",
+  "stad": "eindhoven",
+  "volume": 720,
+  "kd": 23
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "eindhoven",
+  "volume": 260,
+  "kd": 14
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "tilburg",
+  "volume": 590,
+  "kd": 23
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "tilburg",
+  "volume": 170,
+  "kd": 15
+ },
+ {
+  "product": "airco",
+  "stad": "tilburg",
+  "volume": 590,
+  "kd": 11
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "tilburg",
+  "volume": 320,
+  "kd": 12
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "breda",
+  "volume": 880,
+  "kd": 20
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "breda",
+  "volume": 170,
+  "kd": 9
+ },
+ {
+  "product": "airco",
+  "stad": "breda",
+  "volume": 590,
+  "kd": 9
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "breda",
+  "volume": 210,
+  "kd": 11
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "haarlem",
+  "volume": 390,
+  "kd": 15
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "haarlem",
+  "volume": 50,
+  "kd": 10
+ },
+ {
+  "product": "airco",
+  "stad": "haarlem",
+  "volume": 480,
+  "kd": 15
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "haarlem",
+  "volume": 170,
+  "kd": 14
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "amersfoort",
+  "volume": 720,
+  "kd": 24
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "amersfoort",
+  "volume": 70,
+  "kd": 17
+ },
+ {
+  "product": "airco",
+  "stad": "amersfoort",
+  "volume": 590,
+  "kd": 32
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "amersfoort",
+  "volume": 390,
+  "kd": 23
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "den bosch",
+  "volume": 590,
+  "kd": 12
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "den bosch",
+  "volume": 50,
+  "kd": 3
+ },
+ {
+  "product": "airco",
+  "stad": "den bosch",
+  "volume": 590,
+  "kd": 23
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "den bosch",
+  "volume": 140,
+  "kd": 7
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "leiden",
+  "volume": 210,
+  "kd": 20
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "leiden",
+  "volume": 20,
+  "kd": 0
+ },
+ {
+  "product": "airco",
+  "stad": "leiden",
+  "volume": 590,
+  "kd": 8
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "leiden",
+  "volume": 110,
+  "kd": 7
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "zoetermeer",
+  "volume": 390,
+  "kd": 11
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "zoetermeer",
+  "volume": 30,
+  "kd": 5
+ },
+ {
+  "product": "airco",
+  "stad": "zoetermeer",
+  "volume": 590,
+  "kd": 11
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "zoetermeer",
+  "volume": 170,
+  "kd": 13
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "dordrecht",
+  "volume": 320,
+  "kd": 19
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "dordrecht",
+  "volume": 40,
+  "kd": 0
+ },
+ {
+  "product": "airco",
+  "stad": "dordrecht",
+  "volume": 480,
+  "kd": 18
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "dordrecht",
+  "volume": 140,
+  "kd": 14
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "alphen aan den rijn",
+  "volume": 140,
+  "kd": 17
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "alphen aan den rijn",
+  "volume": 40,
+  "kd": 0
+ },
+ {
+  "product": "airco",
+  "stad": "alphen aan den rijn",
+  "volume": 390,
+  "kd": 14
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "alphen aan den rijn",
+  "volume": 50,
+  "kd": 7
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "alkmaar",
+  "volume": 170,
+  "kd": 13
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "alkmaar",
+  "volume": 30,
+  "kd": 0
+ },
+ {
+  "product": "airco",
+  "stad": "alkmaar",
+  "volume": 390,
+  "kd": 13
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "alkmaar",
+  "volume": 50,
+  "kd": 6
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "delft",
+  "volume": 90,
+  "kd": 17
+ },
+ {
+  "product": "airco",
+  "stad": "delft",
+  "volume": 260,
+  "kd": 13
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "delft",
+  "volume": 70,
+  "kd": 14
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "helmond",
+  "volume": 170,
+  "kd": 14
+ },
+ {
+  "product": "airco",
+  "stad": "helmond",
+  "volume": 320,
+  "kd": 25
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "helmond",
+  "volume": 110,
+  "kd": 11
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "purmerend",
+  "volume": 70,
+  "kd": 23
+ },
+ {
+  "product": "airco",
+  "stad": "purmerend",
+  "volume": 260,
+  "kd": 12
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "amstelveen",
+  "volume": 110,
+  "kd": 14
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "amstelveen",
+  "volume": 40,
+  "kd": 7
+ },
+ {
+  "product": "airco",
+  "stad": "amstelveen",
+  "volume": 390,
+  "kd": 11
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "oss",
+  "volume": 170,
+  "kd": 23
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "oss",
+  "volume": 20,
+  "kd": 0
+ },
+ {
+  "product": "airco",
+  "stad": "oss",
+  "volume": 320,
+  "kd": 10
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "oss",
+  "volume": 70,
+  "kd": 8
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "hilversum",
+  "volume": 140,
+  "kd": 24
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "hilversum",
+  "volume": 40,
+  "kd": 7
+ },
+ {
+  "product": "airco",
+  "stad": "hilversum",
+  "volume": 390,
+  "kd": 22
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "hilversum",
+  "volume": 260,
+  "kd": 10
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "schiedam",
+  "volume": 260,
+  "kd": 13
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "schiedam",
+  "volume": 110,
+  "kd": 8
+ },
+ {
+  "product": "airco",
+  "stad": "schiedam",
+  "volume": 210,
+  "kd": 13
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "roosendaal",
+  "volume": 320,
+  "kd": 12
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "roosendaal",
+  "volume": 30,
+  "kd": 0
+ },
+ {
+  "product": "airco",
+  "stad": "roosendaal",
+  "volume": 480,
+  "kd": 8
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "roosendaal",
+  "volume": 110,
+  "kd": 9
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "vlaardingen",
+  "volume": 140,
+  "kd": 17
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "vlaardingen",
+  "volume": 20,
+  "kd": 0
+ },
+ {
+  "product": "airco",
+  "stad": "vlaardingen",
+  "volume": 260,
+  "kd": 13
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "gouda",
+  "volume": 110,
+  "kd": 14
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "gouda",
+  "volume": 40,
+  "kd": 7
+ },
+ {
+  "product": "airco",
+  "stad": "gouda",
+  "volume": 320,
+  "kd": 9
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "gouda",
+  "volume": 110,
+  "kd": 9
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "hoorn",
+  "volume": 70,
+  "kd": 11
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "hoorn",
+  "volume": 30,
+  "kd": 0
+ },
+ {
+  "product": "airco",
+  "stad": "hoorn",
+  "volume": 320,
+  "kd": 10
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "hoorn",
+  "volume": 50,
+  "kd": 14
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "bergen op zoom",
+  "volume": 140,
+  "kd": 10
+ },
+ {
+  "product": "airco",
+  "stad": "bergen op zoom",
+  "volume": 210,
+  "kd": 6
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "veenendaal",
+  "volume": 260,
+  "kd": 9
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "veenendaal",
+  "volume": 20,
+  "kd": 0
+ },
+ {
+  "product": "airco",
+  "stad": "veenendaal",
+  "volume": 260,
+  "kd": 20
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "veenendaal",
+  "volume": 170,
+  "kd": 9
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "capelle aan den ijssel",
+  "volume": 70,
+  "kd": 12
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "capelle aan den ijssel",
+  "volume": 20,
+  "kd": 0
+ },
+ {
+  "product": "airco",
+  "stad": "capelle aan den ijssel",
+  "volume": 140,
+  "kd": 8
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "katwijk",
+  "volume": 140,
+  "kd": 10
+ },
+ {
+  "product": "airco",
+  "stad": "katwijk",
+  "volume": 260,
+  "kd": 8
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "zeist",
+  "volume": 110,
+  "kd": 13
+ },
+ {
+  "product": "airco",
+  "stad": "zeist",
+  "volume": 210,
+  "kd": 8
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "zeist",
+  "volume": 70,
+  "kd": 11
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "nieuwegein",
+  "volume": 110,
+  "kd": 8
+ },
+ {
+  "product": "airco",
+  "stad": "nieuwegein",
+  "volume": 320,
+  "kd": 18
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "nieuwegein",
+  "volume": 70,
+  "kd": 13
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "oosterhout",
+  "volume": 260,
+  "kd": 14
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "oosterhout",
+  "volume": 50,
+  "kd": 7
+ },
+ {
+  "product": "airco",
+  "stad": "oosterhout",
+  "volume": 260,
+  "kd": 19
+ },
+ {
+  "product": "airco",
+  "stad": "den helder",
+  "volume": 70,
+  "kd": 3
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "den helder",
+  "volume": 50,
+  "kd": 5
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "terneuzen",
+  "volume": 170,
+  "kd": 13
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "terneuzen",
+  "volume": 20,
+  "kd": 0
+ },
+ {
+  "product": "airco",
+  "stad": "terneuzen",
+  "volume": 110,
+  "kd": 4
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "woerden",
+  "volume": 110,
+  "kd": 9
+ },
+ {
+  "product": "airco",
+  "stad": "woerden",
+  "volume": 210,
+  "kd": 13
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "woerden",
+  "volume": 170,
+  "kd": 10
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "houten",
+  "volume": 140,
+  "kd": 8
+ },
+ {
+  "product": "airco",
+  "stad": "houten",
+  "volume": 140,
+  "kd": 11
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "houten",
+  "volume": 50,
+  "kd": 0
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "waalwijk",
+  "volume": 390,
+  "kd": 10
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "waalwijk",
+  "volume": 50,
+  "kd": 13
+ },
+ {
+  "product": "airco",
+  "stad": "waalwijk",
+  "volume": 260,
+  "kd": 14
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "barendrecht",
+  "volume": 260,
+  "kd": 13
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "barendrecht",
+  "volume": 50,
+  "kd": 10
+ },
+ {
+  "product": "airco",
+  "stad": "barendrecht",
+  "volume": 260,
+  "kd": 25
+ },
+ {
+  "product": "airco",
+  "stad": "schagen",
+  "volume": 70,
+  "kd": 14
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "ridderkerk",
+  "volume": 140,
+  "kd": 13
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "ridderkerk",
+  "volume": 70,
+  "kd": 8
+ },
+ {
+  "product": "airco",
+  "stad": "ridderkerk",
+  "volume": 260,
+  "kd": 8
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "soest",
+  "volume": 110,
+  "kd": 9
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "soest",
+  "volume": 20,
+  "kd": 0
+ },
+ {
+  "product": "airco",
+  "stad": "soest",
+  "volume": 260,
+  "kd": 8
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "soest",
+  "volume": 140,
+  "kd": 15
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "veldhoven",
+  "volume": 110,
+  "kd": 14
+ },
+ {
+  "product": "airco",
+  "stad": "veldhoven",
+  "volume": 320,
+  "kd": 17
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "noordwijk",
+  "volume": 210,
+  "kd": 8
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "noordwijk",
+  "volume": 20,
+  "kd": 0
+ },
+ {
+  "product": "airco",
+  "stad": "noordwijk",
+  "volume": 90,
+  "kd": 6
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "noordwijk",
+  "volume": 50,
+  "kd": 7
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "vlissingen",
+  "volume": 70,
+  "kd": 10
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "vlissingen",
+  "volume": 20,
+  "kd": 0
+ },
+ {
+  "product": "airco",
+  "stad": "vlissingen",
+  "volume": 50,
+  "kd": 13
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "etten-leur",
+  "volume": 210,
+  "kd": 12
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "etten-leur",
+  "volume": 40,
+  "kd": 5
+ },
+ {
+  "product": "airco",
+  "stad": "etten-leur",
+  "volume": 50,
+  "kd": 8
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "zwijndrecht",
+  "volume": 140,
+  "kd": 12
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "zwijndrecht",
+  "volume": 30,
+  "kd": 0
+ },
+ {
+  "product": "airco",
+  "stad": "zwijndrecht",
+  "volume": 170,
+  "kd": 7
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "de bilt",
+  "volume": 20,
+  "kd": 0
+ },
+ {
+  "product": "zonnepanelen",
+  "stad": "zevenbergen",
+  "volume": 140,
+  "kd": 8
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "zevenbergen",
+  "volume": 0,
+  "kd": 0
+ },
+ {
+  "product": "airco",
+  "stad": "zevenbergen",
+  "volume": 0,
+  "kd": 0
+ },
+ {
+  "product": "warmtepomp",
+  "stad": "zevenbergen",
+  "volume": 0,
+  "kd": 0
+ }
+]

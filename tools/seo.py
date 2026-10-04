@@ -153,8 +153,9 @@ for f in sorted(glob.glob('*.html')):
           "provider": SELLER, "areaServed": {"@type": "City", "name": city}, "url": url}
         area = re.search(r'<h1[^>]*\bdata-area="([^"]*)"[^>]*\bdata-gemeente="([^"]*)"', s)
         if area:  # West-Brabant-pagina's (tools/local_pages.py): thuisbatterij voorop, plaats(en) binnen de gemeente
+            pvm = re.search(r'<h1[^>]*\bdata-provincie="([^"]*)"', s)
             gem = {"@type": "AdministrativeArea", "name": "Gemeente " + html.unescape(area.group(2)),
-                   "containedInPlace": {"@type": "AdministrativeArea", "name": "Noord-Brabant"}}
+                   "containedInPlace": {"@type": "AdministrativeArea", "name": html.unescape(pvm.group(1)) if pvm else "Noord-Brabant"}}
             places = [{"@type": "City", "name": html.unescape(a), "containedInPlace": gem} for a in area.group(1).split('|')]
             svc["serviceType"] = "Installatie van thuisbatterijen, zonnepanelen en airco's"
             svc["areaServed"] = places[0] if len(places) == 1 else places
@@ -163,6 +164,20 @@ for f in sorted(glob.glob('*.html')):
         data.append(svc)
         crumbs.append({"@type": "ListItem", "position": 2, "name": "Werkgebied", "item": SITE + "/werkgebied"})
         crumbs.append({"@type": "ListItem", "position": 3, "name": city, "item": url})
+    elif re.search(r'<h1[^>]*\bdata-dienst=', s):  # product in een stad (tools/stadspaginas.py)
+        m = re.search(r'<h1[^>]*\bdata-dienst="([^"]*)" data-plaats="([^"]*)" data-gemeente="([^"]*)" data-provincie="([^"]*)"', s)
+        dienst, plaats, gem, pv = (html.unescape(x) for x in m.groups())
+        data.append({"@context": "https://schema.org", "@type": "Service", "name": f"{dienst} in {plaats}", "serviceType": dienst,
+          "description": desc, "provider": SELLER, "url": url,
+          "areaServed": {"@type": "City", "name": plaats, "containedInPlace": {"@type": "AdministrativeArea", "name": "Gemeente " + gem,
+                         "containedInPlace": {"@type": "AdministrativeArea", "name": pv}}}})
+        pv_slug = '/werkgebied-' + re.sub(r'[^a-z0-9]+', '-', pv.lower()).strip('-')
+        crumbs.append({"@type": "ListItem", "position": 2, "name": "Werkgebied", "item": SITE + "/werkgebied"})
+        crumbs.append({"@type": "ListItem", "position": 3, "name": pv, "item": SITE + pv_slug})
+        crumbs.append({"@type": "ListItem", "position": 4, "name": f"{dienst} in {plaats}", "item": url})
+    elif slug.startswith('werkgebied-'):
+        crumbs.append({"@type": "ListItem", "position": 2, "name": "Werkgebied", "item": SITE + "/werkgebied"})
+        crumbs.append({"@type": "ListItem", "position": 3, "name": title.replace(' | Voltwijk', ''), "item": url})
     elif slug != 'index':
         crumbs.append({"@type": "ListItem", "position": 2, "name": title.replace(' — Voltwijk', '').replace(' | Voltwijk', ''), "item": url})
     if 'name="robots" content="noindex"' not in s:  # zichtbare FAQ's (uitklapvragen) als FAQPage
@@ -189,7 +204,7 @@ for f in sorted(glob.glob('*.html')):
     s, k = re.subn(r'(<link rel="canonical"[^>]*>)', lambda m: m.group(1) + block, s, count=1)
     assert k == 1, f
     open(f, 'w', encoding='utf-8').write(s)
-    pri = '1.0' if slug == 'index' else ('0.9' if slug in PRODUCT or slug in ('producten','thuisbatterij-berekenen') else ('0.8' if slug.startswith('installateur-') or slug == 'werkgebied' else ('0.3' if slug in ('privacybeleid','cookiebeleid','algemene-voorwaarden') else '0.7')))
+    pri = '1.0' if slug == 'index' else ('0.9' if slug in PRODUCT or slug in ('producten','thuisbatterij-berekenen') else ('0.8' if slug.startswith('installateur-') or slug.startswith('werkgebied') or re.match(r'(airco|zonnepanelen|thuisbatterij|warmtepomp)-', slug) else ('0.3' if slug in ('privacybeleid','cookiebeleid','algemene-voorwaarden') else '0.7')))
     if 'name="robots" content="noindex"' not in s: urls.append((url, pri))
 with open('sitemap.xml', 'w', encoding='utf-8') as fh:
     fh.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')

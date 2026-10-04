@@ -36,6 +36,13 @@ ANDERS = {
     'product-zonnepanelen.html': 'zonnepanelen', 'product-warmtepomp.html': 'een warmtepomp', 'product-airco.html': 'een airco',
     'product-laadpaal.html': 'een laadpaal', 'product-boiler.html': 'een elektrische boiler', 'product-meterkast.html': 'een nieuwe meterkast',
 }
+# Product-in-stad-pagina's (tools/stadspaginas.py), bijv. airco-breda.html: offerte voor dat product
+STAD_PROD = {'airco': 'een airco', 'zonnepanelen': 'zonnepanelen', 'warmtepomp': 'een warmtepomp'}
+STAD_RE = re.compile(r'^(airco|zonnepanelen|warmtepomp)-[a-z0-9-]+\.html$')
+def prod_van(f):
+    if f in ANDERS: return ANDERS[f]
+    m = STAD_RE.match(f)
+    return STAD_PROD[m.group(1)] if m else None
 # Artikelen en lokale pagina's over andere producten herkennen we aan de bestandsnaam
 ANDERS_RE = re.compile(r'^artikel-.*(airco|warmtepomp|laadpaal|laden|boiler|cv-ketel|cop-en-scop|isde|inductie|groepen|meterkast|zonnepanelen|omvormer)')
 BATTERIJ_RE = re.compile(r'thuisbatterij|batterij|salder|terugle|dynamisch|ems|negatieve|stroomstoring|capaciteitstarief|energiebelasting|netcongestie|vergelijking')
@@ -736,7 +743,7 @@ def build_page():
 # ---------- de rest van de site ----------
 def band(f):
     """Het blok dat op de plek van de oude calculator komt."""
-    prod = ANDERS.get(f)
+    prod = prod_van(f)
     if prod:
         extra = (f'<a href="{URL}" style="display:inline-block;margin-top:18px;font-weight:800;font-size:14px;color:var(--mint);text-decoration:none;">Ook een thuisbatterij? Bereken welke past →</a>'
                  if f == 'product-zonnepanelen.html' else '')
@@ -801,7 +808,7 @@ def remove_div(s, start):
     raise ValueError('div niet gesloten')
 
 def anders(f):
-    return f in ANDERS or (ANDERS_RE.search(f) and not BATTERIJ_RE.search(f))
+    return f in ANDERS or bool(STAD_RE.match(f)) or (ANDERS_RE.search(f) and not BATTERIJ_RE.search(f))
 
 NAV_L = ('<a href="/product-batterij" style="color:inherit;text-decoration:none;">THUISBATTERIJ</a>'
          '<a href="/product-zonnepanelen" style="color:inherit;text-decoration:none;">ZONNEPANELEN</a>'
@@ -849,14 +856,14 @@ def patch(f, s):
     s = s.replace('href="/bereken-je-prijs"', f'href="{URL}"').replace('href="https://voltwijk.nl/bereken-je-prijs"', f'href="https://voltwijk.nl{URL}"')
     s = s.replace('href="/product-batterij#batterijkeuze"', f'href="{URL}"').replace('href="/thuisbatterij-actie"', f'href="{URL}"')
     s = s.replace('href="#batterijkeuze"', f'href="{URL}"')
-    if f in ANDERS: s = s.replace('href="#calculator"', 'href="#offerte"')
+    if prod_van(f): s = s.replace('href="#calculator"', 'href="#offerte"')
     s = re.sub(r'href="/(product-[a-z]+)#calculator"', lambda m: f'href="/{m.group(1)}#offerte"' if m.group(1) + '.html' in ANDERS else f'href="{URL}"', s)
     s = s.replace('bereken: "/bereken-je-prijs"', 'bereken: "' + URL + '"')
     s = s.replace("title:'Besparingscheck', desc:'Vul je postcode en woningtype in en zie binnen een minuut een eerste inschatting van je vaste prijs en besparing — nog voordat je ergens voor kiest.', cta:{label:'Check je besparing', href: VW_URLS.bereken}",
                   "title:'Bereken of vraag aan', desc:'Bereken online in 1 minuut welke thuisbatterij bij je past, of vraag een offerte aan voor zonnepanelen, een warmtepomp of een ander product. Je zit nergens aan vast.', cta:{label:'Bekijk onze producten', href: '/producten'}")
     s = s.replace("title:'Bereken je thuisbatterij', desc:'Beantwoord zes korte vragen en zie binnen een minuut welke thuisbatterij past, wat hij kost en wat je ongeveer bespaart. Je zit nergens aan vast.', cta:{label:'Bereken je thuisbatterij', href: VW_URLS.bereken}",
                   "title:'Bereken of vraag aan', desc:'Bereken online in 1 minuut welke thuisbatterij bij je past, of vraag een offerte aan voor zonnepanelen, een warmtepomp of een ander product. Je zit nergens aan vast.', cta:{label:'Bekijk onze producten', href: '/producten'}")
-    if f not in ANDERS and f != 'index.html': s = s.replace('href="#calculator"', f'href="{URL}"')
+    if not prod_van(f) and f != 'index.html': s = s.replace('href="#calculator"', f'href="{URL}"')
     # knoppen en menu
     s = s.replace('>BEREKEN JE PRIJS<', '>THUISBATTERIJ BEREKENEN<')
     if anders(f):
