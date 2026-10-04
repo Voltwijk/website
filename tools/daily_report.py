@@ -173,7 +173,7 @@ def build(end):
 {''.join(parts)}
 <tr><td style="padding:26px 28px 28px;">
   <div style="font-size:12px;color:{C["soft"]};line-height:1.6;border-top:1px solid {C["line"]};padding-top:16px;">Google Analytics telt alleen bezoekers die cookies accepteren; het echte aantal ligt hoger. Cijfers van de laatste uren kunnen de volgende dag nog iets aanvullen.<br>
-  <a href="https://analytics.google.com/analytics/web/#/p{PROP}/reports/intelligenthome" style="color:{C["primary"]};font-weight:700;">Open Google Analytics</a> · <a href="https://app.netlify.com/projects/tubular-lily-f28975/forms" style="color:{C["primary"]};font-weight:700;">Open formulieren</a> · <a href="https://voltwijk.nl" style="color:{C["primary"]};font-weight:700;">voltwijk.nl</a></div>
+  <a href="https://analytics.google.com/analytics/web/#/p{PROP}/reports/intelligenthome" style="color:{C["primary"]};font-weight:700;">Open Google Analytics</a> · <a href="https://app.netlify.com/projects/voltwijk-website/forms" style="color:{C["primary"]};font-weight:700;">Open formulieren</a> · <a href="https://voltwijk.nl" style="color:{C["primary"]};font-weight:700;">voltwijk.nl</a></div>
 </td></tr></table>
 <div style="font-size:11px;color:{C["soft"]};margin-top:12px;">Voltwijk B.V. · Schoenmakerij 15a, 4762 AS Zevenbergen</div>
 </td></tr></table></body></html>'''
