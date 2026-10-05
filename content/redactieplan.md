@@ -32,7 +32,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [vervallen (2026-10-04): al gedekt door artikel-warmtepomp-geluid en artikel-warmtepomp-buitenunit-plaatsen-regels] Warmtepomp en geluid: regels en tips voor buren | warmtepomp geluid buren | warmtepomp | vult aan op buitenunit-artikel
 - [klaar (2026-10-01, artikel-p1-poort-slimme-meter)] Slimme meter en P1-poort: zo haal je meer uit je zonnepanelen | p1 poort slimme meter | zonnepanelen | praktisch, veel gezocht
 - [klaar (2026-10-04, artikel-groepenkast-vervangen-kosten)] Groepenkast vervangen: wat kost het in 2026 | groepenkast vervangen kosten | meterkast | koopintentie
-- [open] Laadpaal en dynamisch energiecontract: laden op de goedkoopste uren | laadpaal dynamisch contract | laadpaal | combineert trends
+- [klaar (2026-10-05, artikel-laadpaal-dynamisch-contract)] Laadpaal en dynamisch energiecontract: laden op de goedkoopste uren | laadpaal dynamisch contract | laadpaal | combineert trends
 - [open] Zonnepanelen verzekeren: opstal of inboedel? | zonnepanelen verzekering | zonnepanelen | veelgestelde vraag
 - [open] Split airco: wat is het en hoe werkt het | split airco (6.600/mnd) | airco | Semrush okt 2026, nog geen eigen artikel
 - [open] Slimme thuisbatterij: wat maakt een batterij slim | slimme thuisbatterij (1.300/mnd) | batterij | Semrush okt 2026, sluit aan op EMS-artikel
@@ -58,3 +58,5 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Gasverbruik in de zomer: zo zie je wat je aan warm water kwijt bent | gasverbruik warm water | boiler | rekenvraag, sluit aan op boiler- en warmtepompartikelen
 - [open] Zegelrecht en de meterkast: wie mag wat aan je aansluiting doen? | zegelrecht meterkast | meterkast | praktische vraag, weinig consumentenuitleg
 - [open] Meetrapport elektrische installatie: wat staat erin en wanneer heb je het nodig? | meetrapport elektra | meterkast | verzekering/verkoop woning, weinig concurrentie
+- [open] Kwartierprijzen: wat veranderde er sinds oktober 2025 voor dynamische contracten? | kwartierprijzen dynamisch contract | batterij | uitlegvraag, sluit aan op batterij- en laadpaalartikelen
+- [open] OCPP-laadpaal: waarom een open standaard belangrijk is | ocpp laadpaal | laadpaal | koopintentie, weinig consumentenuitleg
