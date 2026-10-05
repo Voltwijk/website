@@ -6,7 +6,15 @@
 # Daarna: python3 tools/seo.py
 import os, re, sys, html
 ROOT = os.path.join(os.path.dirname(__file__), '..'); os.chdir(ROOT)
-MODE = (sys.argv[1] if len(sys.argv) > 1 else 'aan').lower()
+# De stand van de actie wordt bewaard in tools/data/energiescan.json, zodat publish.sh hem bij elke bouw herhaalt.
+import json
+STAND = os.path.join('tools', 'data', 'energiescan.json')
+if len(sys.argv) > 1:
+    MODE = sys.argv[1].lower(); assert MODE in ('aan', 'vol', 'uit'), 'gebruik: aan, vol of uit'
+    json.dump({'modus': MODE}, open(STAND, 'w'), indent=2)
+else:
+    MODE = json.load(open(STAND)).get('modus', 'aan') if os.path.exists(STAND) else 'aan'
+EINDE = '2026-11-01T00:00:00+01:00'  # daarna verbergt de banner zichzelf, ook zonder nieuwe bouw
 SHELL = 'artikel-isde-subsidie-2026.html'
 MAX = 60
 # Geen Cal.com meer: aanmelden gaat via het formulier (komt in het CRM), of via de knop "Kies direct je moment" (tools/booking.py, data-book="scan") als CAL = True.
@@ -211,6 +219,35 @@ BAND = '''<!-- scan:start --><a href="/energiescan" class="vw-scanband" style="d
       <span style="flex:1;min-width:220px;"><span style="display:block;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--mint);">Gemeente Moerdijk · 26 t/m 31 oktober</span><span style="display:block;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:700;font-size:18px;line-height:1.25;margin-top:3px;color:#fff;">Gratis Energiescanweek: we komen gratis langs voor eerlijk advies</span></span>
       <span style="flex:none;background:var(--mint);color:var(--dark);font-weight:800;font-size:14px;padding:12px 18px;border-radius:999px;white-space:nowrap;">Meld je aan →</span></a><!-- scan:end -->'''
 
+def band(plaats=''):
+    """Banner; op plaatspagina's met de naam van de kern. Verbergt zichzelf na de actieweek."""
+    b = BAND
+    if plaats:
+        b = b.replace('Gemeente Moerdijk · 26 t/m 31 oktober', f'Woon je in {esc(plaats)}? · 26 t/m 31 oktober')
+        b = b.replace('href="/energiescan"', f'href="/energiescan?utm_source=website&amp;utm_medium=banner&amp;utm_campaign=energiescan-moerdijk&amp;utm_content={esc(plaats.lower())}"', 1)
+    return b.replace('<!-- scan:end -->', f'<script>if(Date.now()>Date.parse("{EINDE}"))document.currentScript.previousElementSibling.remove()</script><!-- scan:end -->')
+
+def plaatspaginas():
+    """Banner op alle pagina's over de gemeente Moerdijk en haar kernen (h1 met data-gemeente="Moerdijk"), boven de knoppen in de hero."""
+    n = 0
+    for fn in sorted(os.listdir('.')):
+        if not fn.endswith('.html') or fn == 'index.html': continue  # de homepage regelt main() zelf
+        s = open(fn, encoding='utf-8').read()
+        m = re.search(r'<h1[^>]*data-gemeente="Moerdijk"[^>]*>', s)
+        heeft = '<!-- scan:start -->' in s
+        if not m and not heeft: continue
+        s = re.sub(r'\s*<!-- scan:start -->.*?<!-- scan:end -->', '', s, flags=re.S)
+        if m and MODE == 'aan':  # bij 'vol' alleen nog op de homepage, die dan meldt dat het vol is
+            p = re.search(r'data-(?:plaats|area)="([^"]+)"', m.group(0))
+            plaats = p.group(1) if p else 'de gemeente Moerdijk'
+            if plaats == 'Moerdijk' and 'data-area' in m.group(0): plaats = 'de gemeente Moerdijk'
+            knop = s.find('<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:24px;">', m.end())
+            assert knop > 0, fn
+            s = s[:knop] + band(plaats).replace('margin-top:28px', 'margin-top:22px') + '\n        ' + s[knop:]
+            n += 1
+        open(fn, 'w', encoding='utf-8').write(s)
+    return n
+
 def main():
     shell = open(SHELL, encoding='utf-8').read()
     open('energiescan.html', 'w', encoding='utf-8').write(page(shell, main_html(), 'energiescan',
@@ -223,8 +260,8 @@ def main():
     if MODE != 'uit':
         anchor = 'dan hoor je dat altijd voordat we beginnen.</p>'  # einde van de intro op de homepage
         assert s.count(anchor) == 1
-        s = s.replace(anchor, anchor + '\n    ' + BAND, 1)
+        s = s.replace(anchor, anchor + '\n    ' + band(), 1)
     open('index.html', 'w', encoding='utf-8').write(s)
-    print('energiescan:', MODE)
+    print('energiescan:', MODE, '· banner op', plaatspaginas(), 'plaatspagina\'s')
 
 main()
