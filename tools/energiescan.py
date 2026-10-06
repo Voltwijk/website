@@ -25,7 +25,7 @@ KERNEN = ['Zevenbergen', 'Klundert', 'Fijnaart', 'Willemstad', 'Moerdijk', 'Zeve
           'Noordhoek', 'Langeweg', 'Heijningen', 'Helwijk', 'Oudemolen']
 esc = lambda s: html.escape(s, quote=True)
 
-ICONS = {'Meterkast-check': '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h2M14 11h2M8 15h2M14 15h2"/></svg>', 'Verwarmen op je eigen zonnestroom': '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 14.76V5a2 2 0 0 0-4 0v9.76a4 4 0 1 0 4 0z"/><path d="M12 9v7"/><path d="M19 3v2M19 9v2M17 7h-1M22 7h-1"/></svg>', 'Salderen stopt in 2027': '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>', 'Persoonlijk adviesrapport': '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>'}
+ICONS = {'Meterkast-check': '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h2M14 11h2M8 15h2M14 15h2"/></svg>', 'Verwarmen met airco’s': '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 14.76V5a2 2 0 0 0-4 0v9.76a4 4 0 1 0 4 0z"/><path d="M12 9v7"/><path d="M19 3v2M19 9v2M17 7h-1M22 7h-1"/></svg>', 'Zonnepanelen en thuisbatterij': '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>', 'Persoonlijk adviesrapport': '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>'}
 CSS = '''<style>
 .es-hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:48px;align-items:center;}
 .es-hero .img{border-radius:22px;overflow:hidden;aspect-ratio:4/5;background:var(--bg);}
@@ -104,7 +104,7 @@ FAQ = [
  ('Is het echt helemaal gratis?', 'Ja. Het bezoek en het adviesrapport kosten je niets en je zit nergens aan vast. Wil je daarna iets laten installeren, dan krijg je daar een aparte offerte voor. Of je die aanneemt, bepaal je zelf.'),
  ('Gaan jullie me iets verkopen?', 'Nee. Tijdens het bezoek geven we advies, geen verkooppraatje. Vaak is het eerlijke antwoord ook dat iets (nog) niet loont. Dat zeggen we dan gewoon.'),
  ('Wie komt er langs?', 'Een adviseur of monteur uit ons eigen team. Geen callcenter of tussenpersoon.'),
- ('Hoe lang duurt het bezoek?', 'Reken op ongeveer 45 minuten. We kijken welke kamers je met airco’s op je eigen stroom kunt verwarmen, naar je meterkast en je energieverbruik, en beantwoorden je vragen.'),
+ ('Hoe lang duurt het bezoek?', 'Reken op ongeveer 45 minuten. We bespreken zonnepanelen, een thuisbatterij en verwarmen met airco’s, kijken naar je meterkast en je energieverbruik, en beantwoorden je vragen.'),
  ('Wat heb ik na afloop?', 'Binnen een paar werkdagen ontvang je per mail een kort persoonlijk adviesrapport: wat bij jouw huis past, wat het ongeveer kost en wat het oplevert. En wat je beter (nog) niet kunt doen.'),
  ('Ik woon niet in de gemeente Moerdijk. Kan ik ook meedoen?', 'Deze week is alleen voor inwoners van de gemeente Moerdijk. Woon je ergens anders, dan kun je altijd een gratis adviesgesprek plannen of ons een appje sturen voor advies.'),
  ('Kan het ook \'s avonds of op zaterdag?', 'Ja. We komen overdag, in de avond en op zaterdag. Als we je bellen, spreken we een moment af dat jou uitkomt.'),
@@ -134,9 +134,9 @@ def form_html():
 
 def main_html():
     get = ''.join(f'<div class="card"><div class="ic">{ICONS[h]}</div><h3>{esc(h)}</h3><p>{esc(t)}</p></div>' for h, t in [
-        ('Verwarmen op je eigen zonnestroom', 'Je panelen wekken veel meer op dan je in de zomer gebruikt. Met airco’s verwarm je je huis met je eigen stroom in plaats van gas, en in de zomer koel je ermee. We kijken welke kamers dat kunnen.'),
+        ('Verwarmen met airco’s', 'Verwarm je huis elektrisch in plaats van met gas, en koel ermee in de zomer. Met zonnepanelen doe je dat op je eigen stroom. We kijken welke kamers dat kunnen.'),
+        ('Zonnepanelen en thuisbatterij', 'Nog geen panelen? We laten zien wat ze voor jou opleveren. Heb je ze al? Dan kijken we wat het einde van salderen in 2027 betekent en of een thuisbatterij slim is.'),
         ('Meterkast-check', 'Kan je meterkast airco’s, een thuisbatterij of een laadpaal aan? Of moeten er eerst groepen bij?'),
-        ('Salderen stopt in 2027', 'Wat betekent het einde van de salderingsregeling voor jouw huishouden, en is een thuisbatterij dan slim?'),
         ('Persoonlijk adviesrapport', 'Na het bezoek krijg je per mail een kort rapport: wat past bij jouw huis, wat het kost en wat het oplevert.')])
     faq = ''.join(f'<details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>' for q, a in FAQ)
     chips = ''.join(f'<span>{esc(k)}</span>' for k in KERNEN)
@@ -148,7 +148,7 @@ def main_html():
       <div class="in">
         <div class="pill">Gemeente Moerdijk · {esc(DATES)}</div>
         <h1 class="vw-heading" style="font-size:clamp(32px,4.8vw,52px);margin-top:14px;line-height:1.05;hyphens:manual;-webkit-hyphens:manual;">Gratis Energie&shy;scan&shy;week Moerdijk</h1>
-        <p class="l">Wil je je huis verwarmen met airco’s op je eigen zonnestroom in plaats van gas? Twijfel je over een thuisbatterij, of wat het einde van het salderen in 2027 voor jou betekent? We komen gratis bij je langs voor eerlijk advies. Zonder verkooppraatje en zonder verplichtingen.</p>
+        <p class="l">We komen gratis bij je langs voor eerlijk advies over thuisbatterijen, zonnepanelen en verwarmen met airco’s op je eigen stroom in plaats van gas. Ook als je nog geen panelen hebt. Zonder verkooppraatje en zonder verplichtingen.</p>
         <div class="es-date">📅 <span>Ma 26 t/m za 31 oktober · <b>ook 's avonds en op zaterdag</b></span></div>
         <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:22px;"><a href="#aanmelden" {'data-book="scan" ' if CAL and MODE != 'vol' else ''}class="btn-primary" style="text-decoration:none;background:var(--mint);color:var(--dark);">{'Bekijk de status' if MODE == 'vol' else ('Kies direct je moment' if CAL else 'Meld je gratis aan')} →</a></div>
         <p class="small">Maximaal {MAX} huishoudens · vol = vol</p>
@@ -252,7 +252,7 @@ def main():
     shell = open(SHELL, encoding='utf-8').read()
     open('energiescan.html', 'w', encoding='utf-8').write(page(shell, main_html(), 'energiescan',
         'Gratis Energiescanweek Moerdijk (26–31 okt 2026) | Voltwijk',
-        'Van 26 t/m 31 oktober 2026 komen we gratis bij je langs in de gemeente Moerdijk: verwarmen met airco’s op eigen zonnestroom, meterkast en salderen 2027, met persoonlijk adviesrapport. Maximaal 60 huishoudens.'))
+        'Van 26 t/m 31 oktober 2026 komen we gratis bij je langs in de gemeente Moerdijk: advies over thuisbatterijen, zonnepanelen en verwarmen met airco’s, met persoonlijk adviesrapport. Maximaal 60 huishoudens.'))
     open('energiescan-bedankt.html', 'w', encoding='utf-8').write(page(shell, thanks_html(), 'energiescan-bedankt',
         'Aanmelding ontvangen | Voltwijk', 'Je aanmelding voor de Gratis Energiescanweek Moerdijk is ontvangen.', noindex=True))
     s = open('index.html', encoding='utf-8').read()
