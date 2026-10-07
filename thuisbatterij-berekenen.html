@@ -427,6 +427,8 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
 .tb-vriend .k button{border:0;cursor:pointer;border-radius:999px;padding:11px 16px;font:800 14px 'Nunito Sans','Nunito Fallback',system-ui,sans-serif;}
 .tb-vriend .k .a{background:#6FD6C8;color:#10201F;} .tb-vriend .k .b{background:rgba(255,255,255,.12);color:#fff;border:1.5px solid rgba(255,255,255,.4);}
 .tb-sizes s.was,.tb-sum s.was{color:var(--ink-faint);text-decoration-color:#FF6B5B;font-weight:600;margin-right:2px;}
+.tb-alt{display:block;width:100%;margin-top:10px;background:none;border:0;padding:8px;color:var(--ink-soft,#3d4f4c);font:700 14.5px 'Nunito Sans','Nunito Fallback',sans-serif;text-decoration:underline;cursor:pointer;}
+.tb-form select{width:100%;border:1.5px solid var(--border);border-radius:12px;padding:12px;font:600 15px 'Nunito Sans','Nunito Fallback',sans-serif;background:#fff;}
 .tb-code{margin-top:12px;} .tb-code .o{background:none;border:0;padding:0;color:#0F6E6B;font:700 14px 'Nunito Sans','Nunito Fallback',sans-serif;text-decoration:underline;cursor:pointer;}
 .tb-code .f{display:flex;gap:8px;} .tb-code .f[hidden]{display:none;} .tb-code input{flex:1;min-width:0;border:1.5px solid var(--border);border-radius:12px;padding:11px 12px;font:700 15px 'Nunito Sans','Nunito Fallback',sans-serif;text-transform:uppercase;}
 .tb-code .f button{border:0;border-radius:12px;padding:0 16px;background:#10201F;color:#fff;font:800 14px 'Nunito Sans','Nunito Fallback',sans-serif;cursor:pointer;} .tb-code small{display:block;color:#C2412D;font-size:13px;margin-top:6px;}
@@ -558,10 +560,9 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
       (label ? '<div class="tb-go"><button type="button" class="tb-btn" id="' + id + '"' + (disabled ? ' disabled' : '') + '>' + label + '</button>' + (note ? '<small>' + note + '</small>' : '') + '</div>' : '') + '</div>'; }
 
   function vriendBanner(){ if(!VR || document.querySelector('.tb-vriend')) return; var wrap = stepsEl.closest('.tb-wrap'), bn = document.createElement('div'); bn.className = 'tb-vriend';
-    bn.innerHTML = '<div><b>Vriendenkorting' + (VR.naam ? ' via ' + esc(VR.naam) : '') + ': €&nbsp;' + KORT + ' korting op je thuisbatterij</b><small>Dezelfde batterij, installatie en garantie. De korting zit al in je prijs.</small></div>' +
-      '<div class="k"><button type="button" class="a" data-book="huis">Plan direct in</button><button type="button" class="b" id="tbVrOf">Vraag vrijblijvend offerte aan</button></div>';
+    bn.innerHTML = '<div><b>Vriendenkorting' + (VR.naam ? ' via ' + esc(VR.naam) : '') + ': €&nbsp;' + KORT + ' korting op je thuisbatterij</b><small>Dezelfde batterij, installatie en garantie. Bereken hieronder welke batterij past; de korting zit al in je prijs.</small></div>' +
+      '';
     var band = wrap && wrap.querySelector('.tb-band'); if(band) band.insertBefore(bn, band.firstChild); else if(wrap) wrap.parentNode.insertBefore(bn, wrap);
-    var vb = document.getElementById('tbVrOf'); if(vb) vb.onclick = function(){ track('vriend_offerte', {code: VR.code}); var m = document.getElementById('calculator'); if(m) m.scrollIntoView({behavior:'smooth'}); var i = main.querySelector('input'); if(i) setTimeout(function(){ try{ i.focus(); }catch(e){} }, 400); };
   }
   if(VR){ vriendBanner(); track('vriend_bezoek', {code: VR.code}); }
   function render(scroll){
@@ -638,7 +639,8 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
     main.querySelectorAll('[data-dyn]').forEach(function(el){ el.onclick = function(){ st.dyn = !dynAan(); render(false); track('calc_dynamisch', {aan: st.dyn}); }; });
     ['tbPc','tbHn'].forEach(function(id){ var x = document.getElementById(id); if(x) x.onkeydown = function(ev){ if(ev.key === 'Enter') adres(); }; });
     var sg = document.getElementById('tbSysGo'); if(sg) sg.onclick = function(){ go('aanbod'); };
-    var og = document.querySelectorAll('[data-offerte]'); og.forEach(function(x){ x.onclick = function(){ track('offerte_klik', {batterij: st.keuze}); go('gegevens'); }; });
+    var og = document.querySelectorAll('[data-offerte]'); og.forEach(function(x){ x.onclick = function(){ st.modus = 'offerte'; track('offerte_klik', {batterij: st.keuze}); go('gegevens'); }; });
+    var ig = document.querySelectorAll('[data-install]'); ig.forEach(function(x){ x.onclick = function(){ st.modus = 'installatie'; track('installatie_klik', {batterij: st.keuze, value: prijs(PK[st.keuze])}); go('gegevens'); }; });
     var co = document.getElementById('tbCodeOpen'); if(co) co.onclick = function(){ co.hidden = true; document.getElementById('tbCodeBox').hidden = false; document.getElementById('tbCode').focus(); };
     var cg = document.getElementById('tbCodeGo'); if(cg){ var cf = function(){ var v = document.getElementById('tbCode').value; if(zetCode(v)) render(false); else document.getElementById('tbCodeMsg').textContent = 'Deze code kennen we niet. Controleer hem, of bel ons op 085 333 56 87.'; };
       cg.onclick = cf; document.getElementById('tbCode').onkeydown = function(e){ if(e.key === 'Enter'){ e.preventDefault(); cf(); } }; }
@@ -813,23 +815,29 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
       (VR ? '' : '<div class="tb-code"><button type="button" class="o" id="tbCodeOpen">Heb je een kortingscode?</button><div class="f" id="tbCodeBox" hidden><input id="tbCode" placeholder="Bijv. AJAY450" autocapitalize="characters" autocomplete="off" aria-label="Kortingscode"><button type="button" id="tbCodeGo">Toepassen</button></div><small id="tbCodeMsg"></small></div>') +
       '<div class="i">' + eur(prijs(p) * 1.21) + ' incl. btw. Met een dynamisch contract kun je de btw soms terugvragen. Is er meerwerk nodig, dan hoor je dat altijd vooraf.</div></div>' +
       '<div class="tb-urg"><span class="g">Installatie al vanaf <b data-vw-first></b></span>' + (d27 ? '<span>Salderen stopt over ' + d27 + ' dagen</span>' : '') + '</div>' +
-      '<button type="button" class="tb-btn full" data-offerte>Vraag vrijblijvend jouw offerte aan →</button>' +
+      '<button type="button" class="tb-btn full" data-install>Vraag je installatie aan voor ' + eur(prijs(p)) + ' →</button>' +
+      '<button type="button" class="tb-alt" data-offerte>Liever eerst een vrijblijvende offerte</button>' +
       '<div class="tb-risk"><span>Je betaalt nu niets</span><span>Gratis technische check</span><span>Eigen monteurs</span></div>' +
       '<div class="tb-proof"><span><i>★★★★★</i> 4,7 / 5 op Google</span><span>12.500+ installaties</span><span>2 jaar installatiegarantie</span></div>' +
       '<details class="tb-inc"><summary>Wat zit er in de prijs?</summary>' + ck(INC) + '</details>' +
-      '</div></div>' + bar('Vraag offerte aan →', 'tbOfGo');
+      '</div></div>' + bar('Installatie aanvragen →', 'tbInGo');
   }
+  function dagen(){ var D = ['zo','ma','di','wo','do','vr','za'], M = ['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'], d = new Date(), out = [];
+    d.setDate(d.getDate() + 6); while(out.length < 15){ if(d.getDay() % 6) out.push(D[d.getDay()] + ' ' + d.getDate() + ' ' + M[d.getMonth()]); d.setDate(d.getDate() + 1); } return out; }
   function gegevens(){
-    var p = PK[st.keuze];
-    return head('Bijna klaar. Waar mogen we je offerte naartoe sturen?', 'We bellen je om je situatie kort te checken. Daarna krijg je je offerte met vaste prijs. Je zit nergens aan vast.') +
+    var p = PK[st.keuze], ins = st.modus === 'installatie';
+    return (ins ? head('Vraag je installatie aan', 'Kies wanneer je de batterij wilt laten plaatsen. We checken je meterkast en bevestigen je datum en prijs. Je betaalt nu niets.')
+      : head('Bijna klaar. Waar mogen we je offerte naartoe sturen?', 'We bellen je om je situatie kort te checken. Daarna krijg je je offerte met vaste prijs. Je zit nergens aan vast.')) +
       '<div class="tb-form"><form id="tbForm" name="thuisbatterij-advies" novalidate>' +
       '<p hidden><label>Niet invullen <input name="bot-field"></label></p>' +
       '<div class="tb-field"><label for="tbNaam">Voor- en achternaam</label><input id="tbNaam" name="naam" autocomplete="name" required></div>' +
       '<div class="tb-field"><label for="tbTel">Telefoonnummer</label><input id="tbTel" name="telefoon" type="tel" autocomplete="tel" inputmode="tel" required></div>' +
       '<div class="tb-field"><label for="tbMail">E-mailadres</label><input id="tbMail" name="email" type="email" autocomplete="email" required></div>' +
       (st.panelen !== 'ja' ? '<label class="chk"><input type="checkbox" id="tbZp"' + (st.panelen === 'straks' ? ' checked' : '') + '> Neem ook zonnepanelen mee in mijn offerte</label>' : '') +
+      (ins ? '<div class="tb-field"><label for="tbDag">Gewenste installatiedatum</label><select id="tbDag" name="voorkeursdatum">' + dagen().map(function(d, i){ return '<option>' + (i ? d : 'Zo snel mogelijk (vanaf ' + d + ')') + '</option>'; }).join('') + '</select></div>' +
+        '<label class="chk"><input type="checkbox" id="tbAkk"> Ik vraag de installatie aan voor ' + eur(prijs(p)) + ' excl. btw (' + eur(prijs(p) * 1.21) + ' incl. btw). De opdracht is pas definitief na de check van mijn meterkast en jullie orderbevestiging.</label>' : '') +
       '<div id="tbFormErr" class="tb-err" hidden></div>' +
-      '<button type="submit" class="tb-btn full">Verstuur mijn aanvraag →</button>' +
+      '<button type="submit" class="tb-btn full">' + (ins ? 'Vraag mijn installatie aan →' : 'Verstuur mijn aanvraag →') + '</button>' +
       '<p class="tb-small" style="text-align:center;">Gratis en vrijblijvend. We gebruiken je gegevens alleen voor deze aanvraag. Zie ons <a href="/privacybeleid" style="color:inherit;">privacybeleid</a>.</p></form>' +
       '<div class="tb-sum"><div class="r"><img src="' + p.foto[0][0] + '" alt=""><div><b>Thuisbatterij ' + p.kwh + ' kWh · ' + p.fase + '</b><div class="pp">' + was(p) + eur(prijs(p)) + ' <small style="font:600 13px Nunito Sans,sans-serif;color:var(--ink-faint);">excl. btw</small></div></div></div>' +
       ck(['Vaste prijs, inclusief installatie', 'Installatie al vanaf ' + (window.vwFirstDate || 'binnen enkele weken'), 'Je betaalt nu niets', '4,7 / 5 op Google, 12.500+ installaties']) + '</div></div>' + bar();
@@ -837,9 +845,12 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
   function verstuur(e){
     e.preventDefault(); var f = e.target, er = document.getElementById('tbFormErr'), v = function(n){ return (f.elements[n].value || '').trim(); };
     var fout = !v('naam') ? 'Vul je naam in.' : !/^[+0-9 ()-]{10,}$/.test(v('telefoon')) ? 'Vul een geldig telefoonnummer in.' : !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v('email')) ? 'Vul een geldig e-mailadres in.' : '';
+    var ins = st.modus === 'installatie', akk = document.getElementById('tbAkk');
+    if(!fout && ins && akk && !akk.checked) fout = 'Vink aan dat je de installatie aanvraagt voor deze prijs.';
     if(fout){ er.textContent = fout; er.hidden = false; return; }
     var p = PK[st.keuze], r = reken(st.keuze), zp = document.getElementById('tbZp'), btn = f.querySelector('button[type=submit]'), t = utm();
     var velden = {'form-name':'thuisbatterij-advies', 'bot-field':v('bot-field'), naam:v('naam'), telefoon:v('telefoon'), email:v('email'),
+      aanvraag:ins ? 'INSTALLATIE AANGEVRAAGD tegen de getoonde prijs (definitief na meterkastcheck en orderbevestiging)' : 'vrijblijvende offerte', voorkeursdatum:ins ? v('voorkeursdatum') : '',
       product:'thuisbatterij' + (zp && zp.checked ? ', zonnepanelen' : ''),
       postcode:st.postcode, huisnummer:st.huisnummer, advies:'Thuisbatterij ' + p.kwh + ' kWh + ' + p.kw + ' kW omvormer (' + p.fase + ')' + (st.keuze !== advies() ? ' (zelf gekozen; advies was ' + PK[advies()].kwh + ' kWh ' + PK[advies()].fase + ')' : ''), prijs:eur(prijs(p)) + ' excl. btw' + (VR ? ' (vriendenkorting € ' + KORT + ' via code ' + VR.code + (VR.naam ? ', ' + VR.naam : '') + ')' : ''),
       zonnepanelen:st.panelen === 'ja' ? 'ja, ca. ' + st.aantal + ' panelen' : st.panelen === 'straks' ? 'nog niet, wil ze erbij' : 'nee',
@@ -853,10 +864,10 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
     var txt = btn.innerHTML; btn.disabled = true; btn.innerHTML = 'Versturen…'; er.hidden = true;
     fetch('/', {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:bd}).then(function(res){
       if(!res.ok) throw new Error(res.status);
-      track('aanvraag_batterij', {value:prijs(p), currency:'EUR', batterij:st.keuze, vriend:VR ? VR.code : ''});
+      track(ins ? 'installatie_aanvraag' : 'aanvraag_batterij', {value:prijs(p), currency:'EUR', batterij:st.keuze, vriend:VR ? VR.code : ''});
       st.naam = v('naam'); st.email = v('email'); st.tel = v('telefoon'); hist = []; cur = 'klaar'; render(true);
       /* keuzeblok voor het gesprek (tools/booking.py): één tik stuurt de voorkeur naar het CRM */
-      setTimeout(function(){ var el = document.getElementById('tbPlan'); if(el && window.vwVoorkeur) vwVoorkeur(el, {naam: st.naam, email: st.email, telefoon: st.tel, postcode: st.postcode, huisnummer: st.huisnummer}); }, 30);
+      if(!ins) setTimeout(function(){ var el = document.getElementById('tbPlan'); if(el && window.vwVoorkeur) vwVoorkeur(el, {naam: st.naam, email: st.email, telefoon: st.tel, postcode: st.postcode, huisnummer: st.huisnummer}); }, 30);
     }).catch(function(){
       btn.disabled = false; btn.innerHTML = txt; er.hidden = false;
       er.innerHTML = 'Versturen lukte niet. Bel ons op <a href="tel:+31853335687" style="color:inherit;">085 333 56 87</a> of app via <a href="https://wa.me/31853335687" style="color:inherit;">WhatsApp</a>.';
@@ -864,6 +875,13 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
   }
   function klaar(){
     var p = PK[st.keuze], vn = esc((st.naam || '').split(' ')[0]);
+    if(st.modus === 'installatie') return '<div class="tb-ok"><div class="big">' + IC.kal.replace('width="22" height="22"', 'width="32" height="32"') + '</div><h1 class="tb-h">Bedankt' + (vn ? ', ' + vn : '') + '! Je installatieaanvraag is binnen.</h1>' +
+      '<p>Je thuisbatterij van ' + p.kwh + ' kWh (' + p.fase + ') voor ' + eur(prijs(p)) + ' excl. btw staat voor je klaar. We bellen je zo snel mogelijk om je datum te bevestigen.</p>' +
+      '<a class="tb-btn" style="display:inline-flex;margin-top:16px;text-decoration:none;" href="https://wa.me/31853335687?text=' + encodeURIComponent('Hoi Voltwijk, hier de foto van mijn meterkast voor mijn installatieaanvraag (' + (st.naam || '') + ', ' + st.postcode + ' ' + st.huisnummer + ').') + '" target="_blank" rel="noopener">Stuur een foto van je meterkast via WhatsApp →</a>' +
+      '<div class="tb-next"><div><i>01</i><b>Meterkastcheck</b><span>Stuur een foto van je meterkast. Dan weten we zeker dat alles past.</span></div>' +
+      '<div><i>02</i><b>Bevestiging</b><span>Je krijgt je orderbevestiging met de vaste prijs en je installatiedatum.</span></div>' +
+      '<div><i>03</i><b>Installatie door eigen monteurs</b><span>Op de afgesproken dag, in één keer klaar.</span></div></div>' +
+      '<p class="tb-small" style="margin-top:18px;">Vragen? Bel <a href="tel:+31853335687" style="color:inherit;font-weight:800;">085 333 56 87</a>.</p></div>';
     return '<div class="tb-ok"><div class="big">' + IC.kal.replace('width="22" height="22"', 'width="32" height="32"') + '</div><h1 class="tb-h">Bedankt' + (vn ? ', ' + vn : '') + '! Je aanvraag is binnen.</h1>' +
       '<p>Je thuisbatterij van ' + p.kwh + ' kWh staat genoteerd. Binnen een minuut krijg je een mail van ons met de volgende stappen.</p>' +
       '<div class="tb-plan" id="tbPlan"></div>' +
@@ -877,13 +895,13 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
     if(s0 && s0.postcode){ st.postcode = s0.postcode; st.huisnummer = s0.huisnummer; sessionStorage.removeItem('vwCalcStart'); hist = ['adres']; cur = 'woning'; started = true; track('calc_stap', {stap: 'woning'}); } }catch(e){} }
   render(false);
   /* knop onderaan het aanbod (mobiel) wijst ook naar de offerte */
-  document.addEventListener('click', function(ev){ var t = ev.target.closest && ev.target.closest('#tbOfGo'); if(t){ track('offerte_klik', {batterij: st.keuze}); go('gegevens'); } });
+  document.addEventListener('click', function(ev){ var t = ev.target.closest && ev.target.closest('#tbInGo'); if(t){ st.modus = 'installatie'; track('installatie_klik', {batterij: st.keuze, value: prijs(PK[st.keuze])}); go('gegevens'); } });
 })();
 </script>
   <form name="thuisbatterij-advies" data-netlify="true" netlify-honeypot="bot-field" hidden>
     <input name="bot-field"><input name="naam"><input name="telefoon"><input name="email"><input name="postcode"><input name="huisnummer">
     <input name="product"><input name="advies"><input name="prijs"><input name="zonnepanelen"><input name="ook_zonnepanelen"><input name="verbruik"><input name="extra">
-    <input name="aansluiting"><input name="belangrijk"><input name="geschatte_besparing"><input name="dynamisch_contract"><input name="woning"><input name="pagina"><input name="bron"><input name="utm_content"><input name="gclid"><input name="fbclid">
+    <input name="aansluiting"><input name="belangrijk"><input name="geschatte_besparing"><input name="dynamisch_contract"><input name="woning"><input name="pagina"><input name="bron"><input name="utm_content"><input name="gclid"><input name="fbclid"><input name="aanvraag"><input name="voorkeursdatum">
   </form>
 </div>
 
