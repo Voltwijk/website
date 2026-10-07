@@ -32,7 +32,7 @@ def eur(n): return '€ ' + f'{int(n):,}'.replace(',', '.')
 VANAF = min(p['prijs'] for p in PAKKETTEN)
 VRIENDENKORTING = 450  # korting via de persoonlijke QR-code van een ambassadeur (vriendendeal)
 # kortingscodes van ambassadeurs (code -> voornaam); werken via link/QR en via het codeveld in de funnel
-VRIENDCODES = {'AJAY450': 'Ajay', 'MAX450': 'Max', 'ANDRE450': 'Andre', 'ROBIN450': 'Robin'}
+VRIENDCODES = {'AJAY450': 'Ajay', 'MAX450': 'Max', 'ANDRE450': 'Andre', 'ROBIN450': 'Robin', 'FARHAD450': 'Farhad', 'ROCCIE450': 'Roccie'}
 
 # Productpagina's van andere producten: daar geen batterijcalculator maar een offerte voor dat product.
 ANDERS = {
