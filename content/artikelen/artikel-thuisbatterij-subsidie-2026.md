@@ -108,7 +108,7 @@ Een paar overwegingen:
 
 ## Hoe Voltwijk helpt
 
-Voltwijk kan je geen subsidie beloven die er niet is. Wel kijken onze eigen monteurs eerlijk met je mee of een batterij bij jouw situatie past. De thuisbatterij van Voltwijk is er in 10 en 16 kWh, met een hybride omvormer en een app-koppeling, en kost vanaf € 3.900 excl. btw, inclusief installatie. Bekijk de details op de [thuisbatterij-pagina](/product-batterij) of [bereken welke thuisbatterij past](/thuisbatterij-berekenen).
+Voltwijk kan je geen subsidie beloven die er niet is. Wel kijken onze eigen monteurs eerlijk met je mee of een batterij bij jouw situatie past. De thuisbatterij van Voltwijk is er in 10 en 16 kWh, met een hybride omvormer en een app-koppeling, en kost vanaf € 4.950 excl. btw, inclusief installatie. Bekijk de details op de [thuisbatterij-pagina](/product-batterij) of [bereken welke thuisbatterij past](/thuisbatterij-berekenen).
 
 faq:
 Q: Is er subsidie op een thuisbatterij in 2026?

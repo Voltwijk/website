@@ -5,7 +5,7 @@ category: Thuisbatterij
 product: batterij
 date: 2026-10-04
 lead: Een thuisbatterij van 15 of 16 kWh is zinvol als je 's avonds en 's nachts veel stroom gebruikt en genoeg zonnestroom overhoudt om hem te vullen, of als je met een dynamisch contract slim wilt laden. Denk aan huishoudens met een warmtepomp, veel panelen of een groot gezin. Zonder die situatie is 10 kWh vaak genoeg.
-summary: Een grote batterij loont als je avond- en nachtverbruik boven de 9 à 10 kWh ligt || Je hebt genoeg zonne-overschot of een dynamisch contract nodig om hem regelmatig te vullen || Kies het vermogen mee: een grote batterij met een klein vermogen kan zijn energie niet snel genoeg kwijt || Bij Voltwijk: 16 kWh met 6 kW (1-fase) € 4.900 of met 8 kW (3-fase) € 5.500, excl. btw en inclusief installatie
+summary: Een grote batterij loont als je avond- en nachtverbruik boven de 9 à 10 kWh ligt || Je hebt genoeg zonne-overschot of een dynamisch contract nodig om hem regelmatig te vullen || Kies het vermogen mee: een grote batterij met een klein vermogen kan zijn energie niet snel genoeg kwijt || Bij Voltwijk: 16 kWh met 6 kW (1-fase) € 5.450 of met 8 kW (3-fase) € 5.950, excl. btw en inclusief installatie
 sources: Milieu Centraal – Thuisbatterij|https://www.milieucentraal.nl/energie-besparen/zonnepanelen/thuisbatterij-zonne-energie-opslaan/ || Consumentenbond – Dynamisch energiecontract|https://www.consumentenbond.nl/energie-vergelijken/dynamisch-energiecontract || Rijksoverheid – Salderingsregeling|https://www.rijksoverheid.nl/themas/klimaat-milieu-en-natuur/energie-thuis/salderingsregeling
 ---
 Wie een thuisbatterij zoekt, komt al snel uit bij twee maten: rond de 10 kWh en rond de 15 of 16 kWh. Het verschil in prijs is een paar honderd tot een paar duizend euro, afhankelijk van merk en installateur. De vraag is dus: heb je die extra opslag echt nodig?
@@ -66,7 +66,7 @@ In de zomer heeft dit gezin geen warmtepompverbruik 's avonds. Dan gebruikt het 
 
 Vergelijk altijd de totale prijs inclusief installatie en reken uit wat een bruikbare kWh kost. Zie [thuisbatterij prijs per kWh](/artikel-thuisbatterij-prijs).
 
-Bij Voltwijk kost een thuisbatterij van **16 kWh met 6 kW** hybride omvormer (1-fase) **€ 4.900 excl. btw**, en **16 kWh met 8 kW** (3-fase) **€ 5.500 excl. btw**, beide inclusief installatie door onze eigen monteurs.
+Bij Voltwijk kost een thuisbatterij van **16 kWh met 6 kW** hybride omvormer (1-fase) **€ 5.450 excl. btw**, en **16 kWh met 8 kW** (3-fase) **€ 5.950 excl. btw**, beide inclusief installatie door onze eigen monteurs.
 
 ## Hoe Voltwijk helpt
 
@@ -82,4 +82,4 @@ A: In de praktijk weinig: het gaat om de maat die een fabrikant aanbiedt. Belang
 Q: Past een 16 kWh-batterij op een 1-fase aansluiting?
 A: Ja, met een omvormer van rond de 6 kW kan dat op een gewone 1x35 A-aansluiting, met een eigen groep in de meterkast. Voor een groter vermogen is 3-fase nodig.
 Q: Wat kost een thuisbatterij van 16 kWh?
-A: Bij Voltwijk € 4.900 excl. btw met 6 kW omvormer (1-fase) en € 5.500 excl. btw met 8 kW omvormer (3-fase), beide inclusief installatie.
+A: Bij Voltwijk € 5.450 excl. btw met 6 kW omvormer (1-fase) en € 5.950 excl. btw met 8 kW omvormer (3-fase), beide inclusief installatie.

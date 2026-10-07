@@ -99,7 +99,7 @@ Heb je al 3-fase? Lees dan [thuisbatterij op 3-fase](/artikel-thuisbatterij-3-fa
 
 ## Hoe Voltwijk kan helpen
 
-De thuisbatterij van Voltwijk is er voor 1-fase (10 of 16 kWh, met een hybride omvormer van 5 of 6 kW) en voor 3-fase (16 kWh met 8 kW), vanaf € 3.900 excl. btw, inclusief installatie. Onze eigen monteurs bekijken vooraf je aansluiting en meterkast. Is een aanpassing nodig, dan kan dat vanaf € 649. Bekijk de [thuisbatterij](/product-batterij) of de [meterkast](/product-meterkast).
+De thuisbatterij van Voltwijk is er voor 1-fase (10 of 16 kWh, met een hybride omvormer van 5 of 6 kW) en voor 3-fase (16 kWh met 8 kW), vanaf € 4.950 excl. btw, inclusief installatie. Onze eigen monteurs bekijken vooraf je aansluiting en meterkast. Is een aanpassing nodig, dan kan dat vanaf € 649. Bekijk de [thuisbatterij](/product-batterij) of de [meterkast](/product-meterkast).
 
 faq:
 Q: Kan een thuisbatterij op een 1-fase aansluiting?

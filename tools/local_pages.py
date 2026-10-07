@@ -16,7 +16,7 @@ def inline(t):
 
 PRODUCTS = [
  ('Zonnepanelen', 'vanaf € 3.999', '/product-zonnepanelen', 'thumb-zonnepanelen'),
- ('Thuisbatterij', 'vanaf € 3.900 excl. btw', '/product-batterij', 'thumb-batterij'),
+ ('Thuisbatterij', 'vanaf € 4.950 excl. btw', '/product-batterij', 'thumb-batterij'),
  ('Warmtepomp', 'vanaf € 6.750', '/product-warmtepomp', 'thumb-warmtepomp'),
  ('Airconditioning', 'vanaf € 1.899', '/product-airco', 'thumb-airco'),
  ('Elektrische boiler', 'vanaf € 1.199', '/product-boiler', 'thumb-boiler'),
@@ -123,7 +123,7 @@ CITIES = [
          ('Woningen uit de jaren \'80 en \'90', 'Wijken als de Reeshof zijn grotendeels gebouwd vanaf de jaren \'80. Die woningen zijn vaak redelijk geïsoleerd en daardoor geschikt voor een hybride warmtepomp, of met extra maatregelen voor een volledige.'),
          ('Thuisbatterij met dynamisch contract', 'Met een dynamisch energiecontract laad je je batterij op als stroom goedkoop is en gebruik je hem als stroom duur is. We leggen eerlijk uit wanneer dat loont.'),
          ('Laadpaal thuis', 'Een slimme 11 kW laadpaal laadt de meeste elektrische auto\'s in een nacht vol. Met slim laden gebruik je de goedkoopste uren.')],
-  faq=('Hoeveel kost een thuisbatterij in Tilburg?', 'Een thuisbatterij kost bij ons vanaf € 3.900 excl. btw, inclusief installatie. Met de batterijcalculator zie je binnen een minuut welke batterij bij jouw woning past en wat hij kost.'),
+  faq=('Hoeveel kost een thuisbatterij in Tilburg?', 'Een thuisbatterij kost bij ons vanaf € 4.950 excl. btw, inclusief installatie. Met de batterijcalculator zie je binnen een minuut welke batterij bij jouw woning past en wat hij kost.'),
   near=['Berkel-Enschot', 'Udenhout', 'Goirle', 'Oisterwijk', 'Hilvarenbeek', 'Dongen'],
   buren=['breda', 'oosterhout', 's-hertogenbosch', 'eindhoven'],
   arts=['artikel-dynamisch-contract-en-batterij', 'artikel-hybride-of-volledige-warmtepomp', 'artikel-laadpaal-slim-laden']),
@@ -321,7 +321,7 @@ WB_EXTRA = {
  'etten-leur': dict(gemeente='Etten-Leur', buren=['zevenbergen', 'breda', 'roosendaal', 'rucphen', 'zundert', 'oudenbosch'],
    h1='Thuisbatterij en zonnepanelen in Etten-Leur',
    title='Thuisbatterij & zonnepanelen installeren in Etten-Leur',
-   desc='Thuisbatterij of zonnepanelen in Etten-Leur? Batterij 10 kWh € 3.900, 16 kWh € 4.900 of 16 kWh 3-fase € 5.500, excl. btw en incl. installatie.'),
+   desc='Thuisbatterij of zonnepanelen in Etten-Leur? Batterij 10 kWh € 4.950, 16 kWh € 5.450 of 16 kWh 3-fase € 5.950, excl. btw en incl. installatie.'),
  'roosendaal': dict(gemeente='Roosendaal', buren=['bergen-op-zoom', 'etten-leur', 'oudenbosch', 'rucphen', 'steenbergen', 'zevenbergen']),
  'bergen-op-zoom': dict(gemeente='Bergen op Zoom', buren=['roosendaal', 'steenbergen', 'etten-leur', 'zevenbergen']),
  'oosterhout': dict(gemeente='Oosterhout', buren=['breda', 'geertruidenberg', 'made', 'zevenbergen', 'tilburg']),
@@ -448,7 +448,7 @@ def city_faq(c):
     p = {x['id']: x for x in PAKKETTEN}
     kost = ((f'Wat kost een thuisbatterij in {n}?', f'Een thuisbatterij kost bij ons {eur(p["bat10"]["prijs"])} (10 kWh), {eur(p["bat16-1"]["prijs"])} (16 kWh, 1-fase) of {eur(p["bat16-3"]["prijs"])} (16 kWh, 3-fase), exclusief btw en inclusief installatie. Zonnepanelen kosten vanaf € 3.999 en een airco vanaf € 1.899. Met de batterijcalculator zie je in een minuut welke batterij bij je past.')
             if c['wb'] else
-            (f'Wat kost de installatie in {n}?', f'Je betaalt in {n} een vaste prijs die je vooraf kent: zonnepanelen vanaf € 3.999, een thuisbatterij vanaf € 3.900 excl. btw en een warmtepomp vanaf € 6.750, inclusief installatie. Met de batterijcalculator zie je binnen een minuut welke batterij bij jouw woning past en wat hij kost.'))
+            (f'Wat kost de installatie in {n}?', f'Je betaalt in {n} een vaste prijs die je vooraf kent: zonnepanelen vanaf € 3.999, een thuisbatterij vanaf € 4.950 excl. btw en een warmtepomp vanaf € 6.750, inclusief installatie. Met de batterijcalculator zie je binnen een minuut welke batterij bij jouw woning past en wat hij kost.'))
     nbq = ((f'Wie regelt de netbeheerder en de vergunning in {n}?', f'Dat doen wij. In {n} is {NB[nb]} in de regel de netbeheerder (je exacte adres is bepalend). Wij regelen de aanmelding, een eventuele verzwaring van je aansluiting, een vergunning als die nodig is. Bij een warmtepomp helpen we je met de ISDE-aanvraag.')
            if c['wb'] else
            (f'Wie regelt de netbeheerder en de vergunning in {n}?', f'Dat doen wij. In {n} is {NB[nb]} de netbeheerder (het precieze adres is bepalend). Wij regelen de aanmelding, een eventuele verzwaring van je aansluiting, een vergunning als die nodig is. Bij een warmtepomp helpen we je met de ISDE-aanvraag.'))

@@ -71,7 +71,7 @@ Een vaste batterij past beter als:
 
 ## Hoe Voltwijk helpt
 
-Voltwijk verkoopt geen stekkerbatterijen, maar vaste thuisbatterijen van 10 en 16 kWh, aangesloten door onze eigen monteurs met een eigen groep in de meterkast. De 10 kWh-batterij kost € 3.900 excl. btw, inclusief installatie en aanmelding. Wil je weten wat bij jouw huis past? Bereken welke thuisbatterij past met de [batterijcalculator](/thuisbatterij-berekenen), of plan een gratis adviesgesprek.
+Voltwijk verkoopt geen stekkerbatterijen, maar vaste thuisbatterijen van 10 en 16 kWh, aangesloten door onze eigen monteurs met een eigen groep in de meterkast. De 10 kWh-batterij kost € 4.950 excl. btw, inclusief installatie en aanmelding. Wil je weten wat bij jouw huis past? Bereken welke thuisbatterij past met de [batterijcalculator](/thuisbatterij-berekenen), of plan een gratis adviesgesprek.
 
 faq:
 Q: Wat is een plug-and-play thuisbatterij?
