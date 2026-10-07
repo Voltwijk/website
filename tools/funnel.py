@@ -32,7 +32,7 @@ def eur(n): return '€ ' + f'{int(n):,}'.replace(',', '.')
 VANAF = min(p['prijs'] for p in PAKKETTEN)
 VRIENDENKORTING = 450  # korting via de persoonlijke QR-code van een ambassadeur (vriendendeal)
 # kortingscodes van ambassadeurs (code -> voornaam); werken via link/QR en via het codeveld in de funnel
-VRIENDCODES = {'AJAY450': 'Ajay'}
+VRIENDCODES = {'AJAY450': 'Ajay', 'MAX450': 'Max'}
 
 # Productpagina's van andere producten: daar geen batterijcalculator maar een offerte voor dat product.
 ANDERS = {
@@ -638,7 +638,7 @@ JS = r'''<script>
       '<div class="tb-sizes" role="group" aria-label="Kies je opslag">' + sizes + '</div>' +
       '<div class="tb-why"><b>Waarom dit systeem voor jou?</b>' + ck(waarom(id)) + '</div>' + ck(p.feat) + kpi +
       '<div class="tb-price"><div class="v">' + (VR ? 'Vriendenprijs' + (VR.naam ? ' via ' + esc(VR.naam) : '') + ': €&nbsp;' + KORT + ' korting, inclusief installatie' : 'Vaste prijs, inclusief installatie') + '</div><div class="p">' + (VR ? '<span class="was">' + eur(p.prijs) + '</span>' : '') + eur(prijs(p)) + '<small>excl. btw</small></div>' +
-      (VR ? '' : '<div class="tb-code"><button type="button" class="o" id="tbCodeOpen">Heb je een kortingscode?</button><div class="f" id="tbCodeBox" hidden><input id="tbCode" placeholder="Bijv. AJAY450" autocapitalize="characters" autocomplete="off" aria-label="Kortingscode"><button type="button" id="tbCodeGo">Toepassen</button></div><small id="tbCodeMsg"></small></div>') +
+      (VR ? '' : '<div class="tb-code"><button type="button" class="o" id="tbCodeOpen">Heb je een kortingscode?</button><div class="f" id="tbCodeBox" hidden><input id="tbCode" placeholder="Je kortingscode" autocapitalize="characters" autocomplete="off" aria-label="Kortingscode"><button type="button" id="tbCodeGo">Toepassen</button></div><small id="tbCodeMsg"></small></div>') +
       '<div class="i">' + eur(prijs(p) * 1.21) + ' incl. btw. Met een dynamisch contract kun je de btw soms terugvragen. Is er meerwerk nodig, dan hoor je dat altijd vooraf.</div></div>' +
       '<div class="tb-urg"><span class="g">Installatie al vanaf <b data-vw-first></b></span>' + (d27 ? '<span>Salderen stopt over ' + d27 + ' dagen</span>' : '') + '</div>' +
       '<button type="button" class="tb-btn full" data-install>Vraag je installatie aan voor ' + eur(prijs(p)) + ' →</button>' +

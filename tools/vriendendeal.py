@@ -41,7 +41,7 @@ def vriendendeal():
   <form id="form" class="k" style="text-align:left;margin-top:22px" hidden>
     <label for="code" style="font-weight:800;color:var(--dark)">Vul je kortingscode in</label>
     <p style="font-size:14px;color:var(--mute);margin-top:2px">Die heb je gekregen van de vriend die ons aanraadde.</p>
-    <div style="display:flex;gap:8px;margin-top:12px"><input id="code" autocomplete="off" autocapitalize="characters" placeholder="Bijv. AJAY450" style="flex:1;min-width:0;border:1.5px solid #CFDCD9;border-radius:12px;padding:13px 14px;font:800 17px 'Nunito Sans',system-ui,sans-serif;text-transform:uppercase">
+    <div style="display:flex;gap:8px;margin-top:12px"><input id="code" autocomplete="off" autocapitalize="characters" placeholder="Je kortingscode" style="flex:1;min-width:0;border:1.5px solid #CFDCD9;border-radius:12px;padding:13px 14px;font:800 17px 'Nunito Sans',system-ui,sans-serif;text-transform:uppercase">
       <button style="border:0;border-radius:12px;padding:0 18px;background:var(--teal);color:#fff;font:800 16px 'Nunito Sans',system-ui,sans-serif;cursor:pointer">Bekijk mijn aanbod</button></div>
     <p id="fout" style="color:#C2412D;font-size:14px;margin-top:8px"></p>
     <p style="font-size:14px;color:var(--mute);margin-top:6px">Lukt het niet? Bel of app <a href="tel:+31853335687" style="color:var(--teal);font-weight:800">085 333 56 87</a> en noem je code.</p>
