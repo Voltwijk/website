@@ -532,7 +532,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
     if(Object.keys(t).length) sessionStorage.setItem('vwUtm', JSON.stringify(t)); }catch(e){}
   function utm(){ try{ return JSON.parse(sessionStorage.getItem('vwUtm') || '{}'); }catch(e){ return {}; } }
   /* vriendendeal: via de persoonlijke QR-code van een ambassadeur (utm_campaign=vriendendeal, utm_content=code, door=naam) krijgt de klant 450 euro korting */
-  var CODES = {"AJAY450": "Ajay", "MAX450": "Max", "ANDRE450": "Andre", "ROBIN450": "Robin", "FARHAD450": "Farhad", "ROCCIE450": "Roccie", "ALI450": "Ali"}, VR = null; try{ var uu = new URLSearchParams(location.search), uc = (uu.get('code') || '').toUpperCase().replace(/[^A-Z0-9]/g, '');
+  var CODES = {"AJAY450": "Ajay", "MAX450": "Max", "ANDRE450": "Andre", "ROBIN450": "Robin", "FARHAD450": "Farhad", "ROCKY450": "Rocky", "ROCCIE450": "Rocky", "ALI450": "Ali"}, VR = null; try{ var uu = new URLSearchParams(location.search), uc = (uu.get('code') || '').toUpperCase().replace(/[^A-Z0-9]/g, '');
     if(uu.get('utm_campaign') === 'vriendendeal' && uu.get('utm_content')){ var vc = uu.get('utm_content').toUpperCase().slice(0, 20); VR = {code: vc, naam: (uu.get('door') || CODES[vc] || '').slice(0, 40)}; sessionStorage.setItem('vwVriend', JSON.stringify(VR)); }
     else if(CODES[uc]){ VR = {code: uc, naam: CODES[uc]}; sessionStorage.setItem('vwVriend', JSON.stringify(VR)); }
     else VR = JSON.parse(sessionStorage.getItem('vwVriend') || 'null'); }catch(e){}
