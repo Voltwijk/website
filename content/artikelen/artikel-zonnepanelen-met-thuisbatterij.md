@@ -67,7 +67,7 @@ Meer vergelijkingspunten voor de batterij staan in [thuisbatterij kopen: waar le
 
 ## Hoe Voltwijk helpt
 
-Voltwijk installeert zonnepanelen (vanaf € 3.999 voor 12 panelen) en thuisbatterijen (vanaf € 3.900 excl. btw voor 10 kWh), elk inclusief installatie door onze eigen monteurs, en stemt ze op elkaar af. Bereken welke thuisbatterij past met de [batterijcalculator](/thuisbatterij-berekenen), of vraag een offerte aan voor panelen en batterij samen. Liever eerst overleggen? Plan een gratis adviesgesprek.
+Voltwijk installeert zonnepanelen (vanaf € 3.999 voor 12 panelen) en thuisbatterijen (vanaf € 4.950 excl. btw voor 10 kWh), elk inclusief installatie door onze eigen monteurs, en stemt ze op elkaar af. Bereken welke thuisbatterij past met de [batterijcalculator](/thuisbatterij-berekenen), of vraag een offerte aan voor panelen en batterij samen. Liever eerst overleggen? Plan een gratis adviesgesprek.
 
 faq:
 Q: Is het slim om zonnepanelen en een thuisbatterij tegelijk te nemen?

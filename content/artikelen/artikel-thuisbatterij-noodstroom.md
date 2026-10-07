@@ -91,7 +91,7 @@ Sluit nooit zelf een aggregaat of powerstation aan op je groepenkast zonder de j
 
 ## Hoe Voltwijk kan helpen
 
-Bij de thuisbatterij van Voltwijk (10 of 16 kWh, vanaf € 3.900 excl. btw, inclusief installatie) is noodstroom **optioneel** en dus niet standaard. Wil je het wel, dan bespreken onze eigen monteurs vooraf wat er in jouw meterkast nodig is en welke groepen je aan wilt houden. Bekijk de [thuisbatterij](/product-batterij) of de [meterkast](/product-meterkast).
+Bij de thuisbatterij van Voltwijk (10 of 16 kWh, vanaf € 4.950 excl. btw, inclusief installatie) is noodstroom **optioneel** en dus niet standaard. Wil je het wel, dan bespreken onze eigen monteurs vooraf wat er in jouw meterkast nodig is en welke groepen je aan wilt houden. Bekijk de [thuisbatterij](/product-batterij) of de [meterkast](/product-meterkast).
 
 faq:
 Q: Werkt een thuisbatterij bij een stroomstoring?

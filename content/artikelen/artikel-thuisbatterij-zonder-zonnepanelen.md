@@ -79,7 +79,7 @@ Kies je er toch voor, let dan op deze punten:
 
 ## Hoe Voltwijk kan helpen
 
-Onze thuisbatterij is er in 10 en 16 kWh, met een hybride omvormer en een app-koppeling, vanaf € 3.900 excl. btw, inclusief installatie. Onze eigen monteurs kijken graag eerlijk met je mee of een batterij zonder zonnepanelen in jouw situatie zin heeft, of dat je beter eerst iets anders doet. Bekijk de [thuisbatterij](/product-batterij) of [bereken welke thuisbatterij past](/thuisbatterij-berekenen).
+Onze thuisbatterij is er in 10 en 16 kWh, met een hybride omvormer en een app-koppeling, vanaf € 4.950 excl. btw, inclusief installatie. Onze eigen monteurs kijken graag eerlijk met je mee of een batterij zonder zonnepanelen in jouw situatie zin heeft, of dat je beter eerst iets anders doet. Bekijk de [thuisbatterij](/product-batterij) of [bereken welke thuisbatterij past](/thuisbatterij-berekenen).
 
 faq:
 Q: Heeft een thuisbatterij zin zonder zonnepanelen?

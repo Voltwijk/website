@@ -62,7 +62,7 @@ Komt daar 3 tot 5 kWh uit, dan is een kleine batterij logisch. Komt er 6 kWh of 
 
 ## Hoe Voltwijk helpt
 
-Voltwijk installeert thuisbatterijen van 10 en 16 kWh, omdat die bij de meeste gezinnen met zonnepanelen het beste passen. Een 10 kWh-batterij met 5 kW hybride omvormer kost bij ons € 3.900 excl. btw, inclusief installatie. Is je verbruik zo laag dat 10 kWh te groot is, dan zeggen we dat eerlijk. Met de [batterijcalculator](/thuisbatterij-berekenen) zie je in een minuut welke maat bij jouw verbruik past.
+Voltwijk installeert thuisbatterijen van 10 en 16 kWh, omdat die bij de meeste gezinnen met zonnepanelen het beste passen. Een 10 kWh-batterij met 5 kW hybride omvormer kost bij ons € 4.950 excl. btw, inclusief installatie. Is je verbruik zo laag dat 10 kWh te groot is, dan zeggen we dat eerlijk. Met de [batterijcalculator](/thuisbatterij-berekenen) zie je in een minuut welke maat bij jouw verbruik past.
 
 faq:
 Q: Is een thuisbatterij van 5 kWh genoeg?

@@ -5,7 +5,7 @@ category: Thuisbatterij
 product: batterij
 date: 2026-10-04
 lead: Heb je al een 3-fase aansluiting en grote verbruikers zoals een warmtepomp, laadpaal of inductiekookplaat, dan is een 3-fase thuisbatterij vaak de beste keuze. Hij kan meer vermogen leveren en verdeelt de belasting over de drie fasen. Heb je 1-fase en een gewoon verbruik, dan hoef je daarvoor meestal niet te verzwaren.
-summary: Een 3-fase batterij levert en laadt verdeeld over drie fasen, waardoor een groter vermogen mogelijk is || Logisch als je al 3-fase hebt en meerdere grote verbruikers gebruikt || Verzwaren alleen voor de batterij is meestal niet nodig: dat kost eenmalig geld en vaak een hoger vast netbeheertarief || Bij Voltwijk: 16 kWh met 8 kW hybride omvormer (3-fase) voor € 5.500 excl. btw, inclusief installatie
+summary: Een 3-fase batterij levert en laadt verdeeld over drie fasen, waardoor een groter vermogen mogelijk is || Logisch als je al 3-fase hebt en meerdere grote verbruikers gebruikt || Verzwaren alleen voor de batterij is meestal niet nodig: dat kost eenmalig geld en vaak een hoger vast netbeheertarief || Bij Voltwijk: 16 kWh met 8 kW hybride omvormer (3-fase) voor € 5.950 excl. btw, inclusief installatie
 sources: Netbeheer Nederland – Meld thuisbatterijen aan op energieleveren.nl|https://www.netbeheernederland.nl/artikelen/nieuws/meld-thuisbatterijen-aan-op-energieleverennl || Liander – Stroom opwekken en opslaan|https://www.liander.nl/verduurzamen/stroom-opwekken-en-opslaan || Stedin – Thuisbatterijen|https://www.stedin.net/duurzaamheid-bij-u-thuis/thuisbatterijen
 ---
 Bij een thuisbatterij hoor je vaak "1-fase" en "3-fase". Het gaat over je aansluiting op het stroomnet, en over hoe de batterij daarop wordt aangesloten. Voor huizen met een 3-fase aansluiting is er een eigen type batterij en omvormer. Wanneer is dat de betere keuze?
@@ -82,7 +82,7 @@ Of je de auto met de batterij wilt laden, is een tweede vraag. Vaak is het slimm
 
 ## Hoe Voltwijk helpt
 
-Voltwijk installeert een thuisbatterij van **16 kWh met een 8 kW hybride omvormer voor 3-fase**, voor **€ 5.500 excl. btw** inclusief installatie door onze eigen monteurs. Voor 1-fase zijn er 10 kWh (€ 3.900) en 16 kWh (€ 4.900), ook excl. btw. Met de [batterijcalculator](/thuisbatterij-berekenen) zie je in een minuut welke past bij je aansluiting. Twijfel je over verzwaren, plan dan een gratis adviesgesprek.
+Voltwijk installeert een thuisbatterij van **16 kWh met een 8 kW hybride omvormer voor 3-fase**, voor **€ 5.950 excl. btw** inclusief installatie door onze eigen monteurs. Voor 1-fase zijn er 10 kWh (€ 4.950) en 16 kWh (€ 5.450), ook excl. btw. Met de [batterijcalculator](/thuisbatterij-berekenen) zie je in een minuut welke past bij je aansluiting. Twijfel je over verzwaren, plan dan een gratis adviesgesprek.
 
 faq:
 Q: Heb ik een 3-fase aansluiting nodig voor een thuisbatterij?
@@ -92,6 +92,6 @@ A: Ja. Hij wordt dan op één fase aangesloten. Dat werkt, maar het vermogen is 
 Q: Wat is het voordeel van een 3-fase thuisbatterij?
 A: Meer vermogen, een gelijkmatige belasting over de fasen en een betere aansluiting bij grote verbruikers zoals een warmtepomp, laadpaal en inductie.
 Q: Wat kost een 3-fase thuisbatterij?
-A: Dat verschilt per merk en installateur. Bij Voltwijk kost een 16 kWh-batterij met 8 kW 3-fase omvormer € 5.500 excl. btw, inclusief installatie.
+A: Dat verschilt per merk en installateur. Bij Voltwijk kost een 16 kWh-batterij met 8 kW 3-fase omvormer € 5.950 excl. btw, inclusief installatie.
 Q: Moet ik mijn 3-fase thuisbatterij aanmelden?
 A: Ja. Elke thuisbatterij meld je aan bij je netbeheerder via energieleveren.nl. Een installateur kan je daarbij helpen.

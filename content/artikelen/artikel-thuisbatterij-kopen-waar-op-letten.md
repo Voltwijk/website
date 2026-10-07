@@ -131,7 +131,7 @@ Hoe de installatie zelf verloopt, lees je in [thuisbatterij laten installeren](/
 
 ## Hoe Voltwijk helpt
 
-Voltwijk werkt met een vaste prijs inclusief installatie, door eigen monteurs. Er zijn drie pakketten: 10 kWh met een 5 kW hybride omvormer (€ 3.900), 16 kWh met een 6 kW omvormer voor 1-fase (€ 4.900) en 16 kWh met een 8 kW omvormer voor 3-fase (€ 5.500), alle excl. btw. Op de installatie krijg je 2 jaar garantie. Welke past bij jouw huis, zie je met de [batterijcalculator](/thuisbatterij-berekenen).
+Voltwijk werkt met een vaste prijs inclusief installatie, door eigen monteurs. Er zijn drie pakketten: 10 kWh met een 5 kW hybride omvormer (€ 4.950), 16 kWh met een 6 kW omvormer voor 1-fase (€ 5.450) en 16 kWh met een 8 kW omvormer voor 3-fase (€ 5.950), alle excl. btw. Op de installatie krijg je 2 jaar garantie. Welke past bij jouw huis, zie je met de [batterijcalculator](/thuisbatterij-berekenen).
 
 faq:
 Q: Waar moet je op letten bij het kopen van een thuisbatterij?

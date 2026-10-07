@@ -7,6 +7,7 @@ python3 tools/articles.py
 python3 tools/stadspaginas.py
 python3 tools/energiescan.py   # actie Energiescanweek Moerdijk; stand staat in tools/data/energiescan.json
 python3 tools/funnel.py
+python3 tools/vriendendeal.py   # /vriendendeal (deellink) en /deel (deelpagina ambassadeur)
 python3 tools/seo.py
 python3 tools/booking.py
 python3 tools/order.py

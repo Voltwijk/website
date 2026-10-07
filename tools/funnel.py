@@ -30,6 +30,9 @@ TEL, TEL_HREF, WA = '085 333 56 87', 'tel:+31853335687', 'https://wa.me/31853335
 esc = lambda s: html.escape(s, quote=True)
 def eur(n): return '€ ' + f'{int(n):,}'.replace(',', '.')
 VANAF = min(p['prijs'] for p in PAKKETTEN)
+VRIENDENKORTING = 450  # korting via de persoonlijke QR-code van een ambassadeur (vriendendeal)
+# kortingscodes van ambassadeurs (code -> voornaam); werken via link/QR en via het codeveld in de funnel
+VRIENDCODES = {'AJAY450': 'Ajay'}
 
 # Productpagina's van andere producten: daar geen batterijcalculator maar een offerte voor dat product.
 ANDERS = {
@@ -212,6 +215,17 @@ CSS = '''<style>
 .tb-risk{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:12px;font-size:13px;color:var(--ink-soft);justify-content:center;}
 .tb-risk span::before{content:"✓ ";color:var(--primary);font-weight:800;}
 .tb-urg{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+.tb-vriend{background:linear-gradient(135deg,#10201F,#0F6E6B);color:#fff;border-radius:18px;padding:18px 20px;margin:0 auto 14px;width:calc(100% - 32px);max-width:1048px;display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;justify-content:space-between;}
+.tb-vriend b{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:20px;line-height:1.2;display:block;}
+.tb-vriend small{display:block;color:#CFE6E2;font-size:13.5px;margin-top:3px;}
+.tb-vriend .k{display:flex;flex-wrap:wrap;gap:8px;}
+.tb-vriend .k button{border:0;cursor:pointer;border-radius:999px;padding:11px 16px;font:800 14px 'Nunito Sans',system-ui,sans-serif;}
+.tb-vriend .k .a{background:#6FD6C8;color:#10201F;} .tb-vriend .k .b{background:rgba(255,255,255,.12);color:#fff;border:1.5px solid rgba(255,255,255,.4);}
+.tb-sizes s.was,.tb-sum s.was{color:var(--ink-faint);text-decoration-color:#FF6B5B;font-weight:600;margin-right:2px;}
+.tb-code{margin-top:12px;} .tb-code .o{background:none;border:0;padding:0;color:#0F6E6B;font:700 14px 'Nunito Sans',sans-serif;text-decoration:underline;cursor:pointer;}
+.tb-code .f{display:flex;gap:8px;} .tb-code .f[hidden]{display:none;} .tb-code input{flex:1;min-width:0;border:1.5px solid var(--border);border-radius:12px;padding:11px 12px;font:700 15px 'Nunito Sans',sans-serif;text-transform:uppercase;}
+.tb-code .f button{border:0;border-radius:12px;padding:0 16px;background:#10201F;color:#fff;font:800 14px 'Nunito Sans',sans-serif;cursor:pointer;} .tb-code small{display:block;color:#C2412D;font-size:13px;margin-top:6px;}
+.tb-price .was{font-size:22px;color:var(--ink-faint);text-decoration:line-through;text-decoration-color:#FF6B5B;margin-right:8px;font-weight:700;}
 .tb-urg span{background:#FFF1EE;color:var(--accent-deep);font-size:13px;font-weight:800;border-radius:999px;padding:6px 12px;}
 .tb-urg span.g{background:var(--surface-tint);color:var(--primary);}
 .tb-proof{display:flex;align-items:center;justify-content:center;gap:8px 18px;flex-wrap:wrap;margin-top:16px;font-size:13px;font-weight:700;color:var(--ink-soft);}
@@ -341,6 +355,17 @@ JS = r'''<script>
   try{ var u = new URLSearchParams(location.search), t = {}; ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid','fbclid'].forEach(function(k){ if(u.get(k)) t[k] = u.get(k); });
     if(Object.keys(t).length) sessionStorage.setItem('vwUtm', JSON.stringify(t)); }catch(e){}
   function utm(){ try{ return JSON.parse(sessionStorage.getItem('vwUtm') || '{}'); }catch(e){ return {}; } }
+  /* vriendendeal: via de persoonlijke QR-code van een ambassadeur (utm_campaign=vriendendeal, utm_content=code, door=naam) krijgt de klant __KORT__ euro korting */
+  var CODES = __CODES__, VR = null; try{ var uu = new URLSearchParams(location.search), uc = (uu.get('code') || '').toUpperCase().replace(/[^A-Z0-9]/g, '');
+    if(uu.get('utm_campaign') === 'vriendendeal' && uu.get('utm_content')){ var vc = uu.get('utm_content').toUpperCase().slice(0, 20); VR = {code: vc, naam: (uu.get('door') || CODES[vc] || '').slice(0, 40)}; sessionStorage.setItem('vwVriend', JSON.stringify(VR)); }
+    else if(CODES[uc]){ VR = {code: uc, naam: CODES[uc]}; sessionStorage.setItem('vwVriend', JSON.stringify(VR)); }
+    else VR = JSON.parse(sessionStorage.getItem('vwVriend') || 'null'); }catch(e){}
+  var KORT = VR ? __KORT__ : 0;
+  function was(p){ return VR ? '<s class="was">' + eur(p.prijs) + '</s> ' : ''; }
+  function zetCode(c){ c = (c || '').toUpperCase().replace(/[^A-Z0-9]/g, ''); if(!CODES[c]) return false;
+    VR = {code: c, naam: CODES[c]}; KORT = __KORT__; try{ sessionStorage.setItem('vwVriend', JSON.stringify(VR)); }catch(e){}
+    vriendBanner(); track('vriend_code', {code: c}); return true; }
+  function prijs(p){ return p.prijs - KORT; }
   function track(n, p){ try{ if(window.vwTrack) vwTrack(n, p || {}); }catch(e){} }
   function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
   function fmt(n){ return Math.round(n).toLocaleString('nl-NL'); }
@@ -358,6 +383,13 @@ JS = r'''<script>
   function bar(label, id, note, disabled){ return '<div class="tb-bar"><button type="button" class="tb-back" id="tbBack"' + (hist.length ? '' : ' hidden') + '>Terug</button>' +
       (label ? '<div class="tb-go"><button type="button" class="tb-btn" id="' + id + '"' + (disabled ? ' disabled' : '') + '>' + label + '</button>' + (note ? '<small>' + note + '</small>' : '') + '</div>' : '') + '</div>'; }
 
+  function vriendBanner(){ if(!VR || document.querySelector('.tb-vriend')) return; var wrap = stepsEl.closest('.tb-wrap'), bn = document.createElement('div'); bn.className = 'tb-vriend';
+    bn.innerHTML = '<div><b>Vriendenkorting' + (VR.naam ? ' via ' + esc(VR.naam) : '') + ': €&nbsp;' + KORT + ' korting op je thuisbatterij</b><small>Dezelfde batterij, installatie en garantie. De korting zit al in je prijs.</small></div>' +
+      '<div class="k"><button type="button" class="a" data-book="huis">Plan direct in</button><button type="button" class="b" id="tbVrOf">Vraag vrijblijvend offerte aan</button></div>';
+    var band = wrap && wrap.querySelector('.tb-band'); if(band) band.insertBefore(bn, band.firstChild); else if(wrap) wrap.parentNode.insertBefore(bn, wrap);
+    var vb = document.getElementById('tbVrOf'); if(vb) vb.onclick = function(){ track('vriend_offerte', {code: VR.code}); var m = document.getElementById('calculator'); if(m) m.scrollIntoView({behavior:'smooth'}); var i = main.querySelector('input'); if(i) setTimeout(function(){ try{ i.focus(); }catch(e){} }, 400); };
+  }
+  if(VR){ vriendBanner(); track('vriend_bezoek', {code: VR.code}); }
   function render(scroll){
     var h = ''; steps();
     if(cur === 'adres'){
@@ -433,6 +465,9 @@ JS = r'''<script>
     ['tbPc','tbHn'].forEach(function(id){ var x = document.getElementById(id); if(x) x.onkeydown = function(ev){ if(ev.key === 'Enter') adres(); }; });
     var sg = document.getElementById('tbSysGo'); if(sg) sg.onclick = function(){ go('aanbod'); };
     var og = document.querySelectorAll('[data-offerte]'); og.forEach(function(x){ x.onclick = function(){ track('offerte_klik', {batterij: st.keuze}); go('gegevens'); }; });
+    var co = document.getElementById('tbCodeOpen'); if(co) co.onclick = function(){ co.hidden = true; document.getElementById('tbCodeBox').hidden = false; document.getElementById('tbCode').focus(); };
+    var cg = document.getElementById('tbCodeGo'); if(cg){ var cf = function(){ var v = document.getElementById('tbCode').value; if(zetCode(v)) render(false); else document.getElementById('tbCodeMsg').textContent = 'Deze code kennen we niet. Controleer hem, of bel ons op 085 333 56 87.'; };
+      cg.onclick = cf; document.getElementById('tbCode').onkeydown = function(e){ if(e.key === 'Enter'){ e.preventDefault(); cf(); } }; }
     main.querySelectorAll('[data-size]').forEach(function(el){ el.onclick = function(){ st.keuze = el.dataset.size; st.foto = 0; render(false); track('calc_wissel', {batterij: st.keuze}); }; });
     main.querySelectorAll('[data-foto]').forEach(function(el){ el.onclick = function(){ st.foto = +el.dataset.foto; foto(); }; });
     var pv = document.getElementById('tbPrev'), nv = document.getElementById('tbNextF'), n = (PK[st.keuze] || {foto: []}).foto.length;
@@ -581,8 +616,8 @@ JS = r'''<script>
   function dagenTot2027(){ var d = Math.ceil((new Date(2027, 0, 1) - new Date()) / 864e5); return d > 0 ? d : 0; }
   function aanbod(){
     var id = st.keuze, p = PK[id], r = reken(id), adv = advies(), d27 = dagenTot2027();
-    var sizes = Object.keys(PK).map(function(k){ var x = PK[k]; return '<button type="button" data-size="' + k + '" aria-pressed="' + (k === id) + '">' + (k === adv ? '<em>Advies</em>' : '') + x.kwh + ' kWh · ' + x.fase + '<small>' + eur(x.prijs) + ' excl. btw</small></button>'; }).join('');
-    var tv = r.besparing > 25 ? Math.round(p.prijs * 1.21 / r.besparing) : 0, r10 = function(v){ return eur(Math.round(v / 5) * 5); };
+    var sizes = Object.keys(PK).map(function(k){ var x = PK[k]; return '<button type="button" data-size="' + k + '" aria-pressed="' + (k === id) + '">' + (k === adv ? '<em>Advies</em>' : '') + x.kwh + ' kWh · ' + x.fase + '<small>' + was(x) + eur(prijs(x)) + ' excl. btw</small></button>'; }).join('');
+    var tv = r.besparing > 25 ? Math.round(prijs(p) * 1.21 / r.besparing) : 0, r10 = function(v){ return eur(Math.round(v / 5) * 5); };
     var kpi = '<div class="tb-yield"><h3>Wat kan dit jou opleveren?</h3>' +
       (r.besparing > 25 ? '<div style="font-size:13px;font-weight:800;color:var(--ink-soft);margin-top:12px;">Geschatte besparing per jaar</div><div class="big">ca. ' + r10(r.besparing) + '</div>' +
         (tv ? '<div class="tv">Indicatieve terugverdientijd: circa ' + tv + ' jaar (op de prijs incl. btw)</div>' : '') :
@@ -600,8 +635,9 @@ JS = r'''<script>
       '<div class="tb-of"><div class="lab">' + (id === adv ? 'Past het best bij jou' : 'Jouw keuze') + '</div><h2>Thuisbatterij ' + p.kwh + ' kWh met ' + p.kw + ' kW omvormer</h2><p class="s">' + esc(p.naam) + ' · ' + p.fase + '</p>' +
       '<div class="tb-sizes" role="group" aria-label="Kies je opslag">' + sizes + '</div>' +
       '<div class="tb-why"><b>Waarom dit systeem voor jou?</b>' + ck(waarom(id)) + '</div>' + ck(p.feat) + kpi +
-      '<div class="tb-price"><div class="v">Actieprijs t/m 31 oktober 2026, inclusief installatie</div><div class="p">' + eur(p.prijs) + '<small>excl. btw</small></div>' +
-      '<div class="i">' + eur(p.prijs * 1.21) + ' incl. btw. Met een dynamisch contract kun je de btw soms terugvragen. Is er meerwerk nodig, dan hoor je dat altijd vooraf.</div></div>' +
+      '<div class="tb-price"><div class="v">' + (VR ? 'Vriendenprijs' + (VR.naam ? ' via ' + esc(VR.naam) : '') + ': €&nbsp;' + KORT + ' korting, inclusief installatie' : 'Vaste prijs, inclusief installatie') + '</div><div class="p">' + (VR ? '<span class="was">' + eur(p.prijs) + '</span>' : '') + eur(prijs(p)) + '<small>excl. btw</small></div>' +
+      (VR ? '' : '<div class="tb-code"><button type="button" class="o" id="tbCodeOpen">Heb je een kortingscode?</button><div class="f" id="tbCodeBox" hidden><input id="tbCode" placeholder="Bijv. AJAY450" autocapitalize="characters" autocomplete="off" aria-label="Kortingscode"><button type="button" id="tbCodeGo">Toepassen</button></div><small id="tbCodeMsg"></small></div>') +
+      '<div class="i">' + eur(prijs(p) * 1.21) + ' incl. btw. Met een dynamisch contract kun je de btw soms terugvragen. Is er meerwerk nodig, dan hoor je dat altijd vooraf.</div></div>' +
       '<div class="tb-urg"><span class="g">Installatie al vanaf <b data-vw-first></b></span>' + (d27 ? '<span>Salderen stopt over ' + d27 + ' dagen</span>' : '') + '</div>' +
       '<button type="button" class="tb-btn full" data-offerte>Vraag vrijblijvend jouw offerte aan →</button>' +
       '<div class="tb-risk"><span>Je betaalt nu niets</span><span>Gratis technische check</span><span>Eigen monteurs</span></div>' +
@@ -621,7 +657,7 @@ JS = r'''<script>
       '<div id="tbFormErr" class="tb-err" hidden></div>' +
       '<button type="submit" class="tb-btn full">Verstuur mijn aanvraag →</button>' +
       '<p class="tb-small" style="text-align:center;">Gratis en vrijblijvend. We gebruiken je gegevens alleen voor deze aanvraag. Zie ons <a href="/privacybeleid" style="color:inherit;">privacybeleid</a>.</p></form>' +
-      '<div class="tb-sum"><div class="r"><img src="' + p.foto[0][0] + '" alt=""><div><b>Thuisbatterij ' + p.kwh + ' kWh · ' + p.fase + '</b><div class="pp">' + eur(p.prijs) + ' <small style="font:600 13px Nunito Sans,sans-serif;color:var(--ink-faint);">excl. btw</small></div></div></div>' +
+      '<div class="tb-sum"><div class="r"><img src="' + p.foto[0][0] + '" alt=""><div><b>Thuisbatterij ' + p.kwh + ' kWh · ' + p.fase + '</b><div class="pp">' + was(p) + eur(prijs(p)) + ' <small style="font:600 13px Nunito Sans,sans-serif;color:var(--ink-faint);">excl. btw</small></div></div></div>' +
       ck(['Vaste prijs, inclusief installatie', 'Installatie al vanaf ' + (window.vwFirstDate || 'binnen enkele weken'), 'Je betaalt nu niets', '4,7 / 5 op Google, 12.500+ installaties']) + '</div></div>' + bar();
   }
   function verstuur(e){
@@ -631,7 +667,7 @@ JS = r'''<script>
     var p = PK[st.keuze], r = reken(st.keuze), zp = document.getElementById('tbZp'), btn = f.querySelector('button[type=submit]'), t = utm();
     var velden = {'form-name':'thuisbatterij-advies', 'bot-field':v('bot-field'), naam:v('naam'), telefoon:v('telefoon'), email:v('email'),
       product:'thuisbatterij' + (zp && zp.checked ? ', zonnepanelen' : ''),
-      postcode:st.postcode, huisnummer:st.huisnummer, advies:'Thuisbatterij ' + p.kwh + ' kWh + ' + p.kw + ' kW omvormer (' + p.fase + ')' + (st.keuze !== advies() ? ' (zelf gekozen; advies was ' + PK[advies()].kwh + ' kWh ' + PK[advies()].fase + ')' : ''), prijs:eur(p.prijs) + ' excl. btw',
+      postcode:st.postcode, huisnummer:st.huisnummer, advies:'Thuisbatterij ' + p.kwh + ' kWh + ' + p.kw + ' kW omvormer (' + p.fase + ')' + (st.keuze !== advies() ? ' (zelf gekozen; advies was ' + PK[advies()].kwh + ' kWh ' + PK[advies()].fase + ')' : ''), prijs:eur(prijs(p)) + ' excl. btw' + (VR ? ' (vriendenkorting € ' + KORT + ' via code ' + VR.code + (VR.naam ? ', ' + VR.naam : '') + ')' : ''),
       zonnepanelen:st.panelen === 'ja' ? 'ja, ca. ' + st.aantal + ' panelen' : st.panelen === 'straks' ? 'nog niet, wil ze erbij' : 'nee',
       ook_zonnepanelen:zp && zp.checked ? 'ja' : '', verbruik:fmt(st.verbruik > 0 ? st.verbruik : 3500) + ' kWh',
       extra:['ev','wp','airco'].filter(function(k){ return st.extra[k]; }).map(function(k){ return {ev:'elektrische auto', wp:'warmtepomp', airco:'airco'}[k]; }).join(', ') || 'geen',
@@ -643,7 +679,7 @@ JS = r'''<script>
     var txt = btn.innerHTML; btn.disabled = true; btn.innerHTML = 'Versturen…'; er.hidden = true;
     fetch('/', {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:bd}).then(function(res){
       if(!res.ok) throw new Error(res.status);
-      track('aanvraag_batterij', {value:p.prijs, currency:'EUR', batterij:st.keuze});
+      track('aanvraag_batterij', {value:prijs(p), currency:'EUR', batterij:st.keuze, vriend:VR ? VR.code : ''});
       st.naam = v('naam'); st.email = v('email'); st.tel = v('telefoon'); hist = []; cur = 'klaar'; render(true);
       /* keuzeblok voor het gesprek (tools/booking.py): één tik stuurt de voorkeur naar het CRM */
       setTimeout(function(){ var el = document.getElementById('tbPlan'); if(el && window.vwVoorkeur) vwVoorkeur(el, {naam: st.naam, email: st.email, telefoon: st.tel, postcode: st.postcode, huisnummer: st.huisnummer}); }, 30);
@@ -682,7 +718,7 @@ def pk_js():
 def component(solo=False):
     """De calculator zelf: stappenbalk + vraagvlak. Staat op /thuisbatterij-berekenen (solo) en op de homepage."""
     icjson = json.dumps({k: svg(k) for k in IC}, ensure_ascii=False)
-    js = JS.replace('__PK__', pk_js()).replace('__IC__', icjson).replace('__INC__', json.dumps(INBEGREPEN, ensure_ascii=False))
+    js = JS.replace('__KORT__', str(VRIENDENKORTING)).replace('__CODES__', json.dumps(VRIENDCODES)).replace('__PK__', pk_js()).replace('__IC__', icjson).replace('__INC__', json.dumps(INBEGREPEN, ensure_ascii=False))
     return (CSS + f'''
   <div class="tb-wrap{' tb-solo' if solo else ''}" id="calculator" style="scroll-margin-top:64px;">
   <div class="tb-band"><div class="tb-steps" id="tbSteps" aria-label="Stappen"></div></div>

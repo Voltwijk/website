@@ -104,7 +104,7 @@ Bij een vast contract is dat meestal niet nodig. Zelf verbruiken levert vrijwel 
 
 ## Hoe Voltwijk helpt
 
-Voltwijk kan je energiecontract niet voor je kiezen, maar wel helpen om meer van je eigen zonnestroom te gebruiken. Onze eigen monteurs plaatsen onder meer een thuisbatterij (10 of 16 kWh, vanaf € 3.900 excl. btw), een elektrische boiler (200 liter, vanaf € 1.199) en een slimme laadpaal (11 kW, vanaf € 1.299). Bekijk de [thuisbatterij-pagina](/product-batterij) om te zien of dat bij jou past.
+Voltwijk kan je energiecontract niet voor je kiezen, maar wel helpen om meer van je eigen zonnestroom te gebruiken. Onze eigen monteurs plaatsen onder meer een thuisbatterij (10 of 16 kWh, vanaf € 4.950 excl. btw), een elektrische boiler (200 liter, vanaf € 1.199) en een slimme laadpaal (11 kW, vanaf € 1.299). Bekijk de [thuisbatterij-pagina](/product-batterij) om te zien of dat bij jou past.
 
 faq:
 Q: Wat zijn terugleverkosten?

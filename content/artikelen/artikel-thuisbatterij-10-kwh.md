@@ -5,7 +5,7 @@ category: Thuisbatterij
 product: batterij
 date: 2026-10-04
 lead: Een thuisbatterij van 10 kWh is voor veel gezinnen met zonnepanelen een logische maat. Hij vangt een groot deel van het zonne-overschot op een zomerdag op en dekt meestal het avond- en nachtverbruik van een gemiddeld huishouden. Heb je een warmtepomp of elektrische auto, dan kan groter verstandig zijn.
-summary: 10 kWh is genoeg als je avond- en nachtverbruik rond de 5 tot 9 kWh ligt || Let op het verschil tussen opgegeven en bruikbare capaciteit, en op het vermogen in kW || Een warmtepomp of elektrische auto maakt een grotere batterij of slimme sturing interessanter || Bij Voltwijk kost een 10 kWh-batterij met 5 kW hybride omvormer € 3.900 excl. btw, inclusief installatie
+summary: 10 kWh is genoeg als je avond- en nachtverbruik rond de 5 tot 9 kWh ligt || Let op het verschil tussen opgegeven en bruikbare capaciteit, en op het vermogen in kW || Een warmtepomp of elektrische auto maakt een grotere batterij of slimme sturing interessanter || Bij Voltwijk kost een 10 kWh-batterij met 5 kW hybride omvormer € 4.950 excl. btw, inclusief installatie
 sources: Milieu Centraal – Thuisbatterij|https://www.milieucentraal.nl/energie-besparen/zonnepanelen/thuisbatterij-zonne-energie-opslaan/ || Rijksoverheid – Salderingsregeling|https://www.rijksoverheid.nl/themas/klimaat-milieu-en-natuur/energie-thuis/salderingsregeling || Netbeheer Nederland – Meld thuisbatterijen aan op energieleveren.nl|https://www.netbeheernederland.nl/artikelen/nieuws/meld-thuisbatterijen-aan-op-energieleverennl
 ---
 Een thuisbatterij van 10 kWh is een van de meest gekozen maten. Logisch: het is groot genoeg om de avond door te komen en klein genoeg om op een gewone zomerdag ook echt vol te raken. Maar is 10 kWh ook genoeg voor jouw huis? Dat hangt vooral af van wanneer je stroom gebruikt, niet alleen van hoeveel.
@@ -68,7 +68,7 @@ Heb je een 3-fase aansluiting en veel grote verbruikers, dan kan een 3-fase batt
 
 Prijzen lopen sterk uiteen per merk, omvormer en installateur. Vergelijk daarom altijd de **totale prijs inclusief installatie** en reken uit wat een bruikbare kWh kost. Hoe je dat eerlijk doet, staat in [thuisbatterij prijs per kWh](/artikel-thuisbatterij-prijs).
 
-Bij Voltwijk kost een thuisbatterij van 10 kWh met een hybride omvormer van 5 kW (1-fase) **€ 3.900 excl. btw**, inclusief installatie door onze eigen monteurs. Wat je terugverdient, hangt af van je verbruik, je panelen en je contract. Een eerlijke rekenmethode staat in [terugverdientijd van een thuisbatterij](/artikel-thuisbatterij-terugverdientijd).
+Bij Voltwijk kost een thuisbatterij van 10 kWh met een hybride omvormer van 5 kW (1-fase) **€ 4.950 excl. btw**, inclusief installatie door onze eigen monteurs. Wat je terugverdient, hangt af van je verbruik, je panelen en je contract. Een eerlijke rekenmethode staat in [terugverdientijd van een thuisbatterij](/artikel-thuisbatterij-terugverdientijd).
 
 ## Checklist: is 10 kWh de juiste maat voor jou?
 
@@ -90,7 +90,7 @@ A: Voor veel gezinnen met zonnepanelen wel. Ligt je avond- en nachtverbruik rond
 Q: Hoe lang doe je met 10 kWh?
 A: Dat hangt af van je verbruik. Gebruik je 's avonds en 's nachts gemiddeld 0,5 kW, dan doe je er ongeveer twintig uur mee. Bij koken en wassen gaat het sneller.
 Q: Wat kost een thuisbatterij van 10 kWh?
-A: Dat verschilt per merk en installateur. Bij Voltwijk kost een 10 kWh-batterij met 5 kW hybride omvormer € 3.900 excl. btw, inclusief installatie.
+A: Dat verschilt per merk en installateur. Bij Voltwijk kost een 10 kWh-batterij met 5 kW hybride omvormer € 4.950 excl. btw, inclusief installatie.
 Q: Past een 10 kWh-batterij op een 1-fase aansluiting?
 A: Meestal wel. Een omvormer van rond de 5 kW past in de regel op een 1x35 A-aansluiting, met een eigen groep in de meterkast.
 Q: Is 10 kWh genoeg met een warmtepomp?

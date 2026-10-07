@@ -5,7 +5,7 @@ import glob, re, html, os, math, json
 ROOT = os.path.join(os.path.dirname(__file__), '..'); os.chdir(ROOT)
 SHELL = 'artikel-isde-subsidie-2026.html'
 PRODUCTS = {
- 'batterij': ('Thuisbatterij', 'vanaf € 3.900 excl. btw', '/product-batterij', '/images/thumb-batterij.webp'),
+ 'batterij': ('Thuisbatterij', 'vanaf € 4.950 excl. btw', '/product-batterij', '/images/thumb-batterij.webp'),
  'zonnepanelen': ('Zonnepanelen', 'vanaf € 3.999', '/product-zonnepanelen', '/images/thumb-zonnepanelen.webp'),
  'warmtepomp': ('Warmtepomp', 'vanaf € 6.750', '/product-warmtepomp', '/images/thumb-warmtepomp.webp'),
  'airco': ('Airconditioning', 'vanaf € 1.899', '/product-airco', '/images/thumb-airco.webp'),
