@@ -9,7 +9,7 @@
 import json, os, sys
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'); os.chdir(ROOT)
 sys.path.insert(0, os.path.join(ROOT, 'tools'))
-from funnel import VRIENDENKORTING  # noqa: E402
+from funnel import VRIENDENKORTING, VRIENDCODES  # noqa: E402
 from battery import PAKKETTEN  # noqa: E402
 
 K = VRIENDENKORTING
@@ -33,19 +33,32 @@ h1,h2,.d{font-family:'Bricolage Grotesque',system-ui,sans-serif;letter-spacing:-
 def vriendendeal():
     t = f'{eur(K)} vriendenkorting op je thuisbatterij | Voltwijk'
     d = f'Via een vriend: 16 kWh thuisbatterij voor {eur(P["bat16-1"])}, alles inbegrepen (na btw-teruggave). Bekijk je aanbod en plan direct in.'
-    return HEAD % (t, d, 'vriendendeal') + f'''<div class="w" style="text-align:center;padding-top:60px">
+    return HEAD % (t, d, 'vriendendeal') + f'''<div class="w" style="text-align:center;padding-top:48px">
   <img src="/merk/kit/logo/voltwijk-logo-kleur.svg" alt="Voltwijk" style="height:34px">
-  <h1 style="font-size:28px;margin-top:28px">{eur(K)} vriendenkorting op je thuisbatterij</h1>
-  <p style="margin-top:10px;color:var(--mute)">Je wordt doorgestuurd naar je persoonlijke aanbod…</p>
-  <p style="margin-top:22px"><a id="door" href="/thuisbatterij-berekenen" style="display:inline-block;background:var(--teal);color:#fff;font-weight:800;text-decoration:none;border-radius:999px;padding:14px 22px">Bekijk mijn aanbod →</a></p></div>
-''' + '''<script>(function(){ var u = new URLSearchParams(location.search), c = (u.get('c') || '').replace(/[^A-Za-z0-9_-]/g, '').slice(0, 20), n = (u.get('n') || '').slice(0, 40);
-  var q = new URLSearchParams({utm_source: 'vriendendeal', utm_medium: 'referral', utm_campaign: 'vriendendeal'}); if(c) q.set('utm_content', c); if(n) q.set('door', n);
-  var to = '/thuisbatterij-berekenen?' + q.toString(); document.getElementById('door').href = to; location.replace(to); })();</script>
-</body></html>'''
+  <h1 style="font-size:28px;margin-top:26px">{eur(K)} vriendenkorting op je thuisbatterij</h1>
+  <div id="bezig" hidden><p style="margin-top:10px;color:var(--mute)">Je wordt doorgestuurd naar je persoonlijke aanbod…</p>
+    <p style="margin-top:22px"><a id="door" href="/thuisbatterij-berekenen" style="display:inline-block;background:var(--teal);color:#fff;font-weight:800;text-decoration:none;border-radius:999px;padding:14px 22px">Bekijk mijn aanbod →</a></p></div>
+  <form id="form" class="k" style="text-align:left;margin-top:22px" hidden>
+    <label for="code" style="font-weight:800;color:var(--dark)">Vul je kortingscode in</label>
+    <p style="font-size:14px;color:var(--mute);margin-top:2px">Die heb je gekregen van de vriend die ons aanraadde.</p>
+    <div style="display:flex;gap:8px;margin-top:12px"><input id="code" autocomplete="off" autocapitalize="characters" placeholder="Bijv. AJAY450" style="flex:1;min-width:0;border:1.5px solid #CFDCD9;border-radius:12px;padding:13px 14px;font:800 17px 'Nunito Sans',system-ui,sans-serif;text-transform:uppercase">
+      <button style="border:0;border-radius:12px;padding:0 18px;background:var(--teal);color:#fff;font:800 16px 'Nunito Sans',system-ui,sans-serif;cursor:pointer">Bekijk mijn aanbod</button></div>
+    <p id="fout" style="color:#C2412D;font-size:14px;margin-top:8px"></p>
+    <p style="font-size:14px;color:var(--mute);margin-top:6px">Lukt het niet? Bel of app <a href="tel:+31853335687" style="color:var(--teal);font-weight:800">085 333 56 87</a> en noem je code.</p>
+  </form></div>
+''' + '''<script>(function(){ var CODES = __CODES__, u = new URLSearchParams(location.search), c = (u.get('c') || u.get('code') || '').toUpperCase().replace(/[^A-Z0-9_-]/g, '').slice(0, 20), n = (u.get('n') || '').slice(0, 40);
+  function ga(c, n){ var q = new URLSearchParams({utm_source: 'vriendendeal', utm_medium: 'referral', utm_campaign: 'vriendendeal', utm_content: c}); n = n || CODES[c] || ''; if(n) q.set('door', n);
+    var to = '/thuisbatterij-berekenen?' + q.toString(); document.getElementById('door').href = to; document.getElementById('bezig').hidden = false; document.getElementById('form').hidden = true; location.replace(to); }
+  if(c){ ga(c, n); return; }
+  var f = document.getElementById('form'); f.hidden = false;
+  f.onsubmit = function(e){ e.preventDefault(); var v = document.getElementById('code').value.toUpperCase().replace(/[^A-Z0-9]/g, '');
+    if(CODES[v]) ga(v); else document.getElementById('fout').textContent = 'Deze code kennen we niet. Controleer hem nog even.'; };
+})();</script>
+</body></html>'''.replace('__CODES__', json.dumps(VRIENDCODES))
 
 JS_DEEL = '''<script>(function(){ var u = new URLSearchParams(location.search), c = (u.get('c') || '').replace(/[^A-Za-z0-9_-]/g, '').slice(0, 20), n = (u.get('n') || '').slice(0, 40);
   var link = location.origin + '/vriendendeal?c=' + encodeURIComponent(c) + (n ? '&n=' + encodeURIComponent(n) : '');
-  var tekst = __TEKST__;
+  var tekst = __TEKST__ + (c ? ' Mijn kortingscode is ' + c + '.' : '');
   document.getElementById('code').textContent = c ? 'Code ' + c : ''; if(n) document.getElementById('hoi').textContent = 'Hoi ' + n;
   document.getElementById('link').textContent = link;
   document.getElementById('wa').href = 'https://wa.me/?text=' + encodeURIComponent(tekst + '\\n' + link);

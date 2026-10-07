@@ -42,7 +42,7 @@ h1,h2,.d{font-family:'Bricolage Grotesque',system-ui,sans-serif;letter-spacing:-
   <p style="text-align:center;font-size:13px;color:var(--mute);margin-top:20px">Vragen? Bel of app <a href="https://wa.me/31853335687" style="color:var(--teal);font-weight:800">085 333 56 87</a> · Voltwijk B.V., Zevenbergen</p></div>
 <script>(function(){ var u = new URLSearchParams(location.search), c = (u.get('c') || '').replace(/[^A-Za-z0-9_-]/g, '').slice(0, 20), n = (u.get('n') || '').slice(0, 40);
   var link = location.origin + '/vriendendeal?c=' + encodeURIComponent(c) + (n ? '&n=' + encodeURIComponent(n) : '');
-  var tekst = "Hé! Ken je Voltwijk? Ze doen thuisbatterijen: vaste prijs inclusief installatie, met eigen monteurs. Salderen stopt in 2027, dus heb je zonnepanelen, kijk er dan nu naar. Via mijn link krijg je € 450 korting: een 16 kWh voor € 5.000, alles inbegrepen (na btw-teruggave). Eerlijk is eerlijk: ik krijg een bedankje als je klant wordt 🙂";
+  var tekst = "Hé! Ken je Voltwijk? Ze doen thuisbatterijen: vaste prijs inclusief installatie, met eigen monteurs. Salderen stopt in 2027, dus heb je zonnepanelen, kijk er dan nu naar. Via mijn link krijg je € 450 korting: een 16 kWh voor € 5.000, alles inbegrepen (na btw-teruggave). Eerlijk is eerlijk: ik krijg een bedankje als je klant wordt 🙂" + (c ? ' Mijn kortingscode is ' + c + '.' : '');
   document.getElementById('code').textContent = c ? 'Code ' + c : ''; if(n) document.getElementById('hoi').textContent = 'Hoi ' + n;
   document.getElementById('link').textContent = link;
   document.getElementById('wa').href = 'https://wa.me/?text=' + encodeURIComponent(tekst + '\n' + link);
