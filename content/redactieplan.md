@@ -34,7 +34,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-10-04, artikel-groepenkast-vervangen-kosten)] Groepenkast vervangen: wat kost het in 2026 | groepenkast vervangen kosten | meterkast | koopintentie
 - [klaar (2026-10-05, artikel-laadpaal-dynamisch-contract)] Laadpaal en dynamisch energiecontract: laden op de goedkoopste uren | laadpaal dynamisch contract | laadpaal | combineert trends
 - [klaar (2026-10-06, artikel-zonnepanelen-verzekeren)] Zonnepanelen verzekeren: opstal of inboedel? | zonnepanelen verzekering | zonnepanelen | veelgestelde vraag
-- [open] Split airco: wat is het en hoe werkt het | split airco (6.600/mnd) | airco | Semrush okt 2026, nog geen eigen artikel
+- [klaar (2026-10-07, artikel-split-airco)] Split airco: wat is het en hoe werkt het | split airco (6.600/mnd) | airco | Semrush okt 2026, nog geen eigen artikel
 - [open] Slimme thuisbatterij: wat maakt een batterij slim | slimme thuisbatterij (1.300/mnd) | batterij | Semrush okt 2026, sluit aan op EMS-artikel
 - [open] Elektrische boiler ontkalken en onderhoud | boiler ontkalken | boiler | onderhoudsvraag, weinig concurrentie
 - [klaar (2026-10-01, artikel-thuisbatterij-garage-schuur-winter)] Thuisbatterij in de garage of schuur: kan dat in de winter? | thuisbatterij garage temperatuur | batterij | seizoensvraag
@@ -62,3 +62,5 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] OCPP-laadpaal: waarom een open standaard belangrijk is | ocpp laadpaal | laadpaal | koopintentie, weinig consumentenuitleg
 - [open] Hagelschade aan zonnepanelen: wat te doen en hoe herken je microcracks? | hagelschade zonnepanelen | zonnepanelen | seizoens-/nieuwsgevoelig na hagelbuien
 - [open] Thuisbatterij en je woonverzekering: melden en dekking | thuisbatterij verzekering | batterij | vervolgvraag, sluit aan op brandveiligheid
+- [open] Multi-split airco: wanneer kies je één buitenunit voor meerdere kamers? | multi split airco | airco | koopintentie, verdieping op split-airco-artikel
+- [open] Airco binnenunit kiezen: wandmodel, vloermodel of cassette | airco binnenunit soorten | airco | vergelijkingsvraag, weinig Nederlandse consumentenuitleg
