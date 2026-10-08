@@ -21,6 +21,8 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar 2026-10-04, artikel-warmtepomp-zonder-vloerverwarming] Warmtepomp zonder vloerverwarming | warmtepomp zonder vloerverwarming (320/mnd) | warmtepomp | Semrush-onderzoek
 - [klaar 2026-10-04, artikel-zonnepanelen-met-thuisbatterij] Zonnepanelen met thuisbatterij in één keer | zonnepanelen met accu (1.000/mnd) | zonnepanelen | Semrush-onderzoek
 
+- [klaar 2026-10-08, artikel-voltwijk-in-de-bode-energiescan-moerdijk] Voltwijk in De Bode: gratis Energiescanweek Moerdijk | energiescan moerdijk | batterij | eigen nieuws (krant 30-09-2026), lokaal
+
 ## Open (op volgorde)
 - [klaar (2026-10-01, artikel-netcongestie-west-brabant)] Netcongestie in West-Brabant: wat betekent het voor jouw huis | netcongestie West-Brabant | batterij | lokaal, weinig concurrentie
 - [klaar (2026-10-02, artikel-warmtepomp-bij-vorst)] Warmtepomp bij vorst: werkt hij nog en wat kost het | warmtepomp vorst | warmtepomp | seizoensvraag oktober–februari
