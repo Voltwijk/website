@@ -24,6 +24,8 @@ G = json.load(open('tools/data/gemeenten.json', encoding='utf-8'))
 PS = json.load(open('tools/data/productsteden.json', encoding='utf-8'))
 # Thuisregio (adviseur aan huis). Alleen pagina's voor deze gemeenten mogen in Google; de rest krijgt noindex,
 # zodat Google ons niet ziet als een site vol bijna gelijke plaatspagina's voor plekken waar we niet komen.
+# Lokale feiten per gemeente (met bron), met de hand uitgezocht: tools/data/lokaal.json. Komt op alle pagina's van die gemeente.
+LOKAAL = json.load(open('tools/data/lokaal.json', encoding='utf-8')) if os.path.exists('tools/data/lokaal.json') else {}
 WERKGEBIED = set(json.load(open('tools/data/werkgebied.json', encoding='utf-8'))['gemeenten'])
 PROVINCIES = ['Noord-Brabant', 'Zuid-Holland', 'Noord-Holland', 'Utrecht', 'Zeeland']
 esc = lambda s: html.escape(str(s), quote=True)
@@ -175,6 +177,7 @@ CSS = '''<style>
 .sp-gm>div{background:#fff;border:1px solid var(--border);border-radius:18px;padding:18px 20px;}
 .sp-gm h3{font-size:17px;}.sp-gm h3 a{color:var(--ink);text-decoration:none;}.sp-gm h3 a:hover{color:var(--primary);}
 .sp-gm p{font-size:13.5px;color:var(--ink-soft);margin-top:6px;line-height:1.55;}
+.sp-lok p{font-size:15px;}.sp-lok p.sp-bron{font-size:12.5px;}.sp-lok .sp-bron a{color:inherit;}
 .sp-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:18px;}
 .sp-steps>div{background:#fff;border:1px solid var(--border);border-radius:18px;padding:20px;}
 .sp-steps b{display:block;font-size:16px;margin-bottom:6px;}.sp-steps p{font-size:14.5px;color:var(--ink-soft);line-height:1.6;}
@@ -284,6 +287,38 @@ def ps_faq(p, stad, g):
     qa.append(('Wie regelt de aanmelding bij de netbeheerder?', 'Dat doen wij. Welke netbeheerder je hebt, hangt af van je adres. Moet je aansluiting zwaarder, bijvoorbeeld 3-fase, dan regelen we dat ook.'))
     return qa
 
+def lokaal_html(g, p=None):
+    """Blok 'Wat speelt er in <gemeente>': lokale regelingen, vergunningen en loketten, elk met bron."""
+    L = LOKAAL.get(g)
+    if not L: return ''
+    items = [x for x in L['punten'] if not x.get('producten') or p is None or p in x['producten']]
+    if not items: return ''
+    li = ''.join(f'<div><h3>{esc(x["kop"])}</h3><p>{esc(x["tekst"])}</p>' + (f'<p class="sp-bron">Bron: <a href="{esc(x["bron"][1])}" rel="nofollow noopener" target="_blank">{esc(x["bron"][0])}</a></p>' if x.get('bron') else '') + '</div>' for x in items)
+    return f'''<div class="wrap reveal sp-sec" style="max-width:1000px;">
+    <h2 class="vw-heading sp-h2">Wat speelt er in {esc(L.get('naam', toon(g)))}?</h2>
+    <p style="font-size:15.5px;color:var(--ink-soft);margin-top:10px;line-height:1.6;max-width:720px;">{esc(L['intro'])}</p>
+    <div class="sp-gm sp-lok">{li}</div>
+  </div>'''
+
+LOK_CSS = ('<style>.sp-lok{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px;}'
+           '.sp-lok>div{background:#fff;border:1px solid var(--border);border-radius:18px;padding:18px 20px;}.sp-lok h3{font-size:17px;}'
+           '.sp-lok p{font-size:15px;color:var(--ink-soft);margin-top:6px;line-height:1.55;}.sp-lok p.sp-bron{font-size:12.5px;color:var(--ink-faint);}'
+           '.sp-lok .sp-bron a{color:inherit;}@media(max-width:700px){.sp-lok{grid-template-columns:1fr;}}</style>')
+def lokaal_handwerk():
+    """Zelfde blok op de met de hand gemaakte plaatspagina's (tools/local_pages.py), vóór 'Zo gaat het'."""
+    n = 0
+    for g, L in LOKAAL.items():
+        for sl in L.get('paginas', []):
+            f = f'installateur-{sl}.html'
+            if not os.path.exists(f): continue
+            t = open(f, encoding='utf-8').read()
+            blok = '<!-- vw-lokaal:start -->' + LOK_CSS + lokaal_html(g).replace('sp-h2', 'lp-h2').replace('sp-sec', 'lp-sec') + '<!-- vw-lokaal:end -->\n  '
+            t2 = re.sub(r'<!-- vw-lokaal:start -->.*?<!-- vw-lokaal:end -->\n  ', lambda m: blok, t, flags=re.S)
+            if t2 == t and '<!-- vw-lokaal:start -->' not in t:
+                t2 = t.replace('<div class="wrap reveal lp-sec" style="max-width:1000px;">\n    <h2 class="vw-heading lp-h2">Zo gaat het</h2>', blok + '<div class="wrap reveal lp-sec" style="max-width:1000px;">\n    <h2 class="vw-heading lp-h2">Zo gaat het</h2>', 1)
+            if t2 != t: open(f, 'w', encoding='utf-8').write(t2); n += 1
+    return n
+
 def ps_main(p, stad):
     g, d, st = gem_van(stad), P[p], stad_toon(stad)
     v, pv = G[g], G[gem_van(stad)]['provincie']
@@ -297,11 +332,11 @@ def ps_main(p, stad):
     attrs = f' data-dienst="{esc(d["naam"])}" data-plaats="{esc(st)}" data-gemeente="{esc(toon(g))}" data-provincie="{esc(pv)}"'
     sub = {'thuisbatterij': f'Vaste prijs {eur(VANAF)} – {eur(PAKKETTEN[-1]["prijs"])} excl. btw, inclusief installatie',
            'zonnepanelen': 'Vanaf € 3.999 voor 12 panelen, inclusief installatie', 'airco': 'Vanaf € 1.899, inclusief installatie',
-           'warmtepomp': 'Vanaf € 6.750, inclusief installatie · ISDE-subsidie tot € 2.550'}[p]
+           'warmtepomp': 'Vanaf € 6.750, inclusief installatie · hulp bij de ISDE-subsidie'}[p]
     intro = {'thuisbatterij': f'Een thuisbatterij in {st} laten installeren? Wij plaatsen batterijen van 10 en 16 kWh met hybride omvormer, voor een vaste prijs inclusief installatie. Klaar voor het einde van het salderen op 1 januari 2027.',
              'zonnepanelen': f'Zonnepanelen in {st} laten installeren? Wij ontwerpen het systeem op maat voor jouw dak en installeren het met onze eigen monteurs, voor een vaste prijs die je vooraf weet.',
              'airco': f'Een airco in {st} laten plaatsen? Onze split-unit koelt in de zomer en verwarmt efficiënt in voor- en najaar. Geïnstalleerd door onze eigen monteurs, voor een vaste prijs.',
-             'warmtepomp': f'Een warmtepomp in {st}? Wij installeren lucht/water- en hybride warmtepompen, regelen de ISDE-subsidie voor je en werken met een vaste prijs vooraf.'}[p]
+             'warmtepomp': f'Een warmtepomp in {st}? Wij installeren lucht/water- en hybride warmtepompen, helpen je met de ISDE-subsidieaanvraag en werken met een vaste prijs vooraf.'}[p]
     punten = ''.join(f'<li>{esc(x)}</li>' for x in d['punten'])
     bat = ''
     if p == 'thuisbatterij':
@@ -332,6 +367,7 @@ def ps_main(p, stad):
     {tegels(g)}
     <p class="sp-bron">{esc(BRON)}</p>
   </div>
+  {lokaal_html(g, p)}
   {funnel_plek()}
   <div class="wrap reveal sp-sec" style="max-width:1000px;">
     <h2 class="vw-heading sp-h2">Zo gaat het</h2>
@@ -404,6 +440,7 @@ def gem_main(g):
     {tegels(g)}
     <p class="sp-bron">{esc(BRON)}</p>
   </div>
+  {lokaal_html(g)}
   <div class="wrap reveal sp-sec" style="max-width:1000px;">
     <h2 class="vw-heading sp-h2">Hier komen we in de gemeente {esc(gm)}</h2>
     <div class="sp-chips">{plaatsen}</div>
@@ -501,6 +538,7 @@ def main():
         if len(t) > 60: t = f'Thuisbatterij en zonnepanelen {pv}'
         d = f'Thuisbatterij, zonnepanelen, airco en warmtepomp in heel {pv}: alle gemeenten en woonplaatsen, met vaste prijzen inclusief installatie.'
         open(sl + '.html', 'w', encoding='utf-8').write(page(shell, prov_main(pv), sl, t, d, any(G[g]['provincie'] == pv for g in WERKGEBIED))); gemaakt.add(sl)
+    n_lok = lokaal_handwerk()
     # opruimen: eerder gemaakte pagina's die niet meer in de lijst staan
     weg = 0
     for f in os.listdir('.'):
@@ -513,7 +551,7 @@ def main():
         if w2 == w and '<!-- vw-provincies:start -->' not in w:
             w2 = w.replace('<div class="wrap reveal lp-sec" style="max-width:1000px;">', blok + '\n  <div class="wrap reveal lp-sec" style="max-width:1000px;">', 1)
         if w2 != w: open('werkgebied.html', 'w', encoding='utf-8').write(w2)
-    print(f'stadspaginas: {n_ps} product-in-stad, {n_gm} gemeenten, {len(PROVINCIES)} provincies; {weg} oude verwijderd; {len(BESTAAND)} bestaande plaatspagina\'s ongemoeid')
+    print(f'stadspaginas: {n_ps} product-in-stad, {n_gm} gemeenten, {len(PROVINCIES)} provincies; {weg} oude verwijderd; {len(BESTAAND)} bestaande plaatspagina\'s ongemoeid; lokaal blok op {n_lok} daarvan')
 
 if __name__ == '__main__':
     main()

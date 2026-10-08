@@ -68,3 +68,9 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Airco binnenunit kiezen: wandmodel, vloermodel of cassette | airco binnenunit soorten | airco | vergelijkingsvraag, weinig Nederlandse consumentenuitleg
 - [open] Inlaatcombinatie boiler lekt: normaal of niet? | inlaatcombinatie lekt | boiler | concrete probleemvraag, veel gezocht
 - [open] Waterhardheid en je boiler of warmtepomp in West-Brabant | waterhardheid west-brabant | boiler | lokaal, weinig concurrentie
+- [klaar (2026-10-08, artikel-thuisbatterij-bij-solaredge)] Thuisbatterij bij SolarEdge: welke opties | solaredge thuisbatterij (4.400/mnd) | batterij | gat: SERP vol webshops, geen installateursuitleg
+- [klaar (2026-10-08, artikel-thuisbatterij-bij-growatt-omvormer)] Thuisbatterij bij Growatt-omvormer | growatt thuisbatterij (1.600/mnd) | batterij | gat: SERP vol webshops
+- [klaar (2026-10-08, artikel-thuisbatterij-bij-micro-omvormers)] Thuisbatterij bij micro-omvormers | thuisbatterij enphase (590/mnd) | batterij | gat
+- [klaar (2026-10-08, artikel-dyness-thuisbatterij)] Dyness thuisbatterij | dyness thuisbatterij (1.000/mnd, weinig resultaten) | batterij | merk dat Voltwijk zelf installeert
+- [open] Thuisbatterij bij SMA-, Huawei-, GoodWe- en Fronius-omvormer (zelfde opzet als SolarEdge/Growatt) | thuisbatterij <merk> omvormer | batterij | merkzoekwoorden, SERP vol webshops
+- [open] Solis hybride omvormer: wat is het en welke past | solis thuisbatterij | batterij | merk dat Voltwijk zelf installeert
