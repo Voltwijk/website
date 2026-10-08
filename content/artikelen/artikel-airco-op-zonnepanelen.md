@@ -1,6 +1,6 @@
 title: Airco laten draaien op je zonnepanelen: hoeveel stroom komt van je eigen dak?
 seo_title: Airco op zonnepanelen: hoeveel van je dak? | Voltwijk
-description: Airco op zonnepanelen: koelen in de zomer past goed bij je zonnestroom, verwarmen in de winter veel minder. Met rekenvoorbeeld, timingtips en de rol van een batterij.
+description: Airco op zonnepanelen: koelen past goed bij je zonnestroom, verwarmen in de winter veel minder. Met rekenvoorbeeld, timingtips en de rol van een batterij.
 category: Airco
 product: airco
 date: 2026-10-08
@@ -84,7 +84,7 @@ Elke kWh die je zelf gebruikt, wordt daardoor meer waard dan een kWh die je teru
 - je krijgt netto € 0,05 per teruggeleverde kWh (aanname; dat verschilt sterk per leverancier en contract);
 - je airco gebruikt in een zomer zo'n 200 kWh, waarvan 80% van je dak komt: 160 kWh.
 
-Die 160 kWh had je anders teruggeleverd voor € 8, en nu hoef je hem niet in te kopen voor € 50. Het verschil is zo'n **€ 40 per zomer**. Geen groot bedrag, maar het laat zien waarom koelen op je eigen zonnestroom na 2027 extra aantrekkelijk is. Hoe de vergoeding werkt, lees je in [terugleververgoeding vanaf 2027](/artikel-terugleververgoeding-2027).
+Die 160 kWh had je anders teruggeleverd voor € 8, en nu hoef je hem niet in te kopen voor € 50. Het verschil is zo'n **€ 40 per zomer**. Geen groot bedrag, maar wel een duidelijk voordeel. Hoe de vergoeding werkt, lees je in [terugleververgoeding vanaf 2027](/artikel-terugleververgoeding-2027).
 
 ## Wat doet een thuisbatterij?
 
@@ -104,7 +104,6 @@ Een batterij koop je meestal niet alleen voor de airco. Kijk naar je hele verbru
 3. **Zet hem 's avonds uit als het kan.** Techniek Nederland adviseert de airco 's avonds uit te zetten en het huis te laten afkoelen met open ramen of roosters, als het buiten koeler is.
 4. **Gebruik de timer of de app.** Laat de airco niet de hele dag in een lege kamer draaien, maar plan hem in op de zonuren.
 5. **Houd de zon buiten.** Screens of een zonnescherm aan de buitenkant houden warmte buiten, zodat de airco minder hoeft te doen.
-6. **Kijk naar je opbrengst.** In de app van je omvormer zie je hoe laat je panelen het meest leveren. Stem de airco daarop af.
 
 ## Hoe Voltwijk helpt
 

@@ -90,8 +90,6 @@ Niet per se. Je hebt één bron van geluid in plaats van meerdere. Maar die ene 
 
 Voor de buren telt vooral wat er op de **erfgrens** aankomt. 's Avonds en 's nachts mag dat maximaal 40 dB(A) zijn. Bij een multi-split heb je wel één voordeel: je kiest één goede plek, zo ver mogelijk van slaapkamerramen van de buren. Bij drie losse units moet je drie goede plekken vinden.
 
-Binnen merk je weinig verschil. Daar hoor je alleen de ventilator van de binnenunit.
-
 ## Heb je een vergunning nodig, en hoe zit het met F-gassen?
 
 Voor de buitenunit van een multi-split gelden dezelfde regels als voor elke andere buitenunit. Aan de achtergevel of op een plat dak is dat meestal vergunningvrij. Aan de voorgevel, bij een monument of in een appartement vaak niet. Alles daarover lees je in [airco plaatsen: regels en vergunning](/artikel-airco-plaatsen-regels-vergunning).
