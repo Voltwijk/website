@@ -35,8 +35,8 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-10-05, artikel-laadpaal-dynamisch-contract)] Laadpaal en dynamisch energiecontract: laden op de goedkoopste uren | laadpaal dynamisch contract | laadpaal | combineert trends
 - [klaar (2026-10-06, artikel-zonnepanelen-verzekeren)] Zonnepanelen verzekeren: opstal of inboedel? | zonnepanelen verzekering | zonnepanelen | veelgestelde vraag
 - [klaar (2026-10-07, artikel-split-airco)] Split airco: wat is het en hoe werkt het | split airco (6.600/mnd) | airco | Semrush okt 2026, nog geen eigen artikel
-- [open] Slimme thuisbatterij: wat maakt een batterij slim | slimme thuisbatterij (1.300/mnd) | batterij | Semrush okt 2026, sluit aan op EMS-artikel
-- [open] Elektrische boiler ontkalken en onderhoud | boiler ontkalken | boiler | onderhoudsvraag, weinig concurrentie
+- [open, let op overlap] Slimme thuisbatterij: wat maakt een batterij slim | slimme thuisbatterij (1.300/mnd) | batterij | Semrush okt 2026; 2026-10-08 overgeslagen: grotendeels gedekt door EMS-, dynamisch-contract- en plug-and-play-artikel. Beter: EMS-artikel bijwerken met dit zoekwoord (onderhoudsbeurt)
+- [klaar (2026-10-08, artikel-boiler-ontkalken-onderhoud)] Elektrische boiler ontkalken en onderhoud | boiler ontkalken | boiler | onderhoudsvraag, weinig concurrentie
 - [klaar (2026-10-01, artikel-thuisbatterij-garage-schuur-winter)] Thuisbatterij in de garage of schuur: kan dat in de winter? | thuisbatterij garage temperatuur | batterij | seizoensvraag
 - [klaar (2026-10-01, artikel-warmtepomp-en-thuisbatterij)] Hybride warmtepomp combineren met een thuisbatterij | warmtepomp en thuisbatterij | warmtepomp | kruisverkoop
 - [open] ISDE-subsidie 2027: wat verandert er | isde 2027 | warmtepomp | zodra RVO bedragen 2027 publiceert
@@ -64,3 +64,5 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Thuisbatterij en je woonverzekering: melden en dekking | thuisbatterij verzekering | batterij | vervolgvraag, sluit aan op brandveiligheid
 - [open] Multi-split airco: wanneer kies je één buitenunit voor meerdere kamers? | multi split airco | airco | koopintentie, verdieping op split-airco-artikel
 - [open] Airco binnenunit kiezen: wandmodel, vloermodel of cassette | airco binnenunit soorten | airco | vergelijkingsvraag, weinig Nederlandse consumentenuitleg
+- [open] Inlaatcombinatie boiler lekt: normaal of niet? | inlaatcombinatie lekt | boiler | concrete probleemvraag, veel gezocht
+- [open] Waterhardheid en je boiler of warmtepomp in West-Brabant | waterhardheid west-brabant | boiler | lokaal, weinig concurrentie
