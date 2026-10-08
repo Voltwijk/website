@@ -24,7 +24,7 @@ G = {
   ['Hybride of volledig elektrisch?', 'Een hybride warmtepomp werkt samen met je cv-ketel en past in bijna elk huis. Volledig elektrisch vervangt de ketel helemaal, maar vraagt om goede isolatie en een lage aanvoertemperatuur.', 'artikel-hybride-of-volledige-warmtepomp'],
   ['Is je huis geschikt?', 'Een simpele test: zet je cv-ketel in de winter op 55 °C aanvoertemperatuur. Blijft het binnen warm genoeg, dan is je huis vaak geschikt.', 'artikel-is-mijn-huis-geschikt-voor-een-warmtepomp'],
   ['Wat betekenen COP en SCOP?', 'De COP is hoeveel warmte je krijgt per kWh stroom, op één meetpunt. Onze warmtepomp haalt 4,7 bij A7/W35: 1 kWh stroom wordt bijna 5 kWh warmte. De SCOP is het realistischere seizoensgemiddelde.', 'artikel-cop-en-scop-uitgelegd'],
-  ['Welke subsidie krijg je?', 'Voor warmtepompen geldt de ISDE-subsidie. Je vraagt die aan ná de installatie; voor onze 6 kW warmtepomp is dat indicatief tot € 2.550.', 'artikel-isde-subsidie-2026'],
+  ['Welke subsidie krijg je?', 'Voor warmtepompen geldt de ISDE-subsidie. Je vraagt die aan ná de installatie; voor een warmtepomp van 6 kW is dat in 2026 € 2.375, of € 2.575 met energielabel A+++.', 'artikel-isde-subsidie-2026'],
   ['Maakt een warmtepomp veel geluid?', 'Moderne buitenunits zijn stil, en er gelden wettelijke geluidsgrenzen op de erfgrens. De plek van de buitenunit maakt het grootste verschil.', 'artikel-warmtepomp-geluid'],
   ['Mag de netbeheerder je warmtepomp aansturen?', 'Bij drukte op het stroomnet kan een warmtepomp tijdelijk worden teruggeregeld. Wat dat betekent voor je comfort, lees je hier.', 'artikel-warmtepomp-sturing'],
  ],

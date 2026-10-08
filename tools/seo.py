@@ -29,6 +29,7 @@ T = {  # titel, description
 }
 T.update({  # kortere titels (Google toont ~60 tekens)
  'artikel-airco-als-bijverwarming': ('Airco als bijverwarming: bespaar je op gas? | Voltwijk', None),
+ 'artikel-isde-subsidie-2026': ('ISDE-subsidie 2026: bedragen en voorwaarden | Voltwijk', 'ISDE-subsidie 2026: € 1.025 + € 225 per kW voor een warmtepomp, plus € 200 bij A+++. Alle bedragen, voorwaarden en de aanvraag stap voor stap.'),
  'artikel-capaciteitstarief-en-meterkast': ('Capaciteitstarief en je meterkast | Voltwijk', None),
  'artikel-dynamisch-contract-en-batterij': ('Dynamisch contract en thuisbatterij | Voltwijk', None),
  'artikel-elektrische-boiler-vs-gas': ('Elektrische boiler of gasboiler in 2026? | Voltwijk', None),
