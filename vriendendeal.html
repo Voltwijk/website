@@ -33,7 +33,7 @@ h1,h2,.d{font-family:'Bricolage Grotesque',system-ui,sans-serif;letter-spacing:-
     <p id="fout" style="color:#C2412D;font-size:14px;margin-top:8px"></p>
     <p style="font-size:14px;color:var(--mute);margin-top:6px">Lukt het niet? Bel of app <a href="tel:+31853335687" style="color:var(--teal);font-weight:800">085 333 56 87</a> en noem je code.</p>
   </form></div>
-<script>(function(){ var CODES = {"AJAY450": "Ajay", "MAX450": "Max", "ANDRE450": "Andre", "ROBIN450": "Robin", "FARHAD450": "Farhad", "ROCKY450": "Rocky", "ROCCIE450": "Rocky", "ALI450": "Ali"}, u = new URLSearchParams(location.search), c = (u.get('c') || u.get('code') || '').toUpperCase().replace(/[^A-Z0-9_-]/g, '').slice(0, 20), n = (u.get('n') || '').slice(0, 40);
+<script>(function(){ var CODES = {"AJAY450": "Ajay", "MAX450": "Max", "ANDRE450": "Andre", "ROBIN450": "Robin", "FARHAD450": "Farhad", "ROCKY450": "Rocky", "ROCCIE450": "Rocky", "ALI450": "Ali", "MOERDIJK450": "Groepsactie Moerdijk"}, u = new URLSearchParams(location.search), c = (u.get('c') || u.get('code') || '').toUpperCase().replace(/[^A-Z0-9_-]/g, '').slice(0, 20), n = (u.get('n') || '').slice(0, 40);
   function ga(c, n){ var q = new URLSearchParams({utm_source: 'vriendendeal', utm_medium: 'referral', utm_campaign: 'vriendendeal', utm_content: c}); n = n || CODES[c] || ''; if(n) q.set('door', n);
     var to = '/thuisbatterij-berekenen?' + q.toString(); document.getElementById('door').href = to; document.getElementById('bezig').hidden = false; document.getElementById('form').hidden = true; location.replace(to); }
   if(c){ ga(c, n); return; }
