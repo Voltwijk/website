@@ -9,7 +9,7 @@ lead: Deye is een Chinese fabrikant uit Ningbo van omvormers en batterijen, sind
 summary: Deye (Ningbo Deye Inverter Technology) maakt hybride omvormers, micro-omvormers en batterijen en is sinds 2021 beursgenoteerd in Shanghai || De hybride omvormers heten SUN-…K-SG…; LP = laagvolt-batterij (48 V), HP = hoogvolt-batterij || Deye is los en in pakketten te koop bij webwinkels, ook voor wie zelf wil installeren || Check het Nederlandse netcode-certificaat van je exacte model, meld de batterij aan op energieleveren.nl en laat installeren volgens NEN 1010
 sources: Deye – Over het bedrijf|https://deyeinverter.com/about || Deye – Verklaring Nederland (Netcode, NEN-EN 50549-1)|https://www.deyeinverter.com/deyeinverter/2023/12/13/certificate_netherlands+nen-en50549-1.pdf || Deye – Datasheet SUN-5-12K-SG04LP3|https://www.deyeinverter.com/deyeinverter/2026/04/25/BDatasheetSUN-5-12K-SG04LP320260424en-4jti.pdf || Solar Magazine – Verplichte registratie thuisbatterij|https://solarmagazine.nl/nieuws-zonne-energie/i37394/verplichte-registratie-thuisbatterij-website-energieleveren-nl-vernieuwd || Consumentenbond – Hoe is je thuisbatterij verzekerd?|https://www.consumentenbond.nl/woonverzekering/hoe-is-je-thuisbatterij-verzekerd || Zonneplan – Moet je een thuisbatterij aanmelden?|https://www.zonneplan.nl/thuisbatterij/aanmelden/
 ---
-Zoek je online naar een thuisbatterij, dan kom je de naam Deye snel tegen. Vooral in webwinkels, op fora en in complete pakketten met panelen, omvormer en batterij. De prijzen zijn vaak scherp. Maar wat koop je dan precies, en waar moet je op letten voordat je een Deye-systeem laat plaatsen of zelf aan de slag gaat?
+Zoek je online naar een thuisbatterij, dan kom je de naam Deye snel tegen. Vooral in webwinkels, op fora en in complete pakketten met panelen, omvormer en batterij. Maar wat koop je dan precies, en waar moet je op letten voordat je een Deye-systeem laat plaatsen of zelf aan de slag gaat?
 
 In dit artikel zetten we het neutraal op een rij.
 
@@ -24,7 +24,7 @@ Deye maakt:
 - **micro-omvormers**,
 - **batterijen en opslagsystemen**.
 
-Volgens Deye zelf worden de producten in meer dan 140 landen verkocht. Deye is vooral bekend van de hybride omvormers. Die zijn flexibel in te stellen en kunnen ook werken met een aggregaat of als noodstroomvoorziening. Daardoor zijn ze in veel landen populair, ook buiten Nederland.
+Volgens Deye zelf worden de producten in meer dan 140 landen verkocht. Deye is vooral bekend van de hybride omvormers. Die zijn flexibel in te stellen; volgens de datasheet kan een aggregaat worden aangesloten.
 
 ## Hoe werken de Deye hybride omvormers (SUN-SG)?
 
@@ -51,7 +51,7 @@ Belangrijk: een batterij moet passen bij je omvormer. Een laagvolt-batterij hoor
 
 ## Waarom zie je Deye zo vaak in webwinkels?
 
-Deye-omvormers en -batterijen zijn los te koop bij veel (buitenlandse) webwinkels, vaak in pakketten met panelen, omvormer, batterij en kabels. Sommige winkels presenteren dat als eenvoudig zelf te installeren. De systemen zijn flexibel en de prijs per kWh is aantrekkelijk. Daardoor zijn ze populair bij mensen die technisch handig zijn en het graag zelf doen.
+Deye-omvormers en -batterijen zijn los te koop bij veel (buitenlandse) webwinkels, vaak in pakketten met panelen, omvormer, batterij en kabels. Sommige winkels presenteren dat als eenvoudig zelf te installeren. Daardoor trekt het merk veel mensen die technisch handig zijn en het graag zelf doen.
 
 Dat is op zich geen probleem. Maar een thuisbatterij met een hybride omvormer is een vaste elektrische installatie op je groepenkast, met hoge stromen aan de batterijkant. Dan gelden er regels, en daar gaat het in de praktijk het vaakst mis. Lees ook [thuisbatterij kopen: waar let je op](/artikel-thuisbatterij-kopen-waar-op-letten).
 
@@ -95,7 +95,7 @@ Deye is een groot en serieus merk, met flexibele hybride omvormers. Of het de go
 
 ## Hoe Voltwijk helpt
 
-Wij werken zelf niet met Deye, maar met een Dyness LFP-batterij en een Solis hybride omvormer, geplaatst door onze eigen monteurs. Onze pakketten zijn inclusief installatie: 10 kWh met 5 kW (1-fase) voor € 4.950 excl. btw, 16 kWh met 6 kW (1-fase) voor € 5.450 excl. btw en 16 kWh met 8 kW (3-fase) voor € 5.950 excl. btw, met 2 jaar garantie op de installatie. Wil je vergelijken? Bereken welke thuisbatterij past, of plan een gratis adviesgesprek via [contact](/contact).
+Onze thuisbatterijen bestaan uit een Dyness LFP-batterij met een Solis hybride omvormer, geplaatst door onze eigen monteurs. Onze pakketten zijn inclusief installatie: 10 kWh met 5 kW (1-fase) voor € 4.950 excl. btw, 16 kWh met 6 kW (1-fase) voor € 5.450 excl. btw en 16 kWh met 8 kW (3-fase) voor € 5.950 excl. btw, met 2 jaar garantie op de installatie. Wil je vergelijken? Bereken welke thuisbatterij past, of plan een gratis adviesgesprek via [contact](/contact).
 
 faq:
 Q: Is een Deye thuisbatterij goed?
