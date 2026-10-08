@@ -118,7 +118,7 @@ Een paar vragen om jezelf te stellen:
 
 ## Hoe Voltwijk helpt
 
-Voltwijk plaatst thuisbatterijen in heel West-Brabant, met eigen monteurs en een vaste prijs inclusief installatie. Op de installatie krijg je 2 jaar garantie. Bekijk de pakketten op de [thuisbatterij-pagina](/product-batterij) of bereken met de [batterijcalculator](/thuisbatterij-berekenen) welke bij je past. Heb je vragen over jouw situatie, dan kijken we graag met je mee.
+Voltwijk plaatst thuisbatterijen in heel West-Brabant, met eigen monteurs en een vaste prijs inclusief installatie. Je krijgt 10 jaar fabrieksgarantie op de thuisbatterij. Bekijk de pakketten op de [thuisbatterij-pagina](/product-batterij) of bereken met de [batterijcalculator](/thuisbatterij-berekenen) welke bij je past. Heb je vragen over jouw situatie, dan kijken we graag met je mee.
 
 faq:
 Q: Wat kost een thuisbatterij in Breda of West-Brabant?

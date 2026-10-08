@@ -113,7 +113,7 @@ Woon je ergens anders? Op de pagina [werkgebied](/werkgebied) zie je waar we ver
 
 ## Hoe Voltwijk helpt
 
-Voltwijk plaatst split-airco's in heel West-Brabant, met eigen monteurs en een vaste prijs inclusief installatie. Op de installatie krijg je 2 jaar garantie. We kijken met je mee naar het vermogen en de beste plek voor de buitenunit. Meer informatie staat op de [airco-pagina](/product-airco).
+Voltwijk plaatst split-airco's in heel West-Brabant, met eigen monteurs en een vaste prijs inclusief installatie. Je krijgt de volledige fabrieksgarantie op de airco. We kijken met je mee naar het vermogen en de beste plek voor de buitenunit. Meer informatie staat op de [airco-pagina](/product-airco).
 
 faq:
 Q: Wat kost een airco laten plaatsen in Breda of West-Brabant?

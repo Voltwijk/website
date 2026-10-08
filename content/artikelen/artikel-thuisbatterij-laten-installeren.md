@@ -75,7 +75,7 @@ Na de installatie:
 
 ## Hoe Voltwijk helpt
 
-Voltwijk installeert thuisbatterijen met eigen monteurs, voor een vaste prijs inclusief installatie: 10 kWh met 5 kW omvormer voor € 4.950, 16 kWh met 6 kW voor € 5.450 en 16 kWh 3-fase met 8 kW voor € 5.950, alle excl. btw. Op de installatie krijg je 2 jaar garantie. Bereken welke thuisbatterij past met de [batterijcalculator](/thuisbatterij-berekenen), of plan een gratis adviesgesprek om je situatie door te nemen.
+Voltwijk installeert thuisbatterijen met eigen monteurs, voor een vaste prijs inclusief installatie: 10 kWh met 5 kW omvormer voor € 4.950, 16 kWh met 6 kW voor € 5.450 en 16 kWh 3-fase met 8 kW voor € 5.950, alle excl. btw. Je krijgt 10 jaar fabrieksgarantie op de thuisbatterij. Bereken welke thuisbatterij past met de [batterijcalculator](/thuisbatterij-berekenen), of plan een gratis adviesgesprek om je situatie door te nemen.
 
 faq:
 Q: Wat doet een installateur bij het installeren van een thuisbatterij?

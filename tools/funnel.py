@@ -62,7 +62,7 @@ FAQ = [
   'en gebruik je hem zelf, \'s avonds en \'s nachts.'),
  ('Wat zit er in de prijs?',
   'De batterij en hybride omvormer, montage en bekabeling, een eigen groep in de meterkast, het instellen van de app en uitleg bij de '
-  'oplevering. Door onze eigen monteurs, met 2 jaar garantie op de installatie. Is er meerwerk nodig, bijvoorbeeld omdat je meterkast '
+  'oplevering. Door onze eigen monteurs, met 10 jaar fabrieksgarantie op de batterij. Is er meerwerk nodig, bijvoorbeeld omdat je meterkast '
   'vol zit, dan hoor je dat altijd vooraf, met de prijs erbij.'),
  ('Kan ik de btw terugvragen?',
   'Vaak wel. Gebruik je de batterij met een dynamisch energiecontract en een energiemanagementsysteem om stroom in en te verkopen, '
@@ -79,7 +79,7 @@ FAQ = [
   'aanbetaling van € 350. Die gaat van de totaalprijs af.'),
 ]
 TRUST = [('12.500+', 'installaties'), ('4,7 / 5', 'op Google'), ('Eigen monteurs', 'geen onderaannemers'),
-         ('Vaste prijs', 'inclusief installatie'), ('2 jaar', 'garantie op de installatie')]
+         ('Vaste prijs', 'inclusief installatie'), ('10 jaar', 'fabrieksgarantie op de batterij')]
 STEPS = [
  ('Bereken', 'Een paar korte vragen. Je ziet direct welke batterij past, wat hij kost en wat je ongeveer bespaart.'),
  ('Adviesgesprek', 'We bellen je of komen langs. We checken je meterkast (een foto via WhatsApp helpt) en rekenen het samen na.'),
@@ -345,7 +345,7 @@ PK_TXT = {
    'feat': ['16 kWh opslag', 'Solis 8 kW hybride omvormer, verdeelt het vermogen over drie fasen', 'Veilige LFP-cellen', 'Geschikt bij een warmtepomp, laadpaal of dynamisch contract'],
    'foto': [('/images/calc-dyness-schuin-1.webp', 'Dyness LFP-batterij, 16 kWh', 'fit'), ('/images/calc-dyness-voor.webp', 'Dyness LFP-batterij, vooraanzicht', 'fit'), ('/images/calc-dyness-schuin-2.webp', 'Dyness LFP-batterij, zijaanzicht', 'fit')]},
 }
-INBEGREPEN = ['Batterij en hybride omvormer', 'Montage en bekabeling door onze eigen monteurs', 'Een eigen groep in de meterkast', 'Aanmelden bij de netbeheerder', 'App ingesteld en uitleg bij de oplevering', '2 jaar garantie op de installatie']
+INBEGREPEN = ['Batterij en hybride omvormer', 'Montage en bekabeling door onze eigen monteurs', 'Een eigen groep in de meterkast', 'Aanmelden bij de netbeheerder', 'App ingesteld en uitleg bij de oplevering', '10 jaar fabrieksgarantie op de batterij']
 
 JS = r'''<script>
 (function(){
@@ -648,7 +648,7 @@ JS = r'''<script>
       '<button type="button" class="tb-btn full" data-install>Vraag je installatie aan voor ' + eur(prijs(p)) + ' →</button>' +
       '<button type="button" class="tb-alt" data-offerte>Liever eerst een vrijblijvende offerte</button>' +
       '<div class="tb-risk"><span>Je betaalt nu niets</span><span>Gratis technische check</span><span>Eigen monteurs</span></div>' +
-      '<div class="tb-proof"><span><i>★★★★★</i> 4,7 / 5 op Google</span><span>12.500+ installaties</span><span>2 jaar installatiegarantie</span></div>' +
+      '<div class="tb-proof"><span><i>★★★★★</i> 4,7 / 5 op Google</span><span>12.500+ installaties</span><span>10 jaar fabrieksgarantie</span></div>' +
       '<details class="tb-inc"><summary>Wat zit er in de prijs?</summary>' + ck(INC) + '</details>' +
       '</div></div>' + bar('Installatie aanvragen →', 'tbInGo');
   }
@@ -826,7 +826,7 @@ def band(f):
     <div><div style="font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--mint);">Vaste prijs · eigen monteurs</div>
       <h2 class="vw-heading" style="color:#fff;font-size:clamp(26px,3.2vw,38px);margin-top:10px;line-height:1.1;">Vraag een offerte aan voor {esc(prod)}</h2>
       <p style="color:#C9D6D3;font-size:15.5px;line-height:1.6;margin-top:12px;max-width:520px;">Laat je gegevens achter. We nemen contact op, stellen een paar vragen over je woning en sturen je een offerte met een vaste prijs, inclusief installatie.</p>
-      <ul class="vwo-ck"><li>Vrijblijvend, je zit nergens aan vast</li><li>Vaste prijs vooraf, meerwerk hoor je altijd vooraf</li><li>2 jaar garantie op de installatie</li></ul>
+      <ul class="vwo-ck"><li>Vrijblijvend, je zit nergens aan vast</li><li>Vaste prijs vooraf, meerwerk hoor je altijd vooraf</li><li>Volledige fabrieksgarantie op het product</li></ul>
       <div style="display:flex;flex-wrap:wrap;gap:10px 20px;margin-top:22px;font-size:14.5px;font-weight:800;"><a href="/contact" data-book="" style="color:#fff;text-decoration:none;">Liever een adviesgesprek →</a><a href="{WA}?text=Hoi%20Voltwijk%2C%20ik%20wil%20graag%20een%20offerte%20voor%20{esc(prod).replace(' ', '%20')}" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;">App ons →</a></div>
       {extra}</div>
     <div id="vwoBox">

@@ -106,7 +106,7 @@ Meer over geluid en plaatsing lees je in [warmtepomp en geluid](/artikel-warmtep
 
 ## Hoe Voltwijk helpt
 
-Voltwijk installeert airco's met eigen monteurs, tegen een vaste prijs vooraf en met 2 jaar garantie op de installatie. Bekijk de details op onze pagina over de [airco](/product-airco).
+Voltwijk installeert airco's met eigen monteurs, tegen een vaste prijs vooraf en met de volledige fabrieksgarantie op de airco. Bekijk de details op onze pagina over de [airco](/product-airco).
 
 faq:
 Q: Hoe vaak moet ik de filters van mijn airco schoonmaken?
