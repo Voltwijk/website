@@ -31,6 +31,8 @@ esc = lambda s: html.escape(s, quote=True)
 def eur(n): return '€ ' + f'{int(n):,}'.replace(',', '.')
 VANAF = min(p['prijs'] for p in PAKKETTEN)
 VRIENDENKORTING = 450  # korting via de persoonlijke QR-code van een ambassadeur (vriendendeal)
+# actiecodes (bijv. voor de Meta-advertenties): vaste verlaging, zonder doorgestreepte 'van'-prijs (30-dagenregel)
+ACTIECODES = {'META': {'korting': 950, 'label': 'Actieprijs via Facebook/Instagram'}}
 # kortingscodes van ambassadeurs (code -> voornaam); werken via link/QR en via het codeveld in de funnel
 VRIENDCODES = {'AJAY450': 'Ajay', 'MAX450': 'Max', 'ANDRE450': 'Andre', 'ROBIN450': 'Robin', 'FARHAD450': 'Farhad', 'ROCKY450': 'Rocky', 'ROCCIE450': 'Rocky', 'ALI450': 'Ali', 'MOERDIJK450': 'Groepsactie Moerdijk'}
 
@@ -358,14 +360,15 @@ JS = r'''<script>
     if(Object.keys(t).length) sessionStorage.setItem('vwUtm', JSON.stringify(t)); }catch(e){}
   function utm(){ try{ return JSON.parse(sessionStorage.getItem('vwUtm') || '{}'); }catch(e){ return {}; } }
   /* vriendendeal: via de persoonlijke QR-code van een ambassadeur (utm_campaign=vriendendeal, utm_content=code, door=naam) krijgt de klant __KORT__ euro korting */
-  var CODES = __CODES__, VR = null; try{ var uu = new URLSearchParams(location.search), uc = (uu.get('code') || '').toUpperCase().replace(/[^A-Z0-9]/g, '');
+  var CODES = __CODES__, ACTIES = __ACTIES__, VR = null; try{ var uu = new URLSearchParams(location.search), uc = (uu.get('code') || '').toUpperCase().replace(/[^A-Z0-9]/g, '');
     if(uu.get('utm_campaign') === 'vriendendeal' && uu.get('utm_content')){ var vc = uu.get('utm_content').toUpperCase().slice(0, 20); VR = {code: vc, naam: (uu.get('door') || CODES[vc] || '').slice(0, 40)}; sessionStorage.setItem('vwVriend', JSON.stringify(VR)); }
     else if(CODES[uc]){ VR = {code: uc, naam: CODES[uc]}; sessionStorage.setItem('vwVriend', JSON.stringify(VR)); }
+    else if(ACTIES[uc]){ VR = {code: uc, naam: '', actie: 1, k: ACTIES[uc].korting, label: ACTIES[uc].label}; sessionStorage.setItem('vwVriend', JSON.stringify(VR)); }
     else VR = JSON.parse(sessionStorage.getItem('vwVriend') || 'null'); }catch(e){}
-  var KORT = VR ? __KORT__ : 0;
-  function was(p){ return VR ? '<s class="was">' + eur(p.prijs) + '</s> ' : ''; }
-  function zetCode(c){ c = (c || '').toUpperCase().replace(/[^A-Z0-9]/g, ''); if(!CODES[c]) return false;
-    VR = {code: c, naam: CODES[c]}; KORT = __KORT__; try{ sessionStorage.setItem('vwVriend', JSON.stringify(VR)); }catch(e){}
+  var KORT = VR ? (VR.k || __KORT__) : 0;
+  function was(p){ return VR && !VR.actie ? '<s class="was">' + eur(p.prijs) + '</s> ' : ''; }
+  function zetCode(c){ c = (c || '').toUpperCase().replace(/[^A-Z0-9]/g, ''); if(!CODES[c] && !ACTIES[c]) return false;
+    VR = CODES[c] ? {code: c, naam: CODES[c]} : {code: c, naam: '', actie: 1, k: ACTIES[c].korting, label: ACTIES[c].label}; KORT = VR.k || __KORT__; try{ sessionStorage.setItem('vwVriend', JSON.stringify(VR)); }catch(e){}
     vriendBanner(); track('vriend_code', {code: c}); return true; }
   function prijs(p){ return p.prijs - KORT; }
   function track(n, p){ try{ if(window.vwTrack) vwTrack(n, p || {}); }catch(e){} }
@@ -386,7 +389,8 @@ JS = r'''<script>
       (label ? '<div class="tb-go"><button type="button" class="tb-btn" id="' + id + '"' + (disabled ? ' disabled' : '') + '>' + label + '</button>' + (note ? '<small>' + note + '</small>' : '') + '</div>' : '') + '</div>'; }
 
   function vriendBanner(){ if(!VR || document.querySelector('.tb-vriend')) return; var wrap = stepsEl.closest('.tb-wrap'), bn = document.createElement('div'); bn.className = 'tb-vriend';
-    bn.innerHTML = '<div><b>Vriendenkorting' + (VR.naam ? ' via ' + esc(VR.naam) : '') + ': €&nbsp;' + KORT + ' korting op je thuisbatterij</b><small>Dezelfde batterij, installatie en garantie. Bereken hieronder welke batterij past; de korting zit al in je prijs.</small></div>' +
+    bn.innerHTML = VR.actie ? '<div><b>' + esc(VR.label) + ': ' + Object.keys(PK).map(function(k){ return PK[k].kwh + ' kWh ' + PK[k].fase + ' €&nbsp;' + fmt(prijs(PK[k])); }).join(' · ') + ' excl. btw</b><small>Inclusief installatie. Bereken hieronder welke batterij past; de actieprijs zit al in je prijs.</small></div>' :
+      '<div><b>Vriendenkorting' + (VR.naam ? ' via ' + esc(VR.naam) : '') + ': €&nbsp;' + KORT + ' korting op je thuisbatterij</b><small>Dezelfde batterij, installatie en garantie. Bereken hieronder welke batterij past; de korting zit al in je prijs.</small></div>' +
       '';
     var band = wrap && wrap.querySelector('.tb-band'); if(band) band.insertBefore(bn, band.firstChild); else if(wrap) wrap.parentNode.insertBefore(bn, wrap);
   }
@@ -637,7 +641,7 @@ JS = r'''<script>
       '<div class="tb-of"><div class="lab">' + (id === adv ? 'Past het best bij jou' : 'Jouw keuze') + '</div><h2>Thuisbatterij ' + p.kwh + ' kWh met ' + p.kw + ' kW omvormer</h2><p class="s">' + esc(p.naam) + ' · ' + p.fase + '</p>' +
       '<div class="tb-sizes" role="group" aria-label="Kies je opslag">' + sizes + '</div>' +
       '<div class="tb-why"><b>Waarom dit systeem voor jou?</b>' + ck(waarom(id)) + '</div>' + ck(p.feat) + kpi +
-      '<div class="tb-price"><div class="v">' + (VR ? 'Vriendenprijs' + (VR.naam ? ' via ' + esc(VR.naam) : '') + ': €&nbsp;' + KORT + ' korting, inclusief installatie' : 'Vaste prijs, inclusief installatie') + '</div><div class="p">' + (VR ? '<span class="was">' + eur(p.prijs) + '</span>' : '') + eur(prijs(p)) + '<small>excl. btw</small></div>' +
+      '<div class="tb-price"><div class="v">' + (VR && VR.actie ? esc(VR.label) + ', inclusief installatie' : VR ? 'Vriendenprijs' + (VR.naam ? ' via ' + esc(VR.naam) : '') + ': €&nbsp;' + KORT + ' korting, inclusief installatie' : 'Vaste prijs, inclusief installatie') + '</div><div class="p">' + (VR && !VR.actie ? '<span class="was">' + eur(p.prijs) + '</span>' : '') + eur(prijs(p)) + '<small>excl. btw</small></div>' +
       (VR ? '' : '<div class="tb-code"><button type="button" class="o" id="tbCodeOpen">Heb je een kortingscode?</button><div class="f" id="tbCodeBox" hidden><input id="tbCode" placeholder="Je kortingscode" autocapitalize="characters" autocomplete="off" aria-label="Kortingscode"><button type="button" id="tbCodeGo">Toepassen</button></div><small id="tbCodeMsg"></small></div>') +
       '<div class="i">' + eur(prijs(p) * 1.21) + ' incl. btw. Met een dynamisch contract kun je de btw soms terugvragen. Is er meerwerk nodig, dan hoor je dat altijd vooraf.</div></div>' +
       '<div class="tb-urg"><span class="g">Installatie al vanaf <b data-vw-first></b></span>' + (d27 ? '<span>Salderen stopt over ' + d27 + ' dagen</span>' : '') + '</div>' +
@@ -678,7 +682,7 @@ JS = r'''<script>
     var velden = {'form-name':'thuisbatterij-advies', 'bot-field':v('bot-field'), naam:v('naam'), telefoon:v('telefoon'), email:v('email'),
       aanvraag:ins ? 'INSTALLATIE AANGEVRAAGD tegen de getoonde prijs (definitief na meterkastcheck en orderbevestiging)' : 'vrijblijvende offerte', voorkeursdatum:ins ? v('voorkeursdatum') : '',
       product:'thuisbatterij' + (zp && zp.checked ? ', zonnepanelen' : ''),
-      postcode:st.postcode, huisnummer:st.huisnummer, advies:'Thuisbatterij ' + p.kwh + ' kWh + ' + p.kw + ' kW omvormer (' + p.fase + ')' + (st.keuze !== advies() ? ' (zelf gekozen; advies was ' + PK[advies()].kwh + ' kWh ' + PK[advies()].fase + ')' : ''), prijs:eur(prijs(p)) + ' excl. btw' + (VR ? ' (vriendenkorting € ' + KORT + ' via code ' + VR.code + (VR.naam ? ', ' + VR.naam : '') + ')' : ''),
+      postcode:st.postcode, huisnummer:st.huisnummer, advies:'Thuisbatterij ' + p.kwh + ' kWh + ' + p.kw + ' kW omvormer (' + p.fase + ')' + (st.keuze !== advies() ? ' (zelf gekozen; advies was ' + PK[advies()].kwh + ' kWh ' + PK[advies()].fase + ')' : ''), prijs:eur(prijs(p)) + ' excl. btw' + (VR && VR.actie ? ' (' + VR.label + ', code ' + VR.code + ')' : VR ? ' (vriendenkorting € ' + KORT + ' via code ' + VR.code + (VR.naam ? ', ' + VR.naam : '') + ')' : ''),
       zonnepanelen:st.panelen === 'ja' ? 'ja, ca. ' + st.aantal + ' panelen' : st.panelen === 'straks' ? 'nog niet, wil ze erbij' : 'nee',
       ook_zonnepanelen:zp && zp.checked ? 'ja' : '', verbruik:fmt(st.verbruik > 0 ? st.verbruik : 3500) + ' kWh',
       extra:['ev','wp','airco'].filter(function(k){ return st.extra[k]; }).map(function(k){ return {ev:'elektrische auto', wp:'warmtepomp', airco:'airco'}[k]; }).join(', ') || 'geen',
@@ -736,7 +740,7 @@ def pk_js():
 def component(solo=False):
     """De calculator zelf: stappenbalk + vraagvlak. Staat op /thuisbatterij-berekenen (solo) en op de homepage."""
     icjson = json.dumps({k: svg(k) for k in IC}, ensure_ascii=False)
-    js = JS.replace('__KORT__', str(VRIENDENKORTING)).replace('__CODES__', json.dumps(VRIENDCODES)).replace('__PK__', pk_js()).replace('__IC__', icjson).replace('__INC__', json.dumps(INBEGREPEN, ensure_ascii=False))
+    js = JS.replace('__KORT__', str(VRIENDENKORTING)).replace('__CODES__', json.dumps(VRIENDCODES)).replace('__ACTIES__', json.dumps(ACTIECODES, ensure_ascii=False)).replace('__PK__', pk_js()).replace('__IC__', icjson).replace('__INC__', json.dumps(INBEGREPEN, ensure_ascii=False))
     return (CSS + f'''
   <div class="tb-wrap{' tb-solo' if solo else ''}" id="calculator" style="scroll-margin-top:64px;">
   <div class="tb-band"><div class="tb-steps" id="tbSteps" aria-label="Stappen"></div></div>
