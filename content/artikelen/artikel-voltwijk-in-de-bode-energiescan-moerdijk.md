@@ -7,9 +7,9 @@ date: 2026-10-08
 image: voltwijk-in-de-bode
 lead: Voltwijk stond op 30 september 2026 in De Bode, zowel in de papieren krant als online. Het artikel gaat over onze gratis Energiescanweek: van maandag 26 tot en met zaterdag 31 oktober komen we bij inwoners van de gemeente Moerdijk langs voor eerlijk advies over het verduurzamen van hun huis. Er is plek voor maximaal 60 huishoudens.
 summary: De Bode schreef op 30 september 2026 over de gratis Energiescanweek van Voltwijk || Van ma 26 t/m za 31 oktober, voor inwoners van de gemeente Moerdijk, maximaal 60 huishoudens || Een adviseur kijkt ± 45 minuten naar je meterkast, je dak en je energieverbruik || Je krijgt een persoonlijk adviesrapport per mail, gratis en zonder verplichtingen
-sources: De Bode, 30 september 2026 (rubriek Lokaal, p. 28)|https://voltwijk.nl/energiescan || Rijksoverheid: salderingsregeling|https://www.rijksoverheid.nl/themas/klimaat-milieu-en-natuur/energie-thuis/salderingsregeling
+sources: De Bode, 30 september 2026 (rubriek Lokaal, p. 28)|https://www.internetbode.nl/moerdijk/reader/46095#p=29 || Rijksoverheid: salderingsregeling|https://www.rijksoverheid.nl/themas/klimaat-milieu-en-natuur/energie-thuis/salderingsregeling
 ---
-Op 30 september 2026 stond Voltwijk in De Bode, in de papieren krant (rubriek Lokaal, pagina 28) en online. Onder de kop **"Energiescan voor inwoners Moerdijk"** schreef de krant over onze gratis Energiescanweek. Daar zijn we trots op. We zijn pas sinds kort gevestigd aan de Schoenmakerij in Zevenbergen, en zo'n artikel in de lokale krant is een mooie manier om kennis te maken met onze nieuwe buren.
+Op 30 september 2026 stond Voltwijk in De Bode, in de papieren krant (rubriek Lokaal, pagina 28) en online: [lees het artikel in de digitale Bode](https://www.internetbode.nl/moerdijk/reader/46095#p=29). Onder de kop **"Energiescan voor inwoners Moerdijk"** schreef de krant over onze gratis Energiescanweek. Daar zijn we trots op. We zijn pas sinds kort gevestigd aan de Schoenmakerij in Zevenbergen, en zo'n artikel in de lokale krant is een mooie manier om kennis te maken met onze nieuwe buren.
 
 In dit bericht lees je wat er in het artikel stond, wat de energiescan precies inhoudt en hoe je je aanmeldt.
 
@@ -62,7 +62,7 @@ Woon je niet in de gemeente Moerdijk? Dan kun je altijd een gratis adviesgesprek
 
 Voltwijk is een installatiebedrijf voor thuisbatterijen, zonnepanelen, airco's, elektrische boilers, laadpalen en meterkasten, en is sinds kort gevestigd aan de Schoenmakerij 15a in Zevenbergen. Met de Energiescanweek willen we kennismaken met de buurt, op de manier die bij ons past: eerlijk advies, met een vaste prijs als je daarna iets wilt laten doen, en installatie door onze eigen monteurs.
 
-Heb je het artikel in De Bode gelezen en twijfel je nog? Meld je aan voor de energiescan, of plan een gratis adviesgesprek. We kijken graag met je mee.
+Heb je [het artikel in De Bode](https://www.internetbode.nl/moerdijk/reader/46095#p=29) gelezen en twijfel je nog? Meld je aan voor de energiescan, of plan een gratis adviesgesprek. We kijken graag met je mee.
 
 faq:
 Q: Is de energiescan echt helemaal gratis?
