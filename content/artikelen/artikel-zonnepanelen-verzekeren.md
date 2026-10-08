@@ -100,7 +100,7 @@ Ja. Naast de gewone woonverzekering zijn er losse verzekeringen voor zonnepanele
 
 ## Hoe Voltwijk helpt
 
-Voltwijk plaatst zonnepanelen met eigen monteurs en geeft 2 jaar garantie op de installatie. Op de panelen en de omvormer zelf zit daarnaast fabrieksgarantie. Meer informatie vind je op de pagina over [zonnepanelen](/product-zonnepanelen), of [plan een gratis adviesgesprek](/contact).
+Voltwijk plaatst zonnepanelen met eigen monteurs. Op de panelen en de omvormer zelf zit fabrieksgarantie. Meer informatie vind je op de pagina over [zonnepanelen](/product-zonnepanelen), of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Vallen zonnepanelen onder de opstal- of inboedelverzekering?

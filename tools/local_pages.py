@@ -339,7 +339,7 @@ EXTRA = {
    ['**Kies wat je wilt.** Alleen zonnepanelen, alleen een thuisbatterij of allebei. Met de [batterijcalculator](/thuisbatterij-berekenen) zie je welke batterij past en wat hij kost.',
     '**We checken je dak en meterkast.** Ligging, schaduw en ruimte op het dak, en of je aansluiting 1-fase of 3-fase is. Moet er iets bij, dan hoor je dat vooraf.',
     '**Onze eigen monteurs installeren.** Geen onderaannemers. Wij melden je installatie aan bij de netbeheerder; in Etten-Leur is dat in de regel Enexis.',
-    '**Uitleg bij de oplevering.** Je krijgt uitleg over de app en 2 jaar garantie op de installatie.'],
+    '**Uitleg bij de oplevering.** Je krijgt uitleg over de app en de volledige fabrieksgarantie op de producten.'],
    'Heb je al zonnepanelen? Dan is een thuisbatterij de logische volgende stap nu het salderen op 1 januari 2027 stopt. Lees ook [waar je op let bij een batterij naast bestaande panelen](/artikel-thuisbatterij-bij-bestaande-zonnepanelen).'),
 }
 WB_ORDER = ['Thuisbatterij', 'Zonnepanelen', 'Airconditioning', 'Warmtepomp', 'Elektrische boiler', 'Laadpaal', 'Meterkastaanpassing']
@@ -464,7 +464,7 @@ def battery_block(n=None):
     kop = f'Thuisbatterij in {esc(n)}: drie vaste pakketten' if n else 'Thuisbatterij: drie vaste pakketten'
     return f'''<div class="wrap reveal lp-sec" style="max-width:1000px;"><div class="lp-bat">
     <h2 class="vw-heading lp-h2">{kop}</h2>
-    <p>Een batterij van 10 of 16 kWh met hybride omvormer, geplaatst door onze eigen monteurs. Welke past, hangt af van je verbruik, je zonnepanelen en je aansluiting (1-fase of 3-fase). Op de installatie krijg je 2 jaar garantie.</p>
+    <p>Een batterij van 10 of 16 kWh met hybride omvormer, geplaatst door onze eigen monteurs. Welke past, hangt af van je verbruik, je zonnepanelen en je aansluiting (1-fase of 3-fase). Op de batterij krijg je 10 jaar fabrieksgarantie.</p>
     <div class="lp-pk">{cards}</div>
     <div class="lp-bat-foot"><a href="/thuisbatterij-berekenen" class="btn-primary" style="text-decoration:none;">Bereken je thuisbatterij →</a><a class="lp-more" href="/product-batterij">Meer over de thuisbatterij</a></div>
   </div></div>'''
@@ -550,7 +550,7 @@ def city_main(c):
     <div class="lp-steps">
       <div><div class="step-num">1</div><p><b>Bereken of plan</b>Bereken in 1 minuut welke thuisbatterij past, of plan een gratis adviesgesprek voor een ander product.</p></div>
       <div><div class="step-num">2</div><p><b>Wij regelen de rest</b>Netbeheerder en vergunning regelen wij, en bij de ISDE-aanvraag voor een warmtepomp helpen we je.</p></div>
-      <div><div class="step-num">3</div><p><b>Installatie door ons eigen team</b>Na de offerte plannen we samen een installatiedatum. Op de installatie krijg je 2 jaar garantie.</p></div>
+      <div><div class="step-num">3</div><p><b>Installatie door ons eigen team</b>Na de offerte plannen we samen een installatiedatum. Je krijgt de volledige fabrieksgarantie op de producten.</p></div>
     </div>
   </div>
   <div class="wrap reveal lp-sec" style="max-width:1000px;">

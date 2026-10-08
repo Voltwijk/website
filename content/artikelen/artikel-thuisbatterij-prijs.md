@@ -117,7 +117,7 @@ Gebruik deze lijst als je prijzen naast elkaar legt:
 
 ## Hoe Voltwijk helpt
 
-Twijfel je welke maat bij je past? Met de [batterijcalculator](/thuisbatterij-berekenen) zie je in een minuut welk pakket past bij je verbruik en je aansluiting. Onze eigen monteurs installeren de batterij voor een vaste prijs, en je krijgt 2 jaar garantie op de installatie.
+Twijfel je welke maat bij je past? Met de [batterijcalculator](/thuisbatterij-berekenen) zie je in een minuut welk pakket past bij je verbruik en je aansluiting. Onze eigen monteurs installeren de batterij voor een vaste prijs, en je krijgt 10 jaar fabrieksgarantie op de batterij.
 
 faq:
 Q: Wat kost een thuisbatterij inclusief installatie?

@@ -101,7 +101,7 @@ Twijfel je over de maat? Met de [batterijcalculator](/thuisbatterij-berekenen) z
 
 ## Hoe Voltwijk helpt
 
-Voltwijk is gevestigd in Zevenbergen en werkt met eigen monteurs, onder meer in [Breda](/installateur-breda) en [Roosendaal](/installateur-roosendaal). We kijken samen naar je aansluiting, je zonnepanelen en je verbruik, en adviseren of een batterij zinvol is, of dat slim sturen al genoeg is. Je krijgt een vaste prijs inclusief installatie en 2 jaar garantie op de installatie. Bekijk ons [werkgebied](/werkgebied) om te zien of we bij jou in de buurt komen.
+Voltwijk is gevestigd in Zevenbergen en werkt met eigen monteurs, onder meer in [Breda](/installateur-breda) en [Roosendaal](/installateur-roosendaal). We kijken samen naar je aansluiting, je zonnepanelen en je verbruik, en adviseren of een batterij zinvol is, of dat slim sturen al genoeg is. Je krijgt een vaste prijs inclusief installatie en de volledige fabrieksgarantie op de producten. Bekijk ons [werkgebied](/werkgebied) om te zien of we bij jou in de buurt komen.
 
 faq:
 Q: Heb ik als huishouden last van netcongestie in Brabant?

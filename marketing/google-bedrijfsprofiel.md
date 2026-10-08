@@ -88,7 +88,7 @@ Plaats elke week één post. Kies steeds een eigen foto (geen stockfoto). Posts 
 
 **Week 4: Eigen monteurs uit Zevenbergen** (knop: Bellen)
 
-> Bij Voltwijk installeren onze eigen monteurs, geen onderaannemers. We komen uit Zevenbergen en werken in heel West-Brabant. Je krijgt vooraf een vaste prijs inclusief installatie en 2 jaar garantie op de installatie. Vraag of twijfel? Bel 085 333 56 87 of stuur ons een appje.
+> Bij Voltwijk installeren onze eigen monteurs, geen onderaannemers. We komen uit Zevenbergen en werken in heel West-Brabant. Je krijgt vooraf een vaste prijs inclusief installatie en de volledige fabrieksgarantie op de producten. Vraag of twijfel? Bel 085 333 56 87 of stuur ons een appje.
 
 ## Verder
 

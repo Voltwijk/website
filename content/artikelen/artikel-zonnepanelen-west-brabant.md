@@ -112,7 +112,7 @@ Woon je ergens anders? Op de pagina [werkgebied](/werkgebied) zie je waar we ver
 
 ## Hoe Voltwijk helpt
 
-Voltwijk plaatst zonnepanelen in heel West-Brabant, met eigen monteurs en een vaste prijs inclusief installatie. Op de installatie krijg je 2 jaar garantie. We kijken met je mee naar het aantal panelen, de omvormer en of een batterij nu of later zinvol is. Meer informatie staat op de [zonnepanelen-pagina](/product-zonnepanelen).
+Voltwijk plaatst zonnepanelen in heel West-Brabant, met eigen monteurs en een vaste prijs inclusief installatie. Je krijgt de volledige fabrieksgarantie op de producten. We kijken met je mee naar het aantal panelen, de omvormer en of een batterij nu of later zinvol is. Meer informatie staat op de [zonnepanelen-pagina](/product-zonnepanelen).
 
 faq:
 Q: Wat kost het om zonnepanelen te laten plaatsen in West-Brabant?
