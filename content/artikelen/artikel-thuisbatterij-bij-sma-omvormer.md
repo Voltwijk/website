@@ -1,6 +1,6 @@
 title: Thuisbatterij bij een SMA-omvormer (Sunny Boy, Sunny Tripower)
 seo_title: SMA thuisbatterij: kan het bij jouw omvormer? | Voltwijk
-description: SMA thuisbatterij bij je Sunny Boy of Sunny Tripower? Lees welke SMA-omvormers een batterij aankunnen, welke batterijen passen en wat je doet als dat niet zo is.
+description: SMA thuisbatterij bij je Sunny Boy of Sunny Tripower? Lees welke SMA-omvormers een batterij aankunnen, welke batterijen passen en wat je anders doet.
 category: Thuisbatterij
 product: batterij
 date: 2026-10-08

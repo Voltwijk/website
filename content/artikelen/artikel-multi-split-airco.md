@@ -124,7 +124,7 @@ Twijfel je? Laat een installateur per kamer het vermogen uitrekenen en beide opt
 
 ## Hoe Voltwijk helpt
 
-Onze eigen monteurs kijken met je naar de kamers, de plek van de buitenunit en de route van de leidingen, en adviseren eerlijk of multi-split of losse airco's beter past. Een airco bij Voltwijk kost vanaf € 1.899, inclusief installatie. Bekijk de [airco](/product-airco) of plan een gratis adviesgesprek via [contact](/contact).
+Onze eigen monteurs kijken met je naar de kamers, de plek van de buitenunit en de route van de leidingen, en adviseren eerlijk of multi-split of losse airco's beter past. Een airco bij Voltwijk kost vanaf € 1.899, inclusief installatie. Bekijk de [airco](/product-airco) of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Hoeveel binnenunits kun je op een multi-split aansluiten?
