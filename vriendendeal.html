@@ -71,6 +71,47 @@ h1,h2,.d{font-family:'Bricolage Grotesque',system-ui,sans-serif;letter-spacing:-
 })();
 </script>
 <!-- vw-analytics:end -->
+<!-- vw-meta:start -->
+<script>
+(function(){
+  var ID = '1441629877881712', on = false, lastLead = 0;
+  function ok(){ var c = window.vwConsent; if(!c){ try{ c = JSON.parse(localStorage.getItem('vwConsent')); }catch(e){} } return !!(c && c.marketing); }
+  function load(){
+    if(on || !ok()) return; on = true;
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;
+    s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', ID); fbq('track', 'PageView');
+  }
+  var MAP = {aanvraag_batterij:'Lead', generate_lead:'Lead', calc_advies:'ViewContent', afspraak_gepland:'Schedule', contact:'Contact'};
+  function meta(name, p){
+    if(!on || !window.fbq) return;
+    if(name === 'calc_start'){ fbq('trackCustom', 'CalculatorStart'); return; }
+    var m = MAP[name]; if(!m) return;
+    if(m === 'Lead'){ var t = Date.now(); if(t - lastLead < 5000) return; lastLead = t; }
+    var d = {}; if(p && p.value){ d.value = p.value; d.currency = 'EUR'; }
+    if(p && p.batterij) d.content_name = p.batterij;
+    fbq('track', m, d);
+  }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href]'); if(!a) return;
+    var h = a.getAttribute('href');
+    if(h.indexOf('wa.me') > -1 || h.indexOf('tel:') === 0) meta('contact');
+  }, true);
+  document.addEventListener('submit', function(e){
+    var f = e.target; if(f.id === 'tbForm' || f.id === 'bkAanvraag' || (f.checkValidity && !f.checkValidity())) return; // calculator meet zelf na verzenden
+    if(f.closest && f.closest('#leadNewsletter')) return;
+    meta('generate_lead');
+  }, true);
+  document.addEventListener('DOMContentLoaded', function(){
+    var prev = window.vwTrack;
+    window.vwTrack = function(n, p){ try{ if(prev) prev(n, p); }catch(e){} meta(n, p); };
+  });
+  window.addEventListener('vw:consent', load);
+  load();
+})();
+</script>
+<!-- vw-meta:end -->
 <!-- vw-utm:start --><script>
 (function(){
   var K = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid','fbclid'];

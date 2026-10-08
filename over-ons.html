@@ -546,7 +546,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
   <div id="vwCookie" role="dialog" aria-live="polite" aria-modal="true" aria-labelledby="vwCookieT" hidden>
     <div class="ck-ic" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a4 4 0 0 0 5 5 4 4 0 0 0 4.8 4.8z"/><circle cx="8.5" cy="10.5" r="1"/><circle cx="12" cy="15.5" r="1"/><circle cx="15.5" cy="12.5" r="1"/></svg></div>
     <div class="ck-title" id="vwCookieT">Mogen we cookies gebruiken?</div>
-    <p>We gebruiken functionele cookies zodat de site goed werkt. Met jouw toestemming meten we ook anoniem welke pagina's bezoekers nuttig vinden, zodat we de site en ons advies kunnen verbeteren. We gebruiken geen advertentietracking en verkopen nooit gegevens.</p>
+    <p>We gebruiken functionele cookies zodat de site goed werkt. Met jouw toestemming meten we welke pagina's bezoekers nuttig vinden en of onze advertenties op Facebook en Instagram tot een aanvraag leiden (Google Analytics en de Meta-pixel). We verkopen nooit gegevens.</p>
     <div class="ck-btns"><button type="button" class="ck-yes" data-ck="1">Accepteren</button><button type="button" class="ck-no" data-ck="0">Alleen noodzakelijk</button></div>
     <div class="ck-more">Je kunt je keuze altijd aanpassen. Lees ons <a href="/cookiebeleid">cookiebeleid</a> en <a href="/privacybeleid">privacybeleid</a>.</div>
   </div>
@@ -587,12 +587,12 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
       if(ck){
         var saved = store('vwConsent');
         window.vwConsent = saved ? JSON.parse(saved) : null;
-        if(!saved){
+        if(!saved || !window.vwConsent || window.vwConsent.v < 2){
           setTimeout(function(){ ck.hidden = false; document.body.classList.add('vw-ck-open'); requestAnimationFrame(function(){ ck.classList.add('is-open'); }); }, 900);
         }
         ck.addEventListener('click', function(e){
           var t = e.target.closest('[data-ck]'); if(!t) return;
-          var c = { v:1, analytics: t.getAttribute('data-ck') === '1', ts: new Date().toISOString() };
+          var c = { v:2, analytics: t.getAttribute('data-ck') === '1', marketing: t.getAttribute('data-ck') === '1', ts: new Date().toISOString() };
           store('vwConsent', JSON.stringify(c)); window.vwConsent = c;
           ck.classList.remove('is-open'); document.body.classList.remove('vw-ck-open');
           setTimeout(function(){ ck.hidden = true; }, 350);
@@ -1662,3 +1662,44 @@ body.vwb-lock{overflow:hidden;}
 })();
 </script>
 <!-- vw-analytics:end -->
+<!-- vw-meta:start -->
+<script>
+(function(){
+  var ID = '1441629877881712', on = false, lastLead = 0;
+  function ok(){ var c = window.vwConsent; if(!c){ try{ c = JSON.parse(localStorage.getItem('vwConsent')); }catch(e){} } return !!(c && c.marketing); }
+  function load(){
+    if(on || !ok()) return; on = true;
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;
+    s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', ID); fbq('track', 'PageView');
+  }
+  var MAP = {aanvraag_batterij:'Lead', generate_lead:'Lead', calc_advies:'ViewContent', afspraak_gepland:'Schedule', contact:'Contact'};
+  function meta(name, p){
+    if(!on || !window.fbq) return;
+    if(name === 'calc_start'){ fbq('trackCustom', 'CalculatorStart'); return; }
+    var m = MAP[name]; if(!m) return;
+    if(m === 'Lead'){ var t = Date.now(); if(t - lastLead < 5000) return; lastLead = t; }
+    var d = {}; if(p && p.value){ d.value = p.value; d.currency = 'EUR'; }
+    if(p && p.batterij) d.content_name = p.batterij;
+    fbq('track', m, d);
+  }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href]'); if(!a) return;
+    var h = a.getAttribute('href');
+    if(h.indexOf('wa.me') > -1 || h.indexOf('tel:') === 0) meta('contact');
+  }, true);
+  document.addEventListener('submit', function(e){
+    var f = e.target; if(f.id === 'tbForm' || f.id === 'bkAanvraag' || (f.checkValidity && !f.checkValidity())) return; // calculator meet zelf na verzenden
+    if(f.closest && f.closest('#leadNewsletter')) return;
+    meta('generate_lead');
+  }, true);
+  document.addEventListener('DOMContentLoaded', function(){
+    var prev = window.vwTrack;
+    window.vwTrack = function(n, p){ try{ if(prev) prev(n, p); }catch(e){} meta(n, p); };
+  });
+  window.addEventListener('vw:consent', load);
+  load();
+})();
+</script>
+<!-- vw-meta:end -->
