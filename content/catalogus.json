@@ -90,6 +90,11 @@
   "title": "Airco onderhoud en F-gassen: wat moet je weten?"
  },
  {
+  "slug": "artikel-airco-op-zonnepanelen",
+  "product": "airco",
+  "title": "Airco laten draaien op je zonnepanelen: hoeveel stroom komt van je eigen dak?"
+ },
+ {
   "slug": "artikel-airco-plaatsen-regels-vergunning",
   "product": "airco",
   "title": "Airco plaatsen: heb je een vergunning nodig? De regels op een rij"
@@ -153,6 +158,11 @@
   "slug": "artikel-cv-ketel-weg-elektrische-boiler",
   "product": "boiler",
   "title": "Van het gas af: elektrische boiler in plaats van cv-ketel"
+ },
+ {
+  "slug": "artikel-deye-thuisbatterij",
+  "product": "batterij",
+  "title": "Deye thuisbatterij en hybride omvormer: wat moet je weten?"
  },
  {
   "slug": "artikel-dyness-thuisbatterij",
@@ -220,6 +230,16 @@
   "title": "Is mijn huis geschikt voor een warmtepomp? Test het zelf"
  },
  {
+  "slug": "artikel-jaarafrekening-einde-salderen",
+  "product": "zonnepanelen",
+  "title": "Je jaarafrekening na het einde van salderen: zo controleer je de splitsing 2026 en 2027"
+ },
+ {
+  "slug": "artikel-kwartierprijzen-dynamisch-contract",
+  "product": "batterij",
+  "title": "Kwartierprijzen bij een dynamisch energiecontract: wat veranderde er en wat betekent het voor je batterij?"
+ },
+ {
   "slug": "artikel-laadkosten-werkgever-vergoeding-mid-meter",
   "product": "laadpaal",
   "title": "Laadkosten vergoed door je werkgever: zo werkt het met een MID-meter"
@@ -260,6 +280,11 @@
   "title": "Mobiele airco of split-airco: wat is het verschil en wat past bij jou?"
  },
  {
+  "slug": "artikel-multi-split-airco",
+  "product": "airco",
+  "title": "Multi-split airco: wanneer kies je één buitenunit voor meerdere kamers?"
+ },
+ {
   "slug": "artikel-negatieve-stroomprijs-zonnepanelen",
   "product": "zonnepanelen",
   "title": "Negatieve stroomprijzen en zonnepanelen: wat betekent het en wat kun je doen?"
@@ -295,6 +320,11 @@
   "title": "Plug-and-play thuisbatterij (stekkerbatterij): wat kan het wel en niet?"
  },
  {
+  "slug": "artikel-solis-omvormer",
+  "product": "batterij",
+  "title": "Solis omvormer: wat is het merk en welke hybride omvormer past bij je thuisbatterij?"
+ },
+ {
   "slug": "artikel-split-airco",
   "product": "airco",
   "title": "Split airco: wat is het en hoe werkt het?"
@@ -308,6 +338,11 @@
   "slug": "artikel-subsidie-duurzaamheidslening-west-brabant",
   "product": "batterij",
   "title": "Subsidie en duurzaamheidslening in West-Brabant 2026: wat kan er per gemeente?"
+ },
+ {
+  "slug": "artikel-terugleverkosten-per-leverancier",
+  "product": "zonnepanelen",
+  "title": "Terugleverkosten per energieleverancier: zo verschillen Vattenfall, Essent, Eneco, Budget Energie, Vandebron en Greenchoice"
  },
  {
   "slug": "artikel-terugleverkosten-uitgelegd",
@@ -345,9 +380,24 @@
   "title": "Thuisbatterij 5 kWh: is een kleine batterij genoeg?"
  },
  {
+  "slug": "artikel-thuisbatterij-appartement-vve",
+  "product": "batterij",
+  "title": "Thuisbatterij in een appartement: mag dat, en wat zegt de VvE?"
+ },
+ {
   "slug": "artikel-thuisbatterij-bij-bestaande-zonnepanelen",
   "product": "batterij",
   "title": "Thuisbatterij bij bestaande zonnepanelen: AC of DC, en wat check je?"
+ },
+ {
+  "slug": "artikel-thuisbatterij-bij-fronius-omvormer",
+  "product": "batterij",
+  "title": "Thuisbatterij bij een Fronius-omvormer (Primo, Symo, GEN24)"
+ },
+ {
+  "slug": "artikel-thuisbatterij-bij-goodwe-omvormer",
+  "product": "batterij",
+  "title": "Thuisbatterij bij een GoodWe-omvormer: welke opties heb je?"
  },
  {
   "slug": "artikel-thuisbatterij-bij-growatt-omvormer",
@@ -355,9 +405,19 @@
   "title": "Thuisbatterij bij een Growatt-omvormer: kan dat, en hoe?"
  },
  {
+  "slug": "artikel-thuisbatterij-bij-huawei-omvormer",
+  "product": "batterij",
+  "title": "Thuisbatterij bij een Huawei-omvormer (SUN2000, LUNA2000): zo werkt het"
+ },
+ {
   "slug": "artikel-thuisbatterij-bij-micro-omvormers",
   "product": "batterij",
   "title": "Thuisbatterij bij micro-omvormers (Enphase, Hoymiles, APsystems): zo werkt het"
+ },
+ {
+  "slug": "artikel-thuisbatterij-bij-sma-omvormer",
+  "product": "batterij",
+  "title": "Thuisbatterij bij een SMA-omvormer (Sunny Boy, Sunny Tripower)"
  },
  {
   "slug": "artikel-thuisbatterij-bij-solaredge",
@@ -430,9 +490,24 @@
   "title": "Thuisbatterij zonder zonnepanelen: kan het en wanneer loont het?"
  },
  {
+  "slug": "artikel-uitbreidingskast-meterkast",
+  "product": "meterkast",
+  "title": "Meterkast vol? Zo werkt een uitbreidingskast voor je thuisbatterij, airco of laadpaal"
+ },
+ {
+  "slug": "artikel-vast-contract-einde-salderen",
+  "product": "zonnepanelen",
+  "title": "Vast energiecontract en het einde van salderen: wat mag je leverancier veranderen?"
+ },
+ {
   "slug": "artikel-vergoeding-netbeheerder-thuisbatterij",
   "product": "batterij",
   "title": "Vergoeding van de netbeheerder voor je thuisbatterij: zo werkt het vanaf november 2026"
+ },
+ {
+  "slug": "artikel-victron-thuisbatterij",
+  "product": "batterij",
+  "title": "Victron thuisbatterij: hoe werkt een Victron-systeem en voor wie is het?"
  },
  {
   "slug": "artikel-voltwijk-in-de-bode-energiescan-moerdijk",
@@ -493,6 +568,11 @@
   "slug": "artikel-wat-kost-een-airco-aan-stroom",
   "product": "airco",
   "title": "Wat kost een airco aan stroom? Uitleg en rekenvoorbeelden"
+ },
+ {
+  "slug": "artikel-waterhardheid-west-brabant",
+  "product": "boiler",
+  "title": "Waterhardheid in West-Brabant: wat betekent het voor je boiler en warmtepomp?"
  },
  {
   "slug": "artikel-welk-vermogen-airco",

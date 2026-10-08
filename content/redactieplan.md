@@ -74,3 +74,4 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-10-08, artikel-dyness-thuisbatterij)] Dyness thuisbatterij | dyness thuisbatterij (1.000/mnd, weinig resultaten) | batterij | merk dat Voltwijk zelf installeert
 - [open] Thuisbatterij bij SMA-, Huawei-, GoodWe- en Fronius-omvormer (zelfde opzet als SolarEdge/Growatt) | thuisbatterij <merk> omvormer | batterij | merkzoekwoorden, SERP vol webshops
 - [open] Solis hybride omvormer: wat is het en welke past | solis thuisbatterij | batterij | merk dat Voltwijk zelf installeert
+- [klaar (2026-10-08)] 16 artikelen: thuisbatterij bij SMA, Fronius, Huawei, GoodWe; Solis omvormer; Deye; Victron; kwartierprijzen; multi-split airco; airco op zonnepanelen; terugleverkosten per leverancier; vast contract en einde salderen; jaarafrekening na einde salderen; thuisbatterij appartement/VvE; waterhardheid West-Brabant; uitbreidingskast meterkast

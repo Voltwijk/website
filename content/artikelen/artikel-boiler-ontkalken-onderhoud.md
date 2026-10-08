@@ -36,7 +36,7 @@ Kijk altijd eerst in de handleiding van je boiler: het advies van de fabrikant g
 
 ### Hoe hard is het water in West-Brabant?
 
-Volgens Brabant Water ligt de hardheid in Zevenbergen tussen ongeveer **7,7 en 10,2 °dH**, en in Moerdijk tussen ongeveer **7,6 en 10,4 °dH**. Dat is zacht tot gemiddeld. Woon je ergens anders, dan kun je de hardheid voor je postcode opzoeken bij je drinkwaterbedrijf.
+Volgens Brabant Water ligt de hardheid in Zevenbergen tussen ongeveer **7,7 en 10,2 °dH**, en in Moerdijk tussen ongeveer **7,7 en 10,2 °dH**. Dat is zacht tot gemiddeld. Meer per plaats lees je in [waterhardheid in West-Brabant](/artikel-waterhardheid-west-brabant). Woon je ergens anders, dan kun je de hardheid voor je postcode opzoeken bij je drinkwaterbedrijf.
 
 ## Natte of droge weerstand: wat is het verschil?
 

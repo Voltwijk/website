@@ -42,6 +42,7 @@
   <url><loc>https://voltwijk.nl/artikel-3-fase-aansluiting-aanvragen</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-airco-als-bijverwarming</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-airco-onderhoud-en-f-gassen</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://voltwijk.nl/artikel-airco-op-zonnepanelen</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-airco-plaatsen-regels-vergunning</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-airco-slaapkamer</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-airco-verwarmen-winter-kosten</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
@@ -56,6 +57,7 @@
   <url><loc>https://voltwijk.nl/artikel-cop-en-scop-uitgelegd</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-cv-ketel-vervangen-of-warmtepomp</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-cv-ketel-weg-elektrische-boiler</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://voltwijk.nl/artikel-deye-thuisbatterij</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-dynamisch-contract-en-batterij</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-dyness-thuisbatterij</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-elektrische-auto-laden-met-zonnepanelen</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
@@ -72,6 +74,8 @@
   <url><loc>https://voltwijk.nl/artikel-inductie-aansluiten-meterkast</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-is-mijn-huis-geschikt-voor-een-warmtepomp</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-isde-subsidie-2026</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://voltwijk.nl/artikel-jaarafrekening-einde-salderen</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://voltwijk.nl/artikel-kwartierprijzen-dynamisch-contract</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-laadkosten-werkgever-vergoeding-mid-meter</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-laadpaal-dynamisch-contract</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-laadpaal-slim-laden</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
@@ -82,6 +86,7 @@
   <url><loc>https://voltwijk.nl/artikel-meterkast-onderschatte-stap</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-meterkast-vervangen-signalen</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-mobiele-airco-of-split-airco</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://voltwijk.nl/artikel-multi-split-airco</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-negatieve-stroomprijs-zonnepanelen</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-netcongestie-west-brabant</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-omvormer-kapot-vervangen</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
@@ -90,9 +95,11 @@
   <url><loc>https://voltwijk.nl/artikel-p1-poort-slimme-meter</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-plug-and-play-thuisbatterij</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-salderingsregeling-2027</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://voltwijk.nl/artikel-solis-omvormer</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-split-airco</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-stroomstoring-zonnepanelen-thuisbatterij</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-subsidie-duurzaamheidslening-west-brabant</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://voltwijk.nl/artikel-terugleverkosten-per-leverancier</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-terugleverkosten-uitgelegd</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-terugleververgoeding-2027</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-thuisbatterij-1-fase-aansluiting</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
@@ -100,9 +107,14 @@
   <url><loc>https://voltwijk.nl/artikel-thuisbatterij-15-kwh</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-thuisbatterij-3-fase</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-thuisbatterij-5-kwh</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://voltwijk.nl/artikel-thuisbatterij-appartement-vve</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-thuisbatterij-bij-bestaande-zonnepanelen</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://voltwijk.nl/artikel-thuisbatterij-bij-fronius-omvormer</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://voltwijk.nl/artikel-thuisbatterij-bij-goodwe-omvormer</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-thuisbatterij-bij-growatt-omvormer</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://voltwijk.nl/artikel-thuisbatterij-bij-huawei-omvormer</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-thuisbatterij-bij-micro-omvormers</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://voltwijk.nl/artikel-thuisbatterij-bij-sma-omvormer</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-thuisbatterij-bij-solaredge</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-thuisbatterij-brandveiligheid</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-thuisbatterij-garage-schuur-winter</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
@@ -118,8 +130,11 @@
   <url><loc>https://voltwijk.nl/artikel-thuisbatterij-terugverdientijd</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-thuisbatterij-west-brabant</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-thuisbatterij-zonder-zonnepanelen</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://voltwijk.nl/artikel-uitbreidingskast-meterkast</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://voltwijk.nl/artikel-vast-contract-einde-salderen</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-vergelijking</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-vergoeding-netbeheerder-thuisbatterij</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://voltwijk.nl/artikel-victron-thuisbatterij</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-voltwijk-in-de-bode-energiescan-moerdijk</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-waarom-je-monteur-ertoe-doet</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-warmtepomp-bij-vorst</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
@@ -135,6 +150,7 @@
   <url><loc>https://voltwijk.nl/artikel-warmtepompboiler-of-elektrische-boiler</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-wat-doet-een-thuisbatterij</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-wat-kost-een-airco-aan-stroom</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://voltwijk.nl/artikel-waterhardheid-west-brabant</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-welk-vermogen-airco</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-welke-boilerinhoud-heb-ik-nodig</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://voltwijk.nl/artikel-zonnepanelen-met-thuisbatterij</loc><lastmod>2026-10-09</lastmod><priority>0.7</priority></url>
