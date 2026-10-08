@@ -155,6 +155,11 @@
   "title": "Van het gas af: elektrische boiler in plaats van cv-ketel"
  },
  {
+  "slug": "artikel-dyness-thuisbatterij",
+  "product": "batterij",
+  "title": "Dyness thuisbatterij: wat is het merk, welke modellen zijn er en wat past bij jou?"
+ },
+ {
   "slug": "artikel-elektrische-auto-laden-met-zonnepanelen",
   "product": "laadpaal",
   "title": "Elektrische auto laden met zonnepanelen: zo werkt zonneladen"
@@ -343,6 +348,21 @@
   "slug": "artikel-thuisbatterij-bij-bestaande-zonnepanelen",
   "product": "batterij",
   "title": "Thuisbatterij bij bestaande zonnepanelen: AC of DC, en wat check je?"
+ },
+ {
+  "slug": "artikel-thuisbatterij-bij-growatt-omvormer",
+  "product": "batterij",
+  "title": "Thuisbatterij bij een Growatt-omvormer: kan dat, en hoe?"
+ },
+ {
+  "slug": "artikel-thuisbatterij-bij-micro-omvormers",
+  "product": "batterij",
+  "title": "Thuisbatterij bij micro-omvormers (Enphase, Hoymiles, APsystems): zo werkt het"
+ },
+ {
+  "slug": "artikel-thuisbatterij-bij-solaredge",
+  "product": "batterij",
+  "title": "Thuisbatterij bij een SolarEdge-installatie: welke opties heb je?"
  },
  {
   "slug": "artikel-thuisbatterij-brandveiligheid",
