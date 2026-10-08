@@ -22,6 +22,9 @@ from battery import PAKKETTEN, VANAF, eur
 SHELL = 'artikel-isde-subsidie-2026.html'
 G = json.load(open('tools/data/gemeenten.json', encoding='utf-8'))
 PS = json.load(open('tools/data/productsteden.json', encoding='utf-8'))
+# Thuisregio (adviseur aan huis). Alleen pagina's voor deze gemeenten mogen in Google; de rest krijgt noindex,
+# zodat Google ons niet ziet als een site vol bijna gelijke plaatspagina's voor plekken waar we niet komen.
+WERKGEBIED = set(json.load(open('tools/data/werkgebied.json', encoding='utf-8'))['gemeenten'])
 PROVINCIES = ['Noord-Brabant', 'Zuid-Holland', 'Noord-Holland', 'Utrecht', 'Zeeland']
 esc = lambda s: html.escape(str(s), quote=True)
 def nl(n): return f'{int(round(n)):,}'.replace(',', '.')
@@ -77,7 +80,7 @@ P = {
           ('artikel-airco-plaatsen-regels-vergunning', 'Airco plaatsen: regels en vergunning')]),
  'warmtepomp': dict(naam='Warmtepomp', kort='warmtepomp', lid='een warmtepomp', prijs='vanaf € 6.750', url='/product-warmtepomp',
     img='warmtepomp-installatie', alt='Warmtepomp buitenunit, geïnstalleerd door Voltwijk',
-    punten=['Lucht/water-warmtepomp, COP tot 4,7', 'ISDE-subsidie (tot € 2.550) vragen wij voor je aan', 'Ook hybride, naast je cv-ketel'],
+    punten=['Lucht/water-warmtepomp, COP tot 4,7', 'Wij helpen je met de ISDE-subsidieaanvraag', 'Ook hybride, naast je cv-ketel'],
     lees=[('artikel-is-mijn-huis-geschikt-voor-een-warmtepomp', 'Is mijn huis geschikt voor een warmtepomp?'), ('artikel-hybride-of-volledige-warmtepomp', 'Hybride of volledige warmtepomp?'),
           ('artikel-isde-subsidie-2026', 'ISDE-subsidie 2026')]),
 }
@@ -455,7 +458,8 @@ def prov_main(pv):
 '''
 
 # ---------- pagina's schrijven ----------
-def page(shell, main, sl, title, desc):
+NOINDEX = '<meta name="robots" content="noindex">'
+def page(shell, main, sl, title, desc, index=True):
     s = re.sub(r'<div class="blk-light" style="padding-top:40px;">.*?(?=<div class="site-footer")', lambda m: main + '\n\n', shell, count=1, flags=re.S)
     s = re.sub(r'<title>.*?</title>', '<title>' + esc(title) + '</title>', s, count=1)
     s = re.sub(r'<meta name="description" content="[^"]*">', '<meta name="description" content="' + esc(desc) + '">', s, count=1)
@@ -463,6 +467,7 @@ def page(shell, main, sl, title, desc):
     s = re.sub(r'\n?<!-- seo:start -->.*?<!-- seo:end -->', '', s, flags=re.S)
     s = re.sub(r'\n?<!-- rel:start -->.*?<!-- rel:end -->', '', s, flags=re.S)
     s = re.sub(r'<meta property="article:[a-z_]+" content="[^"]*">\n?', '', s)
+    if not index: s = s.replace('<link rel="canonical"', NOINDEX + '\n<link rel="canonical"', 1)
     return s
 
 PROV_BLOK = '<!-- vw-provincies:start -->{}<!-- vw-provincies:end -->'
@@ -480,7 +485,7 @@ def main():
         sl = f'{p}-{slug(stad)}'
         t, d = ps_titel(p, stad), ps_desc(p, stad)
         assert len(d) <= 160, d
-        open(sl + '.html', 'w', encoding='utf-8').write(page(shell, ps_main(p, stad), sl, t, d)); gemaakt.add(sl); n_ps += 1
+        open(sl + '.html', 'w', encoding='utf-8').write(page(shell, ps_main(p, stad), sl, t, d, gem_van(stad) in WERKGEBIED)); gemaakt.add(sl); n_ps += 1
     for g in G:
         s = gem_slug(g)
         if s in BESTAAND: continue
@@ -489,13 +494,13 @@ def main():
         t = next(x for x in (f'Thuisbatterij en zonnepanelen {gm} | Voltwijk', f'Thuisbatterij en zonnepanelen {gm}', f'Thuisbatterij {gm} | Voltwijk', f'Thuisbatterij {gm}') if len(x) <= 60)
         d = f'Thuisbatterij, zonnepanelen, airco of warmtepomp in {gm}? Vaste prijs vooraf, inclusief installatie door eigen monteurs. Thuisbatterij vanaf {eur(VANAF)} excl. btw.'
         if len(d) > 160: d = f'Thuisbatterij, zonnepanelen of airco in {gm}: vaste prijs inclusief installatie. Thuisbatterij vanaf {eur(VANAF)} excl. btw.'
-        open(sl + '.html', 'w', encoding='utf-8').write(page(shell, gem_main(g), sl, t, d)); gemaakt.add(sl); n_gm += 1
+        open(sl + '.html', 'w', encoding='utf-8').write(page(shell, gem_main(g), sl, t, d, g in WERKGEBIED)); gemaakt.add(sl); n_gm += 1
     for pv in PROVINCIES:
         sl = prov_url(pv)[1:]
         t = f'Thuisbatterij en zonnepanelen in {pv} | Voltwijk'
         if len(t) > 60: t = f'Thuisbatterij en zonnepanelen {pv}'
         d = f'Thuisbatterij, zonnepanelen, airco en warmtepomp in heel {pv}: alle gemeenten en woonplaatsen, met vaste prijzen inclusief installatie.'
-        open(sl + '.html', 'w', encoding='utf-8').write(page(shell, prov_main(pv), sl, t, d)); gemaakt.add(sl)
+        open(sl + '.html', 'w', encoding='utf-8').write(page(shell, prov_main(pv), sl, t, d, any(G[g]['provincie'] == pv for g in WERKGEBIED))); gemaakt.add(sl)
     # opruimen: eerder gemaakte pagina's die niet meer in de lijst staan
     weg = 0
     for f in os.listdir('.'):

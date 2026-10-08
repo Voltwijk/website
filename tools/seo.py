@@ -15,7 +15,7 @@ T = {  # titel, description
  'product-batterij': ('Thuisbatterij 10 of 16 kWh – vanaf € 4.950 | Voltwijk',
            'Thuisbatterij van 10 of 16 kWh met hybride omvormer, vanaf € 4.950 excl. btw, inclusief installatie. Bereken in 1 minuut welke batterij bij jouw verbruik past.'),
  'product-warmtepomp': ('Warmtepomp laten installeren – vanaf € 6.750 | Voltwijk',
-           'Lucht/water-warmtepomp vanaf € 6.750 inclusief installatie. ISDE-subsidie direct verrekend, geplaatst door ons eigen team. Plan een gratis adviesgesprek.'),
+           'Lucht/water-warmtepomp vanaf € 6.750 inclusief installatie. Hulp bij de ISDE-subsidie, geplaatst door ons eigen team. Plan een gratis adviesgesprek.'),
  'product-airco': ('Airco laten installeren – vanaf € 1.899 | Voltwijk',
            'Split-unit airco vanaf € 1.899 inclusief installatie: koelen in de zomer, zuinig bijverwarmen in de tussenseizoenen. Vaste prijs vooraf.'),
  'product-boiler': ('Elektrische boiler laten installeren – vanaf € 1.199 | Voltwijk',

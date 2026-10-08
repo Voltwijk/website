@@ -612,8 +612,11 @@ def page(shell, main, slug, title, desc):
     s = re.sub(r'<link rel="canonical" href="[^"]*">', f'<link rel="canonical" href="https://voltwijk.nl/{slug}">', s, count=1)
     s = re.sub(r'\n?<!-- seo:start -->.*?<!-- seo:end -->', '', s, flags=re.S)
     s = re.sub(r'\n?<!-- rel:start -->.*?<!-- rel:end -->', '', s, flags=re.S)
+    if slug.removeprefix('installateur-') in BUITEN_REGIO:  # buiten de thuisregio: niet in Google (zie tools/data/werkgebied.json)
+        s = s.replace('<link rel="canonical"', '<meta name="robots" content="noindex">\n<link rel="canonical"', 1)
     return s
 
+BUITEN_REGIO = {'amsterdam', 'eindhoven'}
 FOOT_CITIES = ['zevenbergen', 'breda', 'etten-leur', 'roosendaal', 'oosterhout', 'bergen-op-zoom']
 def footer_col():
     links = ''.join(f'\n          <a href="/installateur-{s}" style="color:inherit;text-decoration:none;">{esc(BY[s]["name"])}</a>' for s in FOOT_CITIES)
