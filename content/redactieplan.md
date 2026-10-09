@@ -41,12 +41,12 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-10-08, artikel-boiler-ontkalken-onderhoud)] Elektrische boiler ontkalken en onderhoud | boiler ontkalken | boiler | onderhoudsvraag, weinig concurrentie
 - [klaar (2026-10-01, artikel-thuisbatterij-garage-schuur-winter)] Thuisbatterij in de garage of schuur: kan dat in de winter? | thuisbatterij garage temperatuur | batterij | seizoensvraag
 - [klaar (2026-10-01, artikel-warmtepomp-en-thuisbatterij)] Hybride warmtepomp combineren met een thuisbatterij | warmtepomp en thuisbatterij | warmtepomp | kruisverkoop
-- [open] ISDE-subsidie 2027: wat verandert er | isde 2027 | warmtepomp | zodra RVO bedragen 2027 publiceert
+- [open] ISDE-subsidie 2027: wat verandert er | isde 2027 | warmtepomp | zodra RVO bedragen 2027 publiceert (2026-10-09: nog niet definitief, consultatie gesloten; wachten op RVO)
 - [klaar (2026-10-01, artikel-stroomstoring-zonnepanelen-thuisbatterij)] Stroomstoring in je wijk: wat gebeurt er met je zonnepanelen en batterij | stroomstoring zonnepanelen | zonnepanelen | nieuwsgevoelig, vult noodstroom-artikel aan
-- [open] Jaarafrekening na het einde van salderen: zo controleer je de splitsing 2026/2027 | jaarafrekening salderen 2027 | zonnepanelen | piekt jan–mrt 2027, praktische vraag
-- [open] Vast energiecontract en einde salderen: mag je leverancier de voorwaarden wijzigen? | vast contract salderen 2027 | zonnepanelen | ACM-regels, veel onzekerheid bij consumenten
+- [klaar (2026-10-08, artikel-jaarafrekening-einde-salderen (andere sessie))] Jaarafrekening na het einde van salderen: zo controleer je de splitsing 2026/2027 | jaarafrekening salderen 2027 | zonnepanelen | piekt jan–mrt 2027, praktische vraag
+- [klaar (2026-10-08, artikel-vast-contract-einde-salderen (andere sessie))] Vast energiecontract en einde salderen: mag je leverancier de voorwaarden wijzigen? | vast contract salderen 2027 | zonnepanelen | ACM-regels, veel onzekerheid bij consumenten
 - [open] Definitieve nettarieven 2027 Enexis: wat betaal je per aansluiting | nettarieven 2027 enexis | meterkast | zodra ACM in december de tarieven vaststelt
-- [open] Aansluiting verkleinen of vergroten (1x25A, 3x25A, 3x35A): wat kost het per jaar | aansluiting verzwaren kosten | meterkast | koopintentie, sluit aan op stijgende nettarieven
+- [klaar (2026-10-09, artikel-aansluiting-verzwaren-kosten)] Aansluiting verkleinen of vergroten (1x25A, 3x25A, 3x35A): wat kost het per jaar | aansluiting verzwaren kosten | meterkast | koopintentie, sluit aan op stijgende nettarieven
 - [klaar (2026-10-01, artikel-negatieve-stroomprijs-zonnepanelen)] Negatieve stroomprijzen en zonnepanelen: omvormer afschakelen, hoe werkt dat? | negatieve stroomprijs zonnepanelen | zonnepanelen | groeit met dynamische contracten na 2027
 - [open] Zonnepanelen installeren in Etten-Leur: kosten, netbeheer en planning | zonnepanelen installeren etten-leur | zonnepanelen | staat bovenaan in zoekdata (lokaal)
 - [klaar (2026-10-01, artikel-thuisbatterij-west-brabant)] Thuisbatterij kopen in West-Brabant | thuisbatterij breda / west-brabant | batterij | regionale pillar
@@ -60,18 +60,20 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Gasverbruik in de zomer: zo zie je wat je aan warm water kwijt bent | gasverbruik warm water | boiler | rekenvraag, sluit aan op boiler- en warmtepompartikelen
 - [open] Zegelrecht en de meterkast: wie mag wat aan je aansluiting doen? | zegelrecht meterkast | meterkast | praktische vraag, weinig consumentenuitleg
 - [open] Meetrapport elektrische installatie: wat staat erin en wanneer heb je het nodig? | meetrapport elektra | meterkast | verzekering/verkoop woning, weinig concurrentie
-- [open] Kwartierprijzen: wat veranderde er sinds oktober 2025 voor dynamische contracten? | kwartierprijzen dynamisch contract | batterij | uitlegvraag, sluit aan op batterij- en laadpaalartikelen
+- [klaar (2026-10-08, artikel-kwartierprijzen-dynamisch-contract (andere sessie))] Kwartierprijzen: wat veranderde er sinds oktober 2025 voor dynamische contracten? | kwartierprijzen dynamisch contract | batterij | uitlegvraag, sluit aan op batterij- en laadpaalartikelen
 - [open] OCPP-laadpaal: waarom een open standaard belangrijk is | ocpp laadpaal | laadpaal | koopintentie, weinig consumentenuitleg
 - [open] Hagelschade aan zonnepanelen: wat te doen en hoe herken je microcracks? | hagelschade zonnepanelen | zonnepanelen | seizoens-/nieuwsgevoelig na hagelbuien
 - [open] Thuisbatterij en je woonverzekering: melden en dekking | thuisbatterij verzekering | batterij | vervolgvraag, sluit aan op brandveiligheid
-- [open] Multi-split airco: wanneer kies je één buitenunit voor meerdere kamers? | multi split airco | airco | koopintentie, verdieping op split-airco-artikel
+- [klaar (2026-10-08, artikel-multi-split-airco (andere sessie))] Multi-split airco: wanneer kies je één buitenunit voor meerdere kamers? | multi split airco | airco | koopintentie, verdieping op split-airco-artikel
 - [open] Airco binnenunit kiezen: wandmodel, vloermodel of cassette | airco binnenunit soorten | airco | vergelijkingsvraag, weinig Nederlandse consumentenuitleg
 - [open] Inlaatcombinatie boiler lekt: normaal of niet? | inlaatcombinatie lekt | boiler | concrete probleemvraag, veel gezocht
-- [open] Waterhardheid en je boiler of warmtepomp in West-Brabant | waterhardheid west-brabant | boiler | lokaal, weinig concurrentie
+- [klaar (2026-10-08, artikel-waterhardheid-west-brabant (andere sessie))] Waterhardheid en je boiler of warmtepomp in West-Brabant | waterhardheid west-brabant | boiler | lokaal, weinig concurrentie
 - [klaar (2026-10-08, artikel-thuisbatterij-bij-solaredge)] Thuisbatterij bij SolarEdge: welke opties | solaredge thuisbatterij (4.400/mnd) | batterij | gat: SERP vol webshops, geen installateursuitleg
 - [klaar (2026-10-08, artikel-thuisbatterij-bij-growatt-omvormer)] Thuisbatterij bij Growatt-omvormer | growatt thuisbatterij (1.600/mnd) | batterij | gat: SERP vol webshops
 - [klaar (2026-10-08, artikel-thuisbatterij-bij-micro-omvormers)] Thuisbatterij bij micro-omvormers | thuisbatterij enphase (590/mnd) | batterij | gat
 - [klaar (2026-10-08, artikel-dyness-thuisbatterij)] Dyness thuisbatterij | dyness thuisbatterij (1.000/mnd, weinig resultaten) | batterij | merk dat Voltwijk zelf installeert
-- [open] Thuisbatterij bij SMA-, Huawei-, GoodWe- en Fronius-omvormer (zelfde opzet als SolarEdge/Growatt) | thuisbatterij <merk> omvormer | batterij | merkzoekwoorden, SERP vol webshops
-- [open] Solis hybride omvormer: wat is het en welke past | solis thuisbatterij | batterij | merk dat Voltwijk zelf installeert
+- [klaar (2026-10-08, merk-omvormerartikelen (andere sessie))] Thuisbatterij bij SMA-, Huawei-, GoodWe- en Fronius-omvormer (zelfde opzet als SolarEdge/Growatt) | thuisbatterij <merk> omvormer | batterij | merkzoekwoorden, SERP vol webshops
+- [klaar (2026-10-08, artikel-solis-omvormer (andere sessie))] Solis hybride omvormer: wat is het en welke past | solis thuisbatterij | batterij | merk dat Voltwijk zelf installeert
 - [klaar (2026-10-08)] 16 artikelen: thuisbatterij bij SMA, Fronius, Huawei, GoodWe; Solis omvormer; Deye; Victron; kwartierprijzen; multi-split airco; airco op zonnepanelen; terugleverkosten per leverancier; vast contract en einde salderen; jaarafrekening na einde salderen; thuisbatterij appartement/VvE; waterhardheid West-Brabant; uitbreidingskast meterkast
+- [open] Hoofdzekering te klein? Zo zie je wat je aansluiting aankan | hoofdzekering vermogen | meterkast | praktische vraag bij warmtepomp/laadpaal
+- [open] Netcongestie en een zwaardere aansluiting aanvragen: wat als het net vol is? | aansluiting verzwaren netcongestie | meterkast | actueel, sluit aan op netcongestie-artikel
