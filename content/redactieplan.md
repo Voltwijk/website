@@ -48,13 +48,13 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Definitieve nettarieven 2027 Enexis: wat betaal je per aansluiting | nettarieven 2027 enexis | meterkast | zodra ACM in december de tarieven vaststelt
 - [klaar (2026-10-09, artikel-aansluiting-verzwaren-kosten)] Aansluiting verkleinen of vergroten (1x25A, 3x25A, 3x35A): wat kost het per jaar | aansluiting verzwaren kosten | meterkast | koopintentie, sluit aan op stijgende nettarieven
 - [klaar (2026-10-01, artikel-negatieve-stroomprijs-zonnepanelen)] Negatieve stroomprijzen en zonnepanelen: omvormer afschakelen, hoe werkt dat? | negatieve stroomprijs zonnepanelen | zonnepanelen | groeit met dynamische contracten na 2027
-- [open] Zonnepanelen installeren in Etten-Leur: kosten, netbeheer en planning | zonnepanelen installeren etten-leur | zonnepanelen | staat bovenaan in zoekdata (lokaal)
+- [vervallen (2026-10-10): gedekt door lokale pagina's /zonnepanelen-etten-leur en /installateur-etten-leur] Zonnepanelen installeren in Etten-Leur: kosten, netbeheer en planning | zonnepanelen installeren etten-leur | zonnepanelen | staat bovenaan in zoekdata (lokaal)
 - [klaar (2026-10-01, artikel-thuisbatterij-west-brabant)] Thuisbatterij kopen in West-Brabant | thuisbatterij breda / west-brabant | batterij | regionale pillar
 - [klaar (2026-10-01, artikel-omvormer-valt-uit-netspanning-te-hoog)] Omvormer valt uit door te hoge netspanning | omvormer valt uit | zonnepanelen | praktische vraag
 - [klaar (2026-10-01, artikel-subsidie-duurzaamheidslening-west-brabant)] Subsidie en duurzaamheidslening per gemeente in West-Brabant | subsidie zonnepanelen moerdijk | batterij | lokaal
 - [klaar (2026-10-01, artikel-zonnepanelen-west-brabant)] Zonnepanelen laten plaatsen in West-Brabant | zonnepanelen installeren etten-leur / breda | zonnepanelen | regionale pillar
 - [klaar (2026-10-01, artikel-airco-west-brabant)] Airco laten plaatsen in West-Brabant | airco laten plaatsen breda | airco | regionale pillar
-- [open] Stooklijn van je warmtepomp instellen: zo verlaag je je stroomverbruik | warmtepomp stooklijn instellen | warmtepomp | praktische wintervraag, weinig goede uitleg
+- [klaar (2026-10-10, artikel-warmtepomp-stooklijn-instellen)] Stooklijn van je warmtepomp instellen: zo verlaag je je stroomverbruik | warmtepomp stooklijn instellen | warmtepomp | praktische wintervraag, weinig goede uitleg
 - [open] Hoeveel kWh levert een zonnepaneel in de winter? | zonnepaneel opbrengst winter | zonnepanelen | staat in zoekdata, seizoensvraag
 - [open] Warmtepomp en legionella: welke tapwatertemperatuur is veilig en zuinig? | warmtepomp legionella | warmtepomp | veelgestelde zorgvraag, praktische tips
 - [open] Gasverbruik in de zomer: zo zie je wat je aan warm water kwijt bent | gasverbruik warm water | boiler | rekenvraag, sluit aan op boiler- en warmtepompartikelen
@@ -77,3 +77,5 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-10-08)] 16 artikelen: thuisbatterij bij SMA, Fronius, Huawei, GoodWe; Solis omvormer; Deye; Victron; kwartierprijzen; multi-split airco; airco op zonnepanelen; terugleverkosten per leverancier; vast contract en einde salderen; jaarafrekening na einde salderen; thuisbatterij appartement/VvE; waterhardheid West-Brabant; uitbreidingskast meterkast
 - [open] Hoofdzekering te klein? Zo zie je wat je aansluiting aankan | hoofdzekering vermogen | meterkast | praktische vraag bij warmtepomp/laadpaal
 - [open] Netcongestie en een zwaardere aansluiting aanvragen: wat als het net vol is? | aansluiting verzwaren netcongestie | meterkast | actueel, sluit aan op netcongestie-artikel
+- [open] Thermostaat bij een warmtepomp: waarom constant beter is dan nachtverlaging | warmtepomp thermostaat instellen | warmtepomp | veelgestelde wintervraag
+- [open] Radiatoren geschikt maken voor een warmtepomp: groter, ventilatoren of LT-radiatoren | radiatoren warmtepomp | warmtepomp | koopintentie, sluit aan op stooklijn-artikel
