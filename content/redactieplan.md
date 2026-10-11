@@ -55,7 +55,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-10-01, artikel-zonnepanelen-west-brabant)] Zonnepanelen laten plaatsen in West-Brabant | zonnepanelen installeren etten-leur / breda | zonnepanelen | regionale pillar
 - [klaar (2026-10-01, artikel-airco-west-brabant)] Airco laten plaatsen in West-Brabant | airco laten plaatsen breda | airco | regionale pillar
 - [klaar (2026-10-10, artikel-warmtepomp-stooklijn-instellen)] Stooklijn van je warmtepomp instellen: zo verlaag je je stroomverbruik | warmtepomp stooklijn instellen | warmtepomp | praktische wintervraag, weinig goede uitleg
-- [open] Hoeveel kWh levert een zonnepaneel in de winter? | zonnepaneel opbrengst winter | zonnepanelen | staat in zoekdata, seizoensvraag
+- [klaar (2026-10-11, artikel-zonnepaneel-opbrengst-winter)] Hoeveel kWh levert een zonnepaneel in de winter? | zonnepaneel opbrengst winter | zonnepanelen | staat in zoekdata, seizoensvraag
 - [open] Warmtepomp en legionella: welke tapwatertemperatuur is veilig en zuinig? | warmtepomp legionella | warmtepomp | veelgestelde zorgvraag, praktische tips
 - [open] Gasverbruik in de zomer: zo zie je wat je aan warm water kwijt bent | gasverbruik warm water | boiler | rekenvraag, sluit aan op boiler- en warmtepompartikelen
 - [open] Zegelrecht en de meterkast: wie mag wat aan je aansluiting doen? | zegelrecht meterkast | meterkast | praktische vraag, weinig consumentenuitleg
@@ -79,3 +79,5 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Netcongestie en een zwaardere aansluiting aanvragen: wat als het net vol is? | aansluiting verzwaren netcongestie | meterkast | actueel, sluit aan op netcongestie-artikel
 - [open] Thermostaat bij een warmtepomp: waarom constant beter is dan nachtverlaging | warmtepomp thermostaat instellen | warmtepomp | veelgestelde wintervraag
 - [open] Radiatoren geschikt maken voor een warmtepomp: groter, ventilatoren of LT-radiatoren | radiatoren warmtepomp | warmtepomp | koopintentie, sluit aan op stooklijn-artikel
+- [open] Zonnepanelen opbrengst per maand: zo verdeelt je jaaropbrengst zich na 2027 | opbrengst zonnepanelen per maand | zonnepanelen | veel gezocht, sluit aan op winterartikel
+- [open] Laadpaal thuis laten installeren: wat komt erbij kijken? | elektrische laadpaal thuis | laadpaal | staat bovenaan in zoekdata (positie 26)
