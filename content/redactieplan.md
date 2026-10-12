@@ -56,7 +56,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-10-01, artikel-airco-west-brabant)] Airco laten plaatsen in West-Brabant | airco laten plaatsen breda | airco | regionale pillar
 - [klaar (2026-10-10, artikel-warmtepomp-stooklijn-instellen)] Stooklijn van je warmtepomp instellen: zo verlaag je je stroomverbruik | warmtepomp stooklijn instellen | warmtepomp | praktische wintervraag, weinig goede uitleg
 - [klaar (2026-10-11, artikel-zonnepaneel-opbrengst-winter)] Hoeveel kWh levert een zonnepaneel in de winter? | zonnepaneel opbrengst winter | zonnepanelen | staat in zoekdata, seizoensvraag
-- [open] Warmtepomp en legionella: welke tapwatertemperatuur is veilig en zuinig? | warmtepomp legionella | warmtepomp | veelgestelde zorgvraag, praktische tips
+- [klaar (2026-10-12, artikel-warmtepomp-legionella)] Warmtepomp en legionella: welke tapwatertemperatuur is veilig en zuinig? | warmtepomp legionella | warmtepomp | veelgestelde zorgvraag, praktische tips
 - [open] Gasverbruik in de zomer: zo zie je wat je aan warm water kwijt bent | gasverbruik warm water | boiler | rekenvraag, sluit aan op boiler- en warmtepompartikelen
 - [open] Zegelrecht en de meterkast: wie mag wat aan je aansluiting doen? | zegelrecht meterkast | meterkast | praktische vraag, weinig consumentenuitleg
 - [open] Meetrapport elektrische installatie: wat staat erin en wanneer heb je het nodig? | meetrapport elektra | meterkast | verzekering/verkoop woning, weinig concurrentie
@@ -81,3 +81,5 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Radiatoren geschikt maken voor een warmtepomp: groter, ventilatoren of LT-radiatoren | radiatoren warmtepomp | warmtepomp | koopintentie, sluit aan op stooklijn-artikel
 - [open] Zonnepanelen opbrengst per maand: zo verdeelt je jaaropbrengst zich na 2027 | opbrengst zonnepanelen per maand | zonnepanelen | veel gezocht, sluit aan op winterartikel
 - [open] Laadpaal thuis laten installeren: wat komt erbij kijken? | elektrische laadpaal thuis | laadpaal | staat bovenaan in zoekdata (positie 26)
+- [open] Boiler op vakantie: aan laten staan of uitzetten? | boiler uitzetten vakantie | boiler | seizoensvraag (kerst/zomer), RIVM-advies
+- [open] Warmtepomp tapwatertemperatuur instellen: 50, 55 of 60 graden? | warmtepomp tapwater temperatuur | warmtepomp | praktische instelvraag, sluit aan op legionella-artikel
