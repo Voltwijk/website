@@ -58,7 +58,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-10-11, artikel-zonnepaneel-opbrengst-winter)] Hoeveel kWh levert een zonnepaneel in de winter? | zonnepaneel opbrengst winter | zonnepanelen | staat in zoekdata, seizoensvraag
 - [klaar (2026-10-12, artikel-warmtepomp-legionella)] Warmtepomp en legionella: welke tapwatertemperatuur is veilig en zuinig? | warmtepomp legionella | warmtepomp | veelgestelde zorgvraag, praktische tips
 - [klaar (2026-10-13, artikel-gasverbruik-warm-water-zomer)] Gasverbruik in de zomer: zo zie je wat je aan warm water kwijt bent | gasverbruik warm water | boiler | rekenvraag, sluit aan op boiler- en warmtepompartikelen
-- [open] Zegelrecht en de meterkast: wie mag wat aan je aansluiting doen? | zegelrecht meterkast | meterkast | praktische vraag, weinig consumentenuitleg
+- [klaar (2026-10-14, artikel-zegelrecht-meterkast)] Zegelrecht en de meterkast: wie mag wat aan je aansluiting doen? | zegelrecht meterkast | meterkast | praktische vraag, weinig consumentenuitleg
 - [open] Meetrapport elektrische installatie: wat staat erin en wanneer heb je het nodig? | meetrapport elektra | meterkast | verzekering/verkoop woning, weinig concurrentie
 - [klaar (2026-10-08, artikel-kwartierprijzen-dynamisch-contract (andere sessie))] Kwartierprijzen: wat veranderde er sinds oktober 2025 voor dynamische contracten? | kwartierprijzen dynamisch contract | batterij | uitlegvraag, sluit aan op batterij- en laadpaalartikelen
 - [open] OCPP-laadpaal: waarom een open standaard belangrijk is | ocpp laadpaal | laadpaal | koopintentie, weinig consumentenuitleg
@@ -85,3 +85,5 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Warmtepomp tapwatertemperatuur instellen: 50, 55 of 60 graden? | warmtepomp tapwater temperatuur | warmtepomp | praktische instelvraag, sluit aan op legionella-artikel
 - [open] Van gas naar inductie koken: wat kost het en wat bespaar je? | overstappen inductie kosten | meterkast | koopintentie, sluit aan op inductie-meterkastartikel
 - [open] Waterbesparende douchekop: hoeveel gas en water bespaar je echt? | waterbesparende douchekop besparing | boiler | veel gezocht, laagdrempelig
+- [open] Hoofdzekering doorgebrand: zo herken je het en dit doe je | hoofdzekering doorgebrand | meterkast | probleemvraag, nationaal storingsnummer
+- [open] Huis kopen: zo check je de meterkast en elektrische installatie | meterkast checken huis kopen | meterkast | koopmoment, sluit aan op meetrapport-idee
