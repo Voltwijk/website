@@ -3,6 +3,7 @@ seo_title: Split airco: wat is het en hoe werkt het? | Voltwijk
 description: Split airco uitgelegd: binnenunit, buitenunit en leidingen, hoe koelen en verwarmen werkt, mono- of multi-split, soorten binnenunits en de installatie.
 category: Airco
 product: airco
+image: foto-38788452
 date: 2026-10-07
 lead: Een split airco bestaat uit twee delen: een binnenunit in de kamer en een buitenunit buiten, verbonden door koelleidingen. Omdat het lawaaiige en warme deel buiten staat, is een split airco stiller en zuiniger dan een mobiele airco. De meeste split airco's kunnen ook verwarmen.
 summary: Een split airco heeft een binnenunit en een buitenunit, verbonden door twee geïsoleerde koperen koelleidingen || Een koudemiddel verplaatst warmte van binnen naar buiten (koelen) of van buiten naar binnen (verwarmen) || Mono-split is één binnenunit per buitenunit; bij multi-split hangen meerdere binnenunits aan één buitenunit || Werk aan het koudemiddelcircuit mag alleen een F-gassen gecertificeerd bedrijf doen

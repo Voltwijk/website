@@ -3,6 +3,7 @@ seo_title: Zegelrecht meterkast: wie mag wat? | Voltwijk
 description: Zegelrecht in de meterkast: welke delen zijn van de netbeheerder, wie mag de zegels verbreken en wat mag je zelf? Uitleg op basis van Enexis en Liander.
 category: Meterkast
 product: meterkast
+image: foto-942316
 date: 2026-10-14
 lead: In je meterkast zitten verzegelde onderdelen die van de netbeheerder zijn: de hoofdzekering en de meter. Die zegels mag je niet zelf verbreken. Alleen de netbeheerder of een installateur met zegelrecht mag dat, bijvoorbeeld om je groepenkast veilig te kunnen vervangen.
 summary: De hoofdzekering, aansluiting en elektriciteitsmeter zijn van de netbeheerder en verzegeld || Alleen de netbeheerder of een installateur met zegelrecht mag die zegels verbreken en opnieuw aanbrengen || Bij Enexis geldt het zegelrecht voor aansluitingen met hoofdzekeringen tot 3 x 80 ampère || Netbeheerders kunnen kosten rekenen als zegels zonder toestemming zijn verbroken

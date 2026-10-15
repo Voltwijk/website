@@ -3,6 +3,7 @@ seo_title: Lucht-water of lucht-lucht warmtepomp? | Voltwijk
 description: Lucht-water of lucht-lucht warmtepomp: hoe werken ze, wat verwarmen ze, wat kosten ze ongeveer en wanneer kies je welke? Een heldere vergelijking met tabel.
 category: Warmtepomp
 product: warmtepomp
+image: foto-6316065
 date: 2026-10-04
 lead: Een lucht-water warmtepomp verwarmt water voor je radiatoren of vloerverwarming en vaak ook je tapwater. Hij kan je cv-ketel vervangen. Een lucht-lucht warmtepomp verwarmt (en koelt) de lucht in een ruimte, net als een split-airco. Hij is goedkoper, maar verwarmt geen warm water en meestal niet het hele huis.
 summary: Lucht-water: warmte uit de buitenlucht naar het water van je verwarming, vervangt of ondersteunt de cv-ketel || Lucht-lucht: warmte uit de buitenlucht direct naar de lucht in de kamer, kan ook koelen || Lucht-water is de grotere investering en verwarmt het hele huis; lucht-lucht is een zuinige aanvulling per ruimte || Voor een lucht-water warmtepomp bestaat ISDE-subsidie; voor lucht-lucht hangt dat af van het type, check de actuele lijst van RVO

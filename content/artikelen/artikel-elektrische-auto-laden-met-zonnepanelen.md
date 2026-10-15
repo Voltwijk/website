@@ -3,6 +3,7 @@ seo_title: Auto laden met zonnepanelen: zo werkt het | Voltwijk
 description: Je auto laden met zonnepanelen? Lees hoe zonneladen werkt, waarom de minimale laadstroom van 6 ampère ertoe doet en wanneer het realistisch is.
 category: Laadpaal
 product: laadpaal
+image: foto-27355834
 lead: Je auto laden met eigen zonnestroom kan prima, met een slimme laadpaal die laadt op je zonne-overschot. Het werkt het best als de auto overdag thuis staat, in de zonnige maanden, en met 1-fase laden bij kleinere overschotten.
 summary: Een slimme laadpaal laadt alleen met wat je panelen overhouden || Laden start pas vanaf ongeveer 1,4 kW overschot op 1-fase of 4,1 kW op 3-fase || Zonneladen werkt vooral van voorjaar tot najaar en als de auto overdag thuis staat || Een thuisbatterij gebruiken om je auto te laden is meestal niet slim
 ---

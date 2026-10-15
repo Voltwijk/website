@@ -3,6 +3,7 @@ seo_title: Zonnepanelen met accu of thuisbatterij | Voltwijk
 description: Zonnepanelen met accu of thuisbatterij in één keer? Zo stem je panelen en batterij af, en daarom is een hybride omvormer handig.
 category: Zonnepanelen
 product: zonnepanelen
+image: foto-35237908
 date: 2026-10-04
 lead: Neem je nieuwe zonnepanelen en wil je ook een thuisbatterij, dan is het slim om ze samen te plannen. Met één hybride omvormer voor panelen en batterij heb je minder apparatuur en verlies je minder stroom bij het omzetten. Belangrijk is dat het aantal panelen en de grootte van de batterij bij je verbruik passen.
 summary: Samen plannen bespaart een tweede omvormer en een tweede installatiedag || Stem het aantal panelen af op je jaarverbruik en de batterij op je avond- en nachtverbruik || Na het einde van salderen op 1 januari 2027 levert zelf gebruikte zonnestroom meer op dan teruggeleverde || Op zonnepanelen voor je woning geldt 0% btw; voor de batterij gelden andere regels

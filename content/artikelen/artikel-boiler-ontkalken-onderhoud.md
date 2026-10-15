@@ -3,6 +3,7 @@ seo_title: Elektrische boiler ontkalken en onderhoud | Voltwijk
 description: Elektrische boiler ontkalken: hoe vaak is nodig, hoe gaat het en waarom de anode en inlaatcombinatie net zo belangrijk zijn. Met een onderhoudsschema.
 category: Boiler
 product: boiler
+image: foto-19980200
 date: 2026-10-08
 lead: Een elektrische boiler heeft weinig onderhoud nodig, maar kalk en slijtage van de anode bepalen hoe lang hij meegaat. De meeste fabrikanten adviseren om de paar jaar te ontkalken en dan meteen de anode te controleren. De inlaatcombinatie kun je tussendoor zelf even nalopen.
 summary: Kalk op het verwarmingselement maakt je boiler trager en minder zuinig || Vaak wordt ontkalken om de 2 tot 3 jaar geadviseerd; bij hard water en veel verbruik vaker || De magnesiumanode beschermt de tank tegen roest en moet periodiek worden gecontroleerd || Een druppelende inlaatcombinatie tijdens het opwarmen is normaal, continu lekken niet

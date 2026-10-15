@@ -3,6 +3,7 @@ seo_title: Welke boilerinhoud heb ik nodig? | Voltwijk
 description: Welke boilerinhoud past bij jouw huishouden? Lees hoe douchen, bad en boilertemperatuur het aantal liters bepalen, met vuistregeltabel en rekenvoorbeeld.
 category: Boiler
 product: boiler
+image: foto-19980200
 lead: Een boiler die te klein is, geeft koude douches. Een boiler die te groot is, kost ruimte en warmte die je niet gebruikt. Zo bepaal je welke inhoud echt bij jouw huishouden past.
 summary: Kijk niet alleen naar het aantal personen, maar vooral naar douchegedrag en of je in bad gaat || Een boiler op 60 °C levert meer bruikbaar water dan zijn inhoud, omdat je het mengt met koud water tot ongeveer 40 °C || Een warmtepompboiler warmt langzaam op, dus kies daarbij liever wat ruimer || Te groot is ook niet goed: je verliest meer warmte en betaalt voor liters die je niet gebruikt
 ---

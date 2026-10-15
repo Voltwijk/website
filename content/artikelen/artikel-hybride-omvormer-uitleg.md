@@ -3,6 +3,7 @@ seo_title: Hybride omvormer: uitleg, voor- en nadelen | Voltwijk
 description: Wat is een hybride omvormer? Lees het verschil met een gewone omvormer, wanneer je er een kiest bij nieuwe zonnepanelen en de voor- en nadelen.
 category: Zonnepanelen
 product: zonnepanelen
+image: foto-28942196
 lead: Een hybride omvormer zet de stroom van je zonnepanelen om én stuurt een thuisbatterij aan. Hij is vooral interessant als je nieuwe zonnepanelen neemt en nu of later een batterij wilt.
 summary: Een hybride omvormer combineert een zonnepanelenomvormer en een batterijomvormer in één apparaat || Zonnestroom kan direct als gelijkstroom de batterij in, met minder omzetverlies || Vooral logisch bij nieuwe zonnepanelen, of als je oude omvormer toch vervangen moet worden || Nadelen: hogere prijs en je zit vast aan batterijen die de omvormer ondersteunt
 ---

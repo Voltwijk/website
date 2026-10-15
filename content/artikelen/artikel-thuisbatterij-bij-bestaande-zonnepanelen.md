@@ -3,6 +3,7 @@ seo_title: Thuisbatterij bij bestaande zonnepanelen | Voltwijk
 description: Een thuisbatterij bij bestaande zonnepanelen? Lees het verschil tussen AC- en DC-gekoppeld, of je omvormer kan blijven en wat je vooraf moet checken.
 category: Thuisbatterij
 product: batterij
+image: foto-30440447
 lead: Een thuisbatterij toevoegen aan zonnepanelen die er al liggen kan bijna altijd. Meestal kies je dan een AC-gekoppelde batterij, zodat je bestaande omvormer gewoon kan blijven hangen.
 summary: Een AC-gekoppelde batterij werkt naast je bestaande omvormer en is vaak de eenvoudigste keuze || Een DC-gekoppelde batterij vraagt meestal een hybride omvormer en past vooral als je omvormer toch aan vervanging toe is || Check vooraf je omvormer, je aansluiting, je meterkast en je verbruik || Goede sturing via je slimme meter is minstens zo belangrijk als het type koppeling
 ---

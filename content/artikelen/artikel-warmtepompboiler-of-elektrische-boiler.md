@@ -3,6 +3,7 @@ seo_title: Warmtepompboiler of elektrische boiler? | Voltwijk
 description: Warmtepompboiler of gewone elektrische boiler? Vergelijk verbruik (COP 3 vs 1), kosten, ruimte, geluid en installatie, en lees wie welke boiler kiest.
 category: Boiler
 product: boiler
+image: foto-20046689
 lead: Beide maken warm water met stroom, maar een warmtepompboiler doet dat met ongeveer een derde van de energie. Toch is hij niet voor iedereen de beste keuze. Dit zijn de verschillen.
 summary: Een gewone elektrische boiler heeft een COP van ongeveer 1, een warmtepompboiler van ongeveer 3 || Daardoor verbruikt een warmtepompboiler voor dezelfde hoeveelheid warm water ongeveer een derde van de stroom || Een warmtepompboiler is duurder in aanschaf, groter en maakt wat geluid || Bij weinig warmwatergebruik of weinig ruimte kan een gewone boiler toch de logische keuze zijn
 ---

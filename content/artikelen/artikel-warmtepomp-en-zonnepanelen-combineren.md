@@ -3,6 +3,7 @@ seo_title: Warmtepomp en zonnepanelen combineren | Voltwijk
 description: Warmtepomp en zonnepanelen combineren? Lees hoeveel extra panelen je nodig hebt, waarom winter en zomer verschillen en hoe slim sturen helpt.
 category: Warmtepomp
 product: warmtepomp
+image: foto-9729882
 lead: Een warmtepomp en zonnepanelen passen goed bij elkaar, maar niet omdat de zon je huis in de winter verwarmt. De winst zit in de jaarbalans, in slim sturen en in warm water maken op zonnige uren.
 summary: Een warmtepomp verbruikt vooral in de winter, als je panelen weinig opwekken || Extra panelen dekken het verbruik over een heel jaar, niet per dag || Slim sturen verschuift warm water en voorverwarmen naar zonnige of goedkope uren || Een boiler is vaak een goedkopere 'warmtebatterij' dan een thuisbatterij
 ---

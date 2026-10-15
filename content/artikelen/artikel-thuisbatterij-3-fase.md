@@ -3,6 +3,7 @@ seo_title: Thuisbatterij 3-fase: wanneer slim? | Voltwijk
 description: Thuisbatterij op 3-fase: wanneer kies je een 3-fase batterij, wat is het voordeel boven 1-fase en wat moet je meterkast kunnen?
 category: Thuisbatterij
 product: batterij
+image: foto-257743
 date: 2026-10-04
 lead: Heb je al een 3-fase aansluiting en grote verbruikers zoals een warmtepomp, laadpaal of inductiekookplaat, dan is een 3-fase thuisbatterij vaak de beste keuze. Hij kan meer vermogen leveren en verdeelt de belasting over de drie fasen. Heb je 1-fase en een gewoon verbruik, dan hoef je daarvoor meestal niet te verzwaren.
 summary: Een 3-fase batterij levert en laadt verdeeld over drie fasen, waardoor een groter vermogen mogelijk is || Logisch als je al 3-fase hebt en meerdere grote verbruikers gebruikt || Verzwaren alleen voor de batterij is meestal niet nodig: dat kost eenmalig geld en vaak een hoger vast netbeheertarief || Bij Voltwijk: 16 kWh met 8 kW hybride omvormer (3-fase) voor € 5.950 excl. btw, inclusief installatie

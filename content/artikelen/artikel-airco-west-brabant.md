@@ -3,6 +3,7 @@ seo_title: Airco plaatsen West-Brabant: prijs en regels | Voltwijk
 description: Airco laten plaatsen in Breda, Roosendaal of Etten-Leur? Lees wat een split-airco kost, welke regels gelden voor de buitenunit en hoe je ermee verwarmt.
 category: Airco
 product: airco
+image: foto-7060814
 date: 2026-10-01
 lead: Een split-airco laten plaatsen in West-Brabant kan bij Voltwijk vanaf € 1.899 inclusief installatie. Aan de achterkant van een gewone woning heb je meestal geen vergunning nodig, maar de buitenunit moet wel aan geluidsregels voldoen. En de installatie moet door een F-gassen gecertificeerd bedrijf gebeuren.
 summary: Een split-airco bij Voltwijk kost vanaf € 1.899 inclusief installatie || Een buitenunit aan de achterkant is meestal vergunningvrij; aan de voorkant, bij een monument of in beschermd stadsgezicht vaak niet || Werk aan het koudemiddel mag alleen een bedrijf met F-gassencertificaat (BRL 100) en een gecertificeerde monteur (BRL 200) doen || Een split-airco kan ook verwarmen en past goed bij zonnepanelen

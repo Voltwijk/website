@@ -3,6 +3,7 @@ seo_title: Welk vermogen airco heb ik nodig? | Voltwijk
 description: Welk vermogen airco heb je nodig: 2,5, 3,5 of 5 kW? Vuistregels voor kamergrootte, isolatie en zon, de nadelen van te groot of te klein en multi-split.
 category: Airco
 product: airco
+image: foto-6588599
 lead: De meeste airco's voor thuis hebben een koelvermogen van 2,5 of 3,5 kW. Welke je nodig hebt, hangt niet alleen af van het aantal vierkante meters, maar ook van isolatie, zon en hoe je de ruimte gebruikt.
 summary: Het vermogen van een airco is zijn koelvermogen in kW, niet zijn stroomverbruik || Kamergrootte is het startpunt, maar isolatie, zon, plafondhoogte en gebruik bepalen de uiteindelijke keuze || Te groot is net zo onhandig als te klein: pendelen, minder ontvochtigen en onnodig hoge aanschafkosten || Onze tabel is een vuistregel; een installateur rekent het voor jouw ruimte na
 ---

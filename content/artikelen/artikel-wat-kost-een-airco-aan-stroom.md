@@ -3,6 +3,7 @@ seo_title: Wat kost een airco aan stroom? | Voltwijk
 description: Wat kost een airco aan stroom bij koelen en verwarmen? Uitleg over EER en SEER, rekenvoorbeelden per dag en tips om je verbruik te verlagen met zonnepanelen.
 category: Airco
 product: airco
+image: foto-6316067
 lead: Een airco met 3,5 kW koelvermogen verbruikt geen 3,5 kW stroom. Hoeveel hij wel verbruikt, hangt af van zijn efficiëntie, je huis en hoe je hem gebruikt. Zo reken je het zelf uit.
 summary: Koelvermogen is niet hetzelfde als stroomverbruik; een split-airco levert meerdere kWh koeling per kWh stroom || EER en SEER vertellen hoe efficiënt een airco koelt; SEER is het seizoensgemiddelde || In onze rekenvoorbeelden kost koelen op een warme dag ruwweg een euro || Zonnepanelen passen goed bij een airco, want koelen doe je vooral als de zon schijnt
 ---

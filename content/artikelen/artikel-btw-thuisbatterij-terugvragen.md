@@ -5,7 +5,7 @@ category: Thuisbatterij
 product: batterij
 lead: Op zonnepanelen betaal je geen btw, op een thuisbatterij wel: 21%. Maar gebruik je de batterij om stroom te verkopen, dan kun je die btw volgens de Belastingdienst vaak terugvragen. Hier lees je hoe dat zit.
 summary: Op een thuisbatterij betaal je 21% btw; het nultarief geldt alleen voor zonnepanelen || Verkoop je met de batterij stroom (bijvoorbeeld met een dynamisch contract), dan ben je volgens de Belastingdienst ondernemer voor de btw || In dat geval kun je de btw op aanschaf en installatie vaak (deels) terugvragen, maar dan heb je ook btw-verplichtingen || Check je situatie op belastingdienst.nl of bij een adviseur voordat je erop rekent
-image: sfeer-rekenen
+image: foto-7680748
 ---
 Het korte antwoord: **je betaalt eerst 21% btw, maar je kunt die vaak terugvragen**. Er is geen nultarief voor thuisbatterijen, ook niet als je de batterij samen met zonnepanelen koopt. Wel schrijft de Belastingdienst dat je de btw op de aanschaf en installatie van een thuisbatterij vaak kunt terugvragen, als je de batterij gebruikt om stroom te verkopen.
 

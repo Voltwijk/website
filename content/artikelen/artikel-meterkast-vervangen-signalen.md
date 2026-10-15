@@ -3,6 +3,7 @@ seo_title: Meterkast vervangen: 7 signalen om op te letten | Voltwijk
 description: Wanneer moet je meterkast vervangen worden? Herken de signalen, van oude stoppen en geen aardlek tot warmte en brandlucht, en lees wat een vervanging inhoudt.
 category: Meterkast
 product: meterkast
+image: foto-27862199
 lead: Een meterkast gaat lang mee, maar niet eeuwig. Oude stoppen, geen aardlekschakelaar of een brandlucht zijn signalen dat het tijd is voor vervanging. Zo herken je ze.
 summary: Oude schroefzekeringen, porseleinen stoppen of geen aardlekschakelaar wijzen op een verouderde installatie || Warmte, brandlucht of verkleuring zijn een reden om direct een installateur te bellen || Wil je een warmtepomp, laadpaal of inductie? Dan is je groepenkast vaak te klein || Vervangen gebeurt in de meeste gevallen in één dag en wordt afgesloten met een NEN 1010-keuring
 ---

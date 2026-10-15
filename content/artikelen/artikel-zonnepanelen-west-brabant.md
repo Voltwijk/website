@@ -3,6 +3,7 @@ seo_title: Zonnepanelen West-Brabant: kosten en regels | Voltwijk
 description: Zonnepanelen laten plaatsen in West-Brabant, Breda of Etten-Leur? Lees wat het kost, wat er in 2027 verandert, wanneer een vergunning nodig is en hoe het gaat.
 category: Zonnepanelen
 product: zonnepanelen
+image: foto-6233727
 date: 2026-10-01
 lead: Zonnepanelen laten plaatsen in West-Brabant is meestal eenvoudig. Op een gewoon dak heb je geen vergunning nodig en je betaalt 0% btw. Wel stopt salderen op 1 januari 2027, dus reken met hoeveel stroom je zelf gebruikt. En woon je in een monument of in beschermd stadsgezicht, zoals in Willemstad, dan vraag je eerst een vergunning aan.
 summary: Op zonnepanelen voor je woning betaal je 0% btw, inclusief installatie || Salderen stopt op 1 januari 2027; kijk daarom meteen of een thuisbatterij bij je past || Op een gewoon dak zijn zonnepanelen meestal vergunningvrij, maar bij een monument of in beschermd stadsgezicht (zoals Willemstad) niet || Na de installatie meld je de panelen verplicht en gratis aan op energieleveren.nl

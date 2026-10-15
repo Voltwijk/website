@@ -3,6 +3,7 @@ seo_title: Terugleverkosten uitgelegd en beperken | Voltwijk
 description: Wat zijn terugleverkosten, waarom rekenen leveranciers ze en hoe verschillen ze? Lees hoe je terugleverkosten beperkt en wat er in 2027 verandert.
 category: Zonnepanelen
 product: zonnepanelen
+image: foto-7680748
 lead: Terugleverkosten zijn kosten die je energieleverancier rekent voor de zonnestroom die je teruglevert aan het net. Je beperkt ze vooral door meer stroom zelf te gebruiken, op het moment dat je hem opwekt.
 summary: Terugleverkosten zijn een vergoeding die leveranciers rekenen voor teruggeleverde zonnestroom || Ze verschillen sterk per leverancier en per contract, vast of dynamisch || Vanaf 1 januari 2027 moeten leveranciers ze per kWh op de factuur zetten || Je beperkt ze door zelf meer te verbruiken, met een batterij en door apparaten slim te sturen
 ---

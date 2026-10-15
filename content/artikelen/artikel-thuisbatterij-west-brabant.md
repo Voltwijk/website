@@ -3,6 +3,7 @@ seo_title: Thuisbatterij West-Brabant: prijs en installatie | Voltwijk
 description: Thuisbatterij in West-Brabant of Breda? Lees wat een batterij na 2027 oplevert, wie je netbeheerder is, welke maat past en hoe de installatie gaat.
 category: Thuisbatterij
 product: batterij
+image: foto-37355063
 date: 2026-10-01
 lead: Op 1 januari 2027 stopt salderen. Vanaf dan is zonnestroom die je zelf gebruikt meer waard dan stroom die je teruglevert. Een thuisbatterij helpt je om meer zelf te gebruiken. Hier lees je wat dat in West-Brabant betekent: van netbeheerder tot maat, prijs en installatie.
 summary: Salderen stopt op 1 januari 2027; daarna telt vooral hoeveel zonnestroom je zelf gebruikt || In grote delen van West-Brabant is Enexis de netbeheerder, maar check het altijd voor je eigen adres || De juiste maat hangt af van je avondverbruik en je zomeroverschot, niet van je jaarverbruik || Een installatie bestaat uit een meterkastcheck, eigen groep, plaatsing binnen en de app instellen

@@ -3,6 +3,7 @@ seo_title: Energiebelasting en netbeheerkosten 2027 | Voltwijk
 description: Energiebelasting 2027 blijft gelijk, maar de netbeheerkosten stijgen met gemiddeld € 141 per jaar. Wat betekent dat voor jouw rekening, ook met zonnepanelen?
 category: Nieuws
 product: batterij
+image: foto-6863191
 date: 2026-09-29
 lead: De energiebelasting op stroom en gas blijft in 2027 gelijk, volgens het Belastingplan dat op Prinsjesdag is gepresenteerd. Toch wordt je energierekening hoger: de netbeheerkosten stijgen volgens de ACM met gemiddeld € 141 per jaar. En heb je zonnepanelen, dan speelt ook het einde van salderen mee.
 summary: De energiebelasting op stroom blijft in 2027 € 0,11085 per kWh inclusief btw, net als in 2026 || De belastingvermindering per aansluiting blijft vrijwel gelijk || De netbeheerkosten stijgen volgens een eerste berekening van de ACM met gemiddeld € 89 voor stroom en € 52 voor gas per jaar || Netbeheerkosten zijn een vast bedrag per aansluiting; minder verbruiken verlaagt ze niet, zelf zonnestroom gebruiken bespaart wel energiebelasting

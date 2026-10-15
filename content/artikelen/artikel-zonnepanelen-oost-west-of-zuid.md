@@ -3,6 +3,7 @@ seo_title: Zonnepanelen oost-west of zuid? | Voltwijk
 description: Zonnepanelen op oost-west of zuid? Lees het indicatieve opbrengstverschil, de spreiding over de dag en waarom oost-west na salderen vaak slim is.
 category: Zonnepanelen
 product: zonnepanelen
+image: foto-1907419
 lead: Per paneel levert een zuiddak het meest op, oost-west ongeveer 10 tot 20 procent minder. Maar oost-west spreidt de opbrengst over de dag, en daardoor gebruik je na het einde van salderen vaak meer stroom zelf.
 summary: Een zuiddak levert per paneel de hoogste jaaropbrengst || Oost-west levert per paneel indicatief 10 tot 20 procent minder, afhankelijk van hellingshoek en schaduw || Oost-west geeft stroom in de ochtend en late middag, wanneer je vaak zelf thuis bent || Na het einde van salderen telt zelfverbruik zwaarder dan de totale opbrengst
 ---

@@ -3,6 +3,7 @@ seo_title: Checklist salderen 2027: regel dit nu | Voltwijk
 description: Checklist salderen 2027: wat moet je vóór 1 januari regelen als je zonnepanelen hebt? Contract, meterstanden, zelfverbruik en je opties op een rij.
 category: Zonnepanelen
 product: zonnepanelen
+image: foto-5387258
 date: 2026-09-28
 lead: Op 1 januari 2027 stopt de salderingsregeling. Je panelen blijven gewoon werken, maar teruggeleverde stroom levert daarna minder op. Met deze checklist loop je in een paar stappen na wat je vóór de jaarwisseling regelt: je energiecontract, je meterstanden en je zelfverbruik.
 summary: Salderen stopt op 1 januari 2027; daarna krijg je per teruggeleverde kWh een terugleververgoeding van je leverancier || Tot en met 2030 is die vergoeding minimaal 50% van het kale leveringstarief || Een vast contract mag alleen worden aangepast als dat in de voorwaarden staat en je minstens een maand vooraf bericht krijgt || Noteer je meterstanden rond de jaarwisseling en breng je zelfverbruik in kaart voordat je iets koopt

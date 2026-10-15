@@ -3,6 +3,7 @@ seo_title: Omvormer kapot of vervangen: kosten en tips | Voltwijk
 description: Omvormer kapot? Herken de signalen, lees wanneer repareren of vervangen slim is, wat een nieuwe omvormer indicatief kost en of een hybride omvormer loont.
 category: Zonnepanelen
 product: zonnepanelen
+image: foto-17842843
 lead: Een omvormer gaat meestal zo'n 10 tot 15 jaar mee. Is hij kapot, dan is vervangen vaak logischer dan repareren, en indicatief ben je ongeveer € 800 tot € 2.000 kwijt voor een gewone omvormer inclusief installatie.
 summary: Signalen: geen opbrengst in de app, een rood of knipperend lampje, foutcodes of een omvormer die steeds uitschakelt || Een omvormer gaat meestal 10 tot 15 jaar mee, panelen veel langer || Buiten de garantie is vervangen vaak slimmer dan repareren; check of op een losse vervanging 0% of 21% btw geldt || Bij vervanging kun je overwegen meteen een hybride omvormer te nemen, zodat je later een batterij kunt koppelen
 ---

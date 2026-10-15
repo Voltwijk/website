@@ -3,6 +3,7 @@ seo_title: Thuisbatterij kopen: 10 dingen om op te letten | Voltwijk
 description: Thuisbatterij kopen? Let op bruikbare capaciteit, vermogen, 1- of 3-fase, garantie, veiligheid en totale prijs. Met checklist om offertes te vergelijken.
 category: Thuisbatterij
 product: batterij
+image: foto-4254163
 date: 2026-10-01
 lead: Bij een thuisbatterij kopen gaat het om meer dan het aantal kWh. Let vooral op de bruikbare capaciteit, het vermogen, de aansluiting, de garantie en de veiligheid. En vergelijk altijd de totale prijs inclusief installatie.
 summary: Vergelijk bruikbare capaciteit (kWh) en vermogen (kW), niet alleen het getal in de productnaam || Kijk bij de garantie naar jaren én cycli of doorvoer, en naar de gegarandeerde restcapaciteit || Kies een veilige batterij (vaak LFP), een goede plek buiten de vluchtroute en een erkend installateur || Reken met de totale prijs inclusief installatie en deel die door de bruikbare kWh

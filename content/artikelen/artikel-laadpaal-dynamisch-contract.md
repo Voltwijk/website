@@ -3,6 +3,7 @@ seo_title: Laadpaal en dynamisch contract: goedkoop laden | Voltwijk
 description: Laadpaal en dynamisch energiecontract: zo laad je je elektrische auto automatisch op de goedkoopste kwartieren. Uitleg, rekenvoorbeeld en waar je op let.
 category: Laadpaal
 product: laadpaal
+image: foto-9800009
 date: 2026-10-05
 lead: Met een dynamisch energiecontract verschilt de stroomprijs per kwartier. Een slimme laadpaal kan je auto automatisch laden op de goedkoopste momenten, meestal 's nachts of op zonnige middagen. Je stelt alleen in wanneer de auto klaar moet zijn.
 summary: Bij een dynamisch contract is de prijs per kwartier; de prijzen voor morgen zijn rond het middaguur bekend || Stroom is meestal het goedkoopst 's nachts en op zonnige middagen, en het duurst tussen ongeveer 17 en 21 uur || Een slimme laadpaal of app kiest automatisch de goedkoopste kwartieren binnen jouw vertrektijd || Energiebelasting en btw betaal je altijd, dus ook in een goedkoop kwartier kost laden nog geld

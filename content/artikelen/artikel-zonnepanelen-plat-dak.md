@@ -3,6 +3,7 @@ seo_title: Zonnepanelen op een plat dak: zo werkt het | Voltwijk
 description: Zonnepanelen op een plat dak? Lees welke opstelling past, hoe ballast werkt, wat je dak moet kunnen dragen en wanneer het vergunningvrij is.
 category: Zonnepanelen
 product: zonnepanelen
+image: foto-8783541
 lead: Zonnepanelen op een plat dak kunnen prima, meestal in een oost-west- of zuidopstelling op een frame met ballast. Let vooral op de draagkracht van je dak, de afstand tot de dakrand en, bij een appartement, toestemming van de VvE.
 summary: Op een plat dak kies je tussen een zuidopstelling of een oost-westopstelling op een frame || Panelen blijven meestal op hun plek met ballast, zonder door de dakbedekking te boren || Laat vooraf controleren of je dak het extra gewicht kan dragen || Vergunningvrij kan vaak, als de panelen minstens zo ver van de dakrand staan als ze hoog zijn
 ---

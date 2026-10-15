@@ -3,6 +3,7 @@ seo_title: Warmtepomp en thuisbatterij: slim of niet? | Voltwijk
 description: Warmtepomp en thuisbatterij combineren? Lees wanneer het loont en wanneer niet, wat winter, dynamisch contract en 1- of 3-fase uitmaken, met rekenvoorbeeld.
 category: Thuisbatterij
 product: batterij
+image: foto-20046694
 date: 2026-10-01
 lead: Een thuisbatterij en een warmtepomp kunnen goed samengaan, maar niet omdat de batterij zomerzon bewaart voor de winter. De winst zit in dagelijks schuiven met stroom: goedkoop laden en duur verbruik opvangen. Dat loont vooral met een dynamisch contract, goede sturing en een batterij met genoeg vermogen.
 summary: Een warmtepomp verbruikt het meest in de winter, als er weinig zonnestroom is; een batterij bewaart stroom voor uren, niet voor maanden || In de winter verdient een batterij vooral met een dynamisch contract, door te laden in goedkope uren || Een volledige warmtepomp vraagt meer vermogen dan een hybride; kijk naar kW, je aansluiting en je meterkast || Slim sturen van de warmtepomp en het boilervat is vaak goedkoper dan extra batterijcapaciteit; doe dat eerst

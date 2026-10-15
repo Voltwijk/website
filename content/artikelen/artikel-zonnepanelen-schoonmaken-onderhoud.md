@@ -3,6 +3,7 @@ seo_title: Zonnepanelen schoonmaken: nodig of niet? | Voltwijk
 description: Moet je zonnepanelen schoonmaken? Lees wanneer het zin heeft, hoe vaak, welke risico's er zijn en hoe je met monitoring ziet of je panelen goed presteren.
 category: Zonnepanelen
 product: zonnepanelen
+image: foto-11645003
 lead: Meestal hoef je zonnepanelen niet schoon te maken: regen spoelt het meeste vuil weg. Veel belangrijker is dat je regelmatig kijkt of je opbrengst klopt en of je omvormer goed werkt.
 summary: Panelen met een hellingshoek worden door regen meestal voldoende schoongespoeld || Schoonmaken heeft vooral zin bij hardnekkig vuil zoals vogelpoep, mos of een platte ligging || Gebruik zacht water en een zachte borstel, nooit een hogedrukreiniger, en ga niet onveilig het dak op || Monitoring van je opbrengst en een blik op je omvormer zeggen meer dan een schoon paneel
 ---

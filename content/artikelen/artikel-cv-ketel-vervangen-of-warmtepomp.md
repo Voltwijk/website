@@ -3,6 +3,7 @@ seo_title: Cv-ketel vervangen of warmtepomp? | Voltwijk
 description: Cv-ketel vervangen of kiezen voor een warmtepomp? Lees wat de keuze bepaalt, hoe de kosten zich verhouden, of een hybride verplicht is en hoe ISDE helpt.
 category: Warmtepomp
 product: warmtepomp
+image: foto-20046690
 lead: Is je cv-ketel aan vervanging toe, dan kun je gewoon een nieuwe ketel nemen: de geplande verplichting voor een hybride warmtepomp vanaf 2026 is geschrapt. Toch is dit hét moment om te kijken of een hybride of volledige warmtepomp beter bij je huis past.
 summary: Een nieuwe cv-ketel is in 2026 nog gewoon toegestaan || Een hybride warmtepomp is een relatief kleine stap met al veel gasbesparing || Een volledige warmtepomp vraagt een goed geïsoleerd huis, maar maakt je van het gas af || Met ISDE-subsidie wordt het prijsverschil met een ketel kleiner
 ---

@@ -4,7 +4,7 @@ description: Multi split airco: één buitenunit voor twee tot vijf kamers. Lees
 category: Airco
 product: airco
 date: 2026-10-08
-image: airco-installatie
+image: foto-6447384
 lead: Een multi-split airco is één buitenunit met twee tot vijf binnenunits in verschillende kamers. Dat is slim als je meerdere kamers wilt koelen en weinig ruimte aan de gevel hebt. Maar alle kamers hangen dan aan één compressor, en dat heeft ook nadelen.
 summary: Bij een multi-split hangen meestal twee tot vijf binnenunits aan één buitenunit || Voordelen: één buitenunit, minder geveldoorvoeren en een rustiger gevel || Nadelen: valt de buitenunit uit, dan zijn alle kamers zonder koeling; alle kamers koelen óf verwarmen tegelijk; draait maar één kamer, dan is het rendement vaak lager || Leidinglengtes en hoogteverschillen zijn begrensd per model; vraag die na voordat je de plek van de buitenunit kiest
 sources: Daikin: 5MXM-A multi-split buitenunit, technische gegevens|https://www.daikin.eu/en_us/products/product.table.html/5MXM-A.html || Bobex: airco voor meerdere kamers|https://www.bobex.be/nl-be/airco/plaatsen/meerdere-kamers/ || Homedeal: multi-split airco|https://www.homedeal.nl/airco/multi-split-airco/ || Bosch: wat is een multi-split airconditioning?|https://www.bosch-homecomfort.com/be/nl/residentieel/info-advies/je-bosch-oplossing-uitgelegd!/airconditioning/wat-is-een-multi-split-airconditioning/ || NVKL: infoblad F-gassenverordening|https://www.nvkl.nl/wp-content/uploads/2024/06/NVKL-Infoblad-F-gassenverordening.pdf || Elite Klimaat: single split of multi split|https://www.eliteklimaat.nl/airconditioning/verschil-singlesplit-multisplit-airco

@@ -3,6 +3,7 @@ seo_title: Netcongestie West-Brabant: gevolgen thuis | Voltwijk
 description: Netcongestie in West-Brabant: wat speelt er bij Enexis, wat merk je ervan met zonnepanelen, en wat betekent het voor verzwaren en een thuisbatterij?
 category: Thuisbatterij
 product: batterij
+image: foto-157827
 date: 2026-10-01
 lead: Het stroomnet van Enexis zit in grote delen van Brabant vol. Heb je al een aansluiting en verander je daar niets aan, dan blijft alles gewoon werken. Wil je je aansluiting verzwaren, dan kun je sinds 1 juli 2026 op een wachtlijst komen. Een thuisbatterij helpt je om meer eigen zonnestroom te gebruiken, zonder dat je aansluiting zwaarder hoeft.
 summary: Netcongestie betekent dat het stroomnet op sommige plekken en momenten vol zit || Sinds 1 juli 2026 komen ook aanvragen van huishoudens voor een nieuwe of zwaardere aansluiting in vol gebied op een wachtlijst || Je bestaande aansluiting en je zonnepanelen blijven gewoon werken; wel kan je omvormer op zonnige dagen afschakelen door te hoge spanning || Een thuisbatterij laat je meer eigen stroom gebruiken binnen je huidige aansluiting

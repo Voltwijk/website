@@ -3,6 +3,7 @@ seo_title: Zonnepanelen nog rendabel na 2027? | Voltwijk
 description: Zijn zonnepanelen nog rendabel na 2027, als salderen stopt? Lees hoe zelfverbruik, terugleververgoeding en prijs de terugverdientijd bepalen.
 category: Zonnepanelen
 product: zonnepanelen
+image: foto-6963030
 lead: Ja, voor de meeste huishoudens blijven zonnepanelen na 2027 rendabel, maar de terugverdientijd wordt langer. Hoeveel langer hangt vooral af van hoeveel zonnestroom je zelf direct gebruikt.
 summary: Salderen stopt op 1 januari 2027; daarna krijg je voor teruggeleverde stroom een lagere vergoeding || Zelf verbruikte zonnestroom blijft het meeste waard, want je koopt die stroom niet in || Een terugverdientijd van ongeveer 6 tot 12 jaar is voor veel huishoudens realistisch; met weinig zelfverbruik kan het oplopen tot 15 jaar of meer || Zelfverbruik verhogen met slim plannen, een boiler, laadpaal of batterij maakt het verschil
 ---

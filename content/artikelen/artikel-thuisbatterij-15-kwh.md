@@ -3,6 +3,7 @@ seo_title: Thuisbatterij 15 of 16 kWh: wanneer zinvol? | Voltwijk
 description: Thuisbatterij van 15 of 16 kWh: voor wie loont een grote batterij, wat is het verschil met 10 kWh en waarom het vermogen net zo belangrijk is als de kWh.
 category: Thuisbatterij
 product: batterij
+image: foto-2800832
 date: 2026-10-04
 lead: Een thuisbatterij van 15 of 16 kWh is zinvol als je 's avonds en 's nachts veel stroom gebruikt en genoeg zonnestroom overhoudt om hem te vullen, of als je met een dynamisch contract slim wilt laden. Denk aan huishoudens met een warmtepomp, veel panelen of een groot gezin. Zonder die situatie is 10 kWh vaak genoeg.
 summary: Een grote batterij loont als je avond- en nachtverbruik boven de 9 à 10 kWh ligt || Je hebt genoeg zonne-overschot of een dynamisch contract nodig om hem regelmatig te vullen || Kies het vermogen mee: een grote batterij met een klein vermogen kan zijn energie niet snel genoeg kwijt || Bij Voltwijk: 16 kWh met 6 kW (1-fase) € 5.450 of met 8 kW (3-fase) € 5.950, excl. btw en inclusief installatie

@@ -3,6 +3,7 @@ seo_title: Laadpaal thuis: kosten en installatie | Voltwijk
 description: Wat kost een laadpaal thuis? Lees wat er in de prijs zit, van kabel en groep tot aardlek en meterkast, met indicatieve bandbreedtes en tips om te besparen.
 category: Laadpaal
 product: laadpaal
+image: foto-27355835
 lead: Een laadpaal thuis kost inclusief installatie indicatief ongeveer € 1.000 tot € 2.500 in een standaardsituatie. Wat je precies betaalt, hangt vooral af van de afstand tot de meterkast, je aansluiting en of je meterkast aangepast moet worden.
 summary: De prijs bestaat uit de laadpaal zelf en de installatie: kabel, groep, aardlekbeveiliging en werk || Afstand tot de meterkast en graafwerk maken het grootste verschil || Een volle of oude meterkast of een 3-fase aansluiting kan extra kosten geven || Slim laden en load balancing voorkomen soms een duurdere aansluiting
 ---

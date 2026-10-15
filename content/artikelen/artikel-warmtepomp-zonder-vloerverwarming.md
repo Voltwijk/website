@@ -3,6 +3,7 @@ seo_title: Warmtepomp zonder vloerverwarming? | Voltwijk
 description: Warmtepomp zonder vloerverwarming: werkt dat met gewone radiatoren? Lees waarom de aanvoertemperatuur telt, hoe je het test en welke aanpassingen helpen.
 category: Warmtepomp
 product: warmtepomp
+image: foto-36344878
 date: 2026-10-04
 lead: Ja, een warmtepomp kan ook zonder vloerverwarming, met gewone radiatoren. Voorwaarde is dat je huis bij een lagere aanvoertemperatuur dan je nu gewend bent nog warm genoeg wordt. Lukt dat niet, dan helpen betere isolatie, grotere of extra radiatoren, of eerst een hybride warmtepomp.
 summary: Een warmtepomp werkt het zuinigst bij een lage aanvoertemperatuur, rond 35 tot 55 graden || Vloerverwarming is ideaal, maar ruime radiatoren in een goed geïsoleerd huis werken ook || Test het zelf: zet je cv-ketel in de winter op een lagere aanvoertemperatuur en kijk of het huis warm blijft || Helpt het niet: isoleren, radiatoren vergroten, lagetemperatuurradiatoren of een hybride warmtepomp

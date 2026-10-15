@@ -3,6 +3,7 @@ seo_title: Mobiele airco of split-airco? | Voltwijk
 description: Mobiele airco of split-airco? Vergelijk rendement, geluid, kosten en verwarmen, en lees wanneer een mobiele airco genoeg is en wanneer split beter past.
 category: Airco
 product: airco
+image: foto-6782439
 lead: Een split-airco koelt stiller en zuiniger, en kan ook verwarmen. Een mobiele airco is goedkoper in aanschaf en direct te gebruiken, maar is minder efficiënt. Wat past, hangt af van hoe vaak en hoe lang je hem gebruikt.
 summary: Een split-airco zet de warmte buiten af en koelt daardoor zuiniger dan een mobiele airco || Een mobiele airco is goedkoop en flexibel, maar luider en minder efficiënt door de afvoerslang || Een split-airco met warmtepompfunctie kan ook verwarmen, een mobiele airco meestal niet goed || Gebruik je de airco maar een paar dagen per jaar, dan kan mobiel genoeg zijn
 ---

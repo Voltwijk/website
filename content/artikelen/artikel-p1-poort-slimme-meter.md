@@ -3,6 +3,7 @@ seo_title: P1-poort slimme meter: wat kun je ermee? | Voltwijk
 description: P1-poort slimme meter uitgelegd: wat het is, wat je ermee kunt voor zonnepanelen en thuisbatterij, welke meters hem hebben, privacy en hoe je aansluit.
 category: Zonnepanelen
 product: zonnepanelen
+image: foto-11924298
 date: 2026-10-01
 lead: De P1-poort is een kleine aansluiting op je slimme meter waar je zelf, live en gratis je stroomverbruik en teruglevering kunt uitlezen. Met die gegevens zie je wat je zonnepanelen echt doen, en kan een thuisbatterij of energiemanagementsysteem precies op het juiste moment laden en ontladen.
 summary: De P1-poort is een RJ12-aansluiting op je slimme meter die volgens de Nederlandse DSMR-standaard meetgegevens doorgeeft || Een DSMR 5-meter geeft elke seconde nieuwe stroomgegevens, een DSMR 4-meter ongeveer elke 10 seconden || Een thuisbatterij, EMS of laadpaal gebruikt die gegevens om te sturen op overschot, tekort en wisselende stroomprijzen || De gegevens uit de P1-poort blijven in je eigen huis; je netbeheerder en leverancier zien ze niet

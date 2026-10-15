@@ -4,7 +4,7 @@ description: Uitbreidingskast in de meterkast: wanneer je kast echt vol is, hoe 
 category: Meterkast
 product: meterkast
 date: 2026-10-08
-image: product-meterkast
+image: foto-28942196
 lead: Is je groepenkast vol, dan hoeft hij er niet altijd uit. Een uitbreidingskast is een tweede, kleine groepenkast naast of onder de bestaande, met eigen groepen en aardlekbeveiliging voor bijvoorbeeld een thuisbatterij, airco of laadpaal. Dat werkt als de rest van je installatie in orde is. Mist je kast een hoofdschakelaar of aardlekschakelaars, dan is vervangen de betere keuze.
 summary: Een kast is 'vol' als er geen plek meer is op de rail, of als er geen aardlekschakelaar meer bij kan zonder onterecht afslaan || Een uitbreidingskast is een extra groepenkast naast de bestaande, aangesloten op dezelfde installatie || Bij oude stoppen, geen hoofdschakelaar of te weinig aardlekbeveiliging kun je beter de hele kast vervangen || De netbeheerder gaat over de aansluiting, hoofdzekering en meter, niet over je groepenkast; verzegelingen mag alleen een installateur met zegelrecht openen
 sources: Enexis – voorbereidende werkzaamheden in de meterkast|https://www.enexis.nl/aansluitingen/voorbereidende-werkzaamheden-in-de-meterkast || Liander – zegelrecht|https://www.liander.nl/installateurs-aannemers/zegelrecht || Selectra – groepenkast vervangen of uitbreiden|https://selectra.nl/energie/energiemeter/meterkast/vervangen || Techniek Nederland – wat is nieuw in NEN 1010:2020|https://technieknederland.nl/stream/presentatie-webinar-13-oktober-2021-wat-is-nieuw-in-de-norm-nen-10102020

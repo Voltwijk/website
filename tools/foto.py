@@ -4,7 +4,7 @@
 Gebruik:  python3 tools/foto.py <pexels-id> [<artikel-slug> ...]
 
 - Downloadt https://images.pexels.com/photos/<id>/... (Pexels-licentie: gratis, ook commercieel,
-  geen naamsvermelding verplicht) en slaat hem op als images/foto-<id>.jpg en .webp (1600 px breed).
+  geen naamsvermelding verplicht) en slaat hem op als images/foto-<id>.webp (1600 px) en .jpg (1200 px, voor delen).
 - Zet bij elk opgegeven artikel `image: foto-<id>` in de kop van content/artikelen/<slug>.md.
 - Registreert de bron in content/fotobronnen.md.
 Daarna: bash tools/publish.sh
@@ -25,8 +25,9 @@ def fetch(pid):
     if im.width > W:
         im = im.resize((W, round(im.height * W / im.width)), Image.LANCZOS)
     base = f'images/foto-{pid}'
-    im.save(base + '.jpg', 'JPEG', quality=82, optimize=True, progressive=True)
-    im.save(base + '.webp', 'WEBP', quality=78, method=6)
+    im.save(base + '.webp', 'WEBP', quality=72, method=6)
+    og = im.resize((1200, round(im.height * 1200 / im.width)), Image.LANCZOS)  # deelafbeelding (og:image)
+    og.save(base + '.jpg', 'JPEG', quality=78, optimize=True, progressive=True)
     return im.size
 
 

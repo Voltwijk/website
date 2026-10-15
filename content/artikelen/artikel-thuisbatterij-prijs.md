@@ -3,6 +3,7 @@ seo_title: Thuisbatterij prijs 2026: kosten en per kWh | Voltwijk
 description: Thuisbatterij prijs in 2026: wat een vaste batterij inclusief installatie en btw kost, waaruit de prijs bestaat en hoe je eerlijk per kWh vergelijkt.
 category: Thuisbatterij
 product: batterij
+image: foto-5466793
 date: 2026-10-01
 lead: Een vaste thuisbatterij kost volgens de Consumentenbond gemiddeld tussen € 4.000 en € 6.000, inclusief installatie en btw. Wat je precies betaalt, hangt af van de capaciteit, de omvormer en je meterkast. Vergelijk offertes altijd op prijs per kWh bruikbare capaciteit, inclusief btw.
 summary: Een gemiddelde vaste thuisbatterij kost volgens de Consumentenbond € 4.000 tot € 6.000 inclusief installatie en btw || De prijs bestaat uit batterij, omvormer, installatie en soms meerwerk in de meterkast || Op een thuisbatterij betaal je 21% btw; veel aanbieders adverteren prijzen zonder btw || Vergelijk op prijs per kWh bruikbare capaciteit, niet op het getal in de productnaam

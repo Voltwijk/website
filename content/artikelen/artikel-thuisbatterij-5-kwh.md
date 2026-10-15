@@ -3,6 +3,7 @@ seo_title: Thuisbatterij 5 kWh: is klein genoeg? | Voltwijk
 description: Is een thuisbatterij van 5 kWh genoeg? Lees voor wie een kleine batterij past, wanneer hij tekortschiet en hoe je het met je eigen verbruik uitrekent.
 category: Thuisbatterij
 product: batterij
+image: foto-9875421
 date: 2026-10-04
 lead: Een thuisbatterij van 5 kWh is genoeg voor een klein huishouden met een laag avondverbruik, bijvoorbeeld een stel of een alleenstaande met een paar zonnepanelen. Voor een gezin is hij op zomerdagen vaak al rond het middaguur vol en 's avonds snel leeg. Dan past 10 kWh meestal beter.
 summary: 5 kWh dekt een avond- en nachtverbruik van ongeveer 3 tot 5 kWh || Kleine batterijen hebben vaak ook een klein vermogen: pieken van koken en wassen komen dan deels van het net || Na 2027 telt elk zelfgebruikt kWh, maar een te kleine batterij laat veel zonnestroom liggen || Reken met je eigen uurverbruik, niet met je jaarverbruik alleen

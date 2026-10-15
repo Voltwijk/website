@@ -3,6 +3,7 @@ seo_title: Thuisbatterij terugverdientijd berekenen | Voltwijk
 description: Wat is de terugverdientijd van een thuisbatterij? Lees wat hem bepaalt, bekijk een rekenvoorbeeld met duidelijke aannames en ontdek je eigen bandbreedte.
 category: Thuisbatterij
 product: batterij
+image: foto-210694
 lead: De terugverdientijd van een thuisbatterij ligt indicatief ergens tussen de 8 en 15 jaar als je hem slim inzet, en kan oplopen tot meer dan 20 jaar als je alleen eigen zonnestroom opslaat. Hoe snel het bij jou gaat, hangt vooral af van hoeveel zonnestroom je zelf gaat gebruiken, je energiecontract en de prijs van de batterij.
 summary: Een batterij verdient geld door stroom te bewaren die je anders goedkoop terug zou leveren of duur zou inkopen || Na het einde van salderen op 1 januari 2027 wordt eigen gebruik van zonnestroom meer waard || Een dynamisch contract kan de opbrengst verhogen, vooral in de winter || Reken met je eigen verbruik en bandbreedtes, niet met één vast getal
 ---

@@ -3,6 +3,7 @@ seo_title: Thuisbatterij zonder zonnepanelen: loont het? | Voltwijk
 description: Een thuisbatterij zonder zonnepanelen kan, maar loont niet altijd. Lees hoe het werkt met een dynamisch contract en wanneer het wel of niet rendabel is.
 category: Thuisbatterij
 product: batterij
+image: foto-433306
 lead: Ja, een thuisbatterij werkt ook zonder zonnepanelen. Hij laadt dan stroom van het net op goedkope momenten en gebruikt die op dure momenten. Dat loont alleen met een dynamisch contract, slimme sturing en genoeg prijsverschil.
 summary: Zonder zonnepanelen verdient een batterij alleen aan prijsverschillen tussen goedkope en dure uren || Daarvoor heb je een dynamisch energiecontract en slimme sturing nodig || Stroom die je terug het net op stuurt levert na 2027 vaak minder op dan je ervoor betaalde, dus gebruik in eigen huis is de basis || Met een vast of variabel contract heeft een batterij zonder zonnepanelen weinig zin
 ---

@@ -3,6 +3,7 @@ seo_title: Groep bijplaatsen meterkast: kosten | Voltwijk
 description: Groep bijplaatsen in de meterkast: wanneer is het nodig, hoeveel groepen mogen achter een aardlekschakelaar en wat kost het ongeveer?
 category: Meterkast
 product: meterkast
+image: foto-257736
 lead: Een extra groep in de meterkast heb je nodig voor grote verbruikers zoals een inductiekookplaat, laadpaal, warmtepomp of boiler. Is er ruimte in je groepenkast, dan kost een groep bijplaatsen indicatief ongeveer € 100 tot € 300. Moet de kast worden aangepast, dan is het meer.
 summary: Grote verbruikers zoals inductie, laadpaal, warmtepomp en boiler horen op een eigen groep || Hoeveel groepen er achter één aardlekschakelaar mogen, hangt af van de lekstromen, niet alleen van een vast aantal || Een groep bijplaatsen in een kast met ruimte kost indicatief ongeveer € 100 tot € 300 per groep || Meer groepen betekent niet meer capaciteit: je hoofdaansluiting bepaalt wat je in totaal kunt gebruiken
 ---

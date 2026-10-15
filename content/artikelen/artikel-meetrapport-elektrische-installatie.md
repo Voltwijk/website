@@ -3,6 +3,7 @@ seo_title: Meetrapport elektrische installatie | Voltwijk
 description: Meetrapport elektrische installatie: wat wordt er gemeten, wat betekenen NEN 1010 en NEN 3140, en wanneer heb je een rapport nodig voor je woning?
 category: Meterkast
 product: meterkast
+image: foto-14319099
 date: 2026-10-15
 lead: Een meetrapport laat zien dat je elektrische installatie is gecontroleerd en doorgemeten: isolatie, aarding, aardlekschakelaars en meer. Voor een woning is een periodieke keuring in Nederland niet algemeen verplicht. Toch is een rapport handig na een nieuwe groepenkast of uitbreiding, en sommige verzekeraars vragen erom.
 summary: Een meetrapport legt vast dat de installatie is gecontroleerd en doorgemeten, met de meetwaarden erbij || NEN 1010 gaat over het aanleggen van een nieuwe of gewijzigde installatie, NEN 3140 over het controleren van een bestaande || Voor woningen geldt geen algemene wettelijke keuringsplicht, maar de installatie moet wel aan NEN 1010 voldoen || Vraag na een nieuwe groepenkast of uitbreiding om een meetrapport en bewaar het bij je woningdossier

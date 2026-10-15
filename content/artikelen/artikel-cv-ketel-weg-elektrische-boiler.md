@@ -3,6 +3,7 @@ seo_title: Warm water zonder gas: elektrische boiler | Voltwijk
 description: Van het gas af met een elektrische boiler in plaats van cv-ketel? Lees hoe gasloos warm water werkt, welke inhoud past en wat je meterkast moet kunnen.
 category: Boiler
 product: boiler
+image: foto-13772355
 lead: Ja, je kunt je warm water gasloos maken met een elektrische boiler in plaats van je cv-ketel. Dat werkt het best als je ook de verwarming anders regelt, bijvoorbeeld met een warmtepomp of airco, en als de boiler groot genoeg is en een eigen groep heeft.
 summary: Een elektrische boiler maakt je warm water los van gas, maar verwarmt je huis niet || Voor echt van het gas af combineer je de boiler met een warmtepomp of airco voor de verwarming || Kies een inhoud die past bij je huishouden, vaak rond 150 tot 200 liter voor een gezin || De boiler heeft meestal een eigen groep in de meterkast nodig en kan slim op zonnestroom opwarmen
 ---

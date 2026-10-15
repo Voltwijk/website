@@ -3,6 +3,7 @@ seo_title: Thuisbatterij noodstroom: werkt het bij storing? | Voltwijk
 description: Werkt een thuisbatterij als noodstroom bij een storing? Lees waarom meestal niet, wat back-up, EPS en off-grid is en wat je nodig hebt.
 category: Thuisbatterij
 product: batterij
+image: foto-356048
 lead: Een gewone thuisbatterij schakelt bij een stroomstoring uit, ook als hij vol is. Dat is een verplichte veiligheidsfunctie. Wil je noodstroom, dan heb je een batterij en omvormer nodig die dat ondersteunen, plus een aparte schakeling in de meterkast.
 summary: Bij een stroomstoring schakelt een netgekoppelde batterij zich automatisch uit om monteurs op het net te beschermen || Noodstroom vraagt extra hardware: een back-up- of EPS-functie en een scheiding van het net || Met noodstroom houd je meestal een paar groepen of apparaten aan, niet je hele huis || Voor de meeste huishoudens is noodstroom een extra, geen reden om een batterij te kopen
 ---

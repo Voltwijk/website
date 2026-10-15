@@ -3,6 +3,7 @@ seo_title: Btw zonnepanelen: het 0%-nultarief uitgelegd | Voltwijk
 description: Sinds 2023 betaal je 0% btw op zonnepanelen inclusief installatie. Lees wat onder het nultarief valt, wat niet (zoals een thuisbatterij) en wat je checkt.
 category: Zonnepanelen
 product: zonnepanelen
+image: foto-16600134
 lead: Op zonnepanelen voor je woning betaal je geen btw meer. Handig, maar niet alles wat op je offerte staat valt onder dat nultarief. Zo zit het precies.
 summary: Sinds 1 januari 2023 geldt 0% btw op levering én installatie van zonnepanelen op of bij een woning || Je hoeft je niet meer als ondernemer aan te melden om btw terug te krijgen || Een thuisbatterij valt er niet onder: daarover betaal je 21% btw, ook als je hem samen met panelen koopt || Controleer op je offerte welke posten 0% en welke 21% btw hebben
 ---
