@@ -3,6 +3,7 @@ seo_title: Thuisbatterij in garage of schuur in de winter | Voltwijk
 description: Thuisbatterij in de garage of schuur? Lees wat kou doet met laden en ontladen, hoe verwarming en een BMS helpen en hoe je vocht en condens voorkomt.
 category: Thuisbatterij
 product: batterij
+image: foto-433308
 date: 2026-10-01
 lead: Ja, een thuisbatterij kan in de garage of schuur, ook in de winter. De brandweer noemt een koele, geventileerde schuur zelfs een goede plek. Let wel op één ding: bij vorst mag een LFP-batterij meestal niet laden, tenzij hij zichzelf eerst opwarmt. Vorstvrij en droog is dus het doel.
 summary: Een schuur of garage buiten de woonruimte is uit oogpunt van brandveiligheid een goede plek, mits koel, droog en geventileerd || LFP-batterijen mogen bij vorst meestal wel ontladen, maar niet laden; het BMS blokkeert het laden dan || Sommige batterijen hebben een ingebouwde verwarming, die zelf ook stroom kost || Vocht en condens zijn in een schuur vaak een groter probleem dan de kou zelf; kijk naar de IP-waarde en de montageplek

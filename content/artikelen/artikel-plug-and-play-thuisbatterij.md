@@ -3,6 +3,7 @@ seo_title: Plug-and-play thuisbatterij: wat kan het? | Voltwijk
 description: Plug-and-play thuisbatterij of stekkerbatterij: hoe werkt het, wat levert het op en waar let je op bij veiligheid en aanmelden?
 category: Thuisbatterij
 product: batterij
+image: foto-9875441
 date: 2026-10-04
 lead: Een plug-and-play thuisbatterij steek je zelf in het stopcontact. Dat is makkelijk en goedkoper in aanschaf, maar de batterij is meestal klein en levert een beperkt vermogen. Voor een gezin met zonnepanelen is een vaste batterij met een eigen groep in de meterkast vaak de betere keuze.
 summary: Een stekkerbatterij laadt en ontlaadt via een gewoon stopcontact, zonder installateur || Capaciteit en vermogen zijn meestal beperkt, waardoor hij een klein deel van je avondverbruik dekt || Stroom terugleveren via een stopcontact vraagt aandacht voor de groep en de zekering; laat dat controleren || Ook een stekkerbatterij meld je aan bij je netbeheerder via energieleveren.nl

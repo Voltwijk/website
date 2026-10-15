@@ -3,6 +3,7 @@ seo_title: Thuisbatterij: hoe groot moet hij zijn? | Voltwijk
 description: Hoe groot moet je thuisbatterij zijn? Een vuistregel op basis van avondverbruik en zomeroverschot, de rol van kW en rekenvoorbeelden voor 3 huishoudens.
 category: Thuisbatterij
 product: batterij
+image: product-batterij
 lead: Groter is niet automatisch beter. De juiste thuisbatterij past bij hoeveel stroom je 's avonds en 's nachts gebruikt en bij hoeveel zonnestroom je overdag overhoudt. Zo reken je dat uit.
 summary: Vuistregel: kies een capaciteit rond je avond- en nachtverbruik, maar niet groter dan je gebruikelijke zomeroverschot || Let naast kWh ook op het vermogen in kW: dat bepaalt hoeveel je tegelijk uit de batterij kunt halen || Een te grote batterij staat vaak half vol en verdient zich langzamer terug || Een uitbreidbaar systeem laat je klein beginnen en later bijplaatsen
 ---

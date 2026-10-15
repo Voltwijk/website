@@ -3,6 +3,7 @@ seo_title: Airco in de slaapkamer: vermogen, geluid en plek | Voltwijk
 description: Airco in de slaapkamer: welk vermogen past, hoe stil moet hij zijn en waar hang je de binnenunit? Plus instellingen om prettig bij te slapen.
 category: Airco
 product: airco
+image: foto-6316054
 date: 2026-10-04
 lead: Voor een slaapkamer telt vooral hoe stil de airco is en waar de binnenunit hangt. Een gewone slaapkamer heeft meestal genoeg aan een koelvermogen van 2 tot 2,5 kW. Een split-airco is binnen veel stiller dan een mobiele airco, omdat de compressor buiten staat.
 summary: Een slaapkamer tot ongeveer 20 m² heeft meestal genoeg aan 2 tot 2,5 kW koelvermogen; een zolderslaapkamer vaak meer || Let op het geluidsniveau van de binnenunit in de stilste stand, en op de plek van de buitenunit voor de buren || Hang de binnenunit zo dat hij niet direct op het bed blaast || Koel 's avonds alvast voor en gebruik een nacht- of slaapstand

@@ -3,6 +3,7 @@ seo_title: Aansluiting verzwaren: kosten per jaar | Voltwijk
 description: Aansluiting verzwaren of verkleinen? Zo verschillen de jaarlijkse netbeheerkosten van 1x25A, 3x25A en 3x35A, en wanneer een zwaardere aansluiting echt nodig is.
 category: Meterkast
 product: meterkast
+image: foto-28265032
 date: 2026-10-09
 lead: Van 1x25A naar 3x25A kost je per jaar geen extra netbeheerkosten: beide vallen in dezelfde tariefgroep. De grote sprong zit daarboven. Bij Enexis betaal je in 2026 voor 3x35A ruim € 1.400 per jaar meer dan voor 3x25A.
 summary: Voor huishoudens zijn netbeheerkosten een vast bedrag per jaar, afhankelijk van de grootte van je aansluiting || 1x25A en 3x25A vallen in dezelfde tariefgroep; overstappen naar 3-fase kost per jaar dus niets extra || Bij Enexis kost een aansluiting tot en met 3x25A in 2026 € 475,84 per jaar en 3x35A € 1.971,04 (incl. btw) || Met load balancing en slim schakelen past een warmtepomp, laadpaal of batterij vaak prima op 3x25A

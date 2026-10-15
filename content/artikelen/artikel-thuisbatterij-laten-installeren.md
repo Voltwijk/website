@@ -3,6 +3,7 @@ seo_title: Thuisbatterij laten installeren: zo gaat het | Voltwijk
 description: Thuisbatterij laten installeren? Wat de installateur vooraf checkt, wat er op de installatiedag gebeurt en wat je zelf regelt.
 category: Thuisbatterij
 product: batterij
+image: batterij-installatie
 date: 2026-10-04
 lead: Een thuisbatterij laten installeren begint met een check van je aansluiting, je meterkast en de plek waar de batterij komt. Daarna sluit de installateur de batterij en omvormer aan op een eigen groep, stelt de app en sturing in en meldt de batterij aan bij je netbeheerder. Jij hoeft vooral een geschikte plek en een goede wifi-verbinding te regelen.
 summary: Vooraf: check van aansluiting (1- of 3-fase), meterkast, plek en bestaande zonnepanelen || Installatie: eigen groep, batterij en (hybride) omvormer, meetpunt bij de meter en instellen van de sturing || Na afloop: aanmelden via energieleveren.nl en uitleg over de app || Kies een installateur met een vaste prijs inclusief installatie en duidelijke afspraken over meerwerk

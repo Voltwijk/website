@@ -3,6 +3,7 @@ seo_title: Warmtepomp en legionella: welke temperatuur? | Voltwijk
 description: Warmtepomp en legionella: welke tapwatertemperatuur is veilig, hoe werkt het legionellaprogramma en wat kost het aan stroom? Uitleg met het advies van het RIVM.
 category: Warmtepomp
 product: warmtepomp
+image: foto-87299
 date: 2026-10-12
 lead: Een warmtepomp maakt warm water het zuinigst op een lage temperatuur, maar legionella houdt juist van lauw water. Het RIVM adviseert om een boiler op minimaal 60 °C te zetten. De meeste warmtepompen lossen dat op met een automatisch legionellaprogramma dat het boilervat regelmatig extra verwarmt.
 summary: Het RIVM adviseert een boiler of combiketel op minimaal 60 °C te zetten; de kans op besmetting thuis noemt het RIVM erg klein || Een warmtepomp werkt minder zuinig naarmate het tapwater heter moet worden || Veel warmtepompen houden het water op een lagere temperatuur en verwarmen het vat periodiek tot minimaal 60 °C || Ga je langer dan een week weg, laat de boiler dan aan op minimaal 60 °C

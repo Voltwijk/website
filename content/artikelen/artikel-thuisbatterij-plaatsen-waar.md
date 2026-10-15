@@ -3,6 +3,7 @@ seo_title: Waar thuisbatterij plaatsen? Tips en regels | Voltwijk
 description: Waar plaats je een thuisbatterij? Lees wat garage, bijkeuken en zolder betekenen voor temperatuur, brandveiligheid en de afstand tot de meterkast.
 category: Thuisbatterij
 product: batterij
+image: thuisbatterij-bijkeuken
 lead: De beste plek voor een thuisbatterij is droog, niet te warm of te koud, goed bereikbaar, buiten de vluchtroute en niet te ver van de meterkast. Vaak is dat een garage, berging of bijkeuken.
 summary: Kies een droge ruimte met een gematigde temperatuur, niet in de volle zon en niet in de vorst || Plaats de batterij niet in een vluchtroute zoals de gang of trap, en liever niet in een slaapkamer || Een korte afstand tot de meterkast scheelt kabelwerk en kosten || Een rookmelder in de ruimte en een vrije wand zijn verstandig; de monteur checkt dit vooraf
 ---

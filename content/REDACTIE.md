@@ -60,6 +60,15 @@ Regels:
 - Eindig met één korte alinea over hoe Voltwijk helpt (geen harde verkoop). De afsluitende knop ("Plan gratis adviesgesprek" of, bij thuisbatterij-artikelen, de batterijcalculator) komt er automatisch onder. Verwijs in de tekst alleen naar deze geldige vervolgstappen: "Bereken welke thuisbatterij past" (/thuisbatterij-berekenen), "Vraag een offerte aan" of "Plan een gratis adviesgesprek" (/contact). Niet: "Bereken hieronder je prijs" of "zie je direct je prijs" — die flow bestaat niet.
 - `sources` is verplicht bij Nieuws en sterk aangeraden bij alle andere artikelen.
 
+### Hoofdfoto
+
+Elk artikel krijgt een hoofdfoto die bij het onderwerp past.
+- Heeft Voltwijk zelf een passende foto in `images/` (bijv. `groepenkast-detail`, `laden-garage`, `grafiek-dynamische-prijs`), zet dan `image: <naam zonder extensie>` in de kop.
+- Anders: zoek met WebSearch op `pexels.com/photo <onderwerp in het Engels>` en haal het nummer uit een foto-URL (`https://www.pexels.com/photo/<titel>-<nummer>/`). Alleen Pexels: gratis, ook commercieel, naamsvermelding niet nodig.
+- Bekijk de foto eerst (download `https://images.pexels.com/photos/<nummer>/pexels-photo-<nummer>.jpeg?w=800` en open hem). Eisen: liggend, past bij het onderwerp, geen groot merklogo van een concurrent als hoofdonderwerp, geen herkenbare gezichten van dichtbij, geen tekst of watermerk.
+- Plaats hem met `python3 tools/foto.py <nummer> <artikel-slug>`. Dat zet de foto in `images/`, vult `image:` in en registreert de bron in `content/fotobronnen.md`.
+- Liefst een foto die nog niet bij een ander artikel staat (zie `content/fotobronnen.md`).
+
 ## 4. Bouwen en controleren
 
 ```

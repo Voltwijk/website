@@ -3,6 +3,7 @@ seo_title: Subsidie en lening West-Brabant 2026 | Voltwijk
 description: Subsidie of duurzaamheidslening in West-Brabant? Per gemeente wat we konden bevestigen, van Moerdijk tot Breda, plus de landelijke opties in 2026.
 category: Thuisbatterij
 product: batterij
+image: foto-210690
 date: 2026-10-01
 lead: In West-Brabant heeft bijna elke gemeente een goedkope lening om je huis te verduurzamen, vaak uitgevoerd door SVn. Een gemeentelijke subsidie op zonnepanelen of een thuisbatterij vonden we in geen van de tien gemeenten. Subsidies die er wel zijn, gaan vooral naar isolatie.
 summary: In acht van de tien gemeenten vonden we een lening voor verduurzamen, meestal via SVn en na een toewijzingsbrief van de gemeente || Een gemeentelijke subsidie op zonnepanelen of een thuisbatterij vonden we nergens; lokale subsidies gaan vooral naar isolatie || Landelijk kun je een thuisbatterij financieren met de Energiebespaarlening van het Warmtefonds, bij een lager inkomen tegen 0% rente || Vraag een lening of subsidie aan vóórdat je iets bestelt, anders loop je het risico dat je buiten de regeling valt

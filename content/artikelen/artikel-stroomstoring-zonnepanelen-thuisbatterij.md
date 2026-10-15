@@ -3,6 +3,7 @@ seo_title: Stroomstoring en zonnepanelen: wat gebeurt er? | Voltwijk
 description: Stroomstoring en zonnepanelen: waarom je omvormer uitschakelt, wat er na de storing gebeurt, waar je storingen checkt en wat je zelf kunt doen.
 category: Zonnepanelen
 product: zonnepanelen
+image: foto-7579556
 date: 2026-10-01
 lead: Valt de stroom uit in je wijk, dan stoppen je zonnepanelen ook, hoe fel de zon ook schijnt. Je omvormer schakelt zichzelf uit om monteurs op het net te beschermen, en een gewone thuisbatterij doet hetzelfde. Is de storing voorbij, dan start alles meestal vanzelf weer op.
 summary: Bij een stroomstoring schakelt de omvormer van je zonnepanelen automatisch uit; dat heet anti-eilandbedrijf en is verplicht || Een gewone thuisbatterij doet hetzelfde; alleen met een noodstroom- of back-upfunctie houd je stroom || Na de storing start de omvormer meestal binnen enkele minuten vanzelf weer op || Check eerst je meterkast en de buren, bekijk gasenstroomstoringen.nl en meld een storing via 0800-9009

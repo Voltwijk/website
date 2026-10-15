@@ -3,6 +3,7 @@ seo_title: Thuisbatterij 10 kWh: genoeg voor jouw huis? | Voltwijk
 description: Thuisbatterij van 10 kWh: voor welk huishouden is het genoeg, hoeveel stroom haal je er 's avonds uit en wanneer kies je toch groter? Met rekenvoorbeeld.
 category: Thuisbatterij
 product: batterij
+image: foto-9875416
 date: 2026-10-04
 lead: Een thuisbatterij van 10 kWh is voor veel gezinnen met zonnepanelen een logische maat. Hij vangt een groot deel van het zonne-overschot op een zomerdag op en dekt meestal het avond- en nachtverbruik van een gemiddeld huishouden. Heb je een warmtepomp of elektrische auto, dan kan groter verstandig zijn.
 summary: 10 kWh is genoeg als je avond- en nachtverbruik rond de 5 tot 9 kWh ligt || Let op het verschil tussen opgegeven en bruikbare capaciteit, en op het vermogen in kW || Een warmtepomp of elektrische auto maakt een grotere batterij of slimme sturing interessanter || Bij Voltwijk kost een 10 kWh-batterij met 5 kW hybride omvormer € 4.950 excl. btw, inclusief installatie

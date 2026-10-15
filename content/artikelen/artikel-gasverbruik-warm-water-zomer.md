@@ -3,6 +3,7 @@ seo_title: Gasverbruik warm water berekenen | Voltwijk
 description: Gasverbruik warm water berekenen? In de zomer staat de verwarming uit, dus zie je precies wat douchen en koken kosten. Zo reken je het om naar een heel jaar.
 category: Boiler
 product: boiler
+image: foto-4194866
 date: 2026-10-13
 lead: In de zomer staat je verwarming uit. Het gas dat je dan nog gebruikt, gaat bijna helemaal naar warm water en koken. Met een paar meterstanden reken je zo uit hoeveel gas je per jaar aan warm water kwijt bent. Handig als je een elektrische boiler, warmtepompboiler of warmtepomp overweegt.
 summary: In de zomermaanden gaat je gas vooral naar warm water en koken, niet naar verwarming || Koken op gas kost volgens Milieu Centraal gemiddeld ongeveer 37 m³ per jaar || Trek het kookgas af van je zomerverbruik en reken het om naar een jaar, met een marge voor de winter || Met dat getal reken je uit wat een elektrische boiler of warmtepomp voor warm water zou gebruiken

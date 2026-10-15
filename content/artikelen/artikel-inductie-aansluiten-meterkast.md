@@ -3,6 +3,7 @@ seo_title: Inductie aansluiten: groepen en perilex | Voltwijk
 description: Inductie aansluiten? Lees het verschil tussen 1-fase, 2-fase met perilex en 3-fase, hoeveel groepen je nodig hebt en wat het ongeveer kost.
 category: Meterkast
 product: meterkast
+image: foto-6980569
 lead: Een inductiekookplaat heeft bijna altijd meer nodig dan één gewoon stopcontact. Meestal sluit je hem aan op twee groepen van 16 A via een perilex-aansluiting. Met een 3-fase aansluiting kan het ook via een 3-fase kookgroep.
 summary: Eén gewone groep levert ongeveer 3,7 kW, te weinig voor de meeste kookplaten || Een 2-fase kookplaat met perilex gebruikt twee groepen van 16 A en kan ook op een 1-fase aansluiting || Een 3-fase kookgroep is mogelijk als je huis een 3-fase aansluiting heeft || Is je groepenkast vol of verouderd, dan moet de meterkast eerst worden aangepast
 ---

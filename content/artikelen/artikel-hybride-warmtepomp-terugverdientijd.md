@@ -3,6 +3,7 @@ seo_title: Hybride warmtepomp: terugverdientijd berekenen | Voltwijk
 description: Wat is de terugverdientijd van een hybride warmtepomp? Lees welke factoren meetellen en reken mee met een voorbeeld met duidelijke aannames en bandbreedte.
 category: Warmtepomp
 product: warmtepomp
+image: foto-210696
 lead: Een hybride warmtepomp verdient zich vaak in ongeveer 4 tot 10 jaar terug, soms langer. Waar jij uitkomt, hangt vooral af van hoeveel gas je nu stookt, hoe goed je huis geïsoleerd is en wat je betaalt voor gas en stroom.
 summary: Hoe meer gas je nu voor verwarming gebruikt, hoe sneller een hybride warmtepomp zich terugverdient || Isolatie en een lage aanvoertemperatuur maken de warmtepomp zuiniger || De verhouding tussen gasprijs en stroomprijs bepaalt je besparing per m³ gas || ISDE-subsidie verlaagt de investering en dus de terugverdientijd flink
 ---

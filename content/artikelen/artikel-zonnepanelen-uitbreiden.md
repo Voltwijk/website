@@ -3,6 +3,7 @@ seo_title: Zonnepanelen uitbreiden: zo pak je het aan | Voltwijk
 description: Zonnepanelen uitbreiden? Zo check je of je omvormer het aankan, wanneer een extra omvormer nodig is, wat de meterkast vraagt en hoe je aanmeldt.
 category: Zonnepanelen
 product: zonnepanelen
+image: foto-29206488
 lead: Een bestaande installatie uitbreiden kan vaak prima, maar de omvormer is meestal de beperkende factor. Kijk eerst of die de extra panelen aankan, of dat je een tweede omvormer of micro-omvormers nodig hebt.
 summary: Check eerst het vermogen en de ingangen van je huidige omvormer || Is die te klein, dan kies je tussen een extra omvormer, micro-omvormers of een nieuwe grotere (eventueel hybride) omvormer || Een extra omvormer vraagt vaak een eigen groep in de meterkast || Op nieuwe panelen geldt 0% btw, en je meldt de uitbreiding aan via energieleveren.nl
 ---

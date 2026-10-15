@@ -3,6 +3,7 @@ seo_title: Thuisbatterij subsidie 2026: wat kan wel? | Voltwijk
 description: Is er in 2026 subsidie voor een thuisbatterij? Lees wat landelijk wel en niet bestaat, welke leningen er zijn, hoe het zit met btw en wat wel oplevert.
 category: Thuisbatterij
 product: batterij
+image: foto-210705
 lead: Een landelijke subsidie voor een thuisbatterij is er in 2026 niet. Wel zijn er soms lokale regelingen, goedkope leningen via het Warmtefonds of je gemeente, en in bepaalde gevallen kun je de btw terugvragen.
 summary: Er is in 2026 geen landelijke subsidie voor een thuisbatterij, ook de ISDE geldt er niet voor || Sommige gemeenten en provincies hebben een eigen regeling of duurzaamheidslening, dat verschilt per plek || Via het Warmtefonds kun je een thuisbatterij financieren, bij een lager inkomen soms tegen 0% rente || Het meeste geld verdien je met slim gebruik: meer eigen zonnestroom, minder terugleverkosten en slim laden in goedkope uren
 ---

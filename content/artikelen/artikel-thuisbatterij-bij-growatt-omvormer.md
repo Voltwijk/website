@@ -4,7 +4,7 @@ description: Thuisbatterij bij je Growatt-omvormer? Lees welke Growatt-omvormers
 category: Thuisbatterij
 product: batterij
 date: 2026-10-08
-image: batterij-zolder
+image: batterij-installatie
 lead: Of je bij een Growatt-omvormer zomaar een thuisbatterij kunt aansluiten, zie je aan de letters achter de naam. Een MIN TL-XH of een SPH heeft een batterij-ingang. Een gewone MIN TL-X of TL-XE niet. Dan blijft je omvormer zitten en komt er een AC-gekoppelde batterij met eigen omvormer naast.
 summary: MIN TL-XH, XH2 en SPH zijn 'battery ready': daar kan een Growatt-batterij (APX of ARK) direct op || De veelvoorkomende MIN TL-X en TL-XE hebben geen batterij-ingang || Dan kies je een AC-gekoppelde batterij naast je omvormer: van Growatt (SPA) of van een ander merk || Check vooraf typenummer, aansluiting (1- of 3-fase) en ruimte in de meterkast
 sources: Growatt – MIN 2500-6000TL-X datasheet|https://au.growatt.com/upload/file/MIN_2500_6000_TL_X.pdf || Growatt – MIN 2500-6000TL-XH2|https://en.growatt.com/products/min-2500-6000tl-xh2 || Growatt – APX HV-batterij|https://en.growatt.com/products/apx-hv-battery || Growatt – SPA 4000-10000TL3 BH-UP (AC-gekoppeld)|https://en.growatt.com/products/spa-4000-10000tl3-bh-up || Solis – AC-koppeling met een hybride omvormer|https://www.solisinverters.com/uk/documentation/AC_Couple_Application-Solis_Hybrid_Inverter_uk.html

@@ -3,6 +3,7 @@ seo_title: Warmtepomp bij vorst: werkt hij nog? | Voltwijk
 description: Warmtepomp bij vorst: werkt een lucht-water warmtepomp nog als het vriest, waarom daalt het rendement en wat kost een koude dag? Plus tips voor de winter.
 category: Warmtepomp
 product: warmtepomp
+image: foto-7031408
 date: 2026-10-02
 lead: Ja, een lucht-water warmtepomp blijft gewoon werken als het vriest. Wel wordt hij minder zuinig naarmate het kouder wordt, en bij strenge vorst springt er bijverwarming of de cv-ketel bij. Hoeveel dat kost, hangt vooral af van je isolatie en de temperatuur van je verwarmingswater.
 summary: Moderne lucht-water warmtepompen werken door bij vorst; veel modellen tot ongeveer -15 à -20 graden || Hoe kouder het is, hoe lager het rendement (de COP) en hoe meer stroom per eenheid warmte || IJs en stoom bij de buitenunit zijn normaal: de warmtepomp ontdooit zichzelf automatisch || Laat de temperatuur 's nachts liever niet ver zakken en houd de buitenunit vrij van sneeuw en ijs

@@ -3,6 +3,7 @@ seo_title: Hoeveel zonnepanelen heb ik nodig? | Voltwijk
 description: Hoeveel zonnepanelen heb je nodig? Reken het uit met je jaarverbruik, de vuistregel per Wp, de ligging van je dak en je toekomstige verbruik na salderen.
 category: Zonnepanelen
 product: zonnepanelen
+image: foto-9875683
 lead: Het juiste aantal zonnepanelen reken je in een paar stappen uit. Maar na het einde van salderen is "zoveel mogelijk" niet meer automatisch het beste antwoord.
 summary: Begin bij je jaarverbruik in kWh en reken met ca. 0,85–0,9 kWh per Wp per jaar op een goed zuidelijk dak || Oost/west levert per paneel ca. 10–20% minder, maar gespreider over de dag || Houd rekening met toekomstig verbruik, zoals een warmtepomp of elektrische auto || Na het einde van salderen in 2027 telt eigen verbruik zwaarder dan 100% dekking
 ---

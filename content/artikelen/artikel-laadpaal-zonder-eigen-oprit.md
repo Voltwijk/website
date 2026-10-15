@@ -3,6 +3,7 @@ seo_title: Laadpaal zonder oprit: dit zijn je opties | Voltwijk
 description: Laadpaal zonder oprit? Lees hoe je een openbare laadpaal aanvraagt, wat de regels zijn voor een laadkabel over de stoep en wanneer thuisladen wél kan.
 category: Laadpaal
 product: laadpaal
+image: foto-4678065
 lead: Zonder eigen oprit kun je meestal geen laadpaal voor de deur zetten. Je opties zijn een openbare laadpaal aanvragen bij je gemeente, laden via een kabelgoot als je gemeente dat toestaat, of laden op je werk.
 summary: Zonder eigen oprit is een openbare laadpaal via de gemeente vaak de eerste stap, en die aanvraag is meestal gratis || Een laadkabel over de stoep mag alleen als je gemeente dat toestaat, vaak via een kabelgoottegel of ontheffing || Laden op je werk kan een groot deel van je laadbehoefte dekken || Heb je een eigen parkeerplek of carport, ook achter het huis, dan kan een thuislaadpaal vaak wel
 ---

@@ -3,6 +3,7 @@ seo_title: Laadkosten vergoed door werkgever | Voltwijk
 description: Laad je je auto van de zaak thuis op? Lees waarom je een MID-meter nodig hebt, hoe registratie werkt, welk tarief je gebruikt en wat de laadpaal-app doet.
 category: Laadpaal
 product: laadpaal
+image: foto-5391509
 lead: Laad je een auto van de zaak thuis op, dan betaal je de stroom eerst zelf. Om die kosten eerlijk terug te krijgen, moet je kunnen aantonen hoeveel kWh je hebt geladen. Daar is een MID-gecertificeerde meter voor.
 summary: Voor een vergoeding van je werkgever is een MID-gecertificeerde kWh-meter nodig, zodat de geladen kWh aantoonbaar zijn || De laadpaal of de app registreert elke laadsessie; die gegevens gaan naar je werkgever of een vergoedingsdienst || Het tarief per kWh is een afspraak met je werkgever: leg vooraf vast welk tarief je gebruikt || Deel alleen de gegevens die nodig zijn en maak afspraken over privacy
 ---

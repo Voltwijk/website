@@ -3,6 +3,7 @@ seo_title: Terugleververgoeding 2027: zo werkt het | Voltwijk
 description: Terugleververgoeding 2027: wat krijg je voor teruggeleverde zonnestroom als salderen stopt? Uitleg over het minimum, terugleverkosten en dynamische contracten.
 category: Zonnepanelen
 product: zonnepanelen
+image: foto-942316
 date: 2026-09-30
 lead: Vanaf 1 januari 2027 krijg je voor elke kWh zonnestroom die je teruglevert een terugleververgoeding van je energieleverancier. Tot en met 2030 moet die minimaal de helft van het kale leveringstarief zijn. Wat je echt overhoudt, hangt vooral af van de terugleverkosten en het soort contract dat je hebt.
 summary: Vanaf 2027 krijg je per teruggeleverde kWh een vergoeding van je leverancier, in plaats van salderen || Tot en met 2030 is die vergoeding minimaal 50% van het kale leveringstarief, dus zonder belastingen || Kijk naar de netto vergoeding: de vergoeding min de terugleverkosten || Bij een dynamisch contract krijg je de uurprijs, die op zonnige middagen rond nul of zelfs negatief kan zijn

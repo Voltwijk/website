@@ -3,6 +3,7 @@ seo_title: Groepenkast vervangen kosten 2026 | Voltwijk
 description: Groepenkast vervangen kosten in 2026: indicatieve prijzen per aantal groepen, 1-fase of 3-fase, wat de prijs bepaalt en waar je op let bij een offerte.
 category: Meterkast
 product: meterkast
+image: foto-32497160
 date: 2026-10-04
 lead: Een nieuwe groepenkast kost in 2026 meestal indicatief ongeveer € 500 tot € 1.400, inclusief installatie en btw. Waar je binnen die bandbreedte uitkomt, hangt vooral af van het aantal groepen, of je 1-fase of 3-fase hebt, en hoeveel extra werk er nodig is.
 summary: Een groepenkast vervangen kost meestal indicatief ongeveer € 500 tot € 1.400, inclusief installatie en btw || Het aantal groepen, 1-fase of 3-fase en extra werk zoals nieuwe bedrading bepalen de prijs || De meter en hoofdzekering zijn van de netbeheerder; daar mag alleen een installateur met zegelrecht aan werken || Vraag een offerte met een vaste prijs en een meetrapport na afloop

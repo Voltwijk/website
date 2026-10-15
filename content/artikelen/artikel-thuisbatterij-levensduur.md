@@ -3,6 +3,7 @@ seo_title: Levensduur thuisbatterij: hoe lang mee? | Voltwijk
 description: Wat is de levensduur van een thuisbatterij? Lees wat cycli, ontlaaddiepte en temperatuur doen, het verschil tussen LFP en NMC en wat de garantie zegt.
 category: Thuisbatterij
 product: batterij
+image: foto-356036
 lead: Een moderne thuisbatterij gaat indicatief zo'n 10 tot 15 jaar mee, soms langer. Hij gaat niet ineens kapot, maar verliest langzaam capaciteit. Hoe snel dat gaat, hangt af van het aantal cycli, de ontlaaddiepte, de temperatuur en het type cellen.
 summary: De levensduur wordt vooral uitgedrukt in cycli: hoe vaak de batterij helemaal vol en leeg kan || Een batterij slijt geleidelijk; na jaren houdt hij minder kWh vast, maar hij werkt nog wel || LFP-cellen gaan in de regel meer cycli mee en zijn stabieler dan NMC-cellen || Kijk bij de garantie naar de looptijd, het aantal cycli en welke restcapaciteit gegarandeerd is
 ---

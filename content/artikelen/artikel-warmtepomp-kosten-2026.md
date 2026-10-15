@@ -3,6 +3,7 @@ seo_title: Warmtepomp kosten 2026: prijs en ISDE | Voltwijk
 description: Wat kost een warmtepomp in 2026? Lees wat de prijs bepaalt, hoeveel ISDE-subsidie je indicatief krijgt en hoe je de terugverdientijd eerlijk inschat.
 category: Warmtepomp
 product: warmtepomp
+image: foto-16600134
 lead: Een hybride warmtepomp kost indicatief ongeveer € 4.000 tot € 8.000 inclusief installatie, een volledige lucht/water-warmtepomp vaak ongeveer € 6.000 tot € 15.000. Daar gaat nog ISDE-subsidie af, en wat je uiteindelijk betaalt hangt sterk af van je huis.
 summary: Type (hybride of volledig), vermogen, afgiftesysteem, meterkast en boilervat bepalen de prijs || ISDE 2026 voor een lucht/water-warmtepomp: € 1.025 plus € 225 per kW, met € 200 extra bij energielabel A+++ || De terugverdientijd hangt vooral af van je gasverbruik, isolatie en de verhouding tussen gas- en stroomprijs || Laat de juiste maat berekenen: te groot kost meer, te klein kost comfort
 ---

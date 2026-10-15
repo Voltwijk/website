@@ -3,6 +3,7 @@ seo_title: Airco plaatsen: vergunning nodig? | Voltwijk
 description: Airco plaatsen: vergunning nodig of niet? Lees wanneer een buitenunit vergunningvrij is, wat geldt bij een monument of VvE en welke geluidsregels er zijn.
 category: Airco
 product: airco
+image: foto-20046692
 lead: Voor een airco met buitenunit aan de achterkant van een gewone woning heb je meestal geen vergunning nodig. Aan de voorkant, bij een monument of in een beschermd stadsgezicht vaak wel. En in een appartement heb je bijna altijd toestemming van de VvE nodig.
 summary: Een buitenunit aan de achtergevel of op een plat dak is meestal vergunningvrij || Aan de voorgevel, bij een monument of in een beschermd stads- of dorpsgezicht is vaak een omgevingsvergunning nodig || Op de erfgrens mag de buitenunit 's avonds en 's nachts maximaal 40 dB(A) geven || Een split-airco moet in bedrijf worden gesteld door een installateur met F-gassencertificaat
 ---

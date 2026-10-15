@@ -3,6 +3,7 @@ seo_title: Negatieve stroomprijs en zonnepanelen | Voltwijk
 description: Negatieve stroomprijs en zonnepanelen: waarom de prijs onder nul zakt, wie dat merkt, en hoe je met omvormer, eigen verbruik en batterij slim reageert.
 category: Zonnepanelen
 product: zonnepanelen
+image: foto-371900
 date: 2026-10-01
 lead: Een negatieve stroomprijs betekent dat stroom op de groothandelsmarkt even minder dan niets waard is, meestal op zonnige middagen. Heb je een dynamisch contract, dan kan terugleveren je op die momenten geld kosten. Met een vast contract merk je het vooral indirect, via terugleverkosten.
 summary: Negatieve prijzen ontstaan als er meer stroom wordt opgewekt dan gebruikt, vooral bij veel zon en wind en weinig vraag || Met een dynamisch contract kan terugleveren in die uren geld kosten; bij verbruik betaal je meestal nog steeds iets door belastingen en opslagen || Met een vast contract merk je het niet direct, wel indirect via terugleverkosten || Begrens je omvormer via leverancier of EMS, verschuif je verbruik naar die uren en laad een thuisbatterij met eigen zonnestroom

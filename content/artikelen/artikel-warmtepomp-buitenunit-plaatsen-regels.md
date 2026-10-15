@@ -3,6 +3,7 @@ seo_title: Warmtepomp buitenunit: regels en vergunning | Voltwijk
 description: Welke regels gelden voor een warmtepomp buitenunit? Lees wanneer het vergunningvrij is, wat de geluidsnorm op de erfgrens is en waar je hem slim plaatst.
 category: Warmtepomp
 product: warmtepomp
+image: foto-20046694
 lead: Een buitenunit in je achtertuin of op een plat dak aan de achterkant is meestal vergunningvrij. Wel moet hij voldoen aan de geluidsnorm van 40 dB(A) op de erfgrens met de buren, en bij een monument of aan de voorkant gelden strengere regels.
 summary: Achtererf, zij- of achtergevel en dak: vaak vergunningvrij || Voorgevel aan de openbare weg, monument of beschermd stadsgezicht: meestal een vergunning nodig || Geluidsnorm: maximaal 40 dB(A) op de erfgrens met een andere woning || In een appartement heb je ook toestemming van de VvE nodig
 ---

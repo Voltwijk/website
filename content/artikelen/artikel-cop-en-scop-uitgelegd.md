@@ -3,6 +3,7 @@ seo_title: COP en SCOP van een warmtepomp uitgelegd | Voltwijk
 description: Wat betekenen COP en SCOP bij een warmtepomp? Uitleg over meetpunten als A7/W35 en A2/W55, de aanvoertemperatuur en een rekenvoorbeeld van warmte versus gas.
 category: Warmtepomp
 product: warmtepomp
+image: foto-20046692
 lead: Op elke warmtepomp staat een COP, maar dat getal zegt alleen iets als je weet onder welke omstandigheden het gemeten is. Zo lees je COP en SCOP, en zo reken je uit wat warmte je kost.
 summary: COP = geleverde warmte gedeeld door verbruikte stroom, op één meetpunt || Een COP bij A7/W35 is een gunstig meetpunt; bij A2/W55 of koud weer ligt hij lager || SCOP is het seizoensgemiddelde en geeft een realistischer beeld || Hoe lager de aanvoertemperatuur, hoe goedkoper je warmte
 ---

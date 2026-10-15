@@ -3,6 +3,7 @@ seo_title: Warmtepomp stroomverbruik per jaar | Voltwijk
 description: Warmtepomp stroomverbruik per jaar uitrekenen? Met je gasverbruik en de SCOP kom je in drie stappen tot een eerlijke schatting. Met rekenvoorbeelden.
 category: Warmtepomp
 product: warmtepomp
+image: foto-20046693
 date: 2026-10-03
 lead: Hoeveel stroom een warmtepomp per jaar gebruikt, kun je zelf vrij goed schatten. Je hebt alleen je huidige gasverbruik nodig en de SCOP van de warmtepomp. In dit artikel reken je het in drie stappen uit, voor een volledig elektrische en een hybride warmtepomp.
 summary: Een kuub aardgas levert in een HR-ketel ongeveer 9 kWh warmte op || Deel de warmte die je nodig hebt door de SCOP, dan heb je het stroomverbruik van je warmtepomp || Warm tapwater maken kost een warmtepomp relatief meer stroom dan verwarmen, omdat het water heter moet || Een hybride warmtepomp bespaart volgens Milieu Centraal zo'n 60 tot 70% van het gas voor verwarming

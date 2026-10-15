@@ -3,6 +3,7 @@ seo_title: Stooklijn warmtepomp instellen | Voltwijk
 description: Stooklijn warmtepomp instellen: wat de stooklijn doet, hoe je hem stap voor stap lager zet zonder comfort te verliezen, en wat je aanpast als het te koud is.
 category: Warmtepomp
 product: warmtepomp
+image: foto-36818203
 date: 2026-10-10
 lead: De stooklijn bepaalt hoe warm het water in je verwarming wordt bij een bepaalde buitentemperatuur. Hoe lager die lijn, hoe zuiniger je warmtepomp, zolang je huis maar warm genoeg blijft. Met kleine stappen en een paar dagen geduld vind je de laagste stooklijn die bij jouw huis past.
 summary: De stooklijn koppelt de buitentemperatuur aan de aanvoertemperatuur van je verwarmingswater || Hoe lager de aanvoertemperatuur, hoe hoger het rendement; als vuistregel scheelt elke graad ongeveer 2 procent || Verlaag de stooklijn in kleine stappen en wacht steeds een paar dagen voordat je weer iets verandert || Te koud bij zacht weer? Pas het voetpunt aan. Te koud bij vorst? Pas het eindpunt aan

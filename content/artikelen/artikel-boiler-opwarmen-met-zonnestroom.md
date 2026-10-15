@@ -3,6 +3,7 @@ seo_title: Boiler opwarmen met zonnestroom | Voltwijk
 description: Warm je boiler op met je eigen zonnestroom. Lees hoe je hem midden op de dag laat draaien, combineert met een dynamisch contract en legionella voorkomt.
 category: Boiler
 product: boiler
+image: foto-30440447
 lead: Een boiler kan warm water opslaan voor later. Laat je hem opwarmen als je zonnepanelen veel opwekken, dan gebruik je meer van je eigen stroom en lever je minder terug.
 summary: Een boiler is een goedkope warmtebatterij: je slaat zonnestroom op als warm water || Laat de boiler vooral rond het middaguur opwarmen, als je panelen het meest opwekken || Met een dynamisch contract kun je ook op goedkope uren opwarmen als de zon niet schijnt || Blijf het water periodiek op minimaal 60 °C brengen tegen legionella
 ---

@@ -3,6 +3,7 @@ seo_title: Warmtepomp in een oud huis of jaren 30-woning | Voltwijk
 description: Een warmtepomp in een oud huis of jaren 30-woning? Lees wat isolatie, radiatoren en aanvoertemperatuur betekenen en wanneer hybride slim is.
 category: Warmtepomp
 product: warmtepomp
+image: foto-32214891
 lead: Ja, een warmtepomp kan in een ouder huis, maar niet altijd meteen volledig. Het hangt af van je isolatie en van de temperatuur waarop je radiatoren je huis warm krijgen. Vaak is een hybride warmtepomp een slimme eerste stap.
 summary: Een warmtepomp werkt het zuinigst bij een lage aanvoertemperatuur, rond 35 tot 55 graden || In een jaren 30-woning zijn isolatie en kierdichting meestal de eerste stap || Bestaande radiatoren zijn vaak bruikbaar, soms moeten er een paar groter || Een hybride warmtepomp bespaart al gas terwijl je stap voor stap isoleert
 ---

@@ -3,6 +3,7 @@ seo_title: Airco onderhoud en F-gassen | Voltwijk
 description: Airco onderhoud en F-gassen: filters schoonmaken, de buitenunit, waarom een F-gassen gecertificeerde installateur verplicht is, R32, garantie en geluid.
 category: Airco
 product: airco
+image: foto-5463578
 lead: Een airco heeft weinig onderhoud nodig, maar dat beetje is wel belangrijk. En bij de installatie gelden strenge regels, omdat er koudemiddel in zit. Dit moet je weten.
 summary: Filters schoonhouden kun je zelf en scheelt stroom en luchtkwaliteit || Werk aan het koudemiddelcircuit mag alleen een F-gassen gecertificeerd bedrijf doen (EU F-gassenverordening) || Zelf een airco installeren is een slecht idee: lekkagerisico, lager rendement en vaak geen garantie || De buitenunit moet voldoen aan wettelijke geluidseisen op de erfgrens
 ---

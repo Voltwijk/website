@@ -3,6 +3,7 @@ seo_title: Thuisbatterij brandgevaar: zo veilig is het | Voltwijk
 description: Is een thuisbatterij veilig? Lees wat het brandgevaar is, het verschil tussen LFP en NMC, wat de brandweer adviseert en hoe je het risico zelf beperkt.
 category: Thuisbatterij
 product: batterij
+image: thuisbatterij-bijkeuken
 date: 2026-10-01
 lead: Een goed gekozen en vakkundig geïnstalleerde thuisbatterij is een veilig apparaat, maar het brandrisico is niet nul. Je beperkt het met vier dingen: een stabiel batterijtype zoals LFP, een installatie volgens de regels, een goede plek buiten de vluchtroute en een rookmelder in de ruimte.
 summary: Het grootste risico van een lithium-batterij is thermal runaway: een oververhitting die zichzelf in stand houdt en lastig te blussen is || LFP-batterijen gelden als thermisch stabieler dan NMC-batterijen, maar ook bij LFP blijven installatie en plek belangrijk || De brandweer adviseert een erkende installateur, een plek buiten de vluchtroute en een werkende rookmelder in de ruimte || Bij rook, een vreemde geur of een opgezwollen batterij: niet zelf blussen, deur dicht, naar buiten en 112 bellen

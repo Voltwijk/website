@@ -3,6 +3,7 @@ seo_title: Vergoeding netbeheerder thuisbatterij 2026 | Voltwijk
 description: Netbeheerders betalen vanaf november 2026 voor slim aangestuurde thuisbatterijen, laadpalen en warmtepompen. Wat houdt het in en doe jij mee?
 category: Nieuws
 product: batterij
+image: foto-25537595
 date: 2026-09-28
 lead: Vanaf november 2026 krijgen huishoudens in delen van Nederland geld als ze hun thuisbatterij, laadpaal of warmtepomp laten bijsturen op drukke momenten op het stroomnet. We zetten op een rij hoe het werkt, wie mee kan doen en wat het voor jou betekent.
 summary: Enexis, Liander en Stedin betalen vanaf november 2026 voor apparaten die ze op piekmomenten mogen bijsturen || Je doet niet direct mee bij de netbeheerder, maar via je energieleverancier || De eerste ronde geldt voor Gelderland, Utrecht en delen van Flevoland en Noord-Brabant || Zonnepanelen doen in deze eerste ronde niet mee; thuisbatterijen, laadpalen en warmtepompen wel

@@ -3,6 +3,7 @@ seo_title: Omvormer valt uit: netspanning te hoog? | Voltwijk
 description: Omvormer valt uit op zonnige middagen? Lees waarom de netspanning dan te hoog wordt, hoe je het herkent, wat je zelf kunt doen en wat een installateur oplost.
 category: Zonnepanelen
 product: zonnepanelen
+image: foto-189524
 date: 2026-10-01
 lead: Valt je omvormer uit op zonnige middagen en komt hij later vanzelf terug? Dan is de netspanning waarschijnlijk te hoog. Boven 253 volt moet een omvormer zichzelf uitschakelen. Dat is een beveiliging, geen defect. Je kunt het zelf controleren, melden bij je netbeheerder en met een installateur kijken wat er in je eigen installatie beter kan.
 summary: De spanning op het laagspanningsnet moet tussen 207 en 253 volt blijven; boven 253 volt schakelt je omvormer zichzelf uit || Het gebeurt vooral op zonnige middagen, als veel huizen in de wijk tegelijk terugleveren || Lees de spanning uit in de app, laat je installatie controleren en meld het daarna bij je netbeheerder || Een dikkere kabel, een 3-fase omvormer, meer eigen verbruik overdag of een thuisbatterij kunnen helpen; instellingen buiten de netcode aanpassen mag niet

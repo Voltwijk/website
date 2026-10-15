@@ -3,6 +3,7 @@ seo_title: Airco verwarmen: kosten per maand in de winter | Voltwijk
 description: Airco verwarmen kosten per maand: rekenvoorbeelden met SCOP, warmtevraag en stroom- en gasprijzen van 2026, en wanneer het goedkoper is dan gas en wanneer niet.
 category: Airco
 product: airco
+image: foto-6283961
 date: 2026-10-01
 lead: Verwarm je een woonkamer met een zuinige split-airco, dan kost dat in ons rekenvoorbeeld tussen de € 9 per maand in oktober en zo'n € 47 in januari. Met gas zou dezelfde warmte ongeveer twee tot drie keer zoveel kosten. Hieronder staat precies hoe we dat uitrekenen, zodat je het met je eigen cijfers kunt overdoen.
 summary: Kosten per maand = warmtevraag gedeeld door de COP, maal je stroomprijs || Met prijzen van september 2026 kost een kWh warmte uit gas rond € 0,20 en uit een airco met COP 4 rond € 0,08 || In ons voorbeeld kost een woonkamer verwarmen van oktober tot en met april zo'n € 190 aan stroom, tegenover ruim € 430 aan gas || Bij vorst, in slecht geïsoleerde ruimtes en als de cv-ketel toch aanslaat, valt het voordeel lager uit

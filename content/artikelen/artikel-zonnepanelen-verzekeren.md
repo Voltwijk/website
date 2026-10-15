@@ -3,6 +3,7 @@ seo_title: Zonnepanelen verzekeren: opstal of inboedel? | Voltwijk
 description: Zonnepanelen verzekeren: vallen ze onder je opstal- of inboedelverzekering? Uitleg voor koop, huur en VvE, wat je moet melden en wat meestal niet gedekt is.
 category: Zonnepanelen
 product: zonnepanelen
+image: foto-5533498
 date: 2026-10-06
 lead: Heb je een koopwoning, dan vallen zonnepanelen op je dak meestal onder je opstalverzekering. Huur je, of woon je in een appartement, dan loopt het vaak via je inboedelverzekering. In alle gevallen geldt: meld je panelen bij je verzekeraar, ook als ze standaard zijn meeverzekerd.
 summary: Koopwoning: zonnepanelen die vastzitten aan je huis vallen meestal onder de opstalverzekering || Huurwoning of eigen panelen in een appartement: meestal via de inboedelverzekering, vaak onder huurdersbelang || Meld je panelen altijd bij je verzekeraar en check of de herbouwwaarde omhoog moet || Slijtage, technische defecten zonder externe oorzaak en opbrengstverlies zijn meestal niet gedekt

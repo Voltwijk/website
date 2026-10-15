@@ -3,6 +3,7 @@ seo_title: Thuisbatterij op 1-fase: kan dat? | Voltwijk
 description: Kan een thuisbatterij op een 1-fase aansluiting? Lees welk vermogen past, wanneer je 3-fase nodig hebt en wat je meterkast moet kunnen.
 category: Thuisbatterij
 product: batterij
+image: foto-257736
 lead: Ja, een thuisbatterij kan prima op een 1-fase aansluiting. Het vermogen is dan wel beperkt, meestal tot een paar kilowatt. Voor de meeste huishoudens is dat genoeg, zolang je meterkast en hoofdzekering het aankunnen.
 summary: De meeste Nederlandse woningen hebben een 1-fase aansluiting, vaak 1x35 A || Een batterij met rond de 3,6 kW vermogen past daar in de regel goed op || Voor grotere vermogens hanteren netbeheerders een grens rond 5 kW per fase; daarboven is 3-fase de norm || De meterkast heeft een eigen groep voor de batterij nodig en moet samen met andere grote verbruikers passen
 ---
