@@ -61,7 +61,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-10-14, artikel-zegelrecht-meterkast)] Zegelrecht en de meterkast: wie mag wat aan je aansluiting doen? | zegelrecht meterkast | meterkast | praktische vraag, weinig consumentenuitleg
 - [klaar (2026-10-15, artikel-meetrapport-elektrische-installatie)] Meetrapport elektrische installatie: wat staat erin en wanneer heb je het nodig? | meetrapport elektra | meterkast | verzekering/verkoop woning, weinig concurrentie
 - [klaar (2026-10-08, artikel-kwartierprijzen-dynamisch-contract (andere sessie))] Kwartierprijzen: wat veranderde er sinds oktober 2025 voor dynamische contracten? | kwartierprijzen dynamisch contract | batterij | uitlegvraag, sluit aan op batterij- en laadpaalartikelen
-- [open] OCPP-laadpaal: waarom een open standaard belangrijk is | ocpp laadpaal | laadpaal | koopintentie, weinig consumentenuitleg
+- [klaar (2026-10-16, artikel-ocpp-laadpaal)] OCPP-laadpaal: waarom een open standaard belangrijk is | ocpp laadpaal | laadpaal | koopintentie, weinig consumentenuitleg
 - [open] Hagelschade aan zonnepanelen: wat te doen en hoe herken je microcracks? | hagelschade zonnepanelen | zonnepanelen | seizoens-/nieuwsgevoelig na hagelbuien
 - [open] Thuisbatterij en je woonverzekering: melden en dekking | thuisbatterij verzekering | batterij | vervolgvraag, sluit aan op brandveiligheid
 - [klaar (2026-10-08, artikel-multi-split-airco (andere sessie))] Multi-split airco: wanneer kies je één buitenunit voor meerdere kamers? | multi split airco | airco | koopintentie, verdieping op split-airco-artikel
@@ -89,3 +89,5 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Huis kopen: zo check je de meterkast en elektrische installatie | meterkast checken huis kopen | meterkast | koopmoment, sluit aan op meetrapport-idee
 - [open] Aardlekschakelaar slaat steeds af: oorzaken en wat je zelf kunt checken | aardlekschakelaar slaat af | meterkast | veel gezochte probleemvraag
 - [open] Elektra in een oud huis: wanneer moet de bedrading vervangen worden? | oude bedrading vervangen | meterkast | koopmoment, sluit aan op meetrapport
+- [open] Bidirectioneel laden (V2G/V2H): kan je auto je huis van stroom voorzien? | bidirectioneel laden thuis | laadpaal | groeiend onderwerp, sluit aan op OCPP 2.0.1
+- [open] Laadpaal met simkaart, wifi of kabel: welke verbinding kies je? | laadpaal internetverbinding | laadpaal | praktische installatievraag
