@@ -88,3 +88,4 @@ Hoofdfoto's van artikelen die niet van Voltwijk zelf zijn. Alle foto's komen van
 | foto-14319099 | https://www.pexels.com/photo/14319099/ | artikel-meetrapport-elektrische-installatie |
 | foto-27862199 | https://www.pexels.com/photo/27862199/ | artikel-meterkast-vervangen-signalen |
 | foto-27355828 | https://www.pexels.com/photo/27355828/ | artikel-ocpp-laadpaal |
+| foto-8237250 | https://www.pexels.com/photo/8237250/ | artikel-hagelschade-zonnepanelen |

@@ -62,7 +62,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-10-15, artikel-meetrapport-elektrische-installatie)] Meetrapport elektrische installatie: wat staat erin en wanneer heb je het nodig? | meetrapport elektra | meterkast | verzekering/verkoop woning, weinig concurrentie
 - [klaar (2026-10-08, artikel-kwartierprijzen-dynamisch-contract (andere sessie))] Kwartierprijzen: wat veranderde er sinds oktober 2025 voor dynamische contracten? | kwartierprijzen dynamisch contract | batterij | uitlegvraag, sluit aan op batterij- en laadpaalartikelen
 - [klaar (2026-10-16, artikel-ocpp-laadpaal)] OCPP-laadpaal: waarom een open standaard belangrijk is | ocpp laadpaal | laadpaal | koopintentie, weinig consumentenuitleg
-- [open] Hagelschade aan zonnepanelen: wat te doen en hoe herken je microcracks? | hagelschade zonnepanelen | zonnepanelen | seizoens-/nieuwsgevoelig na hagelbuien
+- [klaar (2026-10-17, artikel-hagelschade-zonnepanelen)] Hagelschade aan zonnepanelen: wat te doen en hoe herken je microcracks? | hagelschade zonnepanelen | zonnepanelen | seizoens-/nieuwsgevoelig na hagelbuien
 - [open] Thuisbatterij en je woonverzekering: melden en dekking | thuisbatterij verzekering | batterij | vervolgvraag, sluit aan op brandveiligheid
 - [klaar (2026-10-08, artikel-multi-split-airco (andere sessie))] Multi-split airco: wanneer kies je één buitenunit voor meerdere kamers? | multi split airco | airco | koopintentie, verdieping op split-airco-artikel
 - [open] Airco binnenunit kiezen: wandmodel, vloermodel of cassette | airco binnenunit soorten | airco | vergelijkingsvraag, weinig Nederlandse consumentenuitleg
@@ -91,3 +91,5 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Elektra in een oud huis: wanneer moet de bedrading vervangen worden? | oude bedrading vervangen | meterkast | koopmoment, sluit aan op meetrapport
 - [open] Bidirectioneel laden (V2G/V2H): kan je auto je huis van stroom voorzien? | bidirectioneel laden thuis | laadpaal | groeiend onderwerp, sluit aan op OCPP 2.0.1
 - [open] Laadpaal met simkaart, wifi of kabel: welke verbinding kies je? | laadpaal internetverbinding | laadpaal | praktische installatievraag
+- [open] Opbrengst zonnepanelen ineens lager: oorzaken en wat je kunt controleren | opbrengst zonnepanelen lager | zonnepanelen | probleemvraag, sluit aan op hagelschade en omvormer
+- [open] Glas-glas zonnepanelen: voordelen, nadelen en wanneer kies je ervoor | glas-glas zonnepanelen | zonnepanelen | aankoopvraag, sluit aan op hagelbestendigheid
