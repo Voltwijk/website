@@ -63,7 +63,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-10-08, artikel-kwartierprijzen-dynamisch-contract (andere sessie))] Kwartierprijzen: wat veranderde er sinds oktober 2025 voor dynamische contracten? | kwartierprijzen dynamisch contract | batterij | uitlegvraag, sluit aan op batterij- en laadpaalartikelen
 - [klaar (2026-10-16, artikel-ocpp-laadpaal)] OCPP-laadpaal: waarom een open standaard belangrijk is | ocpp laadpaal | laadpaal | koopintentie, weinig consumentenuitleg
 - [klaar (2026-10-17, artikel-hagelschade-zonnepanelen)] Hagelschade aan zonnepanelen: wat te doen en hoe herken je microcracks? | hagelschade zonnepanelen | zonnepanelen | seizoens-/nieuwsgevoelig na hagelbuien
-- [open] Thuisbatterij en je woonverzekering: melden en dekking | thuisbatterij verzekering | batterij | vervolgvraag, sluit aan op brandveiligheid
+- [klaar (2026-10-18, artikel-thuisbatterij-verzekering)] Thuisbatterij en je woonverzekering: melden en dekking | thuisbatterij verzekering | batterij | vervolgvraag, sluit aan op brandveiligheid
 - [klaar (2026-10-08, artikel-multi-split-airco (andere sessie))] Multi-split airco: wanneer kies je één buitenunit voor meerdere kamers? | multi split airco | airco | koopintentie, verdieping op split-airco-artikel
 - [open] Airco binnenunit kiezen: wandmodel, vloermodel of cassette | airco binnenunit soorten | airco | vergelijkingsvraag, weinig Nederlandse consumentenuitleg
 - [open] Inlaatcombinatie boiler lekt: normaal of niet? | inlaatcombinatie lekt | boiler | concrete probleemvraag, veel gezocht
@@ -93,3 +93,5 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Laadpaal met simkaart, wifi of kabel: welke verbinding kies je? | laadpaal internetverbinding | laadpaal | praktische installatievraag
 - [open] Opbrengst zonnepanelen ineens lager: oorzaken en wat je kunt controleren | opbrengst zonnepanelen lager | zonnepanelen | probleemvraag, sluit aan op hagelschade en omvormer
 - [open] Glas-glas zonnepanelen: voordelen, nadelen en wanneer kies je ervoor | glas-glas zonnepanelen | zonnepanelen | aankoopvraag, sluit aan op hagelbestendigheid
+- [open] Thuisbatterij garantie: wat dekt de fabrieksgarantie en wat niet? | thuisbatterij garantie | batterij | vervolgvraag op verzekeringsartikel (verzekering vs garantie)
+- [open] Stekkerbatterij of vaste thuisbatterij: verschillen in opbrengst, veiligheid en regels | stekkerbatterij of thuisbatterij | batterij | vergelijkingsvraag, sluit aan op plug-and-play-artikel
