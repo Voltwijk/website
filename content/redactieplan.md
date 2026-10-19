@@ -66,7 +66,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-10-18, artikel-thuisbatterij-verzekering)] Thuisbatterij en je woonverzekering: melden en dekking | thuisbatterij verzekering | batterij | vervolgvraag, sluit aan op brandveiligheid
 - [klaar (2026-10-08, artikel-multi-split-airco (andere sessie))] Multi-split airco: wanneer kies je één buitenunit voor meerdere kamers? | multi split airco | airco | koopintentie, verdieping op split-airco-artikel
 - [open] Airco binnenunit kiezen: wandmodel, vloermodel of cassette | airco binnenunit soorten | airco | vergelijkingsvraag, weinig Nederlandse consumentenuitleg
-- [open] Inlaatcombinatie boiler lekt: normaal of niet? | inlaatcombinatie lekt | boiler | concrete probleemvraag, veel gezocht
+- [klaar (2026-10-19, artikel-inlaatcombinatie-boiler-lekt)] Inlaatcombinatie boiler lekt: normaal of niet? | inlaatcombinatie lekt | boiler | concrete probleemvraag, veel gezocht
 - [klaar (2026-10-08, artikel-waterhardheid-west-brabant (andere sessie))] Waterhardheid en je boiler of warmtepomp in West-Brabant | waterhardheid west-brabant | boiler | lokaal, weinig concurrentie
 - [klaar (2026-10-08, artikel-thuisbatterij-bij-solaredge)] Thuisbatterij bij SolarEdge: welke opties | solaredge thuisbatterij (4.400/mnd) | batterij | gat: SERP vol webshops, geen installateursuitleg
 - [klaar (2026-10-08, artikel-thuisbatterij-bij-growatt-omvormer)] Thuisbatterij bij Growatt-omvormer | growatt thuisbatterij (1.600/mnd) | batterij | gat: SERP vol webshops
@@ -95,3 +95,5 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Glas-glas zonnepanelen: voordelen, nadelen en wanneer kies je ervoor | glas-glas zonnepanelen | zonnepanelen | aankoopvraag, sluit aan op hagelbestendigheid
 - [open] Thuisbatterij garantie: wat dekt de fabrieksgarantie en wat niet? | thuisbatterij garantie | batterij | vervolgvraag op verzekeringsartikel (verzekering vs garantie)
 - [open] Stekkerbatterij of vaste thuisbatterij: verschillen in opbrengst, veiligheid en regels | stekkerbatterij of thuisbatterij | batterij | vergelijkingsvraag, sluit aan op plug-and-play-artikel
+- [open] Waterdruk in huis te hoog of te laag: zo meet je het en wat betekent het voor je boiler | waterdruk te hoog boiler | boiler | vervolgvraag op inlaatcombinatie-artikel
+- [open] Elektrische boiler geeft geen warm water meer: oorzaken en wat je zelf kunt checken | boiler geeft geen warm water | boiler | veel gezochte probleemvraag
