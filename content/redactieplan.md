@@ -77,7 +77,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-10-08)] 16 artikelen: thuisbatterij bij SMA, Fronius, Huawei, GoodWe; Solis omvormer; Deye; Victron; kwartierprijzen; multi-split airco; airco op zonnepanelen; terugleverkosten per leverancier; vast contract en einde salderen; jaarafrekening na einde salderen; thuisbatterij appartement/VvE; waterhardheid West-Brabant; uitbreidingskast meterkast
 - [open] Hoofdzekering te klein? Zo zie je wat je aansluiting aankan | hoofdzekering vermogen | meterkast | praktische vraag bij warmtepomp/laadpaal
 - [open] Netcongestie en een zwaardere aansluiting aanvragen: wat als het net vol is? | aansluiting verzwaren netcongestie | meterkast | actueel, sluit aan op netcongestie-artikel
-- [open] Thermostaat bij een warmtepomp: waarom constant beter is dan nachtverlaging | warmtepomp thermostaat instellen | warmtepomp | veelgestelde wintervraag
+- [klaar (2026-10-21, artikel-warmtepomp-thermostaat-nachtverlaging)] Thermostaat bij een warmtepomp: waarom constant beter is dan nachtverlaging | warmtepomp thermostaat instellen | warmtepomp | veelgestelde wintervraag
 - [open] Radiatoren geschikt maken voor een warmtepomp: groter, ventilatoren of LT-radiatoren | radiatoren warmtepomp | warmtepomp | koopintentie, sluit aan op stooklijn-artikel
 - [open] Zonnepanelen opbrengst per maand: zo verdeelt je jaaropbrengst zich na 2027 | opbrengst zonnepanelen per maand | zonnepanelen | veel gezocht, sluit aan op winterartikel
 - [open] Laadpaal thuis laten installeren: wat komt erbij kijken? | elektrische laadpaal thuis | laadpaal | staat bovenaan in zoekdata (positie 26)
@@ -97,3 +97,5 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Stekkerbatterij of vaste thuisbatterij: verschillen in opbrengst, veiligheid en regels | stekkerbatterij of thuisbatterij | batterij | vergelijkingsvraag, sluit aan op plug-and-play-artikel
 - [open] Waterdruk in huis te hoog of te laag: zo meet je het en wat betekent het voor je boiler | waterdruk te hoog boiler | boiler | vervolgvraag op inlaatcombinatie-artikel
 - [open] Elektrische boiler geeft geen warm water meer: oorzaken en wat je zelf kunt checken | boiler geeft geen warm water | boiler | veel gezochte probleemvraag
+- [open] Hybride warmtepomp omschakeltemperatuur: wanneer neemt de cv-ketel het over? | hybride warmtepomp instellen | warmtepomp | praktische instelvraag, sluit aan op thermostaat-artikel
+- [open] Zonnepanelen naast een stal of veebedrijf: vervuiling, opbrengst en schoonmaken | zonnepanelen vervuiling boerderij | zonnepanelen | vraag uit de praktijk (klant naast veehouderij)
