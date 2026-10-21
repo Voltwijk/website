@@ -1,4 +1,4 @@
-# Zoekdata voltwijk.nl (2026-09-20 t/m 2026-10-18)
+# Zoekdata voltwijk.nl (2026-09-21 t/m 2026-10-19)
 
 Automatisch gemaakt door tools/gsc.py. Gebruik dit bij het kiezen van onderwerpen (zie REDACTIE.md).
 
@@ -7,7 +7,7 @@ Een artikel dat precies deze vraag beantwoordt, of een bestaande pagina die bete
 
 | zoekwoord | vertoningen | klikken | positie | pagina |
 |---|---|---|---|---|
-| thuisbatterij kopen | 13 | 0 | 7.8 | http://www.voltwijk.nl/ |
+| thuisbatterij kopen | 14 | 0 | 7.7 | http://www.voltwijk.nl/ |
 | elektrische laadpaal thuis | 8 | 0 | 25.9 | /artikel-laadpaal-slim-laden |
 | hoeveel wp zonnepanelen | 6 | 0 | 15.5 | /artikel-hoeveel-zonnepanelen-nodig |
 | elektrische verwarmingsketel huren | 5 | 0 | 5.4 | http://www.voltwijk.nl/ |
@@ -53,94 +53,94 @@ Een artikel dat precies deze vraag beantwoordt, of een bestaande pagina die bete
 | zoekwoord | vertoningen | klikken | positie |
 |---|---|---|---|
 | slimme laadpaal | 84 | 0 | 58.5 |
-| zonnepanelen | 45 | 1 | 3.9 |
-| voltwijk | 40 | 26 | 1.0 |
-| thuisbatterij breda | 32 | 0 | 68.8 |
-| prinsenbeek warmtepomp | 30 | 0 | 79.7 |
+| zonnepanelen | 47 | 1 | 4.0 |
+| voltwijk | 44 | 30 | 1.0 |
+| thuisbatterij breda | 35 | 0 | 70.1 |
+| prinsenbeek warmtepomp | 31 | 0 | 79.8 |
 | thuisbatterij tilburg | 30 | 0 | 84.4 |
+| breda zonnepanelen | 28 | 0 | 94.4 |
 | slimme laadpaal thuis | 28 | 0 | 60.5 |
-| breda zonnepanelen | 25 | 0 | 94.3 |
-| prinsenbeek zonnepanelen | 24 | 0 | 77.3 |
+| prinsenbeek zonnepanelen | 27 | 0 | 77.5 |
 | thuisbatterij den bosch | 24 | 0 | 92.3 |
 | zonnepanelen kopen | 23 | 1 | 3.7 |
-| thuisbatterij salderingsregeling | 22 | 0 | 71.6 |
-| roosendaal zonnepanelen | 17 | 0 | 72.9 |
+| thuisbatterij salderingsregeling | 23 | 0 | 72.3 |
+| roosendaal zonnepanelen | 20 | 0 | 74.0 |
+| oosterhout zonnepanelen | 18 | 0 | 80.8 |
+| oosterhout warmtepomp | 17 | 0 | 79.0 |
+| thuisbatterij installateur breda | 16 | 0 | 85.6 |
 | breda warmtepomp | 15 | 0 | 80.2 |
-| oosterhout zonnepanelen | 15 | 0 | 80.9 |
 | thuisbatterij dordrecht | 15 | 0 | 86.7 |
-| thuisbatterij installateur breda | 15 | 0 | 86.0 |
-| oosterhout warmtepomp | 14 | 0 | 78.7 |
-| thuisbatterij kopen | 13 | 0 | 7.8 |
+| thuisbatterij kopen | 14 | 0 | 7.7 |
+| netwerkbeheerder breda | 12 | 0 | 43.2 |
 | elektricien zevenbergen | 11 | 0 | 85.5 |
 | laadpaal thuis | 11 | 0 | 70.8 |
-| netwerkbeheerder breda | 11 | 0 | 43.5 |
 | salderen 2027 | 11 | 0 | 47.9 |
 | isde subsidie 2026 | 10 | 0 | 84.6 |
 | snellader thuis | 10 | 0 | 80.0 |
+| stooklijn warmtepomp instellen | 10 | 0 | 38.3 |
 | thuisbatterij kopen tilburg | 10 | 0 | 86.7 |
-| stooklijn warmtepomp instellen | 9 | 0 | 37.7 |
-| thuisbatterij roosendaal | 9 | 0 | 49.8 |
+| thuisbatterij oosterhout | 10 | 0 | 88.5 |
+| thuisbatterij roosendaal | 10 | 0 | 47.3 |
 | thuisbatterij rotterdam | 9 | 0 | 97.3 |
+| thuisbatterij sleeuwijk | 9 | 0 | 56.3 |
 | elektrische laadpaal thuis | 8 | 0 | 25.9 |
+| enphase thuisbatterij tilburg reeshof | 8 | 0 | 83.1 |
 | etten-leur warmtepomp | 8 | 0 | 33.2 |
 | thuisbatterij amsterdam | 8 | 0 | 91.5 |
 | thuisbatterij hilvarenbeek | 8 | 0 | 85.1 |
 | thuisbatterij installateur rotterdam | 8 | 0 | 93.4 |
-| thuisbatterij oosterhout | 8 | 0 | 88.2 |
+| thuisbatterij installeren breda | 8 | 0 | 84.2 |
+| thuisbatterij kopen breda | 8 | 0 | 87.5 |
 | thuisbatterij prinsenbeek | 8 | 0 | 75.0 |
-| thuisbatterij reeshof | 8 | 0 | 71.8 |
-| thuisbatterij sleeuwijk | 8 | 0 | 56.6 |
-| enphase thuisbatterij tilburg reeshof | 7 | 0 | 82.4 |
-| thuisbatterij 's-hertogenbosch | 7 | 0 | 74.6 |
 
 ## Pagina's
 
 | pagina | vertoningen | klikken | positie |
 |---|---|---|---|
-| http://www.voltwijk.nl/ | 421 | 25 | 5.3 |
-| /installateur-breda | 389 | 0 | 80.1 |
+| http://www.voltwijk.nl/ | 439 | 25 | 5.3 |
+| /installateur-breda | 417 | 0 | 79.9 |
 | /artikel-laadpaal-slim-laden | 211 | 0 | 60.2 |
-| / | 189 | 69 | 1.5 |
-| /installateur-tilburg | 176 | 1 | 73.7 |
-| /hoe-het-werkt | 108 | 1 | 3.1 |
-| /producten | 105 | 0 | 4.1 |
-| /reviews | 94 | 6 | 3.2 |
-| /installateur-oosterhout | 91 | 0 | 84.9 |
+| / | 196 | 73 | 1.5 |
+| /installateur-tilburg | 177 | 1 | 73.8 |
+| /hoe-het-werkt | 113 | 1 | 3.1 |
+| /installateur-oosterhout | 109 | 0 | 85.2 |
+| /producten | 108 | 0 | 4.0 |
+| /reviews | 98 | 7 | 3.1 |
 | /installateur-rotterdam | 91 | 0 | 63.5 |
-| /installateur-zevenbergen | 82 | 2 | 21.3 |
-| /artikel-warmtepomp-stooklijn-instellen | 75 | 0 | 46.4 |
+| /installateur-zevenbergen | 85 | 2 | 21.0 |
+| /artikel-warmtepomp-stooklijn-instellen | 85 | 0 | 46.7 |
 | /installateur-s-hertogenbosch | 75 | 0 | 74.9 |
+| /installateur-roosendaal | 69 | 1 | 71.0 |
 | /bereken-je-prijs | 69 | 0 | 3.8 |
-| /artikel-vergelijking | 62 | 0 | 9.0 |
-| /installateur-roosendaal | 60 | 1 | 71.3 |
-| /werkgebied | 55 | 0 | 10.2 |
-| /artikel-thuisbatterij-na-salderen | 51 | 0 | 69.6 |
+| /artikel-vergelijking | 63 | 0 | 8.9 |
+| /werkgebied | 60 | 0 | 9.7 |
+| /artikel-thuisbatterij-na-salderen | 56 | 0 | 68.5 |
 | /inzichten | 44 | 0 | 3.8 |
-| /veelgestelde-vragen | 39 | 1 | 4.7 |
+| /veelgestelde-vragen | 40 | 1 | 4.8 |
+| /product-batterij | 39 | 1 | 39.6 |
 | /installateur-dordrecht | 39 | 0 | 57.7 |
-| /product-batterij | 36 | 1 | 37.4 |
 | /artikel-hoeveel-zonnepanelen-nodig | 33 | 0 | 36.7 |
 | /artikel-wat-kost-een-airco-aan-stroom | 33 | 0 | 60.4 |
 | /installateur-hilvarenbeek | 31 | 0 | 41.8 |
-| /privacybeleid | 30 | 0 | 7.5 |
+| /privacybeleid | 31 | 0 | 7.6 |
+| /product-zonnepanelen | 28 | 0 | 17.6 |
+| /algemene-voorwaarden | 27 | 0 | 6.6 |
 | /artikel-checklist-salderen-2027 | 27 | 0 | 31.4 |
-| /algemene-voorwaarden | 26 | 0 | 6.4 |
-| /product-zonnepanelen | 25 | 0 | 17.2 |
-| /thuisbatterij-amsterdam | 24 | 0 | 73.9 |
+| /over-ons | 26 | 2 | 2.8 |
+| /thuisbatterij-amsterdam | 26 | 0 | 75.3 |
 | /artikel-waarom-je-monteur-ertoe-doet | 23 | 1 | 8.9 |
-| /garantie | 22 | 0 | 5.5 |
+| /artikel-thuisbatterij-bij-sma-omvormer | 23 | 0 | 6.7 |
+| /garantie | 23 | 0 | 5.3 |
 | /installateur-etten-leur | 22 | 0 | 22.3 |
-| /over-ons | 21 | 2 | 3.0 |
 | /installateur-goeree-overflakkee | 21 | 0 | 31.0 |
+| /zonnepanelen-woerden | 21 | 0 | 43.9 |
+| /artikel-zonnepanelen-prijs | 20 | 0 | 21.4 |
 | /artikel-isde-subsidie-2026 | 19 | 0 | 68.7 |
-| /zonnepanelen-woerden | 19 | 0 | 43.4 |
+| /installateur-bergen-op-zoom | 19 | 0 | 34.7 |
 | https://www.voltwijk.nl/ | 16 | 2 | 19.4 |
 | /artikel-omvormer-of-micro-omvormers | 16 | 0 | 36.5 |
-| /artikel-zonnepanelen-prijs | 16 | 0 | 25.4 |
-| /installateur-bergen-op-zoom | 16 | 0 | 37.1 |
-| /warmtepomp-zevenbergen | 15 | 0 | 4.3 |
+| /warmtepomp-zevenbergen | 16 | 0 | 4.3 |
 | /artikel-elektrische-boiler-vs-gas | 14 | 0 | 13.7 |
-| /artikel-thuisbatterij-bij-sma-omvormer | 14 | 0 | 7.4 |
 | /warmtepomp-haarlem | 14 | 0 | 68.2 |
 | /zonnepanelen-roosendaal | 13 | 0 | 16.5 |
 | /airco-etten-leur | 12 | 0 | 32.3 |
@@ -150,10 +150,10 @@ Een artikel dat precies deze vraag beantwoordt, of een bestaande pagina die bete
 | /product-boiler | 11 | 0 | 32.0 |
 | /product-laadpaal | 9 | 0 | 40.0 |
 | /warmtepomp-woerden | 9 | 0 | 16.9 |
+| /zonnepanelen-delft | 9 | 0 | 28.4 |
 | /airco-veldhoven | 8 | 0 | 31.6 |
 | /artikel-airco-onderhoud-en-f-gassen | 8 | 0 | 60.2 |
 | /installateur-hulst | 8 | 0 | 14.1 |
 | /thuisbatterij-barendrecht | 8 | 0 | 62.2 |
 | /zonnepanelen-noordwijk | 8 | 0 | 13.1 |
 | /artikel-salderingsregeling-2027 | 7 | 0 | 60.0 |
-| /thuisbatterij-berekenen | 7 | 0 | 40.6 |
