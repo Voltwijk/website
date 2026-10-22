@@ -81,7 +81,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Radiatoren geschikt maken voor een warmtepomp: groter, ventilatoren of LT-radiatoren | radiatoren warmtepomp | warmtepomp | koopintentie, sluit aan op stooklijn-artikel
 - [open] Zonnepanelen opbrengst per maand: zo verdeelt je jaaropbrengst zich na 2027 | opbrengst zonnepanelen per maand | zonnepanelen | veel gezocht, sluit aan op winterartikel
 - [open] Laadpaal thuis laten installeren: wat komt erbij kijken? | elektrische laadpaal thuis | laadpaal | staat bovenaan in zoekdata (positie 26)
-- [open] Boiler op vakantie: aan laten staan of uitzetten? | boiler uitzetten vakantie | boiler | seizoensvraag (kerst/zomer), RIVM-advies
+- [klaar (2026-10-22, artikel-boiler-vakantie-uitzetten)] Boiler op vakantie: aan laten staan of uitzetten? | boiler uitzetten vakantie | boiler | seizoensvraag (kerst/zomer), RIVM-advies
 - [open] Warmtepomp tapwatertemperatuur instellen: 50, 55 of 60 graden? | warmtepomp tapwater temperatuur | warmtepomp | praktische instelvraag, sluit aan op legionella-artikel
 - [open] Van gas naar inductie koken: wat kost het en wat bespaar je? | overstappen inductie kosten | meterkast | koopintentie, sluit aan op inductie-meterkastartikel
 - [open] Waterbesparende douchekop: hoeveel gas en water bespaar je echt? | waterbesparende douchekop besparing | boiler | veel gezocht, laagdrempelig
@@ -99,3 +99,4 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Elektrische boiler geeft geen warm water meer: oorzaken en wat je zelf kunt checken | boiler geeft geen warm water | boiler | veel gezochte probleemvraag
 - [open] Hybride warmtepomp omschakeltemperatuur: wanneer neemt de cv-ketel het over? | hybride warmtepomp instellen | warmtepomp | praktische instelvraag, sluit aan op thermostaat-artikel
 - [open] Zonnepanelen naast een stal of veebedrijf: vervuiling, opbrengst en schoonmaken | zonnepanelen vervuiling boerderij | zonnepanelen | vraag uit de praktijk (klant naast veehouderij)
+- [open] Hoe lang duurt het voordat een elektrische boiler warm is? Opwarmtijd per inhoud en vermogen | boiler opwarmtijd | boiler | praktische vraag, sluit aan op vakantie-artikel
