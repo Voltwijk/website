@@ -84,7 +84,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-10-22, artikel-boiler-vakantie-uitzetten)] Boiler op vakantie: aan laten staan of uitzetten? | boiler uitzetten vakantie | boiler | seizoensvraag (kerst/zomer), RIVM-advies
 - [open] Warmtepomp tapwatertemperatuur instellen: 50, 55 of 60 graden? | warmtepomp tapwater temperatuur | warmtepomp | praktische instelvraag, sluit aan op legionella-artikel
 - [open] Van gas naar inductie koken: wat kost het en wat bespaar je? | overstappen inductie kosten | meterkast | koopintentie, sluit aan op inductie-meterkastartikel
-- [open] Waterbesparende douchekop: hoeveel gas en water bespaar je echt? | waterbesparende douchekop besparing | boiler | veel gezocht, laagdrempelig
+- [klaar (2026-10-24, artikel-waterbesparende-douchekop)] Waterbesparende douchekop: hoeveel gas en water bespaar je echt? | waterbesparende douchekop besparing | boiler | veel gezocht, laagdrempelig
 - [open] Hoofdzekering doorgebrand: zo herken je het en dit doe je | hoofdzekering doorgebrand | meterkast | probleemvraag, nationaal storingsnummer
 - [open] Huis kopen: zo check je de meterkast en elektrische installatie | meterkast checken huis kopen | meterkast | koopmoment, sluit aan op meetrapport-idee
 - [klaar (2026-10-23, artikel-aardlekschakelaar-slaat-af)] Aardlekschakelaar slaat steeds af: oorzaken en wat je zelf kunt checken | aardlekschakelaar slaat af | meterkast | veel gezochte probleemvraag
@@ -101,3 +101,4 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Zonnepanelen naast een stal of veebedrijf: vervuiling, opbrengst en schoonmaken | zonnepanelen vervuiling boerderij | zonnepanelen | vraag uit de praktijk (klant naast veehouderij)
 - [open] Hoe lang duurt het voordat een elektrische boiler warm is? Opwarmtijd per inhoud en vermogen | boiler opwarmtijd | boiler | praktische vraag, sluit aan op vakantie-artikel
 - [open] Groep valt steeds uit: overbelasting of kortsluiting, en wat je zelf kunt doen | groep valt uit meterkast | meterkast | probleemvraag, sluit aan op aardlek-artikel
+- [open] Douche-wtw (warmteterugwinning): hoeveel bespaar je en wanneer is het zinvol? | douche wtw besparing | boiler | vervolg op douchekop-artikel, Milieu Centraal 40-50%
