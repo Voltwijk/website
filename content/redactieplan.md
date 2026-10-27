@@ -101,6 +101,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Zonnepanelen naast een stal of veebedrijf: vervuiling, opbrengst en schoonmaken | zonnepanelen vervuiling boerderij | zonnepanelen | vraag uit de praktijk (klant naast veehouderij)
 - [open] Hoe lang duurt het voordat een elektrische boiler warm is? Opwarmtijd per inhoud en vermogen | boiler opwarmtijd | boiler | praktische vraag, sluit aan op vakantie-artikel
 - [open] Groep valt steeds uit: overbelasting of kortsluiting, en wat je zelf kunt doen | groep valt uit meterkast | meterkast | probleemvraag, sluit aan op aardlek-artikel
-- [open] Douche-wtw (warmteterugwinning): hoeveel bespaar je en wanneer is het zinvol? | douche wtw besparing | boiler | vervolg op douchekop-artikel, Milieu Centraal 40-50%
+- [klaar (2026-10-27, artikel-douche-wtw)] Douche-wtw (warmteterugwinning): hoeveel bespaar je en wanneer is het zinvol? | douche wtw besparing | boiler | vervolg op douchekop-artikel, Milieu Centraal 40-50%
 - [open] Smeltzekering of hoofdautomaat: wat heb je en kun je wisselen? | hoofdautomaat netbeheerder | meterkast | vervolgvraag op hoofdzekering-artikel
 - [open] Gasaansluiting laten verwijderen: zo regel je het en dit bespaar je | gasaansluiting verwijderen | warmtepomp | vervolg op inductie-artikel, Enexis kosteloos via melding
+- [open] Badkamer verbouwen en energie besparen: wtw, douchekop, boiler en vloerverwarming op een rij | badkamer verbouwen energiezuinig | boiler | koopmoment, bundelt douche-artikelen

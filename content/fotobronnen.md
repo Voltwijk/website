@@ -94,3 +94,4 @@ Hoofdfoto's van artikelen die niet van Voltwijk zelf zijn. Alle foto's komen van
 | foto-8212229 | https://www.pexels.com/photo/8212229/ | artikel-boiler-vakantie-uitzetten |
 | foto-1345502 | https://www.pexels.com/photo/1345502/ | artikel-waterbesparende-douchekop |
 | foto-8629104 | https://www.pexels.com/photo/8629104/ | artikel-van-gas-naar-inductie-koken |
+| foto-2988865 | https://www.pexels.com/photo/2988865/ | artikel-douche-wtw |
