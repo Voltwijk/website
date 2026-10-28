@@ -103,5 +103,6 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Groep valt steeds uit: overbelasting of kortsluiting, en wat je zelf kunt doen | groep valt uit meterkast | meterkast | probleemvraag, sluit aan op aardlek-artikel
 - [klaar (2026-10-27, artikel-douche-wtw)] Douche-wtw (warmteterugwinning): hoeveel bespaar je en wanneer is het zinvol? | douche wtw besparing | boiler | vervolg op douchekop-artikel, Milieu Centraal 40-50%
 - [open] Smeltzekering of hoofdautomaat: wat heb je en kun je wisselen? | hoofdautomaat netbeheerder | meterkast | vervolgvraag op hoofdzekering-artikel
-- [open] Gasaansluiting laten verwijderen: zo regel je het en dit bespaar je | gasaansluiting verwijderen | warmtepomp | vervolg op inductie-artikel, Enexis kosteloos via melding
+- [klaar (2026-10-28, artikel-gasaansluiting-verwijderen)] Gasaansluiting laten verwijderen: zo regel je het en dit bespaar je | gasaansluiting verwijderen | warmtepomp | vervolg op inductie-artikel, Enexis kosteloos via melding
 - [open] Badkamer verbouwen en energie besparen: wtw, douchekop, boiler en vloerverwarming op een rij | badkamer verbouwen energiezuinig | boiler | koopmoment, bundelt douche-artikelen
+- [open] Van het gas af: in welke volgorde pak je verwarming, warm water en koken aan? | van het gas af stappenplan | warmtepomp | koopintentie, bundelt gas-artikelen
