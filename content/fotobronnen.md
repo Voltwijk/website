@@ -96,3 +96,4 @@ Hoofdfoto's van artikelen die niet van Voltwijk zelf zijn. Alle foto's komen van
 | foto-8629104 | https://www.pexels.com/photo/8629104/ | artikel-van-gas-naar-inductie-koken |
 | foto-2988865 | https://www.pexels.com/photo/2988865/ | artikel-douche-wtw |
 | foto-3722212 | https://www.pexels.com/photo/3722212/ | artikel-gasaansluiting-verwijderen |
+| foto-15751136 | https://www.pexels.com/photo/15751136/ | artikel-glas-glas-zonnepanelen |
