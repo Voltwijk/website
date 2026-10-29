@@ -92,7 +92,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Bidirectioneel laden (V2G/V2H): kan je auto je huis van stroom voorzien? | bidirectioneel laden thuis | laadpaal | groeiend onderwerp, sluit aan op OCPP 2.0.1
 - [open] Laadpaal met simkaart, wifi of kabel: welke verbinding kies je? | laadpaal internetverbinding | laadpaal | praktische installatievraag
 - [open] Opbrengst zonnepanelen ineens lager: oorzaken en wat je kunt controleren | opbrengst zonnepanelen lager | zonnepanelen | probleemvraag, sluit aan op hagelschade en omvormer
-- [open] Glas-glas zonnepanelen: voordelen, nadelen en wanneer kies je ervoor | glas-glas zonnepanelen | zonnepanelen | aankoopvraag, sluit aan op hagelbestendigheid
+- [klaar (2026-10-29, artikel-glas-glas-zonnepanelen)] Glas-glas zonnepanelen: voordelen, nadelen en wanneer kies je ervoor | glas-glas zonnepanelen | zonnepanelen | aankoopvraag, sluit aan op hagelbestendigheid
 - [open] Thuisbatterij garantie: wat dekt de fabrieksgarantie en wat niet? | thuisbatterij garantie | batterij | vervolgvraag op verzekeringsartikel (verzekering vs garantie)
 - [open] Stekkerbatterij of vaste thuisbatterij: verschillen in opbrengst, veiligheid en regels | stekkerbatterij of thuisbatterij | batterij | vergelijkingsvraag, sluit aan op plug-and-play-artikel
 - [open] Waterdruk in huis te hoog of te laag: zo meet je het en wat betekent het voor je boiler | waterdruk te hoog boiler | boiler | vervolgvraag op inlaatcombinatie-artikel
@@ -106,3 +106,4 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-10-28, artikel-gasaansluiting-verwijderen)] Gasaansluiting laten verwijderen: zo regel je het en dit bespaar je | gasaansluiting verwijderen | warmtepomp | vervolg op inductie-artikel, Enexis kosteloos via melding
 - [open] Badkamer verbouwen en energie besparen: wtw, douchekop, boiler en vloerverwarming op een rij | badkamer verbouwen energiezuinig | boiler | koopmoment, bundelt douche-artikelen
 - [open] Van het gas af: in welke volgorde pak je verwarming, warm water en koken aan? | van het gas af stappenplan | warmtepomp | koopintentie, bundelt gas-artikelen
+- [open] Bifacial zonnepanelen: wanneer leveren dubbelzijdige panelen echt meer op? | bifacial zonnepanelen | zonnepanelen | vervolg op glas-glas-artikel, vooral platte daken
