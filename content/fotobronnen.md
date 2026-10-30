@@ -90,7 +90,7 @@ Hoofdfoto's van artikelen die niet van Voltwijk zelf zijn. Alle foto's komen van
 | foto-27355828 | https://www.pexels.com/photo/27355828/ | artikel-ocpp-laadpaal |
 | foto-8237250 | https://www.pexels.com/photo/8237250/ | artikel-hagelschade-zonnepanelen |
 | foto-6419128 | https://www.pexels.com/photo/6419128/ | artikel-inlaatcombinatie-boiler-lekt |
-| foto-12644994 | https://www.pexels.com/photo/12644994/ | artikel-warmtepomp-thermostaat-nachtverlaging |
+| foto-12644994 | https://www.pexels.com/photo/12644994/ | artikel-hybride-warmtepomp-omschakeltemperatuur, artikel-warmtepomp-thermostaat-nachtverlaging |
 | foto-8212229 | https://www.pexels.com/photo/8212229/ | artikel-boiler-vakantie-uitzetten |
 | foto-1345502 | https://www.pexels.com/photo/1345502/ | artikel-waterbesparende-douchekop |
 | foto-8629104 | https://www.pexels.com/photo/8629104/ | artikel-van-gas-naar-inductie-koken |
