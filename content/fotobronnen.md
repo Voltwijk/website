@@ -62,7 +62,7 @@ Hoofdfoto's van artikelen die niet van Voltwijk zelf zijn. Alle foto's komen van
 | foto-7031408 | https://www.pexels.com/photo/7031408/ | artikel-warmtepomp-bij-vorst |
 | foto-9729882 | https://www.pexels.com/photo/9729882/ | artikel-warmtepomp-en-zonnepanelen-combineren |
 | foto-87299 | https://www.pexels.com/photo/87299/ | artikel-warmtepomp-legionella |
-| foto-32214891 | https://www.pexels.com/photo/32214891/ | artikel-warmtepomp-oudere-woning |
+| foto-32214891 | https://www.pexels.com/photo/32214891/ | artikel-van-het-gas-af-volgorde, artikel-warmtepomp-oudere-woning |
 | foto-36818203 | https://www.pexels.com/photo/36818203/ | artikel-warmtepomp-stooklijn-instellen |
 | foto-20046693 | https://www.pexels.com/photo/20046693/ | artikel-warmtepomp-stroomverbruik |
 | foto-36344878 | https://www.pexels.com/photo/36344878/ | artikel-warmtepomp-zonder-vloerverwarming |
