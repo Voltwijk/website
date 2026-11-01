@@ -100,7 +100,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-10-30, artikel-hybride-warmtepomp-omschakeltemperatuur)] Hybride warmtepomp omschakeltemperatuur: wanneer neemt de cv-ketel het over? | hybride warmtepomp instellen | warmtepomp | praktische instelvraag, sluit aan op thermostaat-artikel
 - [open] Zonnepanelen naast een stal of veebedrijf: vervuiling, opbrengst en schoonmaken | zonnepanelen vervuiling boerderij | zonnepanelen | vraag uit de praktijk (klant naast veehouderij)
 - [open] Hoe lang duurt het voordat een elektrische boiler warm is? Opwarmtijd per inhoud en vermogen | boiler opwarmtijd | boiler | praktische vraag, sluit aan op vakantie-artikel
-- [open] Groep valt steeds uit: overbelasting of kortsluiting, en wat je zelf kunt doen | groep valt uit meterkast | meterkast | probleemvraag, sluit aan op aardlek-artikel
+- [klaar (2026-11-01, artikel-groep-valt-steeds-uit)] Groep valt steeds uit: overbelasting of kortsluiting, en wat je zelf kunt doen | groep valt uit meterkast | meterkast | probleemvraag, sluit aan op aardlek-artikel
 - [klaar (2026-10-27, artikel-douche-wtw)] Douche-wtw (warmteterugwinning): hoeveel bespaar je en wanneer is het zinvol? | douche wtw besparing | boiler | vervolg op douchekop-artikel, Milieu Centraal 40-50%
 - [open] Smeltzekering of hoofdautomaat: wat heb je en kun je wisselen? | hoofdautomaat netbeheerder | meterkast | vervolgvraag op hoofdzekering-artikel
 - [klaar (2026-10-28, artikel-gasaansluiting-verwijderen)] Gasaansluiting laten verwijderen: zo regel je het en dit bespaar je | gasaansluiting verwijderen | warmtepomp | vervolg op inductie-artikel, Enexis kosteloos via melding
@@ -109,3 +109,4 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Bifacial zonnepanelen: wanneer leveren dubbelzijdige panelen echt meer op? | bifacial zonnepanelen | zonnepanelen | vervolg op glas-glas-artikel, vooral platte daken
 - [open] Warmtepomp moduleren: waarom een laag minimumvermogen belangrijk is | warmtepomp moduleren | warmtepomp | koopvraag, Milieu Centraal noemt onder 2 kW
 - [open] All-electric-ready hybride warmtepomp: wat is het en wanneer kies je ervoor? | all electric ready warmtepomp | warmtepomp | vervolg op volgorde-artikel
+- [open] Hoeveel groepen heeft een keuken nodig? Inductie, oven, vaatwasser en close-in boiler | groepen keuken meterkast | meterkast | vervolg op groep-valt-uit-artikel
