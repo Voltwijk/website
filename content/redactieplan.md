@@ -107,6 +107,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Badkamer verbouwen en energie besparen: wtw, douchekop, boiler en vloerverwarming op een rij | badkamer verbouwen energiezuinig | boiler | koopmoment, bundelt douche-artikelen
 - [klaar (2026-10-31, artikel-van-het-gas-af-volgorde)] Van het gas af: in welke volgorde pak je verwarming, warm water en koken aan? | van het gas af stappenplan | warmtepomp | koopintentie, bundelt gas-artikelen
 - [open] Bifacial zonnepanelen: wanneer leveren dubbelzijdige panelen echt meer op? | bifacial zonnepanelen | zonnepanelen | vervolg op glas-glas-artikel, vooral platte daken
-- [open] Warmtepomp moduleren: waarom een laag minimumvermogen belangrijk is | warmtepomp moduleren | warmtepomp | koopvraag, Milieu Centraal noemt onder 2 kW
+- [klaar (2026-11-02, artikel-warmtepomp-moduleren)] Warmtepomp moduleren: waarom een laag minimumvermogen belangrijk is | warmtepomp moduleren | warmtepomp | koopvraag, Milieu Centraal noemt onder 2 kW
 - [open] All-electric-ready hybride warmtepomp: wat is het en wanneer kies je ervoor? | all electric ready warmtepomp | warmtepomp | vervolg op volgorde-artikel
 - [open] Hoeveel groepen heeft een keuken nodig? Inductie, oven, vaatwasser en close-in boiler | groepen keuken meterkast | meterkast | vervolg op groep-valt-uit-artikel
+- [open] Buffervat bij een warmtepomp: wanneer heb je het nodig? | buffervat warmtepomp | warmtepomp | vervolg op moduleren-artikel
