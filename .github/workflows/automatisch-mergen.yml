@@ -1,0 +1,18 @@
+# PR's van Claude (branches die beginnen met claude/) worden automatisch gemerged.
+# Uitzetten: dit bestand verwijderen, of een PR als concept (draft) openen.
+name: Automatisch mergen (Claude)
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  mergen:
+    if: github.event.pull_request.head.repo.full_name == github.repository && startsWith(github.head_ref, 'claude/') && !github.event.pull_request.draft
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mergen
+        run: gh pr merge "${{ github.event.pull_request.number }}" --merge --repo "${{ github.repository }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
