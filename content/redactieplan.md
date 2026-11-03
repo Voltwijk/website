@@ -110,4 +110,5 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-11-02, artikel-warmtepomp-moduleren)] Warmtepomp moduleren: waarom een laag minimumvermogen belangrijk is | warmtepomp moduleren | warmtepomp | koopvraag, Milieu Centraal noemt onder 2 kW
 - [open] All-electric-ready hybride warmtepomp: wat is het en wanneer kies je ervoor? | all electric ready warmtepomp | warmtepomp | vervolg op volgorde-artikel
 - [open] Hoeveel groepen heeft een keuken nodig? Inductie, oven, vaatwasser en close-in boiler | groepen keuken meterkast | meterkast | vervolg op groep-valt-uit-artikel
-- [open] Buffervat bij een warmtepomp: wanneer heb je het nodig? | buffervat warmtepomp | warmtepomp | vervolg op moduleren-artikel
+- [klaar (2026-11-03, artikel-buffervat-warmtepomp)] Buffervat bij een warmtepomp: wanneer heb je het nodig? | buffervat warmtepomp | warmtepomp | vervolg op moduleren-artikel
+- [open] Warmtepomp ontdooien in de winter: waarom de buitenunit dampt en wat normaal is | warmtepomp ontdooien | warmtepomp | wintervraag, sluit aan op buffervat- en vorstartikel
