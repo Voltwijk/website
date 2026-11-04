@@ -111,4 +111,5 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] All-electric-ready hybride warmtepomp: wat is het en wanneer kies je ervoor? | all electric ready warmtepomp | warmtepomp | vervolg op volgorde-artikel
 - [open] Hoeveel groepen heeft een keuken nodig? Inductie, oven, vaatwasser en close-in boiler | groepen keuken meterkast | meterkast | vervolg op groep-valt-uit-artikel
 - [klaar (2026-11-03, artikel-buffervat-warmtepomp)] Buffervat bij een warmtepomp: wanneer heb je het nodig? | buffervat warmtepomp | warmtepomp | vervolg op moduleren-artikel
-- [open] Warmtepomp ontdooien in de winter: waarom de buitenunit dampt en wat normaal is | warmtepomp ontdooien | warmtepomp | wintervraag, sluit aan op buffervat- en vorstartikel
+- [klaar (2026-11-04, artikel-warmtepomp-ontdooien)] Warmtepomp ontdooien in de winter: waarom de buitenunit dampt en wat normaal is | warmtepomp ontdooien | warmtepomp | wintervraag, sluit aan op buffervat- en vorstartikel
+- [open] Warmtepomp geluid: hoeveel decibel en wat zijn de regels voor de buren? | warmtepomp geluid buren | warmtepomp | veelgestelde vraag, sluit aan op buitenunit-regels
