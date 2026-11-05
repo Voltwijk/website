@@ -102,7 +102,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Hoe lang duurt het voordat een elektrische boiler warm is? Opwarmtijd per inhoud en vermogen | boiler opwarmtijd | boiler | praktische vraag, sluit aan op vakantie-artikel
 - [klaar (2026-11-01, artikel-groep-valt-steeds-uit)] Groep valt steeds uit: overbelasting of kortsluiting, en wat je zelf kunt doen | groep valt uit meterkast | meterkast | probleemvraag, sluit aan op aardlek-artikel
 - [klaar (2026-10-27, artikel-douche-wtw)] Douche-wtw (warmteterugwinning): hoeveel bespaar je en wanneer is het zinvol? | douche wtw besparing | boiler | vervolg op douchekop-artikel, Milieu Centraal 40-50%
-- [open] Smeltzekering of hoofdautomaat: wat heb je en kun je wisselen? | hoofdautomaat netbeheerder | meterkast | vervolgvraag op hoofdzekering-artikel
+- [klaar (2026-11-05, artikel-smeltzekering-of-hoofdautomaat)] Smeltzekering of hoofdautomaat: wat heb je en kun je wisselen? | hoofdautomaat netbeheerder | meterkast | vervolgvraag op hoofdzekering-artikel
 - [klaar (2026-10-28, artikel-gasaansluiting-verwijderen)] Gasaansluiting laten verwijderen: zo regel je het en dit bespaar je | gasaansluiting verwijderen | warmtepomp | vervolg op inductie-artikel, Enexis kosteloos via melding
 - [open] Badkamer verbouwen en energie besparen: wtw, douchekop, boiler en vloerverwarming op een rij | badkamer verbouwen energiezuinig | boiler | koopmoment, bundelt douche-artikelen
 - [klaar (2026-10-31, artikel-van-het-gas-af-volgorde)] Van het gas af: in welke volgorde pak je verwarming, warm water en koken aan? | van het gas af stappenplan | warmtepomp | koopintentie, bundelt gas-artikelen
@@ -112,4 +112,5 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Hoeveel groepen heeft een keuken nodig? Inductie, oven, vaatwasser en close-in boiler | groepen keuken meterkast | meterkast | vervolg op groep-valt-uit-artikel
 - [klaar (2026-11-03, artikel-buffervat-warmtepomp)] Buffervat bij een warmtepomp: wanneer heb je het nodig? | buffervat warmtepomp | warmtepomp | vervolg op moduleren-artikel
 - [klaar (2026-11-04, artikel-warmtepomp-ontdooien)] Warmtepomp ontdooien in de winter: waarom de buitenunit dampt en wat normaal is | warmtepomp ontdooien | warmtepomp | wintervraag, sluit aan op buffervat- en vorstartikel
-- [open] Warmtepomp geluid: hoeveel decibel en wat zijn de regels voor de buren? | warmtepomp geluid buren | warmtepomp | veelgestelde vraag, sluit aan op buitenunit-regels
+- [vervalt (2026-11-05: al behandeld in artikel-warmtepomp-geluid en artikel-warmtepomp-buitenunit-plaatsen-regels)] Warmtepomp geluid: hoeveel decibel en wat zijn de regels voor de buren? | warmtepomp geluid buren | warmtepomp | veelgestelde vraag, sluit aan op buitenunit-regels
+- [open] Voorrangsschakelaar in de meterkast: wanneer is het een alternatief voor een zwaardere aansluiting? | voorrangsschakelaar meterkast | meterkast | Milieu Centraal noemt het bij inductie
