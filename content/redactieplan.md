@@ -89,7 +89,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Huis kopen: zo check je de meterkast en elektrische installatie | meterkast checken huis kopen | meterkast | koopmoment, sluit aan op meetrapport-idee
 - [klaar (2026-10-23, artikel-aardlekschakelaar-slaat-af)] Aardlekschakelaar slaat steeds af: oorzaken en wat je zelf kunt checken | aardlekschakelaar slaat af | meterkast | veel gezochte probleemvraag
 - [open] Elektra in een oud huis: wanneer moet de bedrading vervangen worden? | oude bedrading vervangen | meterkast | koopmoment, sluit aan op meetrapport
-- [open] Bidirectioneel laden (V2G/V2H): kan je auto je huis van stroom voorzien? | bidirectioneel laden thuis | laadpaal | groeiend onderwerp, sluit aan op OCPP 2.0.1
+- [klaar (2026-11-06, artikel-bidirectioneel-laden-thuis)] Bidirectioneel laden (V2G/V2H): kan je auto je huis van stroom voorzien? | bidirectioneel laden thuis | laadpaal | groeiend onderwerp, sluit aan op OCPP 2.0.1
 - [open] Laadpaal met simkaart, wifi of kabel: welke verbinding kies je? | laadpaal internetverbinding | laadpaal | praktische installatievraag
 - [open] Opbrengst zonnepanelen ineens lager: oorzaken en wat je kunt controleren | opbrengst zonnepanelen lager | zonnepanelen | probleemvraag, sluit aan op hagelschade en omvormer
 - [klaar (2026-10-29, artikel-glas-glas-zonnepanelen)] Glas-glas zonnepanelen: voordelen, nadelen en wanneer kies je ervoor | glas-glas zonnepanelen | zonnepanelen | aankoopvraag, sluit aan op hagelbestendigheid
@@ -113,4 +113,5 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-11-03, artikel-buffervat-warmtepomp)] Buffervat bij een warmtepomp: wanneer heb je het nodig? | buffervat warmtepomp | warmtepomp | vervolg op moduleren-artikel
 - [klaar (2026-11-04, artikel-warmtepomp-ontdooien)] Warmtepomp ontdooien in de winter: waarom de buitenunit dampt en wat normaal is | warmtepomp ontdooien | warmtepomp | wintervraag, sluit aan op buffervat- en vorstartikel
 - [vervalt (2026-11-05: al behandeld in artikel-warmtepomp-geluid en artikel-warmtepomp-buitenunit-plaatsen-regels)] Warmtepomp geluid: hoeveel decibel en wat zijn de regels voor de buren? | warmtepomp geluid buren | warmtepomp | veelgestelde vraag, sluit aan op buitenunit-regels
-- [open] Voorrangsschakelaar in de meterkast: wanneer is het een alternatief voor een zwaardere aansluiting? | voorrangsschakelaar meterkast | meterkast | Milieu Centraal noemt het bij inductie
+- [open] Voorrangsschakelaar in de meterkast: wanneer is het een alternatief voor een zwaardere aansluiting? | voorrangsschakelaar meterkast | meterkast | Milieu Centraal noemt het bij inductie (2026-11-06: te weinig betrouwbare bronnen gevonden, later opnieuw proberen)
+- [open] Zonnestroom op de auto laden: zo stem je laadpaal en zonnepanelen op elkaar af | laden op zonnestroom | laadpaal | vervolg op bidirectioneel-artikel
