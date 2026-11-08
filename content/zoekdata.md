@@ -1,4 +1,4 @@
-# Zoekdata voltwijk.nl (2026-10-08 t/m 2026-11-05)
+# Zoekdata voltwijk.nl (2026-10-09 t/m 2026-11-06)
 
 Automatisch gemaakt door tools/gsc.py. Gebruik dit bij het kiezen van onderwerpen (zie REDACTIE.md).
 
@@ -7,9 +7,8 @@ Een artikel dat precies deze vraag beantwoordt, of een bestaande pagina die bete
 
 | zoekwoord | vertoningen | klikken | positie | pagina |
 |---|---|---|---|---|
-| thuisbatterij kopen | 30 | 0 | 5.9 | http://www.voltwijk.nl/ |
-| voltier | 12 | 1 | 5.2 | http://www.voltwijk.nl/ |
-| stooklijn warmtepomp daikin | 8 | 0 | 24.0 | /artikel-warmtepomp-stooklijn-instellen |
+| thuisbatterij kopen | 29 | 0 | 5.8 | http://www.voltwijk.nl/ |
+| stooklijn warmtepomp daikin | 9 | 0 | 22.8 | /artikel-warmtepomp-stooklijn-instellen |
 | thuisbatterij bergen op zoom | 5 | 0 | 29.0 | /installateur-bergen-op-zoom |
 | temperatuur warmtepomp snachts | 4 | 0 | 20.0 | /artikel-warmtepomp-thermostaat-nachtverlaging |
 | thuisbatterij leende | 4 | 0 | 20.0 | /installateur-heeze-leende |
@@ -24,7 +23,7 @@ Een artikel dat precies deze vraag beantwoordt, of een bestaande pagina die bete
 | essent versus budget energie: wie heeft de laagste terugleverkosten? | 2 | 0 | 8.5 | /artikel-terugleverkosten-per-leverancier |
 | hybride warmtepomp constante temperatuur | 2 | 0 | 18.0 | /artikel-hybride-warmtepomp-omschakeltemperatuur |
 | thuisbatterij bergen | 2 | 0 | 25.0 | /installateur-bergen-op-zoom |
-| thuisbatterij vlissingen | 2 | 0 | 6.5 | /thuisbatterij-vlissingen |
+| thuisbatterij vlissingen | 2 | 0 | 6.5 |  |
 | airco installatie etten leur | 1 | 0 | 24.0 | /airco-etten-leur |
 | airco kopen veldhoven | 1 | 0 | 14.0 | /airco-veldhoven |
 | batterij zonnepanelen | 1 | 0 | 7.0 | http://www.voltwijk.nl/ |
@@ -33,123 +32,122 @@ Een artikel dat precies deze vraag beantwoordt, of een bestaande pagina die bete
 | boiler uitzetten tijdens vakantie | 1 | 0 | 7.0 | /artikel-boiler-vakantie-uitzetten |
 | energieneutraal renoveren | 1 | 0 | 25.0 | http://www.voltwijk.nl/ |
 | groepsschakelaar valt uit | 1 | 0 | 21.0 | /artikel-groep-valt-steeds-uit |
-| hoe laadpaal aansluiten meterkast | 1 | 0 | 24.0 | /artikel-laadpaal-slim-laden |
 | hybride warmtepomp installatie houten | 1 | 0 | 12.0 | /warmtepomp-houten |
 | kun je een boiler tijdelijk uitzetten | 1 | 0 | 11.0 | /artikel-boiler-vakantie-uitzetten |
 | laadpaal offerte houten | 1 | 0 | 10.0 | /product-laadpaal |
-| nieuwe meterkast kopen | 1 | 0 | 7.0 | http://www.voltwijk.nl/ |
 | solar kabel | 1 | 0 | 7.0 | http://www.voltwijk.nl/ |
+| stroom groep | 1 | 0 | 8.0 | /artikel-groep-valt-steeds-uit |
+| temperatuur s nachts | 1 | 0 | 30.0 | /artikel-warmtepomp-thermostaat-nachtverlaging |
 | thuisbatterij na afschaffen salderen | 1 | 0 | 26.0 | /artikel-thuisbatterij-na-salderen |
 | thuisbatterij vlaardingen | 1 | 0 | 16.0 | /installateur-vlaardingen |
 | verplaatsen zonnepanelen | 1 | 0 | 5.0 |  |
-| voluno reviews | 1 | 0 | 7.0 |  |
 
 ## Top zoekwoorden
 
 | zoekwoord | vertoningen | klikken | positie |
 |---|---|---|---|
-| voltwijk | 96 | 61 | 1.0 |
-| thuisbatterij breda | 55 | 0 | 69.4 |
-| breda zonnepanelen | 39 | 0 | 91.2 |
+| voltwijk | 102 | 65 | 1.0 |
+| thuisbatterij breda | 56 | 0 | 69.8 |
+| breda zonnepanelen | 49 | 0 | 87.9 |
+| roosendaal zonnepanelen | 36 | 0 | 72.4 |
+| stooklijn warmtepomp instellen | 36 | 0 | 43.2 |
 | oosterhout warmtepomp | 35 | 0 | 79.6 |
-| stooklijn warmtepomp instellen | 35 | 0 | 43.3 |
 | oosterhout zonnepanelen | 33 | 0 | 80.6 |
 | prinsenbeek zonnepanelen | 33 | 0 | 78.9 |
-| prinsenbeek warmtepomp | 31 | 0 | 80.6 |
-| roosendaal zonnepanelen | 31 | 0 | 74.8 |
-| stooklijn | 31 | 0 | 79.3 |
-| thuisbatterij kopen | 30 | 0 | 5.9 |
+| stooklijn | 32 | 0 | 79.5 |
+| prinsenbeek warmtepomp | 30 | 0 | 80.7 |
+| ideale stooklijn warmtepomp | 29 | 0 | 53.3 |
+| thuisbatterij kopen | 29 | 0 | 5.8 |
 | thuisbatterij installateur breda | 27 | 0 | 81.1 |
-| voorbeeld stooklijn warmtepomp | 26 | 0 | 47.5 |
-| ideale stooklijn warmtepomp | 24 | 0 | 56.5 |
+| stooklijn warmtepomp | 25 | 0 | 54.4 |
+| hoe stooklijn warmtepomp instellen | 24 | 0 | 35.0 |
 | stooklijn instellen | 23 | 0 | 67.6 |
 | thuisbatterij oosterhout | 23 | 0 | 85.2 |
-| hoe stooklijn warmtepomp instellen | 22 | 0 | 34.6 |
-| stooklijn warmtepomp | 22 | 0 | 57.2 |
 | thuisbatterij kopen breda | 20 | 0 | 61.0 |
 | zonnepanelen kopen | 19 | 1 | 3.3 |
 | hoofdzekering | 19 | 0 | 37.6 |
 | thuisbatterij roosendaal | 19 | 0 | 38.2 |
+| vloerverwarming temperatuur nacht | 19 | 0 | 36.3 |
 | thuisbatterij salderingsregeling | 16 | 0 | 85.9 |
-| vloerverwarming temperatuur nacht | 16 | 0 | 36.2 |
+| thuisbatterij sleeuwijk | 16 | 0 | 58.3 |
 | thuisbatterij amsterdam | 15 | 0 | 89.5 |
+| voltier | 14 | 1 | 4.9 |
 | salderen met thuisbatterij | 14 | 0 | 87.4 |
-| thuisbatterij sleeuwijk | 14 | 0 | 57.7 |
 | netwerkbeheerder breda | 13 | 0 | 41.7 |
-| voltier | 12 | 1 | 5.2 |
 | 15 zonnepanelen | 12 | 0 | 43.6 |
+| kortsluiting meterkast | 12 | 0 | 40.2 |
 | thuisbatterij installeren breda | 12 | 0 | 78.7 |
-| elektricien zevenbergen | 11 | 0 | 86.8 |
+| thuisbatterij kerkwijk | 11 | 0 | 48.7 |
 | thuisbatterij prinsenbeek | 11 | 0 | 79.9 |
 | enphase thuisbatterij tilburg reeshof | 10 | 0 | 87.4 |
-| thuisbatterij kerkwijk | 10 | 0 | 47.6 |
 | thuisbatterij zeewolde | 10 | 0 | 94.6 |
+| elektricien zevenbergen | 9 | 0 | 86.8 |
+| hoofdautomaat meterkast valt uit | 9 | 0 | 34.2 |
+| stooklijn warmtepomp daikin | 9 | 0 | 22.8 |
 | thuisbatterij installateur amsterdam | 9 | 0 | 82.7 |
 | thuisbatterij laten installeren | 9 | 0 | 72.9 |
-| ulvenhout zonnepanelen | 9 | 0 | 92.6 |
-| elektricien roosendaal | 8 | 0 | 90.8 |
 
 ## Pagina's
 
 | pagina | vertoningen | klikken | positie |
 |---|---|---|---|
-| /artikel-warmtepomp-thermostaat-nachtverlaging | 1074 | 14 | 7.1 |
-| http://www.voltwijk.nl/ | 518 | 23 | 4.3 |
-| /installateur-breda | 499 | 0 | 74.8 |
-| /artikel-warmtepomp-stooklijn-instellen | 374 | 4 | 37.5 |
-| /artikel-thuisbatterij-bij-sma-omvormer | 314 | 9 | 5.3 |
-| /installateur-oosterhout | 246 | 0 | 83.4 |
-| / | 219 | 77 | 3.0 |
-| /artikel-boiler-vakantie-uitzetten | 206 | 5 | 5.2 |
-| /reviews | 155 | 16 | 1.8 |
-| /installateur-roosendaal | 145 | 1 | 67.2 |
+| /artikel-warmtepomp-thermostaat-nachtverlaging | 1294 | 18 | 7.1 |
+| http://www.voltwijk.nl/ | 551 | 25 | 4.2 |
+| /installateur-breda | 507 | 0 | 73.9 |
+| /artikel-warmtepomp-stooklijn-instellen | 405 | 4 | 36.9 |
+| /artikel-thuisbatterij-bij-sma-omvormer | 346 | 10 | 5.1 |
+| /installateur-oosterhout | 252 | 0 | 81.8 |
+| / | 236 | 83 | 2.9 |
+| /artikel-boiler-vakantie-uitzetten | 211 | 5 | 5.1 |
+| /reviews | 169 | 16 | 1.8 |
+| /installateur-roosendaal | 157 | 1 | 66.1 |
+| /producten | 141 | 3 | 4.4 |
+| /hoe-het-werkt | 141 | 1 | 2.7 |
+| /over-ons | 140 | 4 | 2.6 |
 | /artikel-hoofdzekering-doorgebrand | 140 | 1 | 13.9 |
-| /hoe-het-werkt | 132 | 1 | 2.7 |
-| /producten | 129 | 3 | 3.7 |
-| /over-ons | 123 | 4 | 2.5 |
 | /artikel-hybride-warmtepomp-omschakeltemperatuur | 100 | 1 | 13.1 |
-| /installateur-zevenbergen | 87 | 1 | 27.8 |
-| /installateur-bergen-op-zoom | 67 | 0 | 44.1 |
-| /werkgebied | 64 | 1 | 11.8 |
+| /installateur-zevenbergen | 95 | 1 | 24.5 |
+| /installateur-bergen-op-zoom | 72 | 0 | 41.9 |
+| /werkgebied | 71 | 1 | 14.8 |
+| /product-zonnepanelen | 65 | 0 | 41.8 |
+| /thuisbatterij-amsterdam | 65 | 0 | 55.0 |
+| /product-batterij | 64 | 3 | 53.3 |
 | /zonnepanelen-delft | 64 | 0 | 25.2 |
-| /thuisbatterij-amsterdam | 63 | 0 | 56.6 |
-| /product-zonnepanelen | 60 | 0 | 43.4 |
-| /artikel-thuisbatterij-bij-goodwe-omvormer | 54 | 1 | 4.9 |
-| /veelgestelde-vragen | 54 | 0 | 3.8 |
-| /product-batterij | 52 | 3 | 52.1 |
-| /artikel-elektrische-boiler-vs-gas | 48 | 0 | 7.1 |
-| /artikel-thuisbatterij-na-salderen | 45 | 0 | 80.2 |
-| /artikel-zonnepanelen-prijs | 39 | 0 | 7.2 |
-| /inzichten | 35 | 2 | 8.4 |
-| /product-warmtepomp | 35 | 0 | 60.9 |
+| /artikel-thuisbatterij-bij-goodwe-omvormer | 60 | 1 | 4.9 |
+| /zonnepanelen-woerden | 59 | 0 | 40.0 |
+| /veelgestelde-vragen | 58 | 0 | 3.7 |
+| /artikel-elektrische-boiler-vs-gas | 53 | 0 | 7.0 |
+| /artikel-groep-valt-steeds-uit | 49 | 0 | 18.0 |
+| /product-warmtepomp | 46 | 0 | 58.7 |
+| /artikel-thuisbatterij-na-salderen | 44 | 0 | 80.2 |
+| /artikel-zonnepanelen-prijs | 41 | 0 | 6.1 |
+| /inzichten | 36 | 2 | 8.2 |
+| /artikel-terugleverkosten-per-leverancier | 35 | 1 | 6.8 |
+| /privacybeleid | 34 | 1 | 6.4 |
 | /artikel-vergelijking | 34 | 0 | 44.4 |
-| /artikel-terugleverkosten-per-leverancier | 32 | 1 | 7.2 |
 | /artikel-thuisbatterij-1-fase-aansluiting | 32 | 0 | 4.8 |
-| /installateur-hilvarenbeek | 32 | 0 | 41.1 |
-| /privacybeleid | 30 | 1 | 5.9 |
-| /installateur-goeree-overflakkee | 28 | 0 | 25.1 |
-| /installateur-s-hertogenbosch | 28 | 0 | 73.8 |
-| /artikel-groep-valt-steeds-uit | 26 | 0 | 19.1 |
+| /installateur-hilvarenbeek | 31 | 0 | 42.2 |
+| /product-boiler | 28 | 0 | 17.8 |
+| /installateur-goeree-overflakkee | 26 | 0 | 26.9 |
 | /artikel-thuisbatterij-bij-fronius-omvormer | 25 | 2 | 5.9 |
-| /product-boiler | 24 | 0 | 19.6 |
 | /garantie | 22 | 1 | 6.6 |
 | /warmtepomp-zevenbergen | 21 | 1 | 4.9 |
-| /installateur-tilburg | 21 | 0 | 86.5 |
-| /algemene-voorwaarden | 19 | 1 | 5.4 |
+| /installateur-s-hertogenbosch | 20 | 0 | 87.1 |
+| /artikel-boiler-opwarmen-met-zonnestroom | 18 | 0 | 12.0 |
 | /artikel-thuisbatterij-laten-installeren | 18 | 0 | 75.7 |
-| /artikel-boiler-opwarmen-met-zonnestroom | 17 | 0 | 12.5 |
+| /algemene-voorwaarden | 17 | 1 | 5.6 |
+| /artikel-warmtepomp-moduleren | 15 | 0 | 26.5 |
 | /warmtepomp-haarlem | 14 | 0 | 68.2 |
 | /artikel-warmtepomp-sturing | 13 | 1 | 7.1 |
-| /airco-etten-leur | 12 | 0 | 32.3 |
+| /installateur-tilburg | 13 | 0 | 87.8 |
 | /artikel-airco-op-zonnepanelen | 12 | 0 | 82.9 |
-| /artikel-warmtepomp-moduleren | 12 | 0 | 26.8 |
-| /installateur-heeze-leende | 11 | 0 | 14.9 |
-| /artikel-checklist-salderen-2027 | 10 | 0 | 49.4 |
+| /airco-etten-leur | 10 | 0 | 30.7 |
 | /artikel-inlaatcombinatie-boiler-lekt | 10 | 0 | 3.3 |
-| /product-laadpaal | 10 | 0 | 54.1 |
-| /thuisbatterij-barendrecht | 9 | 0 | 55.4 |
-| /zonnepanelen-roosendaal | 9 | 0 | 12.8 |
+| /installateur-heeze-leende | 10 | 0 | 15.9 |
+| /product-laadpaal | 9 | 0 | 51.0 |
+| /thuisbatterij-vlissingen | 9 | 0 | 3.6 |
+| /artikel-cop-en-scop-uitgelegd | 8 | 1 | 8.4 |
 | /artikel-wat-doet-een-thuisbatterij | 8 | 1 | 4.4 |
 | /artikel-3-fase-aansluiting-aanvragen | 8 | 0 | 9.4 |
 | /artikel-airco-onderhoud-en-f-gassen | 8 | 0 | 60.2 |
-| /installateur-hulst | 8 | 0 | 14.1 |
+| /product-meterkast | 8 | 0 | 7.9 |
