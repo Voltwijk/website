@@ -99,7 +99,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Elektrische boiler geeft geen warm water meer: oorzaken en wat je zelf kunt checken | boiler geeft geen warm water | boiler | veel gezochte probleemvraag
 - [klaar (2026-10-30, artikel-hybride-warmtepomp-omschakeltemperatuur)] Hybride warmtepomp omschakeltemperatuur: wanneer neemt de cv-ketel het over? | hybride warmtepomp instellen | warmtepomp | praktische instelvraag, sluit aan op thermostaat-artikel
 - [open] Zonnepanelen naast een stal of veebedrijf: vervuiling, opbrengst en schoonmaken | zonnepanelen vervuiling boerderij | zonnepanelen | vraag uit de praktijk (klant naast veehouderij)
-- [open] Hoe lang duurt het voordat een elektrische boiler warm is? Opwarmtijd per inhoud en vermogen | boiler opwarmtijd | boiler | praktische vraag, sluit aan op vakantie-artikel
+- [klaar (2026-11-08, artikel-boiler-opwarmtijd)] Hoe lang duurt het voordat een elektrische boiler warm is? Opwarmtijd per inhoud en vermogen | boiler opwarmtijd | boiler | praktische vraag, sluit aan op vakantie-artikel
 - [klaar (2026-11-01, artikel-groep-valt-steeds-uit)] Groep valt steeds uit: overbelasting of kortsluiting, en wat je zelf kunt doen | groep valt uit meterkast | meterkast | probleemvraag, sluit aan op aardlek-artikel
 - [klaar (2026-10-27, artikel-douche-wtw)] Douche-wtw (warmteterugwinning): hoeveel bespaar je en wanneer is het zinvol? | douche wtw besparing | boiler | vervolg op douchekop-artikel, Milieu Centraal 40-50%
 - [klaar (2026-11-05, artikel-smeltzekering-of-hoofdautomaat)] Smeltzekering of hoofdautomaat: wat heb je en kun je wisselen? | hoofdautomaat netbeheerder | meterkast | vervolgvraag op hoofdzekering-artikel
@@ -116,3 +116,4 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Voorrangsschakelaar in de meterkast: wanneer is het een alternatief voor een zwaardere aansluiting? | voorrangsschakelaar meterkast | meterkast | Milieu Centraal noemt het bij inductie (2026-11-06: te weinig betrouwbare bronnen gevonden, later opnieuw proberen)
 - [klaar (2026-11-07, artikel-auto-laden-op-zonnestroom)] Zonnestroom op de auto laden: zo stem je laadpaal en zonnepanelen op elkaar af | laden op zonnestroom | laadpaal | vervolg op bidirectioneel-artikel
 - [open] Laadpaal en thuisbatterij combineren: wat laadt wanneer, en heeft het zin? | laadpaal thuisbatterij combineren | batterij | koopvraag, sluit aan op zonnestroom-laden
+- [open] Boiler vervangen: hoe oud is te oud en wat zijn de signalen? | boiler vervangen signalen | boiler | koopmoment, sluit aan op boiler-artikelen
