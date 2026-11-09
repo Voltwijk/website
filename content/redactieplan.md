@@ -108,7 +108,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-10-31, artikel-van-het-gas-af-volgorde)] Van het gas af: in welke volgorde pak je verwarming, warm water en koken aan? | van het gas af stappenplan | warmtepomp | koopintentie, bundelt gas-artikelen
 - [open] Bifacial zonnepanelen: wanneer leveren dubbelzijdige panelen echt meer op? | bifacial zonnepanelen | zonnepanelen | vervolg op glas-glas-artikel, vooral platte daken
 - [klaar (2026-11-02, artikel-warmtepomp-moduleren)] Warmtepomp moduleren: waarom een laag minimumvermogen belangrijk is | warmtepomp moduleren | warmtepomp | koopvraag, Milieu Centraal noemt onder 2 kW
-- [open] All-electric-ready hybride warmtepomp: wat is het en wanneer kies je ervoor? | all electric ready warmtepomp | warmtepomp | vervolg op volgorde-artikel
+- [klaar (2026-11-09, artikel-all-electric-ready-warmtepomp)] All-electric-ready hybride warmtepomp: wat is het en wanneer kies je ervoor? | all electric ready warmtepomp | warmtepomp | vervolg op volgorde-artikel
 - [open] Hoeveel groepen heeft een keuken nodig? Inductie, oven, vaatwasser en close-in boiler | groepen keuken meterkast | meterkast | vervolg op groep-valt-uit-artikel
 - [klaar (2026-11-03, artikel-buffervat-warmtepomp)] Buffervat bij een warmtepomp: wanneer heb je het nodig? | buffervat warmtepomp | warmtepomp | vervolg op moduleren-artikel
 - [klaar (2026-11-04, artikel-warmtepomp-ontdooien)] Warmtepomp ontdooien in de winter: waarom de buitenunit dampt en wat normaal is | warmtepomp ontdooien | warmtepomp | wintervraag, sluit aan op buffervat- en vorstartikel
@@ -117,3 +117,4 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-11-07, artikel-auto-laden-op-zonnestroom)] Zonnestroom op de auto laden: zo stem je laadpaal en zonnepanelen op elkaar af | laden op zonnestroom | laadpaal | vervolg op bidirectioneel-artikel
 - [open] Laadpaal en thuisbatterij combineren: wat laadt wanneer, en heeft het zin? | laadpaal thuisbatterij combineren | batterij | koopvraag, sluit aan op zonnestroom-laden
 - [open] Boiler vervangen: hoe oud is te oud en wat zijn de signalen? | boiler vervangen signalen | boiler | koopmoment, sluit aan op boiler-artikelen
+- [open] Verwarmingstest: is je huis klaar voor een volledig elektrische warmtepomp? | verwarmingstest warmtepomp | warmtepomp | winterseizoen, Milieu Centraal-test op 50 graden
