@@ -52,7 +52,7 @@ Hoofdfoto's van artikelen die niet van Voltwijk zelf zijn. Alle foto's komen van
 | foto-19980200 | https://www.pexels.com/photo/19980200/ | artikel-boiler-ontkalken-onderhoud, artikel-welke-boilerinhoud-heb-ik-nodig |
 | foto-13772355 | https://www.pexels.com/photo/13772355/ | artikel-boiler-opwarmtijd, artikel-cv-ketel-weg-elektrische-boiler |
 | foto-4194866 | https://www.pexels.com/photo/4194866/ | artikel-gasverbruik-warm-water-zomer |
-| foto-20046689 | https://www.pexels.com/photo/20046689/ | artikel-buffervat-warmtepomp, artikel-warmtepompboiler-of-elektrische-boiler |
+| foto-20046689 | https://www.pexels.com/photo/20046689/ | artikel-all-electric-ready-warmtepomp, artikel-buffervat-warmtepomp, artikel-warmtepompboiler-of-elektrische-boiler |
 | foto-29226623 | https://www.pexels.com/photo/29226623/ | artikel-waterhardheid-west-brabant |
 | foto-20046692 | https://www.pexels.com/photo/20046692/ | artikel-airco-plaatsen-regels-vergunning, artikel-cop-en-scop-uitgelegd |
 | foto-20046690 | https://www.pexels.com/photo/20046690/ | artikel-cv-ketel-vervangen-of-warmtepomp |
