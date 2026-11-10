@@ -12,6 +12,8 @@ Dit is de vaste werkwijze voor de dagelijkse blog. Volg hem stap voor stap. Doel
 3. Lees `content/zoekdata.md` (elke nacht bijgewerkt uit Google Search Console). Staat onder "Kansen" een zoekwoord met duidelijk meer vertoningen dan de rest (en nog geen artikel dat precies die vraag beantwoordt), dan krijgt dat voorrang. Zolang de aantallen erg klein zijn (onder ~20 vertoningen), volg je gewoon het redactieplan.
 4. **Nooit** een onderwerp kiezen dat al een artikel heeft. Wel mag je een bestaand artikel bijwerken als het verouderd is (zie stap 6).
 
+**Koopintentie gaat voor (sinds nov 2026).** Het doel van de blog is aanvragen, niet alleen bezoekers. Kies daarom minstens 4 van de 7 dagen een onderwerp met koopintentie: kosten/prijs, laten installeren, terugverdientijd, offerte vergelijken, "X of Y kiezen", "wanneer vervangen". Die onderwerpen staan bovenaan het redactieplan onder "Koopintentie". Onderhouds- en storingsvragen ("groep valt uit", "boiler lekt") blijven welkom, maar laat ze altijd eindigen met een concrete vervolgstap (offerte of calculator) en een link naar de productpagina en een plaatspagina (bijv. `/thuisbatterij-breda`).
+
 Voorkeur (wat het snelst in Google scoort voor een jonge site):
 - Specifieke vragen met koopintentie ("thuisbatterij 3-fase of 1-fase", "warmtepomp geluid buren").
 - Lokaal + onderwerp ("netcongestie West-Brabant", "subsidie zonnepanelen Moerdijk" als die bestaat).
