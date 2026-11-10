@@ -62,7 +62,7 @@ BIZ = {
  "openingHoursSpecification": [{"@type": "OpeningHoursSpecification",
    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "17:30"}],
  "areaServed": {"@type": "AdministrativeArea", "name": "West-Brabant"},
- "sameAs": ["https://instagram.com/voltwijk", "https://www.tiktok.com/@voltwijk"]
+ "sameAs": ["https://instagram.com/voltwijknl", "https://www.tiktok.com/@voltwijk"]
 }
 SELLER = {"@type": "HomeAndConstructionBusiness", "@id": BIZ_ID, "name": "Voltwijk", "url": SITE + "/"}
 def future_draft(slug):  # artikel met een datum in de toekomst = concept, niet publiceren (zie articles.py)
