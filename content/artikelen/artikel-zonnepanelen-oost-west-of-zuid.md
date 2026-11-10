@@ -99,7 +99,7 @@ Heb je een dak met meerdere richtingen, dan kun je panelen verdelen. Let dan op 
 
 ## Hoe Voltwijk helpt
 
-Onze eigen monteurs kijken naar de ligging van je dak, schaduw en je verbruik, en adviseren eerlijk welke indeling het meest oplevert. Voltwijk plaatst zonnepanelen van 440 Wp full-black, vanaf € 3.999 voor 12 panelen. Bekijk de [zonnepanelen-pagina](/product-zonnepanelen) of [plan een gratis adviesgesprek](/contact).
+Onze eigen monteurs kijken naar de ligging van je dak, schaduw en je verbruik, en adviseren eerlijk welke indeling het meest oplevert. Voltwijk plaatst zonnepanelen van 470 Wp full-black, vanaf € 3.450 voor 6 panelen. Bekijk de [zonnepanelen-pagina](/product-zonnepanelen) of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Hoeveel minder leveren zonnepanelen op oost-west op?

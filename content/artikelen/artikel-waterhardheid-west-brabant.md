@@ -113,7 +113,7 @@ Een paar eenvoudige gewoontes helpen meer dan een duur apparaat:
 
 ## Hoe Voltwijk helpt
 
-Voltwijk zit in Zevenbergen en kent het water in de regio. Wij plaatsen boilers met eigen monteurs, vanaf € 1.199 inclusief installatie, met 2 jaar garantie op de installatie. Twijfel je welke boiler past bij jouw huis en verbruik? [Plan een gratis adviesgesprek](/contact) of vraag een offerte aan.
+Voltwijk zit in Zevenbergen en kent het water in de regio. Wij plaatsen boilers met eigen monteurs, vanaf € 1.487,60 excl. btw inclusief installatie, met 2 jaar garantie op de installatie. Twijfel je welke boiler past bij jouw huis en verbruik? [Plan een gratis adviesgesprek](/contact) of vraag een offerte aan.
 
 faq:
 Q: Hoe hard is het water in Breda?

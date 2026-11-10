@@ -23,7 +23,7 @@ G = {
  'warmtepomp': [
   ['Hybride of volledig elektrisch?', 'Een hybride warmtepomp werkt samen met je cv-ketel en past in bijna elk huis. Volledig elektrisch vervangt de ketel helemaal, maar vraagt om goede isolatie en een lage aanvoertemperatuur.', 'artikel-hybride-of-volledige-warmtepomp'],
   ['Is je huis geschikt?', 'Een simpele test: zet je cv-ketel in de winter op 55 °C aanvoertemperatuur. Blijft het binnen warm genoeg, dan is je huis vaak geschikt.', 'artikel-is-mijn-huis-geschikt-voor-een-warmtepomp'],
-  ['Wat betekenen COP en SCOP?', 'De COP is hoeveel warmte je krijgt per kWh stroom, op één meetpunt. Onze warmtepomp haalt 4,7 bij A7/W35: 1 kWh stroom wordt bijna 5 kWh warmte. De SCOP is het realistischere seizoensgemiddelde.', 'artikel-cop-en-scop-uitgelegd'],
+  ['Wat betekenen COP en SCOP?', 'De COP is hoeveel warmte je krijgt per kWh stroom, op één meetpunt. Een COP van 4 betekent: 1 kWh stroom wordt 4 kWh warmte. De SCOP is het realistischere seizoensgemiddelde.', 'artikel-cop-en-scop-uitgelegd'],
   ['Welke subsidie krijg je?', 'Voor warmtepompen geldt de ISDE-subsidie. Je vraagt die aan ná de installatie; voor een warmtepomp van 6 kW is dat in 2026 € 2.375, of € 2.575 met energielabel A+++.', 'artikel-isde-subsidie-2026'],
   ['Maakt een warmtepomp veel geluid?', 'Moderne buitenunits zijn stil, en er gelden wettelijke geluidsgrenzen op de erfgrens. De plek van de buitenunit maakt het grootste verschil.', 'artikel-warmtepomp-geluid'],
   ['Mag de netbeheerder je warmtepomp aansturen?', 'Bij drukte op het stroomnet kan een warmtepomp tijdelijk worden teruggeregeld. Wat dat betekent voor je comfort, lees je hier.', 'artikel-warmtepomp-sturing'],
@@ -37,7 +37,7 @@ G = {
  ],
  'boiler': [
   ['Welke inhoud heb je nodig?', 'Dat hangt vooral af van het aantal personen en hoe lang en vaak je doucht. In het artikel staat een vuistregel per huishouden.', 'artikel-welke-boilerinhoud-heb-ik-nodig'],
-  ['Warmtepompboiler of gewone elektrische boiler?', 'Een warmtepompboiler haalt warmte uit de lucht en is ongeveer drie keer zo zuinig als een gewone elektrische boiler. Onze boiler is van dit type (COP 3,1).', 'artikel-warmtepompboiler-of-elektrische-boiler'],
+  ['Warmtepompboiler of gewone elektrische boiler?', 'Een warmtepompboiler haalt warmte uit de lucht en is ongeveer drie keer zo zuinig als een gewone elektrische boiler. Wij installeren gewone elektrische boilers van Ariston, geen warmtepompboilers.', 'artikel-warmtepompboiler-of-elektrische-boiler'],
   ['Opwarmen met je eigen zonnestroom', 'Laat de boiler midden op de dag opwarmen, als je panelen het meest leveren. Zo werkt je boiler als een batterij voor warmte.', 'artikel-boiler-opwarmen-met-zonnestroom'],
   ['Elektrisch of op gas?', 'Wat is goedkoper in 2026? We zetten de kosten en de voor- en nadelen naast elkaar.', 'artikel-elektrische-boiler-vs-gas'],
  ],

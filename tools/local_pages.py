@@ -15,13 +15,13 @@ def inline(t):
     return re.sub(r'\[([^\]]+)\]\((/[^)\s]*)\)', r'<a href="\2">\1</a>', t)
 
 PRODUCTS = [
- ('Zonnepanelen', 'vanaf € 3.999', '/product-zonnepanelen', 'thumb-zonnepanelen'),
+ ('Zonnepanelen', 'vanaf € 3.450', '/product-zonnepanelen', 'thumb-zonnepanelen'),
  ('Thuisbatterij', 'vanaf € 4.000 excl. btw', '/product-batterij', 'thumb-batterij'),
- ('Warmtepomp', 'vanaf € 6.750', '/product-warmtepomp', 'thumb-warmtepomp'),
- ('Airconditioning', 'vanaf € 1.899', '/product-airco', 'thumb-airco'),
- ('Elektrische boiler', 'vanaf € 1.199', '/product-boiler', 'thumb-boiler'),
- ('Laadpaal', 'vanaf € 1.299', '/product-laadpaal', 'thumb-laadpaal'),
- ('Meterkastaanpassing', 'vanaf € 649', '/product-meterkast', 'thumb-meterkast'),
+ ('Warmtepomp', 'vanaf € 8.650 excl. btw', '/product-warmtepomp', 'thumb-warmtepomp'),
+ ('Airconditioning', 'vanaf € 1.750 excl. btw', '/product-airco', 'thumb-airco'),
+ ('Elektrische boiler', 'vanaf € 1.487,60 excl. btw', '/product-boiler', 'thumb-boiler'),
+ ('Laadpaal', 'vanaf € 1.074,38 excl. btw', '/product-laadpaal', 'thumb-laadpaal'),
+ ('Meterkastaanpassing', 'vanaf € 700 excl. btw', '/product-meterkast', 'thumb-meterkast'),
 ]
 ART = {  # slug: titel (voor de 'lees ook'-links)
  'artikel-salderingsregeling-2027': 'Salderingsregeling stopt in 2027: wat betekent dat?',
@@ -122,7 +122,7 @@ CITIES = [
   local=[('Netbeheerder Enexis', 'In Tilburg is Enexis de netbeheerder. Wij melden je installatie aan en vragen een zwaardere aansluiting aan als je warmtepomp of laadpaal dat nodig heeft.'),
          ('Woningen uit de jaren \'80 en \'90', 'Wijken als de Reeshof zijn grotendeels gebouwd vanaf de jaren \'80. Die woningen zijn vaak redelijk geïsoleerd en daardoor geschikt voor een hybride warmtepomp, of met extra maatregelen voor een volledige.'),
          ('Thuisbatterij met dynamisch contract', 'Met een dynamisch energiecontract laad je je batterij op als stroom goedkoop is en gebruik je hem als stroom duur is. We leggen eerlijk uit wanneer dat loont.'),
-         ('Laadpaal thuis', 'Een slimme 11 kW laadpaal laadt de meeste elektrische auto\'s in een nacht vol. Met slim laden gebruik je de goedkoopste uren.')],
+         ('Laadpaal thuis', 'Een slimme laadpaal laadt de meeste elektrische auto\'s in een nacht vol. Met slim laden gebruik je de goedkoopste uren.')],
   faq=('Hoeveel kost een thuisbatterij in Tilburg?', 'Een thuisbatterij kost bij ons vanaf € 4.000 excl. btw, inclusief installatie. Met de batterijcalculator zie je binnen een minuut welke batterij bij jouw woning past en wat hij kost.'),
   near=['Berkel-Enschot', 'Udenhout', 'Goirle', 'Oisterwijk', 'Hilvarenbeek', 'Dongen'],
   buren=['breda', 'oosterhout', 's-hertogenbosch', 'eindhoven'],
@@ -335,7 +335,7 @@ for c in CITIES:
 # Etten-Leur: een sectie die precies de zoekvraag beantwoordt (kop, inleiding, stappen, slot)
 EXTRA = {
  'etten-leur': ('Zonnepanelen of een thuisbatterij laten installeren in Etten-Leur: zo gaat het',
-   'Kort gezegd: je kiest wat je wilt, wij kijken naar je dak en meterkast, en onze eigen monteurs installeren alles voor een vaste prijs. Een thuisbatterij kost vanaf ' + eur(VANAF) + ' excl. btw en zonnepanelen vanaf € 3.999 voor 12 panelen, allebei inclusief installatie.',
+   'Kort gezegd: je kiest wat je wilt, wij kijken naar je dak en meterkast, en onze eigen monteurs installeren alles voor een vaste prijs. Een thuisbatterij kost vanaf ' + eur(VANAF) + ' excl. btw en zonnepanelen vanaf € 3.450 voor 6 panelen, allebei inclusief installatie.',
    ['**Kies wat je wilt.** Alleen zonnepanelen, alleen een thuisbatterij of allebei. Met de [batterijcalculator](/thuisbatterij-berekenen) zie je welke batterij past en wat hij kost.',
     '**We checken je dak en meterkast.** Ligging, schaduw en ruimte op het dak, en of je aansluiting 1-fase of 3-fase is. Moet er iets bij, dan hoor je dat vooraf.',
     '**Onze eigen monteurs installeren.** Geen onderaannemers. Wij melden je installatie aan bij de netbeheerder; in Etten-Leur is dat in de regel Enexis.',
@@ -446,9 +446,9 @@ def cta(title, sub):
 def city_faq(c):
     n, nb = label(c), c['nb']
     p = {x['id']: x for x in PAKKETTEN}
-    kost = ((f'Wat kost een thuisbatterij in {n}?', f'Een thuisbatterij kost bij ons {eur(p["bat10"]["prijs"])} (10 kWh), {eur(p["bat16-1"]["prijs"])} (16 kWh, 1-fase) of {eur(p["bat16-3"]["prijs"])} (16 kWh, 3-fase), exclusief btw en inclusief installatie. Zonnepanelen kosten vanaf € 3.999 en een airco vanaf € 1.899. Met de batterijcalculator zie je in een minuut welke batterij bij je past.')
+    kost = ((f'Wat kost een thuisbatterij in {n}?', f'Een thuisbatterij kost bij ons {eur(p["bat10"]["prijs"])} (10 kWh), {eur(p["bat16-1"]["prijs"])} (16 kWh, 1-fase) of {eur(p["bat16-3"]["prijs"])} (16 kWh, 3-fase), exclusief btw en inclusief installatie. Zonnepanelen kosten vanaf € 3.450 en een airco vanaf € 1.750 excl. btw. Met de batterijcalculator zie je in een minuut welke batterij bij je past.')
             if c['wb'] else
-            (f'Wat kost de installatie in {n}?', f'Je betaalt in {n} een vaste prijs die je vooraf kent: zonnepanelen vanaf € 3.999, een thuisbatterij vanaf € 4.000 excl. btw en een warmtepomp vanaf € 6.750, inclusief installatie. Met de batterijcalculator zie je binnen een minuut welke batterij bij jouw woning past en wat hij kost.'))
+            (f'Wat kost de installatie in {n}?', f'Je betaalt in {n} een vaste prijs die je vooraf kent: zonnepanelen vanaf € 3.450, een thuisbatterij vanaf € 4.000 excl. btw en een warmtepomp vanaf € 8.650 excl. btw, inclusief installatie. Met de batterijcalculator zie je binnen een minuut welke batterij bij jouw woning past en wat hij kost.'))
     nbq = ((f'Wie regelt de netbeheerder en de vergunning in {n}?', f'Dat doen wij. In {n} is {NB[nb]} in de regel de netbeheerder (je exacte adres is bepalend). Wij regelen de aanmelding, een eventuele verzwaring van je aansluiting, een vergunning als die nodig is. Bij een warmtepomp helpen we je met de ISDE-aanvraag.')
            if c['wb'] else
            (f'Wie regelt de netbeheerder en de vergunning in {n}?', f'Dat doen wij. In {n} is {NB[nb]} de netbeheerder (het precieze adres is bepalend). Wij regelen de aanmelding, een eventuele verzwaring van je aansluiting, een vergunning als die nodig is. Bij een warmtepomp helpen we je met de ISDE-aanvraag.'))

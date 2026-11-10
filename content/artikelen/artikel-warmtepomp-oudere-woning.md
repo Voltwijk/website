@@ -102,7 +102,7 @@ Een stappenplan voor een ouder huis:
 
 ## Hoe Voltwijk helpt
 
-Voltwijk installeert lucht/water-warmtepompen met een COP van 4,7, vanaf € 6.750. We helpen je met de ISDE-aanvraag; die doe je na de installatie bij RVO. Onze eigen monteurs kijken eerlijk met je mee of je huis al klaar is of dat een tussenstap slimmer is. Bekijk de [warmtepomp](/product-warmtepomp) of [plan een gratis adviesgesprek](/contact).
+Voltwijk installeert lucht/water-warmtepompen met een COP van 4,7, vanaf € 8.650 excl. btw. We helpen je met de ISDE-aanvraag; die doe je na de installatie bij RVO. Onze eigen monteurs kijken eerlijk met je mee of je huis al klaar is of dat een tussenstap slimmer is. Bekijk de [warmtepomp](/product-warmtepomp) of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Kan een warmtepomp in een jaren 30-woning?

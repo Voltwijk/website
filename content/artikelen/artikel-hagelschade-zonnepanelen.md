@@ -70,7 +70,7 @@ Hagel tegenhouden kan niet. Wel kun je de kans op problemen kleiner maken:
 
 ## Hoe Voltwijk helpt
 
-Twijfel je na een hagelbui of je panelen nog goed werken, of wil je nieuwe zonnepanelen laten plaatsen? Onze eigen monteurs kijken naar je installatie en je opbrengst. Zonnepanelen bij Voltwijk kosten vanaf € 3.999, met een vaste prijs inclusief installatie. Meer informatie vind je op de pagina over [zonnepanelen](/product-zonnepanelen), of [plan een gratis adviesgesprek](/contact).
+Twijfel je na een hagelbui of je panelen nog goed werken, of wil je nieuwe zonnepanelen laten plaatsen? Onze eigen monteurs kijken naar je installatie en je opbrengst. Zonnepanelen bij Voltwijk kosten vanaf € 3.450, met een vaste prijs inclusief installatie. Meer informatie vind je op de pagina over [zonnepanelen](/product-zonnepanelen), of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Kunnen zonnepanelen tegen hagel?

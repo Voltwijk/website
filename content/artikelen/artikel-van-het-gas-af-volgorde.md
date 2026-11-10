@@ -63,7 +63,7 @@ Een warmtepomp, inductiekookplaat en eventueel een laadpaal vragen meer van je m
 
 ## Hoe Voltwijk helpt
 
-Wil je van het gas af en weten welke stap voor jouw huis het meest oplevert? Onze eigen monteurs kijken naar je woning, je isolatie, je radiatoren en je meterkast. Een warmtepomp bij Voltwijk kost vanaf € 6.750, met een vaste prijs inclusief installatie. We helpen je met de ISDE-aanvraag; die doe je na de installatie bij RVO. Meer informatie vind je op de pagina over de [warmtepomp](/product-warmtepomp), of [plan een gratis adviesgesprek](/contact).
+Wil je van het gas af en weten welke stap voor jouw huis het meest oplevert? Onze eigen monteurs kijken naar je woning, je isolatie, je radiatoren en je meterkast. Een warmtepomp bij Voltwijk kost vanaf € 8.650 excl. btw, met een vaste prijs inclusief installatie. We helpen je met de ISDE-aanvraag; die doe je na de installatie bij RVO. Meer informatie vind je op de pagina over de [warmtepomp](/product-warmtepomp), of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: In welke volgorde ga je van het gas af?

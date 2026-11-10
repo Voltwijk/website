@@ -69,7 +69,7 @@ Heb je zonnepanelen? Dan kun je je boiler overdag laten opwarmen met je eigen zo
 
 ## Hoe Voltwijk helpt
 
-Wil je je warm water zuiniger maken, bijvoorbeeld met een nieuwe boiler die je opwarmt met zonnestroom? Onze eigen monteurs kijken welke boiler past bij je huishouden en je verbruik. Een boiler bij Voltwijk kost vanaf € 1.199, met een vaste prijs inclusief installatie. Meer informatie vind je op de pagina over de [boiler](/product-boiler), of [plan een gratis adviesgesprek](/contact).
+Wil je je warm water zuiniger maken, bijvoorbeeld met een nieuwe boiler die je opwarmt met zonnestroom? Onze eigen monteurs kijken welke boiler past bij je huishouden en je verbruik. Een boiler bij Voltwijk kost vanaf € 1.487,60 excl. btw, met een vaste prijs inclusief installatie. Meer informatie vind je op de pagina over de [boiler](/product-boiler), of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Hoeveel bespaar je met een waterbesparende douchekop?

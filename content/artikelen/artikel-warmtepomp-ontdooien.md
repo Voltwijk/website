@@ -56,7 +56,7 @@ Volgens NIBE kan een onvolledige ontdooicyclus onder meer te maken hebben met ee
 
 ## Hoe Voltwijk helpt
 
-Twijfel je of je warmtepomp goed ontdooit, of wil je weten welke warmtepomp past bij je huis? Onze eigen monteurs kijken naar de plek van de buitenunit, de afvoer van het smeltwater en de instellingen. Een warmtepomp bij Voltwijk kost vanaf € 6.750, met een vaste prijs inclusief installatie. We helpen je met de ISDE-aanvraag; die doe je na de installatie bij RVO. Meer informatie vind je op de pagina over de [warmtepomp](/product-warmtepomp), of [plan een gratis adviesgesprek](/contact).
+Twijfel je of je warmtepomp goed ontdooit, of wil je weten welke warmtepomp past bij je huis? Onze eigen monteurs kijken naar de plek van de buitenunit, de afvoer van het smeltwater en de instellingen. Een warmtepomp bij Voltwijk kost vanaf € 8.650 excl. btw, met een vaste prijs inclusief installatie. We helpen je met de ISDE-aanvraag; die doe je na de installatie bij RVO. Meer informatie vind je op de pagina over de [warmtepomp](/product-warmtepomp), of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Is het normaal dat er damp uit mijn warmtepomp komt?

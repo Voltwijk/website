@@ -42,15 +42,15 @@ NEW_PRICE = ("    var bat = (id==='batterij' && window.VW_BAT) ? window.VW_BAT :
              "    return {id:id, label:(bat ? bat.label : PRODUCTS[id].name), price:price};")
 
 PRODUCT_FIELDS = {
-    'headline': "Een thuisbatterij van 10 of 16 kWh, inclusief installatie — vanaf " + eur(VANAF) + ".",
-    'bullets': ["10 of 16 kWh opslag met hybride omvormer, voor 1-fase én 3-fase aansluitingen",
-                "Vaste prijs inclusief installatie: je weet vooraf precies wat je betaalt",
+    'headline': "Een thuisbatterij van 10 tot 35 kWh, inclusief installatie en EMS — vanaf " + eur(VANAF) + " excl. btw.",
+    'bullets': ["FoxESS of Dyness met Solis-omvormer, voor 1-fase én 3-fase aansluitingen",
+                "Vaste prijs inclusief installatie en slimme sturing (EMS): je weet vooraf wat je betaalt",
                 "Geïnstalleerd door ons eigen team, klaar voor het einde van salderen in 2027"],
     'cta': 'Bereken je thuisbatterij',
-    'price': 'vanaf ' + eur(VANAF),
-    'specs': [['Capaciteit', '10 of 16 kWh'], ['Omvormer', '5 of 8 kW hybride'], ['Aansluiting', '1-fase of 3-fase'],
-              ['Prijs', eur(PAKKETTEN[0]['prijs']) + ' – ' + eur(PAKKETTEN[-1]['prijs']) + ' incl. installatie'],
-              ['Garantie', '10 jaar'], ['App-koppeling', 'Ja']],
+    'price': 'vanaf ' + eur(VANAF) + ' excl. btw',
+    'specs': [['Capaciteit', '10 tot 35 kWh'], ['Omvormer', '5 tot 12 kW hybride'], ['Aansluiting', '1-fase of 3-fase'],
+              ['Prijs', eur(VANAF) + ' – € 9.950 excl. btw, incl. installatie'],
+              ['Merken', 'FoxESS, Dyness, Solis'], ['Garantie', '10 jaar']],
 }
 
 def js_str(s): return "'" + s.replace('\\', '\\\\').replace("'", "\\'") + "'"

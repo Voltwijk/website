@@ -56,7 +56,7 @@ Merk je dat je warmtepomp op milde dagen heel vaak aan- en uitslaat, laat dan ee
 
 ## Hoe Voltwijk helpt
 
-Twijfel je welk vermogen past bij je huis, of pendelt je warmtepomp? Onze eigen monteurs berekenen wat je huis nodig heeft en stellen de warmtepomp daarop af. Een warmtepomp bij Voltwijk kost vanaf € 6.750, met een vaste prijs inclusief installatie. We helpen je met de ISDE-aanvraag; die doe je na de installatie bij RVO. Meer informatie vind je op de pagina over de [warmtepomp](/product-warmtepomp), of [plan een gratis adviesgesprek](/contact).
+Twijfel je welk vermogen past bij je huis, of pendelt je warmtepomp? Onze eigen monteurs berekenen wat je huis nodig heeft en stellen de warmtepomp daarop af. Een warmtepomp bij Voltwijk kost vanaf € 8.650 excl. btw, met een vaste prijs inclusief installatie. We helpen je met de ISDE-aanvraag; die doe je na de installatie bij RVO. Meer informatie vind je op de pagina over de [warmtepomp](/product-warmtepomp), of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Wat betekent moduleren bij een warmtepomp?

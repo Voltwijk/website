@@ -78,7 +78,7 @@ Heb je zonnepanelen, dan zijn er twee goedkope bronnen: je eigen zonnestroom ove
 
 ## Hoe Voltwijk helpt
 
-Wil je slim laden op goedkope uren? Voltwijk installeert laadpalen met eigen monteurs en een vaste prijs inclusief installatie, vanaf € 1.299. We kijken ook naar je meterkast en of load balancing nodig is. Meer informatie vind je op de pagina over de [laadpaal](/product-laadpaal), of [plan een gratis adviesgesprek](/contact).
+Wil je slim laden op goedkope uren? Voltwijk installeert laadpalen met eigen monteurs en een vaste prijs inclusief installatie, vanaf € 1.074,38 excl. btw. We kijken ook naar je meterkast en of load balancing nodig is. Meer informatie vind je op de pagina over de [laadpaal](/product-laadpaal), of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Wanneer is laden met een dynamisch contract het goedkoopst?

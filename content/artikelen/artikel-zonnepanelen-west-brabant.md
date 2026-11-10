@@ -17,7 +17,7 @@ Het korte antwoord: op een gewoon dak heb je meestal geen vergunning nodig, en j
 
 De prijs hangt af van het aantal panelen, het type omvormer en je dak. Een plat dak vraagt bijvoorbeeld een ander montagesysteem dan een schuin pannendak. Ook de afstand tot de meterkast en de staat van je meterkast spelen mee.
 
-Bij Voltwijk begint een installatie met zonnepanelen **vanaf € 3.999**, met een vaste prijs inclusief installatie. Wat jij precies nodig hebt, hangt af van je verbruik en je dak. Hoeveel panelen past bij jouw huishouden, lees je in [hoeveel zonnepanelen heb je nodig](/artikel-hoeveel-zonnepanelen-nodig). Een breder overzicht van prijzen staat in [wat kosten zonnepanelen](/artikel-zonnepanelen-prijs).
+Bij Voltwijk begint een installatie met zonnepanelen **vanaf € 3.450**, met een vaste prijs inclusief installatie. Wat jij precies nodig hebt, hangt af van je verbruik en je dak. Hoeveel panelen past bij jouw huishouden, lees je in [hoeveel zonnepanelen heb je nodig](/artikel-hoeveel-zonnepanelen-nodig). Een breder overzicht van prijzen staat in [wat kosten zonnepanelen](/artikel-zonnepanelen-prijs).
 
 ### Betaal je btw op zonnepanelen?
 
@@ -117,7 +117,7 @@ Voltwijk plaatst zonnepanelen in heel West-Brabant, met eigen monteurs en een va
 
 faq:
 Q: Wat kost het om zonnepanelen te laten plaatsen in West-Brabant?
-A: Dat hangt af van het aantal panelen, de omvormer en je dak. Bij Voltwijk begint een installatie met zonnepanelen vanaf € 3.999, met een vaste prijs inclusief installatie. Op zonnepanelen voor je woning betaal je 0% btw.
+A: Dat hangt af van het aantal panelen, de omvormer en je dak. Bij Voltwijk begint een installatie met zonnepanelen vanaf € 3.450, met een vaste prijs inclusief installatie. Op zonnepanelen voor je woning betaal je 0% btw.
 Q: Heb ik een vergunning nodig voor zonnepanelen?
 A: Op een gewone woning meestal niet. Bij een rijksmonument altijd wel, en in een beschermd stads- of dorpsgezicht meestal ook. In Willemstad heb je voor panelen op een voor- of zijdakvlak altijd een omgevingsvergunning nodig.
 Q: Zijn zonnepanelen nog rendabel als salderen stopt?

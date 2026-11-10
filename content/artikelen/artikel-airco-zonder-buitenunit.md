@@ -65,7 +65,7 @@ Let ook op: een split-airco bevat koudemiddel en wordt aangesloten door een inst
 
 ## Hoe Voltwijk helpt
 
-Voltwijk installeert split-airco's met een stille binnenunit (19 dB(A)) en energielabel A+++, vanaf € 1.899 inclusief installatie door onze eigen monteurs. We kijken vooraf mee waar de buitenunit kan staan en wat er mag. Vraag een offerte aan of plan een gratis adviesgesprek, dan bekijken we samen of een buitenunit bij jou toch mogelijk is.
+Voltwijk installeert LG split-airco's vanaf € 1.750 excl. btw inclusief installatie door onze eigen monteurs. We kijken vooraf mee waar de buitenunit kan staan en wat er mag. Vraag een offerte aan of plan een gratis adviesgesprek, dan bekijken we samen of een buitenunit bij jou toch mogelijk is.
 
 faq:
 Q: Bestaat er een airco zonder buitenunit?

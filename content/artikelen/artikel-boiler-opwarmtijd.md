@@ -64,7 +64,7 @@ Zet je de boiler na een vakantie weer aan, laat hem dan eerst helemaal opwarmen 
 
 ## Hoe Voltwijk helpt
 
-Twijfel je welke boiler en welk vermogen bij je huishouden past? Onze eigen monteurs kijken naar je warmwaterverbruik en je meterkast, en plaatsen de boiler op een eigen groep. Een boiler bij Voltwijk kost vanaf € 1.199, met een vaste prijs inclusief installatie. Meer informatie vind je op de pagina over de [boiler](/product-boiler), of [plan een gratis adviesgesprek](/contact).
+Twijfel je welke boiler en welk vermogen bij je huishouden past? Onze eigen monteurs kijken naar je warmwaterverbruik en je meterkast, en plaatsen de boiler op een eigen groep. Een boiler bij Voltwijk kost vanaf € 1.487,60 excl. btw, met een vaste prijs inclusief installatie. Meer informatie vind je op de pagina over de [boiler](/product-boiler), of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Hoe lang duurt het voordat een elektrische boiler warm is?

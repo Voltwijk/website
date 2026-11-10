@@ -57,7 +57,7 @@ Een hybride warmtepomp is een goede tussenstap als je huis nog niet goed genoeg 
 
 ## Hoe Voltwijk helpt
 
-Twijfel je of je hybride warmtepomp goed is ingesteld, of overweeg je er een? Onze eigen monteurs kijken naar je woning, je isolatie en je radiatoren, en stellen de warmtepomp daarop af. Een warmtepomp bij Voltwijk kost vanaf € 6.750, met een vaste prijs inclusief installatie. We helpen je met de ISDE-aanvraag; die doe je na de installatie bij RVO. Meer informatie vind je op de pagina over de [warmtepomp](/product-warmtepomp), of [plan een gratis adviesgesprek](/contact).
+Twijfel je of je hybride warmtepomp goed is ingesteld, of overweeg je er een? Onze eigen monteurs kijken naar je woning, je isolatie en je radiatoren, en stellen de warmtepomp daarop af. Een warmtepomp bij Voltwijk kost vanaf € 8.650 excl. btw, met een vaste prijs inclusief installatie. We helpen je met de ISDE-aanvraag; die doe je na de installatie bij RVO. Meer informatie vind je op de pagina over de [warmtepomp](/product-warmtepomp), of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Wanneer schakelt een hybride warmtepomp over op de cv-ketel?
