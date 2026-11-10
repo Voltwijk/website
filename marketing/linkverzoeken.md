@@ -11,6 +11,12 @@ Opgezocht op 10 november 2026. Een adres met ⚠️ komt niet van de officiële 
 | Dyness Europe (Capelle a/d IJssel) | europemarketing@dyness-tech.com ⚠️ (bron: contactdatasite) | installateurslijst of partnerpagina |
 | Huawei FusionSolar NL | geen openbaar e-mailadres: formulier op https://solar.huawei.com/nl/contact-us/ (kies "installateur") | installateursoverzicht, Smart PV Community |
 | Deye | geen openbaar NL-adres: formulier op https://www.deyeinverter.com/join/europe/ of vraag het je groothandel | partnerlijst |
+| Solis (omvormers) | benelux@solisinverters.com (officiële contactpagina) | installateurslijst; gebruik mail 1 met "Solis" |
+| Anker SOLIX | sales.eu@anker.com (officiële installateurspagina) | installateurslijst / X1-programma; gebruik mail 1 met "Anker SOLIX" |
+| Zaptec (laadpalen) | benelux@zaptec.com ⚠️ (bron: groothandel) of formulier https://www.zaptec.com/partners/become-a-partner | "Installateur vinden" op zaptec.com; gebruik mail 1 met "Zaptec" en link https://voltwijk.nl/product-laadpaal |
+| LG (warmtepomp, airco) | geen e-mailadres: aanmelden via LG All Stars https://www.lg.com/nl/lgallstars | erkende-installateurszoeker |
+| Vaillant | geen e-mailadres: via "Installatiebedrijf" op vaillant.nl of je accountmanager | "Vind een installateur" op vaillant.nl |
+| Jinko | geen e-mailadres: via de distributeur | n.v.t. |
 | Gemeente Moerdijk (energieloket) | info@moerdijk.nl (t.a.v. energieloket / duurzaamheid) | lijst met lokale installateurs, energieloket |
 | OVZ Ondernemen in Zevenbergen | contact@ondernemeninzevenbergen.nl | ledenlijst op ondernemeninzevenbergen.nl/leden |
 
