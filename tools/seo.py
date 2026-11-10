@@ -8,8 +8,8 @@ SITE = 'https://voltwijk.nl'
 TODAY = datetime.datetime.now(__import__('zoneinfo').ZoneInfo('Europe/Amsterdam')).date().isoformat()  # Nederlandse datum
 BIZ_ID = SITE + '/#bedrijf'
 T = {  # titel, description
- 'index': ('Thuisbatterij, zonnepanelen en warmtepomp met vaste prijs | Voltwijk',
-           'Thuisbatterij van 10 of 16 kWh vanaf € 4.500 excl. btw, inclusief installatie door eigen monteurs uit Zevenbergen. Ook zonnepanelen, airco en warmtepompen.'),
+ 'index': ('Thuisbatterij kopen, vanaf € 4.500 incl. installatie | Voltwijk',
+           'Thuisbatterij kopen? 10 of 16 kWh vanaf € 4.500 excl. btw, inclusief installatie door eigen monteurs uit Zevenbergen. Ook zonnepanelen, airco en warmtepomp.'),
  'product-zonnepanelen': ('Zonnepanelen laten plaatsen – vanaf € 3.450 | Voltwijk',
            'Jinko full-black zonnepanelen vanaf € 3.450 voor 6 panelen, inclusief installatie door eigen monteurs. Vaste prijs vooraf, 0% btw.'),
  'product-batterij': ('Thuisbatterij 10 of 16 kWh – vanaf € 4.500 | Voltwijk',
