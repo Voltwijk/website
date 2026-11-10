@@ -319,9 +319,7 @@ WB_EXTRA = {
  'zevenbergen': dict(gemeente='Moerdijk', buren=['klundert', 'willemstad', 'fijnaart', 'moerdijk', 'breda', 'etten-leur', 'roosendaal', 'oosterhout']),
  'breda': dict(gemeente='Breda', buren=['zevenbergen', 'etten-leur', 'oosterhout', 'made', 'zundert', 'roosendaal']),
  'etten-leur': dict(gemeente='Etten-Leur', buren=['zevenbergen', 'breda', 'roosendaal', 'rucphen', 'zundert', 'oudenbosch'],
-   h1='Thuisbatterij en zonnepanelen in Etten-Leur',
-   title='Thuisbatterij & zonnepanelen installeren in Etten-Leur',
-   desc='Thuisbatterij of zonnepanelen in Etten-Leur? Batterij 10 kWh € 4.500, 16 kWh € 5.000 of 16 kWh 3-fase € 5.850, excl. btw en incl. installatie.'),
+),
  'roosendaal': dict(gemeente='Roosendaal', buren=['bergen-op-zoom', 'etten-leur', 'oudenbosch', 'rucphen', 'steenbergen', 'zevenbergen']),
  'bergen-op-zoom': dict(gemeente='Bergen op Zoom', buren=['roosendaal', 'steenbergen', 'etten-leur', 'zevenbergen']),
  'oosterhout': dict(gemeente='Oosterhout', buren=['breda', 'geertruidenberg', 'made', 'zevenbergen', 'tilburg']),
@@ -457,6 +455,19 @@ def city_faq(c):
           ('Hoe snel kan de installatie plaatsvinden?', 'Na de offerte plannen we samen een installatiedatum. In de batterijcalculator zie je na het invullen van je adres vanaf wanneer we bij jou kunnen installeren.')]
     return qa
 
+PC_LINKS = [('zonnepanelen', 'Zonnepanelen'), ('thuisbatterij', 'Thuisbatterij'), ('warmtepomp', 'Warmtepomp'), ('airco', 'Airco')]
+
+def product_city_block(c):
+    """Links naar de productpagina's van deze plaats (zonnepanelen-<plaats> enz.), als die bestaan."""
+    lab = label(c)
+    links = ''.join(f'<a href="/{k}-{c["slug"]}">{esc(t)} in {esc(lab)} →</a>' for k, t in PC_LINKS if os.path.exists(f'{k}-{c["slug"]}.html'))
+    if not links: return ''
+    return f'''<div class="wrap reveal lp-sec" style="max-width:1000px;">
+    <h2 class="vw-heading lp-h2">Per product in {esc(lab)}</h2>
+    <p style="font-size:15.5px;color:var(--ink-soft);margin-top:10px;line-height:1.6;max-width:680px;">Prijzen, werkwijze en veelgestelde vragen per product, speciaal voor {esc(lab)}.</p>
+    <div class="lp-chips">{links}</div>
+  </div>'''
+
 def battery_block(n=None):
     """Compact blok met de drie batterijpakketten (op alle plaatspagina's en /werkgebied)."""
     cards = ''.join(f'<div><b>{p["kwh"]} kWh</b><span>{p["kw"]} kW hybride omvormer · {esc(p["fase"])}</span>'
@@ -482,16 +493,16 @@ def extra_block(c):
 
 def h1_of(c):
     if not c['wb']: return f'Zonnepanelen, thuisbatterij en warmtepomp in {c["name"]}'
-    return c.get('h1', f'Thuisbatterij in {label(c)}')
+    return c.get('h1', f'Installateur in {label(c)}: zonnepanelen, thuisbatterij en warmtepomp')
 
 def title_of(c):
     n = c['name']
     if not c['wb']: return f'Thuisbatterij, zonnepanelen & warmtepomp {n} | Voltwijk'
     if 'title' in c: return c['title']
-    v = eur(VANAF)
-    for t in (f'Thuisbatterij {n} – vanaf {v} excl. btw | Voltwijk',
-              f'Thuisbatterij {n}: vanaf {v} excl. btw',
-              f'Thuisbatterij {n} – vanaf {v} | Voltwijk'):
+    # Algemene installateur-intentie; de productpagina's (thuisbatterij-<plaats> enz.) dekken de productzoekvragen
+    for t in (f'Installateur {n}: zonnepanelen, batterij & warmtepomp',
+              f'Installateur {n}: zonnepanelen & thuisbatterij',
+              f'Installateur {n} | Voltwijk'):
         if len(t) <= 60: return t
     raise ValueError(n)
 
@@ -499,11 +510,9 @@ def desc_of(c):
     n = c['name']
     if not c['wb']: return f'Thuisbatterij, zonnepanelen of warmtepomp in {n}? Vaste prijs vooraf, eigen monteurs, 12.500+ installaties, 4,7/5 op Google.'
     if 'desc' in c: return c['desc']
-    p = {x['id']: x for x in PAKKETTEN}
-    d = (f'Thuisbatterij in {label(c)}: 10 kWh {eur(p["bat10"]["prijs"])}, 16 kWh {eur(p["bat16-1"]["prijs"])} of 16 kWh 3-fase '
-         f'{eur(p["bat16-3"]["prijs"])}, excl. btw, incl. installatie door eigen monteurs. Ook zonnepanelen en airco.')
-    if len(d) > 160: d = d.replace(' door eigen monteurs', '')
-    if len(d) > 160: d = d.replace(' Ook zonnepanelen en airco.', '')
+    d = (f'Installateur in {label(c)} voor zonnepanelen, thuisbatterij, warmtepomp en airco. '
+         f'Vaste prijs vooraf, eigen monteurs, 12.500+ installaties, 4,7/5 op Google.')
+    if len(d) > 160: d = d.replace(', 12.500+ installaties', '')
     return d
 
 def city_main(c):
@@ -517,7 +526,7 @@ def city_main(c):
     near = ', '.join(c['near'][:-1]) + ' en ' + c['near'][-1]
     wa = WA + urllib.parse.quote(f'Hoi Voltwijk, ik woon in {n} en heb een vraag')
     h1attr = (' data-area="' + esc('|'.join(c.get('area', [n]))) + '" data-gemeente="' + esc(c['gemeente']) + '"') if wb else ''
-    sub = f'\n        <p class="lp-sub">Vaste prijs vanaf {esc(eur(VANAF))} excl. btw, inclusief installatie · ook zonnepanelen en airco</p>' if wb else ''
+    sub = f'\n        <p class="lp-sub">Zonnepanelen, thuisbatterij, warmtepomp en airco · vaste prijs inclusief installatie door eigen monteurs</p>' if wb else ''
     prod_kop = f'Ook zonnepanelen en airco in {esc(lab)}' if wb else f'Wat we in {esc(n)} installeren'
     return f'''<div class="blk-light" style="padding-top:40px;">
   {CSS}
@@ -534,6 +543,7 @@ def city_main(c):
     </div>
     {STATS}
   </div>
+  {product_city_block(c)}
   {battery_block(lab)}
   {extra_block(c)}
   <div class="wrap reveal lp-sec" style="max-width:1000px;">
