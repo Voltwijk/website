@@ -88,7 +88,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-10-25, artikel-hoofdzekering-doorgebrand)] Hoofdzekering doorgebrand: zo herken je het en dit doe je | hoofdzekering doorgebrand | meterkast | probleemvraag, nationaal storingsnummer
 - [open] Huis kopen: zo check je de meterkast en elektrische installatie | meterkast checken huis kopen | meterkast | koopmoment, sluit aan op meetrapport-idee
 - [klaar (2026-10-23, artikel-aardlekschakelaar-slaat-af)] Aardlekschakelaar slaat steeds af: oorzaken en wat je zelf kunt checken | aardlekschakelaar slaat af | meterkast | veel gezochte probleemvraag
-- [open] Elektra in een oud huis: wanneer moet de bedrading vervangen worden? | oude bedrading vervangen | meterkast | koopmoment, sluit aan op meetrapport
+- [klaar (2026-11-10, artikel-elektra-oud-huis-bedrading)] Elektra in een oud huis: wanneer moet de bedrading vervangen worden? | oude bedrading vervangen | meterkast | koopmoment, sluit aan op meetrapport
 - [klaar (2026-11-06, artikel-bidirectioneel-laden-thuis)] Bidirectioneel laden (V2G/V2H): kan je auto je huis van stroom voorzien? | bidirectioneel laden thuis | laadpaal | groeiend onderwerp, sluit aan op OCPP 2.0.1
 - [open] Laadpaal met simkaart, wifi of kabel: welke verbinding kies je? | laadpaal internetverbinding | laadpaal | praktische installatievraag
 - [open] Opbrengst zonnepanelen ineens lager: oorzaken en wat je kunt controleren | opbrengst zonnepanelen lager | zonnepanelen | probleemvraag, sluit aan op hagelschade en omvormer
@@ -117,4 +117,5 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-11-07, artikel-auto-laden-op-zonnestroom)] Zonnestroom op de auto laden: zo stem je laadpaal en zonnepanelen op elkaar af | laden op zonnestroom | laadpaal | vervolg op bidirectioneel-artikel
 - [open] Laadpaal en thuisbatterij combineren: wat laadt wanneer, en heeft het zin? | laadpaal thuisbatterij combineren | batterij | koopvraag, sluit aan op zonnestroom-laden
 - [open] Boiler vervangen: hoe oud is te oud en wat zijn de signalen? | boiler vervangen signalen | boiler | koopmoment, sluit aan op boiler-artikelen
-- [open] Verwarmingstest: is je huis klaar voor een volledig elektrische warmtepomp? | verwarmingstest warmtepomp | warmtepomp | winterseizoen, Milieu Centraal-test op 50 graden
+- [open] Verwarmingstest: is je huis klaar voor een volledig elektrische warmtepomp? | verwarmingstest warmtepomp | warmtepomp | winterseizoen, Milieu Centraal-test op 50 graden (2026-11-10: let op overlap met artikel-warmtepomp-zonder-vloerverwarming, daar staat de test al)
+- [open] Rookmelder in de meterkast: zinvol en hoe plaats je hem? | rookmelder meterkast | meterkast | Liander noemt het als tip; sluit aan op veiligheid oude installaties
