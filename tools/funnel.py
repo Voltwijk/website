@@ -32,7 +32,8 @@ def eur(n): return '€ ' + f'{int(n):,}'.replace(',', '.')
 VANAF = min(p['prijs'] for p in PAKKETTEN)
 VRIENDENKORTING = 450  # korting via de persoonlijke QR-code van een ambassadeur (vriendendeal)
 # actiecodes (bijv. voor de Meta-advertenties): vaste verlaging, zonder doorgestreepte 'van'-prijs (30-dagenregel)
-ACTIECODES = {'META': {'korting': 950, 'label': 'Actieprijs via Facebook/Instagram'}}
+# META (€ 950 voor advertentiebezoekers) is vervallen: sinds de Black Friday-actie (nov 2026) staan de advertentieprijzen gewoon op de site.
+ACTIECODES = {}
 # kortingscodes van ambassadeurs (code -> voornaam); werken via link/QR en via het codeveld in de funnel
 VRIENDCODES = {'AJAY450': 'Ajay', 'MAX450': 'Max', 'ANDRE450': 'Andre', 'ROBIN450': 'Robin', 'FARHAD450': 'Farhad', 'ROCKY450': 'Rocky', 'ROCCIE450': 'Rocky', 'ALI450': 'Ali', 'MOERDIJK450': 'Groepsactie Moerdijk'}
 
@@ -364,7 +365,7 @@ JS = r'''<script>
     if(uu.get('utm_campaign') === 'vriendendeal' && uu.get('utm_content')){ var vc = uu.get('utm_content').toUpperCase().slice(0, 20); VR = {code: vc, naam: (uu.get('door') || CODES[vc] || '').slice(0, 40)}; sessionStorage.setItem('vwVriend', JSON.stringify(VR)); }
     else if(CODES[uc]){ VR = {code: uc, naam: CODES[uc]}; sessionStorage.setItem('vwVriend', JSON.stringify(VR)); }
     else if(ACTIES[uc]){ VR = {code: uc, naam: '', actie: 1, k: ACTIES[uc].korting, label: ACTIES[uc].label}; sessionStorage.setItem('vwVriend', JSON.stringify(VR)); }
-    else VR = JSON.parse(sessionStorage.getItem('vwVriend') || 'null'); }catch(e){}
+    else { VR = JSON.parse(sessionStorage.getItem('vwVriend') || 'null'); if(VR && VR.actie && !ACTIES[VR.code]) { VR = null; sessionStorage.removeItem('vwVriend'); } } }catch(e){}
   var KORT = VR ? (VR.k || __KORT__) : 0;
   function was(p){ return VR && !VR.actie ? '<s class="was">' + eur(p.prijs) + '</s> ' : ''; }
   function zetCode(c){ c = (c || '').toUpperCase().replace(/[^A-Z0-9]/g, ''); if(!CODES[c] && !ACTIES[c]) return false;
@@ -873,11 +874,11 @@ NAV_L = ('<a href="/product-batterij" style="color:inherit;text-decoration:none;
          '<a href="/producten" style="color:inherit;text-decoration:none;">ALLE PRODUCTEN</a>')
 NAV_R = ('<a href="/over-ons" style="color:inherit;text-decoration:none;">OVER ONS</a>'
          '<a href="/contact" style="color:inherit;text-decoration:none;">CONTACT</a>'
-         '<a href="/contact" data-book="" class="nav-book" style="color:inherit;text-decoration:none;">GRATIS ADVIESGESPREK</a>')
+         '<a href="' + URL + '" class="nav-book" style="color:inherit;text-decoration:none;">THUISBATTERIJ BEREKENEN</a>')
 NAV_M = ('<a href="/product-batterij">THUISBATTERIJ</a>\n      <a href="' + URL + '">THUISBATTERIJ BEREKENEN</a>\n      <a href="/product-zonnepanelen">ZONNEPANELEN</a>\n'
          '      <a href="/producten">ALLE PRODUCTEN</a>\n      <a href="/hoe-het-werkt">HOE HET WERKT</a>\n      <a href="/reviews">REVIEWS</a>\n'
          '      <a href="/inzichten">KENNISBANK</a>\n      <a href="/over-ons">OVER ONS</a>\n      <a href="/contact">CONTACT</a>\n'
-         '      <a href="/contact" data-book="">GRATIS ADVIESGESPREK</a>\n')
+         '')
 NAV_CSS = ('<style id="vw-navbook">.nav-book{border:1.5px solid currentColor;border-radius:999px;padding:8px 14px;white-space:nowrap;}'
            '#siteNav.is-stuck .nav-book,#siteNav.on-light .nav-book{background:var(--primary);border-color:var(--primary);color:#fff !important;}'
            '@media (max-width:1180px){#siteNav .nav-links a[href="/producten"]{display:none;}}</style>')

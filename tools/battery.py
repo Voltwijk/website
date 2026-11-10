@@ -17,9 +17,9 @@ os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 
 # id, capaciteit (kWh), omvormer (kW), fase, prijs (incl. installatie, excl. btw; de btw is vaak terug te vragen)
 PAKKETTEN = [
-    {'id': 'bat10',   'kwh': 10, 'kw': 5, 'fase': '1-fase', 'prijs': 4950},
-    {'id': 'bat16-1', 'kwh': 16, 'kw': 6, 'fase': '1-fase', 'prijs': 5450},
-    {'id': 'bat16-3', 'kwh': 16, 'kw': 8, 'fase': '3-fase', 'prijs': 5950},
+    {'id': 'bat10',   'kwh': 10, 'kw': 5, 'fase': '1-fase', 'prijs': 4000},
+    {'id': 'bat16-1', 'kwh': 16, 'kw': 5, 'fase': '1-fase', 'prijs': 4500},
+    {'id': 'bat16-3', 'kwh': 16, 'kw': 8, 'fase': '3-fase', 'prijs': 5500},
 ]
 STANDAARD = 'bat16-1'  # wat de calculator toont als de bezoeker nog niets koos
 VANAF = min(p['prijs'] for p in PAKKETTEN)
@@ -48,7 +48,7 @@ PRODUCT_FIELDS = {
                 "Geïnstalleerd door ons eigen team, klaar voor het einde van salderen in 2027"],
     'cta': 'Bereken je thuisbatterij',
     'price': 'vanaf ' + eur(VANAF),
-    'specs': [['Capaciteit', '10 of 16 kWh'], ['Omvormer', '5, 6 of 8 kW hybride'], ['Aansluiting', '1-fase of 3-fase'],
+    'specs': [['Capaciteit', '10 of 16 kWh'], ['Omvormer', '5 of 8 kW hybride'], ['Aansluiting', '1-fase of 3-fase'],
               ['Prijs', eur(PAKKETTEN[0]['prijs']) + ' – ' + eur(PAKKETTEN[-1]['prijs']) + ' incl. installatie'],
               ['Garantie', '10 jaar'], ['App-koppeling', 'Ja']],
 }
@@ -178,8 +178,8 @@ SECTION = '''<!--vw-batterijkeuze-->
    <div class="bk-screen" data-s="res" aria-live="polite">
     <div class="bk-lbl">Ons advies voor jou</div>
     <h3 class="bk-name" id="bkNaam">Thuisbatterij 16 kWh</h3>
-    <div class="bk-sub" id="bkSub">met 6 kW hybride omvormer · 1-fase</div>
-    <div class="bk-price"><b id="bkPrijs">€ 5.450</b><span>vaste prijs incl. installatie, excl. btw<br>btw soms terug te vragen</span></div>
+    <div class="bk-sub" id="bkSub">met 5 kW hybride omvormer · 1-fase</div>
+    <div class="bk-price"><b id="bkPrijs">€ 4.500</b><span>vaste prijs incl. installatie, excl. btw<br>btw soms terug te vragen</span></div>
     <ul class="bk-why" id="bkWhy"></ul>
     <p class="bk-inc"><b>Inbegrepen:</b> batterij en hybride omvormer, montage en bekabeling, aansluiten op een eigen groep in de meterkast, instellen van de app en uitleg bij oplevering.</p>
     <button type="button" class="bk-go" id="bkKies">Vraag deze batterij aan →</button>
@@ -187,7 +187,7 @@ SECTION = '''<!--vw-batterijkeuze-->
    </div>
 
    <div class="bk-screen" data-s="form">
-    <div class="bk-sum"><span id="bkSumNaam">Thuisbatterij 16 kWh + 6 kW (1-fase)</span><b id="bkSumPrijs">€ 5.450</b></div>
+    <div class="bk-sum"><span id="bkSumNaam">Thuisbatterij 16 kWh + 5 kW (1-fase)</span><b id="bkSumPrijs">€ 4.500</b></div>
     <h3 style="margin-top:20px;">Waar mogen we je bereiken?</h3>
     <form id="bkAanvraag" novalidate>
      <div class="bk-fields">

@@ -36,7 +36,7 @@ Onder "Diensten" per categorie toevoegen. Alleen deze prijzen gebruiken; het zij
 | Dienst | Prijs | Omschrijving (max. ~300 tekens) |
 |---|---|---|
 | Thuisbatterij 10 kWh + 5 kW omvormer (1-fase) | € 4.200 | Vaste prijs inclusief installatie en btw: batterij en hybride omvormer, montage, bekabeling, eigen groep in de meterkast, app instellen en uitleg bij oplevering. |
-| Thuisbatterij 16 kWh + 6 kW omvormer (1-fase) | € 4.600 | Idem, voor een 1-fase aansluiting. |
+| Thuisbatterij 16 kWh + 5 kW omvormer (1-fase) | € 4.600 | Idem, voor een 1-fase aansluiting. |
 | Thuisbatterij 16 kWh + 8 kW omvormer (3-fase) | € 5.700 | Idem, voor een 3-fase aansluiting. Het vermogen wordt over alle drie de fasen verdeeld. |
 | Zonnepanelen | vanaf € 3.999 | Vaste prijs vooraf, inclusief installatie door eigen monteurs. |
 | Warmtepomp | vanaf € 6.750 | Lucht/water-warmtepomp inclusief installatie. |

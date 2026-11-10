@@ -94,9 +94,9 @@ Dat hangt af van je verbruik en je aansluiting, niet van de regio. Voltwijk heef
 
 | Pakket | Aansluiting | Prijs (excl. btw) |
 |---|---|---|
-| 10 kWh + 5 kW hybride omvormer | 1-fase | € 4.950 |
-| 16 kWh + 6 kW omvormer | 1-fase | € 5.450 |
-| 16 kWh + 8 kW omvormer | 3-fase | € 5.950 |
+| 10 kWh + 5 kW hybride omvormer | 1-fase | € 4.000 |
+| 16 kWh + 5 kW omvormer | 1-fase | € 4.500 |
+| 16 kWh + 8 kW omvormer | 3-fase | € 5.500 |
 
 Twijfel je over de maat? Met de [batterijcalculator](/thuisbatterij-berekenen) zie je snel welke bij jouw verbruik past.
 

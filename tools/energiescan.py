@@ -157,7 +157,7 @@ def main_html():
     <div class="es-trust">
       <div><b>100% gratis</b><span>geen verplichtingen</span></div>
       <div><b>±45 minuten</b><span>bij jou aan de keukentafel</span></div>
-      <div><b>Eigen team</b><span>geen verkopers of callcenter</span></div>
+      <div><b>Eigen team</b><span>eigen adviseurs en monteurs</span></div>
       <div><b>12.500+</b><span>installaties uitgevoerd</span></div>
     </div>
   </div>

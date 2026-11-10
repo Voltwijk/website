@@ -306,11 +306,15 @@ PLAN = r'''<!-- vw-plan:start -->
   window.vwFirstDate = first;
   function fill(){ document.querySelectorAll('[data-vw-first]').forEach(function(el){ if(el.textContent !== first) el.textContent = first; }); }
   fill(); new MutationObserver(function(){ if(document.querySelector('[data-vw-first]:empty')) fill(); }).observe(document.body, {childList: true, subtree: true});
+  // Eén hoofdknop: op productpagina's met een offerteblok is dat 'Vraag een offerte aan', anders de batterijcalculator.
+  var off = document.getElementById('offerte');
+  var cta = off ? {href: '#offerte', t: 'Vraag een offerte aan'} : {href: '/thuisbatterij-berekenen', t: 'Bereken je thuisbatterij'};
+  if(off) document.querySelectorAll('a.nav-book').forEach(function(a){ a.textContent = 'VRAAG OFFERTE AAN'; a.setAttribute('href', '#offerte'); a.removeAttribute('data-book'); });
   if(SKIP.test(location.pathname)) return;
   try{ if(sessionStorage.getItem('vwpClosed')) return; }catch(e){}
   var calc = document.getElementById('calculator') || document.getElementById('calcCard');
   var bar = document.createElement('div'); bar.className = 'vwp'; bar.setAttribute('role', 'region'); bar.setAttribute('aria-label', 'Installatie plannen');
-  bar.innerHTML = '<span class="t">📅 Installatie al vanaf <b>' + first + '</b></span><a class="go" href="/contact" data-book="">Plan gratis adviesgesprek →</a><button type="button" class="x" aria-label="Sluiten">×</button>';
+  bar.innerHTML = '<span class="t">📅 Installatie al vanaf <b>' + first + '</b></span><a class="go" href="' + cta.href + '">' + cta.t + ' →</a><button type="button" class="x" aria-label="Sluiten">×</button>';
   document.body.appendChild(bar);
   bar.querySelector('.x').addEventListener('click', function(){ bar.remove(); document.body.classList.remove('vwp-up'); try{ sessionStorage.setItem('vwpClosed', '1'); }catch(e){} });
   bar.querySelector('.go').addEventListener('click', function(){ try{ if(window.vwTrack) vwTrack('plan_balk_klik', {pagina: location.pathname}); }catch(e){} });

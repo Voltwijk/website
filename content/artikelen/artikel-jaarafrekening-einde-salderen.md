@@ -81,7 +81,7 @@ Vanaf 2027 geldt één simpele rekensom: stroom die je zelf gebruikt, hoef je ni
 
 ## Hoe Voltwijk helpt
 
-Uit je eerste afrekening na de knip haal je precies wat je wilt weten: hoeveel je teruglevert en hoeveel je van het net haalt. Met die cijfers kun je kijken of een thuisbatterij bij je past. Onze pakketten beginnen bij 10 kWh voor € 4.950 excl. btw, inclusief installatie door onze eigen monteurs. Kijk bij "Bereken welke thuisbatterij past" of plan een gratis adviesgesprek.
+Uit je eerste afrekening na de knip haal je precies wat je wilt weten: hoeveel je teruglevert en hoeveel je van het net haalt. Met die cijfers kun je kijken of een thuisbatterij bij je past. Onze pakketten beginnen bij 10 kWh voor € 4.000 excl. btw, inclusief installatie door onze eigen monteurs. Kijk bij "Bereken welke thuisbatterij past" of plan een gratis adviesgesprek.
 
 faq:
 Q: Wordt er over 2026 nog gesaldeerd als mijn jaarafrekening pas in 2027 komt?
