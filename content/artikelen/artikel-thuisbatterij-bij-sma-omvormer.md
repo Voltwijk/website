@@ -86,7 +86,7 @@ Wil je meer weten over een batterij bij panelen die er al liggen, ongeacht het m
 
 ## Hoe Voltwijk helpt
 
-Wij zetten bij bestaande zonnepanelen, ook bij een SMA, een Dyness LFP-batterij met eigen Solis hybride omvormer AC-gekoppeld naast je installatie. Je SMA en je panelen blijven gewoon werken. Onze eigen monteurs regelen de groep in de meterkast en de meter. Een pakket van 10 kWh kost € 4.000 excl. btw, inclusief installatie. Kijk eerst bij "Bereken welke thuisbatterij past", of plan een gratis adviesgesprek via [contact](/contact).
+Wij zetten bij bestaande zonnepanelen, ook bij een SMA, een Dyness LFP-batterij met eigen Solis hybride omvormer AC-gekoppeld naast je installatie. Je SMA en je panelen blijven gewoon werken. Onze eigen monteurs regelen de groep in de meterkast en de meter. Een pakket van 10 kWh kost € 4.500 excl. btw, inclusief installatie. Kijk eerst bij "Bereken welke thuisbatterij past", of plan een gratis adviesgesprek via [contact](/contact).
 
 faq:
 Q: Kan ik een thuisbatterij aansluiten op mijn SMA Sunny Boy?

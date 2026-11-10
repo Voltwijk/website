@@ -70,7 +70,7 @@ Gaat je batterij stuk zonder dat er iets gebeurd is, dan val je dus terug op de 
 
 ## Hoe Voltwijk helpt
 
-Voltwijk installeert thuisbatterijen met eigen monteurs, met een vaste prijs inclusief installatie en 10 jaar fabrieksgarantie op de thuisbatterij. Je krijgt de factuur en de gegevens van je batterij, zodat je hem eenvoudig bij je verzekeraar kunt melden. Een thuisbatterij bij Voltwijk kost vanaf € 4.000 excl. btw. [Bereken welke thuisbatterij past](/thuisbatterij-berekenen), bekijk de pagina over de [thuisbatterij](/product-batterij) of [plan een gratis adviesgesprek](/contact).
+Voltwijk installeert thuisbatterijen met eigen monteurs, met een vaste prijs inclusief installatie en 10 jaar fabrieksgarantie op de thuisbatterij. Je krijgt de factuur en de gegevens van je batterij, zodat je hem eenvoudig bij je verzekeraar kunt melden. Een thuisbatterij bij Voltwijk kost vanaf € 4.500 excl. btw. [Bereken welke thuisbatterij past](/thuisbatterij-berekenen), bekijk de pagina over de [thuisbatterij](/product-batterij) of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Is een thuisbatterij automatisch verzekerd?

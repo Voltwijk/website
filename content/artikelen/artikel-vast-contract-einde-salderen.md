@@ -101,7 +101,7 @@ Welk contract je ook hebt: stroom die je zelf gebruikt op het moment dat je hem 
 
 ## Hoe Voltwijk helpt
 
-Over je energiecontract kunnen we je niet adviseren; dat is iets tussen jou en je leverancier. Wel kijken we met je naar hoeveel zonnestroom je zelf kunt gebruiken. Onze eigen monteurs plaatsen bijvoorbeeld een thuisbatterij naast je bestaande zonnepanelen, vanaf € 4.000 excl. btw inclusief installatie. Kijk bij [Bereken welke thuisbatterij past](/thuisbatterij-berekenen) wat bij je verbruik hoort, of plan een gratis adviesgesprek via [contact](/contact).
+Over je energiecontract kunnen we je niet adviseren; dat is iets tussen jou en je leverancier. Wel kijken we met je naar hoeveel zonnestroom je zelf kunt gebruiken. Onze eigen monteurs plaatsen bijvoorbeeld een thuisbatterij naast je bestaande zonnepanelen, vanaf € 4.500 excl. btw inclusief installatie. Kijk bij [Bereken welke thuisbatterij past](/thuisbatterij-berekenen) wat bij je verbruik hoort, of plan een gratis adviesgesprek via [contact](/contact).
 
 faq:
 Q: Loopt mijn vaste energiecontract door na 1 januari 2027?

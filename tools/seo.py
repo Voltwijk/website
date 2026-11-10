@@ -9,11 +9,11 @@ TODAY = datetime.datetime.now(__import__('zoneinfo').ZoneInfo('Europe/Amsterdam'
 BIZ_ID = SITE + '/#bedrijf'
 T = {  # titel, description
  'index': ('Thuisbatterij, zonnepanelen en warmtepomp met vaste prijs | Voltwijk',
-           'Thuisbatterij van 10 of 16 kWh vanaf € 4.000 excl. btw, inclusief installatie door eigen monteurs uit Zevenbergen. Ook zonnepanelen, airco en warmtepompen.'),
+           'Thuisbatterij van 10 of 16 kWh vanaf € 4.500 excl. btw, inclusief installatie door eigen monteurs uit Zevenbergen. Ook zonnepanelen, airco en warmtepompen.'),
  'product-zonnepanelen': ('Zonnepanelen laten plaatsen – vanaf € 3.450 | Voltwijk',
            'Jinko full-black zonnepanelen vanaf € 3.450 voor 6 panelen, inclusief installatie door eigen monteurs. Vaste prijs vooraf, 0% btw.'),
- 'product-batterij': ('Thuisbatterij 10 of 16 kWh – vanaf € 4.000 | Voltwijk',
-           'Thuisbatterij van 10 of 16 kWh met hybride omvormer, vanaf € 4.000 excl. btw, inclusief installatie. Bereken in 1 minuut welke batterij bij jouw verbruik past.'),
+ 'product-batterij': ('Thuisbatterij 10 of 16 kWh – vanaf € 4.500 | Voltwijk',
+           'Thuisbatterij van 10 of 16 kWh met hybride omvormer, vanaf € 4.500 excl. btw, inclusief installatie. Bereken in 1 minuut welke batterij bij jouw verbruik past.'),
  'product-warmtepomp': ('Warmtepomp laten installeren – vanaf € 8.650 excl. btw | Voltwijk',
            'Lucht/water-warmtepomp vanaf € 8.650 excl. btw inclusief installatie. Hulp bij de ISDE-subsidie, geplaatst door ons eigen team. Plan een gratis adviesgesprek.'),
  'product-airco': ('Airco laten installeren – vanaf € 1.750 excl. btw | Voltwijk',

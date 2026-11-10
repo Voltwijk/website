@@ -31,19 +31,19 @@ AANBOD = {
   'kop': 'Welke thuisbatterijen we installeren',
   'intro': 'Vaste prijzen inclusief hybride omvormer, installatie door onze eigen monteurs, aansluiten in de meterkast en de slimme sturing (EMS). De btw krijg je in veel gevallen terug; dat regelen wij.',
   'kaarten': [
-   {'merk': 'FoxESS', 'naam': '10 kWh, alles-in-één (1-fase)', 'foto': ['foxess-p100.webp'], 'prijs': 4000,
+   {'merk': 'FoxESS', 'naam': '10 kWh, alles-in-één (1-fase)', 'foto': ['foxess-p100.webp'], 'prijs': 4500,
     'punten': ['FoxESS P100, 10,24 kWh (± 9,7 kWh bruikbaar)', 'Omvormer 5 kW ingebouwd', 'Wandmontage, IP66', '10 jaar garantie op de batterij']},
-   {'merk': 'Dyness + Solis', 'naam': '16 kWh (1-fase)', 'foto': ['dyness.webp', 'solis-1fase-vrij.webp'], 'prijs': 4500, 'badge': 'Meest gekozen',
+   {'merk': 'Dyness + Solis', 'naam': '16 kWh (1-fase)', 'foto': ['dyness.webp', 'solis-1fase-vrij.webp'], 'prijs': 5000, 'badge': 'Meest gekozen',
     'punten': ['Dyness PowerBrick Plus, 16,07 kWh (± 15,3 kWh bruikbaar)', 'Solis hybride omvormer 5 kW', 'Uit te breiden tot ± 32 kWh', '10 jaar fabrieksgarantie op batterij en omvormer']},
-   {'merk': 'Dyness + Solis', 'naam': '16 kWh (3-fase)', 'foto': ['dyness.webp', 'solis-3fase-vrij.webp'], 'prijs': 5500, 'vanaf': True,
-    'punten': ['Dyness PowerBrick Plus, 16,07 kWh', 'Solis hybride omvormer 8 kW (€ 5.500), 10 kW (€ 5.850) of 12 kW (€ 6.000)', 'Uit te breiden tot ± 32 kWh', '10 jaar fabrieksgarantie op batterij en omvormer']},
-   {'merk': 'FoxESS', 'naam': '21 kWh (3-fase)', 'foto': ['foxess-cq7.webp', 'foxess-p3.webp'], 'prijs': 7100,
+   {'merk': 'Dyness + Solis', 'naam': '16 kWh (3-fase)', 'foto': ['dyness.webp', 'solis-3fase-vrij.webp'], 'prijs': 5850, 'vanaf': True,
+    'punten': ['Dyness PowerBrick Plus, 16,07 kWh', 'Solis hybride omvormer 8 kW (€ 5.850), 10 kW (€ 6.150) of 12 kW (€ 6.350)', 'Uit te breiden tot ± 32 kWh', '10 jaar fabrieksgarantie op batterij en omvormer']},
+   {'merk': 'FoxESS', 'naam': '21 kWh (3-fase)', 'foto': ['foxess-cq7.webp', 'foxess-p3.webp'], 'prijs': 7400,
     'punten': ['3 x FoxESS CQ7, samen ± 21 kWh', 'FoxESS P3 hybride omvormer 10 kW', 'Uit te breiden per module van ± 7 kWh', '10 jaar productgarantie']},
-   {'merk': 'FoxESS', 'naam': '28 kWh (3-fase)', 'foto': ['foxess-cq7.webp', 'foxess-p3.webp'], 'prijs': 8450,
+   {'merk': 'FoxESS', 'naam': '28 kWh (3-fase)', 'foto': ['foxess-cq7.webp', 'foxess-p3.webp'], 'prijs': 8700,
     'punten': ['4 x FoxESS CQ7, samen ± 28 kWh', 'FoxESS P3 hybride omvormer 10 kW', 'Uit te breiden per module van ± 7 kWh', '10 jaar productgarantie']},
    {'merk': 'Dyness + Solis', 'naam': '32 kWh (3-fase)', 'foto': ['dyness.webp', 'dyness.webp', 'solis-3fase-vrij.webp'], 'prijs': 8250, 'vanaf': True,
     'punten': ['2 x Dyness PowerBrick Plus (± 30 kWh bruikbaar)', 'Solis hybride omvormer 8 kW (€ 8.250), 10 kW (€ 8.450) of 12 kW (€ 8.600)', 'Voor warmtepomp of elektrische auto', '10 jaar fabrieksgarantie op batterij en omvormer']},
-   {'merk': 'FoxESS', 'naam': '35 kWh (3-fase)', 'foto': ['foxess-cq7.webp', 'foxess-p3.webp'], 'prijs': 9950,
+   {'merk': 'FoxESS', 'naam': '35 kWh (3-fase)', 'foto': ['foxess-cq7.webp', 'foxess-p3.webp'], 'prijs': 10100,
     'punten': ['5 x FoxESS CQ7, samen ± 35 kWh', 'FoxESS P3 hybride omvormer 12 kW', 'Uit te breiden per module van ± 7 kWh', '10 jaar productgarantie']},
   ],
   'cta': ('/contact', 'Vraag een offerte aan'),
@@ -185,8 +185,16 @@ CSS = '''<style id="vw-aanbod-css">
 .vwa{padding:64px 0 24px;}
 .vwa h2{font-family:'Bricolage Grotesque','Bricolage Fallback',system-ui,sans-serif;font-weight:800;font-size:clamp(28px,4vw,40px);letter-spacing:-.02em;line-height:1.08;color:var(--ink);margin:6px 0 10px;}
 .vwa .in{color:var(--ink-soft);font-size:16px;line-height:1.6;max-width:760px;}
-.vwa-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;margin-top:28px;}
-.vwa-k{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid var(--border);border-radius:22px;overflow:hidden;}
+.vwa-top{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;}
+.vwa-nav{display:flex;gap:8px;flex-shrink:0;}
+.vwa-nav button{width:46px;height:46px;border-radius:50%;border:1px solid var(--border);background:#fff;color:var(--ink);font-size:20px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:background .2s,opacity .2s;}
+.vwa-nav button:hover{background:var(--surface-tint);}
+.vwa-nav button:disabled{opacity:.35;cursor:default;}
+.vwa-nav[hidden]{display:none;}
+.vwa-g{display:flex;gap:18px;margin-top:28px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:2px 2px 16px;scrollbar-width:thin;-webkit-overflow-scrolling:touch;}
+.vwa-g>.vwa-k:first-child{margin-left:auto;}
+.vwa-g>.vwa-k:last-child{margin-right:auto;}
+.vwa-k{position:relative;display:flex;flex-direction:column;flex:0 0 calc((100% - 54px) / 4);min-width:250px;scroll-snap-align:start;background:#fff;border:1px solid var(--border);border-radius:22px;overflow:hidden;}
 .vwa-f{height:200px;display:flex;align-items:flex-end;justify-content:center;gap:10px;padding:22px 18px 16px;background:#F4F7F4;border-bottom:1px solid var(--border);}
 .vwa-f img{max-height:100%;max-width:62%;object-fit:contain;mix-blend-mode:multiply;}
 .vwa-f img+img{max-width:38%;max-height:72%;}
@@ -206,7 +214,7 @@ CSS = '''<style id="vw-aanbod-css">
 .vwa-x b{display:block;font-family:'Bricolage Grotesque','Bricolage Fallback',system-ui,sans-serif;font-size:20px;color:var(--ink);}
 .vwa-x span{color:var(--ink-soft);font-size:15px;}
 .vwa-x a{display:inline-flex;align-items:center;background:var(--primary);color:#fff;font-weight:800;font-size:15px;padding:13px 22px;border-radius:999px;text-decoration:none;white-space:nowrap;}
-@media (max-width:600px){.vwa{padding-top:44px;}.vwa-f{height:170px;}}
+@media (max-width:600px){.vwa{padding-top:44px;}.vwa-f{height:170px;}.vwa-k{flex-basis:80%;}.vwa-nav{display:none;}}
 </style>'''
 
 def foto(f): return f if f.startswith('/') else IMG + f
@@ -229,13 +237,14 @@ def sectie(key):
     a = AANBOD[key]
     href, knop = a.get('cta', ('#offerte', 'Vraag een offerte aan'))
     return ('<!-- vw-aanbod:start -->' + CSS + f'<section class="vwa" id="aanbod"><div class="wrap">'
-            '<span class="eyebrow">Wat we installeren</span>'
-            f'<h2>{a["kop"]}</h2><p class="in">{a["intro"]}</p>'
+            '<div class="vwa-top"><div><span class="eyebrow">Wat we installeren</span>'
+            f'<h2>{a["kop"]}</h2><p class="in">{a["intro"]}</p></div>'
+            '<div class="vwa-nav" hidden><button type="button" data-d="-1" aria-label="Vorige">←</button><button type="button" data-d="1" aria-label="Volgende">→</button></div></div>'
             '<div class="vwa-g">' + ''.join(kaart(k) for k in a['kaarten']) + '</div>'
             '<div class="vwa-x"><div><b>Liever een ander merk?</b><span>We installeren ook andere merken. Vraag een offerte aan, dan rekenen we het voor je uit.</span></div>'
             f'<a href="{href}">{knop} →</a></div>'
             +
-            '</div></section><!-- vw-aanbod:end -->')
+            '</div></section><script>(function(){var g=document.querySelector(\'.vwa-g\'),n=document.querySelector(\'.vwa-nav\');if(!g||!n)return;var b=n.querySelectorAll(\'button\');function u(){var o=g.scrollWidth>g.clientWidth+4;n.hidden=!o;b[0].disabled=g.scrollLeft<4;b[1].disabled=g.scrollLeft+g.clientWidth>=g.scrollWidth-4;}b.forEach(function(x){x.addEventListener(\'click\',function(){var k=g.querySelector(\'.vwa-k\');g.scrollBy({left:(+x.dataset.d)*((k?k.offsetWidth:280)+18),behavior:\'smooth\'});});});g.addEventListener(\'scroll\',u,{passive:true});window.addEventListener(\'resize\',u);u();})();</script><!-- vw-aanbod:end -->')
 
 n = 0
 for f in sorted(glob.glob('*.html')):
