@@ -104,7 +104,7 @@ Kort gezegd: Victron past bij je als je **zelf wilt meekijken, uitbreiden en fin
 
 ## Hoe Voltwijk helpt
 
-Voltwijk werkt met een vaste combinatie: een Dyness LFP-batterij met een Solis hybride omvormer. Bij bestaande zonnepanelen zetten we die batterij met eigen omvormer AC-gekoppeld naast je huidige omvormer, van elk merk. Dat kan als pakket van 10 kWh / 5 kW 1-fase voor € 4.000, 16 kWh / 5 kW 1-fase voor € 4.500 of 16 kWh / 8 kW 3-fase voor € 5.500, alle prijzen excl. btw en inclusief installatie door onze eigen monteurs. Twijfel je tussen Victron en een kant-en-klaar systeem? Kijk bij "Bereken welke thuisbatterij past" of plan een gratis adviesgesprek. Meer over onze batterij lees je op de pagina [thuisbatterij](/product-batterij).
+Voltwijk werkt met een vaste combinatie: een Dyness LFP-batterij met een Solis hybride omvormer. Bij bestaande zonnepanelen zetten we die batterij met eigen omvormer AC-gekoppeld naast je huidige omvormer, van elk merk. Dat kan als pakket van 10 kWh / 5 kW 1-fase voor € 4.500, 16 kWh / 5 kW 1-fase voor € 5.000 of 16 kWh / 8 kW 3-fase voor € 5.850, alle prijzen excl. btw en inclusief installatie door onze eigen monteurs. Twijfel je tussen Victron en een kant-en-klaar systeem? Kijk bij "Bereken welke thuisbatterij past" of plan een gratis adviesgesprek. Meer over onze batterij lees je op de pagina [thuisbatterij](/product-batterij).
 
 faq:
 Q: Is Victron een Nederlands merk?

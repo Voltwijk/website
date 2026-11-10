@@ -69,7 +69,7 @@ Hoe dat op een offerte uitpakt, zie je het best met een voorbeeld.
 
 **Rekenvoorbeeld** (bedragen zijn fictief en rond gekozen, alleen om de werking te laten zien):
 
-- Zonnepanelen inclusief installatie: € 4.000 exclusief btw. Btw 0%, dus je betaalt **€ 4.000**.
+- Zonnepanelen inclusief installatie: € 4.000 exclusief btw. Btw 0%, dus je betaalt **€ 4.500**.
 - Thuisbatterij inclusief installatie: € 3.000 exclusief btw. Btw 21% is € 630, dus je betaalt **€ 3.630**.
 - Totaal: **€ 7.630**.
 

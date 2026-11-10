@@ -95,7 +95,7 @@ Deye is een groot en serieus merk, met flexibele hybride omvormers. Of het de go
 
 ## Hoe Voltwijk helpt
 
-Onze thuisbatterijen bestaan uit een Dyness LFP-batterij met een Solis hybride omvormer, geplaatst door onze eigen monteurs. Onze pakketten zijn inclusief installatie: 10 kWh met 5 kW (1-fase) voor € 4.000 excl. btw, 16 kWh met 5 kW (1-fase) voor € 4.500 excl. btw en 16 kWh met 8 kW (3-fase) voor € 5.500 excl. btw, met 2 jaar garantie op de installatie. Wil je vergelijken? Bereken welke thuisbatterij past, of plan een gratis adviesgesprek via [contact](/contact).
+Onze thuisbatterijen bestaan uit een Dyness LFP-batterij met een Solis hybride omvormer, geplaatst door onze eigen monteurs. Onze pakketten zijn inclusief installatie: 10 kWh met 5 kW (1-fase) voor € 4.500 excl. btw, 16 kWh met 5 kW (1-fase) voor € 5.000 excl. btw en 16 kWh met 8 kW (3-fase) voor € 5.850 excl. btw, met 2 jaar garantie op de installatie. Wil je vergelijken? Bereken welke thuisbatterij past, of plan een gratis adviesgesprek via [contact](/contact).
 
 faq:
 Q: Is een Deye thuisbatterij goed?

@@ -17,9 +17,9 @@ os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 
 # id, capaciteit (kWh), omvormer (kW), fase, prijs (incl. installatie, excl. btw; de btw is vaak terug te vragen)
 PAKKETTEN = [
-    {'id': 'bat10',   'kwh': 10, 'kw': 5, 'fase': '1-fase', 'prijs': 4000},
-    {'id': 'bat16-1', 'kwh': 16, 'kw': 5, 'fase': '1-fase', 'prijs': 4500},
-    {'id': 'bat16-3', 'kwh': 16, 'kw': 8, 'fase': '3-fase', 'prijs': 5500},
+    {'id': 'bat10',   'kwh': 10, 'kw': 5, 'fase': '1-fase', 'prijs': 4500},
+    {'id': 'bat16-1', 'kwh': 16, 'kw': 5, 'fase': '1-fase', 'prijs': 5000},
+    {'id': 'bat16-3', 'kwh': 16, 'kw': 8, 'fase': '3-fase', 'prijs': 5850},
 ]
 STANDAARD = 'bat16-1'  # wat de calculator toont als de bezoeker nog niets koos
 VANAF = min(p['prijs'] for p in PAKKETTEN)
@@ -49,7 +49,7 @@ PRODUCT_FIELDS = {
     'cta': 'Bereken je thuisbatterij',
     'price': 'vanaf ' + eur(VANAF) + ' excl. btw',
     'specs': [['Capaciteit', '10 tot 35 kWh'], ['Omvormer', '5 tot 12 kW hybride'], ['Aansluiting', '1-fase of 3-fase'],
-              ['Prijs', eur(VANAF) + ' – € 9.950 excl. btw, incl. installatie'],
+              ['Prijs', eur(VANAF) + ' – € 10.100 excl. btw, incl. installatie'],
               ['Merken', 'FoxESS, Dyness, Solis'], ['Garantie', '10 jaar']],
 }
 

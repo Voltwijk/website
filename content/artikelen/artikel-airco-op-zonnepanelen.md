@@ -95,7 +95,7 @@ Een thuisbatterij slaat het overschot van de middag op en geeft het 's avonds we
 
 In de winter helpt een batterij weinig voor de airco. Er is dan simpelweg weinig zonnestroom over om op te slaan. Met een dynamisch energiecontract kun je een batterij wel laden op uren dat stroom goedkoop is, maar dat is dan geen stroom van je eigen dak meer.
 
-Een batterij koop je meestal niet alleen voor de airco. Kijk naar je hele verbruik, ook 's avonds en 's nachts. Bij Voltwijk begint een thuisbatterij van 10 kWh bij € 4.000 excl. btw, inclusief installatie.
+Een batterij koop je meestal niet alleen voor de airco. Kijk naar je hele verbruik, ook 's avonds en 's nachts. Bij Voltwijk begint een thuisbatterij van 10 kWh bij € 4.500 excl. btw, inclusief installatie.
 
 ## Hoe zorg je dat je airco meer op zonnestroom draait?
 

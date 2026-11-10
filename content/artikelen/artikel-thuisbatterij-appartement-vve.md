@@ -98,7 +98,7 @@ Alleen de eerste route levert stroom op voor jouw eigen batterij. Meer over pane
 
 ## Hoe Voltwijk helpt
 
-Twijfel je of een thuisbatterij in jouw appartement past? In een gratis adviesgesprek kijken we naar de plek, je meterkast en je verbruik, zodat je weet wat je aan de VvE moet voorleggen. Onze pakketten beginnen bij 10 kWh voor € 4.000 excl. btw, inclusief installatie door onze eigen monteurs, met 2 jaar garantie op de installatie. Kijk eerst bij "Bereken welke thuisbatterij past" of plan een gratis adviesgesprek.
+Twijfel je of een thuisbatterij in jouw appartement past? In een gratis adviesgesprek kijken we naar de plek, je meterkast en je verbruik, zodat je weet wat je aan de VvE moet voorleggen. Onze pakketten beginnen bij 10 kWh voor € 4.500 excl. btw, inclusief installatie door onze eigen monteurs, met 2 jaar garantie op de installatie. Kijk eerst bij "Bereken welke thuisbatterij past" of plan een gratis adviesgesprek.
 
 faq:
 Q: Mag ik een thuisbatterij in mijn appartement plaatsen?

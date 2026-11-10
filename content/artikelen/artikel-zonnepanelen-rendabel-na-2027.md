@@ -57,7 +57,7 @@ Aannames:
 | 30% (1.350 kWh) | ongeveer € 365 | ongeveer € 95 | ongeveer € 460 |
 | 50% (2.250 kWh) | ongeveer € 610 | ongeveer € 70 | ongeveer € 680 |
 
-Kost een installatie als deze ongeveer € 4.000 tot € 5.500, dan kom je op een terugverdientijd van grofweg **6 tot 12 jaar**. Met een lager zelfverbruik, een minder gunstig dak of hogere terugleverkosten kan dat oplopen tot 15 jaar of meer.
+Kost een installatie als deze ongeveer € 4.500 tot € 5.850, dan kom je op een terugverdientijd van grofweg **6 tot 12 jaar**. Met een lager zelfverbruik, een minder gunstig dak of hogere terugleverkosten kan dat oplopen tot 15 jaar of meer.
 
 Panelen gaan vaak 25 jaar of langer mee. Ook met een langere terugverdientijd hou je dus meestal nog jaren over waarin ze vooral opleveren. Houd wel rekening met het vervangen van de omvormer tussendoor.
 

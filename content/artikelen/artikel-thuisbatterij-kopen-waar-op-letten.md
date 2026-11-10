@@ -107,7 +107,7 @@ Vergelijk nooit alleen de prijs van de batterij. Tel alles op:
 
 Deel die totale prijs daarna door de **bruikbare** capaciteit. Zo vergelijk je appels met appels.
 
-Een rekenvoorbeeld met verzonnen getallen: offerte A kost € 4.000 voor 8 kWh bruikbaar, dat is € 500 per bruikbare kWh. Offerte B kost € 5.000 voor 12 kWh bruikbaar, dat is ongeveer € 417 per bruikbare kWh. B is duurder, maar per kWh goedkoper. Of je die extra kWh ook echt gebruikt, is een tweede vraag.
+Een rekenvoorbeeld met verzonnen getallen: offerte A kost € 4.500 voor 8 kWh bruikbaar, dat is € 500 per bruikbare kWh. Offerte B kost € 5.000 voor 12 kWh bruikbaar, dat is ongeveer € 417 per bruikbare kWh. B is duurder, maar per kWh goedkoper. Of je die extra kWh ook echt gebruikt, is een tweede vraag.
 
 Let ook op de btw. Als particulier betaal je 21% btw op een thuisbatterij. In sommige gevallen kun je die terugvragen, zie [btw op een thuisbatterij terugvragen](/artikel-btw-thuisbatterij-terugvragen).
 
@@ -132,7 +132,7 @@ Hoe de installatie zelf verloopt, lees je in [thuisbatterij laten installeren](/
 
 ## Hoe Voltwijk helpt
 
-Voltwijk werkt met een vaste prijs inclusief installatie, door eigen monteurs. Er zijn drie pakketten: 10 kWh met een 5 kW hybride omvormer (€ 4.000), 16 kWh met een 5 kW omvormer voor 1-fase (€ 4.500) en 16 kWh met een 8 kW omvormer voor 3-fase (€ 5.500), alle excl. btw. Je krijgt 10 jaar fabrieksgarantie op de thuisbatterij. Welke past bij jouw huis, zie je met de [batterijcalculator](/thuisbatterij-berekenen).
+Voltwijk werkt met een vaste prijs inclusief installatie, door eigen monteurs. Er zijn drie pakketten: 10 kWh met een 5 kW hybride omvormer (€ 4.500), 16 kWh met een 5 kW omvormer voor 1-fase (€ 5.000) en 16 kWh met een 8 kW omvormer voor 3-fase (€ 5.850), alle excl. btw. Je krijgt 10 jaar fabrieksgarantie op de thuisbatterij. Welke past bij jouw huis, zie je met de [batterijcalculator](/thuisbatterij-berekenen).
 
 faq:
 Q: Waar moet je op letten bij het kopen van een thuisbatterij?
