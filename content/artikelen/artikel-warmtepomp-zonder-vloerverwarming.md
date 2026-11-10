@@ -67,7 +67,7 @@ De warmtepomp zelf verschilt niet. Wat extra kan kosten, zijn de aanpassingen: g
 
 ## Hoe Voltwijk helpt
 
-Voltwijk installeert lucht-water warmtepompen vanaf € 6.750, inclusief installatie door onze eigen monteurs. We kijken vooraf naar je isolatie, radiatoren en meterkast, en zeggen eerlijk of een volledige of hybride oplossing beter past. Bij de ISDE-aanvraag helpen we je; die doe je na de installatie bij RVO. Plan een gratis adviesgesprek of vraag een offerte aan.
+Voltwijk installeert lucht-water warmtepompen vanaf € 8.650 excl. btw, inclusief installatie door onze eigen monteurs. We kijken vooraf naar je isolatie, radiatoren en meterkast, en zeggen eerlijk of een volledige of hybride oplossing beter past. Bij de ISDE-aanvraag helpen we je; die doe je na de installatie bij RVO. Plan een gratis adviesgesprek of vraag een offerte aan.
 
 faq:
 Q: Werkt een warmtepomp zonder vloerverwarming?

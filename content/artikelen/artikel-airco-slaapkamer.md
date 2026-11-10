@@ -67,7 +67,7 @@ Wil je meerdere slaapkamers koelen, dan zijn er twee opties: per kamer een eigen
 
 ## Hoe Voltwijk helpt
 
-Voltwijk installeert split-airco's met een binnenunit van 19 dB(A) in de stilste stand en energielabel A+++, vanaf € 1.899 inclusief installatie door onze eigen monteurs. We kijken samen waar de binnen- en buitenunit het beste kunnen hangen. Vraag een offerte aan of plan een gratis adviesgesprek.
+Voltwijk installeert LG split-airco's vanaf € 1.750 excl. btw inclusief installatie door onze eigen monteurs. We kijken samen waar de binnen- en buitenunit het beste kunnen hangen. Vraag een offerte aan of plan een gratis adviesgesprek.
 
 faq:
 Q: Welke airco is het beste voor een slaapkamer?

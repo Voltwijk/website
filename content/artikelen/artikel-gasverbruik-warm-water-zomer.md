@@ -82,7 +82,7 @@ Overweeg je een volledige warmtepomp die ook je warme water maakt? Dan tel je he
 
 ## Hoe Voltwijk helpt
 
-Wil je weten wat een elektrische boiler of warmtepompboiler in jouw huis zou kosten en gebruiken? Onze eigen monteurs kijken naar je warmwaterverbruik en je meterkast. Een boiler bij Voltwijk kost vanaf € 1.199, met een vaste prijs inclusief installatie. Meer informatie vind je op de pagina over de [boiler](/product-boiler), of [plan een gratis adviesgesprek](/contact).
+Wil je weten wat een elektrische boiler of warmtepompboiler in jouw huis zou kosten en gebruiken? Onze eigen monteurs kijken naar je warmwaterverbruik en je meterkast. Een boiler bij Voltwijk kost vanaf € 1.487,60 excl. btw, met een vaste prijs inclusief installatie. Meer informatie vind je op de pagina over de [boiler](/product-boiler), of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Hoeveel gas gebruik je per jaar voor warm water?

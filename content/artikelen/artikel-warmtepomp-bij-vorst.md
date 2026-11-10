@@ -93,7 +93,7 @@ Lukt dat, ook als het vriest, dan is je huis volgens Milieu Centraal geschikt om
 
 ## Hoe Voltwijk helpt
 
-Twijfel je of een warmtepomp bij jouw huis ook in de winter genoeg warmte geeft? Onze eigen monteurs kijken naar je isolatie, je radiatoren en je verbruik, en adviseren eerlijk of een hybride of volledig elektrische warmtepomp past. Een warmtepomp bij Voltwijk kost vanaf € 6.750, inclusief installatie. Meer informatie vind je op de pagina over de [warmtepomp](/product-warmtepomp).
+Twijfel je of een warmtepomp bij jouw huis ook in de winter genoeg warmte geeft? Onze eigen monteurs kijken naar je isolatie, je radiatoren en je verbruik, en adviseren eerlijk of een hybride of volledig elektrische warmtepomp past. Een warmtepomp bij Voltwijk kost vanaf € 8.650 excl. btw, inclusief installatie. Meer informatie vind je op de pagina over de [warmtepomp](/product-warmtepomp).
 
 faq:
 Q: Werkt een warmtepomp bij -10 graden?

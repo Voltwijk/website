@@ -6,12 +6,12 @@ ROOT = os.path.join(os.path.dirname(__file__), '..'); os.chdir(ROOT)
 SHELL = 'artikel-isde-subsidie-2026.html'
 PRODUCTS = {
  'batterij': ('Thuisbatterij', 'vanaf € 4.000 excl. btw', '/product-batterij', '/images/thumb-batterij.webp'),
- 'zonnepanelen': ('Zonnepanelen', 'vanaf € 3.999', '/product-zonnepanelen', '/images/thumb-zonnepanelen.webp'),
- 'warmtepomp': ('Warmtepomp', 'vanaf € 6.750', '/product-warmtepomp', '/images/thumb-warmtepomp.webp'),
- 'airco': ('Airconditioning', 'vanaf € 1.899', '/product-airco', '/images/thumb-airco.webp'),
- 'boiler': ('Elektrische boiler', 'vanaf € 1.199', '/product-boiler', '/images/thumb-boiler.webp'),
- 'laadpaal': ('Laadpaal', 'vanaf € 1.299', '/product-laadpaal', '/images/thumb-laadpaal.webp'),
- 'meterkast': ('Meterkastaanpassing', 'vanaf € 649', '/product-meterkast', '/images/thumb-meterkast.webp'),
+ 'zonnepanelen': ('Zonnepanelen', 'vanaf € 3.450', '/product-zonnepanelen', '/images/thumb-zonnepanelen.webp'),
+ 'warmtepomp': ('Warmtepomp', 'vanaf € 8.650 excl. btw', '/product-warmtepomp', '/images/thumb-warmtepomp.webp'),
+ 'airco': ('Airconditioning', 'vanaf € 1.750 excl. btw', '/product-airco', '/images/thumb-airco.webp'),
+ 'boiler': ('Elektrische boiler', 'vanaf € 1.487,60 excl. btw', '/product-boiler', '/images/thumb-boiler.webp'),
+ 'laadpaal': ('Laadpaal', 'vanaf € 1.074,38 excl. btw', '/product-laadpaal', '/images/thumb-laadpaal.webp'),
+ 'meterkast': ('Meterkastaanpassing', 'vanaf € 700 excl. btw', '/product-meterkast', '/images/thumb-meterkast.webp'),
 }
 CATLABEL = {'batterij':'Thuisbatterij','zonnepanelen':'Zonnepanelen','warmtepomp':'Warmtepomp','airco':'Airco','boiler':'Boiler','laadpaal':'Laadpaal','meterkast':'Meterkast','algemeen':'Algemeen'}
 HERO = {  # afwisselende beelden per product

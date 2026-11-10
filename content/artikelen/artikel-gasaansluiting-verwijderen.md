@@ -66,7 +66,7 @@ Check ook of je meterkast en aansluiting genoeg ruimte hebben voor al die elektr
 
 ## Hoe Voltwijk helpt
 
-Wil je van het gas af en weten wat daarvoor nodig is? Onze eigen monteurs kijken naar je woning, je meterkast en je verbruik, en adviseren over een warmtepomp, boiler en de aanpassingen in de meterkast. Een warmtepomp bij Voltwijk kost vanaf € 6.750, met een vaste prijs inclusief installatie. We helpen je met de ISDE-aanvraag; die doe je na de installatie bij RVO. Meer informatie vind je op de pagina over de [warmtepomp](/product-warmtepomp), of [plan een gratis adviesgesprek](/contact).
+Wil je van het gas af en weten wat daarvoor nodig is? Onze eigen monteurs kijken naar je woning, je meterkast en je verbruik, en adviseren over een warmtepomp, boiler en de aanpassingen in de meterkast. Een warmtepomp bij Voltwijk kost vanaf € 8.650 excl. btw, met een vaste prijs inclusief installatie. We helpen je met de ISDE-aanvraag; die doe je na de installatie bij RVO. Meer informatie vind je op de pagina over de [warmtepomp](/product-warmtepomp), of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Kost het geld om mijn gasaansluiting te laten verwijderen?

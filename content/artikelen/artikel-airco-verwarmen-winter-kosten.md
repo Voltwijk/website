@@ -135,7 +135,7 @@ Voor koelen in de zomer liggen de kosten veel lager; zie [wat kost een airco aan
 
 ## Hoe Voltwijk helpt
 
-Voltwijk plaatst split-airco's die kunnen koelen en verwarmen, vanaf € 1.899 inclusief installatie, tegen een vaste prijs vooraf en met eigen monteurs. Bekijk de mogelijkheden op onze pagina over de [airco](/product-airco).
+Voltwijk plaatst split-airco's die kunnen koelen en verwarmen, vanaf € 1.750 excl. btw inclusief installatie, tegen een vaste prijs vooraf en met eigen monteurs. Bekijk de mogelijkheden op onze pagina over de [airco](/product-airco).
 
 faq:
 Q: Wat kost verwarmen met een airco per maand?

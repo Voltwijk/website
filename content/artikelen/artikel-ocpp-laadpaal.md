@@ -76,7 +76,7 @@ Wat een laadpaal thuis in totaal kost, lees je in [laadpaal thuis: kosten en ins
 
 ## Hoe Voltwijk helpt
 
-Twijfel je welke laadpaal past bij jouw auto, je aansluiting en je plannen met slim laden? Onze eigen monteurs kijken naar je meterkast en of load balancing nodig is. Een laadpaal bij Voltwijk kost vanaf € 1.299, met een vaste prijs inclusief installatie. Meer informatie vind je op de pagina over de [laadpaal](/product-laadpaal), of [plan een gratis adviesgesprek](/contact).
+Twijfel je welke laadpaal past bij jouw auto, je aansluiting en je plannen met slim laden? Onze eigen monteurs kijken naar je meterkast en of load balancing nodig is. Een laadpaal bij Voltwijk kost vanaf € 1.074,38 excl. btw, met een vaste prijs inclusief installatie. Meer informatie vind je op de pagina over de [laadpaal](/product-laadpaal), of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Wat is OCPP bij een laadpaal?

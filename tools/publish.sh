@@ -14,6 +14,7 @@ python3 tools/order.py
 python3 tools/blackfriday.py   # Black Friday-balk (uit: python3 tools/blackfriday.py uit)
 python3 tools/analytics.py G-6QJJ46JVWW
 python3 tools/battery.py
+python3 tools/aanbod.py   # productpagina's: merken, foto's, specificaties en prijzen uit het CRM
 python3 tools/cookie.py
 python3 tools/meta_pixel.py
 python3 tools/fonts.py

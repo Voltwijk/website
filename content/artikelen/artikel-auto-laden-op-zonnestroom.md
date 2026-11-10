@@ -59,7 +59,7 @@ Een laadpaal met een open standaard als OCPP geeft je de vrijheid om later een a
 
 ## Hoe Voltwijk helpt
 
-Wil je je auto laden op je eigen zonnestroom? Onze eigen monteurs kijken naar je zonnepanelen, je meterkast en of load balancing nodig is, en adviseren een laadpaal die past. Een laadpaal bij Voltwijk kost vanaf € 1.299, met een vaste prijs inclusief installatie. Meer informatie vind je op de pagina over de [laadpaal](/product-laadpaal), of [plan een gratis adviesgesprek](/contact).
+Wil je je auto laden op je eigen zonnestroom? Onze eigen monteurs kijken naar je zonnepanelen, je meterkast en of load balancing nodig is, en adviseren een laadpaal die past. Een laadpaal bij Voltwijk kost vanaf € 1.074,38 excl. btw, met een vaste prijs inclusief installatie. Meer informatie vind je op de pagina over de [laadpaal](/product-laadpaal), of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Kan ik mijn elektrische auto laden met mijn zonnepanelen?

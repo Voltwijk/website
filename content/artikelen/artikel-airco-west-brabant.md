@@ -5,13 +5,13 @@ category: Airco
 product: airco
 image: foto-7060814
 date: 2026-10-01
-lead: Een split-airco laten plaatsen in West-Brabant kan bij Voltwijk vanaf € 1.899 inclusief installatie. Aan de achterkant van een gewone woning heb je meestal geen vergunning nodig, maar de buitenunit moet wel aan geluidsregels voldoen. En de installatie moet door een F-gassen gecertificeerd bedrijf gebeuren.
-summary: Een split-airco bij Voltwijk kost vanaf € 1.899 inclusief installatie || Een buitenunit aan de achterkant is meestal vergunningvrij; aan de voorkant, bij een monument of in beschermd stadsgezicht vaak niet || Werk aan het koudemiddel mag alleen een bedrijf met F-gassencertificaat (BRL 100) en een gecertificeerde monteur (BRL 200) doen || Een split-airco kan ook verwarmen en past goed bij zonnepanelen
+lead: Een split-airco laten plaatsen in West-Brabant kan bij Voltwijk vanaf € 1.750 excl. btw inclusief installatie. Aan de achterkant van een gewone woning heb je meestal geen vergunning nodig, maar de buitenunit moet wel aan geluidsregels voldoen. En de installatie moet door een F-gassen gecertificeerd bedrijf gebeuren.
+summary: Een split-airco bij Voltwijk kost vanaf € 1.750 excl. btw inclusief installatie || Een buitenunit aan de achterkant is meestal vergunningvrij; aan de voorkant, bij een monument of in beschermd stadsgezicht vaak niet || Werk aan het koudemiddel mag alleen een bedrijf met F-gassencertificaat (BRL 100) en een gecertificeerde monteur (BRL 200) doen || Een split-airco kan ook verwarmen en past goed bij zonnepanelen
 sources: Milieu Centraal: airco en ventilatoren|https://www.milieucentraal.nl/energie-besparen/duurzaam-verwarmen-en-koelen/airco-en-ventilatoren/ || Milieu Centraal: welke warmtepompen zijn er|https://www.milieucentraal.nl/energie-besparen/duurzaam-verwarmen-en-koelen/welke-warmtepompen-zijn-er/ || ILT: tips voor consumenten bij installatie van airconditioners en warmtepompen|https://www.ilent.nl/onderwerpen/risicovolle-stoffen/chemische-stoffen/f-gassen-en-ozonlaagafbrekende-stoffen/tips-voor-consumenten-bij-onderhoud-en-installatie-van-airconditioners-en-warmtepompen || ILT: toezicht op F-gassen|https://www.ilent.nl/onderwerpen/risicovolle-stoffen/chemische-stoffen/f-gassen-en-ozonlaagafbrekende-stoffen/toezicht-op-f-gassen-en-ozonlaagafbrekende-stoffen || Omgevingsweb: vergunningvrij een airco plaatsen|https://omgevingsweb.nl/nieuws/vergunningvrij-een-airco-plaatsen-wat-zijn-de-regels/ || Schulinck: wanneer is een airco omgevingsvergunningvrij|https://www.schulinck.nl/opinie/wanneer-is-een-airco-omgevingsvergunningvrij/
 ---
 Warme zomers, een slaapkamer onder het dak die niet afkoelt, of een werkkamer waar je overdag niet kunt zitten. Steeds meer mensen in Breda, Roosendaal, Etten-Leur en de rest van West-Brabant denken aan een airco. Dan wil je weten wat het kost, of het zomaar mag en waar je op let.
 
-Het korte antwoord: een split-airco met buitenunit is bij Voltwijk te krijgen **vanaf € 1.899 inclusief installatie**. Aan de achterkant van een gewone woning heb je meestal geen vergunning nodig. Wel gelden er regels voor geluid, en de installatie moet door een gecertificeerd bedrijf gebeuren. Hieronder lees je hoe dat zit.
+Het korte antwoord: een split-airco met buitenunit is bij Voltwijk te krijgen **vanaf € 1.750 excl. btw inclusief installatie**. Aan de achterkant van een gewone woning heb je meestal geen vergunning nodig. Wel gelden er regels voor geluid, en de installatie moet door een gecertificeerd bedrijf gebeuren. Hieronder lees je hoe dat zit.
 
 ## Wat kost een airco laten plaatsen in West-Brabant?
 
@@ -23,7 +23,7 @@ De prijs van een airco hangt af van een paar dingen:
 - **De lengte van de leidingen** tussen binnen- en buitenunit.
 - **De meterkast.** Een airco krijgt meestal een eigen groep.
 
-Bij Voltwijk begint een split-airco **vanaf € 1.899**, met een vaste prijs inclusief installatie. Welk vermogen bij jouw ruimte past, lees je in [welk vermogen airco heb je nodig](/artikel-welk-vermogen-airco). Wat een airco daarna aan stroom kost, staat in [wat kost een airco aan stroom](/artikel-wat-kost-een-airco-aan-stroom).
+Bij Voltwijk begint een split-airco **vanaf € 1.750 excl. btw**, met een vaste prijs inclusief installatie. Welk vermogen bij jouw ruimte past, lees je in [welk vermogen airco heb je nodig](/artikel-welk-vermogen-airco). Wat een airco daarna aan stroom kost, staat in [wat kost een airco aan stroom](/artikel-wat-kost-een-airco-aan-stroom).
 
 ### Split-airco of mobiele airco?
 
@@ -118,7 +118,7 @@ Voltwijk plaatst split-airco's in heel West-Brabant, met eigen monteurs en een v
 
 faq:
 Q: Wat kost een airco laten plaatsen in Breda of West-Brabant?
-A: Bij Voltwijk kost een split-airco vanaf € 1.899, met een vaste prijs inclusief installatie. De uiteindelijke prijs hangt af van het vermogen, het aantal binnenunits en de plek van de buitenunit.
+A: Bij Voltwijk kost een split-airco vanaf € 1.750 excl. btw, met een vaste prijs inclusief installatie. De uiteindelijke prijs hangt af van het vermogen, het aantal binnenunits en de plek van de buitenunit.
 Q: Heb ik een vergunning nodig voor een airco?
 A: Meestal niet als de buitenunit aan de achterkant van een gewone woning komt. Aan de voorgevel, bij een monument of in een beschermd stadsgezicht vaak wel. In een appartement heb je bijna altijd toestemming van de VvE nodig.
 Q: Hoeveel geluid mag een airco buitenunit maken?

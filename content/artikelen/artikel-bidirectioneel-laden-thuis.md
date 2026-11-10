@@ -63,7 +63,7 @@ ElaadNL noemt een paar punten die nog niet zijn opgelost voordat bidirectioneel 
 
 ## Hoe Voltwijk helpt
 
-Wil je een laadpaal die past bij je auto, je aansluiting en je plannen? Onze eigen monteurs kijken naar je meterkast en of load balancing nodig is. Een laadpaal bij Voltwijk kost vanaf € 1.299, met een vaste prijs inclusief installatie. Meer informatie vind je op de pagina over de [laadpaal](/product-laadpaal), of [plan een gratis adviesgesprek](/contact).
+Wil je een laadpaal die past bij je auto, je aansluiting en je plannen? Onze eigen monteurs kijken naar je meterkast en of load balancing nodig is. Een laadpaal bij Voltwijk kost vanaf € 1.074,38 excl. btw, met een vaste prijs inclusief installatie. Meer informatie vind je op de pagina over de [laadpaal](/product-laadpaal), of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Wat is bidirectioneel laden?

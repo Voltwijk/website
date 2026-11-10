@@ -95,7 +95,7 @@ Een korte checklist:
 
 ## Hoe Voltwijk helpt
 
-Voltwijk installeert een slimme laadpaal van 11 kW vanaf € 1.299 en zonnepanelen van 440 Wp vanaf € 3.999 voor 12 panelen, met eigen monteurs en vaste prijzen. We kijken samen of zonneladen bij je rijpatroon past. Bekijk de [laadpaal](/product-laadpaal) of de [zonnepanelen](/product-zonnepanelen).
+Voltwijk installeert een slimme laadpaal tot 22 kW vanaf € 1.074,38 excl. btw en zonnepanelen van 470 Wp vanaf € 3.450 voor 6 panelen, met eigen monteurs en vaste prijzen. We kijken samen of zonneladen bij je rijpatroon past. Bekijk de [laadpaal](/product-laadpaal) of de [zonnepanelen](/product-zonnepanelen).
 
 faq:
 Q: Kan ik mijn elektrische auto opladen met zonnepanelen?

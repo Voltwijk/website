@@ -99,7 +99,7 @@ Verder krijgt de laadpaal een eigen groep in de meterkast, met aardlekbeveiligin
 
 ## Hoe Voltwijk helpt
 
-Voltwijk installeert een slimme laadpaal van 11 kW (Type 2) en kijkt vooraf naar je auto en je aansluiting zodat je niet te veel of te weinig koopt. Bekijk de [laadpaal](/product-laadpaal) voor alle details.
+Voltwijk installeert een slimme laadpaal tot 22 kW (Type 2) en kijkt vooraf naar je auto en je aansluiting zodat je niet te veel of te weinig koopt. Bekijk de [laadpaal](/product-laadpaal) voor alle details.
 
 faq:
 Q: Laadt mijn auto sneller aan een 3-fase laadpaal?

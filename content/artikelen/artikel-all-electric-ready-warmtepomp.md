@@ -59,7 +59,7 @@ Een gewone hybride kan de betere keuze zijn als je huis voorlopig niet verder ge
 
 ## Hoe Voltwijk helpt
 
-Twijfel je tussen hybride, all-electric-ready en volledig elektrisch? Onze eigen monteurs kijken naar je woning, je isolatie, je radiatoren en je meterkast, en adviseren welke stap nu het meeste oplevert. Een warmtepomp bij Voltwijk kost vanaf € 6.750, met een vaste prijs inclusief installatie. Meer informatie vind je op de pagina over de [warmtepomp](/product-warmtepomp), of [plan een gratis adviesgesprek](/contact).
+Twijfel je tussen hybride, all-electric-ready en volledig elektrisch? Onze eigen monteurs kijken naar je woning, je isolatie, je radiatoren en je meterkast, en adviseren welke stap nu het meeste oplevert. Een warmtepomp bij Voltwijk kost vanaf € 8.650 excl. btw, met een vaste prijs inclusief installatie. Meer informatie vind je op de pagina over de [warmtepomp](/product-warmtepomp), of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Wat is een all-electric-ready warmtepomp?

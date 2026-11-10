@@ -112,7 +112,7 @@ Wat een warmtepomp in totaal kost en wat de prijs bepaalt, lees je in [warmtepom
 
 ## Hoe Voltwijk helpt
 
-Voltwijk installeert een lucht/water-warmtepomp met een COP van 4,7, vanaf € 6.750. We helpen je met de ISDE-aanvraag; die doe je na de installatie bij RVO. Onze eigen monteurs kijken met je naar je gasverbruik, je huis en je meterkast, en rekenen met realistische aannames door wat je kunt verwachten. Kijk op de pagina over de [warmtepomp](/product-warmtepomp) voor meer informatie.
+Voltwijk installeert een lucht/water-warmtepomp met een COP van 4,7, vanaf € 8.650 excl. btw. We helpen je met de ISDE-aanvraag; die doe je na de installatie bij RVO. Onze eigen monteurs kijken met je naar je gasverbruik, je huis en je meterkast, en rekenen met realistische aannames door wat je kunt verwachten. Kijk op de pagina over de [warmtepomp](/product-warmtepomp) voor meer informatie.
 
 faq:
 Q: Wat is de terugverdientijd van een hybride warmtepomp?

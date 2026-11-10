@@ -107,7 +107,7 @@ Een batterij koop je meestal niet alleen voor de airco. Kijk naar je hele verbru
 
 ## Hoe Voltwijk helpt
 
-Twijfel je of een airco goed past bij jouw zonnepanelen, of wil je weten of een batterij er iets aan toevoegt? Onze eigen monteurs kijken naar je dak, je verbruik en de ruimte die je wilt koelen. Een airco bij Voltwijk kost vanaf € 1.899, inclusief installatie; bekijk de [airco](/product-airco). Wil je ook een batterij overwegen, gebruik dan [Bereken welke thuisbatterij past](/thuisbatterij-berekenen), of [plan een gratis adviesgesprek](/contact).
+Twijfel je of een airco goed past bij jouw zonnepanelen, of wil je weten of een batterij er iets aan toevoegt? Onze eigen monteurs kijken naar je dak, je verbruik en de ruimte die je wilt koelen. Een airco bij Voltwijk kost vanaf € 1.750 excl. btw, inclusief installatie; bekijk de [airco](/product-airco). Wil je ook een batterij overwegen, gebruik dan [Bereken welke thuisbatterij past](/thuisbatterij-berekenen), of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Kan een airco draaien op zonnepanelen?

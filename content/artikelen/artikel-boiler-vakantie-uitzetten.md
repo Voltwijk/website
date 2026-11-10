@@ -55,7 +55,7 @@ Ook dan kun je op vakantie gaan zonder de installatie uit te zetten. Veel warmte
 
 ## Hoe Voltwijk helpt
 
-Is je boiler aan vervanging toe, of wil je een zuinigere boiler die je met zonnestroom opwarmt? Onze eigen monteurs plaatsen de boiler en stellen hem goed in. Een boiler bij Voltwijk kost vanaf € 1.199, met een vaste prijs inclusief installatie. Meer informatie vind je op de pagina over de [boiler](/product-boiler), of [plan een gratis adviesgesprek](/contact).
+Is je boiler aan vervanging toe, of wil je een zuinigere boiler die je met zonnestroom opwarmt? Onze eigen monteurs plaatsen de boiler en stellen hem goed in. Een boiler bij Voltwijk kost vanaf € 1.487,60 excl. btw, met een vaste prijs inclusief installatie. Meer informatie vind je op de pagina over de [boiler](/product-boiler), of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Moet ik mijn boiler uitzetten als ik op vakantie ga?

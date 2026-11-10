@@ -103,7 +103,7 @@ Is je boiler al oud, lekt de tank of is de anode jarenlang niet vervangen, dan i
 
 ## Hoe Voltwijk helpt
 
-Is je boiler aan vervanging toe, of twijfel je welk type past? Voltwijk plaatst elektrische boilers met eigen monteurs en een vaste prijs inclusief installatie, vanaf € 1.199. Meer informatie vind je op de pagina over de [boiler](/product-boiler), of [plan een gratis adviesgesprek](/contact).
+Is je boiler aan vervanging toe, of twijfel je welk type past? Voltwijk plaatst elektrische boilers met eigen monteurs en een vaste prijs inclusief installatie, vanaf € 1.487,60 excl. btw. Meer informatie vind je op de pagina over de [boiler](/product-boiler), of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Hoe vaak moet je een elektrische boiler ontkalken?

@@ -114,7 +114,7 @@ Ook het platte dak van een aanbouw, uitbouw of garage kan geschikt zijn. Het is 
 
 ## Hoe Voltwijk helpt
 
-Voltwijk plaatst zonnepanelen van 440 Wp full-black, vanaf € 3.999 voor 12 panelen, met eigen monteurs en zonder onderaannemers. We kijken vooraf eerlijk naar je dak, de opstelling en je meterkast. Bekijk de [zonnepanelen-pagina](/product-zonnepanelen) of [plan een gratis adviesgesprek](/contact).
+Voltwijk plaatst zonnepanelen van 470 Wp full-black, vanaf € 3.450 voor 6 panelen, met eigen monteurs en zonder onderaannemers. We kijken vooraf eerlijk naar je dak, de opstelling en je meterkast. Bekijk de [zonnepanelen-pagina](/product-zonnepanelen) of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Heb ik een vergunning nodig voor zonnepanelen op een plat dak?

@@ -75,7 +75,7 @@ Ja. Sommige huishoudens beginnen met een lucht-lucht warmtepomp in de woonkamer 
 
 ## Hoe Voltwijk helpt
 
-Voltwijk installeert lucht-water warmtepompen (monoblock, vanaf € 6.750) en split-airco's met warmtepompfunctie, die je als lucht-lucht warmtepomp kunt gebruiken (vanaf € 1.899), beide inclusief installatie door onze eigen monteurs. Bij een lucht-water warmtepomp helpen we je met de ISDE-aanvraag; die doe je na de installatie bij RVO. Twijfel je welke past, plan dan een gratis adviesgesprek of vraag een offerte aan.
+Voltwijk installeert lucht-water warmtepompen (monoblock, vanaf € 8.650 excl. btw) en split-airco's met warmtepompfunctie, die je als lucht-lucht warmtepomp kunt gebruiken (vanaf € 1.750 excl. btw), beide inclusief installatie door onze eigen monteurs. Bij een lucht-water warmtepomp helpen we je met de ISDE-aanvraag; die doe je na de installatie bij RVO. Twijfel je welke past, plan dan een gratis adviesgesprek of vraag een offerte aan.
 
 faq:
 Q: Wat is het verschil tussen een lucht-water en een lucht-lucht warmtepomp?

@@ -79,7 +79,7 @@ Een beetje. Panelen die steiler staan, vangen de lage winterzon iets beter op. E
 
 ## Hoe Voltwijk helpt
 
-Wil je weten wat zonnepanelen op jouw dak over het hele jaar opleveren, en wat je in de winter nog moet inkopen? Onze eigen monteurs kijken naar je dak, je verbruik en je plannen. Zonnepanelen bij Voltwijk kosten vanaf € 3.999, met een vaste prijs inclusief installatie. Meer informatie vind je op de pagina over [zonnepanelen](/product-zonnepanelen), of [plan een gratis adviesgesprek](/contact).
+Wil je weten wat zonnepanelen op jouw dak over het hele jaar opleveren, en wat je in de winter nog moet inkopen? Onze eigen monteurs kijken naar je dak, je verbruik en je plannen. Zonnepanelen bij Voltwijk kosten vanaf € 3.450, met een vaste prijs inclusief installatie. Meer informatie vind je op de pagina over [zonnepanelen](/product-zonnepanelen), of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Hoeveel kWh levert een zonnepaneel per dag in de winter?

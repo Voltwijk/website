@@ -109,7 +109,7 @@ Zie je foutmeldingen of stopt de omvormer steeds? Lees dan [omvormer kapot: verv
 
 ## Hoe Voltwijk helpt
 
-Voltwijk biedt zelf geen schoonmaakservice voor zonnepanelen aan. Wel installeren onze eigen monteurs full-black panelen van 440 Wp, vanaf € 3.999 voor 12 panelen. Heb je vragen over de opbrengst van een nieuwe installatie of plannen voor nieuwe of extra panelen, kijk dan op de pagina over [zonnepanelen](/product-zonnepanelen).
+Voltwijk biedt zelf geen schoonmaakservice voor zonnepanelen aan. Wel installeren onze eigen monteurs full-black panelen van 440 Wp, vanaf € 3.450 voor 6 panelen. Heb je vragen over de opbrengst van een nieuwe installatie of plannen voor nieuwe of extra panelen, kijk dan op de pagina over [zonnepanelen](/product-zonnepanelen).
 
 faq:
 Q: Moet je zonnepanelen schoonmaken?

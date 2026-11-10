@@ -71,7 +71,7 @@ Nee. Een boiler die onder waterleidingdruk staat, heeft hem wel nodig. Sommige k
 
 ## Hoe Voltwijk helpt
 
-Is je boiler aan vervanging toe, of wil je van de cv-ketel naar een elektrische boiler? Onze eigen monteurs plaatsen de boiler met een nieuwe inlaatcombinatie en een goede afvoer. Een boiler bij Voltwijk kost vanaf € 1.199, met een vaste prijs inclusief installatie. Meer informatie vind je op de pagina over de [boiler](/product-boiler), of [plan een gratis adviesgesprek](/contact).
+Is je boiler aan vervanging toe, of wil je van de cv-ketel naar een elektrische boiler? Onze eigen monteurs plaatsen de boiler met een nieuwe inlaatcombinatie en een goede afvoer. Een boiler bij Voltwijk kost vanaf € 1.487,60 excl. btw, met een vaste prijs inclusief installatie. Meer informatie vind je op de pagina over de [boiler](/product-boiler), of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Is het normaal dat de inlaatcombinatie van mijn boiler druppelt?

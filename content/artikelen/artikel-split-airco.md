@@ -99,7 +99,7 @@ Voor de plek van de buitenunit gelden ook regels, bijvoorbeeld over geluid op de
 
 ## Hoe Voltwijk helpt
 
-Twijfel je welke split airco bij je huis past, mono of multi, en waar de units het beste kunnen hangen? Onze eigen monteurs kijken met je naar de ruimtes, de plek van de buitenunit en je meterkast. Een airco bij Voltwijk kost vanaf € 1.899, met een vaste prijs inclusief installatie. Meer informatie vind je op de pagina over de [airco](/product-airco), of [plan een gratis adviesgesprek](/contact).
+Twijfel je welke split airco bij je huis past, mono of multi, en waar de units het beste kunnen hangen? Onze eigen monteurs kijken met je naar de ruimtes, de plek van de buitenunit en je meterkast. Een airco bij Voltwijk kost vanaf € 1.750 excl. btw, met een vaste prijs inclusief installatie. Meer informatie vind je op de pagina over de [airco](/product-airco), of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Wat is een split airco?

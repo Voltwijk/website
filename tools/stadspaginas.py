@@ -70,19 +70,19 @@ P = {
     punten=['10 of 16 kWh opslag met hybride omvormer', 'Voor 1-fase én 3-fase aansluitingen', 'Vaste prijs inclusief installatie en aanmelding'],
     lees=[('artikel-thuisbatterij-na-salderen', 'Thuisbatterij na het salderen'), ('artikel-thuisbatterij-hoe-groot', 'Hoe groot moet je thuisbatterij zijn?'),
           ('artikel-thuisbatterij-bij-bestaande-zonnepanelen', 'Thuisbatterij bij bestaande zonnepanelen')]),
- 'zonnepanelen': dict(naam='Zonnepanelen', kort='zonnepanelen', lid='zonnepanelen', prijs='vanaf € 3.999 (12 panelen)', url='/product-zonnepanelen',
+ 'zonnepanelen': dict(naam='Zonnepanelen', kort='zonnepanelen', lid='zonnepanelen', prijs='vanaf € 3.450 (6 panelen)', url='/product-zonnepanelen',
     img='zonnepanelen-installatie', alt='Zonnepanelen op een dak, geïnstalleerd door Voltwijk',
-    punten=['Full-black panelen van 440 Wp, rendement tot 22,8%', '25 jaar productgarantie op de panelen', 'Ontwerp op maat voor jouw dak'],
+    punten=['Jinko-panelen van 470 Wp, glas-glas en full black', 'Solis hybride omvormer: klaar voor een thuisbatterij', 'Ontwerp op maat voor jouw dak'],
     lees=[('artikel-hoeveel-zonnepanelen-nodig', 'Hoeveel zonnepanelen heb ik nodig?'), ('artikel-zonnepanelen-prijs', 'Wat kosten zonnepanelen?'),
           ('artikel-zonnepanelen-rendabel-na-2027', 'Zijn zonnepanelen na 2027 nog rendabel?')]),
- 'airco': dict(naam='Airco', kort='airco', lid='een airco', prijs='vanaf € 1.899', url='/product-airco',
+ 'airco': dict(naam='Airco', kort='airco', lid='een airco', prijs='vanaf € 1.750 excl. btw', url='/product-airco',
     img='airco-installatie', alt='Split-unit airco, geïnstalleerd door Voltwijk',
-    punten=['Split-unit met energielabel A+++', 'Koelt in de zomer, verwarmt in voor- en najaar', 'Binnenunit van 19 dB(A): fluisterstil'],
+    punten=['LG DUALCOOL split-unit, met wifi en app', 'Koelt in de zomer, verwarmt in voor- en najaar', 'Montage door F-gassen-gecertificeerde monteurs'],
     lees=[('artikel-airco-als-bijverwarming', 'Airco als bijverwarming'), ('artikel-wat-kost-een-airco-aan-stroom', 'Wat kost een airco aan stroom?'),
           ('artikel-airco-plaatsen-regels-vergunning', 'Airco plaatsen: regels en vergunning')]),
- 'warmtepomp': dict(naam='Warmtepomp', kort='warmtepomp', lid='een warmtepomp', prijs='vanaf € 6.750', url='/product-warmtepomp',
+ 'warmtepomp': dict(naam='Warmtepomp', kort='warmtepomp', lid='een warmtepomp', prijs='vanaf € 8.650 excl. btw', url='/product-warmtepomp',
     img='warmtepomp-installatie', alt='Warmtepomp buitenunit, geïnstalleerd door Voltwijk',
-    punten=['Lucht/water-warmtepomp, COP tot 4,7', 'Wij helpen je met de ISDE-subsidieaanvraag', 'Ook hybride, naast je cv-ketel'],
+    punten=['LG Therma V of Vaillant aroTHERM plus', 'Wij helpen je met de ISDE-subsidieaanvraag', 'Ook hybride, naast je cv-ketel'],
     lees=[('artikel-is-mijn-huis-geschikt-voor-een-warmtepomp', 'Is mijn huis geschikt voor een warmtepomp?'), ('artikel-hybride-of-volledige-warmtepomp', 'Hybride of volledige warmtepomp?'),
           ('artikel-isde-subsidie-2026', 'ISDE-subsidie 2026')]),
 }
@@ -136,7 +136,7 @@ def lokaal_alinea(g, p, plaats):
                      f'In {gm} is {c["gasvrij"]}% van de woningen aardgasvrij; de rest verbruikt gemiddeld {nl(c["gas"])} m³ gas per jaar.'])
         b = (f'{woning}. ' + ('Bij goed geïsoleerde eengezinswoningen kan een volledige warmtepomp; bij oudere woningen is een hybride warmtepomp naast je cv-ketel vaak de beste eerste stap.' if egw >= 50 else
              'In appartementen is een hybride warmtepomp of een collectieve oplossing vaak het meest haalbaar. We kijken samen wat bij jouw woning past.'))
-        d = 'Voor een warmtepomp krijg je ISDE-subsidie, tot € 2.550. Die vragen wij voor je aan.'
+        d = 'Voor een warmtepomp krijg je ISDE-subsidie, € 2.350 tot € 3.925. Die vragen wij voor je aan.'
         return [a, b + ' ' + d]
 
 def gem_alinea(g):
@@ -254,18 +254,18 @@ def ps_bestaat(p, stad): return stad in PSI.get(p, [])
 def ps_titel(p, stad):
     n, st = P[p]['naam'], stad_toon(stad)
     opts = {'thuisbatterij': [f'Thuisbatterij {st} – vanaf {eur(VANAF)} | Voltwijk', f'Thuisbatterij {st} – vanaf {eur(VANAF)}', f'Thuisbatterij {st} | Voltwijk'],
-            'zonnepanelen': [f'Zonnepanelen {st} – vanaf € 3.999 | Voltwijk', f'Zonnepanelen {st} – vanaf € 3.999', f'Zonnepanelen {st} | Voltwijk'],
-            'airco': [f'Airco {st} – vanaf € 1.899 incl. installatie', f'Airco {st} – vanaf € 1.899 | Voltwijk', f'Airco {st} | Voltwijk'],
-            'warmtepomp': [f'Warmtepomp {st} – vanaf € 6.750 | Voltwijk', f'Warmtepomp {st} – vanaf € 6.750', f'Warmtepomp {st} | Voltwijk']}[p]
+            'zonnepanelen': [f'Zonnepanelen {st} – vanaf € 3.450 | Voltwijk', f'Zonnepanelen {st} – vanaf € 3.450', f'Zonnepanelen {st} | Voltwijk'],
+            'airco': [f'Airco {st} – vanaf € 1.750 excl. btw incl. installatie', f'Airco {st} – vanaf € 1.750 excl. btw | Voltwijk', f'Airco {st} | Voltwijk'],
+            'warmtepomp': [f'Warmtepomp {st} – vanaf € 8.650 excl. btw | Voltwijk', f'Warmtepomp {st} – vanaf € 8.650 excl. btw', f'Warmtepomp {st} | Voltwijk']}[p]
     for t in opts:
         if len(t) <= 60: return t
     return opts[-1][:60]
 def ps_desc(p, stad):
     st = stad_toon(stad)
     d = {'thuisbatterij': f'Thuisbatterij in {st}: 10 kWh {eur(PAKKETTEN[0]["prijs"])}, 16 kWh {eur(PAKKETTEN[1]["prijs"])} of 16 kWh 3-fase {eur(PAKKETTEN[2]["prijs"])}, excl. btw en incl. installatie. Bereken welke past.',
-         'zonnepanelen': f'Zonnepanelen in {st} laten installeren: full-black panelen, vaste prijs vanaf € 3.999 voor 12 panelen incl. installatie. Vraag een offerte aan.',
-         'airco': f'Airco laten plaatsen in {st}: split-unit A+++, koelen en verwarmen, vanaf € 1.899 incl. installatie door eigen monteurs. Vraag een offerte aan.',
-         'warmtepomp': f'Warmtepomp in {st}: lucht/water of hybride, vanaf € 6.750 incl. installatie. ISDE-subsidie tot € 2.550 vragen wij voor je aan.'}[p]
+         'zonnepanelen': f'Zonnepanelen in {st} laten installeren: full-black panelen, vaste prijs vanaf € 3.450 voor 6 panelen incl. installatie. Vraag een offerte aan.',
+         'airco': f'Airco laten plaatsen in {st}: LG split-unit, koelen en verwarmen, vanaf € 1.750 excl. btw incl. installatie door eigen monteurs. Vraag een offerte aan.',
+         'warmtepomp': f'Warmtepomp in {st}: hybride of volledig elektrisch, vanaf € 8.650 excl. btw incl. installatie. ISDE-subsidie (€ 2.350 tot € 3.925) vragen wij voor je aan.'}[p]
     return d if len(d) <= 160 else d[:157].rsplit(' ', 1)[0] + '…'
 
 def ps_faq(p, stad, g):
@@ -276,13 +276,13 @@ def ps_faq(p, stad, g):
         qa.append((f'Wat kost een thuisbatterij in {st}?', f'Een thuisbatterij kost bij ons {eur(PAKKETTEN[0]["prijs"])} (10 kWh), {eur(PAKKETTEN[1]["prijs"])} (16 kWh, 1-fase) of {eur(PAKKETTEN[2]["prijs"])} (16 kWh, 3-fase), exclusief btw en inclusief installatie. In {st} betaal je dezelfde vaste prijs als overal.'))
         qa.append(('Heb ik zonnepanelen nodig voor een thuisbatterij?', 'Nee, maar met zonnepanelen haal je er het meeste uit: je slaat je eigen stroom op. Zonder panelen kun je met een dynamisch contract goedkope stroom opslaan voor later.'))
     elif p == 'zonnepanelen':
-        qa.append((f'Wat kosten zonnepanelen in {st}?', f'Zonnepanelen kosten bij ons vanaf € 3.999 voor 12 full-black panelen, inclusief omvormer en installatie. Hoeveel panelen je nodig hebt, hangt af van je verbruik en je dak; dat rekenen we samen uit.'))
+        qa.append((f'Wat kosten zonnepanelen in {st}?', f'Zonnepanelen kosten bij ons vanaf € 3.450 voor 6 full-black panelen, inclusief omvormer en installatie. Hoeveel panelen je nodig hebt, hangt af van je verbruik en je dak; dat rekenen we samen uit.'))
         qa.append(('Zijn zonnepanelen na 2027 nog rendabel?', 'Ja, maar anders dan nu. Na het einde van het salderen loont het vooral om je eigen stroom zelf te gebruiken. Daarom combineren veel klanten panelen met een thuisbatterij.'))
     elif p == 'airco':
-        qa.append((f'Wat kost een airco in {st}?', f'Een split-unit airco kost bij ons vanaf € 1.899, inclusief installatie door onze eigen monteurs. De precieze prijs hangt af van het aantal ruimtes en de afstand tussen binnen- en buitenunit.'))
+        qa.append((f'Wat kost een airco in {st}?', f'Een split-unit airco kost bij ons vanaf € 1.750 excl. btw, inclusief installatie door onze eigen monteurs. De precieze prijs hangt af van het aantal ruimtes en de afstand tussen binnen- en buitenunit.'))
         qa.append(('Heb ik een vergunning nodig voor een airco?', 'Voor een buitenunit bij een eengezinswoning meestal niet, maar er zijn regels voor geluid en plaatsing, en in een monument of beschermd stadsgezicht gelden extra regels. Bij een appartement heb je vaak toestemming van de VvE nodig. Wij kijken het vooraf voor je na.'))
     elif p == 'warmtepomp':
-        qa.append((f'Wat kost een warmtepomp in {st}?', f'Een warmtepomp kost bij ons vanaf € 6.750, inclusief installatie. Daar gaat de ISDE-subsidie nog af (tot € 2.550), die wij voor je aanvragen.'))
+        qa.append((f'Wat kost een warmtepomp in {st}?', f'Een warmtepomp kost bij ons vanaf € 8.650 excl. btw, inclusief installatie. Daar gaat de ISDE-subsidie nog af (€ 2.350 tot € 3.925), die wij voor je aanvragen.'))
         qa.append(('Hybride of volledige warmtepomp?', 'Bij een goed geïsoleerde woning kan een volledige warmtepomp je cv-ketel vervangen. Bij een oudere woning is een hybride warmtepomp naast je cv-ketel vaak de beste eerste stap. In het adviesgesprek kijken we wat bij jouw huis past.'))
     if andere:
         qa.append((f'Komen jullie ook buiten {st}?', f'Ja. In de gemeente {gm} installeren we ook in {", ".join(andere)}. En daarbuiten in heel {v["provincie"]}.'))
@@ -333,8 +333,8 @@ def ps_main(p, stad):
     h1 = f'{d["naam"]} in {st}'
     attrs = f' data-dienst="{esc(d["naam"])}" data-plaats="{esc(st)}" data-gemeente="{esc(toon(g))}" data-provincie="{esc(pv)}"'
     sub = {'thuisbatterij': f'Vaste prijs {eur(VANAF)} – {eur(PAKKETTEN[-1]["prijs"])} excl. btw, inclusief installatie',
-           'zonnepanelen': 'Vanaf € 3.999 voor 12 panelen, inclusief installatie', 'airco': 'Vanaf € 1.899, inclusief installatie',
-           'warmtepomp': 'Vanaf € 6.750, inclusief installatie · hulp bij de ISDE-subsidie'}[p]
+           'zonnepanelen': 'Vanaf € 3.450 voor 6 panelen, inclusief installatie', 'airco': 'Vanaf € 1.750 excl. btw, inclusief installatie',
+           'warmtepomp': 'Vanaf € 8.650 excl. btw, inclusief installatie · hulp bij de ISDE-subsidie'}[p]
     intro = {'thuisbatterij': f'Een thuisbatterij in {st} laten installeren? Wij plaatsen batterijen van 10 en 16 kWh met hybride omvormer, voor een vaste prijs inclusief installatie. Klaar voor het einde van het salderen op 1 januari 2027.',
              'zonnepanelen': f'Zonnepanelen in {st} laten installeren? Wij ontwerpen het systeem op maat voor jouw dak en installeren het met onze eigen monteurs, voor een vaste prijs die je vooraf weet.',
              'airco': f'Een airco in {st} laten plaatsen? Onze split-unit koelt in de zomer en verwarmt efficiënt in voor- en najaar. Geïnstalleerd door onze eigen monteurs, voor een vaste prijs.',
@@ -393,7 +393,7 @@ def gem_faq(g):
     gm, v = toon(g), G[g]
     pl = v['woonplaatsen']
     qa = [(f'In welke plaatsen in de gemeente {gm} komen jullie?', f'In alle woonplaatsen: {", ".join(pl)}.' if len(pl) > 1 else f'In heel {gm}.'),
-          (f'Wat kost een thuisbatterij in {gm}?', f'Een thuisbatterij kost bij ons {eur(PAKKETTEN[0]["prijs"])} (10 kWh), {eur(PAKKETTEN[1]["prijs"])} (16 kWh, 1-fase) of {eur(PAKKETTEN[2]["prijs"])} (16 kWh, 3-fase), exclusief btw en inclusief installatie. Zonnepanelen vanaf € 3.999, een airco vanaf € 1.899 en een warmtepomp vanaf € 6.750.'),
+          (f'Wat kost een thuisbatterij in {gm}?', f'Een thuisbatterij kost bij ons {eur(PAKKETTEN[0]["prijs"])} (10 kWh), {eur(PAKKETTEN[1]["prijs"])} (16 kWh, 1-fase) of {eur(PAKKETTEN[2]["prijs"])} (16 kWh, 3-fase), exclusief btw en inclusief installatie. Zonnepanelen vanaf € 3.450, een airco vanaf € 1.750 excl. btw en een warmtepomp vanaf € 8.650 excl. btw.'),
           ('Wie regelt de aanmelding bij de netbeheerder?', 'Dat doen wij. Welke netbeheerder je hebt, hangt af van je adres. Moet je aansluiting zwaarder, bijvoorbeeld 3-fase, dan regelen we dat ook.'),
           ('Hoe plan ik een adviesgesprek?', 'Via de knop "Plan gratis adviesgesprek". Afhankelijk van je postcode komt een adviseur bij je langs of bellen we je. Je kiest zelf het moment.')]
     return qa

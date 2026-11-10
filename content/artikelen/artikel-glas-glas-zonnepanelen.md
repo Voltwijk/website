@@ -76,7 +76,7 @@ Of je nu glas-glas of glas-folie kiest, deze punten bepalen ook hoeveel je panel
 
 ## Hoe Voltwijk helpt
 
-Twijfel je welk type paneel past bij je dak en je wensen? Onze eigen monteurs kijken naar je dak, de ligging en het draagvermogen, en adviseren welke panelen passen. Zonnepanelen bij Voltwijk kosten vanaf € 3.999, met een vaste prijs inclusief installatie. Meer informatie vind je op de pagina over [zonnepanelen](/product-zonnepanelen), of [plan een gratis adviesgesprek](/contact).
+Twijfel je welk type paneel past bij je dak en je wensen? Onze eigen monteurs kijken naar je dak, de ligging en het draagvermogen, en adviseren welke panelen passen. Zonnepanelen bij Voltwijk kosten vanaf € 3.450, met een vaste prijs inclusief installatie. Meer informatie vind je op de pagina over [zonnepanelen](/product-zonnepanelen), of [plan een gratis adviesgesprek](/contact).
 
 faq:
 Q: Wat is het verschil tussen glas-glas en glas-folie zonnepanelen?
