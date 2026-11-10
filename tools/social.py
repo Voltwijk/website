@@ -7,7 +7,7 @@ VIDEOS = [
  ('social-1', 'Straatquiz: weet jij wat dit is?', 'Voor 10 euro: herkennen voorbijgangers dit onderdeel van een zonne-installatie?'),
  ('social-2', 'Straatquiz: dakhaak', 'Herken jij een dakhaak voor zonnepanelen?'),
 ]
-IG = 'https://www.instagram.com/voltwijknl'
+IG = 'https://www.instagram.com/voltwijk'
 TT = 'https://www.tiktok.com/@voltwijk'
 ig_svg = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>'
 tt_svg = '<svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 5.8A4.3 4.3 0 0 1 15.5 3h-3.1v12.4a2.6 2.6 0 1 1-2.6-2.6c.3 0 .5 0 .8.1V9.7a5.8 5.8 0 1 0 4.9 5.7V9.1a7.4 7.4 0 0 0 4.3 1.4V7.4a4.3 4.3 0 0 1-3.2-1.6z"/></svg>'
