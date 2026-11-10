@@ -104,7 +104,7 @@ Er is geen route die altijd beter is. Een paar vuistregels:
 
 ## Hoe Voltwijk helpt
 
-Wij plaatsen bij bestaande zonnepanelen, ook bij Huawei, een thuisbatterij met eigen Solis hybride omvormer AC-gekoppeld ernaast: een Dyness LFP-batterij, door onze eigen monteurs geïnstalleerd. Je Huawei en de FusionSolar-app blijven gewoon werken. Onze pakketten kosten € 4.950 excl. btw (10 kWh, 1-fase), € 5.450 excl. btw (16 kWh, 1-fase) en € 5.950 excl. btw (16 kWh, 3-fase), inclusief installatie. Je krijgt 2 jaar garantie op de installatie. Wil je eerst weten welke grootte past? Kijk bij "Bereken welke thuisbatterij past", of plan een gratis adviesgesprek.
+Wij plaatsen bij bestaande zonnepanelen, ook bij Huawei, een thuisbatterij met eigen Solis hybride omvormer AC-gekoppeld ernaast: een Dyness LFP-batterij, door onze eigen monteurs geïnstalleerd. Je Huawei en de FusionSolar-app blijven gewoon werken. Onze pakketten kosten € 4.000 excl. btw (10 kWh, 1-fase), € 4.500 excl. btw (16 kWh, 1-fase) en € 5.500 excl. btw (16 kWh, 3-fase), inclusief installatie. Je krijgt 2 jaar garantie op de installatie. Wil je eerst weten welke grootte past? Kijk bij "Bereken welke thuisbatterij past", of plan een gratis adviesgesprek.
 
 faq:
 Q: Kan ik een thuisbatterij aansluiten op mijn Huawei SUN2000-omvormer?

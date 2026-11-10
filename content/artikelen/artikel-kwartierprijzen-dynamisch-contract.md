@@ -94,7 +94,7 @@ Meer over slim laden lees je in [laadpaal en dynamisch contract](/artikel-laadpa
 
 ## Hoe Voltwijk helpt
 
-Voltwijk plaatst thuisbatterijen met een Dyness LFP-batterij en een Solis hybride omvormer, door onze eigen monteurs. Bij bestaande zonnepanelen zetten we de batterij met eigen omvormer AC-gekoppeld naast je huidige omvormer, van elk merk. Pakketten: 10 kWh / 5 kW 1-fase € 4.950, 16 kWh / 6 kW 1-fase € 5.450 en 16 kWh / 8 kW 3-fase € 5.950, alle prijzen excl. btw en inclusief installatie. Wil je weten welke batterij past bij jouw verbruik en contract? Kijk bij "Bereken welke thuisbatterij past" of plan een gratis adviesgesprek.
+Voltwijk plaatst thuisbatterijen met een Dyness LFP-batterij en een Solis hybride omvormer, door onze eigen monteurs. Bij bestaande zonnepanelen zetten we de batterij met eigen omvormer AC-gekoppeld naast je huidige omvormer, van elk merk. Pakketten: 10 kWh / 5 kW 1-fase € 4.000, 16 kWh / 5 kW 1-fase € 4.500 en 16 kWh / 8 kW 3-fase € 5.500, alle prijzen excl. btw en inclusief installatie. Wil je weten welke batterij past bij jouw verbruik en contract? Kijk bij "Bereken welke thuisbatterij past" of plan een gratis adviesgesprek.
 
 faq:
 Q: Sinds wanneer zijn er kwartierprijzen voor stroom?

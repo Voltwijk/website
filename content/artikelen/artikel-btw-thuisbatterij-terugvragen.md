@@ -55,10 +55,10 @@ Ben je al btw-ondernemer en gebruik je de batterij (deels) voor je bedrijf, bijv
 
 De btw is een flink deel van de prijs. Het is dus belangrijk om in je berekening met het juiste bedrag te rekenen: het bedrag **inclusief** btw.
 
-**Rekenvoorbeeld** (ronde aannames, geen offerte): een thuisbatterij van 10 kWh kost € 4.950 exclusief btw, inclusief installatie. Met 21% btw (€ 1.039,50) betaal je € 5.989,50. Stel dat de batterij je € 350 per jaar oplevert aan besparing, bijvoorbeeld door meer eigen zonnestroom te gebruiken en slim te laden met een dynamisch contract.
+**Rekenvoorbeeld** (ronde aannames, geen offerte): een thuisbatterij van 10 kWh kost € 4.000 exclusief btw, inclusief installatie. Met 21% btw (€ 840) betaal je € 4.840. Stel dat de batterij je € 350 per jaar oplevert aan besparing, bijvoorbeeld door meer eigen zonnestroom te gebruiken en slim te laden met een dynamisch contract.
 
-- Terugverdientijd met btw (als je de btw niet terugvraagt): € 5.989,50 / € 350 = ongeveer 17 jaar.
-- Terugverdientijd als je de btw volledig terugkrijgt: € 4.950 / € 350 = ongeveer 14 jaar.
+- Terugverdientijd met btw (als je de btw niet terugvraagt): € 4.840 / € 350 = ongeveer 14 jaar.
+- Terugverdientijd als je de btw volledig terugkrijgt: € 4.000 / € 350 = ongeveer 11 jaar.
 
 Het verschil is in dit voorbeeld zo'n 3 jaar. Reken voor de zekerheid eerst met het bedrag inclusief btw. Kun je de btw terugvragen, dan is dat meegenomen, maar tel wel de moeite van de btw-administratie mee.
 
@@ -82,7 +82,7 @@ Btw-regels kunnen veranderen. Wat hier staat, is de stand van zaken in oktober 2
 
 ## Hoe Voltwijk helpt
 
-Voltwijk werkt met een vaste prijs vooraf: een thuisbatterij vanaf € 4.950 excl. btw, inclusief installatie. Op de factuur staat de btw netjes uitgesplitst, zodat je precies ziet wat je betaalt en eventueel kunt terugvragen. Bekijk de specificaties en prijs op onze [thuisbatterij-pagina](/product-batterij).
+Voltwijk werkt met een vaste prijs vooraf: een thuisbatterij vanaf € 4.000 excl. btw, inclusief installatie. Op de factuur staat de btw netjes uitgesplitst, zodat je precies ziet wat je betaalt en eventueel kunt terugvragen. Bekijk de specificaties en prijs op onze [thuisbatterij-pagina](/product-batterij).
 
 faq:
 Q: Kan ik de btw op mijn thuisbatterij terugvragen als particulier?

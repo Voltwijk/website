@@ -11,6 +11,7 @@ python3 tools/vriendendeal.py   # /vriendendeal (deellink) en /deel (deelpagina 
 python3 tools/seo.py
 python3 tools/booking.py
 python3 tools/order.py
+python3 tools/blackfriday.py   # Black Friday-balk (uit: python3 tools/blackfriday.py uit)
 python3 tools/analytics.py G-6QJJ46JVWW
 python3 tools/battery.py
 python3 tools/cookie.py

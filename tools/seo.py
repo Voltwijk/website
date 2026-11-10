@@ -9,11 +9,11 @@ TODAY = datetime.datetime.now(__import__('zoneinfo').ZoneInfo('Europe/Amsterdam'
 BIZ_ID = SITE + '/#bedrijf'
 T = {  # titel, description
  'index': ('Thuisbatterij, zonnepanelen en warmtepomp met vaste prijs | Voltwijk',
-           'Thuisbatterij van 10 of 16 kWh vanaf € 4.950 excl. btw, inclusief installatie door eigen monteurs uit Zevenbergen. Ook zonnepanelen, airco en warmtepompen.'),
+           'Thuisbatterij van 10 of 16 kWh vanaf € 4.000 excl. btw, inclusief installatie door eigen monteurs uit Zevenbergen. Ook zonnepanelen, airco en warmtepompen.'),
  'product-zonnepanelen': ('Zonnepanelen laten plaatsen – vanaf € 3.999 | Voltwijk',
            'Full-black zonnepanelen vanaf € 3.999 voor 12 panelen, inclusief installatie door eigen monteurs. Vaste prijs vooraf, 25 jaar productgarantie.'),
- 'product-batterij': ('Thuisbatterij 10 of 16 kWh – vanaf € 4.950 | Voltwijk',
-           'Thuisbatterij van 10 of 16 kWh met hybride omvormer, vanaf € 4.950 excl. btw, inclusief installatie. Bereken in 1 minuut welke batterij bij jouw verbruik past.'),
+ 'product-batterij': ('Thuisbatterij 10 of 16 kWh – vanaf € 4.000 | Voltwijk',
+           'Thuisbatterij van 10 of 16 kWh met hybride omvormer, vanaf € 4.000 excl. btw, inclusief installatie. Bereken in 1 minuut welke batterij bij jouw verbruik past.'),
  'product-warmtepomp': ('Warmtepomp laten installeren – vanaf € 6.750 | Voltwijk',
            'Lucht/water-warmtepomp vanaf € 6.750 inclusief installatie. Hulp bij de ISDE-subsidie, geplaatst door ons eigen team. Plan een gratis adviesgesprek.'),
  'product-airco': ('Airco laten installeren – vanaf € 1.899 | Voltwijk',
@@ -45,7 +45,7 @@ T.update({  # kortere titels (Google toont ~60 tekens)
 })
 PRODUCT = {  # slug: (naam, prijs, afbeelding)
  'product-zonnepanelen': ('Zonnepanelen (12 panelen)', 3999, 'zonnepanelen-installatie'),
- 'product-batterij': ('Thuisbatterij', 4950, 'batterij-installatie'),
+ 'product-batterij': ('Thuisbatterij', 4000, 'batterij-installatie'),
  'product-warmtepomp': ('Warmtepomp', 6750, 'warmtepomp-installatie'),
  'product-airco': ('Airconditioning', 1899, 'airco-installatie'),
  'product-boiler': ('Elektrische boiler', 1199, 'boiler-installatie'),

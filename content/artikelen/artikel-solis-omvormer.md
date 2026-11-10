@@ -93,7 +93,7 @@ Check bij het kiezen:
 
 ## Hoe Voltwijk helpt
 
-Onze thuisbatterij-pakketten bestaan uit een Dyness LFP-batterij met een Solis hybride omvormer, geplaatst door onze eigen monteurs, inclusief installatie: 10 kWh met 5 kW (1-fase) voor € 4.950 excl. btw, 16 kWh met 6 kW (1-fase) voor € 5.450 excl. btw en 16 kWh met 8 kW (3-fase) voor € 5.950 excl. btw. Heb je al zonnepanelen, met welk merk omvormer ook, dan zetten we de batterij met eigen Solis hybride omvormer AC-gekoppeld ernaast. We geven 2 jaar garantie op de installatie. Bereken welke thuisbatterij past, of plan een gratis adviesgesprek via [contact](/contact).
+Onze thuisbatterij-pakketten bestaan uit een Dyness LFP-batterij met een Solis hybride omvormer, geplaatst door onze eigen monteurs, inclusief installatie: 10 kWh met 5 kW (1-fase) voor € 4.000 excl. btw, 16 kWh met 5 kW (1-fase) voor € 4.500 excl. btw en 16 kWh met 8 kW (3-fase) voor € 5.500 excl. btw. Heb je al zonnepanelen, met welk merk omvormer ook, dan zetten we de batterij met eigen Solis hybride omvormer AC-gekoppeld ernaast. We geven 2 jaar garantie op de installatie. Bereken welke thuisbatterij past, of plan een gratis adviesgesprek via [contact](/contact).
 
 faq:
 Q: Is Solis een goed merk omvormer?

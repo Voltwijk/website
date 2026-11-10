@@ -72,7 +72,7 @@ Een onafhankelijke test van Dyness door de Consumentenbond hebben we niet gevond
 
 ## Hoe Voltwijk helpt
 
-Wij installeren Dyness LFP-batterijen van 10 en 16 kWh met een Solis hybride omvormer, voor 1-fase en 3-fase. Vanaf € 4.950 excl. btw voor 10 kWh, inclusief installatie. Bij bestaande zonnepanelen zetten we de batterij met eigen omvormer naast je installatie. Wil je weten welke grootte bij je verbruik past? Kijk bij "Bereken welke thuisbatterij past", of plan een gratis adviesgesprek.
+Wij installeren Dyness LFP-batterijen van 10 en 16 kWh met een Solis hybride omvormer, voor 1-fase en 3-fase. Vanaf € 4.000 excl. btw voor 10 kWh, inclusief installatie. Bij bestaande zonnepanelen zetten we de batterij met eigen omvormer naast je installatie. Wil je weten welke grootte bij je verbruik past? Kijk bij "Bereken welke thuisbatterij past", of plan een gratis adviesgesprek.
 
 faq:
 Q: Waar komt Dyness vandaan?
