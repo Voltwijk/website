@@ -46,7 +46,7 @@ Alle diensten hieronder zijn met een zoekopdracht bevestigd als bestaand en grat
 | ☐ | **Cylex** | Algemene bedrijvengids | https://www.cylex.nl | Registreren, daarna "Bedrijf registreren". Gratis. |
 | ☐ | **Bedrijfstelefoongids.nl** | Algemene bedrijvengids | https://www.bedrijfstelefoongids.nl | Gratis vermelding in de juiste categorie. |
 | ☐ | **Facebook-bedrijfspagina** | Wordt vaak getoond bij zoeken op de bedrijfsnaam | https://www.facebook.com | Vul bij "Info" exact dezelfde gegevens in. |
-| ☐ | **Instagram-profiel** (@voltwijk) | Staat al in de gegevens van de website | https://instagram.com/voltwijk | Zet het adres en telefoonnummer in de contactknoppen, gelijk aan hierboven. |
+| ☐ | **Instagram-profiel** (@voltwijknl) | Staat al in de gegevens van de website | https://instagram.com/voltwijknl | Zet het adres en telefoonnummer in de contactknoppen, gelijk aan hierboven. |
 
 **KvK:** je gegevens in het Handelsregister worden door veel gidsen automatisch overgenomen. Controleer of het adres en de naam daar precies hetzelfde zijn. Wijzigen doe je bij de KvK zelf.
 
