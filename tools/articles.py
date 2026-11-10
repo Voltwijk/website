@@ -142,6 +142,46 @@ MAAND = ['januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'august
 def nl_date(d):
     y, m, dd = (int(x) for x in d.split('-')); return f'{dd} {MAAND[m - 1]} {y}'
 
+QCSS = """<style>.art-qc{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin-top:18px;padding:14px 18px;border-radius:14px;background:var(--surface-tint);border:1px solid var(--border);font-size:14.5px;line-height:1.5;color:var(--ink);}
+.art-qc a{font-weight:800;color:var(--primary);text-decoration:none;white-space:nowrap;}
+.art-reg{margin-top:28px;padding-top:18px;border-top:1px solid var(--border);}
+.art-reg .t{font-size:13px;font-weight:800;color:var(--ink);}
+.art-reg div{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}
+.art-reg a{padding:7px 13px;border-radius:999px;border:1px solid var(--border);background:#fff;color:var(--ink);font-weight:700;font-size:13px;text-decoration:none;}
+.art-reg a:hover{border-color:var(--primary);color:var(--primary);}
+</style>"""
+# Kernplaatsen voor de regio-links onder elk artikel (alleen pagina's die bestaan)
+REGIO = [('breda', 'Breda'), ('roosendaal', 'Roosendaal'), ('oosterhout', 'Oosterhout'), ('etten-leur', 'Etten-Leur'),
+         ('bergen-op-zoom', 'Bergen op Zoom'), ('zevenbergen', 'Zevenbergen'), ('dordrecht', 'Dordrecht')]
+REGIO_PREFIX = {'batterij': ('thuisbatterij', 'Thuisbatterij'), 'zonnepanelen': ('zonnepanelen', 'Zonnepanelen'),
+                'warmtepomp': ('warmtepomp', 'Warmtepomp'), 'airco': ('airco', 'Airco')}
+
+def cta_target(prod):
+    """(link, knoptekst) voor de CTA's in een artikel."""
+    if prod == 'batterij': return '/thuisbatterij-berekenen', 'Bereken je thuisbatterij'
+    if prod == 'algemeen': return '/contact', 'Plan gratis adviesgesprek'
+    return PRODUCTS[prod][2] + '#offerte', 'Vraag een offerte aan'
+
+def quick_cta(prod):
+    href, knop = cta_target(prod)
+    if prod == 'algemeen':
+        tekst = 'Liever meteen advies voor jouw huis? Ons eigen team helpt je gratis en vrijblijvend.'
+    else:
+        pname, price = PRODUCTS[prod][:2]
+        tekst = f'<b>{esc(pname)} bij Voltwijk:</b> {esc(price)}, vaste prijs inclusief installatie door eigen monteurs.'
+    return QCSS + f'<div class="art-qc"><span>{tekst}</span><a href="{href}" data-cta="artikel-boven">{esc(knop)} →</a></div>'
+
+def region_links(prod):
+    pre, lab = REGIO_PREFIX.get(prod, ('installateur', 'Installateur'))
+    links = ''.join(f'<a href="/{pre}-{s}">{esc(lab)} {esc(n)}</a>' for s, n in REGIO if os.path.exists(f'{pre}-{s}.html'))
+    if not links: return ''
+    return f'<div class="art-reg"><div class="t">{esc(lab)} in jouw regio</div><div>{links}<a href="/werkgebied">Alle plaatsen →</a></div></div>'
+
+def sticky_cta(prod):
+    """Geeft de bestaande plan-balk onderin (tools/order.py) de juiste knop voor dit artikel."""
+    href, knop = cta_target(prod)
+    return f'<span hidden data-vw-cta="{href}" data-vw-cta-t="{esc(knop)}"></span>'
+
 def build_page(a, shell, catalog):
     prod = a['product']; pname, price, purl, pthumb = PRODUCTS[prod]
     same = [c for c in catalog if c['product'] == prod]
@@ -177,13 +217,16 @@ def build_page(a, shell, catalog):
   </div>
   <div class="wrap" style="max-width:700px;padding-top:8px;padding-bottom:40px;">
     {'<div class="art-sum"><div class="t">In het kort</div><ul>' + summ + '</ul></div>' if summ else ''}
+    {quick_cta(prod)}
     {'<nav class="art-toc" aria-label="Inhoud"><div class="t">In dit artikel</div><ol>' + tocs + ('<li><a href="#veelgestelde-vragen">Veelgestelde vragen</a></li>' if faq else '') + '</ol></nav>' if len(toc) > 2 else ''}
     <article class="art-body" style="margin-top:28px;">
 {body}
     </article>
     {faq}
     {srcs}
+    {region_links(prod)}
   </div>
+  {sticky_cta(prod)}
 </div>
 '''
     s = shell
@@ -222,7 +265,7 @@ def cta_card(pname, price, href, thumb):
     img = f'<img loading="lazy" decoding="async" src="{thumb}" alt="{esc(pname)}">' if thumb else ''
     return (CTACSS + f'''<div class="art-cta">{img}<div><div class="k">Vaste prijs · eigen monteurs{' · ' + esc(price) if price else ''}</div>
 <h2>{title}</h2><p>{tekst}</p>
-<div class="row"><a class="btn-primary" href="{href}" style="text-decoration:none;">{knop}</a><span>📅 Installatie al vanaf <b data-vw-first></b></span></div></div></div>''')
+<div class="row"><a class="btn-primary" href="{href}" data-cta="artikel-eind" style="text-decoration:none;">{knop}</a><span>📅 Installatie al vanaf <b data-vw-first></b></span></div></div></div>''')
 
 def related_block(slug, prod, catalog):
     if prod == 'algemeen':
