@@ -83,7 +83,7 @@ Hoofdfoto's van artikelen die niet van Voltwijk zelf zijn. Alle foto's komen van
 | foto-4678065 | https://www.pexels.com/photo/4678065/ | artikel-laadpaal-zonder-eigen-oprit |
 | foto-17924298 | https://www.pexels.com/photo/17924298/ | artikel-3-fase-aansluiting-aanvragen |
 | foto-28265032 | https://www.pexels.com/photo/28265032/ | artikel-aansluiting-verzwaren-kosten |
-| foto-32497160 | https://www.pexels.com/photo/32497160/ | artikel-groepenkast-vervangen-kosten |
+| foto-32497160 | https://www.pexels.com/photo/32497160/ | artikel-elektra-oud-huis-bedrading, artikel-groepenkast-vervangen-kosten |
 | foto-6980569 | https://www.pexels.com/photo/6980569/ | artikel-inductie-aansluiten-meterkast |
 | foto-14319099 | https://www.pexels.com/photo/14319099/ | artikel-meetrapport-elektrische-installatie |
 | foto-27862199 | https://www.pexels.com/photo/27862199/ | artikel-meterkast-vervangen-signalen |
