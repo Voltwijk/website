@@ -19,7 +19,7 @@
 <meta property="og:url" content="https://voltwijk.nl/energiescan">
 <meta property="og:image" content="https://voltwijk.nl/images/og-voltwijk.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preload" as="image" href="/images/energiescan-hero.webp" fetchpriority="high">
+<link rel="preload" as="image" href="/images/energiescan-hero.webp" imagesrcset="/images/energiescan-hero-1080.webp 1080w, /images/energiescan-hero.webp 2400w" imagesizes="(max-width: 900px) 100vw, 760px" fetchpriority="high">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is het echt helemaal gratis?","acceptedAnswer":{"@type":"Answer","text":"Ja. Het bezoek en het adviesrapport kosten je niets en je zit nergens aan vast. Wil je daarna iets laten installeren, dan krijg je daar een aparte offerte voor. Of je die aanneemt, bepaal je zelf."}},{"@type":"Question","name":"Gaan jullie me iets verkopen?","acceptedAnswer":{"@type":"Answer","text":"Nee. Tijdens het bezoek geven we advies, geen verkooppraatje. Vaak is het eerlijke antwoord ook dat iets (nog) niet loont. Dat zeggen we dan gewoon."}},{"@type":"Question","name":"Wie komt er langs?","acceptedAnswer":{"@type":"Answer","text":"Een adviseur of monteur uit ons eigen team. Geen callcenter of tussenpersoon."}},{"@type":"Question","name":"Hoe lang duurt het bezoek?","acceptedAnswer":{"@type":"Answer","text":"Reken op ongeveer 45 minuten. We bespreken zonnepanelen, een thuisbatterij en verwarmen met airco’s, kijken naar je meterkast en je energieverbruik, en beantwoorden je vragen."}},{"@type":"Question","name":"Wat heb ik na afloop?","acceptedAnswer":{"@type":"Answer","text":"Binnen een paar werkdagen ontvang je per mail een kort persoonlijk adviesrapport: wat bij jouw huis past, wat het ongeveer kost en wat het oplevert. En wat je beter (nog) niet kunt doen."}},{"@type":"Question","name":"Ik woon niet in de gemeente Moerdijk. Kan ik ook meedoen?","acceptedAnswer":{"@type":"Answer","text":"Deze week is alleen voor inwoners van de gemeente Moerdijk. Woon je ergens anders, dan kun je altijd een gratis adviesgesprek plannen of ons een appje sturen voor advies."}},{"@type":"Question","name":"Kan het ook 's avonds of op zaterdag?","acceptedAnswer":{"@type":"Answer","text":"Ja. We komen overdag, in de avond en op zaterdag. Als we je bellen, spreken we een moment af dat jou uitkomt."}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://voltwijk.nl/"},{"@type":"ListItem","position":2,"name":"Gratis Energiescanweek Moerdijk (26–31 okt 2026)","item":"https://voltwijk.nl/energiescan"}]}</script>
 <!-- seo:end -->
@@ -414,7 +414,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
 </style>
   <div class="wrap reveal" style="max-width:1120px;padding-top:40px;">
     <div class="es-top">
-      <picture><source media="(max-width:900px)" srcset="/images/energiescan-hero-m.webp"><img class="bg" fetchpriority="high" src="/images/energiescan-hero.webp" alt="Woning met zonnepanelen, omvormer en thuisbatterij" width="2400" height="1080"></picture>
+      <picture><source media="(max-width:900px)" srcset="/images/energiescan-hero-m.webp"><img srcset="/images/energiescan-hero-1080.webp 1080w, /images/energiescan-hero.webp 2400w" sizes="(max-width: 900px) 100vw, 760px" class="bg" fetchpriority="high" src="/images/energiescan-hero.webp" alt="Woning met zonnepanelen, omvormer en thuisbatterij" width="2400" height="1080"></picture>
       <div class="in">
         <div class="pill">Gemeente Moerdijk · 26 t/m 31 oktober 2026</div>
         <h1 class="vw-heading" style="font-size:clamp(32px,4.8vw,52px);margin-top:14px;line-height:1.05;hyphens:manual;-webkit-hyphens:manual;">Gratis Energie&shy;scan&shy;week Moerdijk</h1>
@@ -1689,7 +1689,8 @@ body.vwb-lock{overflow:hidden;}
   fill(); new MutationObserver(function(){ if(document.querySelector('[data-vw-first]:empty')) fill(); }).observe(document.body, {childList: true, subtree: true});
   // Eén hoofdknop: op productpagina's met een offerteblok is dat 'Vraag een offerte aan', anders de batterijcalculator.
   var off = document.getElementById('offerte');
-  var cta = off ? {href: '#offerte', t: 'Vraag een offerte aan'} : {href: '/thuisbatterij-berekenen', t: 'Bereken je thuisbatterij'};
+  var mk = document.querySelector('[data-vw-cta]'); // artikelen geven hun eigen product-knop mee (tools/articles.py)
+  var cta = off ? {href: '#offerte', t: 'Vraag een offerte aan'} : mk ? {href: mk.getAttribute('data-vw-cta'), t: mk.getAttribute('data-vw-cta-t')} : {href: '/thuisbatterij-berekenen', t: 'Bereken je thuisbatterij'};
   if(off) document.querySelectorAll('a.nav-book').forEach(function(a){ a.textContent = 'VRAAG OFFERTE AAN'; a.setAttribute('href', '#offerte'); a.removeAttribute('data-book'); });
   if(SKIP.test(location.pathname)) return;
   try{ if(sessionStorage.getItem('vwpClosed')) return; }catch(e){}
@@ -1729,6 +1730,7 @@ body.vwb-lock{overflow:hidden;}
     var h = a.getAttribute('href');
     if(h.indexOf('wa.me') > -1) ev('whatsapp_klik', { pagina: location.pathname });
     else if(h.indexOf('tel:') === 0) ev('bel_klik', { pagina: location.pathname });
+    if(a.getAttribute('data-cta')) ev('cta_klik', { pagina: location.pathname, plek: a.getAttribute('data-cta') });
   }, true);
   document.addEventListener('submit', function(e){
     var f = e.target; if(f.id === 'bkAanvraag' || (f.checkValidity && !f.checkValidity())) return; // keuzehulp meet zelf; onvolledige formulieren niet tellen

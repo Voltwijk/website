@@ -1,13 +1,14 @@
 title: Stooklijn van je warmtepomp instellen: zo verlaag je je stroomverbruik
-seo_title: Stooklijn warmtepomp instellen | Voltwijk
+seo_title: Stooklijn warmtepomp instellen, ook Daikin | Voltwijk
 description: Stooklijn warmtepomp instellen: wat de stooklijn doet, hoe je hem stap voor stap lager zet zonder comfort te verliezen, en wat je aanpast als het te koud is.
 category: Warmtepomp
 product: warmtepomp
 image: foto-36818203
 date: 2026-10-10
+updated: 2026-11-10
 lead: De stooklijn bepaalt hoe warm het water in je verwarming wordt bij een bepaalde buitentemperatuur. Hoe lager die lijn, hoe zuiniger je warmtepomp, zolang je huis maar warm genoeg blijft. Met kleine stappen en een paar dagen geduld vind je de laagste stooklijn die bij jouw huis past.
 summary: De stooklijn koppelt de buitentemperatuur aan de aanvoertemperatuur van je verwarmingswater || Hoe lager de aanvoertemperatuur, hoe hoger het rendement; als vuistregel scheelt elke graad ongeveer 2 procent || Verlaag de stooklijn in kleine stappen en wacht steeds een paar dagen voordat je weer iets verandert || Te koud bij zacht weer? Pas het voetpunt aan. Te koud bij vorst? Pas het eindpunt aan
-sources: Remeha: hoe werkt de stooklijn?|https://kennisbank.remeha.nl/hoe-werkt-de-stooklijn-in-de-remeha-home-app/ || Resideo: weersafhankelijke regeling warmtepomp|https://www.resideo.com/nl/nl/nieuws-en-evenementen/alle-artikelen/weersafhankelijke-regeling-warmtepomp/ || Masterwatt: weersafhankelijke regeling|https://www.masterwatt.com/warmtepomp-handboek/14-2-weersafhankelijke-regeling/ || Quatt: rendement van je warmtepomp verhogen|https://www.quatt.io/waarom-quatt/hybride-warmtepomp/rendement-verhogen || Warmtepompkopen.nl: stooklijn warmtepomp uitgelegd|https://www.warmtepompkopen.nl/kennisbank/warmtepomp-stooklijn-uitleg || DeWarmte: optimale stooklijn warmtepomp|https://www.dewarmte.nl/kennisbank/optimale-stooklijnwarmtepomp/
+sources: Remeha: hoe werkt de stooklijn?|https://kennisbank.remeha.nl/hoe-werkt-de-stooklijn-in-de-remeha-home-app/ || Resideo: weersafhankelijke regeling warmtepomp|https://www.resideo.com/nl/nl/nieuws-en-evenementen/alle-artikelen/weersafhankelijke-regeling-warmtepomp/ || Masterwatt: weersafhankelijke regeling|https://www.masterwatt.com/warmtepomp-handboek/14-2-weersafhankelijke-regeling/ || Quatt: rendement van je warmtepomp verhogen|https://www.quatt.io/waarom-quatt/hybride-warmtepomp/rendement-verhogen || Warmtepompkopen.nl: stooklijn warmtepomp uitgelegd|https://www.warmtepompkopen.nl/kennisbank/warmtepomp-stooklijn-uitleg || DeWarmte: optimale stooklijn warmtepomp|https://www.dewarmte.nl/kennisbank/optimale-stooklijnwarmtepomp/ || Daikin: uitgebreide handleiding voor de gebruiker, Daikin Altherma 3 R F|https://www.daikin.nl/content/dam/document-library/user%20reference%20guide/heat/Air%20to%20water%20heat%20pump%20low%20temperature/EHVZ-E6V,EHVZ-E9W_4PNL629094-1_User%20reference%20guide_Dutch.pdf || NIBE: handmatige instelling koelen en verwarmen|https://www.nibe.eu/download/18.776ca07716c43fb6588314/1565677786302/Handmatige_instelling_koelen_verwarmen.pdf
 ---
 Een warmtepomp is het zuinigst als hij je huis verwarmt met water dat zo koel mogelijk is. Hoe warm dat water wordt, regel je niet met de thermostaat, maar met de **stooklijn**. Toch laten veel mensen die instelling staan zoals hij bij de installatie is gezet. Zonde, want een goed ingestelde stooklijn scheelt stroom, zonder dat je het kouder krijgt.
 
@@ -52,6 +53,18 @@ Daar is geen standaardwaarde voor. De juiste stooklijn hangt af van:
 
 Heb je radiatoren en twijfel je of een warmtepomp goed genoeg verwarmt, lees dan [warmtepomp zonder vloerverwarming](/artikel-warmtepomp-zonder-vloerverwarming).
 
+## Wat is de ideale stooklijn?
+
+De ideale stooklijn is **de laagste stooklijn waarbij je huis nog comfortabel warm blijft**. Lager is zuiniger, maar alleen zolang het binnen warm genoeg wordt. Een vaste waarde die voor elk huis klopt, bestaat dus niet.
+
+Wel kun je een richting geven:
+
+- **Met vloerverwarming** kan de stooklijn meestal laag. Volgens NIBE wordt bij een nieuwe installatie meestal gerekend met een aanvoertemperatuur van 35 °C om de woning bij -10 °C buiten nog warm te houden.
+- **Met radiatoren** is vaak een hogere aanvoertemperatuur nodig, omdat radiatoren een kleiner oppervlak hebben dan een vloer.
+- **Een slecht geïsoleerd huis** verliest meer warmte en heeft dus een hogere lijn nodig dan een goed geïsoleerd huis.
+
+Begin daarom bij de instelling van je installateur en zoek vanaf daar in kleine stappen naar de laagste lijn die voor jouw huis werkt, zoals hieronder beschreven.
+
 ## Zo stel je de stooklijn stap voor stap in
 
 1. **Noteer de huidige instelling.** Maak een foto van het menu of schrijf de waarden op. Dan kun je altijd terug.
@@ -74,6 +87,23 @@ Welk punt je aanpast, hangt af van wanneer het misgaat:
 | Te warm bij kou | eindpunt iets omlaag |
 
 Pas ook hier steeds met kleine stappen aan, en wacht weer een paar dagen.
+
+## Stooklijn instellen bij een Daikin-warmtepomp
+
+Veel mensen zoeken specifiek naar de stooklijn van hun Daikin. Daikin noemt de stooklijn de **weersafhankelijke curve**. In de gebruikershandleiding van de Daikin Altherma 3 R F staat hoe die werkt:
+
+- De warmtepomp bepaalt de aanvoertemperatuur aan de hand van de buitentemperatuur, gemeten met een sensor aan de **noordzijde** van het huis.
+- De curve kan worden aangepast door de installateur of door de gebruiker zelf.
+- Er zijn twee manieren om de curve in te stellen: een **curve met 2 punten** (twee buitentemperaturen met de bijbehorende watertemperatuur) of een **curve volgens helling en afwijking**.
+
+Kies je voor helling en afwijking, dan geeft Daikin dit advies:
+
+| Wat merk je? | Wat pas je aan? |
+|---|---|
+| Meestal goed, maar te koud als het buiten koud is | **verhoog de helling** |
+| Altijd een beetje te koud, bij elke buitentemperatuur | **verhoog de afwijking** (de hele lijn schuift omhoog) |
+
+Andersom werkt het ook: is het steeds te warm, verlaag dan de afwijking. Dat is hetzelfde principe als het voetpunt en het eindpunt hierboven. De precieze menunamen verschillen per Daikin-model en softwareversie; kijk daarvoor in de handleiding van jouw warmtepomp. Ook bij andere merken heet de stooklijn soms anders, bijvoorbeeld stookcurve of weersafhankelijke regeling.
 
 ## Stooklijn en thermostaat: wat is het verschil?
 
@@ -105,3 +135,7 @@ Q: Mijn huis is te koud als het vriest. Wat moet ik aanpassen?
 A: Verhoog het eindpunt van de stooklijn, de aanvoertemperatuur bij koude buitentemperaturen, met een kleine stap. Is het juist bij zacht weer te koud, pas dan het voetpunt aan.
 Q: Moet ik de thermostaat of de stooklijn aanpassen?
 A: Voor het comfort in de kamer gebruik je de thermostaat. Voor een zuinige warmtepomp stel je de stooklijn zo laag mogelijk in. Een te hoge stooklijn compenseren met een lage thermostaat is minder zuinig.
+Q: Wat is de ideale stooklijn voor een warmtepomp?
+A: De laagste stooklijn waarbij je huis nog comfortabel warm blijft. Die verschilt per huis: met vloerverwarming kan de lijn meestal lager dan met radiatoren.
+Q: Hoe stel ik de stooklijn in bij een Daikin-warmtepomp?
+A: Daikin noemt de stooklijn de weersafhankelijke curve. Je stelt hem in met 2 punten of met helling en afwijking. Te koud bij vorst? Verhoog de helling. Altijd iets te koud? Verhoog de afwijking.

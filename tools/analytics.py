@@ -24,6 +24,7 @@ BLOCK = '''<!-- vw-analytics:start -->
     var h = a.getAttribute('href');
     if(h.indexOf('wa.me') > -1) ev('whatsapp_klik', { pagina: location.pathname });
     else if(h.indexOf('tel:') === 0) ev('bel_klik', { pagina: location.pathname });
+    if(a.getAttribute('data-cta')) ev('cta_klik', { pagina: location.pathname, plek: a.getAttribute('data-cta') });
   }, true);
   document.addEventListener('submit', function(e){
     var f = e.target; if(f.id === 'bkAanvraag' || (f.checkValidity && !f.checkValidity())) return; // keuzehulp meet zelf; onvolledige formulieren niet tellen

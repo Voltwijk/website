@@ -308,7 +308,8 @@ PLAN = r'''<!-- vw-plan:start -->
   fill(); new MutationObserver(function(){ if(document.querySelector('[data-vw-first]:empty')) fill(); }).observe(document.body, {childList: true, subtree: true});
   // Eén hoofdknop: op productpagina's met een offerteblok is dat 'Vraag een offerte aan', anders de batterijcalculator.
   var off = document.getElementById('offerte');
-  var cta = off ? {href: '#offerte', t: 'Vraag een offerte aan'} : {href: '/thuisbatterij-berekenen', t: 'Bereken je thuisbatterij'};
+  var mk = document.querySelector('[data-vw-cta]'); // artikelen geven hun eigen product-knop mee (tools/articles.py)
+  var cta = off ? {href: '#offerte', t: 'Vraag een offerte aan'} : mk ? {href: mk.getAttribute('data-vw-cta'), t: mk.getAttribute('data-vw-cta-t')} : {href: '/thuisbatterij-berekenen', t: 'Bereken je thuisbatterij'};
   if(off) document.querySelectorAll('a.nav-book').forEach(function(a){ a.textContent = 'VRAAG OFFERTE AAN'; a.setAttribute('href', '#offerte'); a.removeAttribute('data-book'); });
   if(SKIP.test(location.pathname)) return;
   try{ if(sessionStorage.getItem('vwpClosed')) return; }catch(e){}

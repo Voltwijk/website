@@ -20,7 +20,7 @@
 <meta property="og:url" content="https://voltwijk.nl/installateur-bergeijk">
 <meta property="og:image" content="https://voltwijk.nl/images/og-voltwijk.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preload" as="image" href="/images/monteur-dak.webp" fetchpriority="high">
+<link rel="preload" as="image" href="/images/monteur-dak.webp" imagesrcset="/images/monteur-dak-1080.webp 1080w, /images/monteur-dak.webp 1400w" imagesizes="(max-width: 900px) 100vw, 760px" fetchpriority="high">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Thuisbatterij, zonnepanelen en airco in Bergeijk","serviceType":"Installatie van thuisbatterijen, zonnepanelen en airco's","description":"Thuisbatterij, zonnepanelen of airco in Bergeijk: vaste prijs inclusief installatie. Thuisbatterij vanaf € 4.500 excl. btw.","provider":{"@type":"HomeAndConstructionBusiness","@id":"https://voltwijk.nl/#bedrijf","name":"Voltwijk","url":"https://voltwijk.nl/"},"areaServed":[{"@type":"City","name":"Bergeijk","containedInPlace":{"@type":"AdministrativeArea","name":"Gemeente Bergeijk","containedInPlace":{"@type":"AdministrativeArea","name":"Noord-Brabant"}}},{"@type":"City","name":"Luyksgestel","containedInPlace":{"@type":"AdministrativeArea","name":"Gemeente Bergeijk","containedInPlace":{"@type":"AdministrativeArea","name":"Noord-Brabant"}}},{"@type":"City","name":"Riethoven","containedInPlace":{"@type":"AdministrativeArea","name":"Gemeente Bergeijk","containedInPlace":{"@type":"AdministrativeArea","name":"Noord-Brabant"}}},{"@type":"City","name":"Westerhoven","containedInPlace":{"@type":"AdministrativeArea","name":"Gemeente Bergeijk","containedInPlace":{"@type":"AdministrativeArea","name":"Noord-Brabant"}}}],"url":"https://voltwijk.nl/installateur-bergeijk","offers":[{"@type":"Offer","name":"Thuisbatterij 10 kWh + 5 kW omvormer (1-fase)","price":"4500","priceCurrency":"EUR","url":"https://voltwijk.nl/product-batterij","seller":{"@type":"HomeAndConstructionBusiness","@id":"https://voltwijk.nl/#bedrijf","name":"Voltwijk","url":"https://voltwijk.nl/"}},{"@type":"Offer","name":"Thuisbatterij 16 kWh + 5 kW omvormer (1-fase)","price":"5000","priceCurrency":"EUR","url":"https://voltwijk.nl/product-batterij","seller":{"@type":"HomeAndConstructionBusiness","@id":"https://voltwijk.nl/#bedrijf","name":"Voltwijk","url":"https://voltwijk.nl/"}},{"@type":"Offer","name":"Thuisbatterij 16 kWh + 8 kW omvormer (3-fase)","price":"5850","priceCurrency":"EUR","url":"https://voltwijk.nl/product-batterij","seller":{"@type":"HomeAndConstructionBusiness","@id":"https://voltwijk.nl/#bedrijf","name":"Voltwijk","url":"https://voltwijk.nl/"}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://voltwijk.nl/"},{"@type":"ListItem","position":2,"name":"Werkgebied","item":"https://voltwijk.nl/werkgebied"},{"@type":"ListItem","position":3,"name":"Bergeijk","item":"https://voltwijk.nl/installateur-bergeijk"}]}</script>
 <!-- seo:end -->
@@ -405,7 +405,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
         <p style="font-size:17px;color:var(--ink-soft);margin-top:16px;line-height:1.65;">Een thuisbatterij, zonnepanelen, airco of warmtepomp in Bergeijk? Je krijgt van ons een vaste prijs vooraf, inclusief installatie door onze eigen monteurs.</p>
         <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:24px;"><a href="/thuisbatterij-berekenen" class="btn-primary" style="text-decoration:none;">Bereken je thuisbatterij →</a><a href="/contact" data-book="" class="btn-secondary" style="text-decoration:none;">Plan gratis adviesgesprek</a><a href="https://wa.me/31853335687?text=Hoi%20Voltwijk%2C%20ik%20woon%20in%20Bergeijk%20en%20heb%20een%20vraag" target="_blank" rel="noopener" class="btn-secondary" style="text-decoration:none;">App ons</a></div>
       </div>
-      <div class="img"><img fetchpriority="high" src="/images/monteur-dak.webp" alt="Installatie door een Voltwijk-monteur" width="800" height="600"></div>
+      <div class="img"><img srcset="/images/monteur-dak-1080.webp 1080w, /images/monteur-dak.webp 1400w" sizes="(max-width: 900px) 100vw, 760px" fetchpriority="high" src="/images/monteur-dak.webp" alt="Installatie door een Voltwijk-monteur" width="800" height="600"></div>
     </div>
     <div class="lp-stats">
       <div class="lp-stat"><b>12.500+</b><span>installaties uitgevoerd</span></div>
@@ -1672,7 +1672,8 @@ body.vwb-lock{overflow:hidden;}
   fill(); new MutationObserver(function(){ if(document.querySelector('[data-vw-first]:empty')) fill(); }).observe(document.body, {childList: true, subtree: true});
   // Eén hoofdknop: op productpagina's met een offerteblok is dat 'Vraag een offerte aan', anders de batterijcalculator.
   var off = document.getElementById('offerte');
-  var cta = off ? {href: '#offerte', t: 'Vraag een offerte aan'} : {href: '/thuisbatterij-berekenen', t: 'Bereken je thuisbatterij'};
+  var mk = document.querySelector('[data-vw-cta]'); // artikelen geven hun eigen product-knop mee (tools/articles.py)
+  var cta = off ? {href: '#offerte', t: 'Vraag een offerte aan'} : mk ? {href: mk.getAttribute('data-vw-cta'), t: mk.getAttribute('data-vw-cta-t')} : {href: '/thuisbatterij-berekenen', t: 'Bereken je thuisbatterij'};
   if(off) document.querySelectorAll('a.nav-book').forEach(function(a){ a.textContent = 'VRAAG OFFERTE AAN'; a.setAttribute('href', '#offerte'); a.removeAttribute('data-book'); });
   if(SKIP.test(location.pathname)) return;
   try{ if(sessionStorage.getItem('vwpClosed')) return; }catch(e){}
@@ -1712,6 +1713,7 @@ body.vwb-lock{overflow:hidden;}
     var h = a.getAttribute('href');
     if(h.indexOf('wa.me') > -1) ev('whatsapp_klik', { pagina: location.pathname });
     else if(h.indexOf('tel:') === 0) ev('bel_klik', { pagina: location.pathname });
+    if(a.getAttribute('data-cta')) ev('cta_klik', { pagina: location.pathname, plek: a.getAttribute('data-cta') });
   }, true);
   document.addEventListener('submit', function(e){
     var f = e.target; if(f.id === 'bkAanvraag' || (f.checkValidity && !f.checkValidity())) return; // keuzehulp meet zelf; onvolledige formulieren niet tellen
