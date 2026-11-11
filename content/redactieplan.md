@@ -26,13 +26,14 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 ## Open (op volgorde)
 
 ### Koopintentie (eerst, minstens 4 van de 7 dagen)
-- [open] Airco laten installeren: wat kost het in 2026? | airco laten installeren kosten | airco | koopintentie, eigen prijs vanaf € 1.750 excl. btw
+- [klaar 2026-11-11, artikel-airco-laten-installeren-kosten] Airco laten installeren: wat kost het in 2026? | airco laten installeren kosten | airco | koopintentie, eigen prijs vanaf € 1.750 excl. btw
 - [open] Zonnepanelen terugverdientijd na 2027 | zonnepanelen terugverdientijd | zonnepanelen | koopintentie, piekt rond einde salderen
 - [open] Boiler vervangen: kosten en wanneer het tijd is | boiler vervangen kosten | boiler | koopintentie, combineert met 'boiler vervangen signalen'
 - [open] Offerte thuisbatterij vergelijken: hier let je op | offerte thuisbatterij vergelijken | batterij | koopintentie, sluit aan op 'thuisbatterij kopen' (homepage pos. 6)
 - [open] Offerte warmtepomp vergelijken: hier let je op | offerte warmtepomp vergelijken | warmtepomp | koopintentie
 - [open] Zonnepanelen en thuisbatterij tegelijk laten plaatsen | zonnepanelen met thuisbatterij | batterij | koopintentie, twee producten in één offerte
 
+- [open] Multi split of meerdere single splits: wat is voordeliger? | multi split of single split kosten | airco | koopintentie, vervolg op airco-kosten
 ### Overig
 - [klaar (2026-10-01, artikel-netcongestie-west-brabant)] Netcongestie in West-Brabant: wat betekent het voor jouw huis | netcongestie West-Brabant | batterij | lokaal, weinig concurrentie
 - [klaar (2026-10-02, artikel-warmtepomp-bij-vorst)] Warmtepomp bij vorst: werkt hij nog en wat kost het | warmtepomp vorst | warmtepomp | seizoensvraag oktober–februari
