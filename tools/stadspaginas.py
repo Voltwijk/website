@@ -18,6 +18,7 @@ import hashlib, html, json, os, re, sys, urllib.parse
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'); os.chdir(ROOT)
 sys.path.insert(0, 'tools'); sys.dont_write_bytecode = True
 from battery import PAKKETTEN, VANAF, eur
+import local_pages as LP  # met de hand gemaakte plaatspagina's: netbeheerder, kernen en lokale punten (bouwt niets bij import)
 
 SHELL = 'artikel-isde-subsidie-2026.html'
 G = json.load(open('tools/data/gemeenten.json', encoding='utf-8'))
@@ -46,7 +47,7 @@ STAD_GEM = {'den haag': "'s-Gravenhage", 'den bosch': "'s-Hertogenbosch", 'zeven
             'naaldwijk': 'Westland', 'ijmuiden': 'Velsen', 'oud-beijerland': 'Hoeksche Waard', 'hellevoetsluis': 'Voorne aan Zee', 'veghel': 'Meierijstad'}
 STAD_TOON = {'den haag': 'Den Haag', 'den bosch': 'Den Bosch', 'ijmuiden': 'IJmuiden', 'capelle aan den ijssel': 'Capelle aan den IJssel',
              'alphen aan den rijn': 'Alphen aan den Rijn', 'bergen op zoom': 'Bergen op Zoom', 'etten-leur': 'Etten-Leur', 'de bilt': 'De Bilt',
-             'den helder': 'Den Helder', 'oud-beijerland': 'Oud-Beijerland'}
+             'den helder': 'Den Helder', 'oud-beijerland': 'Oud-Beijerland', 'heeze-leende': 'Heeze-Leende'}
 def stad_toon(s): return STAD_TOON.get(s, ' '.join(w.capitalize() if w not in ('aan', 'den', 'op', 'de') else w for w in s.split(' ')))
 def gem_van(stad):
     if stad in STAD_GEM: return STAD_GEM[stad]
@@ -250,6 +251,26 @@ def knoppen(p, wa_tekst):
 PSI = {}  # (product, gemeente) -> [stad]
 for x in PS: PSI.setdefault(x['product'], []).append(x['stad'])
 def ps_bestaat(p, stad): return stad in PSI.get(p, [])
+# Optioneel per stad in productsteden.json: "pagina" = slug van de met de hand gemaakte installateur-pagina (tools/local_pages.py).
+# Dan komen netbeheerder, kernen en de lokale punten over de batterij of meterkast van die pagina ook op de productpagina.
+PAG = {(x['product'], x['stad']): LP.BY[x['pagina']] for x in PS if x.get('pagina')}
+BAT_WOORDEN = ('batterij', 'meterkast', 'aansluiting', 'terugle')
+def hand_punten(c):
+    """Lokale punten van de plaatspagina die over de batterij, meterkast of aansluiting gaan (max. 2)."""
+    return [(h, t) for h, t in c['local'] if not h.startswith('Netbeheerder') and any(w in t.lower() for w in BAT_WOORDEN)][:2]
+def hand_html(p, stad):
+    c = PAG.get((p, stad))
+    if not c: return ''
+    lab, nb = LP.label(c), LP.NB[c['nb']]
+    near = ', '.join(c['near'][:-1]) + ' en ' + c['near'][-1]
+    kaarten = [(h, t) for h, t in hand_punten(c)]
+    kaarten.append((f'Netbeheerder {c["nb"]}', f'In {lab} is {nb} in de regel de netbeheerder; je exacte adres is bepalend. Wij melden je thuisbatterij aan en regelen een zwaardere aansluiting als dat nodig is.'))
+    kaarten.append(('Ook in de buurt', f'We installeren ook in {near}. Meer over alles wat we in {lab} doen, lees je op [onze pagina over {lab}](/installateur-{c["slug"]}).'))
+    li = ''.join(f'<div><h3>{esc(h)}</h3><p>{LP.inline(t)}</p></div>' for h, t in kaarten)
+    return f'''<style>.sp-hand p{{font-size:15px;}}.sp-hand p a{{color:var(--primary);font-weight:700;}}</style><div class="wrap reveal sp-sec" style="max-width:1000px;">
+    <h2 class="vw-heading sp-h2">Goed om te weten in {esc(lab)}</h2>
+    <div class="sp-gm sp-hand">{li}</div>
+  </div>'''
 
 def ps_titel(p, stad):
     n, st = P[p]['naam'], stad_toon(stad)
@@ -286,7 +307,11 @@ def ps_faq(p, stad, g):
         qa.append(('Hybride of volledige warmtepomp?', 'Bij een goed geïsoleerde woning kan een volledige warmtepomp je cv-ketel vervangen. Bij een oudere woning is een hybride warmtepomp naast je cv-ketel vaak de beste eerste stap. In het adviesgesprek kijken we wat bij jouw huis past.'))
     if andere:
         qa.append((f'Komen jullie ook buiten {st}?', f'Ja. In de gemeente {gm} installeren we ook in {", ".join(andere)}. En daarbuiten in heel {v["provincie"]}.'))
-    qa.append(('Wie regelt de aanmelding bij de netbeheerder?', 'Dat doen wij. Welke netbeheerder je hebt, hangt af van je adres. Moet je aansluiting zwaarder, bijvoorbeeld 3-fase, dan regelen we dat ook.'))
+    c = PAG.get((p, stad))
+    if c:
+        qa.append((f'Wie is de netbeheerder in {st}?', f'In {LP.label(c)} is dat in de regel {LP.NB[c["nb"]]}; je exacte adres is bepalend. De aanmelding regelen wij. Moet je aansluiting zwaarder, bijvoorbeeld 3-fase, dan regelen we dat ook.'))
+    else:
+        qa.append(('Wie regelt de aanmelding bij de netbeheerder?', 'Dat doen wij. Welke netbeheerder je hebt, hangt af van je adres. Moet je aansluiting zwaarder, bijvoorbeeld 3-fase, dan regelen we dat ook.'))
     return qa
 
 def lokaal_html(g, p=None):
@@ -330,6 +355,8 @@ def ps_main(p, stad):
     if len(buren) < 4: buren += [x for x in PSI[p] if x != stad and x not in buren and G[gem_van(x)]['provincie'] == pv][:8 - len(buren)]
     buren_html = ''.join(f'<a href="{ps_url(p, x)}">{esc(d["naam"])} {esc(stad_toon(x))}</a>' for x in buren)
     gem_link = f'<a href="{gem_url(g)}">Alles over {esc(toon(g))}</a>'
+    hc = PAG.get((p, stad))
+    if hc and f'/installateur-{hc["slug"]}' != gem_url(g): gem_link = f'<a href="/installateur-{hc["slug"]}">Installateur in {esc(LP.label(hc))}</a>' + gem_link
     h1 = f'{d["naam"]} in {st}'
     attrs = f' data-dienst="{esc(d["naam"])}" data-plaats="{esc(st)}" data-gemeente="{esc(toon(g))}" data-provincie="{esc(pv)}"'
     sub = {'thuisbatterij': f'Vaste prijs {eur(VANAF)} – {eur(PAKKETTEN[-1]["prijs"])} excl. btw, inclusief installatie',
@@ -369,7 +396,7 @@ def ps_main(p, stad):
     {tegels(g)}
     <p class="sp-bron">{esc(BRON)}</p>
   </div>
-  {lokaal_html(g, p)}
+  {hand_html(p, stad)}{lokaal_html(g, p)}
   {funnel_plek()}
   <div class="wrap reveal sp-sec" style="max-width:1000px;">
     <h2 class="vw-heading sp-h2">Zo gaat het</h2>

@@ -1126,5 +1126,73 @@
   "stad": "heerhugowaard",
   "volume": 140,
   "kd": 10
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "bergen op zoom",
+  "volume": 0,
+  "kd": 0,
+  "pagina": "bergen-op-zoom"
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "moerdijk",
+  "volume": 0,
+  "kd": 0,
+  "pagina": "moerdijk"
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "oudenbosch",
+  "volume": 0,
+  "kd": 0,
+  "pagina": "oudenbosch"
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "steenbergen",
+  "volume": 0,
+  "kd": 0,
+  "pagina": "steenbergen"
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "made",
+  "volume": 0,
+  "kd": 0,
+  "pagina": "made"
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "geertruidenberg",
+  "volume": 0,
+  "kd": 0,
+  "pagina": "geertruidenberg"
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "woensdrecht",
+  "volume": 0,
+  "kd": 0
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "rucphen",
+  "volume": 0,
+  "kd": 0,
+  "pagina": "rucphen"
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "zundert",
+  "volume": 0,
+  "kd": 0,
+  "pagina": "zundert"
+ },
+ {
+  "product": "thuisbatterij",
+  "stad": "heeze-leende",
+  "volume": 0,
+  "kd": 0
  }
 ]

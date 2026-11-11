@@ -588,6 +588,13 @@ def overview_main():
         chips = ''.join(f'<a href="/installateur-{s}">{esc(label(BY[s]))}</a>' for s in slugs)
         extra = f'<p>Ook: {esc(", ".join(ook))}.</p>' if ook else ''
         gm += f'<div><h3>Gemeente {esc(g)}</h3><div class="lp-chips">{chips}</div>{extra}</div>'
+    # thuisbatterij per plaats (pagina's van tools/stadspaginas.py), alleen als ze bestaan
+    bat = ''.join(f'<a href="/thuisbatterij-{s}">Thuisbatterij {esc(BY[s]["name"])}</a>' for _, slugs, _ in WB_GEMEENTEN for s in slugs if os.path.exists(f'thuisbatterij-{s}.html'))
+    bat_blok = (f'''<div class="wrap reveal lp-sec" style="max-width:1000px;">
+    <h2 class="vw-heading lp-h2">Thuisbatterij per plaats</h2>
+    <p style="font-size:15.5px;color:var(--ink-soft);margin-top:10px;line-height:1.6;max-width:680px;">Prijzen, pakketten en lokale informatie over de thuisbatterij, per plaats in West-Brabant.</p>
+    <div class="lp-chips">{bat}</div>
+  </div>''' if bat else '')
     groups = ''
     for lab, slugs in GROUPS:
         cards = ''.join(f'<a href="/installateur-{s}"><b>{esc(BY[s]["name"])}</b><span>Netbeheerder: {esc(NB[BY[s]["nb"]])}</span></a>' for s in slugs)
@@ -606,6 +613,7 @@ def overview_main():
     <p style="font-size:15.5px;color:var(--ink-soft);margin-top:10px;line-height:1.6;max-width:680px;">Per gemeente de plaatsen met een eigen pagina. In de andere kernen van die gemeenten installeren we ook, met dezelfde vaste prijzen. Netbeheerder is in West-Brabant in de regel Enexis; je exacte adres is bepalend.</p>
     <div class="lp-gm">{gm}</div>
   </div>
+  {bat_blok}
   <div class="wrap reveal lp-sec" style="max-width:1000px;padding-top:24px;">
     <h2 class="vw-heading lp-h2" style="margin-top:16px;">Andere plaatsen</h2>
     {groups}
@@ -656,4 +664,5 @@ def main():
         if s2 != s: open(f, 'w', encoding='utf-8').write(s2); n += 1
     print(len(CITIES), 'plaatsen + werkgebied; footer bijgewerkt op', n, 'pagina\'s')
 
-main()
+if __name__ == '__main__':  # tools/stadspaginas.py leest CITIES (netbeheerder, kernen) zonder de pagina's te bouwen
+    main()
