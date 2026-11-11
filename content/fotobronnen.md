@@ -58,7 +58,7 @@ Hoofdfoto's van artikelen die niet van Voltwijk zelf zijn. Alle foto's komen van
 | foto-20046690 | https://www.pexels.com/photo/20046690/ | artikel-cv-ketel-vervangen-of-warmtepomp |
 | foto-20046691 | https://www.pexels.com/photo/20046691/ | artikel-hybride-of-volledige-warmtepomp |
 | foto-210696 | https://www.pexels.com/photo/210696/ | artikel-hybride-warmtepomp-terugverdientijd |
-| foto-6316065 | https://www.pexels.com/photo/6316065/ | artikel-lucht-water-of-lucht-lucht-warmtepomp |
+| foto-6316065 | https://www.pexels.com/photo/6316065/ | artikel-airco-laten-installeren-kosten, artikel-lucht-water-of-lucht-lucht-warmtepomp |
 | foto-7031408 | https://www.pexels.com/photo/7031408/ | artikel-warmtepomp-bij-vorst |
 | foto-9729882 | https://www.pexels.com/photo/9729882/ | artikel-warmtepomp-en-zonnepanelen-combineren |
 | foto-87299 | https://www.pexels.com/photo/87299/ | artikel-warmtepomp-legionella |
