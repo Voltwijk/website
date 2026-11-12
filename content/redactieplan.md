@@ -27,6 +27,8 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 
 ### Koopintentie (eerst, minstens 4 van de 7 dagen)
 - [klaar 2026-11-11, artikel-airco-laten-installeren-kosten] Airco laten installeren: wat kost het in 2026? | airco laten installeren kosten | airco | koopintentie, eigen prijs vanaf € 1.750 excl. btw
+- [klaar 2026-11-12, artikel-dyness-of-foxess-thuisbatterij] Dyness of FoxESS thuisbatterij: welke past bij jou? | dyness of foxess | batterij | koopintentie, de twee merken die Voltwijk installeert; niet opnieuw schrijven
+- [klaar 2026-11-12, artikel-welke-thuisbatterij-bij-welk-verbruik] Welke thuisbatterij bij welk verbruik? 10, 16, 21 of 32 kWh | welke thuisbatterij bij welk verbruik | batterij | koopintentie, tabel verbruik naar maat; niet opnieuw schrijven
 - [open] Zonnepanelen terugverdientijd na 2027 | zonnepanelen terugverdientijd | zonnepanelen | koopintentie, piekt rond einde salderen
 - [open] Boiler vervangen: kosten en wanneer het tijd is | boiler vervangen kosten | boiler | koopintentie, combineert met 'boiler vervangen signalen'
 - [open] Offerte thuisbatterij vergelijken: hier let je op | offerte thuisbatterij vergelijken | batterij | koopintentie, sluit aan op 'thuisbatterij kopen' (homepage pos. 6)

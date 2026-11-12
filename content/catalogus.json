@@ -215,6 +215,11 @@
   "title": "Douche-wtw: hoeveel bespaar je en wanneer is het zinvol?"
  },
  {
+  "slug": "artikel-dyness-of-foxess-thuisbatterij",
+  "product": "batterij",
+  "title": "Dyness of FoxESS thuisbatterij: welke past bij jou?"
+ },
+ {
   "slug": "artikel-dyness-thuisbatterij",
   "product": "batterij",
   "title": "Dyness thuisbatterij: wat is het merk, welke modellen zijn er en wat past bij jou?"
@@ -738,6 +743,11 @@
   "slug": "artikel-welke-boilerinhoud-heb-ik-nodig",
   "product": "boiler",
   "title": "Welke boilerinhoud heb ik nodig? Zo kies je het juiste aantal liters"
+ },
+ {
+  "slug": "artikel-welke-thuisbatterij-bij-welk-verbruik",
+  "product": "batterij",
+  "title": "Welke thuisbatterij bij welk verbruik? 10, 16, 21 of 32 kWh"
  },
  {
   "slug": "artikel-zegelrecht-meterkast",
