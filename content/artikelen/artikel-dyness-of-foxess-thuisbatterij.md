@@ -17,7 +17,7 @@ In dit artikel zetten we de verschillen op een rij: opbouw, maten, aansluiting, 
 Meer dan je misschien denkt:
 
 - **LFP-cellen.** Beide merken gebruiken lithium-ijzerfosfaat. Dat is de batterijsoort die je nu bij bijna alle thuisbatterijen ziet. Meer daarover in [brandveiligheid van thuisbatterijen](/artikel-thuisbatterij-brandveiligheid).
-- **10 jaar fabrieksgarantie op de batterij.** Bij Dyness geldt die bij ons ook voor de Solis-omvormer. Bij de grote FoxESS-systemen is het 10 jaar productgarantie.
+- **10 jaar fabrieksgarantie op de batterij.** Bij de grote FoxESS-systemen is het 10 jaar productgarantie. Op de Solis-omvormer geldt de fabrieksgarantie van Solis.
 - **Een hybride omvormer.** Die laadt de batterij met zonnestroom en levert 's avonds stroom aan je huis. Bij FoxESS is dat een omvormer van FoxESS zelf, bij Dyness een omvormer van Solis.
 - **Slimme sturing (EMS) en een app.** Bij elk pakket stellen onze monteurs de sturing in op jouw situatie. Wat een EMS doet, lees je in [EMS bij je thuisbatterij](/artikel-ems-energiemanagementsysteem-thuisbatterij).
 - **Dezelfde installatie.** Onze eigen monteurs plaatsen de batterij, maken een eigen groep in de meterkast en melden alles aan bij de netbeheerder.
@@ -30,7 +30,7 @@ Meer dan je misschien denkt:
 | Maten bij Voltwijk | 10 kWh (1-fase), 21, 28 en 35 kWh (3-fase) | 16 kWh (1-fase of 3-fase), 32 kWh (3-fase) |
 | Omvormer | 5 kW (10 kWh), 10 of 12 kW (3-fase) | 5 kW (1-fase), 8, 10 of 12 kW (3-fase) |
 | Uitbreiden | Grote systemen per module van ± 7 kWh | 16 kWh uit te breiden tot ± 32 kWh |
-| Garantie | 10 jaar op de batterij | 10 jaar fabrieksgarantie op batterij en omvormer |
+| Garantie | 10 jaar op de batterij | 10 jaar fabrieksgarantie op de batterij; omvormer: fabrieksgarantie van Solis |
 | Prijs (excl. btw, incl. installatie) | 10 kWh € 4.500 · 21 kWh € 7.400 · 28 kWh € 8.700 · 35 kWh € 10.100 | 16 kWh 1-fase € 5.000 · 16 kWh 3-fase vanaf € 5.850 · 32 kWh vanaf € 8.250 |
 
 ## FoxESS: de 10 kWh alles-in-één
