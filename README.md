@@ -53,6 +53,8 @@ formulierdefinities staan verborgen onderaan `index.html`:
 | `thuisbatterij-advies` | de batterijcalculator op /thuisbatterij-berekenen (tools/funnel.py; definitie staat op die pagina zelf) | naam, email, telefoon, postcode, huisnummer, product, advies, prijs, verbruik, antwoorden, bron, utm_content, gclid, fbclid |
 | `gesprek` / `voorkeur` | gespreksplanner (tools/booking.py), terugval als online boeken in de CRM-agenda niet lukt | naam, email, telefoon, postcode, huisnummer, gesprek, voorkeur, product, pagina |
 | `energiescan` | /energiescan (tools/energiescan.py; definitie op die pagina) | naam, telefoon, postcode, woonplaats, akkoord |
+| `nieuwsbrief-offerte` | /batterij-actie (campagnemail salderen; definitie op die pagina) | naam, email, telefoon, postcode, huisnummer, product, advies, prijs, aansluiting, teruglevering, campagne, pagina |
+| `afmelden` | /afmelden (link onder campagnemails; definitie op die pagina). Geen lead: het CRM legt het adres vast als afgemeld | email, campagne |
 | `nieuwsbrief` | footer                                 | email |
 | `gids`        | homepage (#gids)                       | email |
 

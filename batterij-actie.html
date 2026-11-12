@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Uw thuisbatterij | Voltwijk</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+:root{--ink:#10201F;--mute:#4A5B58;--line:#DCE6E3;--teal:#0F6E6B;--dark:#0C1A19;--mint:#7FE0D2;--coral:#F2665A;--bg:#E9EFED}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:640px;margin:0 auto;padding:16px}
+.kaart{background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.hero{background:linear-gradient(160deg,#0C1A19 0%,#0F3D3A 100%);color:#fff;padding:26px 28px 30px}
+.hero img{display:block;height:22px}
+.tag{display:inline-block;background:var(--coral);color:#fff;font-size:11px;font-weight:700;letter-spacing:1.3px;padding:6px 12px;border-radius:999px;margin-top:26px}
+.hero h1{font-size:28px;line-height:1.2;margin:16px 0 10px;font-weight:800}
+.hero p{color:#C9E4DF;margin:0;font-size:16px}
+.blok{padding:26px 28px}
+.lbl{font-size:12.5px;font-weight:700;letter-spacing:1.2px;color:var(--teal);margin:0 0 6px;text-transform:uppercase}
+h2{font-size:22px;line-height:1.25;margin:0 0 14px;font-weight:800}
+.vraag{margin:0 0 18px}
+.vraag>b{display:block;font-size:16px;margin-bottom:10px}
+.keuzes{display:flex;flex-wrap:wrap;gap:8px}
+.keuze{border:1.5px solid var(--line);background:#fff;border-radius:999px;padding:11px 16px;font-size:15px;font-family:inherit;color:var(--ink);cursor:pointer}
+.keuze[aria-pressed="true"]{border-color:var(--teal);background:#EEF6F4;color:var(--teal);font-weight:700}
+.schuif{width:100%;accent-color:var(--teal)}
+.uitkomst{border:2px solid var(--ink);border-radius:14px;padding:20px;margin:6px 0 4px}
+.uitkomst .groot{font-size:40px;line-height:1;font-weight:800;margin:6px 0 8px}
+.klein{font-size:12.5px;color:#6B7A77}
+.bats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.bat{border:1.5px solid var(--line);border-radius:14px;padding:16px 12px 18px;text-align:center;background:#fff;cursor:pointer;font-family:inherit;color:var(--ink);position:relative}
+.bat[aria-pressed="true"]{border-color:var(--teal);box-shadow:0 0 0 2px var(--teal) inset}
+.bat img{height:120px;width:auto;display:block;margin:0 auto 10px}
+.bat .kwh{font-size:21px;font-weight:800}
+.bat .sub{font-size:12.5px;color:var(--mute);margin:2px 0 8px}
+.bat .prijs{font-size:27px;font-weight:800;color:var(--teal);line-height:1}
+.bat .ex{font-size:12px;color:var(--mute);margin-top:4px}
+.advies{position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:var(--coral);color:#fff;font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px;white-space:nowrap}
+.incl{margin:14px 0 0;padding:0;list-style:none;font-size:14.5px}
+.incl li{padding-left:22px;position:relative;margin:4px 0}
+.incl li:before{content:"\2713";position:absolute;left:0;color:var(--teal);font-weight:700}
+.veld{margin:0 0 12px}
+.veld label{display:block;font-size:14px;font-weight:700;margin-bottom:5px}
+.veld input{width:100%;border:1.5px solid var(--line);border-radius:12px;padding:13px 14px;font-size:16px;font-family:inherit;color:var(--ink)}
+.veld input:focus{outline:none;border-color:var(--teal)}
+.twee{display:grid;grid-template-columns:1.3fr 1fr;gap:10px}
+.knop{display:block;width:100%;border:0;background:var(--teal);color:#fff;font-weight:800;font-size:17px;padding:16px;border-radius:999px;cursor:pointer;font-family:inherit;margin-top:6px}
+.knop.licht{background:var(--mint);color:var(--dark)}
+.knop:disabled{opacity:.6}
+.fout{color:#B3261E;font-size:14px;margin:8px 0 0;min-height:1em}
+.donker{background:linear-gradient(160deg,#0C1A19 0%,#0F3D3A 100%);color:#fff;border-radius:16px;padding:22px}
+.donker p{color:#C9E4DF;margin:0}
+.voet{text-align:center;font-size:12.5px;color:#6B7A77;padding:18px 0 8px}
+.voet a{color:#6B7A77}
+.verborgen{display:none}
+@media (max-width:480px){.hero,.blok{padding-left:20px;padding-right:20px}.hero h1{font-size:25px}.bat img{height:96px}.bat .prijs{font-size:23px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="kaart">
+    <div class="hero">
+      <img src="/brand/voltwijk-logo-wit-mail.png" alt="Voltwijk">
+      <span class="tag" id="tag">SALDEREN STOPT OP 1 JANUARI 2027</span>
+      <h1 id="kop">Wat loopt u mis als salderen stopt?</h1>
+      <p id="sub">Beantwoord twee vragen. U ziet direct wat u nu wegstreept en welke batterij bij u past.</p>
+    </div>
+
+    <!-- Stap 1: berekenen -->
+    <section class="blok" id="stapReken">
+      <p class="lbl">Vraag 1</p>
+      <div class="vraag"><b>Weet u hoeveel stroom u per jaar teruglevert?</b>
+        <div class="keuzes" role="group" aria-label="Weet u uw teruglevering">
+          <button type="button" class="keuze" data-weet="ja" aria-pressed="false">Ja, dat weet ik</button>
+          <button type="button" class="keuze" data-weet="nee" aria-pressed="false">Nee, ik weet mijn aantal panelen</button>
+        </div>
+      </div>
+      <div class="vraag verborgen" id="vTerug"><b>Hoeveel kWh levert u per jaar terug?</b>
+        <div class="veld"><input id="terug" type="number" inputmode="numeric" min="0" max="30000" placeholder="Bijvoorbeeld 3000" aria-label="Teruglevering in kWh per jaar"></div>
+        <p class="klein">Dit staat op uw jaarafrekening of in de app van uw energieleverancier.</p>
+      </div>
+      <div class="vraag verborgen" id="vPanelen"><b>Hoeveel zonnepanelen heeft u? <span id="nPan">14</span></b>
+        <input id="panelen" class="schuif" type="range" min="4" max="40" value="14" aria-label="Aantal zonnepanelen">
+      </div>
+      <div class="verborgen" id="uitkomst">
+        <p class="lbl" style="margin-top:6px">Vraag 2</p>
+        <div class="uitkomst">
+          <div style="font-size:15.5px">U streept daar nu ongeveer</div>
+          <div class="groot" id="bedrag">€ 0</div>
+          <div style="font-size:15.5px">per jaar mee weg. Vanaf 2027 verdwijnt het grootste deel daarvan, tenzij u die stroom zelf gebruikt.</div>
+          <p class="klein" id="aanname" style="margin:10px 0 0"></p>
+        </div>
+        <h2 style="margin-top:22px">Welke batterij past bij u?</h2>
+      </div>
+    </section>
+
+    <!-- Batterijkeuze (ook direct vanuit de mail) -->
+    <section class="blok verborgen" id="stapKies" style="padding-top:0">
+      <div class="bats">
+        <button type="button" class="bat" data-bat="10" aria-pressed="false">
+          <span class="advies verborgen">Ons advies</span>
+          <img src="https://crm.voltwijk.nl/voorstel/foxess-p100.png" alt="FoxESS thuisbatterij 10 kWh">
+          <div class="kwh">10 kWh</div><div class="sub">FoxESS · batterij en omvormer in één</div>
+          <div class="prijs">€ 4.000</div><div class="ex">excl. btw, incl. installatie</div>
+        </button>
+        <button type="button" class="bat" data-bat="16" aria-pressed="false">
+          <span class="advies verborgen">Ons advies</span>
+          <img src="https://crm.voltwijk.nl/voorstel/dyness.png" alt="Dyness thuisbatterij 16 kWh">
+          <div class="kwh">16 kWh</div><div class="sub">Dyness · 60% meer opslag</div>
+          <div class="prijs">€ 4.500</div><div class="ex">excl. btw, incl. installatie</div>
+        </button>
+      </div>
+      <ul class="incl">
+        <li>Batterij en omvormer, geplaatst door onze monteurs</li>
+        <li>Eigen groep en energiemeter in de meterkast</li>
+        <li>Aanmelding bij de netbeheerder en de app ingesteld</li>
+        <li>Hulp bij het terugvragen van de btw, als dat bij u kan</li>
+      </ul>
+    </section>
+
+    <!-- Aanvraag -->
+    <section class="blok verborgen" id="stapForm" style="padding-top:4px">
+      <div class="donker" style="margin-bottom:18px"><b style="font-size:17px">Vraag uw offerte op maat aan</b><p style="margin-top:6px">Gratis en vrijblijvend. Wij nemen zo snel mogelijk contact met u op, uiterlijk de volgende werkdag.</p></div>
+      <form id="form" novalidate>
+        <div class="veld"><label for="naam">Naam</label><input id="naam" name="naam" autocomplete="name" required></div>
+        <div class="veld"><label for="email">E-mailadres</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div class="veld"><label for="telefoon">Telefoonnummer</label><input id="telefoon" name="telefoon" type="tel" autocomplete="tel" inputmode="tel" required placeholder="06 12345678"></div>
+        <div class="twee">
+          <div class="veld"><label for="postcode">Postcode</label><input id="postcode" name="postcode" autocomplete="postal-code" required placeholder="1234 AB"></div>
+          <div class="veld"><label for="huisnummer">Huisnummer</label><input id="huisnummer" name="huisnummer" required placeholder="12"></div>
+        </div>
+        <div class="vraag"><b style="font-size:14px">Uw aansluiting</b>
+          <div class="keuzes" role="group" aria-label="Aansluiting">
+            <button type="button" class="keuze" data-fase="1-fase" aria-pressed="false">1-fase</button>
+            <button type="button" class="keuze" data-fase="3-fase" aria-pressed="false">3-fase</button>
+            <button type="button" class="keuze" data-fase="weet ik niet" aria-pressed="false">Weet ik niet</button>
+          </div>
+        </div>
+        <input type="text" name="bot-field" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+        <button class="knop" type="submit" id="verstuur">Verstuur mijn aanvraag</button>
+        <p class="fout" id="fout" role="alert"></p>
+      </form>
+    </section>
+
+    <!-- Bedankt -->
+    <section class="blok verborgen" id="stapKlaar">
+      <h2 id="bedanktKop">Bedankt!</h2>
+      <p>We hebben uw aanvraag ontvangen. We nemen zo snel mogelijk contact met u op, uiterlijk de volgende werkdag, en sturen u daarna uw offerte op maat.</p>
+      <p>Liever meteen even overleggen? Bel of app ons op <a href="tel:0853335687" style="color:var(--teal);font-weight:700">085 333 56 87</a>.</p>
+    </section>
+  </div>
+  <p class="voet">Voltwijk · <a href="https://voltwijk.nl">voltwijk.nl</a> · <a href="/privacybeleid">Privacy</a></p>
+</main>
+
+<!-- Formulierdefinitie voor Netlify Forms (komt via de webhook als lead in het CRM) -->
+<form name="nieuwsbrief-offerte" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input name="naam"><input name="email"><input name="telefoon"><input name="postcode"><input name="huisnummer">
+  <input name="product"><input name="advies"><input name="prijs"><input name="aansluiting"><input name="teruglevering">
+  <input name="campagne"><input name="pagina"><input name="bot-field">
+</form>
+
+<script>
+(function(){
+  var P = {10:{kwh:10, prijs:4000, naam:'Thuisbatterij 10 kWh (FoxESS, batterij en omvormer in één)'}, 16:{kwh:16, prijs:4500, naam:'Thuisbatterij 16 kWh (Dyness met Solis-omvormer)'}};
+  var PRIJS_KWH = 0.24, KWH_PANEEL = 340, AANDEEL_TERUG = 0.5;
+  var q = new URLSearchParams(location.search);
+  var voornaam = (q.get('n') || '').trim().slice(0, 40), mail = (q.get('e') || '').trim().slice(0, 120), campagne = (q.get('c') || 'salderen').slice(0, 40);
+  var st = {bat: q.get('b') === '10' || q.get('b') === '16' ? q.get('b') : '', terug: 0, fase: ''};
+  var $ = function(id){ return document.getElementById(id); }, toon = function(id, ja){ $(id).classList.toggle('verborgen', !ja); };
+  var eur = function(n){ return '€ ' + Math.round(n).toLocaleString('nl-NL'); };
+  var naamOk = /^[A-Za-zÀ-ÿ'’ -]{2,40}$/.test(voornaam);
+  if (naamOk) $('naam').value = voornaam;
+  if (/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(mail)) $('email').value = mail;
+
+  function kies(b){ st.bat = b; document.querySelectorAll('.bat').forEach(function(x){ x.setAttribute('aria-pressed', x.dataset.bat === b ? 'true' : 'false'); });
+    toon('stapForm', true); }
+  document.querySelectorAll('.bat').forEach(function(x){ x.onclick = function(){ kies(x.dataset.bat); $('stapForm').scrollIntoView({behavior:'smooth', block:'start'}); }; });
+
+  function reken(){
+    var t = st.weet === 'ja' ? Math.max(0, Math.min(30000, +$('terug').value || 0)) : Math.round(+$('panelen').value * KWH_PANEEL * AANDEEL_TERUG);
+    st.terug = t; $('nPan').textContent = $('panelen').value;
+    if (!t){ toon('uitkomst', false); toon('stapKies', false); return; }
+    $('bedrag').textContent = '± ' + eur(t * PRIJS_KWH);
+    $('aanname').textContent = (st.weet === 'ja' ? 'Bij ' + t.toLocaleString('nl-NL') + ' kWh teruglevering' : 'Geschat: ' + $('panelen').value + ' panelen, ± ' + t.toLocaleString('nl-NL') + ' kWh teruglevering per jaar') + ' en een stroomprijs van € 0,24 per kWh. Indicatief.';
+    var adv = t > 2500 ? '16' : '10';
+    document.querySelectorAll('.bat').forEach(function(x){ x.querySelector('.advies').classList.toggle('verborgen', x.dataset.bat !== adv); });
+    toon('uitkomst', true); toon('stapKies', true);
+    if (!st.bat) kies(adv); else kies(st.bat);
+  }
+  document.querySelectorAll('[data-weet]').forEach(function(b){ b.onclick = function(){ st.weet = b.dataset.weet;
+    document.querySelectorAll('[data-weet]').forEach(function(x){ x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+    toon('vTerug', st.weet === 'ja'); toon('vPanelen', st.weet === 'nee'); if (st.weet === 'ja') $('terug').focus(); reken(); }; });
+  $('terug').oninput = reken; $('panelen').oninput = reken;
+  document.querySelectorAll('[data-fase]').forEach(function(b){ b.onclick = function(){ st.fase = b.dataset.fase;
+    document.querySelectorAll('[data-fase]').forEach(function(x){ x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); }); }; });
+
+  // Direct vanuit de mail op "Vraag direct een offerte aan" geklikt: meteen de gekozen batterij en het formulier
+  if (st.bat){
+    $('kop').textContent = (naamOk ? voornaam + ', uw' : 'Uw') + ' offerte voor de ' + st.bat + ' kWh-batterij';
+    $('sub').textContent = 'Nog een paar gegevens en we maken uw offerte op maat. U zit nergens aan vast.';
+    toon('stapReken', false); toon('stapKies', true); $('stapKies').style.paddingTop = '26px'; kies(st.bat);
+  } else if (naamOk) $('kop').textContent = voornaam + ', wat loopt u mis als salderen stopt?';
+
+  $('form').onsubmit = function(ev){ ev.preventDefault();
+    var v = function(id){ return $(id).value.trim(); };
+    var fout = !v('naam') ? 'Vul uw naam in.' : !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v('email')) ? 'Vul een geldig e-mailadres in.' : !/^[+0-9 ()-]{10,}$/.test(v('telefoon')) ? 'Vul een geldig telefoonnummer in.'
+      : !/^\d{4}\s?[A-Za-z]{2}$/.test(v('postcode')) ? 'Vul een geldige postcode in.' : !v('huisnummer') ? 'Vul uw huisnummer in.' : !st.bat ? 'Kies een batterij.' : '';
+    $('fout').textContent = fout; if (fout) return;
+    var p = P[st.bat], d = new URLSearchParams();
+    d.append('form-name', 'nieuwsbrief-offerte');
+    ['naam','email','telefoon','postcode','huisnummer'].forEach(function(k){ d.append(k, v(k)); });
+    d.append('bot-field', document.querySelector('[name="bot-field"]').value);
+    d.append('product', 'thuisbatterij'); d.append('advies', p.naam); d.append('prijs', '€ ' + p.prijs.toLocaleString('nl-NL') + ' excl. btw, incl. installatie (actieprijs nieuwsbriefcampagne)');
+    d.append('aansluiting', st.fase || 'niet ingevuld'); d.append('teruglevering', st.terug ? st.terug + ' kWh per jaar (' + (st.weet === 'ja' ? 'opgegeven' : 'geschat uit ' + $('panelen').value + ' panelen') + ')' : 'niet ingevuld');
+    d.append('campagne', campagne); d.append('pagina', location.pathname);
+    var knop = $('verstuur'); knop.disabled = true; knop.textContent = 'Versturen...';
+    fetch('/', {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:d.toString()}).then(function(r){
+      if (!r.ok) throw new Error(r.status);
+      $('bedanktKop').textContent = 'Bedankt' + (v('naam') ? ', ' + v('naam').split(' ')[0] : '') + '!';
+      ['stapReken','stapKies','stapForm'].forEach(function(id){ toon(id, false); }); toon('stapKlaar', true);
+      $('kop').textContent = 'Uw aanvraag is binnen'; $('sub').textContent = 'U hoort zo snel mogelijk van ons.';
+      window.scrollTo({top:0, behavior:'smooth'});
+      try{ if (window.gtag) gtag('event', 'generate_lead', {campaign: campagne}); }catch(e){}
+    }).catch(function(){ knop.disabled = false; knop.textContent = 'Verstuur mijn aanvraag'; $('fout').textContent = 'Versturen lukte niet. Probeer het opnieuw of bel 085 333 56 87.'; });
+  };
+})();
+</script>
+</body>
+</html>
