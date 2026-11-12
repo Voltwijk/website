@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Afmelden | Voltwijk</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+body{margin:0;background:#E9EFED;font-family:Arial,Helvetica,sans-serif;color:#10201F;line-height:1.55}
+.wrap{max-width:520px;margin:0 auto;padding:16px}
+.kaart{background:#fff;border-radius:20px;overflow:hidden}
+.kop{background:linear-gradient(160deg,#0C1A19 0%,#0F3D3A 100%);padding:24px 26px}
+.kop img{display:block;height:22px}
+.in{padding:26px}
+h1{font-size:23px;margin:0 0 10px}
+input{width:100%;box-sizing:border-box;border:1.5px solid #DCE6E3;border-radius:12px;padding:13px 14px;font-size:16px;font-family:inherit}
+button{display:block;width:100%;border:0;background:#0F6E6B;color:#fff;font-weight:800;font-size:16px;padding:15px;border-radius:999px;cursor:pointer;font-family:inherit;margin-top:12px}
+.fout{color:#B3261E;font-size:14px;min-height:1em;margin:8px 0 0}
+.verborgen{display:none}
+</style>
+</head>
+<body>
+<main class="wrap"><div class="kaart">
+  <div class="kop"><img src="/brand/voltwijk-logo-wit-mail.png" alt="Voltwijk"></div>
+  <div class="in" id="vraag">
+    <h1>Afmelden</h1>
+    <p>Wilt u geen mails meer van Voltwijk ontvangen over deze actie en onze nieuwsbrief? Bevestig dan hieronder uw e-mailadres.</p>
+    <form id="form" novalidate>
+      <input id="email" type="email" autocomplete="email" aria-label="E-mailadres" placeholder="uw@mailadres.nl">
+      <input type="text" name="bot-field" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+      <button type="submit" id="knop">Afmelden</button>
+      <p class="fout" id="fout" role="alert"></p>
+    </form>
+  </div>
+  <div class="in verborgen" id="klaar"><h1>U bent afgemeld</h1><p>U ontvangt geen mails meer van ons over deze actie en onze nieuwsbrief. Aanvragen en offertes die al lopen, blijven we gewoon voor u afhandelen.</p></div>
+</div></main>
+<form name="afmelden" data-netlify="true" netlify-honeypot="bot-field" hidden><input name="email"><input name="campagne"><input name="bot-field"></form>
+<script>
+(function(){
+  var q = new URLSearchParams(location.search), e = (q.get('e') || '').trim();
+  if (/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e)) document.getElementById('email').value = e;
+  document.getElementById('form').onsubmit = function(ev){ ev.preventDefault();
+    var m = document.getElementById('email').value.trim();
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(m)){ document.getElementById('fout').textContent = 'Vul een geldig e-mailadres in.'; return; }
+    var d = new URLSearchParams({'form-name':'afmelden', email:m, campagne:(q.get('c') || '').slice(0,40), 'bot-field':document.querySelector('[name="bot-field"]').value});
+    var k = document.getElementById('knop'); k.disabled = true; k.textContent = 'Bezig...';
+    fetch('/', {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:d.toString()}).then(function(r){ if(!r.ok) throw 0;
+      document.getElementById('vraag').classList.add('verborgen'); document.getElementById('klaar').classList.remove('verborgen');
+    }).catch(function(){ k.disabled = false; k.textContent = 'Afmelden'; document.getElementById('fout').textContent = 'Dat lukte niet. Mail ons op info@voltwijk.nl, dan melden wij u af.'; });
+  };
+})();
+</script>
+</body>
+</html>
