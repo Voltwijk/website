@@ -25,12 +25,12 @@ Het kleinste van die twee getallen is meestal de bovengrens. Met een dynamisch e
 
 Dit zijn vuistregels, geen metingen. De rijen voor 21 en 32 kWh volgen uit dezelfde vuistregel.
 
-| Avond- en nachtverbruik | Teruglevering op een zomerdag | Aansluiting | Maat | Prijs bij Voltwijk (excl. btw, incl. installatie) |
+| Maat | Avond- en nachtverbruik | Teruglevering op een zomerdag | Aansluiting | Prijs bij Voltwijk (excl. btw, incl. installatie) |
 |---|---|---|---|---|
-| ca. 5 tot 9 kWh | ca. 10 kWh | 1-fase | **10 kWh** (FoxESS, ± 9,7 kWh bruikbaar) | € 4.500 |
-| ca. 9 kWh en meer | ca. 15 kWh of meer, of laden op goedkope uren | 1-fase of 3-fase | **16 kWh** (Dyness, ± 15,3 kWh bruikbaar) | € 5.000 (1-fase), vanaf € 5.850 (3-fase) |
-| rond de 20 kWh | ca. 20 kWh of meer, of laden op goedkope uren | alleen 3-fase | **21 kWh** (FoxESS, 3 modules) | € 7.400 |
-| rond de 30 kWh | ca. 30 kWh of meer, of laden op goedkope uren | alleen 3-fase | **32 kWh** (Dyness, ± 30 kWh bruikbaar) | vanaf € 8.250 |
+| **10 kWh** (FoxESS, ± 9,7 kWh bruikbaar) | ca. 5 tot 9 kWh | ca. 10 kWh | 1-fase | € 4.500 |
+| **16 kWh** (Dyness, ± 15,3 kWh bruikbaar) | ca. 9 kWh en meer | ca. 15 kWh of meer, of laden op goedkope uren | 1-fase of 3-fase | € 5.000 (1-fase), vanaf € 5.850 (3-fase) |
+| **21 kWh** (FoxESS, 3 modules) | rond de 20 kWh | ca. 20 kWh of meer, of laden op goedkope uren | alleen 3-fase | € 7.400 |
+| **32 kWh** (Dyness, ± 30 kWh bruikbaar) | rond de 30 kWh | ca. 30 kWh of meer, of laden op goedkope uren | alleen 3-fase | vanaf € 8.250 |
 
 Gebruik je 's avonds en 's nachts minder dan 5 kWh? Kleinere maten dan 10 kWh hebben wij niet. Dan is 10 kWh ruim genoeg. Tussen 21 en 32 kWh zit nog de FoxESS 28 kWh (€ 8.700), en de grootste is de FoxESS 35 kWh (€ 10.100), ook excl. btw.
 
@@ -38,11 +38,11 @@ Gebruik je 's avonds en 's nachts minder dan 5 kWh? Kleinere maten dan 10 kWh he
 
 Drie voorbeelden met aangenomen getallen. Jouw eigen verbruik kan flink afwijken.
 
-| Huishouden (aanname) | Avond- en nachtverbruik | Logische maat |
+| Huishouden (aanname) | Logische maat | Avond- en nachtverbruik |
 |---|---|---|
-| Stel, overdag weg, 10 panelen | ca. 4 tot 6 kWh | 10 kWh, ruim |
-| Gezin, 12 tot 16 panelen | ca. 6 tot 9 kWh | 10 kWh, of 16 kWh met een dynamisch contract |
-| Gezin met warmtepomp | ca. 10 tot 15 kWh in de winter | 16 kWh |
+| Stel, overdag weg, 10 panelen | 10 kWh, ruim | ca. 4 tot 6 kWh |
+| Gezin, 12 tot 16 panelen | 10 kWh, of 16 kWh met een dynamisch contract | ca. 6 tot 9 kWh |
+| Gezin met warmtepomp | 16 kWh | ca. 10 tot 15 kWh in de winter |
 
 Heb je een elektrische auto die 's nachts thuis laadt? Tel die dan niet mee. De accu van de auto is veel groter dan een thuisbatterij. Het is meestal slimmer om de auto direct op zonne-overschot of op goedkope uren te laden. Zie [slim laden met je laadpaal](/artikel-laadpaal-slim-laden).
 
