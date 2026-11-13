@@ -98,3 +98,4 @@ Hoofdfoto's van artikelen die niet van Voltwijk zelf zijn. Alle foto's komen van
 | foto-3722212 | https://www.pexels.com/photo/3722212/ | artikel-gasaansluiting-verwijderen |
 | foto-15751136 | https://www.pexels.com/photo/15751136/ | artikel-auto-laden-op-zonnestroom, artikel-glas-glas-zonnepanelen |
 | foto-29977162 | https://www.pexels.com/photo/29977162/ | artikel-warmtepomp-ontdooien |
+| foto-7859953 | https://www.pexels.com/photo/7859953/ | artikel-boiler-vervangen-kosten |
