@@ -93,6 +93,8 @@ for f in sorted(glob.glob('*.html')):
     slug = f[:-5]
     if slug == '404' or future_draft(slug): continue
     s = open(f, encoding='utf-8').read()
+    # losse campagne-/servicepagina's (bijv. afmelden) zonder canonical en met noindex: niet aanraken, niet in de sitemap
+    if 'rel="canonical"' not in s and re.search(r'name="robots" content="[^"]*noindex', s): continue
     s = re.sub(r'\n?<!-- seo:start -->.*?<!-- seo:end -->', '', s, flags=re.S)
     url = SITE + ('/' if slug == 'index' else '/' + slug)
     if slug in T:
