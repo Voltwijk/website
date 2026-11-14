@@ -31,12 +31,14 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar 2026-11-12, artikel-welke-thuisbatterij-bij-welk-verbruik] Welke thuisbatterij bij welk verbruik? 10, 16, 21 of 32 kWh | welke thuisbatterij bij welk verbruik | batterij | koopintentie, tabel verbruik naar maat; niet opnieuw schrijven
 - [vervalt: al behandeld in artikel-zonnepanelen-rendabel-na-2027] Zonnepanelen terugverdientijd na 2027 | zonnepanelen terugverdientijd | zonnepanelen | koopintentie, piekt rond einde salderen
 - [klaar 2026-11-13, artikel-boiler-vervangen-kosten] Boiler vervangen: kosten en wanneer het tijd is | boiler vervangen kosten | boiler | koopintentie, combineert met 'boiler vervangen signalen'
-- [open] Offerte thuisbatterij vergelijken: hier let je op | offerte thuisbatterij vergelijken | batterij | koopintentie, sluit aan op 'thuisbatterij kopen' (homepage pos. 6)
+- [vervalt: valt onder artikel-thuisbatterij-kopen-waar-op-letten] Offerte thuisbatterij vergelijken: hier let je op | offerte thuisbatterij vergelijken | batterij | koopintentie, sluit aan op 'thuisbatterij kopen' (homepage pos. 6)
 - [open] Offerte warmtepomp vergelijken: hier let je op | offerte warmtepomp vergelijken | warmtepomp | koopintentie
 - [open] Zonnepanelen en thuisbatterij tegelijk laten plaatsen | zonnepanelen met thuisbatterij | batterij | koopintentie, twee producten in één offerte
 
 - [open] Multi split of meerdere single splits: wat is voordeliger? | multi split of single split kosten | airco | koopintentie, vervolg op airco-kosten
 - [open] Warmtepompboiler kosten en terugverdientijd | warmtepompboiler kosten | boiler | koopintentie, vervolg op boiler vervangen
+- [klaar 2026-11-14, artikel-isde-warmtepomp-2027] ISDE warmtepomp 2027: minder subsidie, overgangsregeling bij aankoop in 2026 | isde warmtepomp 2027 | warmtepomp | actueel (RVO 12 nov), koopintentie met deadline 31 dec
+- [open] ISDE 2027 voor glas: HR++ omhoog, triple glas omlaag | isde hr++ glas 2027 | algemeen | actueel, zelfde RVO-pagina
 ### Overig
 - [klaar (2026-10-01, artikel-netcongestie-west-brabant)] Netcongestie in West-Brabant: wat betekent het voor jouw huis | netcongestie West-Brabant | batterij | lokaal, weinig concurrentie
 - [klaar (2026-10-02, artikel-warmtepomp-bij-vorst)] Warmtepomp bij vorst: werkt hij nog en wat kost het | warmtepomp vorst | warmtepomp | seizoensvraag oktober–februari
