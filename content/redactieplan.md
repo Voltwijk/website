@@ -33,13 +33,14 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar 2026-11-13, artikel-boiler-vervangen-kosten] Boiler vervangen: kosten en wanneer het tijd is | boiler vervangen kosten | boiler | koopintentie, combineert met 'boiler vervangen signalen'
 - [vervalt: valt onder artikel-thuisbatterij-kopen-waar-op-letten] Offerte thuisbatterij vergelijken: hier let je op | offerte thuisbatterij vergelijken | batterij | koopintentie, sluit aan op 'thuisbatterij kopen' (homepage pos. 6)
 - [klaar 2026-11-15, artikel-offerte-warmtepomp-vergelijken] Offerte warmtepomp vergelijken: hier let je op | offerte warmtepomp vergelijken | warmtepomp | koopintentie
-- [open] Zonnepanelen en thuisbatterij tegelijk laten plaatsen | zonnepanelen met thuisbatterij | batterij | koopintentie, twee producten in één offerte
+- [vervalt: al behandeld in artikel-zonnepanelen-met-thuisbatterij] Zonnepanelen en thuisbatterij tegelijk laten plaatsen | zonnepanelen met thuisbatterij | batterij | koopintentie, twee producten in één offerte
 
-- [open] Multi split of meerdere single splits: wat is voordeliger? | multi split of single split kosten | airco | koopintentie, vervolg op airco-kosten
+- [vervalt: al behandeld in artikel-multi-split-airco] Multi split of meerdere single splits: wat is voordeliger? | multi split of single split kosten | airco | koopintentie, vervolg op airco-kosten
 - [open] Warmtepompboiler kosten en terugverdientijd | warmtepompboiler kosten | boiler | koopintentie, vervolg op boiler vervangen
 - [klaar 2026-11-14, artikel-isde-warmtepomp-2027] ISDE warmtepomp 2027: minder subsidie, overgangsregeling bij aankoop in 2026 | isde warmtepomp 2027 | warmtepomp | actueel (RVO 12 nov), koopintentie met deadline 31 dec
 - [open] ISDE 2027 voor glas: HR++ omhoog, triple glas omlaag | isde hr++ glas 2027 | algemeen | actueel, zelfde RVO-pagina
 - [open] Aanbetaling bij installateur: wat is normaal? | aanbetaling installateur | algemeen | koopintentie, vraag uit offerte-artikel
+- [open] Radiatorventilatoren: wat leveren ze op bij een warmtepomp? | radiatorventilator warmtepomp | warmtepomp | koopintentie, vervolg op radiatoren-artikel
 ### Overig
 - [klaar (2026-10-01, artikel-netcongestie-west-brabant)] Netcongestie in West-Brabant: wat betekent het voor jouw huis | netcongestie West-Brabant | batterij | lokaal, weinig concurrentie
 - [klaar (2026-10-02, artikel-warmtepomp-bij-vorst)] Warmtepomp bij vorst: werkt hij nog en wat kost het | warmtepomp vorst | warmtepomp | seizoensvraag oktober–februari
@@ -95,7 +96,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Hoofdzekering te klein? Zo zie je wat je aansluiting aankan | hoofdzekering vermogen | meterkast | praktische vraag bij warmtepomp/laadpaal
 - [open] Netcongestie en een zwaardere aansluiting aanvragen: wat als het net vol is? | aansluiting verzwaren netcongestie | meterkast | actueel, sluit aan op netcongestie-artikel
 - [klaar (2026-10-21, artikel-warmtepomp-thermostaat-nachtverlaging)] Thermostaat bij een warmtepomp: waarom constant beter is dan nachtverlaging | warmtepomp thermostaat instellen | warmtepomp | veelgestelde wintervraag
-- [open] Radiatoren geschikt maken voor een warmtepomp: groter, ventilatoren of LT-radiatoren | radiatoren warmtepomp | warmtepomp | koopintentie, sluit aan op stooklijn-artikel
+- [klaar 2026-11-16, artikel-radiatoren-warmtepomp] Radiatoren geschikt maken voor een warmtepomp: groter, ventilatoren of LT-radiatoren | radiatoren warmtepomp | warmtepomp | koopintentie, sluit aan op stooklijn-artikel
 - [open] Zonnepanelen opbrengst per maand: zo verdeelt je jaaropbrengst zich na 2027 | opbrengst zonnepanelen per maand | zonnepanelen | veel gezocht, sluit aan op winterartikel
 - [open] Laadpaal thuis laten installeren: wat komt erbij kijken? | elektrische laadpaal thuis | laadpaal | staat bovenaan in zoekdata (positie 26)
 - [klaar (2026-10-22, artikel-boiler-vakantie-uitzetten)] Boiler op vakantie: aan laten staan of uitzetten? | boiler uitzetten vakantie | boiler | seizoensvraag (kerst/zomer), RIVM-advies
