@@ -36,11 +36,12 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [vervalt: al behandeld in artikel-zonnepanelen-met-thuisbatterij] Zonnepanelen en thuisbatterij tegelijk laten plaatsen | zonnepanelen met thuisbatterij | batterij | koopintentie, twee producten in één offerte
 
 - [vervalt: al behandeld in artikel-multi-split-airco] Multi split of meerdere single splits: wat is voordeliger? | multi split of single split kosten | airco | koopintentie, vervolg op airco-kosten
-- [open] Warmtepompboiler kosten en terugverdientijd | warmtepompboiler kosten | boiler | koopintentie, vervolg op boiler vervangen
+- [vervalt: kosten staan al in artikel-warmtepompboiler-of-elektrische-boiler] Warmtepompboiler kosten en terugverdientijd | warmtepompboiler kosten | boiler | koopintentie, vervolg op boiler vervangen
 - [klaar 2026-11-14, artikel-isde-warmtepomp-2027] ISDE warmtepomp 2027: minder subsidie, overgangsregeling bij aankoop in 2026 | isde warmtepomp 2027 | warmtepomp | actueel (RVO 12 nov), koopintentie met deadline 31 dec
 - [open] ISDE 2027 voor glas: HR++ omhoog, triple glas omlaag | isde hr++ glas 2027 | algemeen | actueel, zelfde RVO-pagina
-- [open] Aanbetaling bij installateur: wat is normaal? | aanbetaling installateur | algemeen | koopintentie, vraag uit offerte-artikel
+- [klaar 2026-11-17, artikel-aanbetaling-installateur] Aanbetaling bij installateur: wat is normaal? | aanbetaling installateur | algemeen | koopintentie, vraag uit offerte-artikel
 - [open] Radiatorventilatoren: wat leveren ze op bij een warmtepomp? | radiatorventilator warmtepomp | warmtepomp | koopintentie, vervolg op radiatoren-artikel
+- [open] Garantie op een installatie: fabrieksgarantie, installatiegarantie en wettelijke garantie | garantie warmtepomp installateur | warmtepomp | koopintentie, vervolg op aanbetaling
 ### Overig
 - [klaar (2026-10-01, artikel-netcongestie-west-brabant)] Netcongestie in West-Brabant: wat betekent het voor jouw huis | netcongestie West-Brabant | batterij | lokaal, weinig concurrentie
 - [klaar (2026-10-02, artikel-warmtepomp-bij-vorst)] Warmtepomp bij vorst: werkt hij nog en wat kost het | warmtepomp vorst | warmtepomp | seizoensvraag oktober–februari
@@ -59,7 +60,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-10-08, artikel-boiler-ontkalken-onderhoud)] Elektrische boiler ontkalken en onderhoud | boiler ontkalken | boiler | onderhoudsvraag, weinig concurrentie
 - [klaar (2026-10-01, artikel-thuisbatterij-garage-schuur-winter)] Thuisbatterij in de garage of schuur: kan dat in de winter? | thuisbatterij garage temperatuur | batterij | seizoensvraag
 - [klaar (2026-10-01, artikel-warmtepomp-en-thuisbatterij)] Hybride warmtepomp combineren met een thuisbatterij | warmtepomp en thuisbatterij | warmtepomp | kruisverkoop
-- [open] ISDE-subsidie 2027: wat verandert er | isde 2027 | warmtepomp | zodra RVO bedragen 2027 publiceert (2026-10-09: nog niet definitief, consultatie gesloten; wachten op RVO)
+- [klaar 2026-11-14, artikel-isde-warmtepomp-2027] ISDE-subsidie 2027: wat verandert er | isde 2027 | warmtepomp | zodra RVO bedragen 2027 publiceert (2026-10-09: nog niet definitief, consultatie gesloten; wachten op RVO)
 - [klaar (2026-10-01, artikel-stroomstoring-zonnepanelen-thuisbatterij)] Stroomstoring in je wijk: wat gebeurt er met je zonnepanelen en batterij | stroomstoring zonnepanelen | zonnepanelen | nieuwsgevoelig, vult noodstroom-artikel aan
 - [klaar (2026-10-08, artikel-jaarafrekening-einde-salderen (andere sessie))] Jaarafrekening na het einde van salderen: zo controleer je de splitsing 2026/2027 | jaarafrekening salderen 2027 | zonnepanelen | piekt jan–mrt 2027, praktische vraag
 - [klaar (2026-10-08, artikel-vast-contract-einde-salderen (andere sessie))] Vast energiecontract en einde salderen: mag je leverancier de voorwaarden wijzigen? | vast contract salderen 2027 | zonnepanelen | ACM-regels, veel onzekerheid bij consumenten
