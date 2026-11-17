@@ -21,6 +21,15 @@ Een hybride warmtepomp haalt warmte uit de buitenlucht en verwarmt daarmee het w
 
 Daarmee verbruik je volgens Milieu Centraal zo'n 60 tot 70% minder gas voor het verwarmen van je huis. Hoeveel precies, hangt sterk af van je isolatie en radiatoren.
 
+## Hoe ziet een hybride warmtepomp eruit?
+
+Een hybride warmtepomp bestaat meestal uit twee delen:
+
+- **Een buitenunit.** Een kast met een grote ventilator, buiten tegen de gevel, op de grond of op een plat dak. Die haalt warmte uit de buitenlucht.
+- **Een binnendeel of regelunit.** Een kleinere kast binnen, vaak naast of onder de cv-ketel. Die stuurt de warmtepomp en de cv-ketel samen aan.
+
+Buitenunit en binnendeel zijn met leidingen verbonden. Je bestaande cv-ketel en radiatoren blijven gewoon hangen. Er bestaan ook uitvoeringen waarbij alles in één buitenunit zit; die wordt dan rechtstreeks op je cv-installatie aangesloten.
+
 ## Wat is het omschakelpunt?
 
 Het omschakelpunt (ook wel bivalentiepunt) is de **buitentemperatuur waarbij de cv-ketel het verwarmen overneemt of aanvult**. Is het buiten warmer dan die grens, dan verwarmt de warmtepomp. Wordt het kouder, dan gaat de cv-ketel helpen of het overnemen.
@@ -66,6 +75,10 @@ Q: Kan ik het omschakelpunt van mijn hybride warmtepomp lager zetten?
 A: Vaak wel. Dan levert de warmtepomp ook bij lagere temperaturen warmte en verbruik je minder gas. Bij sommige modellen zit de instelling in het installateursmenu.
 Q: Is een lager omschakelpunt altijd zuiniger?
 A: Niet altijd. Bij strenge kou daalt het rendement van de warmtepomp. Of het voordelig is, hangt af van je woning, je radiatoren en je gas- en stroomprijs.
+Q: Moet je bij een hybride warmtepomp een constante temperatuur aanhouden?
+A: Ja, dat is meestal het zuinigst. Bij een flinke nachtverlaging moet het huis 's ochtends snel opwarmen en springt de cv-ketel eerder bij. Houd de thermostaat zo constant mogelijk, of zet hem 's nachts hooguit 1 tot 2 graden lager.
+Q: Hoe ziet een hybride warmtepomp eruit?
+A: Meestal een buitenunit met een ventilator tegen de gevel of op het dak, plus een kleiner binnendeel naast de cv-ketel dat alles aanstuurt. Je cv-ketel en radiatoren blijven gewoon hangen.
 Q: Waarom springt mijn cv-ketel vaak bij?
 A: Vaak omdat het huis de warmte niet goed vasthoudt of de radiatoren te klein zijn voor de lage watertemperatuur van de warmtepomp. Isoleren en betere radiatoren helpen. Ook een flinke nachtverlaging laat de cv-ketel eerder bijspringen.
 Q: Levert een hybride warmtepomp ook warm water?

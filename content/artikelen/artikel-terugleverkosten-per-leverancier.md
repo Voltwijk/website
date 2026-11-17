@@ -114,6 +114,8 @@ Wij kiezen geen energiecontract voor je. Wel kijken we met je naar je opwek, je 
 faq:
 Q: Welke energieleverancier heeft de laagste terugleverkosten?
 A: Dat hangt af van hoeveel je teruglevert en van het moment waarop je het contract afsluit. Bij 2.400 kWh teruglevering was Budget Thuis in september 2026 van deze zes het laagst, maar die geeft in 2026 ook maar 1 cent per kWh terugleververgoeding. Vergelijk daarom altijd vergoeding, kosten en stroomtarief samen.
+Q: Essent of Budget Energie: wie heeft de laagste terugleverkosten?
+A: Bij 2.400 kWh teruglevering betaalde je in september 2026 bij Budget Thuis (voorheen Budget Energie) € 18,00 per maand, ongeveer € 216 per jaar. Bij Essent was dat € 25,73 per maand, ongeveer € 309 per jaar. Budget Thuis gaf in 2026 wel maar 1 cent per kWh terugleververgoeding, de andere leveranciers rond de 12 tot 16 cent. Vergelijk daarom kosten en vergoeding samen.
 Q: Hoe rekent Vattenfall terugleverkosten?
 A: In 2026 met staffels: een vast bedrag per maand, afhankelijk van je jaarlijkse teruglevering. Bij 2.251 tot 2.500 kWh was dat in september 2026 € 24,42 per maand. Vanaf 2027 gaat Vattenfall over op een bedrag per teruggeleverde kWh.
 Q: Hoe rekenen Essent en Eneco terugleverkosten?
