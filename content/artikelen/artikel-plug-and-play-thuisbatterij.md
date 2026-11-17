@@ -1,6 +1,6 @@
-title: Plug-and-play thuisbatterij (stekkerbatterij): wat kan het wel en niet?
-seo_title: Plug-and-play thuisbatterij: wat kan het? | Voltwijk
-description: Plug-and-play thuisbatterij of stekkerbatterij: hoe werkt het, wat levert het op en waar let je op bij veiligheid en aanmelden?
+title: Plug and play thuisbatterij (stekkerbatterij): wat kan het wel en niet?
+seo_title: Plug and play thuisbatterij: wat kan het? | Voltwijk
+description: Plug and play thuisbatterij of stekkerbatterij: hoe werkt een plug & play batterij, wat levert het op en waar let je op bij veiligheid en aanmelden?
 category: Thuisbatterij
 product: batterij
 image: foto-9875441
@@ -9,7 +9,7 @@ lead: Een plug-and-play thuisbatterij steek je zelf in het stopcontact. Dat is m
 summary: Een stekkerbatterij laadt en ontlaadt via een gewoon stopcontact, zonder installateur || Capaciteit en vermogen zijn meestal beperkt, waardoor hij een klein deel van je avondverbruik dekt || Stroom terugleveren via een stopcontact vraagt aandacht voor de groep en de zekering; laat dat controleren || Ook een stekkerbatterij meld je aan bij je netbeheerder via energieleveren.nl
 sources: Netbeheer Nederland – Meld thuisbatterijen aan op energieleveren.nl|https://www.netbeheernederland.nl/artikelen/nieuws/meld-thuisbatterijen-aan-op-energieleverennl || Brandweer – Een veilige thuisbatterij|https://www.brandweer.nl/onderwerpen/een-veilige-thuisbatterij/ || Milieu Centraal – Thuisbatterij|https://www.milieucentraal.nl/energie-besparen/zonnepanelen/thuisbatterij-zonne-energie-opslaan/ || NEN – NEN 1010|https://www.nen.nl/elektrotechniek/installatievoorschriften/nen-1010-laagspanningsinstallaties
 ---
-Steeds meer winkels verkopen een thuisbatterij die je zelf aansluit: stekker in het stopcontact, app installeren, klaar. Zo'n **plug-and-play thuisbatterij**, ook wel stekkerbatterij genoemd, klinkt als de makkelijkste manier om je zonnestroom op te slaan. Maar wat kan hij echt, en waar moet je op letten?
+Steeds meer winkels verkopen een thuisbatterij die je zelf aansluit: stekker in het stopcontact, app installeren, klaar. Zo'n **plug-and-play thuisbatterij**, ook wel plug & play batterij of stekkerbatterij genoemd, klinkt als de makkelijkste manier om je zonnestroom op te slaan. Maar wat kan hij echt, en waar moet je op letten?
 
 ## Hoe werkt een plug-and-play thuisbatterij?
 
@@ -81,6 +81,8 @@ Q: Is een stekkerbatterij veilig?
 A: Bij een klein vermogen, een goede installatie en een geschikt stopcontact meestal wel. Gebruik geen verlengsnoer, zet hem niet in de vluchtroute en laat bij twijfel een installateur je groepenkast controleren.
 Q: Moet ik een stekkerbatterij aanmelden?
 A: Ja. Netbeheerders vragen je om elke thuisbatterij aan te melden via energieleveren.nl, ook een stekkerbatterij.
+Q: Wat is het verschil tussen een plug and play batterij en een vaste thuisbatterij?
+A: Een plug and play batterij sluit je zelf aan op een stopcontact en is meestal klein, met een beperkt vermogen. Hij dekt vooral de basislast, zoals koelkast, router en verlichting. Een vaste thuisbatterij wordt door een installateur aangesloten op een eigen groep in de meterkast, is groter en kan ook koken, wassen en een warmtepomp of laadpaal opvangen.
 Q: Is een stekkerbatterij rendabel?
 A: Dat hangt af van hoe vaak hij vol raakt en hoeveel hij afgeeft. Omdat de capaciteit en het vermogen klein zijn, is het effect op je rekening beperkt. Reken het uit met je eigen verbruik.
 Q: Kan een stekkerbatterij in een huurwoning?

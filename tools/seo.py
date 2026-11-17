@@ -18,7 +18,7 @@ T = {  # titel, description
            'Lucht/water-warmtepomp vanaf € 8.650 excl. btw inclusief installatie. Hulp bij de ISDE-subsidie, geplaatst door ons eigen team. Plan een gratis adviesgesprek.'),
  'product-airco': ('Airco laten installeren – vanaf € 1.750 excl. btw | Voltwijk',
            'Split-unit airco vanaf € 1.750 excl. btw inclusief installatie: koelen in de zomer, zuinig bijverwarmen in de tussenseizoenen. Vaste prijs vooraf.'),
- 'product-boiler': ('Elektrische boiler laten installeren – vanaf € 1.487,60 excl. btw | Voltwijk',
+ 'product-boiler': ('Elektrische boiler 150 of 200 liter incl. montage – vanaf € 1.487,60 excl. btw | Voltwijk',
            'Elektrische boiler van Ariston, 150 of 200 liter, vanaf € 1.487,60 excl. btw inclusief installatie. Warm water zonder gas, ideaal met zonnepanelen.'),
  'product-laadpaal': ('Laadpaal thuis laten installeren – vanaf € 1.074,38 excl. btw | Voltwijk',
            'Slimme laadpaal tot 22 kW vanaf € 1.074,38 excl. btw inclusief installatie. Laad op de goedkoopste uren, werkt met vrijwel elke elektrische auto.'),

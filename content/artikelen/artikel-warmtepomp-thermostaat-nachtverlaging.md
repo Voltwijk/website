@@ -1,5 +1,5 @@
 title: Thermostaat bij een warmtepomp: waarom constant vaak beter is dan nachtverlaging
-seo_title: Warmtepomp thermostaat 's nachts lager? | Voltwijk
+seo_title: Warmtepomp 's nachts: hoeveel graden lager? | Voltwijk
 description: Moet je de thermostaat van je warmtepomp 's nachts lager zetten? Hoeveel graden verlagen zinvol is, wanneer constant beter is en wat je doet als je weg bent.
 category: Warmtepomp
 product: warmtepomp
@@ -66,6 +66,10 @@ Q: Moet ik de thermostaat van mijn warmtepomp 's nachts lager zetten?
 A: Niet of maar een klein beetje. Milieu Centraal adviseert: niet lager bij vloerverwarming, een bodemwarmtepomp of goede isolatie met wtw; 1 graad lager bij redelijke isolatie en 2 graden lager bij matige isolatie.
 Q: Waarom is nachtverlaging bij een warmtepomp niet zuinig?
 A: Een warmtepomp verwarmt met lager temperatuurwater en warmt daardoor langzaam op. Zet je hem 's nachts veel lager, dan moet hij 's ochtends hard werken, en dat kost meer energie dan het huis op temperatuur houden.
+Q: Hoeveel graden moet de verwarming 's nachts bij een warmtepomp?
+A: Volgens Milieu Centraal zet je de thermostaat 's nachts niet lager bij vloerverwarming, een bodemwarmtepomp of een goed geïsoleerd huis met wtw. Bij redelijke isolatie 1 graad lager, bij matige isolatie 2 graden lager. Dus bij 20 graden overdag 's nachts 18 tot 20 graden.
+Q: Welke nachttemperatuur bij een hybride warmtepomp?
+A: Hetzelfde principe: houd het verschil klein, hooguit 1 tot 2 graden. Bij een grote nachtverlaging moet het huis 's ochtends snel opwarmen en springt de cv-ketel eerder bij, waardoor je meer gas verbruikt.
 Q: Welke temperatuur bij vloerverwarming 's nachts?
 A: Bij vloerverwarming laat je de thermostaat het liefst gewoon staan. Ga in elk geval niet onder de 17 of 18 graden, anders duurt het opwarmen te lang.
 Q: Wat doe ik met mijn warmtepomp als ik op vakantie ga?
