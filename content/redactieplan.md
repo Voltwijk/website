@@ -41,7 +41,8 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] ISDE 2027 voor glas: HR++ omhoog, triple glas omlaag | isde hr++ glas 2027 | algemeen | actueel, zelfde RVO-pagina
 - [klaar 2026-11-17, artikel-aanbetaling-installateur] Aanbetaling bij installateur: wat is normaal? | aanbetaling installateur | algemeen | koopintentie, vraag uit offerte-artikel
 - [open] Radiatorventilatoren: wat leveren ze op bij een warmtepomp? | radiatorventilator warmtepomp | warmtepomp | koopintentie, vervolg op radiatoren-artikel
-- [open] Garantie op een installatie: fabrieksgarantie, installatiegarantie en wettelijke garantie | garantie warmtepomp installateur | warmtepomp | koopintentie, vervolg op aanbetaling
+- [klaar 2026-11-18, artikel-garantie-thuisbatterij-warmtepomp] Garantie op een installatie: fabrieksgarantie, installatiegarantie en wettelijke garantie | garantie warmtepomp installateur | warmtepomp | koopintentie, vervolg op aanbetaling
+- [open] Onderhoudscontract warmtepomp: nodig of niet? | onderhoud warmtepomp kosten | warmtepomp | koopintentie, vraag uit offerte- en garantie-artikel
 ### Overig
 - [klaar (2026-10-01, artikel-netcongestie-west-brabant)] Netcongestie in West-Brabant: wat betekent het voor jouw huis | netcongestie West-Brabant | batterij | lokaal, weinig concurrentie
 - [klaar (2026-10-02, artikel-warmtepomp-bij-vorst)] Warmtepomp bij vorst: werkt hij nog en wat kost het | warmtepomp vorst | warmtepomp | seizoensvraag oktober–februari
@@ -112,7 +113,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Laadpaal met simkaart, wifi of kabel: welke verbinding kies je? | laadpaal internetverbinding | laadpaal | praktische installatievraag
 - [open] Opbrengst zonnepanelen ineens lager: oorzaken en wat je kunt controleren | opbrengst zonnepanelen lager | zonnepanelen | probleemvraag, sluit aan op hagelschade en omvormer
 - [klaar (2026-10-29, artikel-glas-glas-zonnepanelen)] Glas-glas zonnepanelen: voordelen, nadelen en wanneer kies je ervoor | glas-glas zonnepanelen | zonnepanelen | aankoopvraag, sluit aan op hagelbestendigheid
-- [open] Thuisbatterij garantie: wat dekt de fabrieksgarantie en wat niet? | thuisbatterij garantie | batterij | vervolgvraag op verzekeringsartikel (verzekering vs garantie)
+- [klaar 2026-11-18, artikel-garantie-thuisbatterij-warmtepomp] Thuisbatterij garantie: wat dekt de fabrieksgarantie en wat niet? | thuisbatterij garantie | batterij | vervolgvraag op verzekeringsartikel (verzekering vs garantie)
 - [open] Stekkerbatterij of vaste thuisbatterij: verschillen in opbrengst, veiligheid en regels | stekkerbatterij of thuisbatterij | batterij | vergelijkingsvraag, sluit aan op plug-and-play-artikel
 - [open] Waterdruk in huis te hoog of te laag: zo meet je het en wat betekent het voor je boiler | waterdruk te hoog boiler | boiler | vervolgvraag op inlaatcombinatie-artikel
 - [open] Elektrische boiler geeft geen warm water meer: oorzaken en wat je zelf kunt checken | boiler geeft geen warm water | boiler | veel gezochte probleemvraag
