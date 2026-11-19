@@ -42,7 +42,8 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar 2026-11-17, artikel-aanbetaling-installateur] Aanbetaling bij installateur: wat is normaal? | aanbetaling installateur | algemeen | koopintentie, vraag uit offerte-artikel
 - [open] Radiatorventilatoren: wat leveren ze op bij een warmtepomp? | radiatorventilator warmtepomp | warmtepomp | koopintentie, vervolg op radiatoren-artikel
 - [klaar 2026-11-18, artikel-garantie-thuisbatterij-warmtepomp] Garantie op een installatie: fabrieksgarantie, installatiegarantie en wettelijke garantie | garantie warmtepomp installateur | warmtepomp | koopintentie, vervolg op aanbetaling
-- [open] Onderhoudscontract warmtepomp: nodig of niet? | onderhoud warmtepomp kosten | warmtepomp | koopintentie, vraag uit offerte- en garantie-artikel
+- [klaar 2026-11-19, artikel-onderhoud-warmtepomp] Onderhoudscontract warmtepomp: nodig of niet? | onderhoud warmtepomp kosten | warmtepomp | koopintentie, vraag uit offerte- en garantie-artikel
+- [open] Onderhoud thuisbatterij: wat moet je doen en wat niet? | onderhoud thuisbatterij | batterij | koopintentie, vervolg op garantie/onderhoud
 ### Overig
 - [klaar (2026-10-01, artikel-netcongestie-west-brabant)] Netcongestie in West-Brabant: wat betekent het voor jouw huis | netcongestie West-Brabant | batterij | lokaal, weinig concurrentie
 - [klaar (2026-10-02, artikel-warmtepomp-bij-vorst)] Warmtepomp bij vorst: werkt hij nog en wat kost het | warmtepomp vorst | warmtepomp | seizoensvraag oktober–februari
