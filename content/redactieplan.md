@@ -40,10 +40,11 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar 2026-11-14, artikel-isde-warmtepomp-2027] ISDE warmtepomp 2027: minder subsidie, overgangsregeling bij aankoop in 2026 | isde warmtepomp 2027 | warmtepomp | actueel (RVO 12 nov), koopintentie met deadline 31 dec
 - [open] ISDE 2027 voor glas: HR++ omhoog, triple glas omlaag | isde hr++ glas 2027 | algemeen | actueel, zelfde RVO-pagina
 - [klaar 2026-11-17, artikel-aanbetaling-installateur] Aanbetaling bij installateur: wat is normaal? | aanbetaling installateur | algemeen | koopintentie, vraag uit offerte-artikel
-- [open] Radiatorventilatoren: wat leveren ze op bij een warmtepomp? | radiatorventilator warmtepomp | warmtepomp | koopintentie, vervolg op radiatoren-artikel
+- [open, let op: weinig harde bronnen over opbrengst (2026-11-20)] Radiatorventilatoren: wat leveren ze op bij een warmtepomp? | radiatorventilator warmtepomp | warmtepomp | koopintentie, vervolg op radiatoren-artikel
 - [klaar 2026-11-18, artikel-garantie-thuisbatterij-warmtepomp] Garantie op een installatie: fabrieksgarantie, installatiegarantie en wettelijke garantie | garantie warmtepomp installateur | warmtepomp | koopintentie, vervolg op aanbetaling
 - [klaar 2026-11-19, artikel-onderhoud-warmtepomp] Onderhoudscontract warmtepomp: nodig of niet? | onderhoud warmtepomp kosten | warmtepomp | koopintentie, vraag uit offerte- en garantie-artikel
 - [open] Onderhoud thuisbatterij: wat moet je doen en wat niet? | onderhoud thuisbatterij | batterij | koopintentie, vervolg op garantie/onderhoud
+- [open] Thuisbatterij en warmtepomp tegelijk aan: hoeveel vermogen heb je nodig? | thuisbatterij vermogen kw | batterij | koopintentie, vervolg op laadpaal+batterij
 ### Overig
 - [klaar (2026-10-01, artikel-netcongestie-west-brabant)] Netcongestie in West-Brabant: wat betekent het voor jouw huis | netcongestie West-Brabant | batterij | lokaal, weinig concurrentie
 - [klaar (2026-10-02, artikel-warmtepomp-bij-vorst)] Warmtepomp bij vorst: werkt hij nog en wat kost het | warmtepomp vorst | warmtepomp | seizoensvraag oktober–februari
@@ -136,7 +137,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [vervalt (2026-11-05: al behandeld in artikel-warmtepomp-geluid en artikel-warmtepomp-buitenunit-plaatsen-regels)] Warmtepomp geluid: hoeveel decibel en wat zijn de regels voor de buren? | warmtepomp geluid buren | warmtepomp | veelgestelde vraag, sluit aan op buitenunit-regels
 - [open] Voorrangsschakelaar in de meterkast: wanneer is het een alternatief voor een zwaardere aansluiting? | voorrangsschakelaar meterkast | meterkast | Milieu Centraal noemt het bij inductie (2026-11-06: te weinig betrouwbare bronnen gevonden, later opnieuw proberen)
 - [klaar (2026-11-07, artikel-auto-laden-op-zonnestroom)] Zonnestroom op de auto laden: zo stem je laadpaal en zonnepanelen op elkaar af | laden op zonnestroom | laadpaal | vervolg op bidirectioneel-artikel
-- [open] Laadpaal en thuisbatterij combineren: wat laadt wanneer, en heeft het zin? | laadpaal thuisbatterij combineren | batterij | koopvraag, sluit aan op zonnestroom-laden
+- [klaar 2026-11-20, artikel-laadpaal-en-thuisbatterij-combineren] Laadpaal en thuisbatterij combineren: wat laadt wanneer, en heeft het zin? | laadpaal thuisbatterij combineren | batterij | koopvraag, sluit aan op zonnestroom-laden
 - [open] Boiler vervangen: hoe oud is te oud en wat zijn de signalen? | boiler vervangen signalen | boiler | koopmoment, sluit aan op boiler-artikelen
 - [open] Verwarmingstest: is je huis klaar voor een volledig elektrische warmtepomp? | verwarmingstest warmtepomp | warmtepomp | winterseizoen, Milieu Centraal-test op 50 graden (2026-11-10: let op overlap met artikel-warmtepomp-zonder-vloerverwarming, daar staat de test al)
 - [open] Rookmelder in de meterkast: zinvol en hoe plaats je hem? | rookmelder meterkast | meterkast | Liander noemt het als tip; sluit aan op veiligheid oude installaties
