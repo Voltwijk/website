@@ -43,8 +43,9 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open, let op: weinig harde bronnen over opbrengst (2026-11-20)] Radiatorventilatoren: wat leveren ze op bij een warmtepomp? | radiatorventilator warmtepomp | warmtepomp | koopintentie, vervolg op radiatoren-artikel
 - [klaar 2026-11-18, artikel-garantie-thuisbatterij-warmtepomp] Garantie op een installatie: fabrieksgarantie, installatiegarantie en wettelijke garantie | garantie warmtepomp installateur | warmtepomp | koopintentie, vervolg op aanbetaling
 - [klaar 2026-11-19, artikel-onderhoud-warmtepomp] Onderhoudscontract warmtepomp: nodig of niet? | onderhoud warmtepomp kosten | warmtepomp | koopintentie, vraag uit offerte- en garantie-artikel
-- [open] Onderhoud thuisbatterij: wat moet je doen en wat niet? | onderhoud thuisbatterij | batterij | koopintentie, vervolg op garantie/onderhoud
-- [open] Thuisbatterij en warmtepomp tegelijk aan: hoeveel vermogen heb je nodig? | thuisbatterij vermogen kw | batterij | koopintentie, vervolg op laadpaal+batterij
+- [klaar 2026-11-21, artikel-onderhoud-thuisbatterij] Onderhoud thuisbatterij: wat moet je doen en wat niet? | onderhoud thuisbatterij | batterij | koopintentie, vervolg op garantie/onderhoud
+- [vervalt: al behandeld in artikel-warmtepomp-en-thuisbatterij] Thuisbatterij en warmtepomp tegelijk aan: hoeveel vermogen heb je nodig? | thuisbatterij vermogen kw | batterij | koopintentie, vervolg op laadpaal+batterij
+- [open] Waar zet je een thuisbatterij in huis? Bijkeuken, garage of zolder vergeleken | thuisbatterij plaatsen waar | batterij | koopintentie, sluit aan op onderhoud/brandveiligheid
 ### Overig
 - [klaar (2026-10-01, artikel-netcongestie-west-brabant)] Netcongestie in West-Brabant: wat betekent het voor jouw huis | netcongestie West-Brabant | batterij | lokaal, weinig concurrentie
 - [klaar (2026-10-02, artikel-warmtepomp-bij-vorst)] Warmtepomp bij vorst: werkt hij nog en wat kost het | warmtepomp vorst | warmtepomp | seizoensvraag oktober–februari
