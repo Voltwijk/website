@@ -3,6 +3,13 @@
   # Geen nieuwe deploy als alleen de zoekdata voor de redactie is bijgewerkt
   ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':(exclude)content/zoekdata.md'"
 
+# Takenbord van Yasmine (privé pagina op claude.ai, alleen te openen met het eigen account)
+[[redirects]]
+  from = "/yasmine"
+  to = "https://claude.ai/artifact/LTN2XqWPwU683utYQwmDQk"
+  status = 302
+  force = true
+
 # Oude link naar de homepage
 [[redirects]]
   from = "/home"
