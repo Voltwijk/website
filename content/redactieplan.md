@@ -45,7 +45,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar 2026-11-19, artikel-onderhoud-warmtepomp] Onderhoudscontract warmtepomp: nodig of niet? | onderhoud warmtepomp kosten | warmtepomp | koopintentie, vraag uit offerte- en garantie-artikel
 - [klaar 2026-11-21, artikel-onderhoud-thuisbatterij] Onderhoud thuisbatterij: wat moet je doen en wat niet? | onderhoud thuisbatterij | batterij | koopintentie, vervolg op garantie/onderhoud
 - [vervalt: al behandeld in artikel-warmtepomp-en-thuisbatterij] Thuisbatterij en warmtepomp tegelijk aan: hoeveel vermogen heb je nodig? | thuisbatterij vermogen kw | batterij | koopintentie, vervolg op laadpaal+batterij
-- [open] Waar zet je een thuisbatterij in huis? Bijkeuken, garage of zolder vergeleken | thuisbatterij plaatsen waar | batterij | koopintentie, sluit aan op onderhoud/brandveiligheid
+- [vervalt: al behandeld in artikel-onderhoud-thuisbatterij en artikel-thuisbatterij-brandveiligheid] Waar zet je een thuisbatterij in huis? Bijkeuken, garage of zolder vergeleken | thuisbatterij plaatsen waar | batterij | koopintentie, sluit aan op onderhoud/brandveiligheid
 ### Overig
 - [klaar (2026-10-01, artikel-netcongestie-west-brabant)] Netcongestie in West-Brabant: wat betekent het voor jouw huis | netcongestie West-Brabant | batterij | lokaal, weinig concurrentie
 - [klaar (2026-10-02, artikel-warmtepomp-bij-vorst)] Warmtepomp bij vorst: werkt hij nog en wat kost het | warmtepomp vorst | warmtepomp | seizoensvraag oktober–februari
@@ -98,7 +98,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-10-08, merk-omvormerartikelen (andere sessie))] Thuisbatterij bij SMA-, Huawei-, GoodWe- en Fronius-omvormer (zelfde opzet als SolarEdge/Growatt) | thuisbatterij <merk> omvormer | batterij | merkzoekwoorden, SERP vol webshops
 - [klaar (2026-10-08, artikel-solis-omvormer (andere sessie))] Solis hybride omvormer: wat is het en welke past | solis thuisbatterij | batterij | merk dat Voltwijk zelf installeert
 - [klaar (2026-10-08)] 16 artikelen: thuisbatterij bij SMA, Fronius, Huawei, GoodWe; Solis omvormer; Deye; Victron; kwartierprijzen; multi-split airco; airco op zonnepanelen; terugleverkosten per leverancier; vast contract en einde salderen; jaarafrekening na einde salderen; thuisbatterij appartement/VvE; waterhardheid West-Brabant; uitbreidingskast meterkast
-- [open] Hoofdzekering te klein? Zo zie je wat je aansluiting aankan | hoofdzekering vermogen | meterkast | praktische vraag bij warmtepomp/laadpaal
+- [vervalt: al behandeld in artikel-aansluiting-verzwaren-kosten en artikel-smeltzekering-of-hoofdautomaat] Hoofdzekering te klein? Zo zie je wat je aansluiting aankan | hoofdzekering vermogen | meterkast | praktische vraag bij warmtepomp/laadpaal
 - [open] Netcongestie en een zwaardere aansluiting aanvragen: wat als het net vol is? | aansluiting verzwaren netcongestie | meterkast | actueel, sluit aan op netcongestie-artikel
 - [klaar (2026-10-21, artikel-warmtepomp-thermostaat-nachtverlaging)] Thermostaat bij een warmtepomp: waarom constant beter is dan nachtverlaging | warmtepomp thermostaat instellen | warmtepomp | veelgestelde wintervraag
 - [klaar 2026-11-16, artikel-radiatoren-warmtepomp] Radiatoren geschikt maken voor een warmtepomp: groter, ventilatoren of LT-radiatoren | radiatoren warmtepomp | warmtepomp | koopintentie, sluit aan op stooklijn-artikel
@@ -113,13 +113,13 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar (2026-10-23, artikel-aardlekschakelaar-slaat-af)] Aardlekschakelaar slaat steeds af: oorzaken en wat je zelf kunt checken | aardlekschakelaar slaat af | meterkast | veel gezochte probleemvraag
 - [klaar (2026-11-10, artikel-elektra-oud-huis-bedrading)] Elektra in een oud huis: wanneer moet de bedrading vervangen worden? | oude bedrading vervangen | meterkast | koopmoment, sluit aan op meetrapport
 - [klaar (2026-11-06, artikel-bidirectioneel-laden-thuis)] Bidirectioneel laden (V2G/V2H): kan je auto je huis van stroom voorzien? | bidirectioneel laden thuis | laadpaal | groeiend onderwerp, sluit aan op OCPP 2.0.1
-- [open] Laadpaal met simkaart, wifi of kabel: welke verbinding kies je? | laadpaal internetverbinding | laadpaal | praktische installatievraag
+- [open, let op: 2026-11-22 support-sites fabrikanten geblokkeerd] Laadpaal met simkaart, wifi of kabel: welke verbinding kies je? | laadpaal internetverbinding | laadpaal | praktische installatievraag
 - [open] Opbrengst zonnepanelen ineens lager: oorzaken en wat je kunt controleren | opbrengst zonnepanelen lager | zonnepanelen | probleemvraag, sluit aan op hagelschade en omvormer
 - [klaar (2026-10-29, artikel-glas-glas-zonnepanelen)] Glas-glas zonnepanelen: voordelen, nadelen en wanneer kies je ervoor | glas-glas zonnepanelen | zonnepanelen | aankoopvraag, sluit aan op hagelbestendigheid
 - [klaar 2026-11-18, artikel-garantie-thuisbatterij-warmtepomp] Thuisbatterij garantie: wat dekt de fabrieksgarantie en wat niet? | thuisbatterij garantie | batterij | vervolgvraag op verzekeringsartikel (verzekering vs garantie)
 - [open] Stekkerbatterij of vaste thuisbatterij: verschillen in opbrengst, veiligheid en regels | stekkerbatterij of thuisbatterij | batterij | vergelijkingsvraag, sluit aan op plug-and-play-artikel
 - [open] Waterdruk in huis te hoog of te laag: zo meet je het en wat betekent het voor je boiler | waterdruk te hoog boiler | boiler | vervolgvraag op inlaatcombinatie-artikel
-- [open] Elektrische boiler geeft geen warm water meer: oorzaken en wat je zelf kunt checken | boiler geeft geen warm water | boiler | veel gezochte probleemvraag
+- [open, let op: 2026-11-22 alleen forumbronnen gevonden; fabrikant-FAQ nodig] Elektrische boiler geeft geen warm water meer: oorzaken en wat je zelf kunt checken | boiler geeft geen warm water | boiler | veel gezochte probleemvraag
 - [klaar (2026-10-30, artikel-hybride-warmtepomp-omschakeltemperatuur)] Hybride warmtepomp omschakeltemperatuur: wanneer neemt de cv-ketel het over? | hybride warmtepomp instellen | warmtepomp | praktische instelvraag, sluit aan op thermostaat-artikel
 - [open] Zonnepanelen naast een stal of veebedrijf: vervuiling, opbrengst en schoonmaken | zonnepanelen vervuiling boerderij | zonnepanelen | vraag uit de praktijk (klant naast veehouderij)
 - [klaar (2026-11-08, artikel-boiler-opwarmtijd)] Hoe lang duurt het voordat een elektrische boiler warm is? Opwarmtijd per inhoud en vermogen | boiler opwarmtijd | boiler | praktische vraag, sluit aan op vakantie-artikel
@@ -141,4 +141,4 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar 2026-11-20, artikel-laadpaal-en-thuisbatterij-combineren] Laadpaal en thuisbatterij combineren: wat laadt wanneer, en heeft het zin? | laadpaal thuisbatterij combineren | batterij | koopvraag, sluit aan op zonnestroom-laden
 - [open] Boiler vervangen: hoe oud is te oud en wat zijn de signalen? | boiler vervangen signalen | boiler | koopmoment, sluit aan op boiler-artikelen
 - [open] Verwarmingstest: is je huis klaar voor een volledig elektrische warmtepomp? | verwarmingstest warmtepomp | warmtepomp | winterseizoen, Milieu Centraal-test op 50 graden (2026-11-10: let op overlap met artikel-warmtepomp-zonder-vloerverwarming, daar staat de test al)
-- [open] Rookmelder in de meterkast: zinvol en hoe plaats je hem? | rookmelder meterkast | meterkast | Liander noemt het als tip; sluit aan op veiligheid oude installaties
+- [klaar 2026-11-22, artikel-rookmelder-meterkast] Rookmelder in de meterkast: zinvol en hoe plaats je hem? | rookmelder meterkast | meterkast | Liander noemt het als tip; sluit aan op veiligheid oude installaties
