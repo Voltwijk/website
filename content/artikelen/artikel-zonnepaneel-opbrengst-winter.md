@@ -1,10 +1,11 @@
 title: Hoeveel kWh levert een zonnepaneel in de winter?
-seo_title: Opbrengst zonnepaneel in de winter | Voltwijk
+seo_title: Opbrengst zonnepanelen in de winter, per dag | Voltwijk
 description: Hoeveel kWh levert een zonnepaneel in de winter? Opbrengst per dag en per maand in november tot februari, waarom het zo weinig is en wat je eraan hebt.
 category: Zonnepanelen
 product: zonnepanelen
 image: foto-433308
 date: 2026-10-11
+updated: 2026-11-24
 lead: In december en januari levert een zonnepaneel maar een paar procent van zijn jaaropbrengst. Voor een gangbaar paneel van rond de 400 tot 440 Wp is dat gemiddeld ongeveer een kwart tot een halve kWh per dag. In de zomer is dat vele malen meer.
 summary: December levert ongeveer 2 procent van de jaaropbrengst, januari ongeveer 2 à 3 procent || Een paneel van rond de 400 Wp levert in december en januari gemiddeld grofweg 0,2 tot 0,5 kWh per dag || Het zomerhalfjaar (april tot en met september) is goed voor ongeveer 70 procent van de jaaropbrengst || Kou is niet het probleem; korte dagen, een lage zon en bewolking zijn dat wel
 sources: Zonvolt: opbrengst zonnepanelen per maand|https://zonvolt.nl/zonnepanelen/opbrengst-zonnepanelen-per-maand/ || Zon-nl: opbrengst zonnepanelen 2026|https://zon-nl.nl/kennisbank/opbrengst-zonnepanelen || Zonwijzer: opbrengst zonnepanelen|https://zonwijzer.com/opbrengst-zonnepanelen/ || ZPN: opbrengst zonnepanelen per maand|https://zpn.nl/opbrengst-zonnepanelen-per-maand/ || Zonnig: hoeveel kWh levert een zonnepaneel per dag in de winter?|https://www.zonnig.nl/kennisbank/hoeveel-kwh-levert-een-zonnepaneel-per-dag-in-de-winter/ || SolarNRG: koud winterweer en het rendement van zonnepanelen|https://solarnrg.nl/blog/hoe-be%C3%AFnvloedt-koud-winterweer-het-rendement-van-jouw-zonnepanelen/
@@ -25,7 +26,7 @@ De opbrengst van zonnepanelen is sterk ongelijk over het jaar verdeeld. Opbrengs
 | Februari | 3 à 5% |
 | Ter vergelijking: juni | ongeveer 13% |
 
-De vier wintermaanden samen leveren dus maar ruwweg een achtste tot een tiende van wat je panelen in een heel jaar opwekken. Het zomerhalfjaar, van april tot en met september, is goed voor ongeveer **70 procent**. December levert zo'n zes à zeven keer minder op dan juni.
+De vier wintermaanden samen leveren dus maar ruwweg een achtste tot een tiende van wat je panelen in een heel jaar opwekken. Het zomerhalfjaar, van april tot en met september, is goed voor ongeveer **70 procent**. December levert zo'n zes à zeven keer minder op dan juni. Hoe de opbrengst over het hele jaar verloopt, lees je in [opbrengst zonnepanelen per maand](/artikel-zonnepanelen-opbrengst-per-maand).
 
 ## Hoeveel kWh is dat per dag?
 
@@ -84,6 +85,10 @@ Wil je weten wat zonnepanelen op jouw dak over het hele jaar opleveren, en wat j
 faq:
 Q: Hoeveel kWh levert een zonnepaneel per dag in de winter?
 A: Een paneel van rond de 400 Wp levert in december en januari gemiddeld grofweg 0,2 tot 0,5 kWh per dag. Op heldere dagen meer, op grijze dagen minder, en bij sneeuw op het paneel vrijwel niets.
+Q: Wat is de gemiddelde opbrengst van zonnepanelen per dag in december?
+A: In ons rekenvoorbeeld levert een paneel van 440 Wp op een dak op het zuiden in december gemiddeld ongeveer 0,25 kWh per dag. Met tien panelen is dat ongeveer 2,5 kWh per dag. Op heldere dagen is het meer, op grijze dagen minder.
+Q: Wat is de beste maand voor zonnepanelen?
+A: Mei en juni, met elk ruim 12 procent van de jaaropbrengst. December is de zwakste maand, met ongeveer 2 procent.
 Q: Hoeveel procent van de jaaropbrengst komt uit de winter?
 A: December levert ongeveer 2 procent, januari 2 à 3 procent, november ongeveer 3 en februari 3 à 5 procent. Het zomerhalfjaar van april tot en met september is goed voor ongeveer 70 procent.
 Q: Werken zonnepanelen slechter als het koud is?
