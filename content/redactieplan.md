@@ -46,6 +46,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar 2026-11-21, artikel-onderhoud-thuisbatterij] Onderhoud thuisbatterij: wat moet je doen en wat niet? | onderhoud thuisbatterij | batterij | koopintentie, vervolg op garantie/onderhoud
 - [vervalt: al behandeld in artikel-warmtepomp-en-thuisbatterij] Thuisbatterij en warmtepomp tegelijk aan: hoeveel vermogen heb je nodig? | thuisbatterij vermogen kw | batterij | koopintentie, vervolg op laadpaal+batterij
 - [vervalt: al behandeld in artikel-onderhoud-thuisbatterij en artikel-thuisbatterij-brandveiligheid] Waar zet je een thuisbatterij in huis? Bijkeuken, garage of zolder vergeleken | thuisbatterij plaatsen waar | batterij | koopintentie, sluit aan op onderhoud/brandveiligheid
+- [open] Zonnepanelen op een plat dak: oriëntatie en hellingshoek doorgerekend met PVGIS | zonnepanelen hellingshoek opbrengst | zonnepanelen | koopintentie, PVGIS werkt goed als officiële bron
 ### Overig
 - [klaar (2026-10-01, artikel-netcongestie-west-brabant)] Netcongestie in West-Brabant: wat betekent het voor jouw huis | netcongestie West-Brabant | batterij | lokaal, weinig concurrentie
 - [klaar (2026-10-02, artikel-warmtepomp-bij-vorst)] Warmtepomp bij vorst: werkt hij nog en wat kost het | warmtepomp vorst | warmtepomp | seizoensvraag oktober–februari
@@ -102,7 +103,7 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [open] Netcongestie en een zwaardere aansluiting aanvragen: wat als het net vol is? | aansluiting verzwaren netcongestie | meterkast | actueel, sluit aan op netcongestie-artikel
 - [klaar (2026-10-21, artikel-warmtepomp-thermostaat-nachtverlaging)] Thermostaat bij een warmtepomp: waarom constant beter is dan nachtverlaging | warmtepomp thermostaat instellen | warmtepomp | veelgestelde wintervraag
 - [klaar 2026-11-16, artikel-radiatoren-warmtepomp] Radiatoren geschikt maken voor een warmtepomp: groter, ventilatoren of LT-radiatoren | radiatoren warmtepomp | warmtepomp | koopintentie, sluit aan op stooklijn-artikel
-- [open] Zonnepanelen opbrengst per maand: zo verdeelt je jaaropbrengst zich na 2027 | opbrengst zonnepanelen per maand | zonnepanelen | veel gezocht, sluit aan op winterartikel
+- [klaar 2026-11-24, artikel-zonnepanelen-opbrengst-per-maand] Zonnepanelen opbrengst per maand: zo verdeelt je jaaropbrengst zich na 2027 | opbrengst zonnepanelen per maand | zonnepanelen | veel gezocht, sluit aan op winterartikel
 - [open] Laadpaal thuis laten installeren: wat komt erbij kijken? | elektrische laadpaal thuis | laadpaal | staat bovenaan in zoekdata (positie 26)
 - [klaar (2026-10-22, artikel-boiler-vakantie-uitzetten)] Boiler op vakantie: aan laten staan of uitzetten? | boiler uitzetten vakantie | boiler | seizoensvraag (kerst/zomer), RIVM-advies
 - [open] Warmtepomp tapwatertemperatuur instellen: 50, 55 of 60 graden? | warmtepomp tapwater temperatuur | warmtepomp | praktische instelvraag, sluit aan op legionella-artikel
