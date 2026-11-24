@@ -42,7 +42,7 @@ NEW_PRICE = ("    var bat = (id==='batterij' && window.VW_BAT) ? window.VW_BAT :
              "    return {id:id, label:(bat ? bat.label : PRODUCTS[id].name), price:price};")
 
 PRODUCT_FIELDS = {
-    'headline': "Een thuisbatterij van 10 tot 35 kWh, inclusief installatie en EMS — vanaf " + eur(VANAF) + " excl. btw.",
+    'headline': "Een batterij voor je zonnepanelen: 10 tot 35 kWh, inclusief installatie en EMS — vanaf " + eur(VANAF) + " excl. btw.",
     'bullets': ["FoxESS of Dyness met Solis-omvormer, voor 1-fase én 3-fase aansluitingen",
                 "Vaste prijs inclusief installatie en slimme sturing (EMS): je weet vooraf wat je betaalt",
                 "Geïnstalleerd door ons eigen team, klaar voor het einde van salderen in 2027"],

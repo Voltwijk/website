@@ -15,9 +15,9 @@ Belangrijke feiten:
 ## Producten en prijzen
 
 - [Alle producten en vaste prijzen](https://voltwijk.nl/producten): overzicht van alles wat we installeren
-- [Thuisbatterij](https://voltwijk.nl/product-batterij): pakketten, merken, specificaties en prijzen
+- [Thuisbatterij](https://voltwijk.nl/product-batterij): batterij voor zonnepanelen; pakketten, merken, specificaties en prijzen
 - [Thuisbatterij berekenen](https://voltwijk.nl/thuisbatterij-berekenen): calculator met advies en vaste prijs in 1 minuut
-- [Zonnepanelen](https://voltwijk.nl/product-zonnepanelen): Jinko-panelen met Solis hybride omvormer
+- [Zonnepanelen](https://voltwijk.nl/product-zonnepanelen): Jinko-panelen met Solis hybride omvormer; 6 panelen € 3.450, 12 panelen € 4.850, 20 panelen € 7.250 (schuin dak, 0% btw)
 - [Warmtepomp](https://voltwijk.nl/product-warmtepomp): hybride en volledig elektrisch, LG en Vaillant
 - [Airco](https://voltwijk.nl/product-airco): LG split-unit en multi-split
 - [Laadpaal](https://voltwijk.nl/product-laadpaal): Anker, Zaptec en FoxESS
