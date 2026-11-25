@@ -46,7 +46,8 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar 2026-11-21, artikel-onderhoud-thuisbatterij] Onderhoud thuisbatterij: wat moet je doen en wat niet? | onderhoud thuisbatterij | batterij | koopintentie, vervolg op garantie/onderhoud
 - [vervalt: al behandeld in artikel-warmtepomp-en-thuisbatterij] Thuisbatterij en warmtepomp tegelijk aan: hoeveel vermogen heb je nodig? | thuisbatterij vermogen kw | batterij | koopintentie, vervolg op laadpaal+batterij
 - [vervalt: al behandeld in artikel-onderhoud-thuisbatterij en artikel-thuisbatterij-brandveiligheid] Waar zet je een thuisbatterij in huis? Bijkeuken, garage of zolder vergeleken | thuisbatterij plaatsen waar | batterij | koopintentie, sluit aan op onderhoud/brandveiligheid
-- [open] Zonnepanelen op een plat dak: oriëntatie en hellingshoek doorgerekend met PVGIS | zonnepanelen hellingshoek opbrengst | zonnepanelen | koopintentie, PVGIS werkt goed als officiële bron
+- [klaar 2026-11-25, artikel-zonnepanelen-hellingshoek-orientatie] Zonnepanelen: oriëntatie en hellingshoek doorgerekend met PVGIS | zonnepanelen hellingshoek opbrengst | zonnepanelen | koopintentie, PVGIS werkt goed als officiële bron
+- [open] Zonnepanelen in Breda, Roosendaal of Bergen op Zoom: wat leveren ze op? (PVGIS per plaats) | opbrengst zonnepanelen breda | zonnepanelen | lokaal + koopintentie, PVGIS
 ### Overig
 - [klaar (2026-10-01, artikel-netcongestie-west-brabant)] Netcongestie in West-Brabant: wat betekent het voor jouw huis | netcongestie West-Brabant | batterij | lokaal, weinig concurrentie
 - [klaar (2026-10-02, artikel-warmtepomp-bij-vorst)] Warmtepomp bij vorst: werkt hij nog en wat kost het | warmtepomp vorst | warmtepomp | seizoensvraag oktober–februari
