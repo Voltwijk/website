@@ -50,6 +50,8 @@ Formaat: `- [status] Onderwerp | zoekwoord | product | waarom kansrijk`
 - [klaar 2026-11-26, artikel-opbrengst-zonnepanelen-west-brabant] Zonnepanelen in Breda, Roosendaal of Bergen op Zoom: wat leveren ze op? (PVGIS per plaats) | opbrengst zonnepanelen breda | zonnepanelen | lokaal + koopintentie, PVGIS
 - [open, let op: 2026-11-27 geen officiële bron over vergunningvrij op bijgebouw gevonden; overlap met artikel-zonnepanelen-plat-dak] Zonnepanelen op een carport of schuur: opbrengst en regels | zonnepanelen carport | zonnepanelen | koopintentie; PVGIS + omgevingsloket
 - [klaar 2026-11-27, artikel-btw-airco-warmtepomp-installatie] Btw op airco en warmtepomp installatie: 21%, 9% of 0%? | btw op airco installatie | airco | zoekdata (pos. 28), Belastingdienst
+- [klaar 2026-11-28, artikel-6-zonnepanelen] 6 zonnepanelen: wat leveren ze op en is het genoeg? | 6 zonnepanelen | zonnepanelen | zoekdata (pos. 23,5), instappakket
+- [open] Let op: artikel-hoeveel-zonnepanelen-nodig rekent met 0,85-0,9 kWh per Wp; PVGIS geeft ~1,03 voor West-Brabant (zuid 35°). Bij onderhoud bijwerken | onderhoud | zonnepanelen | consistentie
 ### Overig
 - [klaar (2026-10-01, artikel-netcongestie-west-brabant)] Netcongestie in West-Brabant: wat betekent het voor jouw huis | netcongestie West-Brabant | batterij | lokaal, weinig concurrentie
 - [klaar (2026-10-02, artikel-warmtepomp-bij-vorst)] Warmtepomp bij vorst: werkt hij nog en wat kost het | warmtepomp vorst | warmtepomp | seizoensvraag oktober–februari
